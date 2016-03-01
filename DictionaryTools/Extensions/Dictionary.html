@@ -48,6 +48,14 @@
       <nav class="navigation">
         <ul class="nav-groups">
           <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeyPath.html">KeyPath</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
@@ -59,7 +67,18 @@
             <a class="nav-group-name-link" href="../Functions.html">Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:ZF15DictionaryToolsoi2eeu0_Rq_Ss8Hashableq0_Ss9Equatable_FTGVS_17OrderedDictionaryq_q0__GS2_q_q0___Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:ZF15DictionaryToolsoi2eeu1_Rq_Ss8Hashableq0_S0_q1_Ss9Equatable_FTGVSs10Dictionaryq_GS2_q0_q1___GS2_q_GS2_q0_q1____Sb">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/OrderedDictionary.html">OrderedDictionary</a>
               </li>
             </ul>
           </li>
@@ -83,6 +102,217 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/[Hashable:%20[Any]]"></a>
+                <a name="//apple_ref/swift/Section/[Hashable: [Any]]" class="dashAnchor"></a>
+                <a href="#/[Hashable:%20[Any]]">
+                  <h3 class="section-name">[Hashable: [Any]]</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayType_15DictionaryToolsVSs10Dictionary14ensureValueForu0_Rq_S_q0_S0__FRGS2_q_q0__Fq_T_"></a>
+                    <a name="//apple_ref/swift/Method/ensureValueFor(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayType_15DictionaryToolsVSs10Dictionary14ensureValueForu0_Rq_S_q0_S0__FRGS2_q_q0__Fq_T_">ensureValueFor(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ensure that an <code>Array</code> value exists for <code>key</code>:</p>
+
+<ul>
+<li>No action taken if an <code>Array</code> value exists for <code>key</code>.</li>
+</ul>
+
+<blockquote>
+<p><code>[&quot;key&quot;: [1,2,3]].ensureValueFor(&quot;key&quot;) -&gt; [&quot;key&quot;: [1,2,3]]</code></p>
+</blockquote>
+
+<ul>
+<li>If no value exists for <code>key</code>, an empty <code>Array</code> is added for the value <code>key</code>.</li>
+</ul>
+
+<blockquote>
+<p><code>[&quot;key&quot;: [1,2,3]].ensureValueFor(&quot;newKey&quot;) -&gt; [&quot;key&quot;: [1,2,3], &quot;newKey&quot;: []]</code></p>
+</blockquote>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">ensureValueFor</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Key</code></p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayType_15DictionaryToolsVSs10Dictionary12safelyAppendu0_Rq_S_q0_S0__FRGS2_q_q0__FTqqq0_Ss14CollectionType9GeneratorSs13GeneratorType7Element14toArrayWithKeyq__T_"></a>
+                    <a name="//apple_ref/swift/Method/safelyAppend(_:toArrayWithKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayType_15DictionaryToolsVSs10Dictionary12safelyAppendu0_Rq_S_q0_S0__FRGS2_q_q0__FTqqq0_Ss14CollectionType9GeneratorSs13GeneratorType7Element14toArrayWithKeyq__T_">safelyAppend(_:toArrayWithKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Safely append value to the <code>Array</code> <code>Value</code> for <code>key</code></p>
+
+<blockquote>
+<p><code>[&quot;key&quot;: [1,2]].safelyAppend(3, toArrayWithKey: &quot;key&quot;) -&gt; [&quot;key&quot;: [1,2,3]]</code></p>
+
+<p><code>[:].safelyAppend(0, toArrayWithKey: &quot;key&quot;) -&gt; [&quot;key: [0]&quot;]</code></p>
+</blockquote>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">safelyAppend</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="o">.</span><span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="n">toArrayWithKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Value to append</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key for Array to append to</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayType_15DictionaryToolsVSs10Dictionary22safelyAppendContentsOfu0_Rq_S_q0_S0__FRGS2_q_q0__FTq0_14toArrayWithKeyq__T_"></a>
+                    <a name="//apple_ref/swift/Method/safelyAppendContentsOf(_:toArrayWithKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayType_15DictionaryToolsVSs10Dictionary22safelyAppendContentsOfu0_Rq_S_q0_S0__FRGS2_q_q0__FTq0_14toArrayWithKeyq__T_">safelyAppendContentsOf(_:toArrayWithKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Safely append the contents of an array to the array value for a given key</p>
+
+<blockquote>
+<p><code>[&quot;key&quot;: [1]].safelyAppendContentsOf([2,3], toArrayWithKey: &quot;key&quot;) -&gt; [&quot;key&quot;: [1,2,3]]</code></p>
+</blockquote>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">safelyAppendContentsOf</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="kt">Value</span><span class="p">,</span> <span class="n">toArrayWithKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Array of values of which to append the contents to the array at key</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key for array to append to</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/%20[Hashable:%20[Equatable]]"></a>
+                <a name="//apple_ref/swift/Section/ [Hashable: [Equatable]]" class="dashAnchor"></a>
+                <a href="#/%20[Hashable:%20[Equatable]]">
+                  <h3 class="section-name"> [Hashable: [Equatable]]</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>

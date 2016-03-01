@@ -1,19 +1,18 @@
 KeyPath.swift
-	public class KeyPath
-	public class KeyPath
+	public var description: String
 OrderedDictionary.swift
-	public struct OrderedDictionary<K: Hashable, V: Equatable>
+	public init() { }
 	public func == <K,V>(lhs: OrderedDictionary<K,V>, rhs: OrderedDictionary<K,V>) -> Bool
-	public struct OrderedDictionary&lt;K : Hashable, V : Equatable&gt;
-	public struct OrderedDictionary&lt;K : Hashable, V : Equatable&gt;
+	public func generate() -> AnyGenerator<(K,V)>
+	public var description: String
 Merge.swift
 	public func + <K: Hashable, V: Any>(lhs: Dictionary<K, V>, rhs: Dictionary<K, V>)
     -> Dictionary<K, V>
 	public func += <K: Hashable, V: Any>(inout lhs: Dictionary<K, V>, rhs: Dictionary<K, V>)
 DictionaryLiteralConvertibleValue.swift
-	public mutating func ensureValueFor(key: Key)
-	public mutating func updateValue(value: Value.Value, forKeyPath keyPath: KeyPath)
-	public mutating func mergeWith(dictionary: Dictionary<Key, Value>)
+	mutating func ensureValueFor(key: Key)
+	mutating func updateValue(value: Value.Value, forKeyPath keyPath: KeyPath)
+	mutating func mergeWith(dictionary: Dictionary<Key, Value>)
         -> Dictionary<Key, Value>
 	public func + <K: Hashable, KK: Hashable, V: Equatable>(lhs: [K: [KK : V]], rhs: [K: [KK : V]])
     -> [K: [KK: V]]
