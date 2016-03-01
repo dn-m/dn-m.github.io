@@ -248,10 +248,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Sort the contents of an Array with the order of contents in another <code><a href="../Extensions/Array.html">Array</a></code>.</p>
+                        <p>Sort the contents of <code><a href="../Extensions/Array.html">Array</a></code> with the order of contents in another <code><a href="../Extensions/Array.html">Array</a></code>.</p>
 
 <blockquote>
-<p><code>[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d].sortWithOrderOfContentsIn([&quot;b&quot;,&quot;c&quot;,&quot;d&quot;]) -&gt; [&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;a]</code></p>
+<p><code>[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d].sortWithOrderOfContentsIn([&quot;b&quot;,&quot;c&quot;,&quot;d&quot;]) -&gt; [&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;a&quot;]</code></p>
 </blockquote>
 
                       </div>
@@ -671,6 +671,12 @@
                       <div class="abstract">
                         <p>Remove first element of Array</p>
 
+<blockquote>
+<p><code>[1,2,3].removeFirst -&gt; [2,3]</code></p>
+
+<p><code>[].removeFirst throws ArrayError.RemovalError</code></p>
+</blockquote>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -697,6 +703,12 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Remove first number of elements from Array</p>
+
+<blockquote>
+<p><code>[1,2,3].removeFirst(amount: 2) -&gt; [1]</code></p>
+
+<p><code>[1,2,3].removeFirst(amount: 4) throws ArrayError.RemovalError</code></p>
+</blockquote>
 
                       </div>
                       <div class="declaration">
@@ -744,6 +756,12 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Remove last number of elements from Array</p>
+
+<blockquote>
+<p><code>[1,2,3].removeLast(amount: 3) -&gt; []</code></p>
+
+<p><code>[1,2,3].removeLast(amount: 4) throws ArrayError.RemovalError</code></p>
+</blockquote>
 
                       </div>
                       <div class="declaration">
