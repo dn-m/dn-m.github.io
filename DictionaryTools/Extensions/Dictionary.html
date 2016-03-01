@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dictionary Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Extension/Dictionary" class="dashAnchor"></a>
+
+    <a title="Dictionary Extension Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          DictionaryTools Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/dn-m/DictionaryTools">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2FDictionaryTools%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">DictionaryTools Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      Dictionary Extension Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:ZF15DictionaryToolsoi2eeu1_Rq_Ss8Hashableq0_S0_q1_Ss9Equatable_FTGVSs10Dictionaryq_GS2_q0_q1___GS2_q_GS2_q0_q1____Sb">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>Dictionary</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">CollectionType</span><span class="p">,</span> <span class="kt">DictionaryLiteralConvertible</span></code></pre>
+
+                </div>
+              </div>
+            
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayTypeqqq0_Ss14CollectionType9GeneratorSs13GeneratorType7ElementSs9Equatable_15DictionaryToolsVSs10Dictionary23safelyAndUniquelyAppendu0_Rq_S_q0_S0_qqq0_S1_9GeneratorS2_7ElementS3__FRGS5_q_q0__FTqqq0_S1_9GeneratorS2_7Element14toArrayWithKeyq__T_"></a>
+                    <a name="//apple_ref/swift/Method/safelyAndUniquelyAppend(_:toArrayWithKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayTypeqqq0_Ss14CollectionType9GeneratorSs13GeneratorType7ElementSs9Equatable_15DictionaryToolsVSs10Dictionary23safelyAndUniquelyAppendu0_Rq_S_q0_S0_qqq0_S1_9GeneratorS2_7ElementS3__FRGS5_q_q0__FTqqq0_S1_9GeneratorS2_7Element14toArrayWithKeyq__T_">safelyAndUniquelyAppend(_:toArrayWithKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Safely append value to the array value for a given key. If this value already exists in
+desired array, the new value will not be added.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">safelyAndUniquelyAppend</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="o">.</span><span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span>
+        <span class="n">toArrayWithKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span>
+    <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Value to append to array for a given key</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key for array to append to</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe0_Rq_Ss8Hashable_15DictionaryToolsVSs10Dictionary9mergeWithu0_Rq_S__FGS1_q_q0__FGS1_q_q0__GS1_q_q0__"></a>
+                    <a name="//apple_ref/swift/Method/mergeWith(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe0_Rq_Ss8Hashable_15DictionaryToolsVSs10Dictionary9mergeWithu0_Rq_S__FGS1_q_q0__FGS1_q_q0__GS1_q_q0__">mergeWith(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a new dictionary with the values of self and those of another dictionary.</p>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Values of new dictionary will override those of self
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">mergeWith</span><span class="p">(</span><span class="nv">dictionary</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span><span class="kt">Value</span><span class="o">&gt;</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dictionary</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Dictionary whose values to merge into self</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James</a>. All rights reserved. (Last updated: 2016-02-29)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

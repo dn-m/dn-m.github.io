@@ -1,0 +1,30 @@
+KeyPath.swift
+	public class KeyPath
+	public class KeyPath
+OrderedDictionary.swift
+	public struct OrderedDictionary<K: Hashable, V: Equatable>
+	public func == <K,V>(lhs: OrderedDictionary<K,V>, rhs: OrderedDictionary<K,V>) -> Bool
+	public struct OrderedDictionary&lt;K : Hashable, V : Equatable&gt;
+	public struct OrderedDictionary&lt;K : Hashable, V : Equatable&gt;
+Merge.swift
+	public func + <K: Hashable, V: Any>(lhs: Dictionary<K, V>, rhs: Dictionary<K, V>)
+    -> Dictionary<K, V>
+	public func += <K: Hashable, V: Any>(inout lhs: Dictionary<K, V>, rhs: Dictionary<K, V>)
+DictionaryLiteralConvertibleValue.swift
+	public mutating func ensureValueFor(key: Key)
+	public mutating func updateValue(value: Value.Value, forKeyPath keyPath: KeyPath)
+	public mutating func mergeWith(dictionary: Dictionary<Key, Value>)
+        -> Dictionary<Key, Value>
+	public func + <K: Hashable, KK: Hashable, V: Equatable>(lhs: [K: [KK : V]], rhs: [K: [KK : V]])
+    -> [K: [KK: V]]
+	public func += <K: Hashable, KK: Hashable, V: Equatable>(
+    inout lhs: [K: [KK : V]], rhs: [K: [KK : V]]
+)
+	public func == <K: Hashable, KK: Hashable, V: Equatable>(
+	public func != <K: Hashable, KK: Hashable, V: Equatable>(
+    lhs: [K: [KK : V]], rhs: [K: [KK : V]]
+) -> Bool
+	public mutating func ensureValueFor(keyPath: KeyPath)
+	public mutating func safelyAppend(value: Value.Value.Generator.Element,
+        toArrayWithKeyPath keyPath: KeyPath
+    )

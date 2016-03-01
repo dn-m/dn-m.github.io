@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DictionaryTools  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+
+    <a title="DictionaryTools  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          DictionaryTools Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/dn-m/DictionaryTools">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2FDictionaryTools%2Exml">
+            <img class="header-icon" src="img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">DictionaryTools Reference</a>
+      <img class="carat" src="img/carat.png" />
+      DictionaryTools  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/Dictionary.html">Dictionary</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:ZF15DictionaryToolsoi2eeu1_Rq_Ss8Hashableq0_S0_q1_Ss9Equatable_FTGVSs10Dictionaryq_GS2_q0_q1___GS2_q_GS2_q0_q1____Sb">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <a href='#dictionarytools' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='dictionarytools'>DictionaryTools</h1>
+
+<p><a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
+<a href="https://travis-ci.org/dn-m/DictionaryTools"><img src="https://travis-ci.org/dn-m/DictionaryTools.svg?branch=master" alt="Build Status"></a> </p>
+
+<p><a name="integration"></a></p>
+<a href='#integration' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='integration'>Integration</h2>
+<a href='#carthage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='carthage'>Carthage</h3>
+
+<p>Integrate <strong>DictionaryTools</strong> into your OSX or iOS project with <a href="https://github.com/Carthage/Carthage">Carthage</a>.</p>
+
+<ol>
+<li>Follow <a href="https://github.com/Carthage/Carthage#installing-carthage">these instructions</a> to install Carthage, if necessary.</li>
+<li>Add <code>github &quot;dn-m/DictionaryTools&quot;</code> to your <a href="https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile">Cartfile</a></li>
+<li>Follow <a href="https://github.com/Carthage/Carthage#adding-frameworks-to-an-application">these instructions</a> to integrate <strong>DictionaryTools</strong> into your OSX or iOS project.</li>
+</ol>
+
+<hr>
+<a href='#contents' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='contents'>Contents</h2>
+
+<ul>
+<li><a href="#ordered_dictionary">OrderedDictionary</a></li>
+<li><a href="#key_path">KeyPath</a></li>
+<li><a href="#dictionary_extensions">DictionaryExtensions</a></li>
+</ul>
+
+<hr>
+
+<p><a name="ordered_dictionary"></a></p>
+<a href='#ordereddictionary' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='ordereddictionary'>OrderedDictionary</h2>
+
+<p>Best of both worlds of <code>Array</code> and <code>Dictionary</code></p>
+<a href='#associated_types' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='associated_types'>Associated Types</h4>
+
+<ul>
+<li><code>K: Hashable</code></li>
+<li><code>V: Equatable</code></li>
+</ul>
+<a href='#initializers' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='initializers'>Initializers</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Signature</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong><code>default</code></strong></td>
+<td><code>init()</code></td>
+</tr>
+</tbody></table>
+<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='usage'>Usage</h5>
+
+<blockquote>
+<pre class="highlight plaintext"><code>var orderedDict = OrderedDictionary&lt;String, String&gt;()
+</code></pre>
+</blockquote>
+<a href='#instance_methods' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='instance_methods'>Instance Methods</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Signature</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong><code>insertValue</code></strong></td>
+<td><code>mutating func insert(value: V, forKey: K, atIndex: Int)</code></td>
+</tr>
+<tr>
+<td><strong><code>appendValue</code></strong></td>
+<td><code>mutating func append(value: V, forKey: K)</code></td>
+</tr>
+<tr>
+<td><strong><code>appendContentsOfOrderedDictionary</code></strong></td>
+<td><code>mutating func appendContentsOf(</code><br>&nbsp;&nbsp;<code>orderedDictionary: OrderedDictionary&lt;K,V&gt;)</code></td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<pre class="highlight plaintext"><code>orderedDict.insert("value", forKey: "key", atIndex: 0) 
+orderedDict.insert("newValue", forKey: "anotherKey", atIndex: 0) 
+orderedDict.append("newestValue", forKey: "newestKey")
+</code></pre>
+<pre class="highlight plaintext"><code>// ["newKey": "newValue", "key": "value", "newestKey": "newestValue"]
+</code></pre>
+</blockquote>
+<a href='#subscript' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='subscript'>Subscript</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Signature</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong><code>index</code></strong></td>
+<td><code>subscript(index: Int) -&gt; V?</code></td>
+</tr>
+<tr>
+<td><strong><code>key</code></strong></td>
+<td><code>subscript(key: K) -&gt; V?</code></td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p><strong><code>get</code></strong>
+<code>Swift
+orderedDict[&quot;key&quot;] // -&gt; &quot;value&quot;
+orderedDict[0] // -&gt; &quot;newValue&quot;
+</code>
+<strong><code>set</code></strong>
+<code>Swift
+orderedDict[&quot;yetAnotherKey&quot;] = &quot;yetAnotherValue&quot;
+orderedDict[3] // &quot;yetAnotherValue&quot;
+</code></p>
+</blockquote>
+<a href='#instance_variables' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='instance_variables'>Instance Variables</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Signature</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong><code>keys</code></strong></td>
+<td><code>keys: [K]</code></td>
+</tr>
+<tr>
+<td><strong><code>values</code></strong></td>
+<td><code>values: [K:V]</code></td>
+</tr>
+</tbody></table>
+
+<hr>
+
+<p><a name="key_path"></a></p>
+<a href='#keypath' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='keypath'>KeyPath</h2>
+
+<p>Utility for retrieving values for arbitrarily deep, <code>String</code>-keyed <code>Dictionaries</code></p>
+<a href='#instance_variables' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='instance_variables'>Instance Variables</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Signature</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong><code>keys</code></strong></td>
+<td><code>keys: [String]</code></td>
+</tr>
+<tr>
+<td><strong><code>count</code></strong></td>
+<td><code>count: Int</code></td>
+</tr>
+</tbody></table>
+<a href='#initializers' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='initializers'>Initializers</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Signature</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong><code>[String]</code></strong></td>
+<td><code>init(_ keys: [String])</code></td>
+</tr>
+<tr>
+<td><strong><code>String...</code></strong></td>
+<td><code>init(_ keys: String...)</code></td>
+</tr>
+<tr>
+<td><strong><code>String</code></strong></td>
+<td><code>init(_ string: String)</code></td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<pre class="highlight plaintext"><code>let keyPath = KeyPath(["key", "subkey", "subsubkey"])
+let keyPath = KeyPath("key", "subkey", "subsubkey")
+let keyPath = KeyPath("key.subkey.subsubkey")
+</code></pre>
+</blockquote>
+
+<hr>
+
+<p><a name="dictionary_extensions"></a></p>
+<a href='#dictionary_extensions' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='dictionary_extensions'>Dictionary Extensions</h2>
+
+<p>Extensions for the Swift <code>Dictionary</code> struct given value constraints.</p>
+<a href='#code_extension_code_a_href_http_swiftdoc_org_v2_1_type_dictionary_strong_code_dictionary_code_strong_a_code_where_value_code_a_href_http_swiftdoc_org_v2_0_protocol_arraytype_strong_code_arraytype_code_strong_a' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='code_extension_code_a_href_http_swiftdoc_org_v2_1_type_dictionary_strong_code_dictionary_code_strong_a_code_where_value_code_a_href_http_swiftdoc_org_v2_0_protocol_arraytype_strong_code_arraytype_code_strong_a'><code>extension</code> <a href="http://swiftdoc.org/v2.1/type/Dictionary/"><strong><code>Dictionary</code></strong></a> <code>where Value:</code> <a href="http://swiftdoc.org/v2.0/protocol/_ArrayType/"><strong><code>_ArrayType</code></strong></a></h4>
+
+<p>Extensions for <code>Dictionary</code> with structure: <code>[Hashable: [Any]]</code></p>
+<a href='#instance_methods' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='instance_methods'>Instance Methods</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Signature</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong><code>ensureValueForKey</code></strong></td>
+<td><code>mutating func ensureValueFor(key: Key)</code></td>
+</tr>
+<tr>
+<td><strong><code>safelyAppendValue</code></strong></td>
+<td><code>mutating func safelyAppend(</code><br>&nbsp;&nbsp;<code>value: Value.Generator.Element, toArrayWithKey: Key)</code></td>
+</tr>
+<tr>
+<td><strong><code>safelyAppendContentsOfOrderedDictionary</code></strong></td>
+<td><code>mutating func safelyAppendContentsOf(</code><br>&nbsp;&nbsp;<code>values: Value, toArrayWithKey: Key)</code></td>
+</tr>
+</tbody></table>
+<a href='#code_extension_code_a_href_http_swiftdoc_org_v2_1_type_dictionary_strong_code_dictionary_code_strong_a_code_where_code_br_nbsp_nbsp_code_value_code_a_href_http_swiftdoc_org_v2_0_protocol_arraytype_strong_code_arraytype_code_strong_a_br_nbsp_nbsp_code_value_generator_element_code_a_href_http_swiftdoc_org_v2_1_protocol_equatable_strong_code_equatable_code_strong_a' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='code_extension_code_a_href_http_swiftdoc_org_v2_1_type_dictionary_strong_code_dictionary_code_strong_a_code_where_code_br_nbsp_nbsp_code_value_code_a_href_http_swiftdoc_org_v2_0_protocol_arraytype_strong_code_arraytype_code_strong_a_br_nbsp_nbsp_code_value_generator_element_code_a_href_http_swiftdoc_org_v2_1_protocol_equatable_strong_code_equatable_code_strong_a'><code>extension</code> <a href="http://swiftdoc.org/v2.1/type/Dictionary/"><strong><code>Dictionary</code></strong></a> <code>where</code> <br>&nbsp;&nbsp;<code>Value:</code> <a href="http://swiftdoc.org/v2.0/protocol/_ArrayType/"><strong><code>_ArrayType</code></strong></a>, <br>&nbsp;&nbsp;<code>Value.Generator.Element:</code> <a href="http://swiftdoc.org/v2.1/protocol/Equatable/"><strong><code>Equatable</code></strong></a></h4>
+
+<p>Extensions for <code>Dictionary</code> with structure: <code>[Hashable: [Equatable]]</code></p>
+<a href='#instance_methods' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='instance_methods'>Instance Methods</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Signature</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong><code>safelyAndUniquelyAppendValue</code></strong></td>
+<td><code>mutating func safelyAndUniquelyAppend(</code><br>&nbsp;&nbsp;<code>value: Value.Generator.Element, toArrayWithKey key: Key)</code></td>
+</tr>
+</tbody></table>
+<a href='#code_extension_code_a_href_http_swiftdoc_org_v2_1_type_dictionary_strong_code_dictionary_code_strong_a_code_where_code_br_nbsp_nbsp_code_key_code_a_href_http_swiftdoc_org_v2_1_protocol_hashable_strong_code_hashable_code_strong_a_br_nbsp_nbsp_code_value_code_a_href_http_swiftdoc_org_v2_1_protocol_dictionaryliteralconvertible_strong_code_dictionaryliteralconvertible_code_strong_a_br_nbsp_nbsp_code_value_key_code_a_href_http_swiftdoc_org_v2_1_protocol_hashable_strong_code_hashable_code_strong_a_br_nbsp_nbsp_code_value_value_any_code' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='code_extension_code_a_href_http_swiftdoc_org_v2_1_type_dictionary_strong_code_dictionary_code_strong_a_code_where_code_br_nbsp_nbsp_code_key_code_a_href_http_swiftdoc_org_v2_1_protocol_hashable_strong_code_hashable_code_strong_a_br_nbsp_nbsp_code_value_code_a_href_http_swiftdoc_org_v2_1_protocol_dictionaryliteralconvertible_strong_code_dictionaryliteralconvertible_code_strong_a_br_nbsp_nbsp_code_value_key_code_a_href_http_swiftdoc_org_v2_1_protocol_hashable_strong_code_hashable_code_strong_a_br_nbsp_nbsp_code_value_value_any_code'><code>extension</code> <a href="http://swiftdoc.org/v2.1/type/Dictionary/"><strong><code>Dictionary</code></strong></a> <code>where</code><br>&nbsp;&nbsp;<code>Key:</code> <a href="http://swiftdoc.org/v2.1/protocol/Hashable/"><strong><code>Hashable</code></strong></a>,<br>&nbsp;&nbsp;<code>Value:</code> <a href="http://swiftdoc.org/v2.1/protocol/DictionaryLiteralConvertible/"><strong><code>DictionaryLiteralConvertible</code></strong></a>,<br>&nbsp;&nbsp;<code>Value.Key:</code> <a href="http://swiftdoc.org/v2.1/protocol/Hashable/"><strong><code>Hashable</code></strong></a>,<br>&nbsp;&nbsp;<code>Value.Value: Any</code></h4>
+
+<p>Extensions for <code>Dictionary</code> with structure: <code>[Hashable: [Hashable: Any]]</code></p>
+<a href='#instance_methods' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='instance_methods'>Instance Methods</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Signature</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong><code>updateValue</code></strong></td>
+<td><code>mutating func updateValue(value: Value.Value, forKeyPath keyPath: KeyPath)</code></td>
+</tr>
+<tr>
+<td><strong><code>mergeWithDictionary</code></strong></td>
+<td><code>mutating func mergeWith(dictionary: Dictionary&lt;Key, Value&gt;)</code></td>
+</tr>
+</tbody></table>
+<a href='#code_extension_code_a_href_http_swiftdoc_org_v2_1_type_dictionary_strong_code_dictionary_code_strong_a_code_where_code_br_nbsp_nbsp_code_key_code_a_href_http_swiftdoc_org_v2_1_protocol_hashable_strong_code_hashable_code_strong_a_br_nbsp_nbsp_code_value_code_a_href_http_swiftdoc_org_v2_1_protocol_dictionaryliteralconvertible_strong_code_dictionaryliteralconvertible_code_strong_a_br_nbsp_nbsp_code_value_key_code_a_href_http_swiftdoc_org_v2_1_protocol_hashable_strong_code_hashable_code_strong_a_br_nbsp_nbsp_code_value_value_code_a_href_http_swiftdoc_org_v2_0_protocol_arraytype_strong_code_arraytype_code_strong_a' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='code_extension_code_a_href_http_swiftdoc_org_v2_1_type_dictionary_strong_code_dictionary_code_strong_a_code_where_code_br_nbsp_nbsp_code_key_code_a_href_http_swiftdoc_org_v2_1_protocol_hashable_strong_code_hashable_code_strong_a_br_nbsp_nbsp_code_value_code_a_href_http_swiftdoc_org_v2_1_protocol_dictionaryliteralconvertible_strong_code_dictionaryliteralconvertible_code_strong_a_br_nbsp_nbsp_code_value_key_code_a_href_http_swiftdoc_org_v2_1_protocol_hashable_strong_code_hashable_code_strong_a_br_nbsp_nbsp_code_value_value_code_a_href_http_swiftdoc_org_v2_0_protocol_arraytype_strong_code_arraytype_code_strong_a'><code>extension</code> <a href="http://swiftdoc.org/v2.1/type/Dictionary/"><strong><code>Dictionary</code></strong></a> <code>where</code><br>&nbsp;&nbsp;<code>Key:</code> <a href="http://swiftdoc.org/v2.1/protocol/Hashable/"><strong><code>Hashable</code></strong></a>,<br>&nbsp;&nbsp;<code>Value:</code>   <a href="http://swiftdoc.org/v2.1/protocol/DictionaryLiteralConvertible/"><strong><code>DictionaryLiteralConvertible</code></strong></a>,<br>&nbsp;&nbsp;<code>Value.Key:</code> <a href="http://swiftdoc.org/v2.1/protocol/Hashable/"><strong><code>Hashable</code></strong></a>,<br>&nbsp;&nbsp;<code>Value.Value:</code>  <a href="http://swiftdoc.org/v2.0/protocol/_ArrayType/"><strong><code>_ArrayType</code></strong></a></h4>
+
+<p>Extensions for <code>Dictionary</code> with structure: <code>[Hashable: [Hashable: [Any]]]</code>.</p>
+<a href='#instance_methods' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='instance_methods'>Instance Methods</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Signature</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong><code>ensureValueForKeyPath</code></strong></td>
+<td><code>func ensureValueFor(keyPath: KeyPath)</code></td>
+</tr>
+<tr>
+<td><strong><code>safelyAppendValue</code></strong></td>
+<td><code>safelyAppend(value: Value.Value.Generator.Element, toArrayWithKeyPath keyPath: KeyPath)</code></td>
+</tr>
+</tbody></table>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James</a>. All rights reserved. (Last updated: 2016-02-29)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
