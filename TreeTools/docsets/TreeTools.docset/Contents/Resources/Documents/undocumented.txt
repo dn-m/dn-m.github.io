@@ -1,5 +1,3 @@
-TreeError.swift
-	public enum TreeError: ErrorType
 NodePositionContainer.swift
 	case SingleInContainer
 	case FirstInContainer

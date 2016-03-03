@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Enums  Reference</title>
-    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
-    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <title>TreeError Enum Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
-    <script src="js/jquery.min.js" defer></script>
-    <script src="js/jazzy.js" defer></script>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
     
   </head>
   <body>
 
+    <a name="//apple_ref/swift/Enum/TreeError" class="dashAnchor"></a>
 
-    <a title="Enums  Reference"></a>
+    <a title="TreeError Enum Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
-        <a class="header-link" href="index.html">
+        <a class="header-link" href="../index.html">
           TreeTools Docs
         </a>
         
@@ -24,47 +25,47 @@
     
         <p class="header-col header-col--secondary">
           <a class="header-link" href="https://github.com/dn-m/TreeTools">
-            <img class="header-icon" src="img/gh.png"/>
+            <img class="header-icon" src="../img/gh.png"/>
             View on GitHub
           </a>
         </p>
     
         <p class="header-col header-col--secondary">
           <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2FTreeTools%2Exml">
-            <img class="header-icon" src="img/dash.png"/>
+            <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
         </p>
     </header>
 
     <p class="breadcrumbs">
-      <a class="breadcrumb" href="index.html">TreeTools Reference</a>
-      <img class="carat" src="img/carat.png" />
-      Enums  Reference
+      <a class="breadcrumb" href="../index.html">TreeTools Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      TreeError Enum Reference
     </p>
 
     <div class="content-wrapper">
       <nav class="navigation">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/Node.html">Node</a>
+                <a class="nav-group-task-link" href="../Classes/Node.html">Node</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Enums.html">Enums</a>
+            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums.html#/s:O9TreeTools21NodePositionContainer">NodePositionContainer</a>
+                <a class="nav-group-task-link" href="../Enums.html#/s:O9TreeTools21NodePositionContainer">NodePositionContainer</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums.html#/s:O9TreeTools16NodePositionTree">NodePositionTree</a>
+                <a class="nav-group-task-link" href="../Enums.html#/s:O9TreeTools16NodePositionTree">NodePositionTree</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/TreeError.html">TreeError</a>
+                <a class="nav-group-task-link" href="../Enums/TreeError.html">TreeError</a>
               </li>
             </ul>
           </li>
@@ -74,8 +75,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Enums</h1>
-            <p>The following enums are available globally.</p>
+            <h1>TreeError</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">TreeError</span><span class="p">:</span> <span class="kt">ErrorType</span></code></pre>
+
+                </div>
+              </div>
+            <p>Errors thrown when trying to do bad things to a Tree.</p>
 
           </div>
         </section>
@@ -87,9 +94,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:O9TreeTools9TreeError"></a>
-                    <a name="//apple_ref/swift/Enum/TreeError" class="dashAnchor"></a>
-                    <a class="token" href="#/s:O9TreeTools9TreeError">TreeError</a>
+                    <a name="/s:FO9TreeTools9TreeError14InsertionErrorFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/InsertionError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO9TreeTools9TreeError14InsertionErrorFMS0_S0_">InsertionError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -97,15 +104,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Errors thrown when trying to do bad things to a Tree.</p>
+                        <p>Error thrown when trying to insert a Node at an invalid index</p>
 
-                        <a href="Enums/TreeError.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">TreeError</span><span class="p">:</span> <span class="kt">ErrorType</span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">InsertionError</span></code></pre>
 
                         </div>
                       </div>
@@ -119,9 +125,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:O9TreeTools21NodePositionContainer"></a>
-                    <a name="//apple_ref/swift/Enum/NodePositionContainer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:O9TreeTools21NodePositionContainer">NodePositionContainer</a>
+                    <a name="/s:FO9TreeTools9TreeError12RemovalErrorFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/RemovalError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO9TreeTools9TreeError12RemovalErrorFMS0_S0_">RemovalError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -129,21 +135,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Position of a Node in the context of a Container Node</p>
-
-<ul>
-<li>SingleInContainer: Node is the only Node in a Container</li>
-<li>FirstInContainer:  Node is the first child of a Container</li>
-<li>MiddleInContainer: Node is somewhere in the middle of a Container</li>
-<li>LastInContainer:   Node is the last child of a Container</li>
-</ul>
+                        <p>Error thrown when trying to remove a Node from an invalid index</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">NodePositionContainer</span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">RemovalError</span></code></pre>
 
                         </div>
                       </div>
@@ -157,9 +156,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:O9TreeTools16NodePositionTree"></a>
-                    <a name="//apple_ref/swift/Enum/NodePositionTree" class="dashAnchor"></a>
-                    <a class="token" href="#/s:O9TreeTools16NodePositionTree">NodePositionTree</a>
+                    <a name="/s:FO9TreeTools9TreeError12NodeNotFoundFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/NodeNotFound" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO9TreeTools9TreeError12NodeNotFoundFMS0_S0_">NodeNotFound</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -167,21 +166,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Position of a Node in the context of a Tree.</p>
-
-<ul>
-<li>SingleInTree: Node is the only Node in a Tree</li>
-<li>FirstInTree:  Node is the first Leaf of a Tree</li>
-<li>MiddleInTree: Node is somewhere in the middle of a Tree</li>
-<li>LastInTree:   Node is the last Leaf of a Tree</li>
-</ul>
+                        <p>Error thrown when trying to insert a Node at an invalid index</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">NodePositionTree</span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">NodeNotFound</span></code></pre>
 
                         </div>
                       </div>
