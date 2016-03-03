@@ -1,10 +1,11 @@
+TreeError.swift
+	public enum TreeError: ErrorType
 NodePositionContainer.swift
 	public enum NodePositionContainer
 NodePositionTree.swift
 	public enum NodePositionTree
 Node.swift
-	public var positionInTree: NodePositionTree? { get { return getPositionInTree() } }
-	public var positionInContainer: NodePositionContainer?
+	public func removeChildAt(index: Int) throws
 	public func leafAt(index: Int) -> Node?
 	public func == (lhs: Node, rhs: Node) -> Bool
 	public var description: String
