@@ -1,9 +1,4 @@
 ArithmeticType.swift
-	static func + (augend: Self, addend: Self) -> Self
-	static func - (minuend: Self, subtrahend: Self) -> Self
-	static func * (multiplicand: Self, multiplier: Self) -> Self
-	static func / (dividend: Self, divisor: Self) -> Self
-	static func mod (dividend: Self, _ modulus: Self) -> Self
 	static func abs(value: Self) -> Self
 	var isInteger: Bool { get }
 	var isPrime: Bool { get }
