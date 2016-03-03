@@ -88,7 +88,7 @@
             <a class="nav-group-name-link" href="Functions.html">Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:F15ArithmeticTools8closerTouRq_S_14ArithmeticType_FTq_1aq_1bq__q_">closerTo(_:a:b:)</a>
+                <a class="nav-group-task-link" href="Functions.html#/s:F15ArithmeticTools8closerTouRq_S_14ArithmeticType_FT6targetq_1aq_1bq__q_">closerTo(target:a:b:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:F15ArithmeticTools19closestPowerOfTwoTouRq_S_14ArithmeticType_Fq_GSqq__">closestPowerOfTwoTo(_:)</a>
@@ -139,6 +139,10 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Get the greatest common divisor of two values.</p>
+
+<blockquote>
+<p><code>greatestCommonDivisor(12,16) -&gt; 4</code></p>
+</blockquote>
 
                       </div>
                       <div class="declaration">
@@ -193,9 +197,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:F15ArithmeticTools8closerTouRq_S_14ArithmeticType_FTq_1aq_1bq__q_"></a>
-                    <a name="//apple_ref/swift/Function/closerTo(_:a:b:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:F15ArithmeticTools8closerTouRq_S_14ArithmeticType_FTq_1aq_1bq__q_">closerTo(_:a:b:)</a>
+                    <a name="/s:F15ArithmeticTools8closerTouRq_S_14ArithmeticType_FT6targetq_1aq_1bq__q_"></a>
+                    <a name="//apple_ref/swift/Function/closerTo(target:a:b:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F15ArithmeticTools8closerTouRq_S_14ArithmeticType_FT6targetq_1aq_1bq__q_">closerTo(target:a:b:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -205,19 +209,27 @@
                       <div class="abstract">
                         <p>Get the closer of two values to a target value.</p>
 
+<blockquote>
+<p><code>closerTo(target: 11, a: 12, b: 3) -&gt; 12</code></p>
+</blockquote>
+
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
-    <p>If the distances between both values and the target value are equivalent, the first
-value (a) is returned.</p>
+    If the distances between both values and the target value are equivalent, the first
+value (a) is returned.
 
 </div>
+
+<blockquote>
+<p><code>closerTo(target: 6, a: 4, b: 8) -&gt; 4</code></p>
+</blockquote>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">closerTo</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">ArithmeticType</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">target</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">closerTo</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">ArithmeticType</span><span class="o">&gt;</span><span class="p">(</span><span class="n">target</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
 
                         </div>
                       </div>
