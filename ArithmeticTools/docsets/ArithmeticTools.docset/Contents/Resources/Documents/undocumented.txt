@@ -1,5 +1,4 @@
 ArithmeticType.swift
-	static func abs(value: Self) -> Self
 	func format(f: String) -> String
 	public static func mod(dividend: Int, _ modulus: Int) -> Int
 	public static func random(min min: Int = 0, var max: Int = Int.max) -> Int
