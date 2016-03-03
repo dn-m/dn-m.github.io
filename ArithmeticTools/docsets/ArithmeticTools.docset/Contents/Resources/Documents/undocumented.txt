@@ -1,10 +1,5 @@
 ArithmeticType.swift
 	static func abs(value: Self) -> Self
-	var isInteger: Bool { get }
-	var isPrime: Bool { get }
-	var isEven: Bool { get }
-	var isOdd: Bool { get }
-	var isPowerOfTwo: Bool { get }
 	func format(f: String) -> String
 	public static func mod(dividend: Int, _ modulus: Int) -> Int
 	public static func random(min min: Int = 0, var max: Int = Int.max) -> Int
