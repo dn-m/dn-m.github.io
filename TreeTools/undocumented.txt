@@ -1,4 +1,8 @@
 Node.swift
+	public enum Position { case Only, First, Middle, Last }
+	public enum Position { case Only, First, Middle, Last }
+	public enum Position { case Only, First, Middle, Last }
+	public enum Position { case Only, First, Middle, Last }
 	public func removeChildAt(index: Int) throws
 	public func leafAt(index: Int) -> Node?
 	public func == (lhs: Node, rhs: Node) -> Bool
