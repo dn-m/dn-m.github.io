@@ -3,7 +3,3 @@ Node.swift
 	public func leafAt(index: Int) -> Node?
 	public func == (lhs: Node, rhs: Node) -> Bool
 	public var description: String
-	public enum Position { case Only, First, Middle, Last }
-	public enum Position { case Only, First, Middle, Last }
-	public enum Position { case Only, First, Middle, Last }
-	public enum Position { case Only, First, Middle, Last }
