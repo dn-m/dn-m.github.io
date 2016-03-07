@@ -85,37 +85,6 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:OC9TreeTools4Node8Position"></a>
-                    <a name="//apple_ref/swift/Enum/Position" class="dashAnchor"></a>
-                    <a class="token" href="#/s:OC9TreeTools4Node8Position">Position</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Position of Node in a context (e.g., either an entire Tree, or an internal Node).</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Position</span> <span class="p">{</span> <span class="k">case</span> <span class="kt">Only</span><span class="p">,</span> <span class="kt">First</span><span class="p">,</span> <span class="kt">Middle</span><span class="p">,</span> <span class="kt">Last</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
               <div class="task-name-container">
                 <a name="/Instance%20Properties"></a>
                 <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
@@ -523,60 +492,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">depth</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="nf">getDepth</span><span class="p">()</span> <span class="p">}</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC9TreeTools4Node14positionInTreeGSqOS0_8Position_"></a>
-                    <a name="//apple_ref/swift/Property/positionInTree" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC9TreeTools4Node14positionInTreeGSqOS0_8Position_">positionInTree</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><code>NodePositionTree</code> of Node</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">positionInTree</span><span class="p">:</span> <span class="kt">Position</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="nf">getPositionInTree</span><span class="p">()</span> <span class="p">}</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC9TreeTools4Node19positionInContainerGSqOS0_8Position_"></a>
-                    <a name="//apple_ref/swift/Property/positionInContainer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC9TreeTools4Node19positionInContainerGSqOS0_8Position_">positionInContainer</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><code>NodePositionContainer</code> of Node</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">positionInContainer</span><span class="p">:</span> <span class="kt">Position</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1099,6 +1014,91 @@
                         <h4>Return Value</h4>
                         <p>child Node residing at index, if it exists</p>
 
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC9TreeTools4Node8Position"></a>
+                    <a name="//apple_ref/swift/Enum/Position" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC9TreeTools4Node8Position">Position</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Position of Node in a context (e.g., either an entire Tree, or an internal Node).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Position</span> <span class="p">{</span> <span class="k">case</span> <span class="kt">Only</span><span class="p">,</span> <span class="kt">First</span><span class="p">,</span> <span class="kt">Middle</span><span class="p">,</span> <span class="kt">Last</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC9TreeTools4Node14positionInTreeGSqOS0_8Position_"></a>
+                    <a name="//apple_ref/swift/Property/positionInTree" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC9TreeTools4Node14positionInTreeGSqOS0_8Position_">positionInTree</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../Classes/Node.html#/s:OC9TreeTools4Node8Position">Position</a></code> of Node in context of its containing Tree.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">positionInTree</span><span class="p">:</span> <span class="kt">Position</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="nf">getPositionInTree</span><span class="p">()</span> <span class="p">}</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC9TreeTools4Node19positionInContainerGSqOS0_8Position_"></a>
+                    <a name="//apple_ref/swift/Property/positionInContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC9TreeTools4Node19positionInContainerGSqOS0_8Position_">positionInContainer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../Classes/Node.html#/s:OC9TreeTools4Node8Position">Position</a></code> of Node in context of its containing internal Node.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">positionInContainer</span><span class="p">:</span> <span class="kt">Position</span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
