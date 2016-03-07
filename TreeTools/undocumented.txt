@@ -1,13 +1,3 @@
-NodePositionContainer.swift
-	case SingleInContainer
-	case FirstInContainer
-	case MiddleInContainer
-	case LastInContainer
-NodePositionTree.swift
-	case SingleInTree
-	case FirstInTree
-	case MiddleInTree
-	case LastInTree
 Node.swift
 	public func removeChildAt(index: Int) throws
 	public func leafAt(index: Int) -> Node?

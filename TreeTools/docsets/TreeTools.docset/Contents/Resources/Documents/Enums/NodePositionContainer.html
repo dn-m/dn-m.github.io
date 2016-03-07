@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>TreeError Enum Reference</title>
+    <title>NodePositionContainer Enum Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Enum/TreeError" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Enum/NodePositionContainer" class="dashAnchor"></a>
 
-    <a title="TreeError Enum Reference"></a>
+    <a title="NodePositionContainer Enum Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -41,7 +41,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">TreeTools Reference</a>
       <img class="carat" src="../img/carat.png" />
-      TreeError Enum Reference
+      NodePositionContainer Enum Reference
     </p>
 
     <div class="content-wrapper">
@@ -75,14 +75,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>TreeError</h1>
+            <h1>NodePositionContainer</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">TreeError</span><span class="p">:</span> <span class="kt">ErrorType</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">NodePositionContainer</span></code></pre>
 
                 </div>
               </div>
-            <p>Errors thrown when trying to do bad things to a Tree.</p>
+            <p>Position of a Node in the context of a Container Node.</p>
 
           </div>
         </section>
@@ -94,9 +94,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FO9TreeTools9TreeError14InsertionErrorFMS0_S0_"></a>
-                    <a name="//apple_ref/swift/Element/InsertionError" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FO9TreeTools9TreeError14InsertionErrorFMS0_S0_">InsertionError</a>
+                    <a name="/s:FO9TreeTools21NodePositionContainer17SingleInContainerFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/SingleInContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO9TreeTools21NodePositionContainer17SingleInContainerFMS0_S0_">SingleInContainer</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -104,14 +104,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Error thrown when trying to insert a Node at an invalid index</p>
+                        <p>Node is the only Node in a Container</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">InsertionError</span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">SingleInContainer</span></code></pre>
 
                         </div>
                       </div>
@@ -125,9 +125,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FO9TreeTools9TreeError12RemovalErrorFMS0_S0_"></a>
-                    <a name="//apple_ref/swift/Element/RemovalError" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FO9TreeTools9TreeError12RemovalErrorFMS0_S0_">RemovalError</a>
+                    <a name="/s:FO9TreeTools21NodePositionContainer16FirstInContainerFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/FirstInContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO9TreeTools21NodePositionContainer16FirstInContainerFMS0_S0_">FirstInContainer</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -135,14 +135,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Error thrown when trying to remove a Node from an invalid index</p>
+                        <p>Node is the first child of a Container</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">RemovalError</span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">FirstInContainer</span></code></pre>
 
                         </div>
                       </div>
@@ -156,9 +156,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FO9TreeTools9TreeError12NodeNotFoundFMS0_S0_"></a>
-                    <a name="//apple_ref/swift/Element/NodeNotFound" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FO9TreeTools9TreeError12NodeNotFoundFMS0_S0_">NodeNotFound</a>
+                    <a name="/s:FO9TreeTools21NodePositionContainer17MiddleInContainerFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/MiddleInContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO9TreeTools21NodePositionContainer17MiddleInContainerFMS0_S0_">MiddleInContainer</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -166,14 +166,45 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Error thrown when trying to insert a Node at an invalid index</p>
+                        <p>Node is somewhere in the middle of a Container</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">NodeNotFound</span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">MiddleInContainer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO9TreeTools21NodePositionContainer15LastInContainerFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/LastInContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO9TreeTools21NodePositionContainer15LastInContainerFMS0_S0_">LastInContainer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Node is the last child of a Container</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">LastInContainer</span></code></pre>
 
                         </div>
                       </div>
