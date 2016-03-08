@@ -94,7 +94,13 @@
                 <a class="nav-group-task-link" href="Functions.html#/s:F15ArithmeticTools19closestPowerOfTwoTouRq_S_14ArithmeticType_Fq_GSqq__">closestPowerOfTwoTo(_:)</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:F15ArithmeticTools21closestPowerOfTwoWithuRq_S_14ArithmeticType_FT11coefficientq_8toTargetq__GSqq__">closestPowerOfTwoWith(coefficient:toTarget:)</a>
+                <a class="nav-group-task-link" href="Functions.html#/s:F15ArithmeticTools22closestPowerOfTwoUnderuRq_S_14ArithmeticType_Fq_GSqq__">closestPowerOfTwoUnder(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:F15ArithmeticTools21closestPowerOfTwoWithuRq_S_14ArithmeticType_FT11coefficientq_2toq__GSqq__">closestPowerOfTwoWith(coefficient:to:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:F15ArithmeticTools21closestPowerOfTwoWithuRq_S_14ArithmeticType_FT11coefficientq_5underq__GSqq__">closestPowerOfTwoWith(coefficient:under:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:F15ArithmeticTools21greatestCommonDivisoruRq_S_14ArithmeticType_FTq_q__q_">greatestCommonDivisor(_:_:)</a>
@@ -360,9 +366,61 @@ value (a) is returned.
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:F15ArithmeticTools21closestPowerOfTwoWithuRq_S_14ArithmeticType_FT11coefficientq_8toTargetq__GSqq__"></a>
-                    <a name="//apple_ref/swift/Function/closestPowerOfTwoWith(coefficient:toTarget:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:F15ArithmeticTools21closestPowerOfTwoWithuRq_S_14ArithmeticType_FT11coefficientq_8toTargetq__GSqq__">closestPowerOfTwoWith(coefficient:toTarget:)</a>
+                    <a name="/s:F15ArithmeticTools22closestPowerOfTwoUnderuRq_S_14ArithmeticType_Fq_GSqq__"></a>
+                    <a name="//apple_ref/swift/Function/closestPowerOfTwoUnder(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F15ArithmeticTools22closestPowerOfTwoUnderuRq_S_14ArithmeticType_Fq_GSqq__">closestPowerOfTwoUnder(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get power-of-two value that is closest to and less than a target value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">closestPowerOfTwoUnder</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">ArithmeticType</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">target</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Value to check for closest to and less than power-of-two</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Power-of-two value closest to and lesser target alue</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F15ArithmeticTools21closestPowerOfTwoWithuRq_S_14ArithmeticType_FT11coefficientq_2toq__GSqq__"></a>
+                    <a name="//apple_ref/swift/Function/closestPowerOfTwoWith(coefficient:to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F15ArithmeticTools21closestPowerOfTwoWithuRq_S_14ArithmeticType_FT11coefficientq_2toq__GSqq__">closestPowerOfTwoWith(coefficient:to:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -391,8 +449,8 @@ value (a) is returned.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">closestPowerOfTwoWith</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">ArithmeticType</span><span class="o">&gt;</span><span class="p">(</span>
-    <span class="n">coefficient</span> <span class="nv">coefficient</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="n">toTarget</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">T</span>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">closestPowerOfTwoWith</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">ArithmeticType</span><span class="o">&gt;</span><span class="p">(</span><span class="n">coefficient</span> <span class="nv">coefficient</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span>
+    <span class="n">to</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">T</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
 
                         </div>
@@ -438,6 +496,73 @@ value (a) is returned.
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F15ArithmeticTools21closestPowerOfTwoWithuRq_S_14ArithmeticType_FT11coefficientq_5underq__GSqq__"></a>
+                    <a name="//apple_ref/swift/Function/closestPowerOfTwoWith(coefficient:under:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F15ArithmeticTools21closestPowerOfTwoWithuRq_S_14ArithmeticType_FT11coefficientq_5underq__GSqq__">closestPowerOfTwoWith(coefficient:under:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get power-of-two value (with coefficient) that is closest to and less than a target value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">closestPowerOfTwoWith</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">ArithmeticType</span><span class="o">&gt;</span><span class="p">(</span><span class="n">coefficient</span> <span class="nv">coefficient</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span>
+    <span class="n">under</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">T</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>coefficient</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Coefficient</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Value to check for closest and lesser power-of-two</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Power-of-two (with coefficient) closest to and less than target value</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -446,7 +571,7 @@ value (a) is returned.
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James</a>. All rights reserved. (Last updated: 2016-03-03)</p>
+      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James</a>. All rights reserved. (Last updated: 2016-03-08)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

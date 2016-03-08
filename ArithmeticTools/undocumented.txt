@@ -1,4 +1,5 @@
 ArithmeticType.swift
+	func isDivisibleBy(value: Self) -> Bool
 	func format(f: String) -> String
 	public static func mod(dividend: Int, _ modulus: Int) -> Int
 	public static func random(min min: Int = 0, var max: Int = Int.max) -> Int
@@ -8,6 +9,7 @@ ArithmeticType.swift
 	public var isEven: Bool { return self % 2 == 0 }
 	public var isOdd: Bool { return self % 2 != 0 }
 	public var isPowerOfTwo: Bool { return self != 0 && (self & (self - 1) == 0) }
+	public func isDivisibleBy(value: Int) -> Bool { return self % value == 0 }
 	public func format(f: String) -> String { return String(format(f), self) }
 	public static func mod(dividend: Int8, _ modulus: Int8) -> Int8
 	public static func random(min min: Int8 = Int8.min, max: Int8 = Int8.max) -> Int8
@@ -17,6 +19,7 @@ ArithmeticType.swift
 	public var isEven: Bool { return Int(self).isEven }
 	public var isOdd: Bool { return Int(self).isOdd }
 	public var isPowerOfTwo: Bool { return Int(self).isPowerOfTwo }
+	public func isDivisibleBy(value: Int8) -> Bool
 	public func format(f: String) -> String { return String(format(f), self) }
 	public static func mod(dividend: UInt8, _ modulus: UInt8) -> UInt8
 	public static func random(min min: UInt8 = UInt8.min, max: UInt8 = UInt8.max) -> UInt8
@@ -26,6 +29,7 @@ ArithmeticType.swift
 	public var isEven: Bool { return Int(self).isEven }
 	public var isOdd: Bool { return Int(self).isOdd }
 	public var isPowerOfTwo: Bool { return Int(self).isPowerOfTwo }
+	public func isDivisibleBy(value: UInt8) -> Bool
 	public func format(f: String) -> String { return String(format(f), self) }
 	public static func mod(dividend: Int16, _ modulus: Int16) -> Int16
 	public static func random(min min: Int16 = Int16.min, max: Int16 = Int16.max) -> Int16
@@ -35,6 +39,7 @@ ArithmeticType.swift
 	public var isEven: Bool { return Int(self).isEven }
 	public var isOdd: Bool { return Int(self).isOdd }
 	public var isPowerOfTwo: Bool { return Int(self).isPowerOfTwo }
+	public func isDivisibleBy(value: Int16) -> Bool
 	public func format(f: String) -> String { return String(format(f), self) }
 	public static func mod(dividend: UInt16, _ modulus: UInt16) -> UInt16
 	public static func random(min min: UInt16 = UInt16.min, max: UInt16 = UInt16.max) -> UInt16
@@ -44,6 +49,7 @@ ArithmeticType.swift
 	public var isEven: Bool { return Int(self).isEven }
 	public var isOdd: Bool { return Int(self).isOdd }
 	public var isPowerOfTwo: Bool { return Int(self).isPowerOfTwo }
+	public func isDivisibleBy(value: UInt16) -> Bool
 	public func format(f: String) -> String { return String(format(f), self) }
 	public static func mod(dividend: Int32, _ modulus: Int32) -> Int32
 	public static func random(min min: Int32 = Int32.min, max: Int32 = Int32.max) -> Int32
@@ -53,6 +59,7 @@ ArithmeticType.swift
 	public var isEven: Bool { return Int(self).isEven }
 	public var isOdd: Bool { return Int(self).isOdd }
 	public var isPowerOfTwo: Bool { return Int(self).isPowerOfTwo }
+	public func isDivisibleBy(value: Int32) -> Bool
 	public func format(f: String) -> String { return String(format(f), self) }
 	public static func mod(dividend: UInt32, _ modulus: UInt32) -> UInt32
 	public static func random(min min: UInt32 = UInt32.min, max: UInt32 = UInt32.max) -> UInt32
@@ -62,6 +69,7 @@ ArithmeticType.swift
 	public var isEven: Bool { return Int(self).isEven }
 	public var isOdd: Bool { return Int(self).isOdd }
 	public var isPowerOfTwo: Bool { return Int(self).isPowerOfTwo }
+	public func isDivisibleBy(value: UInt32) -> Bool
 	public func format(f: String) -> String { return String(format(f), self) }
 	public static func mod(dividend: Int64, _ modulus: Int64) -> Int64
 	public static func random(min min: Int64 = Int64.min, max: Int64 = Int64.max) -> Int64
@@ -71,6 +79,7 @@ ArithmeticType.swift
 	public var isEven: Bool { return Int(self).isEven }
 	public var isOdd: Bool { return Int(self).isOdd }
 	public var isPowerOfTwo: Bool { return Int(self).isPowerOfTwo }
+	public func isDivisibleBy(value: Int64) -> Bool
 	public func format(f: String) -> String { return String(format(f), self) }
 	public static func mod(dividend: UInt64, _ modulus: UInt64) -> UInt64
 	public static func random(min min: UInt64 = UInt64.min, max: UInt64 = UInt64.max) -> UInt64
@@ -80,4 +89,5 @@ ArithmeticType.swift
 	public var isEven: Bool { return Int(self).isEven }
 	public var isOdd: Bool { return Int(self).isOdd }
 	public var isPowerOfTwo: Bool { return Int(self).isPowerOfTwo }
+	public func isDivisibleBy(value: UInt64) -> Bool
 	public func format(f: String) -> String { return String(format(f), self) }
