@@ -1,6 +1,5 @@
 MetricalDuration.swift
 	public var isReduced: Bool { return beats.amount.isOdd }
-	public func reduce() -> MetricalDuration
 	public func respellWith(beats: Beats) -> MetricalDuration?
 	public func respellWith(subdivision: Subdivision) -> MetricalDuration?
 	public var description: String
