@@ -54,13 +54,19 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:ZF10MusicModeloi1lFTVS_5BeatsS0__Sb">&lt;(_:_:)</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:ZF10MusicModeloi1lFTVS_16MetricalDurationS0__Sb">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:ZF10MusicModeloi1lFTVS_11SubdivisionS0__Sb">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:ZF10MusicModeloi2eeFTVS_11SubdivisionS0__Sb">==(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:ZF10MusicModeloi2eeFTVS_5BeatsS0__Sb">==(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Functions.html#/s:ZF10MusicModeloi2eeFTVS_11SubdivisionS0__Sb">==(_:_:)</a>
+                <a class="nav-group-task-link" href="../Functions.html#/s:ZF10MusicModeloi2eeFTVS_16MetricalDurationS0__Sb">==(_:_:)</a>
               </li>
             </ul>
           </li>
@@ -69,6 +75,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/Beats.html">Beats</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/MetricalDuration.html">MetricalDuration</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/Subdivision.html">Subdivision</a>
@@ -88,45 +97,13 @@
 
                 </div>
               </div>
-            <p>Subdivision of Metrical Duration</p>
+            <p>Subdivision of <code><a href="../Structs/MetricalDuration.html">MetricalDuration</a></code>.</p>
 
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:OV10MusicModel11Subdivision5Error"></a>
-                    <a name="//apple_ref/swift/Enum/Error" class="dashAnchor"></a>
-                    <a class="token" href="#/s:OV10MusicModel11Subdivision5Error">Error</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Errors thrown when trying to do bad things to a Subdivision.</p>
-
-                        <a href="../Structs/Subdivision/Error.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Error</span><span class="p">:</span> <span class="kt">ErrorType</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Type%20Methods"></a>
@@ -136,58 +113,6 @@
                 </a>
               </div>
               <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:ZFV10MusicModel11Subdivision7isValidFMS0_FT5levelSi_Sb"></a>
-                    <a name="//apple_ref/swift/Method/isValid(level:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZFV10MusicModel11Subdivision7isValidFMS0_FT5levelSi_Sb">isValid(level:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Check if a value is a valid Subdivision level.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">isValid</span><span class="p">(</span><span class="n">level</span> <span class="nv">level</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>level</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Level to be checked</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>If the level is a valid Subdivision level</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -243,9 +168,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:ZFV10MusicModel11Subdivision9levelFromFMS0_FzSiSi"></a>
+                    <a name="/s:ZFV10MusicModel11Subdivision9levelFromFMS0_FSiGSqSi_"></a>
                     <a name="//apple_ref/swift/Method/levelFrom(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZFV10MusicModel11Subdivision9levelFromFMS0_FzSiSi">levelFrom(_:)</a>
+                    <a class="token" href="#/s:ZFV10MusicModel11Subdivision9levelFromFMS0_FSiGSqSi_">levelFrom(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -261,7 +186,7 @@
 
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    <p><code><a href="../Structs/Subdivision/Error.html#/s:FOV10MusicModel11Subdivision5Error12InvalidValueFMS1_FSSS1_">Error.InvalidValue</a></code> if value not greater than 0, or a power-of-two</p>
+    <p><code>Error.InvalidValue</code> if value not greater than 0, or a power-of-two</p>
 
 </div>
 
@@ -270,7 +195,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">levelFrom</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="n">throws</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">levelFrom</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -305,9 +230,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:ZFV10MusicModel11Subdivision9valueFromFMS0_FzSiSi"></a>
+                    <a name="/s:ZFV10MusicModel11Subdivision9valueFromFMS0_FSiSi"></a>
                     <a name="//apple_ref/swift/Method/valueFrom(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZFV10MusicModel11Subdivision9valueFromFMS0_FzSiSi">valueFrom(_:)</a>
+                    <a class="token" href="#/s:ZFV10MusicModel11Subdivision9valueFromFMS0_FSiSi">valueFrom(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -319,7 +244,7 @@
 
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    <p><code><a href="../Structs/Subdivision/Error.html#/s:FOV10MusicModel11Subdivision5Error12InvalidLevelFMS1_FSSS1_">Error.InvalidLevel</a></code> if level not greater than 0</p>
+    <p><code>Error.InvalidLevel</code> if level not greater than 0</p>
 
 </div>
 
@@ -328,7 +253,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">valueFrom</span><span class="p">(</span><span class="nv">level</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="n">throws</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">valueFrom</span><span class="p">(</span><span class="nv">level</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -439,9 +364,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV10MusicModel11SubdivisioncFMS0_FzT5valueSi_S0_"></a>
+                    <a name="/s:FV10MusicModel11SubdivisioncFMS0_FT5valueSi_GSqS0__"></a>
                     <a name="//apple_ref/swift/Method/init(value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV10MusicModel11SubdivisioncFMS0_FzT5valueSi_S0_">init(value:)</a>
+                    <a class="token" href="#/s:FV10MusicModel11SubdivisioncFMS0_FT5valueSi_GSqS0__">init(value:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -451,18 +376,12 @@
                       <div class="abstract">
                         <p>Create a Subvisiion with a value.</p>
 
-<div class="aside aside-throws">
-    <p class="aside-title">Throws</p>
-    <p><code><a href="../Structs/Subdivision/Error.html#/s:FOV10MusicModel11Subdivision5Error12InvalidValueFMS1_FSSS1_">Error.InvalidValue</a></code> if value is not greater than 0, or a power-of-two</p>
-
-</div>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="n">throws</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -488,7 +407,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Initialized Subdivision structure</p>
+                        <p>Initialized Subdivision structure, if possible. Returns <code>nil</code> if value is not greater than 0, or a power-of-two</p>
 
                       </div>
                     </section>
@@ -497,9 +416,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV10MusicModel11SubdivisioncFMS0_FzT5levelSi_S0_"></a>
+                    <a name="/s:FV10MusicModel11SubdivisioncFMS0_FT5levelSi_S0_"></a>
                     <a name="//apple_ref/swift/Method/init(level:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV10MusicModel11SubdivisioncFMS0_FzT5levelSi_S0_">init(level:)</a>
+                    <a class="token" href="#/s:FV10MusicModel11SubdivisioncFMS0_FT5levelSi_S0_">init(level:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -509,18 +428,12 @@
                       <div class="abstract">
                         <p>Create a Subdivision with a level.</p>
 
-<div class="aside aside-throws">
-    <p class="aside-title">Throws</p>
-    <p><code><a href="../Structs/Subdivision/Error.html#/s:FOV10MusicModel11Subdivision5Error12InvalidLevelFMS1_FSSS1_">Error.InvalidLevel</a></code> if level not greater than 0</p>
-
-</div>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">level</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="n">throws</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">level</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
