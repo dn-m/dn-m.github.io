@@ -1,0 +1,17 @@
+IntervalRelationship.swift
+	public let rawValue: Int
+	public static var Precedes = IntervalRelationship(rawValue: 1)
+	public static var Meets = IntervalRelationship(rawValue: 2)
+	public static var Overlaps = IntervalRelationship(rawValue: 4)
+	public static var FinishedBy = IntervalRelationship(rawValue: 8)
+	public static var Contains = IntervalRelationship(rawValue: 16)
+	public static var Starts = IntervalRelationship(rawValue: 32)
+	public static var Equals = IntervalRelationship(rawValue: 64)
+	public static var StartedBy = IntervalRelationship(rawValue: 128)
+	public static var During = IntervalRelationship(rawValue: 256)
+	public static var Finishes = IntervalRelationship(rawValue: 512)
+	public static var OverlappedBy = IntervalRelationship(rawValue: 1024)
+	public static var MetBy = IntervalRelationship(rawValue: 2048)
+	public static var PrecededBy = IntervalRelationship(rawValue: 4096)
+Interval.swift
+	public protocol Interval
