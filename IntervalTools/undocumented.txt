@@ -14,5 +14,3 @@ IntervalRelationship.swift
 	public static var MetBy = IntervalRelationship(rawValue: 2048)
 	public static var PrecededBy = IntervalRelationship(rawValue: 4096)
 	public static var Intersects: IntervalRelationship = [
-Interval.swift
-	public protocol Interval
