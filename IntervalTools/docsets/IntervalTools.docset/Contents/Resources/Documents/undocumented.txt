@@ -13,5 +13,6 @@ IntervalRelationship.swift
 	public static var OverlappedBy = IntervalRelationship(rawValue: 1024)
 	public static var MetBy = IntervalRelationship(rawValue: 2048)
 	public static var PrecededBy = IntervalRelationship(rawValue: 4096)
+	public static var Intersects: IntervalRelationship = [
 Interval.swift
 	public protocol Interval
