@@ -1,5 +1,12 @@
 MetricalDuration.swift
 	public var isReduced: Bool { return beats.amount.isOdd }
+	public func + (lhs: MetricalDuration, rhs: MetricalDuration) -> MetricalDuration
+	public func - (lhs: MetricalDuration, rhs: MetricalDuration) -> MetricalDuration
+	public func level(a: MetricalDuration, _ b: MetricalDuration)
+    -> (MetricalDuration, MetricalDuration)
+	public func areLevel(a: MetricalDuration, _ b: MetricalDuration) -> Bool
+	public func reduce(a: MetricalDuration, _ b: MetricalDuration)
+    -> (MetricalDuration, MetricalDuration)
 	public var description: String
 Subdivision.swift
 	public func * (lhs: Subdivision, rhs: Float) -> Subdivision?
