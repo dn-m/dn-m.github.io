@@ -1,3 +1,0 @@
-IntervalRelationship.swift
-	public struct IntervalRelationship: OptionSetType
-	public struct IntervalRelationship : OptionSetType

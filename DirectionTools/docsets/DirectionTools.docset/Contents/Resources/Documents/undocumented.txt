@@ -1,0 +1,2 @@
+RelativeDirection.swift
+	public struct RelativeDirection: OptionSetType
