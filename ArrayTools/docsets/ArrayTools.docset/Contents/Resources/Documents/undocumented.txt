@@ -1,7 +1,7 @@
 Stack.swift
 	public func == <T>(lhs: Stack<T>, rhs: Stack<T>) -> Bool
 ListProcessing.swift
-	public func + <T: Any>(head: T, tail: [T]) -> [T]
-	public func + <T: Any>(list: [T], item: T) -> [T]
+	public func + <T>(head: T, tail: [T]) -> [T]
+	public func + <T>(list: [T], item: T) -> [T]
 ElementsAtIndices.swift
 	public func last(amount amount: Int) -> [Element]?
