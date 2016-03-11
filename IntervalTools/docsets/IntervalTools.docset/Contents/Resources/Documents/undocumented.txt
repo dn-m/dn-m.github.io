@@ -1,3 +1,5 @@
 IntervalRelationship.swift
 	public let rawValue: Int
 	public static var Intersects: IntervalRelationship = [
+Interval.swift
+	func contains(value: T) -> Bool
