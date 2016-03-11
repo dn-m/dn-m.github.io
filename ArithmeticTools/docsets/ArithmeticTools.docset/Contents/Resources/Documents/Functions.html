@@ -216,7 +216,7 @@
                         <p>Get the closer of two values to a target value.</p>
 
 <blockquote>
-<p><code>closerTo(target: 11, a: 12, b: 3) -&gt; 12</code></p>
+<p><code>closer(to: 11, a: 12, b: 3) -&gt; 12</code></p>
 </blockquote>
 
 <div class="aside aside-note">
@@ -227,7 +227,7 @@ value (a) is returned.
 </div>
 
 <blockquote>
-<p><code>closerTo(target: 6, a: 4, b: 8) -&gt; 4</code></p>
+<p><code>closer(to: 6, a: 4, b: 8) -&gt; 4</code></p>
 </blockquote>
 
                       </div>
@@ -238,52 +238,6 @@ value (a) is returned.
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">closer</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">ArithmeticType</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>target</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Target value to check for closest value</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>a</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>ArithmeticType value to check distance from target</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>b</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>ArithmeticType value to check distance from target</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                       <div>
                         <h4>Return Value</h4>
@@ -311,7 +265,7 @@ value (a) is returned.
                       <div class="pointer"></div>
                       <div class="abstract">
                         <blockquote>
-<p><code>closestPowerOfTwoTo(13) -&gt; 16</code></p>
+<p><code>closestPowerOfTwo(to: 13) -&gt; 16</code></p>
 </blockquote>
 
 <div class="aside aside-note">
@@ -321,7 +275,7 @@ value (a) is returned.
 </div>
 
 <blockquote>
-<p><code>closestPowerOfTwoTo(12) -&gt; 8 (not 16)</code></p>
+<p><code>closestPowerOfTwo(to: 12) -&gt; 8 (not 16)</code></p>
 </blockquote>
 
                       </div>
@@ -386,7 +340,7 @@ value (a) is returned.
                       <div class="pointer"></div>
                       <div class="abstract">
                         <blockquote>
-<p><code>closestPowerOfTwoWith(coefficient: 3, toTarget: 22) -&gt; 24</code></p>
+<p><code>closestPowerOfTwo(withCoefficient: 3, toTarget: 22) -&gt; 24</code></p>
 </blockquote>
 
 <div class="aside aside-note">
@@ -396,7 +350,7 @@ value (a) is returned.
 </div>
 
 <blockquote>
-<p><code>closestPowerOfTwoWith(coefficient: 3, toTarget: 18) -&gt; 12 (not 24)</code></p>
+<p><code>closestPowerOfTwo(withCoefficient: 3, toTarget: 18) -&gt; 12 (not 24)</code></p>
 </blockquote>
 
                       </div>
