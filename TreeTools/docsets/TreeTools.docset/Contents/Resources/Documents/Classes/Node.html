@@ -96,33 +96,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC9TreeTools4Node4rootS0_"></a>
-                    <a name="//apple_ref/swift/Property/root" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC9TreeTools4Node4rootS0_">root</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The Root Node of Tree containing Node</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">root</span><span class="p">:</span> <span class="kt">Node</span> <span class="p">{</span> <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="nf">getRoot</span><span class="p">()</span> <span class="p">}</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:vC9TreeTools4Node6parentGSqS0__"></a>
                     <a name="//apple_ref/swift/Property/parent" class="dashAnchor"></a>
                     <a class="token" href="#/s:vC9TreeTools4Node6parentGSqS0__">parent</a>
@@ -168,141 +141,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">children</span><span class="p">:</span> <span class="p">[</span><span class="kt">Node</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC9TreeTools4Node6isLeafSb"></a>
-                    <a name="//apple_ref/swift/Property/isLeaf" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC9TreeTools4Node6isLeafSb">isLeaf</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>If Node is a Leaf (has no children Nodes)</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isLeaf</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">children</span><span class="o">.</span><span class="n">count</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC9TreeTools4Node11isContainerSb"></a>
-                    <a name="//apple_ref/swift/Property/isContainer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC9TreeTools4Node11isContainerSb">isContainer</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>If Node is a Container (has children Nodes)</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isContainer</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">children</span><span class="o">.</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC9TreeTools4Node6isRootSb"></a>
-                    <a name="//apple_ref/swift/Property/isRoot" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC9TreeTools4Node6isRootSb">isRoot</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>If Node is the Root of a Tree (has no parent Node)</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isRoot</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">parent</span> <span class="o">==</span> <span class="kc">nil</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC9TreeTools4Node5depthSi"></a>
-                    <a name="//apple_ref/swift/Property/depth" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC9TreeTools4Node5depthSi">depth</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Depth of Node in Tree (amount of levels from Root)</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">depth</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="nf">getDepth</span><span class="p">()</span> <span class="p">}</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC9TreeTools4Node10pathToRootGSaS0__"></a>
-                    <a name="//apple_ref/swift/Property/pathToRoot" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC9TreeTools4Node10pathToRootGSaS0__">pathToRoot</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Collection of Nodes, ascending until the Root Node of Tree containing Node</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">pathToRoot</span><span class="p">:</span> <span class="p">[</span><span class="kt">Node</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="nf">getPathToRoot</span><span class="p">()</span> <span class="p">}</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -399,69 +237,6 @@
                       <div>
                         <h4>Return Value</h4>
                         <p>Initialized Node object that is logically equal, though referentially inequal</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Instance%20Methods"></a>
-                <a name="//apple_ref/swift/Section/Instance Methods" class="dashAnchor"></a>
-                <a href="#/Instance%20Methods">
-                  <h3 class="section-name">Instance Methods</h3>
-                </a>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FC9TreeTools4Node8ancestorFS0_FT2atSi_GSqS0__"></a>
-                    <a name="//apple_ref/swift/Method/ancestor(at:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC9TreeTools4Node8ancestorFS0_FT2atSi_GSqS0__">ancestor(at:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Get Node at a given distance above Node</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">ancestor</span><span class="p">(</span><span class="k">var</span> <span class="nv">at</span> <span class="nv">distance</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Node</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>distance</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>distance above Node</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>Ancestor Node, if it exists</p>
 
                       </div>
                     </section>
@@ -635,6 +410,225 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
+                <a name="/Depth"></a>
+                <a name="//apple_ref/swift/Section/Depth" class="dashAnchor"></a>
+                <a href="#/Depth">
+                  <h3 class="section-name">Depth</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC9TreeTools4Node5depthSi"></a>
+                    <a name="//apple_ref/swift/Property/depth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC9TreeTools4Node5depthSi">depth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Depth of Node in Tree (amount of levels from Root)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">depth</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Ancestors"></a>
+                <a name="//apple_ref/swift/Section/Ancestors" class="dashAnchor"></a>
+                <a href="#/Ancestors">
+                  <h3 class="section-name">Ancestors</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC9TreeTools4Node11isContainerSb"></a>
+                    <a name="//apple_ref/swift/Property/isContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC9TreeTools4Node11isContainerSb">isContainer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If Node is a Container (has children Nodes)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isContainer</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">children</span><span class="o">.</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC9TreeTools4Node6isRootSb"></a>
+                    <a name="//apple_ref/swift/Property/isRoot" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC9TreeTools4Node6isRootSb">isRoot</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If Node is the Root of a Tree (has no parent Node)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isRoot</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">parent</span> <span class="o">==</span> <span class="kc">nil</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC9TreeTools4Node4rootS0_"></a>
+                    <a name="//apple_ref/swift/Property/root" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC9TreeTools4Node4rootS0_">root</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Root Node of Tree containing Node</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">root</span><span class="p">:</span> <span class="kt">Node</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC9TreeTools4Node10pathToRootGSaS0__"></a>
+                    <a name="//apple_ref/swift/Property/pathToRoot" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC9TreeTools4Node10pathToRootGSaS0__">pathToRoot</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array of all Node objects between (and including) <code>self</code> up to <code><a href="../Classes/Node.html#/s:vC9TreeTools4Node4rootS0_">root</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">pathToRoot</span><span class="p">:</span> <span class="p">[</span><span class="kt">Node</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9TreeTools4Node11hasAncestorFS0_FS0_Sb"></a>
+                    <a name="//apple_ref/swift/Method/hasAncestor(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9TreeTools4Node11hasAncestorFS0_FS0_Sb">hasAncestor(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">hasAncestor</span><span class="p">(</span><span class="nv">node</span><span class="p">:</span> <span class="kt">Node</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if <code><a href="../Classes/Node.html">Node</a></code> has given <code>node</code> as ancestor. Otherwise <code>false</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9TreeTools4Node8ancestorFS0_FT2atSi_GSqS0__"></a>
+                    <a name="//apple_ref/swift/Method/ancestor(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9TreeTools4Node8ancestorFS0_FT2atSi_GSqS0__">ancestor(at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">ancestor</span><span class="p">(</span><span class="n">at</span> <span class="nv">distance</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Node</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Ancestral <code><a href="../Classes/Node.html">Node</a></code> at a given distance, if present. Otherwise <code>nil</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
                 <a name="/Leaves"></a>
                 <a name="//apple_ref/swift/Section/Leaves" class="dashAnchor"></a>
                 <a href="#/Leaves">
@@ -642,6 +636,33 @@
                 </a>
               </div>
               <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC9TreeTools4Node6isLeafSb"></a>
+                    <a name="//apple_ref/swift/Property/isLeaf" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC9TreeTools4Node6isLeafSb">isLeaf</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If Node is a Leaf (has no children Nodes)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isLeaf</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">children</span><span class="o">.</span><span class="n">count</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -726,6 +747,13 @@
               </ul>
             </div>
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Height"></a>
+                <a name="//apple_ref/swift/Section/Height" class="dashAnchor"></a>
+                <a href="#/Height">
+                  <h3 class="section-name">Height</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
@@ -784,6 +812,13 @@
               </ul>
             </div>
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Children"></a>
+                <a name="//apple_ref/swift/Section/Children" class="dashAnchor"></a>
+                <a href="#/Children">
+                  <h3 class="section-name">Children</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
