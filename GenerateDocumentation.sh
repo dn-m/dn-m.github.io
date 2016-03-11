@@ -23,7 +23,7 @@ for i in $( ls ); do
         --output ../../site/$i \
         --skip-undocumented \
         --hide-documentation-coverage \
-        --theme fullwidth
+        --theme ../../site/dependencies/bean
       cd ../
     fi
   fi
