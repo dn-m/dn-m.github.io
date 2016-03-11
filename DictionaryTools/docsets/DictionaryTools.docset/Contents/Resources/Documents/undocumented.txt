@@ -10,7 +10,7 @@ Merge.swift
     -> Dictionary<K, V>
 	public func += <K: Hashable, V: Any>(inout lhs: Dictionary<K, V>, rhs: Dictionary<K, V>)
 DictionaryLiteralConvertibleValue.swift
-	mutating func ensureValueFor(key: Key)
+	mutating func ensureValue(forKey key: Key)
 	mutating func updateValue(value: Value.Value, forKeyPath keyPath: KeyPath)
 	mutating func mergeWith(dictionary: Dictionary<Key, Value>)
         -> Dictionary<Key, Value>

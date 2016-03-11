@@ -113,9 +113,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayType_15DictionaryToolsVSs10Dictionary14ensureValueForu0_Rq_S_q0_S0__FRGS2_q_q0__Fq_T_"></a>
-                    <a name="//apple_ref/swift/Method/ensureValueFor(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayType_15DictionaryToolsVSs10Dictionary14ensureValueForu0_Rq_S_q0_S0__FRGS2_q_q0__Fq_T_">ensureValueFor(_:)</a>
+                    <a name="/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayType_15DictionaryToolsVSs10Dictionary11ensureValueu0_Rq_S_q0_S0__FRGS2_q_q0__FT6forKeyq__T_"></a>
+                    <a name="//apple_ref/swift/Method/ensureValue(forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayType_15DictionaryToolsVSs10Dictionary11ensureValueu0_Rq_S_q0_S0__FRGS2_q_q0__FT6forKeyq__T_">ensureValue(forKey:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -141,12 +141,18 @@
 <p><code>[&quot;key&quot;: [1,2,3]].ensureValueFor(&quot;newKey&quot;) -&gt; [&quot;key&quot;: [1,2,3], &quot;newKey&quot;: []]</code></p>
 </blockquote>
 
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Update to <code>ensureValue(for key: Key)</code> when updating to Swift 2.0</p>
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">ensureValueFor</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">ensureValue</span><span class="p">(</span><span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -242,9 +248,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayType_15DictionaryToolsVSs10Dictionary22safelyAppendContentsOfu0_Rq_S_q0_S0__FRGS2_q_q0__FTq0_14toArrayWithKeyq__T_"></a>
-                    <a name="//apple_ref/swift/Method/safelyAppendContentsOf(_:toArrayWithKey:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayType_15DictionaryToolsVSs10Dictionary22safelyAppendContentsOfu0_Rq_S_q0_S0__FRGS2_q_q0__FTq0_14toArrayWithKeyq__T_">safelyAppendContentsOf(_:toArrayWithKey:)</a>
+                    <a name="/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayType_15DictionaryToolsVSs10Dictionary20safelyAppendContentsu0_Rq_S_q0_S0__FRGS2_q_q0__FT2ofq0_14toArrayWithKeyq__T_"></a>
+                    <a name="//apple_ref/swift/Method/safelyAppendContents(of:toArrayWithKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe0_Rq_Ss8Hashableq0_Ss10_ArrayType_15DictionaryToolsVSs10Dictionary20safelyAppendContentsu0_Rq_S_q0_S0__FRGS2_q_q0__FT2ofq0_14toArrayWithKeyq__T_">safelyAppendContents(of:toArrayWithKey:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -263,7 +269,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">safelyAppendContentsOf</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="kt">Value</span><span class="p">,</span> <span class="n">toArrayWithKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">safelyAppendContents</span><span class="p">(</span><span class="n">of</span> <span class="nv">values</span><span class="p">:</span> <span class="kt">Value</span><span class="p">,</span> <span class="n">toArrayWithKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -384,9 +390,9 @@ desired array, the new value will not be added.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:Fe0_Rq_Ss8Hashable_15DictionaryToolsVSs10Dictionary9mergeWithu0_Rq_S__FGS1_q_q0__FGS1_q_q0__GS1_q_q0__"></a>
-                    <a name="//apple_ref/swift/Method/mergeWith(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Fe0_Rq_Ss8Hashable_15DictionaryToolsVSs10Dictionary9mergeWithu0_Rq_S__FGS1_q_q0__FGS1_q_q0__GS1_q_q0__">mergeWith(_:)</a>
+                    <a name="/s:Fe0_Rq_Ss8Hashable_15DictionaryToolsVSs10Dictionary5mergeu0_Rq_S__FGS1_q_q0__FT4withGS1_q_q0___GS1_q_q0__"></a>
+                    <a name="//apple_ref/swift/Method/merge(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe0_Rq_Ss8Hashable_15DictionaryToolsVSs10Dictionary5mergeu0_Rq_S__FGS1_q_q0__FT4withGS1_q_q0___GS1_q_q0__">merge(with:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -407,7 +413,7 @@ desired array, the new value will not be added.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">mergeWith</span><span class="p">(</span><span class="nv">dictionary</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span><span class="kt">Value</span><span class="o">&gt;</span><span class="p">)</span>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">merge</span><span class="p">(</span><span class="n">with</span> <span class="nv">dictionary</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span><span class="kt">Value</span><span class="o">&gt;</span><span class="p">)</span>
         <span class="o">-&gt;</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span></code></pre>
 
                         </div>
@@ -443,7 +449,7 @@ desired array, the new value will not be added.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James</a>. All rights reserved. (Last updated: 2016-03-02)</p>
+      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James</a>. All rights reserved. (Last updated: 2016-03-11)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
