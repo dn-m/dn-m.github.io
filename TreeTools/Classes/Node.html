@@ -1000,9 +1000,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC9TreeTools4Node6insertFS0_FzTS0_7atIndexSi_DS0_"></a>
+                    <a name="/s:FC9TreeTools4Node6insertFS0_FzTS0_7atIndexSi_T_"></a>
                     <a name="//apple_ref/swift/Method/insert(_:atIndex:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC9TreeTools4Node6insertFS0_FzTS0_7atIndexSi_DS0_">insert(_:atIndex:)</a>
+                    <a class="token" href="#/s:FC9TreeTools4Node6insertFS0_FzTS0_7atIndexSi_T_">insert(_:atIndex:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1010,14 +1010,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Insert child Node at index of Children</p>
+                        <div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p><code><a href="../Classes/Node/Error.html#/s:FOC9TreeTools4Node5Error14InsertionErrorFMS1_S1_">Error.InsertionError</a></code> if index out of range</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">insert</span><span class="p">(</span><span class="nv">child</span><span class="p">:</span> <span class="kt">Node</span><span class="p">,</span> <span class="n">atIndex</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="n">throws</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">insert</span><span class="p">(</span><span class="nv">child</span><span class="p">:</span> <span class="kt">Node</span><span class="p">,</span> <span class="n">atIndex</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="n">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -1033,7 +1037,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>child Node</p>
+                                  <p><code>Node</code> to insert</p>
 
                                 </div>
                               </td>
@@ -1046,18 +1050,13 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>index at which to add Node</p>
+                                  <p>Index at which to insert <code>child</code></p>
 
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>Node object</p>
-
                       </div>
                     </section>
                   </div>
@@ -1075,7 +1074,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Remove child Node residing at a given index</p>
+                        <div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p><code><a href="../Classes/Node/Error.html#/s:FOC9TreeTools4Node5Error12NodeNotFoundFMS1_S1_">Error.NodeNotFound</a></code> if <code>node</code> is not a child</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1098,7 +1101,58 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>child Node to remove</p>
+                                  <p><code>Node</code> to remove, if it is a child</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9TreeTools4Node11removeChildFS0_FzT2atSi_T_"></a>
+                    <a name="//apple_ref/swift/Method/removeChild(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9TreeTools4Node11removeChildFS0_FzT2atSi_T_">removeChild(at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p><code><a href="../Classes/Node/Error.html#/s:FOC9TreeTools4Node5Error12NodeNotFoundFMS1_S1_">Error.NodeNotFound</a></code> if no child exists at <code>index</code></p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeChild</span><span class="p">(</span><span class="n">at</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="n">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Index of child to remove</p>
 
                                 </div>
                               </td>
@@ -1155,7 +1209,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>If Node has this child Node</p>
+                        <p><code>true</code> if has child <code>node</code>. Otherwise <code>false</code>.</p>
 
                       </div>
                     </section>
@@ -1207,7 +1261,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>child Node residing at index, if it exists</p>
+                        <p><code><a href="../Classes/Node.html">Node</a></code> residing at <code>index</code>, if present. Otherwise <code>nil</code>.</p>
 
                       </div>
                     </section>

@@ -4,5 +4,3 @@ Node+CustomStringConvertible.swift
 	public var description: String
 Node+Leaves.swift
 	public func leaf(at index: Int) -> Node?
-Node+Children.swift
-	public func removeChild(at index: Int) throws
