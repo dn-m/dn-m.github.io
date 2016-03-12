@@ -24,7 +24,9 @@ for i in $( ls ); do
         --skip-undocumented \
         --hide-documentation-coverage \
         --theme ../../site/dependencies/bean
+
       cd ../
+      
     fi
   fi
 done

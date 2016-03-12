@@ -2,11 +2,7 @@ MetricalDuration.swift
 	public var description: String
 MetricalDurationInterval.swift
 	public init?(_ start: (Int, Int), _ stop: (Int, Int))
-	public func unionWith(interval: MetricalDurationInterval) -> MetricalDurationInterval
-	public func bisect(atDuration: MetricalDuration)
-        -> (MetricalDurationInterval, MetricalDurationInterval)?
-	public func trim(start start: MetricalDuration) -> MetricalDurationInterval?
-	public func trim(stop stop: MetricalDuration) -> MetricalDurationInterval?
+	public func == (lhs: MetricalDurationInterval, rhs: MetricalDurationInterval) -> Bool
 Subdivision.swift
 	public var description: String { return "Subdivision: (value: \(value), level: \(level))" }
 Beats.swift

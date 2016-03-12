@@ -338,6 +338,131 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV10MusicModel24MetricalDurationInterval5unionFS0_FT4withS0__S0_"></a>
+                    <a name="//apple_ref/swift/Method/union(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV10MusicModel24MetricalDurationInterval5unionFS0_FT4withS0__S0_">union(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">union</span><span class="p">(</span><span class="n">with</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">MetricalDurationInterval</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MetricalDurationInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Structs/MetricalDurationInterval.html">MetricalDurationInterval</a></code> spanning from the least <code><a href="../Structs/MetricalDurationInterval.html#/s:vV10MusicModel24MetricalDurationInterval5startVS_16MetricalDuration">start</a></code> value of the given <code><a href="../Structs/MetricalDurationInterval.html">MetricalDurationInterval</a></code> values, to the greatest <code><a href="../Structs/MetricalDurationInterval.html#/s:vV10MusicModel24MetricalDurationInterval4stopVS_16MetricalDuration">stop</a></code> value of the given <code><a href="../Structs/MetricalDurationInterval.html">MetricalDurationInterval</a></code> values</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV10MusicModel24MetricalDurationInterval6bisectFS0_FT2atVS_16MetricalDuration_GSqTS0_S0___"></a>
+                    <a name="//apple_ref/swift/Method/bisect(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV10MusicModel24MetricalDurationInterval6bisectFS0_FT2atVS_16MetricalDuration_GSqTS0_S0___">bisect(at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">bisect</span><span class="p">(</span><span class="n">at</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">MetricalDuration</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">MetricalDurationInterval</span><span class="p">,</span> <span class="kt">MetricalDurationInterval</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>2-tuple of <code><a href="../Structs/MetricalDurationInterval.html">MetricalDurationInterval</a></code> values, as a result of bisecting a <code><a href="../Structs/MetricalDurationInterval.html">MetricalDurationInterval</a></code> value. <code>nil</code> if given <code>duration</code> is not contained by <code><a href="../Structs/MetricalDurationInterval.html">MetricalDurationInterval</a></code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV10MusicModel24MetricalDurationInterval4trimFS0_FT5startVS_16MetricalDuration_GSqS0__"></a>
+                    <a name="//apple_ref/swift/Method/trim(start:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV10MusicModel24MetricalDurationInterval4trimFS0_FT5startVS_16MetricalDuration_GSqS0__">trim(start:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">trim</span><span class="p">(</span><span class="n">start</span> <span class="nv">newStart</span><span class="p">:</span> <span class="kt">MetricalDuration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MetricalDurationInterval</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Structs/MetricalDurationInterval.html">MetricalDurationInterval</a></code> with the same <code><a href="../Structs/MetricalDurationInterval.html#/s:vV10MusicModel24MetricalDurationInterval4stopVS_16MetricalDuration">stop</a></code> value, but with an adjusted <code><a href="../Structs/MetricalDurationInterval.html#/s:vV10MusicModel24MetricalDurationInterval5startVS_16MetricalDuration">start</a></code> value. <code>nil</code> if given <code>duration</code> is not contained by <code><a href="../Structs/MetricalDurationInterval.html">MetricalDurationInterval</a></code></p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV10MusicModel24MetricalDurationInterval4trimFS0_FT4stopVS_16MetricalDuration_GSqS0__"></a>
+                    <a name="//apple_ref/swift/Method/trim(stop:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV10MusicModel24MetricalDurationInterval4trimFS0_FT4stopVS_16MetricalDuration_GSqS0__">trim(stop:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">trim</span><span class="p">(</span><span class="n">stop</span> <span class="nv">newStop</span><span class="p">:</span> <span class="kt">MetricalDuration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MetricalDurationInterval</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Structs/MetricalDurationInterval.html">MetricalDurationInterval</a></code> with the same <code><a href="../Structs/MetricalDurationInterval.html#/s:vV10MusicModel24MetricalDurationInterval5startVS_16MetricalDuration">start</a></code> value, but with an adjusted <code><a href="../Structs/MetricalDurationInterval.html#/s:vV10MusicModel24MetricalDurationInterval4stopVS_16MetricalDuration">stop</a></code> value. <code>nil</code> if given <code>duration</code> is not contained by <code><a href="../Structs/MetricalDurationInterval.html">MetricalDurationInterval</a></code></p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
