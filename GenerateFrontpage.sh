@@ -32,6 +32,7 @@ if [ $musicmodeli -gt 0 ]; then
 fi
 if [ $misci -gt 0 ]; then
   export ${MISC[@]}
+  export hasMISC=1
 fi
 
 . dependencies/mo
