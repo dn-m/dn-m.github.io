@@ -53,6 +53,7 @@
           </li>
           {{#hasMISC}}
           <li class="nav-group-name">
+            <span class="nav-group-name-link">Uncategorised</span>
             <ul class="nav-group-tasks">
               {{#MISC}}
               <li class="nav-group-task">
