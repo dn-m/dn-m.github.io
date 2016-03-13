@@ -59,13 +59,33 @@ for i in $( ls ); do
       print_color "~~~ $i ~~~"
 
       VERSION=$(git describe --tags | cut -d - -f -1)
+      HASHKEY=$stashprefix$i
+      HASH=$(git log -n 1 --pretty=format:"%H")
 
       if [[ -n $VERSION ]]; then
         print_color "Version: $VERSION"
       else
         print_color "Version: undefined"
       fi
+
+      if [[ $hasStash == 1 ]]; then
+        if [ -n "${!HASHKEY}" ]; then
+          # A hash has been stashed for this module, check for matches
+          if [[ $HASH = ${!HASHKEY} ]]; then
+            # The current hash and the stashed hash match
+            print_color "$i has not changed, skipping..."
+          else
+            # The current hash and the stashed hash don’t match, proceed
+            run_jazzy
+          fi
+        else
+          # There is no stashed hash, proceed
+          run_jazzy
+        fi
+      else
+        # There is no hashstash file
         run_jazzy
+      fi
 
       cd ../
 
