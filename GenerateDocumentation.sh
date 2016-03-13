@@ -1,7 +1,12 @@
 #!/bin/bash
 
-cd ../
-cd Frameworks
+if [ $1 ]; then
+  FRAMEWORKS_DIR=$1
+else
+  FRAMEWORKS_DIR="../Frameworks"
+fi
+
+cd $FRAMEWORKS_DIR
 
 for i in $( ls ); do
   if [[ -d $i ]]; then
