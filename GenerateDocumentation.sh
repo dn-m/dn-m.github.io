@@ -1,8 +1,9 @@
 #!/bin/bash
 
-cd ../
-cd Frameworks
 SITE_DIR=${PWD}
+FRAMEWORKS_DIR="../Frameworks"
+
+cd $FRAMEWORKS_DIR
 
 for i in $( ls ); do
   if [[ -d $i ]]; then
