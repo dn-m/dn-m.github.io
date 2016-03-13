@@ -29,6 +29,26 @@ else
   FRAMEWORKS_DIR="../Frameworks"
 fi
 
+# Make hashstash accessible in environment
+hasStash=0
+stashprefix="HASHSTASH__"
+stashindex=0
+STASHEDHASHES=()
+if [[ -f "hashstash" ]]; then
+  hasStash=1
+  # Read hashstash line by line
+  while IFS="=" read -r -a array; do
+    ((${#array[@]} >= 1)) || continue # ignore blank lines
+    # Store each key as a prefixed (HASHSTASH__) variable
+    printf -v "$stashprefix${array[@]:0:1}" %s ${array[@]:1}
+    # Create an array of all stashed hashes
+    STASHEDHASHES[$stashindex]="$stashprefix${array[@]:0:1}"
+    ((stashindex++)) # increment index
+  done < hashstash # <-- defines which file is read in
+  # At this point we have a series of variables in the form
+  # `HASHSTASH__ModuleName` and an array `STASHEDHASHES` of those variable names
+fi
+
 cd $FRAMEWORKS_DIR
 
 for i in $( ls ); do
