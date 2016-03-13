@@ -1,8 +1,5 @@
-PitchType.swift
-	public protocol PitchType
-Frequency.swift
-	public typealias Frequency = Float
+Verticality.swift
+	public struct Verticality
 Pitch.swift
-	public struct Pitch: PitchType
-NoteNumber.swift
-	public typealias NoteNumber = Float
+	public func == (lhs: Pitch, rhs: Pitch) -> Bool
+	public func < (lhs: Pitch, rhs: Pitch) -> Bool
