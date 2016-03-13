@@ -2,6 +2,7 @@
 
 cd ../
 cd Frameworks
+SITE_DIR=${PWD}
 
 for i in $( ls ); do
   if [[ -d $i ]]; then
@@ -20,10 +21,10 @@ for i in $( ls ); do
         --module-version $VERSION \
         --module $i \
         --root-url https://dn-m.github.io \
-        --output ../../site/$i \
+        --output ../../$SITE_DIR/$i \
         --skip-undocumented \
         --hide-documentation-coverage \
-        --theme ../../site/dependencies/bean
+        --theme ../../$SITE_DIR/dependencies/bean
 
       cd ../
       
@@ -31,5 +32,4 @@ for i in $( ls ); do
   fi
 done
 
-cd ../
-cd site
+cd $SITE_DIR
