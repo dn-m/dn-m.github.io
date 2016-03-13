@@ -1,7 +1,16 @@
 #!/bin/bash
 
-SITE_DIR=${PWD}
-FRAMEWORKS_DIR="../Frameworks"
+WORK_DIR=${PWD}
+if [ $2 ]; then
+  SITE_DIR=$2
+else
+  SITE_DIR=$WORK_DIR
+fi
+if [ $1 ]; then
+  FRAMEWORKS_DIR=$1
+else
+  FRAMEWORKS_DIR="../Frameworks"
+fi
 
 cd $FRAMEWORKS_DIR
 
