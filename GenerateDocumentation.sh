@@ -39,7 +39,12 @@ for i in $( ls ); do
       print_color "~~~ $i ~~~"
 
       VERSION=$(git describe --tags | cut -d - -f -1)
-      print_color "Version: $VERSION"
+
+      if [[ -n $VERSION ]]; then
+        print_color "Version: $VERSION"
+      else
+        print_color "Version: undefined"
+      fi
         run_jazzy
 
       cd ../
