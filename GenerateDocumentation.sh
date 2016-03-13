@@ -7,7 +7,6 @@ cd $FRAMEWORKS_DIR
 
 for i in $( ls ); do
   if [[ -d $i ]]; then
-    if ! [[ $i = dependencies ]]; then
 
       cd $i
 
@@ -29,7 +28,6 @@ for i in $( ls ); do
 
       cd ../
 
-    fi
   fi
 done
 
