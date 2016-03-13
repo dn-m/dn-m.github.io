@@ -102,6 +102,16 @@ done
 
 cd $SITE_DIR
 
+# Clean old hashstash
+if [[ -f "hashstash" ]]; then
+  rm hashstash
+fi
+# Write new hashes to hashstash
+for i in "${NEWHASHES[@]}"
+do
+  echo "$i=${!i}" >> hashstash
+done
+
 # Clean and build assets for main index
 for i in $( ls ); do
   if [[ -d $i ]]; then
