@@ -16,8 +16,7 @@ cd $FRAMEWORKS_DIR
 
 for i in $( ls ); do
   if [[ -d $i ]]; then
-    if ! [[ $i = dependencies ]]; then
-      
+
       cd $i
 
       VERSION=$(git describe --tags | cut -d - -f -1)
@@ -37,8 +36,7 @@ for i in $( ls ); do
         --theme $SITE_DIR/dependencies/bean
 
       cd ../
-      
-    fi
+
   fi
 done
 
