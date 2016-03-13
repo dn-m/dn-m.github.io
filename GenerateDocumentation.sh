@@ -1,12 +1,8 @@
 #!/bin/bash
 
-run_jazzy () {
-  VERSION=$(git describe --tags | cut -d - -f -1)
-  tput setab 7
-  tput setaf 0
-  echo "~ $i: $VERSION ~"
-  tput sgr0
+print_color () { tput setab 7; tput setaf 0; echo "$1"; tput sgr0; }
 
+run_jazzy () {
   jazzy \
     --clean \
     --author James Bean \
@@ -40,7 +36,10 @@ for i in $( ls ); do
 
       cd $i
 
+      print_color "~~~ $i ~~~"
 
+      VERSION=$(git describe --tags | cut -d - -f -1)
+      print_color "Version: $VERSION"
         run_jazzy
 
       cd ../
