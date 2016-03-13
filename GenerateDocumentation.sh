@@ -45,3 +45,19 @@ for i in $( ls ); do
 done
 
 cd $SITE_DIR
+
+# Clean and build assets for main index
+for i in $( ls ); do
+  if [[ -d $i ]]; then
+    if ! [ $i = dependencies -o $i = build ]; then
+      if [ -d "build" ]; then
+        rm -r build # Clean old build directory
+      fi
+      mkdir build # Recreate build directory
+      for dir in js css img; do
+        cp -R $i/$dir build/$dir # Copy js, css & img assets to build directory
+      done
+      break
+    fi
+  fi
+done
