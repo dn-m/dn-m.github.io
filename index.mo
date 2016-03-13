@@ -51,6 +51,7 @@
               {{/MUSICMODEL_VERIFIED}}
             </ul>
           </li>
+          {{#hasMISC}}
           <li class="nav-group-name">
             <ul class="nav-group-tasks">
               {{#MISC}}
@@ -60,6 +61,7 @@
               {{/MISC}}
             </ul>
           </li>
+          {{/hasMISC}}
         </ul>
       </nav>
       <article class="main-content">
