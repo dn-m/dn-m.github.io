@@ -1,5 +1,11 @@
 #!/bin/bash
 
+WORK_DIR=${PWD}
+if [ $2 ]; then
+  SITE_DIR=$2
+else
+  SITE_DIR=$WORK_DIR
+fi
 if [ $1 ]; then
   FRAMEWORKS_DIR=$1
 else
@@ -25,10 +31,10 @@ for i in $( ls ); do
         --module-version $VERSION \
         --module $i \
         --root-url https://dn-m.github.io \
-        --output ../../site/$i \
+        --output $SITE_DIR/$i \
         --skip-undocumented \
         --hide-documentation-coverage \
-        --theme ../../site/dependencies/bean
+        --theme $SITE_DIR/dependencies/bean
 
       cd ../
       
@@ -36,5 +42,4 @@ for i in $( ls ); do
   fi
 done
 
-cd ../
-cd site
+cd $SITE_DIR
