@@ -1,12 +1,14 @@
 #!/bin/bash
 
-cd ../
-cd Frameworks
+SITE_DIR=${PWD}
+FRAMEWORKS_DIR="../Frameworks"
+
+cd $FRAMEWORKS_DIR
 
 for i in $( ls ); do
   if [[ -d $i ]]; then
     if ! [[ $i = dependencies ]]; then
-      
+
       cd $i
 
       VERSION=$(git describe --tags | cut -d - -f -1)
@@ -20,16 +22,15 @@ for i in $( ls ); do
         --module-version $VERSION \
         --module $i \
         --root-url https://dn-m.github.io \
-        --output ../../site/$i \
+        --output ../../$SITE_DIR/$i \
         --skip-undocumented \
         --hide-documentation-coverage \
-        --theme ../../site/dependencies/bean
+        --theme ../../$SITE_DIR/dependencies/bean
 
       cd ../
-      
+
     fi
   fi
 done
 
-cd ../
-cd site
+cd $SITE_DIR
