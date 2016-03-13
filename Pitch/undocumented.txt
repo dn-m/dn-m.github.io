@@ -1,0 +1,6 @@
+Frequency.swift
+	public typealias Frequency = Float
+Pitch.swift
+	public struct Pitch
+NoteNumber.swift
+	public typealias NoteNumber = Float

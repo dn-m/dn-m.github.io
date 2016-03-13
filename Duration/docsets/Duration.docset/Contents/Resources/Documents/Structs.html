@@ -47,14 +47,16 @@
       <nav class="navigation">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Functions.html">Functions</a>
+            <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:ZF8Durationoi1mFTVS_11SubdivisionSf_GSqS0__">*(_:_:)</a>
+                <a class="nav-group-task-link" href="Extensions/Subdivision.html">Subdivision</a>
               </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:ZF8Durationoi1mFTVS_11SubdivisionSi_GSqS0__">*(_:_:)</a>
-              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:ZF8Durationoi1pFTVS_16MetricalDurationS0__S0_">+(_:_:)</a>
               </li>
@@ -62,28 +64,10 @@
                 <a class="nav-group-task-link" href="Functions.html#/s:ZF8Durationoi1sFTVS_16MetricalDurationS0__S0_">-(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:ZF8Durationoi1dFTVS_11SubdivisionSf_GSqS0__">/(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:ZF8Durationoi1dFTVS_11SubdivisionSi_GSqS0__">/(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:ZF8Durationoi1lFTVS_5BeatsS0__Sb">&lt;(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:ZF8Durationoi1lFTVS_16MetricalDurationS0__Sb">&lt;(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:ZF8Durationoi1lFTVS_11SubdivisionS0__Sb">&lt;(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:ZF8Durationoi2eeFTVS_11SubdivisionS0__Sb">==(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:ZF8Durationoi2eeFTVS_16MetricalDurationS0__Sb">==(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:ZF8Durationoi2eeFTVS_5BeatsS0__Sb">==(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:F8Duration8areLevelFTVS_16MetricalDurationS0__Sb">areLevel(_:_:)</a>
@@ -103,16 +87,18 @@
             <a class="nav-group-name-link" href="Structs.html">Structs</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs/Beats.html">Beats</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/MetricalDuration.html">MetricalDuration</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/MetricalDurationInterval.html">MetricalDurationInterval</a>
               </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Typealiases.html">Typealiases</a>
+            <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs/Subdivision.html">Subdivision</a>
+                <a class="nav-group-task-link" href="Typealiases.html#/s:8Duration11Subdivision">Subdivision</a>
               </li>
             </ul>
           </li>
@@ -145,7 +131,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Musical Duration defined by a <code><a href="Structs/Beats.html">Beats</a></code> value and <code><a href="Structs/Subdivision.html">Subdivision</a></code> value.</p>
+                        <p>Musical Duration defined by a <code>Beats</code> value and <code><a href="Extensions/Subdivision.html">Subdivision</a></code> value.</p>
 
                         <a href="Structs/MetricalDuration.html" class="slightly-smaller">See more</a>
                       </div>
@@ -186,70 +172,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MetricalDurationInterval</span><span class="p">:</span> <span class="kt">Interval</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:V8Duration11Subdivision"></a>
-                    <a name="//apple_ref/swift/Struct/Subdivision" class="dashAnchor"></a>
-                    <a class="token" href="#/s:V8Duration11Subdivision">Subdivision</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Subdivision of <code><a href="Structs/MetricalDuration.html">MetricalDuration</a></code>.</p>
-
-                        <a href="Structs/Subdivision.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Subdivision</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:V8Duration5Beats"></a>
-                    <a name="//apple_ref/swift/Struct/Beats" class="dashAnchor"></a>
-                    <a class="token" href="#/s:V8Duration5Beats">Beats</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Beats in a <code><a href="Structs/MetricalDuration.html">MetricalDuration</a></code>.</p>
-
-                        <a href="Structs/Beats.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Beats</span></code></pre>
 
                         </div>
                       </div>
