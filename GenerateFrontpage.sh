@@ -32,6 +32,14 @@ if [ $musicmodeli -gt 0 ]; then
 fi
 if [ $misci -gt 0 ]; then
   export ${MISC[@]}
+  export hasMISC=1
+  tput setab 3
+  tput setaf 0
+  echo "You have uncategorised subdirectories:"
+  tput sgr0
+  for dir in ${MISC[@]}; do
+    echo "—— $dir"
+  done
 fi
 
 . dependencies/mo
