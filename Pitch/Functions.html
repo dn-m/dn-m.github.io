@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Pitch  Reference | dn-m</title>
+    <title>Functions  Reference | dn-m</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
   <body>
 
 
-    <a title="Pitch  Reference"></a>
+    <a title="Functions  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -42,7 +42,7 @@
       <img class="carat" src="img/carat.png" />
       <a class="breadcrumb" href="index.html">Pitch Reference</a>
       <img class="carat" src="img/carat.png" />
-      Pitch  Reference
+      Functions  Reference
     </p>
 
     <div class="content-wrapper">
@@ -121,14 +121,59 @@
 
         <section class="section">
           <div class="section-content">
-            
-            <a href='#pitch' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='pitch'>Pitch</h1>
-
-<p>Structures relating to Pitch</p>
+            <h1>Functions</h1>
+            <p>The following functions are available globally.</p>
 
           </div>
         </section>
 
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F5Pitch8quantizeFT10noteNumberSf12toResolutionSf_Sf"></a>
+                    <a name="//apple_ref/swift/Function/quantize(noteNumber:toResolution:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F5Pitch8quantizeFT10noteNumberSf12toResolutionSf_Sf">quantize(noteNumber:toResolution:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Quantize a given <code><a href="Extensions/NoteNumber.html">NoteNumber</a></code> value to the desired <code>resolution</code>.</p>
+
+<ul>
+<li><code>1</code>: quantize to a half-tone</li>
+<li><code>0.5</code>: quantize to a quarter-tone</li>
+<li><p><code>0.25</code>: quantize to an eighth-tone</p></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">quantize</span><span class="p">(</span><span class="n">noteNumber</span> <span class="nv">noteNumber</span><span class="p">:</span> <span class="kt">NoteNumber</span><span class="p">,</span> <span class="n">toResolution</span> <span class="nv">resolution</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt">NoteNumber</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="Extensions/NoteNumber.html">NoteNumber</a></code> that is quantized to the desired <code>resolution</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
       </article>
     </div>
