@@ -1,16 +1,30 @@
 #!/bin/bash
 
-cd ../
-cd Frameworks
+WORK_DIR=${PWD}
+if [ $2 ]; then
+  SITE_DIR=$2
+else
+  SITE_DIR=$WORK_DIR
+fi
+if [ $1 ]; then
+  FRAMEWORKS_DIR=$1
+else
+  FRAMEWORKS_DIR="../Frameworks"
+fi
+
+cd $FRAMEWORKS_DIR
 
 for i in $( ls ); do
   if [[ -d $i ]]; then
-    if ! [[ $i = dependencies ]]; then
-      
+
       cd $i
 
       VERSION=$(git describe --tags | cut -d - -f -1)
-      echo $i: $VERSION
+
+      tput setab 7
+      tput setaf 0
+      echo "~ $i: $VERSION ~"
+      tput sgr0    # reset everything before exiting
 
       jazzy \
         --clean \
@@ -20,16 +34,30 @@ for i in $( ls ); do
         --module-version $VERSION \
         --module $i \
         --root-url https://dn-m.github.io \
-        --output ../../site/$i \
+        --output $SITE_DIR/$i \
         --skip-undocumented \
         --hide-documentation-coverage \
-        --theme ../../site/dependencies/bean
+        --theme $SITE_DIR/dependencies/bean
 
       cd ../
-      
-    fi
+
   fi
 done
 
-cd ../
-cd site
+cd $SITE_DIR
+
+# Clean and build assets for main index
+for i in $( ls ); do
+  if [[ -d $i ]]; then
+    if ! [ $i = dependencies -o $i = build ]; then
+      if [ -d "build" ]; then
+        rm -r build # Clean old build directory
+      fi
+      mkdir build # Recreate build directory
+      for dir in js css img; do
+        cp -R $i/$dir build/$dir # Copy js, css & img assets to build directory
+      done
+      break
+    fi
+  fi
+done
