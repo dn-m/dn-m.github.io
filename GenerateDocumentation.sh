@@ -51,6 +51,8 @@ fi
 
 cd $FRAMEWORKS_DIR
 
+newindex=0
+NEWHASHES=()
 for i in $( ls ); do
   if [[ -d $i ]]; then
 
@@ -86,6 +88,12 @@ for i in $( ls ); do
         # There is no hashstash file
         run_jazzy
       fi
+
+      # Save new hash value for stashing
+      printf -v "$i" %s $HASH
+      # Create an array of all stashed hash keys
+      NEWHASHES[$newindex]="$i"
+      ((newindex++)) # increment index
 
       cd ../
 
