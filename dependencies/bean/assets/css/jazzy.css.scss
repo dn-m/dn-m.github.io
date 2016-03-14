@@ -332,21 +332,20 @@ pre code {
 }
 
 // Dependencies
-
-.nav-group-name-dependencies {
-  border-bottom: 1px solid $navigation_border_color;
-  padding: $gutter/2 0 $gutter/2 $gutter;
-  background-color: coral;
-}
-
-.nav-group-name-link-dependencies {
-  font-weight: 800;
-  color: white;
-}
-
-.nav-group-task-link-dependencies {
-  color: white;
-  opacity: 0.75;
+#dependencies {
+  &.nav-group-name {
+    border-bottom: 1px solid $navigation_border_color;
+    padding: $gutter/2 0 $gutter/2 $gutter;
+    background-color: coral;
+  }
+  .nav-group-name-link {
+    font-weight: 800;
+    color: white;
+  }
+  .nav-group-task-link {
+    color: white;
+    opacity: 0.75;
+  }
 }
 
 // ===========================================================================
