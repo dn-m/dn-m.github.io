@@ -70,9 +70,9 @@
         <section class="section">
           <div class="section-content">
 
-            <a href='#dn-m' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='dn-m'>dn-m</h1>
+            <a href='#dn-m' class='anchor' aria-hidden=true><span class="header-anchor"></span></a>
 
-            <p>Documentation for dn-m (dynamic notation for music)</p>
+            {{> main.mo}}
 
           </div>
         </section>
