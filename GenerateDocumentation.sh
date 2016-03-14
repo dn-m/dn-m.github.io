@@ -132,3 +132,17 @@ done
 
 # Generate main index
 ./GenerateFrontpage.sh
+
+# Modify jazzy output to inject dependencies into navbar
+for i in $( ls ); do
+  if [[ -d $i ]]; then
+    if ! [ $i = dependencies -o $i = build ]; then
+      if [[ -e "$i/dependencies.json" ]]; then
+        print_color "Adding dependencies to menus in $i..."
+        for html in $( find $i -name '*.html' ); do
+          ruby InjectDependencies.rb "$html" "$i/dependencies.json"
+        done
+      fi
+    fi
+  fi
+done
