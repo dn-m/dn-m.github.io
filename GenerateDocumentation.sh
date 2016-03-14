@@ -22,7 +22,7 @@ build_docs () {
     if [[ -e "$SITE_DIR/$FRAMEWORK/dependencies.json" ]]; then
       print_color "Adding dependencies to menus in $FRAMEWORK..."
       for html in $( find $SITE_DIR/$FRAMEWORK -name '*.html' ); do
-        ruby $SITE_DIR/InjectDependencies.rb "$html" "$SITE_DIR/$FRAMEWORK/dependencies.json"
+        ruby $SITE_DIR/dependencies/scripts/InjectDependencies.rb "$html" "$SITE_DIR/$FRAMEWORK/dependencies.json"
       done
     fi
 }
