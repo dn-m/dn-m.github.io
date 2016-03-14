@@ -80,3 +80,5 @@ PLATFORMS
 DEPENDENCIES
   jazzy
   nokogiri
+  redcarpet
+  rouge
