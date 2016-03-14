@@ -2,7 +2,7 @@
 
 print_color () { tput setab 7; tput setaf 0; echo "$1"; tput sgr0; }
 
-run_jazzy () {
+build_docs () {
   jazzy \
     --clean \
     --author James Bean \
@@ -15,6 +15,8 @@ run_jazzy () {
     --skip-undocumented \
     --hide-documentation-coverage \
     --theme $SITE_DIR/dependencies/bean
+
+  . $SITE_DIR/HandleDependencies.sh $i $SITE_DIR
 }
 
 WORK_DIR=${PWD}
@@ -78,15 +80,15 @@ for i in $( ls ); do
             print_color "$i has not changed, skipping..."
           else
             # The current hash and the stashed hash don’t match, proceed
-            run_jazzy
+            build_docs
           fi
         else
           # There is no stashed hash, proceed
-          run_jazzy
+          build_docs
         fi
       else
         # There is no hashstash file
-        run_jazzy
+        build_docs
       fi
 
       # Save new hash value for stashing
@@ -130,3 +132,17 @@ done
 
 # Generate main index
 ./GenerateFrontpage.sh
+
+# Modify jazzy output to inject dependencies into navbar
+for i in $( ls ); do
+  if [[ -d $i ]]; then
+    if ! [ $i = dependencies -o $i = build ]; then
+      if [[ -e "$i/dependencies.json" ]]; then
+        print_color "Adding dependencies to menus in $i..."
+        for html in $( find $i -name '*.html' ); do
+          ruby InjectDependencies.rb "$html" "$i/dependencies.json"
+        done
+      fi
+    fi
+  fi
+done
