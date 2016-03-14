@@ -16,7 +16,7 @@ build_docs () {
     --hide-documentation-coverage \
     --theme $SITE_DIR/dependencies/templates/bean
 
-  . $SITE_DIR/HandleDependencies.sh $FRAMEWORK $SITE_DIR
+  . $SITE_DIR/dependencies/scripts/HandleDependencies.sh $FRAMEWORK $SITE_DIR
 
   # Modify jazzy output to inject dependencies into navbar
     if [[ -e "$SITE_DIR/$FRAMEWORK/dependencies.json" ]]; then
