@@ -47,5 +47,5 @@ if [[ -e main.md ]]; then
 else
   print_color "Looks like you’re missing main.md! No homepage content for you."
 fi
-. dependencies/mo
+. dependencies/scripts/mo
 mo index.mo > index.html
