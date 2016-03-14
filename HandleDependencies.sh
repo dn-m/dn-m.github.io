@@ -15,7 +15,6 @@ if [[ -f $IMPORT_FROM ]]; then
   # Read Cartfile line by line
   while IFS= read -r -a array; do
     ((${#array[@]} >= 1)) || continue # ignore blank lines
-    echo "${array[@]}"
     # Test line is in format: registry "org/repo"[ => version]
     # where version information is optional for matching
     if [[ ${array[@]} =~ ^(.+)[[:space:]]\"(.+)/(.+)\"[[:space:]]*(.+)*$ ]]
@@ -45,7 +44,6 @@ if [[ -f $IMPORT_FROM ]]; then
       fi
       # Properties of a single dependency end writing here =====================
       ((count++))
-      echo $count
     fi
   done < $IMPORT_FROM # <-- defines which file is read in
   echo "]}" >> $EXPORT_TO # close dependencies.json
