@@ -1,0 +1,20 @@
+{"dependencies":[
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "CopyTools",
+"version": ""
+},
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "ArrayTools",
+"version": ""
+},
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "DirectionTools",
+"version": ""
+}
+]}

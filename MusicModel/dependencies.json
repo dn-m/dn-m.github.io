@@ -1,0 +1,14 @@
+{"dependencies":[
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "IntervalTools",
+"version": ""
+},
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "ArithmeticTools",
+"version": ""
+}
+]}
