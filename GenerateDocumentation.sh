@@ -14,7 +14,7 @@ build_docs () {
     --output $SITE_DIR/$FRAMEWORK \
     --skip-undocumented \
     --hide-documentation-coverage \
-    --theme $SITE_DIR/dependencies/bean
+    --theme $SITE_DIR/dependencies/templates/bean
 
   . $SITE_DIR/HandleDependencies.sh $FRAMEWORK $SITE_DIR
 
