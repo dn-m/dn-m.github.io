@@ -2,7 +2,7 @@
 
 print_color () { tput setab 7; tput setaf 0; echo "$1"; tput sgr0; }
 
-run_jazzy () {
+build_docs () {
   jazzy \
     --clean \
     --author James Bean \
@@ -78,15 +78,15 @@ for i in $( ls ); do
             print_color "$i has not changed, skipping..."
           else
             # The current hash and the stashed hash don’t match, proceed
-            run_jazzy
+            build_docs
           fi
         else
           # There is no stashed hash, proceed
-          run_jazzy
+          build_docs
         fi
       else
         # There is no hashstash file
-        run_jazzy
+        build_docs
       fi
 
       # Save new hash value for stashing
