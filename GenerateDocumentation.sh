@@ -15,6 +15,8 @@ build_docs () {
     --skip-undocumented \
     --hide-documentation-coverage \
     --theme $SITE_DIR/dependencies/bean
+
+  . $SITE_DIR/HandleDependencies.sh $i $SITE_DIR
 }
 
 WORK_DIR=${PWD}
