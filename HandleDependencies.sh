@@ -1,10 +1,10 @@
 #!/bin/bash
 
-i=$1
+FRAMEWORK=$1
 SITE_DIR=$2
 
 IMPORT_FROM="Cartfile"
-EXPORT_TO="$SITE_DIR/$i/dependencies.json"
+EXPORT_TO="$SITE_DIR/$FRAMEWORK/dependencies.json"
 
 if [[ -f $IMPORT_FROM ]]; then
   # Count lines in Cartfile for later reference

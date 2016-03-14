@@ -7,16 +7,16 @@ build_docs () {
     --clean \
     --author James Bean \
     --author_url http://jamesbean.info \
-    --github_url https://github.com/dn-m/$i \
+    --github_url https://github.com/dn-m/$FRAMEWORK \
     --module-version $VERSION \
-    --module $i \
+    --module $FRAMEWORK \
     --root-url https://dn-m.github.io \
-    --output $SITE_DIR/$i \
+    --output $SITE_DIR/$FRAMEWORK \
     --skip-undocumented \
     --hide-documentation-coverage \
     --theme $SITE_DIR/dependencies/bean
 
-  . $SITE_DIR/HandleDependencies.sh $i $SITE_DIR
+  . $SITE_DIR/HandleDependencies.sh $FRAMEWORK $SITE_DIR
 }
 
 WORK_DIR=${PWD}
@@ -55,15 +55,15 @@ cd $FRAMEWORKS_DIR
 
 newindex=0
 NEWHASHES=()
-for i in $( ls ); do
-  if [[ -d $i ]]; then
+for FRAMEWORK in $( ls ); do
+  if [[ -d $FRAMEWORK ]]; then
 
-      cd $i
+      cd $FRAMEWORK
 
-      print_color "~~~ $i ~~~"
+      print_color "~~~ $FRAMEWORK ~~~"
 
       VERSION=$(git describe --tags | cut -d - -f -1)
-      HASHKEY=$stashprefix$i
+      HASHKEY=$stashprefix$FRAMEWORK
       HASH=$(git log -n 1 --pretty=format:"%H")
 
       if [[ -n $VERSION ]]; then
@@ -77,7 +77,7 @@ for i in $( ls ); do
           # A hash has been stashed for this module, check for matches
           if [[ $HASH = ${!HASHKEY} ]]; then
             # The current hash and the stashed hash match
-            print_color "$i has not changed, skipping..."
+            print_color "$FRAMEWORK has not changed, skipping..."
           else
             # The current hash and the stashed hash don’t match, proceed
             build_docs
@@ -92,9 +92,9 @@ for i in $( ls ); do
       fi
 
       # Save new hash value for stashing
-      printf -v "$i" %s $HASH
+      printf -v "$FRAMEWORK" %s $HASH
       # Create an array of all stashed hash keys
-      NEWHASHES[$newindex]="$i"
+      NEWHASHES[$newindex]="$FRAMEWORK"
       ((newindex++)) # increment index
 
       cd ../
@@ -109,9 +109,9 @@ if [[ -f "hashstash" ]]; then
   rm hashstash
 fi
 # Write new hashes to hashstash
-for i in "${NEWHASHES[@]}"
+for hash in "${NEWHASHES[@]}"
 do
-  echo "$i=${!i}" >> hashstash
+  echo "$hash=${!hash}" >> hashstash
 done
 
 # Clean and build assets for main index
