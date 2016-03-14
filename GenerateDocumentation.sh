@@ -139,4 +139,4 @@ for i in $( ls ); do
 done
 
 # Generate main index
-./GenerateFrontpage.sh
+./dependencies/scripts/GenerateFrontpage.sh
