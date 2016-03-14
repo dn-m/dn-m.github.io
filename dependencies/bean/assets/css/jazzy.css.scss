@@ -51,6 +51,9 @@ $navigation_border_color: #ddd;
 $navigation_title_color: #333;
 $navigation_task_color: #808080;
 
+$dependencies_bg_color: coral;
+$dependencies_link_color: white;
+
 // ----- Content
 
 $declaration_title_language_color: #4183c4;
@@ -332,18 +335,19 @@ pre code {
 }
 
 // Dependencies
+
 #dependencies {
   &.nav-group-name {
     border-bottom: 1px solid $navigation_border_color;
     padding: $gutter/2 0 $gutter/2 $gutter;
-    background-color: coral;
+    background-color: $dependencies_bg_color;
   }
   .nav-group-name-link {
     font-weight: 800;
-    color: white;
+    color: $dependencies_link_color;
   }
   .nav-group-task-link {
-    color: white;
+    color: $dependencies_link_color;
     opacity: 0.75;
   }
 }
