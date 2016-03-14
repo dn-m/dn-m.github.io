@@ -25,8 +25,8 @@ if (File.exist?(json_to_read)) && (File.exist?(html_to_mod))
     page.css("#dependencies").remove
   end
   # create new #dependencies navigation section
-  page.css(".nav-groups")[0].add_child '<li class="nav-group-name" id="dependencies">
-              <span class="nav-group-name-link">Dependencies</span>
+  page.css(".nav-groups")[0].add_child '<li class="nav-group-name-dependencies" id="dependencies">
+              <span class="nav-group-name-link-dependencies">Dependencies</span>
               <ul class="nav-group-tasks"></ul>
             </li>'
   dependencies_hash["dependencies"].each do |dependency|
@@ -36,10 +36,10 @@ if (File.exist?(json_to_read)) && (File.exist?(html_to_mod))
       dependency_link="https://github.com/"+dependency["organisation"]+"/"+dependency["repo"]
     end
     if dependency_link.nil?
-      item_html = '<li class="nav-group-task"><span class="nav-group-task-link">'+dependency["repo"]+'</span>'
+      item_html = '<li class="nav-group-task"><span class="nav-group-task-link-dependencies">'+dependency["repo"]+'</span>'
     else
       item_html = '<li class="nav-group-task">
-        <a class="nav-group-task-link" href="'+dependency_link+'">'+dependency["repo"]+'</a>'
+        <a class="nav-group-task-link-dependencies" href="'+dependency_link+'">'+dependency["repo"]+'</a>'
     end
     if dependency["version"].to_s.strip.length == 0
       item_html = item_html+'</li>'
