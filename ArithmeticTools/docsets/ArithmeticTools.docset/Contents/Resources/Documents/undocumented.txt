@@ -8,7 +8,7 @@ ArithmeticType.swift
 	public static var one: Int { return 1 }
 	public static var two: Int { return 2 }
 	public static func mod(dividend: Int, _ modulus: Int) -> Int
-	public static func random(min min: Int = 0, var max: Int = Int.max) -> Int
+	public static func random(min min: Int = 0, max: Int = Int.max) -> Int
 	public static func abs(value: Int) -> Int
 	public var isInteger: Bool { return true }
 	public var isPrime: Bool
