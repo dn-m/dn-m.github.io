@@ -42,10 +42,11 @@ if [ $misci -gt 0 ]; then
   done
 fi
 
+
 if [[ -e main.md ]]; then
-  ruby Md2Mo.rb main.md
+  ruby dependencies/scripts/Md2Mo.rb main.md
 else
   print_color "Looks like you’re missing main.md! No homepage content for you."
 fi
 . dependencies/scripts/mo
-mo index.mo > index.html
+mo dependencies/templates/index.mo > index.html
