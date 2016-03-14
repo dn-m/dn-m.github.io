@@ -36,11 +36,15 @@ if (File.exist?(json_to_read)) && (File.exist?(html_to_mod))
       dependency_link="https://github.com/"+dependency["organisation"]+"/"+dependency["repo"]
     end
     if dependency_link.nil?
-      item_html = '<li class="nav-group-task"><span class="nav-group-task-link">'+dependency["repo"]+'</span></li>'
+      item_html = '<li class="nav-group-task"><span class="nav-group-task-link">'+dependency["repo"]+'</span>'
     else
       item_html = '<li class="nav-group-task">
-        <a class="nav-group-task-link" href="'+dependency_link+'">'+dependency["repo"]+'</a>
-      </li>'
+        <a class="nav-group-task-link" href="'+dependency_link+'">'+dependency["repo"]+'</a>'
+    end
+    if dependency["version"].to_s.strip.length == 0
+      item_html = item_html+'</li>'
+    else
+      item_html = item_html+' <span class="dependency-version">'+dependency["version"]+'</span></li>'
     end
     page.css("#dependencies .nav-group-tasks")[0].add_child item_html
   end
