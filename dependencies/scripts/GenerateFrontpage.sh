@@ -44,7 +44,7 @@ fi
 
 
 if [[ -e main.md ]]; then
-  ruby dependencies/scripts/Md2Mo.rb main.md
+  ruby dependencies/scripts/Md2Mo.rb main.md dependencies/templates/main.mo
 else
   print_color "Looks like you’re missing main.md! No homepage content for you."
 fi
