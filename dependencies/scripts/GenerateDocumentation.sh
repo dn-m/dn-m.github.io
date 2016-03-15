@@ -45,6 +45,7 @@ stashprefix="HASHSTASH__"
 stashindex=0
 STASHEDHASHES=()
 if [[ -f "hashstash" ]]; then
+  echo "hashstash exists!"
   hasStash=1
   # Read hashstash line by line
   while IFS="=" read -r -a array; do
@@ -57,6 +58,7 @@ if [[ -f "hashstash" ]]; then
   done < hashstash # <-- defines which file is read in
   # At this point we have a series of variables in the form
   # `HASHSTASH__ModuleName` and an array `STASHEDHASHES` of those variable names
+  #statements
 fi
 
 cd $FRAMEWORKS_DIR
