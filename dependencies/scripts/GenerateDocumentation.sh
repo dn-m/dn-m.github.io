@@ -139,6 +139,3 @@ for i in $( ls ); do
     fi
   fi
 done
-
-# Generate main index
-./dependencies/scripts/GenerateFrontpage.sh
