@@ -1,0 +1,16 @@
+InstrumentFamily+Brass.swift
+	public class Trumpets: InstrumentFamily
+InstrumentFamily.swift
+	public class InstrumentFamily
+	public class InstrumentFamily
+	public class InstrumentFamily
+InstrumentKind.swift
+	public enum InstrumentKind: String
+Instrument.swift
+	public struct Instrument
+	public func == (lhs: Instrument, rhs: Instrument) -> Bool
+InstrumentIdentifierPath.swift
+	public class InstrumentIdentifierPath: KeyPath
+Performer.swift
+	public struct Performer
+	public func == (lhs: Performer, rhs: Performer) -> Bool

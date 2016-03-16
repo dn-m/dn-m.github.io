@@ -19,7 +19,7 @@ done
 # Declare Utility modules
 UTILITY=(ArithmeticTools ArrayTools CopyTools DictionaryTools DirectionTools EnumTools IntervalTools StringTools TreeTools)
 # Declare MusicModel modules
-MUSICMODEL=(MusicModel Duration Pitch)
+MUSICMODEL=(MusicModel Duration Pitch EnsembleTools)
 MISC=()
 
 misci=0

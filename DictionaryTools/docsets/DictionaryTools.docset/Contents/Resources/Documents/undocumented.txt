@@ -1,4 +1,5 @@
 KeyPath.swift
+	public func == (lhs: KeyPath, rhs: KeyPath) -> Bool
 	public var description: String
 OrderedDictionary.swift
 	public init() { }

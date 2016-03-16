@@ -2,5 +2,3 @@ Node.swift
 	public func == (lhs: Node, rhs: Node) -> Bool
 Node+CustomStringConvertible.swift
 	public var description: String
-Node+Leaves.swift
-	public func leaf(at index: Int) -> Node?
