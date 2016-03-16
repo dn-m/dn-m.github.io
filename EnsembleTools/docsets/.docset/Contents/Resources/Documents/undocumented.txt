@@ -1,16 +1,75 @@
 InstrumentFamily+Brass.swift
-	public class Trumpets: InstrumentFamily
-InstrumentFamily.swift
-	public class InstrumentFamily
-	public class InstrumentFamily
-	public class InstrumentFamily
+	public static let Bflat: InstrumentKind = .Trumpet_Bflat
+	public static let C: InstrumentKind = .Trumpet_C
+InstrumentFamily+Strings.swift
+	public static let Violin: InstrumentKind = .Violin
+	public static let Viola: InstrumentKind = .Viola
+	public static let Violoncello: InstrumentKind = .Violoncello
+	public static let Contrabass: InstrumentKind = .Contrabass
+	public static let Guitar: InstrumentKind = .Guitar
+InstrumentFamily+Woodwinds.swift
+	public static let Piccolo: InstrumentKind = .Flute_Piccolo
+	public static let C: InstrumentKind = .Flute_C
+	public static let Alto: InstrumentKind = .Flute_Alto
+	public static let Bass: InstrumentKind = .Flute_Bass
+	public static let Contrabass: InstrumentKind = .Flute_Contrabass
+	public static let Bflat: InstrumentKind = .Clarinet_Bflat
+	public static let A: InstrumentKind = .Clarinet_A
+	public static let Bass: InstrumentKind = .Clarinet_Bass
+	public static let Contrabass: InstrumentKind = .Clarinet_Contrabass
+	public static let Oboe: InstrumentKind = .Oboe
+	public static let Oboe_dArmore: InstrumentKind = .Oboe_dAmore
+	public static let English_Horn: InstrumentKind = .English_Horn
+	public static let Bassoon: InstrumentKind = .Bassoon
+	public static let Sopranino: InstrumentKind = .Saxophone_Sopranino
+	public static let Soprano: InstrumentKind = .Saxophone_Soprano
+	public static let Alto: InstrumentKind = .Saxophone_Alto
+	public static let Baritone: InstrumentKind = .Saxophone_Baritone
+	public static let Bass: InstrumentKind = .Saxophone_Bass
+	public static let Contrabass: InstrumentKind = .Saxophone_Contrabass
 InstrumentKind.swift
-	public enum InstrumentKind: String
-Instrument.swift
-	public struct Instrument
-	public func == (lhs: Instrument, rhs: Instrument) -> Bool
-InstrumentIdentifierPath.swift
-	public class InstrumentIdentifierPath: KeyPath
+	case Violin
+	case Viola
+	case Violoncello
+	case Contrabass
+	case Guitar
+	case Flute_Piccolo
+	case Flute_C
+	case Flute_Alto
+	case Flute_Bass
+	case Flute_Contrabass
+	case Clarinet_Bflat
+	case Clarinet_A
+	case Clarinet_Bass
+	case Clarinet_Contrabass
+	case Oboe
+	case Oboe_dAmore
+	case English_Horn
+	case Bassoon
+	case Saxophone_Sopranino
+	case Saxophone_Soprano
+	case Saxophone_Alto
+	case Saxophone_Tenor
+	case Saxophone_Baritone
+	case Saxophone_Bass
+	case Saxophone_Contrabass
+	case Trumpet_Bflat
+	case Trumpet_C
+	case Trombone_Bflat
+	case Trombone_F
+	case Horn
+	case Euphonium
+	case Tuba
+	case Percussion_Skin
+	case Percussion_Metal
+	case Percussion_Wood
+	case Keyboard_Piano
+	case ContinuousController
+	case BinarySwitch
+	case MultiStateSwitch
+	case Trigger
+	case Waveform
 Performer.swift
-	public struct Performer
 	public func == (lhs: Performer, rhs: Performer) -> Bool
+Instrument.swift
+	public func == (lhs: Instrument, rhs: Instrument) -> Bool
