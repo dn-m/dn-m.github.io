@@ -14,15 +14,15 @@ build_docs () {
     --output $SITE_DIR/$FRAMEWORK \
     --skip-undocumented \
     --hide-documentation-coverage \
-    --theme $SITE_DIR/dependencies/bean
+    --theme $SITE_DIR/dependencies/templates/bean
 
-  . $SITE_DIR/HandleDependencies.sh $FRAMEWORK $SITE_DIR
+  . $SITE_DIR/dependencies/scripts/HandleDependencies.sh $FRAMEWORK $SITE_DIR
 
   # Modify jazzy output to inject dependencies into navbar
     if [[ -e "$SITE_DIR/$FRAMEWORK/dependencies.json" ]]; then
       print_color "Adding dependencies to menus in $FRAMEWORK..."
       for html in $( find $SITE_DIR/$FRAMEWORK -name '*.html' ); do
-        ruby $SITE_DIR/InjectDependencies.rb "$html" "$SITE_DIR/$FRAMEWORK/dependencies.json"
+        ruby $SITE_DIR/dependencies/scripts/InjectDependencies.rb "$html" "$SITE_DIR/$FRAMEWORK/dependencies.json"
       done
     fi
 }
@@ -45,6 +45,7 @@ stashprefix="HASHSTASH__"
 stashindex=0
 STASHEDHASHES=()
 if [[ -f "hashstash" ]]; then
+  echo "hashstash exists!"
   hasStash=1
   # Read hashstash line by line
   while IFS="=" read -r -a array; do
@@ -57,6 +58,7 @@ if [[ -f "hashstash" ]]; then
   done < hashstash # <-- defines which file is read in
   # At this point we have a series of variables in the form
   # `HASHSTASH__ModuleName` and an array `STASHEDHASHES` of those variable names
+  #statements
 fi
 
 cd $FRAMEWORKS_DIR
@@ -121,22 +123,3 @@ for hash in "${NEWHASHES[@]}"
 do
   echo "$hash=${!hash}" >> hashstash
 done
-
-# Clean and build assets for main index
-for i in $( ls ); do
-  if [[ -d $i ]]; then
-    if ! [ $i = dependencies -o $i = build ]; then
-      if [ -d "build" ]; then
-        rm -r build # Clean old build directory
-      fi
-      mkdir build # Recreate build directory
-      for dir in js css img; do
-        cp -R $i/$dir build/$dir # Copy js, css & img assets to build directory
-      done
-      break
-    fi
-  fi
-done
-
-# Generate main index
-./GenerateFrontpage.sh

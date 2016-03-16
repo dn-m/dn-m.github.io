@@ -1,5 +1,21 @@
 #!/bin/bash
 
+# Clean and build assets for main index
+for i in $( ls ); do
+  if [[ -d $i ]]; then
+    if ! [ $i = dependencies -o $i = build ]; then
+      if [ -d "build" ]; then
+        rm -r build # Clean old build directory
+      fi
+      mkdir build # Recreate build directory
+      for dir in js css img; do
+        cp -R $i/$dir build/$dir # Copy js, css & img assets to build directory
+      done
+      break
+    fi
+  fi
+done
+
 # Declare Utility modules
 UTILITY=(ArithmeticTools ArrayTools CopyTools DictionaryTools DirectionTools EnumTools IntervalTools StringTools TreeTools)
 # Declare MusicModel modules
@@ -42,10 +58,11 @@ if [ $misci -gt 0 ]; then
   done
 fi
 
+
 if [[ -e main.md ]]; then
-  ruby Md2Mo.rb main.md
+  ruby dependencies/scripts/Md2Mo.rb main.md dependencies/templates/main.mo
 else
   print_color "Looks like you’re missing main.md! No homepage content for you."
 fi
-. dependencies/mo
-mo index.mo > index.html
+. dependencies/scripts/mo
+mo dependencies/templates/index.mo > index.html
