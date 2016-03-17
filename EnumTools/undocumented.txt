@@ -1,2 +1,0 @@
-Iterate.swift
-	public func iterateEnum<T: Hashable>(_: T.Type) -> AnyGenerator<T>

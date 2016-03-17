@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Protocols  Reference | dn-m</title>
+    <title>Functions  Reference | dn-m</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
   <body>
 
 
-    <a title="Protocols  Reference"></a>
+    <a title="Functions  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -42,7 +42,7 @@
       <img class="carat" src="img/carat.png" />
       <a class="breadcrumb" href="index.html">EnumTools Reference</a>
       <img class="carat" src="img/carat.png" />
-      Protocols  Reference
+      Functions  Reference
     </p>
 
     <div class="content-wrapper">
@@ -70,8 +70,8 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Protocols</h1>
-            <p>The following protocols are available globally.</p>
+            <h1>Functions</h1>
+            <p>The following functions are available globally.</p>
 
           </div>
         </section>
@@ -83,9 +83,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:P9EnumTools8EnumTree"></a>
-                    <a name="//apple_ref/swift/Protocol/EnumTree" class="dashAnchor"></a>
-                    <a class="token" href="#/s:P9EnumTools8EnumTree">EnumTree</a>
+                    <a name="/s:F9EnumTools11iterateEnumuRq_Ss8Hashable_FMq_GCSs12AnyGeneratorq__"></a>
+                    <a name="//apple_ref/swift/Function/iterateEnum(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F9EnumTools11iterateEnumuRq_Ss8Hashable_FMq_GCSs12AnyGeneratorq__">iterateEnum(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -93,17 +93,52 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Wrap a many-cased Enum with a hierarchical structure.</p>
+                        <p>Iterate over an Enum type.</p>
 
-                        <a href="Protocols/EnumTree.html" class="slightly-smaller">See more</a>
+<pre class="highlight plaintext"><code>for instrumentKind in iterateEnum(InstrumentKind) { ... }
+</code></pre>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    Embed in a <code>SequenceType</code> conforming structure:
+
+</div>
+
+<blockquote>
+<pre class="highlight plaintext"><code>let allCases: [InstrumentKind] = iterateEnum(InstrumentKind).map { $0 }
+</code></pre>
+</blockquote>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    Add extension to <code>RawRepresentable</code> types to generate <code>allCases</code> innately:
+
+</div>
+
+<blockquote>
+<pre class="highlight plaintext"><code>let allCases = InstrumentKind.allCases
+</code></pre>
+</blockquote>
+
+<div class="aside aside-authors">
+    <p class="aside-title">Authors</p>
+    <p><a href="http://stackoverflow.com/users/3804019/rintaro">rintaro</a> / <a href="http://stackoverflow.com/users/3443689/kametrixom">kemetrixom</a> @ <a href="http://stackoverflow.com/a/28341290">Stackoverflow</a>.</p>
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">EnumTree</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">iterateEnum</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Hashable</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AnyGenerator</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Next case of given Enum type. <code>nil</code> once last case has been reached.</p>
+
                       </div>
                     </section>
                   </div>
