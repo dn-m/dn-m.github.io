@@ -2,6 +2,12 @@
 {
 "registry": "github",
 "organisation": "dn-m",
+"repo": "EnumTools",
+"version": ""
+},
+{
+"registry": "github",
+"organisation": "dn-m",
 "repo": "DictionaryTools",
 "version": ""
 }

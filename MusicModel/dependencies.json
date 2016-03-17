@@ -11,4 +11,10 @@
 "repo": "Duration",
 "version": ""
 },
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "EnsembleTools",
+"version": ""
+}
 ]}
