@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EnumTree Protocol Reference | dn-m</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/EnumTree" class="dashAnchor"></a>
+
+    <a title="EnumTree Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="/">
+          dn-m Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/dn-m/EnumTools">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2FEnumTools%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="/">dn-m</a>
+      <img class="carat" src="../img/carat.png" />
+      <a class="breadcrumb" href="../index.html">EnumTools Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      EnumTree Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EnumTree.html">EnumTree</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>EnumTree</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">EnumTree</span></code></pre>
+
+                </div>
+              </div>
+            <p>Wrap a many-cased Enum with a hierarchical structure.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/AssociatedTypes"></a>
+                <a name="//apple_ref/swift/Section/AssociatedTypes" class="dashAnchor"></a>
+                <a href="#/AssociatedTypes">
+                  <h3 class="section-name">AssociatedTypes</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvP9EnumTools8EnumTree7membersERR"></a>
+                    <a name="//apple_ref/swift/Variable/members" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvP9EnumTools8EnumTree7membersERR">members</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Individual cases of the <code>EnumKind</code> type</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Returns <code>[]</code>. Override in embedded subclasses to return all appropriate cases.
+
+</div>
+
+<p>Default implementation of <code>EnumKind.members</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">members</span><span class="p">:</span> <span class="p">[</span><span class="kt">EnumKind</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvP9EnumTools8EnumTree11subFamiliesERR"></a>
+                    <a name="//apple_ref/swift/Variable/subFamilies" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvP9EnumTools8EnumTree11subFamiliesERR">subFamilies</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subclasses of <code>EnumFamily</code> conforming class, containing <code><a href="../Protocols/EnumTree.html#/s:ZvP9EnumTools8EnumTree7membersERR">members</a></code> and / or <code>subfamiles</code>.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Returns <code>[]</code>. Override in embedded subclasses to return all appropriate values.
+
+</div>
+
+<p>Default implementation of <code>EnumKind.subFamilies</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">subFamilies</span><span class="p">:</span> <span class="p">[</span><span class="kt">EnumFamily</span><span class="o">.</span><span class="k">Type</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFP9EnumTools8EnumTree3hasERR"></a>
+                    <a name="//apple_ref/swift/Method/has(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFP9EnumTools8EnumTree3hasERR">has(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Defualt implementation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">has</span><span class="p">(</span><span class="nv">kind</span><span class="p">:</span> <span class="kt">EnumKind</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if <code><a href="../Protocols/EnumTree.html#/s:ZvP9EnumTools8EnumTree7membersERR">members</a></code> or any subFamily&rsquo;s <code><a href="../Protocols/EnumTree.html#/s:ZvP9EnumTools8EnumTree7membersERR">members</a></code> contains <code>kind</code> value.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James</a>. All rights reserved. (Last updated: 2016-03-17)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

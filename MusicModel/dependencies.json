@@ -2,13 +2,13 @@
 {
 "registry": "github",
 "organisation": "dn-m",
-"repo": "IntervalTools",
+"repo": "Pitch",
 "version": ""
 },
 {
 "registry": "github",
 "organisation": "dn-m",
-"repo": "ArithmeticTools",
+"repo": "Duration",
 "version": ""
-}
+},
 ]}

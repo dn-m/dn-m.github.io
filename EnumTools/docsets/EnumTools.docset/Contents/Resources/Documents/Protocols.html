@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>EnumTools  Reference | dn-m</title>
+    <title>Protocols  Reference | dn-m</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
   <body>
 
 
-    <a title="EnumTools  Reference"></a>
+    <a title="Protocols  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -42,7 +42,7 @@
       <img class="carat" src="img/carat.png" />
       <a class="breadcrumb" href="index.html">EnumTools Reference</a>
       <img class="carat" src="img/carat.png" />
-      EnumTools  Reference
+      Protocols  Reference
     </p>
 
     <div class="content-wrapper">
@@ -62,41 +62,48 @@
 
         <section class="section">
           <div class="section-content">
-            
-            <a href='#enumtools' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='enumtools'>EnumTools</h1>
-
-<p><a href="https://travis-ci.org/dn-m/EnumTools"><img src="https://travis-ci.org/dn-m/EnumTools.svg?branch=master" alt="Build Status"></a></p>
-
-<p>Tools for Swift Enum </p>
-
-<hr>
-
-<p><a name="integration"></a></p>
-<a href='#integration' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='integration'>Integration</h2>
-<a href='#carthage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='carthage'>Carthage</h3>
-
-<p>Integrate <strong>EnumTools</strong> into your OSX or iOS project with <a href="https://github.com/Carthage/Carthage">Carthage</a>.</p>
-
-<ol>
-<li>Follow <a href="https://github.com/Carthage/Carthage#installing-carthage">these instructions</a> to install Carthage, if necessary.</li>
-<li>Add <code>github &quot;dn-m/EnumTools&quot;</code> to your <a href="https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile">Cartfile</a></li>
-<li>Follow <a href="https://github.com/Carthage/Carthage#adding-frameworks-to-an-application">these instructions</a> to integrate <strong>EnumTools</strong> into your OSX or iOS project.</li>
-</ol>
-
-<hr>
-<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
-
-<p>The implementation of this is from <a href="http://stackoverflow.com/a/28341290">here</a>.</p>
-<pre class="highlight plaintext"><code>enum TestEnum { case A, B, C }
-</code></pre>
-<pre class="highlight plaintext"><code>var allEnums: [TestEnum] = []
-for e in iterateEnum(TestEnum) { allEnums.append(e) }
-// [.A, .B, .C]
-</code></pre>
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
 
           </div>
         </section>
 
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P9EnumTools8EnumTree"></a>
+                    <a name="//apple_ref/swift/Protocol/EnumTree" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P9EnumTools8EnumTree">EnumTree</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Wrap a many-cased Enum with a hierarchical structure.</p>
+
+                        <a href="Protocols/EnumTree.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">EnumTree</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
       </article>
     </div>
