@@ -1,2 +1,6 @@
 RelativeDirection.swift
-	public struct RelativeDirection: OptionSetType
+	public class RelativeDirection : EnumTree
+	public class RelativeDirection : EnumTree
+	public class RelativeDirection : EnumTree
+	public enum RelativeDirectionKind
+	public class RelativeDirection: EnumTree

@@ -1,5 +1,10 @@
 MetricalDuration.swift
 	public var description: String
+MetricalDurationNode.swift
+	public class MetricalDurationNode: Node, MetricalDurationSpanning
+MetricalDurationSpanning.swift
+	public protocol MetricalDurationSpanning
 MetricalDurationInterval.swift
+	public static let zero: MetricalDurationInterval = MetricalDurationInterval((0,8),(0,8))!
 	public init?(_ start: (Int, Int), _ stop: (Int, Int))
 	public func == (lhs: MetricalDurationInterval, rhs: MetricalDurationInterval) -> Bool
