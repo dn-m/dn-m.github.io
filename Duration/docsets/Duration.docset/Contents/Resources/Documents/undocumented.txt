@@ -1,7 +1,8 @@
 MetricalDuration.swift
 	public var description: String
 MetricalDurationNode.swift
-	public class MetricalDurationNode: Node, MetricalDurationSpanning
+	public class func metricalDurationNode(with: MetricalDuration)
+        -> RigidMetricalDurationNode?
 MetricalDurationSpanning.swift
 	public protocol MetricalDurationSpanning
 MetricalDurationInterval.swift
