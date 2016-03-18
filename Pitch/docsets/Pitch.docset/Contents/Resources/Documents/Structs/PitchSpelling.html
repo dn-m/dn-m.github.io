@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Dyad Struct Reference | dn-m</title>
+    <title>PitchSpelling Struct Reference | dn-m</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css">
     <link rel="stylesheet" type="text/css" href="../css/highlight.css">
     <meta charset="utf-8">
@@ -12,9 +12,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/Dyad" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/PitchSpelling" class="dashAnchor"></a>
 
-    <a title="Dyad Struct Reference"></a>
+    <a title="PitchSpelling Struct Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
       <img class="carat" src="../img/carat.png">
       <a class="breadcrumb" href="../index.html">Pitch Reference</a>
       <img class="carat" src="../img/carat.png">
-      Dyad Struct Reference
+      PitchSpelling Struct Reference
     </p>
 
     <div class="content-wrapper">
@@ -141,14 +141,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Dyad</h1>
+            <h1>PitchSpelling</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Dyad</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PitchSpelling</span></code></pre>
 
                 </div>
               </div>
-            <p>Collection of two pitches.</p>
+            <p>Spelled representation of a <code><a href="../Structs/Pitch.html">Pitch</a></code>.</p>
 
           </div>
         </section>
@@ -160,9 +160,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV5Pitch4Dyad5lowerVS_5Pitch"></a>
-                    <a name="//apple_ref/swift/Property/lower" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV5Pitch4Dyad5lowerVS_5Pitch">lower</a>
+                    <a name="/s:OV5Pitch13PitchSpelling10LetterName"></a>
+                    <a name="//apple_ref/swift/Enum/LetterName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OV5Pitch13PitchSpelling10LetterName">LetterName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -170,14 +170,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Lower of two <code><a href="../Structs/Pitch.html">Pitch</a></code> values.</p>
+                        <p>Letter name component of a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code></p>
 
+                        <a href="../Structs/PitchSpelling/LetterName.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">lower</span><span class="p">:</span> <span class="kt">Pitch</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">LetterName</span></code></pre>
 
                         </div>
                       </div>
@@ -187,9 +188,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV5Pitch4Dyad6higherVS_5Pitch"></a>
-                    <a name="//apple_ref/swift/Property/higher" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV5Pitch4Dyad6higherVS_5Pitch">higher</a>
+                    <a name="/s:OV5Pitch13PitchSpelling4Fine"></a>
+                    <a name="//apple_ref/swift/Enum/Fine" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OV5Pitch13PitchSpelling4Fine">Fine</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -197,14 +198,23 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Higher of two <code><a href="../Structs/Pitch.html">Pitch</a></code> values.</p>
+                        <p>Fine resolution component of a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>. 
+   Analogous to an up or down arrow of an accidental.</p>
 
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    In 48-EDO, represents 1/8th-tone adjustment. 
+May be useful for other cases (e.g., -14c adjustment for 5th partial, etc.).
+
+</div>
+
+                        <a href="../Structs/PitchSpelling/Fine.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">higher</span><span class="p">:</span> <span class="kt">Pitch</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Fine</span><span class="p">:</span> <span class="kt">Float</span></code></pre>
 
                         </div>
                       </div>
@@ -214,9 +224,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV5Pitch4Dyad8intervalSf"></a>
-                    <a name="//apple_ref/swift/Property/interval" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV5Pitch4Dyad8intervalSf">interval</a>
+                    <a name="/s:OV5Pitch13PitchSpelling6Coarse"></a>
+                    <a name="//apple_ref/swift/Enum/Coarse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OV5Pitch13PitchSpelling6Coarse">Coarse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -224,14 +234,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code><a href="../Extensions/Interval.html">Interval</a></code> between two <code><a href="../Structs/Pitch.html">Pitch</a></code> values.</p>
+                        <p>Coarse resolution component of a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>.
+   Analogous to the body of an accidental.</p>
 
+                        <a href="../Structs/PitchSpelling/Coarse.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">Interval</span> <span class="p">{</span> <span class="k">return</span> <span class="kt">Interval</span><span class="p">(</span><span class="k">self</span><span class="p">)</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Coarse</span><span class="p">:</span> <span class="kt">Float</span></code></pre>
 
                         </div>
                       </div>
@@ -241,9 +253,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV5Pitch4DyadcFMS0_FT1aVS_5PitchS1__S0_"></a>
-                    <a name="//apple_ref/swift/Method/init(a:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV5Pitch4DyadcFMS0_FT1aVS_5PitchS1__S0_">init(a:_:)</a>
+                    <a name="/s:vV5Pitch13PitchSpelling10letterNameOS0_10LetterName"></a>
+                    <a name="//apple_ref/swift/Property/letterName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV5Pitch13PitchSpelling10letterNameOS0_10LetterName">letterName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -251,14 +263,95 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a <code><a href="../Structs/Dyad.html">Dyad</a></code> with two <code><a href="../Structs/Pitch.html">Pitch</a></code> values.</p>
+                        <p>LetterName of a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">a</span><span class="p">:</span> <span class="kt">Pitch</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">Pitch</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">letterName</span><span class="p">:</span> <span class="kt">LetterName</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV5Pitch13PitchSpelling4fineOS0_4Fine"></a>
+                    <a name="//apple_ref/swift/Property/fine" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV5Pitch13PitchSpelling4fineOS0_4Fine">fine</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fine resolution of a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">fine</span><span class="p">:</span> <span class="kt">Fine</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV5Pitch13PitchSpelling6coarseOS0_6Coarse"></a>
+                    <a name="//apple_ref/swift/Property/coarse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV5Pitch13PitchSpelling6coarseOS0_6Coarse">coarse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Coarse resolution of a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">coarse</span><span class="p">:</span> <span class="kt">Coarse</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV5Pitch13PitchSpellingcFMS0_FT10letterNameOS0_10LetterName6coarseGSqOS0_6Coarse_4fineGSqOS0_4Fine__S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(letterName:coarse:fine:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV5Pitch13PitchSpellingcFMS0_FT10letterNameOS0_10LetterName6coarseGSqOS0_6Coarse_4fineGSqOS0_4Fine__S0_">init(letterName:coarse:fine:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">letterName</span><span class="p">:</span> <span class="kt">LetterName</span><span class="p">,</span> <span class="nv">coarse</span><span class="p">:</span> <span class="kt">Coarse</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">fine</span><span class="p">:</span> <span class="kt">Fine</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

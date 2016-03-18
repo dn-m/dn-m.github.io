@@ -1,9 +1,7 @@
-PitchSpelling.swift
-	public struct PitchSpelling
+MonadSpeller.swift
+	public struct MonadSpeller: PitchSpeller
 Verticality.swift
 	public struct Verticality
-LetterName.swift
-	public enum LetterName
 Pitch.swift
 	public func == (lhs: Pitch, rhs: Pitch) -> Bool
 	public func < (lhs: Pitch, rhs: Pitch) -> Bool

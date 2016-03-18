@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>PitchType Protocol Reference | dn-m</title>
+    <title>PitchSpeller Protocol Reference | dn-m</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css">
     <link rel="stylesheet" type="text/css" href="../css/highlight.css">
     <meta charset="utf-8">
@@ -12,9 +12,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Protocol/PitchType" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Protocol/PitchSpeller" class="dashAnchor"></a>
 
-    <a title="PitchType Protocol Reference"></a>
+    <a title="PitchSpeller Protocol Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
       <img class="carat" src="../img/carat.png">
       <a class="breadcrumb" href="../index.html">Pitch Reference</a>
       <img class="carat" src="../img/carat.png">
-      PitchType Protocol Reference
+      PitchSpeller Protocol Reference
     </p>
 
     <div class="content-wrapper">
@@ -141,14 +141,18 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>PitchType</h1>
+            <h1>PitchSpeller</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PitchType</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PitchSpeller</span></code></pre>
 
                 </div>
               </div>
-            <p>Protocol defining types representable with <code><a href="../Extensions/NoteNumber.html">NoteNumber</a></code> and <code><a href="../Extensions/Frequency.html">Frequency</a></code> values.</p>
+            <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Not yet implemented!
+
+</div>
 
           </div>
         </section>
@@ -160,53 +164,39 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vP5Pitch9PitchType10noteNumberSf"></a>
-                    <a name="//apple_ref/swift/Property/noteNumber" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vP5Pitch9PitchType10noteNumberSf">noteNumber</a>
+                    <a name="/s:ZFeRq_5Pitch12PitchSpeller_S_S0_9spellingsuRq_S0__FMq_FT16forIntervalClassSf_GSaVS_13PitchSpelling_"></a>
+                    <a name="//apple_ref/swift/Method/spellings(forIntervalClass:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFeRq_5Pitch12PitchSpeller_S_S0_9spellingsuRq_S0__FMq_FT16forIntervalClassSf_GSaVS_13PitchSpelling_">spellings(forIntervalClass:)</a>
                     </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code><a href="../Extensions/NoteNumber.html">NoteNumber</a></code> representation of <code><a href="../Protocols/PitchType.html">PitchType</a></code>.</p>
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>Not yet implemented!</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">noteNumber</span><span class="p">:</span> <span class="kt">NoteNumber</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">spellings</span><span class="p">(</span><span class="n">forIntervalClass</span> <span class="nv">intervalClass</span><span class="p">:</span> <span class="kt">IntervalClass</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">PitchSpelling</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vP5Pitch9PitchType9frequencySf"></a>
-                    <a name="//apple_ref/swift/Property/frequency" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vP5Pitch9PitchType9frequencySf">frequency</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><code><a href="../Extensions/Frequency.html">Frequency</a></code> representation of <code><a href="../Protocols/PitchType.html">PitchType</a></code>.</p>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> for given <code><a href="../Extensions/IntervalClass.html">IntervalClass</a></code>. <code>nil</code> if <code>intervalClass</code> is not divisable by <code>0.25</code>.</p>
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">frequency</span><span class="p">:</span> <span class="kt">Frequency</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
