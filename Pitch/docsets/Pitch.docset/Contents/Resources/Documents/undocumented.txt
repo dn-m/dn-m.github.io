@@ -1,5 +1,9 @@
+PitchSpelling.swift
+	public struct PitchSpelling
 Verticality.swift
 	public struct Verticality
+LetterName.swift
+	public enum LetterName
 Pitch.swift
 	public func == (lhs: Pitch, rhs: Pitch) -> Bool
 	public func < (lhs: Pitch, rhs: Pitch) -> Bool
