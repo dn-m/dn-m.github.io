@@ -4,6 +4,7 @@ print_color () { tput setab 7; tput setaf 0; echo "$1"; tput sgr0; }
 
 build_docs () {
   jazzy \
+    --swift-version 2.2 \
     --clean \
     --author James Bean \
     --author_url http://jamesbean.info \

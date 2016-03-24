@@ -121,3 +121,33 @@ ArithmeticType.swift
 	public var isPowerOfTwo: Bool { return Int(self).isPowerOfTwo }
 	public func isDivisible(by value: UInt64) -> Bool
 	public func format(f: String) -> String { return String(format(f), self) }
+	public static var zero: Float { return 0 }
+	public static var one: Float { return 1 }
+	public static var two: Float { return 2 }
+	public static var max: Float { return FLT_MAX }
+	public static var min: Float { return FLT_MIN }
+	public static func mod(dividend: Float, _ modulus: Float) -> Float
+	public static func abs(value: Float) -> Float
+	public static func random(min min: Float = 0.0, max: Float = 1.0) -> Float
+	public var isInteger: Bool { return self % 1 == 0 }
+	public var isPrime: Bool { return isInteger ? Int(self).isPrime : false }
+	public var isEven: Bool { return isInteger ? Int(self).isEven : false }
+	public var isOdd: Bool { return isInteger ? Int(self).isOdd : false }
+	public var isPowerOfTwo: Bool { return isInteger ? Int(self).isPowerOfTwo : false }
+	public func isDivisible(by value: Float) -> Bool
+	public func format(f: String) -> String { return String(format(f), self) }
+	public static var zero: Double { return 0 }
+	public static var one: Double { return 1 }
+	public static var two: Double { return 2 }
+	public static var max: Double { return DBL_MAX }
+	public static var min: Double { return DBL_MIN }
+	public static func mod(dividend: Double, _ modulus: Double) -> Double
+	public static func random(min min: Double = Double.min, max: Double = Double.max) -> Double
+	public static func abs(value: Double) -> Double
+	public var isInteger: Bool { return self % 1 == 0 }
+	public var isPrime: Bool { return isInteger ? Int(self).isPrime : false }
+	public var isEven: Bool { return isInteger ? Int(self).isEven : false }
+	public var isOdd: Bool { return isInteger ? Int(self).isOdd : false }
+	public var isPowerOfTwo: Bool { return isInteger ? Int(self).isPowerOfTwo : false }
+	public func isDivisible(by value: Double) -> Bool
+	public func format(f: String) -> String { return String(format(f), self) }
