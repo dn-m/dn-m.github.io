@@ -1,11 +1,29 @@
+TempoContext.swift
+	public struct TempoContext: MetricalDurationSpanning
 MetricalDuration.swift
 	public var description: String
+TempoInterpolation.swift
+	public struct TempoInterpolation: MetricalDurationSpanning
+Interpolation.swift
+	public protocol Interpolation
 MetricalDurationNode.swift
 	public class func metricalDurationNode(with: MetricalDuration)
         -> RigidMetricalDurationNode?
+Measure.swift
+	public var number: Int = 0
+	public var metricalDurationInterval = MetricalDurationInterval.zero
 MetricalDurationSpanning.swift
+	public protocol MetricalDurationSpanning
 	public protocol MetricalDurationSpanning
 MetricalDurationInterval.swift
 	public static let zero: MetricalDurationInterval = MetricalDurationInterval((0,8),(0,8))!
 	public init?(_ start: (Int, Int), _ stop: (Int, Int))
 	public func == (lhs: MetricalDurationInterval, rhs: MetricalDurationInterval) -> Bool
+DurationInterval.swift
+	public let start: Duration
+	public let stop: Duration
+	public let span: Duration
+	public init(_ start: Duration, _ stop: Duration)
+	public func == (lhs: DurationInterval, rhs: DurationInterval) -> Bool
+Tempo.swift
+	public struct Tempo
