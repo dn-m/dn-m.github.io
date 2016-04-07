@@ -6,7 +6,7 @@ build_docs () {
   jazzy \
     --swift-version 2.2 \
     --clean \
-    --author James Bean \
+    --author James\ Bean \
     --author_url http://jamesbean.info \
     --github_url https://github.com/dn-m/$FRAMEWORK \
     --module-version $VERSION \
