@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ScriptingTools  Reference | dn-m</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css">
+    <link rel="stylesheet" type="text/css" href="css/highlight.css">
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+
+    <a title="ScriptingTools  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="/">
+          dn-m Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/dn-m/ScriptingTools">
+            <img class="header-icon" src="img/gh.png">
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2FScriptingTools%2Exml">
+            <img class="header-icon" src="img/dash.png">
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="/">dn-m</a>
+      <img class="carat" src="img/carat.png">
+      <a class="breadcrumb" href="index.html">ScriptingTools Reference</a>
+      <img class="carat" src="img/carat.png">
+      ScriptingTools  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Variables.html#/s:v14ScriptingTools16currentDirectorySS">currentDirectory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Variables.html#/s:v14ScriptingTools11directoriesGSaSS_">directories</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Variables.html#/s:v14ScriptingTools5filesGSaSS_">files</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/Path.html">Path</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:F14ScriptingTools15changeDirectoryFT2toSS_T_">changeDirectory(to:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:F14ScriptingTools10changeModeFTSS9forFileAtSS_T_">changeMode(_:forFileAt:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:F14ScriptingTools4copyFT6fileAtSS2toSS_T_">copy(fileAt:to:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:F14ScriptingTools13makeDirectoryFT2atSS_T_">makeDirectory(at:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:F14ScriptingTools6removeFT6fileAtSS11recursivelySb_T_">remove(fileAt:recursively:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:F14ScriptingTools5touchFT9newFileAtSS_T_">touch(newFileAt:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Typealiases.html">Typealiases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:14ScriptingTools4Path">Path</a>
+              </li>
+            </ul>
+          </li>
+        <li class="nav-group-name" id="dependencies">
+              <span class="nav-group-name-link">Dependencies</span>
+              <ul class="nav-group-tasks">
+<li class="nav-group-task">
+        <a class="nav-group-task-link" href="https://github.com/kareman/SwiftShell">SwiftShell</a>
+</li>
+<li class="nav-group-task">
+        <a class="nav-group-task-link" href="https://github.com/nomothetis/OptionKit">OptionKit</a>
+</li>
+</ul>
+            </li>
+</ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <a href="#scriptingtools" class="anchor" aria-hidden="true"><span class="header-anchor"></span></a><h1 id="scriptingtools">ScriptingTools</h1>
+
+<p>Tools for scripting in Swift</p>
+<a href="#usage" class="anchor" aria-hidden="true"><span class="header-anchor"></span></a><h3 id="usage">Usage</h3>
+<a href="#use_a_href_https_github_com_carthage_carthage_carthage_a_for_dependency_management" class="anchor" aria-hidden="true"><span class="header-anchor"></span></a><h4 id="use_a_href_https_github_com_carthage_carthage_carthage_a_for_dependency_management">Use <a href="https://github.com/Carthage/Carthage">Carthage</a> for dependency management</h4>
+
+<ul>
+<li>Add <code>github "dn-m/ScriptingTools"</code> to your <a href="https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile">Cartfile</a>
+</li>
+<li>Run <code>carthage bootstrap</code>
+</li>
+</ul>
+<a href="#create_a_swift_file" class="anchor" aria-hidden="true"><span class="header-anchor"></span></a><h4 id="create_a_swift_file">Create a Swift file</h4>
+
+<ul>
+<li>Add the following at the top of the new Swift file</li>
+</ul>
+<pre class="highlight plaintext"><code>#!/usr/bin/swift -F Carthage/Build/Mac
+
+import ScriptingTools
+</code></pre>
+
+<ul>
+<li>Make Swift file executable (e.g., <code>chmod +x script.swift</code>)</li>
+<li>Add some Swift code (e.g., <code>print("oh, hi there!")</code>)</li>
+<li>Run the Swift script (e.g., <code>./script.swift // =&gt; oh, hi there!</code>)</li>
+</ul>
+<a href="#dependencies" class="anchor" aria-hidden="true"><span class="header-anchor"></span></a>
+
+<ul>
+<li><a href="https://github.com/kareman/SwiftShell">SwiftShell</a></li>
+</ul>
+<a href="#research" class="anchor" aria-hidden="true"><span class="header-anchor"></span></a><h3 id="research">Research</h3>
+
+<ul>
+<li>Excellent repo about <a href="https://github.com/blakemerryman/Swift-Scripts">Swift-Scripts</a>
+</li>
+<li>Repo for <a href="https://github.com/kareman/SwiftShell">Shell Scripting in Swift</a>
+</li>
+<li>Nice video about <a href="https://realm.io/news/swift-scripting/">Swift Scripting</a>
+</li>
+<li>Repo for <a href="https://github.com/kylef/Commander">Command Line Utility composer for Swift</a>
+</li>
+<li>Nice presentation about <a href="https://speakerdeck.com/supermarin/swift-for-cli-tools">CLIs in Swift</a>
+</li>
+<li>Blog post about <a href="http://krakendev.io/blog/scripting-in-swift">Scripting in Swift</a>
+</li>
+<li><a href="https://github.com/RubyNative/SwiftRuby">SwiftRuby</a></li>
+<li><a href="https://github.com/RubyNative/Diamond">Diamond</a></li>
+</ul>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-04-15)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+
+</html>

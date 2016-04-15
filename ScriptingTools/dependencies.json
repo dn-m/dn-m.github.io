@@ -1,0 +1,14 @@
+{"dependencies":[
+{
+"registry": "github",
+"organisation": "kareman",
+"repo": "SwiftShell",
+"version": ""
+},
+{
+"registry": "github",
+"organisation": "nomothetis",
+"repo": "OptionKit",
+"version": ""
+}
+]}
