@@ -1,0 +1,4 @@
+MetronomeDisplaying.swift
+	public protocol MetronomeDisplaying
+MetronomeController.swift
+	public class MetronomeController

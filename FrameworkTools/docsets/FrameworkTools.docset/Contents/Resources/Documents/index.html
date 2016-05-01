@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>FrameworkTools  Reference | dn-m</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css">
+    <link rel="stylesheet" type="text/css" href="css/highlight.css">
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+
+    <a title="FrameworkTools  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="/">
+          dn-m Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/dn-m/FrameworkTools">
+            <img class="header-icon" src="img/gh.png">
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2FFrameworkTools%2Exml">
+            <img class="header-icon" src="img/dash.png">
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="/">dn-m</a>
+      <img class="carat" src="img/carat.png">
+      <a class="breadcrumb" href="index.html">FrameworkTools Reference</a>
+      <img class="carat" src="img/carat.png">
+      FrameworkTools  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Variables.html#/s:v14FrameworkTools23integrateFrameworksPathSS">integrateFrameworksPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Variables.html#/s:v14FrameworkTools16newFrameworkPathSS">newFrameworkPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Variables.html#/s:v14FrameworkTools29primaryTargetInfoPropertyListSS">primaryTargetInfoPropertyList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Variables.html#/s:v14FrameworkTools27testsTargetInfoPropertyListSS">testsTargetInfoPropertyList</a>
+              </li>
+            </ul>
+          </li>
+        <li class="nav-group-name" id="dependencies">
+              <span class="nav-group-name-link">Dependencies</span>
+              <ul class="nav-group-tasks">
+<li class="nav-group-task">
+        <a class="nav-group-task-link" href="/ScriptingTools/index.html">ScriptingTools</a>
+</li>
+<li class="nav-group-task">
+        <a class="nav-group-task-link" href="https://github.com/nomothetis/OptionKit">OptionKit</a>
+</li>
+<li class="nav-group-task">
+        <a class="nav-group-task-link" href="/DictionaryTools/index.html">DictionaryTools</a>
+</li>
+</ul>
+            </li>
+</ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <a href="#frameworktools" class="anchor" aria-hidden="true"><span class="header-anchor"></span></a><h1 id="frameworktools">FrameworkTools</h1>
+
+<p>Tools for generating and manipulating cross-platform (iOS + OSX) Swift frameworks</p>
+<a href="#requires" class="anchor" aria-hidden="true"><span class="header-anchor"></span></a><h2 id="requires">Requires</h2>
+
+<ul>
+<li>
+<a href="https://github.com/Carthage/Carthage">Carthage</a> for managing Swift dependencies</li>
+<li>
+<a href="http://bundler.io/">Bundler</a> for managing Ruby dependencies</li>
+</ul>
+<a href="#installation" class="anchor" aria-hidden="true"><span class="header-anchor"></span></a><h2 id="installation">Installation</h2>
+
+<ul>
+<li>Use <a href="https://github.com/Carthage/Carthage">Carthage</a> to manage dependencies</li>
+<li>Add <code>github dn-m/FrameworkTools</code> to Cartfile</li>
+<li>Run the following from the command line:</li>
+</ul>
+
+<blockquote>
+<pre class="highlight plaintext"><code>carthage bootstrap
+bundle install --gemfile Carthage/Build/Mac/FrameworkTools.framework/Resources/Gemfile
+cp Carthage/Build/Mac/FrameworkTools.framework/Resources/framework /usr/local/bin
+sudo cp -r Carthage/Build/Mac/*.framework /Library/Frameworks/
+</code></pre>
+</blockquote>
+
+<p>That this requires <code>sudo</code> is unfortunate, and is hopefully temporary. When a Swift script file determines its framework search paths (which could ordinarily be set by <code>-F Carthage/Build/Mac</code>, if it weren’t used as a more global tool), it uses the relative path given according to where the call is made at the command line, not where the file is saved.</p>
+
+<p>Further, much of the heavy lifting for under-the-hood Xcode configuration is done by calling the <a href="https://github.com/CocoaPods/Xcodeproj">Cocoapods/Xcodeproj</a> API, which is in Ruby. There is a desire to accomplish this only with Swift, however. In the future, the <a href="https://github.com/apple/swift-package-manager">Swift Package Manager</a> will possibly cover many of these processes anyway.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-05-01)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+
+</html>

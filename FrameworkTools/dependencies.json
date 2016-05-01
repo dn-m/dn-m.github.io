@@ -1,0 +1,20 @@
+{"dependencies":[
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "ScriptingTools",
+"version": ""
+},
+{
+"registry": "github",
+"organisation": "nomothetis",
+"repo": "OptionKit",
+"version": ""
+},
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "DictionaryTools",
+"version": ""
+}
+]}
