@@ -126,6 +126,61 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:ve10ArrayToolsRxs9EquatablerSa13isHomogeneousSb"></a>
+                    <a name="//apple_ref/swift/Property/isHomogeneous" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ve10ArrayToolsRxs9EquatablerSa13isHomogeneousSb">isHomogeneous</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>true</code> if all <code>Elements</code> are logically equivalent. Otherwise <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isHomogeneous</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="nf">filter</span><span class="p">({</span> <span class="nv">$0</span> <span class="o">==</span> <span class="n">first</span> <span class="p">})</span><span class="o">.</span><span class="n">count</span> <span class="o">==</span> <span class="k">self</span><span class="o">.</span><span class="n">count</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ve10ArrayToolsRxs9EquatablerSa15isHeterogeneousSb"></a>
+                    <a name="//apple_ref/swift/Property/isHeterogeneous" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ve10ArrayToolsRxs9EquatablerSa15isHeterogeneousSb">isHeterogeneous</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>true</code> if there are two or more <code>Elemments</code>, and they are not all logically equivalent.
+Otherwise <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isHeterogeneous</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="k">self</span><span class="o">.</span><span class="n">count</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="nv">false</span> <span class="p">:</span> <span class="o">!</span><span class="n">isHomogeneous</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:Fe10ArrayToolsRxs9EquatablerSa6amountFT2ofx_Si"></a>
                     <a name="//apple_ref/swift/Method/amount(of:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:Fe10ArrayToolsRxs9EquatablerSa6amountFT2ofx_Si">amount(of:)</a>
@@ -804,6 +859,60 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:vE10ArrayToolsSa4headGSqx_"></a>
+                    <a name="//apple_ref/swift/Property/head" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE10ArrayToolsSa4headGSqx_">head</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>First <code>Element</code> of a list.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">head</span><span class="p">:</span> <span class="kt">Element</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE10ArrayToolsSa4tailGSqGSax__"></a>
+                    <a name="//apple_ref/swift/Property/tail" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE10ArrayToolsSa4tailGSqGSax__">tail</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remaining <code>Elements</code> of a list.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">tail</span><span class="p">:</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:vE10ArrayToolsSa12destructuredGSqTxGSax___"></a>
                     <a name="//apple_ref/swift/Property/destructured" class="dashAnchor"></a>
                     <a class="token" href="#/s:vE10ArrayToolsSa12destructuredGSqTxGSax___">destructured</a>
@@ -814,7 +923,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>2-tuple containing the <code>head</code> <code>Element</code> and <code>tail</code> <code>[Element]</code> of <code>Self</code></p>
+                        <p>2-tuple containing the <code><a href="../Extensions/Array.html#/s:vE10ArrayToolsSa4headGSqx_">head</a></code> <code>Element</code> and <code><a href="../Extensions/Array.html#/s:vE10ArrayToolsSa4tailGSqGSax__">tail</a></code> <code>[Element]</code> of <code>Self</code></p>
 
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
@@ -907,7 +1016,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-04-15)</p>
+      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-05-01)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

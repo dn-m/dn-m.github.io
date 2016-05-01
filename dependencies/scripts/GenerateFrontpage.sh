@@ -17,9 +17,9 @@ for i in $( ls ); do
 done
 
 # Declare Utility modules
-UTILITY=(ArithmeticTools ArrayTools CopyTools DictionaryTools DirectionTools EnumTools IntervalTools StringTools TreeTools ScriptingTools)
+UTILITY=(ArithmeticTools ArrayTools CopyTools DictionaryTools DirectionTools EnumTools IntervalTools StringTools TreeTools ScriptingTools FrameworkTools)
 # Declare MusicModel modules
-MUSICMODEL=(MusicModel Duration Pitch EnsembleTools)
+MUSICMODEL=(MusicModel Duration Pitch Dynamics EnsembleTools)
 MISC=()
 
 misci=0

@@ -75,7 +75,13 @@
             <a class="nav-group-name-link" href="Functions.html">Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:F14ScriptingTools6appendFT4lineSS8toFileAtSS_T_">append(line:toFileAt:)</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:F14ScriptingTools15changeDirectoryFT2toSS_T_">changeDirectory(to:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:F14ScriptingTools23changeDirectoryToParentFT_T_">changeDirectoryToParent()</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:F14ScriptingTools10changeModeFTSS9forFileAtSS_T_">changeMode(_:forFileAt:)</a>
@@ -178,6 +184,91 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:F14ScriptingTools23changeDirectoryToParentFT_T_"></a>
+                    <a name="//apple_ref/swift/Function/changeDirectoryToParent()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F14ScriptingTools23changeDirectoryToParentFT_T_">changeDirectoryToParent()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Change <code><a href="Global%20Variables.html#/s:v14ScriptingTools16currentDirectorySS">currentDirectory</a></code> to its parent directory.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">changeDirectoryToParent</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F14ScriptingTools13makeDirectoryFT2atSS_T_"></a>
+                    <a name="//apple_ref/swift/Function/makeDirectory(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F14ScriptingTools13makeDirectoryFT2atSS_T_">makeDirectory(at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Make a directory at the given <code><a href="Extensions/Path.html">Path</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeDirectory</span><span class="p">(</span><span class="n">at</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">Path</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F14ScriptingTools5touchFT9newFileAtSS_T_"></a>
+                    <a name="//apple_ref/swift/Function/touch(newFileAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F14ScriptingTools5touchFT9newFileAtSS_T_">touch(newFileAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a file at the given <code><a href="Extensions/Path.html">Path</a></code> if it does not yet exist.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">touch</span><span class="p">(</span><span class="n">newFileAt</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">Path</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:F14ScriptingTools6removeFT6fileAtSS11recursivelySb_T_"></a>
                     <a name="//apple_ref/swift/Function/remove(fileAt:recursively:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:F14ScriptingTools6removeFT6fileAtSS11recursivelySb_T_">remove(fileAt:recursively:)</a>
@@ -237,33 +328,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:F14ScriptingTools13makeDirectoryFT2atSS_T_"></a>
-                    <a name="//apple_ref/swift/Function/makeDirectory(at:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:F14ScriptingTools13makeDirectoryFT2atSS_T_">makeDirectory(at:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Make a directory at the given <code><a href="Typealiases.html#/s:14ScriptingTools4Path">Path</a></code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeDirectory</span><span class="p">(</span><span class="n">at</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">Path</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:F14ScriptingTools4copyFT6fileAtSS2toSS_T_"></a>
                     <a name="//apple_ref/swift/Function/copy(fileAt:to:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:F14ScriptingTools4copyFT6fileAtSS2toSS_T_">copy(fileAt:to:)</a>
@@ -274,7 +338,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Copy the file at a given <code><a href="Typealiases.html#/s:14ScriptingTools4Path">Path</a></code> to a given destination <code><a href="Typealiases.html#/s:14ScriptingTools4Path">Path</a></code>.</p>
+                        <p>Copy the file at a given <code><a href="Extensions/Path.html">Path</a></code> to a given destination <code><a href="Extensions/Path.html">Path</a></code>.</p>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    recursive option
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -301,7 +371,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Change the mode of the file at a given <code><a href="Typealiases.html#/s:14ScriptingTools4Path">Path</a></code> to the given mode.</p>
+                        <p>Change the mode of the file at a given <code><a href="Extensions/Path.html">Path</a></code> to the given mode.</p>
 
                       </div>
                       <div class="declaration">
@@ -318,9 +388,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:F14ScriptingTools5touchFT9newFileAtSS_T_"></a>
-                    <a name="//apple_ref/swift/Function/touch(newFileAt:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:F14ScriptingTools5touchFT9newFileAtSS_T_">touch(newFileAt:)</a>
+                    <a name="/s:F14ScriptingTools6appendFT4lineSS8toFileAtSS_T_"></a>
+                    <a name="//apple_ref/swift/Function/append(line:toFileAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F14ScriptingTools6appendFT4lineSS8toFileAtSS_T_">append(line:toFileAt:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -328,14 +398,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a file at the given <code><a href="Typealiases.html#/s:14ScriptingTools4Path">Path</a></code> if it does not yet exist.</p>
+                        <p>Write the given <code>line</code> at the end of the file at the given <code>path</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">touch</span><span class="p">(</span><span class="n">newFileAt</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">Path</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">append</span><span class="p">(</span><span class="n">line</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">toFileAt</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">Path</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -350,7 +420,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-04-15)</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-05-01)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

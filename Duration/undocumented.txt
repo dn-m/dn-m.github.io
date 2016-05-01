@@ -25,5 +25,3 @@ DurationInterval.swift
 	public let span: Duration
 	public init(_ start: Duration, _ stop: Duration)
 	public func == (lhs: DurationInterval, rhs: DurationInterval) -> Bool
-Tempo.swift
-	public struct Tempo
