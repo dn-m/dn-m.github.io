@@ -1,12 +1,5 @@
-Dyad.swift
-	public var intervalQuality: IntervalQualityKind
-MonadSpeller.swift
-	public struct MonadSpeller: PitchSpeller
 Verticality.swift
 	public struct Verticality
-IntervalQuality.swift
-	public class IntervalQuality: EnumTree
-	public enum IntervalQualityKind: String
 Pitch.swift
 	public func == (lhs: Pitch, rhs: Pitch) -> Bool
 	public func < (lhs: Pitch, rhs: Pitch) -> Bool
