@@ -1,0 +1,28 @@
+IntervalQuality.swift
+	public class IntervalQuality: EnumTree
+	case DiminishedUnison = "d1"
+	case PerfectUnison = "P1"
+	case AugmentedUnison = "A1"
+	case MinorSecond = "m2"
+	case MajorSecond = "M2"
+	case AugmentedSecond = "A2"
+	case DiminishedThird = "d3"
+	case MinorThird	= "m3"
+	case MajorThird	= "M3"
+	case AugmentedThird = "A3"
+	case DiminishedFourth = "d4"
+	case PerfectFourth = "P4"
+	case AugmentedFourth = "A4"
+	case DiminishedFifth = "d5"
+	case PerfectFifth = "P5"
+	case AugmentedFifth = "A5"
+	case DiminishedSixth = "d6"
+	case MinorSixth = "m6"
+	case MajorSixth = "M6"
+	case AugmentedSixth = "A6"
+	case DiminishedSeventh = "d7"
+	case MinorSeventh = "m7"
+	case MajorSeventh = "M7"
+	case AugmentedSeventh = "A7"
+MonadSpeller.swift
+	public struct MonadSpeller: PitchSpeller
