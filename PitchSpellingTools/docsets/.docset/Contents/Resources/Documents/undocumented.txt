@@ -1,5 +1,60 @@
+SpelledPitchDyad.swift
+	public struct SpelledPitchDyad
+PitchSpelling+Resolution.swift
+	public enum Resolution: Float
+DyadSpeller.swift
+	public init(dyad: Dyad)
+PitchSpelling.swift
+	public init(
+        _ letterName: LetterName,
+        _ coarse: CoarseAdjustment = .natural,
+        _ fine: FineAdjustment = .none
+    )
+	public var hashValue: Int { return "\(letterName),\(coarse),\(fine)".hashValue }
+	public func == (lhs: PitchSpelling, rhs: PitchSpelling) -> Bool
 IntervalQuality.swift
-	public class IntervalQuality: EnumTree
+	public override class var members: [EnumKind] { return [Perfect, Augmented] }
+	public override class func kind(
+            coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
+            _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+        ) -> EnumKind
+	public override class var members: [EnumKind] { return [Minor, Major, Augmented] }
+	public override class func kind(
+            coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
+            _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+        ) -> EnumKind
+	public override class var members: [EnumKind]
+	public override class func kind(
+            coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
+            _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+        ) -> EnumKind
+	public override class var members: [EnumKind]
+	public override class func kind(
+            coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
+            _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+        ) -> EnumKind
+	public override class var members: [EnumKind]
+	public override class func kind(
+            coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
+            _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+        ) -> EnumKind
+	public override class var members: [EnumKind]
+	public override class func kind(
+            coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
+            _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+        ) -> EnumKind
+	public override class var members: [EnumKind]
+	public override class func kind(
+            coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
+            _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+        ) -> EnumKind
+	public class var members: [EnumKind] { return [] }
+	public class var subFamilies: [EnumFamily.Type]
+	public class func kind(
+        coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
+        _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+    ) -> EnumKind
+	public static func intervalFamily(withAmountOfSteps steps: Int) -> EnumFamily.Type
 	case DiminishedUnison = "d1"
 	case PerfectUnison = "P1"
 	case AugmentedUnison = "A1"
@@ -24,5 +79,10 @@ IntervalQuality.swift
 	case MinorSeventh = "m7"
 	case MajorSeventh = "M7"
 	case AugmentedSeventh = "A7"
+PitchSpelling+LetterName.swift
+	public var steps: Int
 MonadSpeller.swift
 	public struct MonadSpeller: PitchSpeller
+Pitch+PitchSpelling.swift
+	public var pitchSpellings: [PitchSpelling]
+	public var defaultPitchSpelling: PitchSpelling

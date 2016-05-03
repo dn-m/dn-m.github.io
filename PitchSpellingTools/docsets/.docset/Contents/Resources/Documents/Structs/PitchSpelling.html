@@ -51,10 +51,29 @@
       <nav class="navigation">
         <ul class="nav-groups">
           <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/IntervalQuality.html">IntervalQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SpelledPitch.html">SpelledPitch</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums.html#/s:O18PitchSpellingTools19IntervalQualityKind">IntervalQualityKind</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Pitch.html">Pitch</a>
               </li>
             </ul>
           </li>
@@ -82,6 +101,9 @@
                 <a class="nav-group-task-link" href="../Structs/PitchSpelling.html">PitchSpelling</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PitchSpellingDyad.html">PitchSpellingDyad</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs.html#/s:V18PitchSpellingTools18VerticalitySpeller">VerticalitySpeller</a>
               </li>
             </ul>
@@ -105,7 +127,7 @@
 
                 </div>
               </div>
-            <p>Spelled representation of a <code>Pitch</code>.</p>
+            <p>Spelled representation of a <code><a href="../Extensions/Pitch.html">Pitch</a></code>.</p>
 
           </div>
         </section>
@@ -114,99 +136,6 @@
           <div class="section-content">
             <div class="task-group">
               <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:OV18PitchSpellingTools13PitchSpelling10LetterName"></a>
-                    <a name="//apple_ref/swift/Enum/LetterName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:OV18PitchSpellingTools13PitchSpelling10LetterName">LetterName</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Letter name component of a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code></p>
-
-                        <a href="../Structs/PitchSpelling/LetterName.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">LetterName</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:OV18PitchSpellingTools13PitchSpelling14FineAdjustment"></a>
-                    <a name="//apple_ref/swift/Enum/FineAdjustment" class="dashAnchor"></a>
-                    <a class="token" href="#/s:OV18PitchSpellingTools13PitchSpelling14FineAdjustment">FineAdjustment</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Fine resolution component of a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>. 
-   Analogous to an up or down arrow of an accidental.</p>
-
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    In 48-EDO, represents 1/8th-tone adjustment. 
-May be useful for other cases (e.g., -14c adjustment for 5th partial, etc.).
-
-</div>
-
-                        <a href="../Structs/PitchSpelling/FineAdjustment.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">FineAdjustment</span><span class="p">:</span> <span class="kt">Float</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:OV18PitchSpellingTools13PitchSpelling16CoarseAdjustment"></a>
-                    <a name="//apple_ref/swift/Enum/CoarseAdjustment" class="dashAnchor"></a>
-                    <a class="token" href="#/s:OV18PitchSpellingTools13PitchSpelling16CoarseAdjustment">CoarseAdjustment</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Coarse resolution component of a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>.
-   Analogous to the body of an accidental.</p>
-
-                        <a href="../Structs/PitchSpelling/CoarseAdjustment.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CoarseAdjustment</span><span class="p">:</span> <span class="kt">Float</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -310,9 +239,214 @@ May be useful for other cases (e.g., -14c adjustment for 5th partial, etc.).
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
         <span class="nv">letterName</span><span class="p">:</span> <span class="kt">LetterName</span><span class="p">,</span>
-        <span class="nv">coarse</span><span class="p">:</span> <span class="kt">CoarseAdjustment</span> <span class="o">=</span> <span class="o">.</span><span class="kt">Natural</span><span class="p">,</span>
-        <span class="nv">fine</span><span class="p">:</span> <span class="kt">FineAdjustment</span> <span class="o">=</span> <span class="o">.</span><span class="kt">None</span>
+        <span class="nv">coarse</span><span class="p">:</span> <span class="kt">CoarseAdjustment</span> <span class="o">=</span> <span class="o">.</span><span class="n">natural</span><span class="p">,</span>
+        <span class="nv">fine</span><span class="p">:</span> <span class="kt">FineAdjustment</span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span>
     <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OV18PitchSpellingTools13PitchSpelling16CoarseAdjustment"></a>
+                    <a name="//apple_ref/swift/Enum/CoarseAdjustment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OV18PitchSpellingTools13PitchSpelling16CoarseAdjustment">CoarseAdjustment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Coarse resolution component of a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>.
+Analogous to the body of an accidental.</p>
+
+                        <a href="../Structs/PitchSpelling/CoarseAdjustment.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CoarseAdjustment</span><span class="p">:</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV18PitchSpellingTools13PitchSpelling10resolutionOS0_10Resolution"></a>
+                    <a name="//apple_ref/swift/Property/resolution" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools13PitchSpelling10resolutionOS0_10Resolution">resolution</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>Resolution</code> (e.g., halfstep (chromatic), quarter-step, or eighth-step)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">resolution</span><span class="p">:</span> <span class="kt">Resolution</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV18PitchSpellingTools13PitchSpelling9quantizedFT2toOS0_10Resolution_S0_"></a>
+                    <a name="//apple_ref/swift/Method/quantized(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV18PitchSpellingTools13PitchSpelling9quantizedFT2toOS0_10Resolution_S0_">quantized(to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">quantized</span><span class="p">(</span><span class="n">to</span> <span class="nv">resolution</span><span class="p">:</span> <span class="kt">Resolution</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">PitchSpelling</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> object that is quantized to the given <code><a href="../Structs/PitchSpelling.html#/s:vV18PitchSpellingTools13PitchSpelling10resolutionOS0_10Resolution">resolution</a></code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OV18PitchSpellingTools13PitchSpelling10LetterName"></a>
+                    <a name="//apple_ref/swift/Enum/LetterName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OV18PitchSpellingTools13PitchSpelling10LetterName">LetterName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Letter name component of a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code></p>
+
+                        <a href="../Structs/PitchSpelling/LetterName.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">LetterName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Sharpness"></a>
+                <a name="//apple_ref/swift/Section/Sharpness" class="dashAnchor"></a>
+                <a href="#/Sharpness">
+                  <h3 class="section-name">Sharpness</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV18PitchSpellingTools13PitchSpelling9sharpnessSf"></a>
+                    <a name="//apple_ref/swift/Property/sharpness" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools13PitchSpelling9sharpnessSf">sharpness</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sharpness (distance from middle-c on circle of fifths)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sharpness</span><span class="p">:</span> <span class="kt">Sharpness</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OV18PitchSpellingTools13PitchSpelling14FineAdjustment"></a>
+                    <a name="//apple_ref/swift/Enum/FineAdjustment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OV18PitchSpellingTools13PitchSpelling14FineAdjustment">FineAdjustment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fine resolution component of a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>.
+Analogous to an up or down (or lack of) arrow of an accidental.</p>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    In 48-EDO, represents 1/8th-tone adjustment.
+May be useful for other cases (e.g., -14c adjustment for 5th partial, etc.).
+
+</div>
+
+                        <a href="../Structs/PitchSpelling/FineAdjustment.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">FineAdjustment</span><span class="p">:</span> <span class="kt">Float</span></code></pre>
 
                         </div>
                       </div>
@@ -327,7 +461,7 @@ May be useful for other cases (e.g., -14c adjustment for 5th partial, etc.).
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-05-01)</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-05-03)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
