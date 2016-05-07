@@ -15,7 +15,6 @@ PitchSpelling+CustomStringConvertible.swift
 	public var description: String
 DyadSpeller.swift
 	public enum Error: ErrorType { case error } // refine
-	public enum Result
 PitchSpellingDyad.swift
 	public var isStepPreserving: Bool { return intervalQuality.isStepPreserving }
 PitchSpelling.swift

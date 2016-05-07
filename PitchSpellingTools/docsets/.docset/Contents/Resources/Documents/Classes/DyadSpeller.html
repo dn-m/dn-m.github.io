@@ -127,11 +127,7 @@
 
                 </div>
               </div>
-            <div class="aside aside-warning">
-    <p class="aside-title">Warning</p>
-    Not yet implemented!
-
-</div>
+            <p>Applies <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects to the pitches in a <code><a href="../Extensions.html#/s:V5Pitch4Dyad">Dyad</a></code>.</p>
 
           </div>
         </section>
@@ -140,6 +136,34 @@
           <div class="section-content">
             <div class="task-group">
               <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC18PitchSpellingTools11DyadSpeller6Result"></a>
+                    <a name="//apple_ref/swift/Enum/Result" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC18PitchSpellingTools11DyadSpeller6Result">Result</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Result from an attempt to spell a <code><a href="../Extensions.html#/s:V5Pitch4Dyad">Dyad</a></code>.</p>
+
+                        <a href="../Classes/DyadSpeller/Result.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Result</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -153,9 +177,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <div class="aside aside-warning">
+                        <p><code><a href="../Classes/DyadSpeller/Result.html">Result</a></code> with the</p>
+
+<div class="aside aside-warning">
     <p class="aside-title">Warning</p>
-    default implementation is <code>.none</code>. Must be overriden
+    Default implementation is <code>.none</code>. Must be overriden.
 
 </div>
 
@@ -171,6 +197,17 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Type%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Type%20Methods" class="dashAnchor"></a>
+                <a href="#/Type%20Methods">
+                  <h3 class="section-name">Type Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -198,6 +235,17 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -225,6 +273,17 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Instance%20Methods" class="dashAnchor"></a>
+                <a href="#/Instance%20Methods">
+                  <h3 class="section-name">Instance Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -239,7 +298,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Spell the pitches in <code>dyad</code> with their default spellings. Often in the case that there is
-no hope to spell the pitches agreeably.</p>
+no hope to spell the pitches amicably.</p>
 
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
@@ -307,15 +366,20 @@ unspellable.
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Forcibly spell the pitches in <code>dyad</code>. In the case that no options are available wherein
-the pitches in <code>dyad</code> can be spelled amicably, the pitches are spelled with the default
-values. In the case that there are more than one options available wherein the pitches
-can be spelled amicably, the <code><a href="../Structs/PitchSpellingDyad.html">PitchSpellingDyad</a></code> with the least <code>meanDistance</code> value is
-chosen.</p>
+                        <p>Forcibly spell the pitches in <code>dyad</code>. </p>
+
+<p>In the case that no options are available wherein
+the pitches in <code>dyad</code> can be spelled amicably, 
+the pitches are spelled with the default values.</p>
+
+<p>In the case that there are more than one options available wherein 
+the pitches can be spelled amicably, 
+the <code><a href="../Structs/PitchSpellingDyad.html">PitchSpellingDyad</a></code> with the least <code>meanDistance</code> value is chosen.</p>
 
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    <code>PitchSpeller.Error</code> if
+    <code>PitchSpeller.Error</code> if either <code><a href="../Extensions/Pitch.html">Pitch</a></code> cannot be spelled with the available
+<code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> object.
 
 </div>
 
