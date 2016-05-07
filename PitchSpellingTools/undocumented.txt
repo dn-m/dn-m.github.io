@@ -1,17 +1,28 @@
+Dyad+PitchSpelling.swift
+	public enum Error: ErrorType
+	public var hasEighthTone: Bool
+	public var hasQuarterTone: Bool
+	public var finestResolution: Float
+	public var canBeSpelledObjectively: Bool
+	public func spellWithDefaultSpellings() throws
+	public func spellHigher(with spelling: PitchSpelling) throws
+	public func spellLower(with spelling: PitchSpelling) throws
 SpelledPitchDyad.swift
 	public struct SpelledPitchDyad
 PitchSpelling+Resolution.swift
 	public enum Resolution: Float
+PitchSpelling+CustomStringConvertible.swift
+	public var description: String
 DyadSpeller.swift
-	public init(dyad: Dyad)
+	public enum Error: ErrorType { case error } // refine
+	public enum Result
+PitchSpellingDyad.swift
+	public var isStepPreserving: Bool { return intervalQuality.isStepPreserving }
 PitchSpelling.swift
-	public init(
-        _ letterName: LetterName,
-        _ coarse: CoarseAdjustment = .natural,
-        _ fine: FineAdjustment = .none
-    )
 	public var hashValue: Int { return "\(letterName),\(coarse),\(fine)".hashValue }
 	public func == (lhs: PitchSpelling, rhs: PitchSpelling) -> Bool
+SpelledPitch.swift
+	public override var description: String
 IntervalQuality.swift
 	public override class var members: [EnumKind] { return [Perfect, Augmented] }
 	public override class func kind(
@@ -79,10 +90,14 @@ IntervalQuality.swift
 	case MinorSeventh = "m7"
 	case MajorSeventh = "M7"
 	case AugmentedSeventh = "A7"
+	public var isStepPreserving: Bool
 PitchSpelling+LetterName.swift
 	public var steps: Int
 MonadSpeller.swift
 	public struct MonadSpeller: PitchSpeller
-Pitch+PitchSpelling.swift
-	public var pitchSpellings: [PitchSpelling]
-	public var defaultPitchSpelling: PitchSpelling
+PitchSpeller.swift
+	public protocol PitchSpeller
+PitchSpelling+Sharpness.swift
+	public var distance: Float { return abs(sharpness) }
+PitchSpellingDyad+CustomStringConvertible.swift
+	public var description: String

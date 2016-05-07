@@ -1,5 +1,8 @@
+Dyad.swift
+	public var description: String { return "\(lower), \(higher)" }
 Verticality.swift
 	public struct Verticality
 Pitch.swift
+	public var description: String { return "\(noteNumber)" }
 	public func == (lhs: Pitch, rhs: Pitch) -> Bool
 	public func < (lhs: Pitch, rhs: Pitch) -> Bool

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>PitchSpellingDyad Struct Reference | dn-m</title>
+    <title>DyadSpeller Class Reference | dn-m</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css">
     <link rel="stylesheet" type="text/css" href="../css/highlight.css">
     <meta charset="utf-8">
@@ -12,9 +12,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/PitchSpellingDyad" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/DyadSpeller" class="dashAnchor"></a>
 
-    <a title="PitchSpellingDyad Struct Reference"></a>
+    <a title="DyadSpeller Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
       <img class="carat" src="../img/carat.png">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png">
-      PitchSpellingDyad Struct Reference
+      DyadSpeller Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -120,14 +120,18 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>PitchSpellingDyad</h1>
+            <h1>DyadSpeller</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PitchSpellingDyad</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">DyadSpeller</span><span class="p">:</span> <span class="kt">PitchSpeller</span></code></pre>
 
                 </div>
               </div>
-            <p>Pair of two `PitchSpellings objects.</p>
+            <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Not yet implemented!
+
+</div>
 
           </div>
         </section>
@@ -139,9 +143,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad16isCoarseMatchingSb"></a>
-                    <a name="//apple_ref/swift/Property/isCoarseMatching" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad16isCoarseMatchingSb">isCoarseMatching</a>
+                    <a name="/s:vC18PitchSpellingTools11DyadSpeller7optionsOS0_6Result"></a>
+                    <a name="//apple_ref/swift/Property/options" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC18PitchSpellingTools11DyadSpeller7optionsOS0_6Result">options</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -149,15 +153,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>true</code> if <code>coarse</code> values of both <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects are equivalent.
- Otherwise <code>false</code>.</p>
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    default implementation is <code>.none</code>. Must be overriden
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isCoarseMatching</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">lower</span><span class="o">.</span><span class="n">coarse</span> <span class="o">==</span> <span class="n">higher</span><span class="o">.</span><span class="n">coarse</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">Result</span></code></pre>
 
                         </div>
                       </div>
@@ -167,9 +174,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad25isCoarseDirectionMatchingSb"></a>
-                    <a name="//apple_ref/swift/Property/isCoarseDirectionMatching" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad25isCoarseDirectionMatchingSb">isCoarseDirectionMatching</a>
+                    <a name="/s:ZFC18PitchSpellingTools11DyadSpeller11makeSpellerFT3forV5Pitch4Dyad_GSqS0__"></a>
+                    <a name="//apple_ref/swift/Method/makeSpeller(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC18PitchSpellingTools11DyadSpeller11makeSpellerFT3forV5Pitch4Dyad_GSqS0__">makeSpeller(for:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -177,15 +184,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>true</code> if <code>coarse.direction</code> values of both <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects are equivalent.
- Otherwise <code>false</code>.</p>
+                        <p>Make the best-suited subclass of <code><a href="../Classes/DyadSpeller.html">DyadSpeller</a></code> for the given <code>dyad</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isCoarseDirectionMatching</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">makeSpeller</span><span class="p">(</span><span class="k">for</span> <span class="nv">dyad</span><span class="p">:</span> <span class="kt">Dyad</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DyadSpeller</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -195,9 +201,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad14isFineMatchingSb"></a>
-                    <a name="//apple_ref/swift/Property/isFineMatching" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad14isFineMatchingSb">isFineMatching</a>
+                    <a name="/s:FC18PitchSpellingTools11DyadSpellercFT4dyadV5Pitch4Dyad_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(dyad:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC18PitchSpellingTools11DyadSpellercFT4dyadV5Pitch4Dyad_S0_">init(dyad:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -205,14 +211,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>true if</code>fine<code>values of</code>PitchSpelling<code>objects are equivalent. Otherwise</code>false`..</p>
+                        <p>Create a <code><a href="../Classes/DyadSpeller.html">DyadSpeller</a></code> for the given <code>dyad</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isFineMatching</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">lower</span><span class="o">.</span><span class="n">fine</span> <span class="o">==</span> <span class="n">higher</span><span class="o">.</span><span class="n">fine</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="nv">dyad</span><span class="p">:</span> <span class="kt">Dyad</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -222,9 +228,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad12meanDistanceSf"></a>
-                    <a name="//apple_ref/swift/Property/meanDistance" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad12meanDistanceSf">meanDistance</a>
+                    <a name="/s:FC18PitchSpellingTools11DyadSpeller25spellWithDefaultSpellingsFzT_T_"></a>
+                    <a name="//apple_ref/swift/Method/spellWithDefaultSpellings()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC18PitchSpellingTools11DyadSpeller25spellWithDefaultSpellingsFzT_T_">spellWithDefaultSpellings()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -232,14 +238,22 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Mean of <code>distance</code> values of both <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects.</p>
+                        <p>Spell the pitches in <code>dyad</code> with their default spellings. Often in the case that there is
+no hope to spell the pitches agreeably.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code><a href="../Structs/PitchSpelling/Error.html">PitchSpelling.Error</a></code> in the case the pitches in <code>dyad</code> are currently 
+unspellable.
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">meanDistance</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">return</span> <span class="p">[</span><span class="n">lower</span><span class="o">.</span><span class="n">distance</span><span class="p">,</span> <span class="n">higher</span><span class="o">.</span><span class="n">distance</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="o">!</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">spellWithDefaultSpellings</span><span class="p">()</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -249,9 +263,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad5stepsSi"></a>
-                    <a name="//apple_ref/swift/Property/steps" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad5stepsSi">steps</a>
+                    <a name="/s:FC18PitchSpellingTools11DyadSpeller5spellFzT4withVS_17PitchSpellingDyad_T_"></a>
+                    <a name="//apple_ref/swift/Method/spell(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC18PitchSpellingTools11DyadSpeller5spellFzT4withVS_17PitchSpellingDyad_T_">spell(with:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -259,14 +273,21 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Amount of steps between two <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects.</p>
+                        <p>Spell <code>dyad</code> with the pitchSpellings found in the given <code>pitchSpellingDyad</code>.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code>PitchSpelling.Error.invalidSpellingForPitch</code> if either pitchSpelling in the
+<code>pitchSpellingDyad</code> is unfit for the target pitch of <code>dyad</code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">steps</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">spell</span><span class="p">(</span><span class="n">with</span> <span class="nv">pitchSpellingDyad</span><span class="p">:</span> <span class="kt">PitchSpellingDyad</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -276,9 +297,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad15intervalQualityOS_19IntervalQualityKind"></a>
-                    <a name="//apple_ref/swift/Property/intervalQuality" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad15intervalQualityOS_19IntervalQualityKind">intervalQuality</a>
+                    <a name="/s:FC18PitchSpellingTools11DyadSpeller5spellFzT_T_"></a>
+                    <a name="//apple_ref/swift/Method/spell()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC18PitchSpellingTools11DyadSpeller5spellFzT_T_">spell()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -286,41 +307,24 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code><a href="../Classes/IntervalQuality.html">IntervalQuality</a></code> between <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects.</p>
+                        <p>Forcibly spell the pitches in <code>dyad</code>. In the case that no options are available wherein
+the pitches in <code>dyad</code> can be spelled amicably, the pitches are spelled with the default
+values. In the case that there are more than one options available wherein the pitches
+can be spelled amicably, the <code><a href="../Structs/PitchSpellingDyad.html">PitchSpellingDyad</a></code> with the least <code>meanDistance</code> value is
+chosen.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code>PitchSpeller.Error</code> if
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">intervalQuality</span><span class="p">:</span> <span class="kt">IntervalQualityKind</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FV18PitchSpellingTools17PitchSpellingDyadcFTVS_13PitchSpellingS1__S0_"></a>
-                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV18PitchSpellingTools17PitchSpellingDyadcFTVS_13PitchSpellingS1__S0_">init(_:_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Create a <code><a href="../Structs/PitchSpellingDyad.html">PitchSpellingDyad</a></code> with two <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">lower</span><span class="p">:</span> <span class="kt">PitchSpelling</span><span class="p">,</span> <span class="n">_</span> <span class="nv">higher</span><span class="p">:</span> <span class="kt">PitchSpelling</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">spell</span><span class="p">()</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>

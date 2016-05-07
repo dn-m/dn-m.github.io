@@ -54,6 +54,9 @@
             <a class="nav-group-name-link" href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DyadSpeller.html">DyadSpeller</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/IntervalQuality.html">IntervalQuality</a>
               </li>
               <li class="nav-group-task">
@@ -73,6 +76,9 @@
             <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions.html#/s:V5Pitch4Dyad">Dyad</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Pitch.html">Pitch</a>
               </li>
             </ul>
@@ -83,17 +89,11 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols.html#/s:P18PitchSpellingTools15PitchSetSpeller">PitchSetSpeller</a>
               </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/PitchSpeller.html">PitchSpeller</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Structs.html">Structs</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs.html#/s:V18PitchSpellingTools11DyadSpeller">DyadSpeller</a>
-              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs.html#/s:V18PitchSpellingTools20HorizontalitySpeller">HorizontalitySpeller</a>
               </li>
@@ -136,6 +136,34 @@
           <div class="section-content">
             <div class="task-group">
               <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OV18PitchSpellingTools13PitchSpelling5Error"></a>
+                    <a name="//apple_ref/swift/Enum/Error" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OV18PitchSpellingTools13PitchSpelling5Error">Error</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Errors possible when attempting to spell a <code><a href="../Extensions/Pitch.html">Pitch</a></code>.</p>
+
+                        <a href="../Structs/PitchSpelling/Error.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Error</span><span class="p">:</span> <span class="kt">ErrorType</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -244,6 +272,68 @@
     <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV18PitchSpellingTools13PitchSpellingcFTOS0_10LetterNameOS0_16CoarseAdjustmentOS0_14FineAdjustment_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV18PitchSpellingTools13PitchSpellingcFTOS0_10LetterNameOS0_16CoarseAdjustmentOS0_14FineAdjustment_S0_">init(_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+        <span class="n">_</span> <span class="nv">letterName</span><span class="p">:</span> <span class="kt">LetterName</span><span class="p">,</span>
+        <span class="n">_</span> <span class="nv">coarse</span><span class="p">:</span> <span class="kt">CoarseAdjustment</span> <span class="o">=</span> <span class="o">.</span><span class="n">natural</span><span class="p">,</span>
+        <span class="n">_</span> <span class="nv">fine</span><span class="p">:</span> <span class="kt">FineAdjustment</span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span>
+    <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV18PitchSpellingTools13PitchSpelling7isValidFT3forC5Pitch5Pitch_Sb"></a>
+                    <a name="//apple_ref/swift/Method/isValid(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV18PitchSpellingTools13PitchSpelling7isValidFT3forC5Pitch5Pitch_Sb">isValid(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isValid</span><span class="p">(</span><span class="k">for</span> <span class="nv">pitch</span><span class="p">:</span> <span class="kt">Pitch</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if this <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> can be applied to the given <code><a href="../Extensions/Pitch.html">Pitch</a></code>. Otherwise, <code>false</code>.</p>
+
                       </div>
                     </section>
                   </div>
@@ -461,7 +551,7 @@ May be useful for other cases (e.g., -14c adjustment for 5th partial, etc.).
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-05-03)</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-05-07)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
