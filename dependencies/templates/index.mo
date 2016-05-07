@@ -11,7 +11,6 @@
   </head>
   <body>
 
-
     <a title="dn-m"></a>
 
     <header class="header">
@@ -49,6 +48,16 @@
                   <a class="nav-group-task-link" href="{{.}}/index.html">{{.}}</a>
                 </li>
               {{/MUSICMODEL_VERIFIED}}
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <span class="nav-group-name-link">Playback</span>
+            <ul class="nav-group-tasks">
+              {{#PLAYBACK_VERIFIED}}
+                <li class="nav-group-task">
+                  <a class="nav-group-task-link" href="{{.}}/index.html">{{.}}</a>
+                </li>
+              {{/PLAYBACK_VERIFIED}}
             </ul>
           </li>
           {{#hasMISC}}

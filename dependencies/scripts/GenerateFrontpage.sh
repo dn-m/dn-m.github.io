@@ -16,15 +16,27 @@ for i in $( ls ); do
   fi
 done
 
+# TODO: Port this to Swift
+# -- Use a `Dictionary` to store subcategory children by their parent
+# -- Iterate through key in `Dictionary`
+
 # Declare Utility modules
 UTILITY=(ArithmeticTools ArrayTools CopyTools DictionaryTools DirectionTools EnumTools IntervalTools StringTools TreeTools ScriptingTools FrameworkTools)
+
 # Declare MusicModel modules
-MUSICMODEL=(MusicModel Duration Pitch PitchSpellingTools	 Dynamics EnsembleTools)
+MUSICMODEL=(MusicModel Duration Pitch PitchSpellingTools Dynamics EnsembleTools)
+
+# Declare Playback modules
+PLAYBACK=(MetronomeController)
+
+# Declare Uncategorized modules
 MISC=()
 
 misci=0
 utilityi=0
 musicmodeli=0
+playbacki=0
+
 for dir in $( ls ); do
   if [[ -d $dir ]]; then
     if [[ ${UTILITY[*]} =~ "$dir" ]]; then
@@ -33,6 +45,9 @@ for dir in $( ls ); do
     elif [[ ${MUSICMODEL[*]} =~ "$dir" ]]; then
       MUSICMODEL_VERIFIED[musicmodeli]="$dir"
       ((musicmodeli++))
+    elif [[ ${PLAYBACK[*]} =~ "$dir" ]]; then
+      PLAYBACK_VERIFIED[playbacki]="$dir"
+      ((playbacki++))
     elif ! [ "$dir" = dependencies -o "$dir" = build ]; then
       MISC[$misci]="$dir"
       ((misci++))
@@ -46,6 +61,9 @@ fi
 if [ $musicmodeli -gt 0 ]; then
   export ${MUSICMODEL_VERIFIED[@]}
 fi
+if [ $playbacki -gt 0 ]; then
+  export ${PLAYBACK_VERIFIED[@]}
+fi
 if [ $misci -gt 0 ]; then
   export ${MISC[@]}
   export hasMISC=1
@@ -57,7 +75,6 @@ if [ $misci -gt 0 ]; then
     echo "—— $dir"
   done
 fi
-
 
 if [[ -e main.md ]]; then
   ruby dependencies/scripts/Md2Mo.rb main.md dependencies/templates/main.mo
