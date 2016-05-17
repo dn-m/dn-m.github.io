@@ -17,8 +17,19 @@ MetricalDurationSpanning.swift
 	public protocol MetricalDurationSpanning
 MetricalDurationInterval.swift
 	public static let zero: MetricalDurationInterval = MetricalDurationInterval((0,8),(0,8))!
-	public init?(_ start: (Int, Int), _ stop: (Int, Int))
+	public init?(_ start: (Beats, Int), _ stop: (Beats, Int))
 	public func == (lhs: MetricalDurationInterval, rhs: MetricalDurationInterval) -> Bool
+Subdivision.swift
+	public struct Subdivision: IntegerLiteralConvertible
+	public func == (lhs: Subdivision, rhs: Subdivision) -> Bool
+	public func < (lhs: Subdivision, rhs: Subdivision) -> Bool
+Beats.swift
+	public struct Beats: IntegerLiteralConvertible
+	public func + (lhs: Beats, rhs: Beats) -> Beats
+	public func - (lhs: Beats, rhs: Beats) -> Beats
+	public func == (lhs: Beats, rhs: Beats) -> Bool
+	public func < (lhs: Beats, rhs: Beats) -> Bool
+	public init(_ beats: Beats)
 DurationInterval.swift
 	public let start: Duration
 	public let stop: Duration

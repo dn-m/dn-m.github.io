@@ -4,92 +4,94 @@ Dyad+PitchSpelling.swift
 	public var hasQuarterTone: Bool
 	public var finestResolution: Float
 	public var canBeSpelledObjectively: Bool
-	public func spellWithDefaultSpellings() throws
-	public func spellHigher(with spelling: PitchSpelling) throws
-	public func spellLower(with spelling: PitchSpelling) throws
-SpelledPitchDyad.swift
-	public struct SpelledPitchDyad
+	public var defaultSpellingDyad: PitchSpellingDyad?
+	public func spellWithDefaultSpellings() throws -> SpelledDyad
+	public func spell(with spellingDyad: PitchSpellingDyad) throws -> SpelledDyad
 PitchSpelling+Resolution.swift
 	public enum Resolution: Float
 PitchSpelling+CustomStringConvertible.swift
 	public var description: String
+IntervalQualityKind.swift
+	case doubleDiminishedUnison = "dd1"
+	case diminishedUnison = "d1"
+	case perfectUnison = "P1"
+	case augmentedUnison = "A1"
+	case doubleAugmentedUnison = "AA1"
+	case doubleDiminishedSecond = "dd2"
+	case diminishedSecond = "d2"
+	case minorSecond = "m2"
+	case majorSecond = "M2"
+	case augmentedSecond = "A2"
+	case doubleAugmentedSecond = "AA2"
+	case doubleDiminishedThird = "dd3"
+	case diminishedThird = "d3"
+	case minorThird	= "m3"
+	case majorThird	= "M3"
+	case augmentedThird = "A3"
+	case doubleAugmentedThird = "AA3"
+	case doubleDiminishedFourth = "dd4"
+	case diminishedFourth = "d4"
+	case perfectFourth = "P4"
+	case augmentedFourth = "A4"
+	case doubleAugmentedFourth = "AA4"
+	case doubleDiminishedFifth = "dd5"
+	case diminishedFifth = "d5"
+	case perfectFifth = "P5"
+	case augmentedFifth = "A5"
+	case doubleAugmentedFifth = "AA5"
+	case doubleDiminishedSixth = "dd6"
+	case diminishedSixth = "d6"
+	case minorSixth = "m6"
+	case majorSixth = "M6"
+	case augmentedSixth = "A6"
+	case doubleAugmentedSixth = "AA6"
+	case doubleDiminishedSeventh = "dd7"
+	case diminishedSeventh = "d7"
+	case minorSeventh = "m7"
+	case majorSeventh = "M7"
+	case augmentedSeventh = "A7"
+	case doubleAugmentedSeventh = "AA7"
+	public var isStepPreserving: Bool
 DyadSpeller.swift
-	public enum Error: ErrorType { case error } // refine
+	public enum Error: ErrorType { case error }
 PitchSpellingDyad.swift
 	public var isStepPreserving: Bool { return intervalQuality.isStepPreserving }
+	public var hashValue: Int { return lower.hashValue * higher.hashValue }
+	public func == (lhs: PitchSpellingDyad, rhs: PitchSpellingDyad) -> Bool
 PitchSpelling.swift
 	public var hashValue: Int { return "\(letterName),\(coarse),\(fine)".hashValue }
 	public func == (lhs: PitchSpelling, rhs: PitchSpelling) -> Bool
 SpelledPitch.swift
+	public let spelling: PitchSpelling
 	public override var description: String
+SpelledDyad.swift
+	public struct SpelledDyad
 IntervalQuality.swift
-	public override class var members: [EnumKind] { return [Perfect, Augmented] }
 	public override class func kind(
-            coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
-            _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+            forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
-	public override class var members: [EnumKind] { return [Minor, Major, Augmented] }
+	public static let doubleAugmented: EnumKind = .doubleAugmentedSecond
+	public override class var members: [EnumKind] { return imperfectMembers }
 	public override class func kind(
-            coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
-            _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+            forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
-	public override class var members: [EnumKind]
 	public override class func kind(
-            coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
-            _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+            forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
-	public override class var members: [EnumKind]
 	public override class func kind(
-            coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
-            _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+            forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
-	public override class var members: [EnumKind]
 	public override class func kind(
-            coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
-            _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+            forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
-	public override class var members: [EnumKind]
 	public override class func kind(
-            coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
-            _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+            forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
-	public override class var members: [EnumKind]
 	public override class func kind(
-            coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
-            _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
+            forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
-	public class var members: [EnumKind] { return [] }
-	public class var subFamilies: [EnumFamily.Type]
-	public class func kind(
-        coarseAdjustmentLower: PitchSpelling.CoarseAdjustment,
-        _ coarseAdjustmentHigher: PitchSpelling.CoarseAdjustment
-    ) -> EnumKind
-	public static func intervalFamily(withAmountOfSteps steps: Int) -> EnumFamily.Type
-	case DiminishedUnison = "d1"
-	case PerfectUnison = "P1"
-	case AugmentedUnison = "A1"
-	case MinorSecond = "m2"
-	case MajorSecond = "M2"
-	case AugmentedSecond = "A2"
-	case DiminishedThird = "d3"
-	case MinorThird	= "m3"
-	case MajorThird	= "M3"
-	case AugmentedThird = "A3"
-	case DiminishedFourth = "d4"
-	case PerfectFourth = "P4"
-	case AugmentedFourth = "A4"
-	case DiminishedFifth = "d5"
-	case PerfectFifth = "P5"
-	case AugmentedFifth = "A5"
-	case DiminishedSixth = "d6"
-	case MinorSixth = "m6"
-	case MajorSixth = "M6"
-	case AugmentedSixth = "A6"
-	case DiminishedSeventh = "d7"
-	case MinorSeventh = "m7"
-	case MajorSeventh = "M7"
-	case AugmentedSeventh = "A7"
-	public var isStepPreserving: Bool
+	public class func kind(forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad)
+        -> EnumKind
 PitchSpelling+LetterName.swift
 	public var steps: Int
 MonadSpeller.swift

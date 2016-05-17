@@ -151,3 +151,37 @@ ArithmeticType.swift
 	public var isPowerOfTwo: Bool { return isInteger ? Int(self).isPowerOfTwo : false }
 	public func isDivisible(by value: Double) -> Bool
 	public func format(f: String) -> String { return String(format(f), self) }
+FloatWrapping.swift
+	public protocol FloatWrapping:
+    FloatLiteralConvertible,
+    IntegerLiteralConvertible,
+    Hashable,
+    Comparable
+	public protocol FloatWrapping : FloatLiteralConvertible, IntegerLiteralConvertible, Hashable, Comparable
+	public protocol FloatWrapping : FloatLiteralConvertible, IntegerLiteralConvertible, Hashable, Comparable
+	public func == <T: FloatWrapping>(lhs: T, rhs: T) -> Bool
+	public func == <T: FloatWrapping>(lhs: T, rhs: Float) -> Bool
+	public func == <T: FloatWrapping>(lhs: Float, rhs: T) -> Bool
+	public func < <T: FloatWrapping>(lhs: T, rhs: T) -> Bool
+	public func < <T: FloatWrapping>(lhs: T, rhs: Float) -> Bool
+	public func < <T: FloatWrapping>(lhs: Float, rhs: T) -> Bool
+	public protocol FloatWrapping : FloatLiteralConvertible, IntegerLiteralConvertible, Hashable, Comparable
+	public func + <T: FloatWrapping>(augend: T, addend: T) -> T
+	public func + <T: FloatWrapping>(augend: T, addend: T) -> Float
+	public func + <T: FloatWrapping>(lhs: T, rhs: Float) -> Float
+	public func + <T: FloatWrapping>(lhs: Float, rhs: T) -> Float
+	public func - <T: FloatWrapping>(augend: T, addend: T) -> T
+	public func - <T: FloatWrapping>(minuend: T, subtrahend: T) -> Float
+	public func - <T: FloatWrapping>(lhs: T, rhs: Float) -> Float
+	public func - <T: FloatWrapping>(lhs: Float, rhs: T) -> Float
+	public func * <T: FloatWrapping>(augend: T, addend: T) -> T
+	public func * <T: FloatWrapping>(multiplicand: T, multiplier: T) -> Float
+	public func * <T: FloatWrapping>(lhs: T, rhs: Float) -> Float
+	public func * <T: FloatWrapping>(lhs: Float, rhs: T) -> Float
+	public func / <T: FloatWrapping>(augend: T, addend: T) -> T
+	public func / <T: FloatWrapping>(dividend: T, divisor: T) -> Float
+	public func / <T: FloatWrapping>(lhs: T, rhs: Float) -> Float
+	public func / <T: FloatWrapping>(lhs: Float, rhs: T) -> Float
+Comparison.swift
+	public enum Comparison
+	public func compare<T: Comparable>(a: T, _ b: T) -> Comparison

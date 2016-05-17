@@ -1,0 +1,4 @@
+Comparable.swift
+	public func < <T: RawRepresentable where T.RawValue: Comparable>(a: T, b: T) -> Bool
+EnumTree.swift
+	public static var subFamilies: [EnumKind] { return [] }

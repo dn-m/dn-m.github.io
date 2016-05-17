@@ -71,7 +71,7 @@
             <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Subdivision.html">Subdivision</a>
+                <a class="nav-group-task-link" href="../Extensions.html#/s:Sf">Float</a>
               </li>
             </ul>
           </li>
@@ -121,14 +121,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Typealiases.html">Typealiases</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Typealiases.html#/s:8Duration11Subdivision">Subdivision</a>
-              </li>
-            </ul>
-          </li>
         <li class="nav-group-name" id="dependencies">
               <span class="nav-group-name-link">Dependencies</span>
               <ul class="nav-group-tasks">
@@ -156,7 +148,7 @@
 
                 </div>
               </div>
-            <p>Musical Duration defined by a <code>Beats</code> value and <code><a href="../Extensions/Subdivision.html">Subdivision</a></code> value.</p>
+            <p>Musical Duration defined by a <code>Beats</code> value and <code>Subdivision</code> value.</p>
 
           </div>
         </section>
@@ -213,9 +205,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:ZFV8Duration16MetricalDuration16totalSubdivisionFT9withBeatsSi14andSubdivisionSi_Si"></a>
+                    <a name="/s:ZFV8Duration16MetricalDuration16totalSubdivisionFT9withBeatsVS_5Beats14andSubdivisionVS_11Subdivision_S2_"></a>
                     <a name="//apple_ref/swift/Method/totalSubdivision(withBeats:andSubdivision:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZFV8Duration16MetricalDuration16totalSubdivisionFT9withBeatsSi14andSubdivisionSi_Si">totalSubdivision(withBeats:andSubdivision:)</a>
+                    <a class="token" href="#/s:ZFV8Duration16MetricalDuration16totalSubdivisionFT9withBeatsVS_5Beats14andSubdivisionVS_11Subdivision_S2_">totalSubdivision(withBeats:andSubdivision:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -302,9 +294,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV8Duration16MetricalDuration5beatsSi"></a>
+                    <a name="/s:vV8Duration16MetricalDuration5beatsVS_5Beats"></a>
                     <a name="//apple_ref/swift/Property/beats" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV8Duration16MetricalDuration5beatsSi">beats</a>
+                    <a class="token" href="#/s:vV8Duration16MetricalDuration5beatsVS_5Beats">beats</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -329,9 +321,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV8Duration16MetricalDuration11subdivisionSi"></a>
+                    <a name="/s:vV8Duration16MetricalDuration11subdivisionVS_11Subdivision"></a>
                     <a name="//apple_ref/swift/Property/subdivision" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV8Duration16MetricalDuration11subdivisionSi">subdivision</a>
+                    <a class="token" href="#/s:vV8Duration16MetricalDuration11subdivisionVS_11Subdivision">subdivision</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -339,7 +331,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code><a href="../Extensions/Subdivision.html">Subdivision</a></code> value of MetricalDuration</p>
+                        <p><code>Subdivision</code> value of MetricalDuration</p>
 
                       </div>
                       <div class="declaration">
@@ -383,9 +375,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV8Duration16MetricalDuration16totalSubdivisionSi"></a>
+                    <a name="/s:vV8Duration16MetricalDuration16totalSubdivisionVS_11Subdivision"></a>
                     <a name="//apple_ref/swift/Property/totalSubdivision" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV8Duration16MetricalDuration16totalSubdivisionSi">totalSubdivision</a>
+                    <a class="token" href="#/s:vV8Duration16MetricalDuration16totalSubdivisionVS_11Subdivision">totalSubdivision</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -454,7 +446,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isReduced</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">beats</span><span class="o">.</span><span class="n">isOdd</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isReduced</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">beats</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">isOdd</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -475,9 +467,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV8Duration16MetricalDurationcFT5beatsSi11subdivisionSi5scaleSf_S0_"></a>
+                    <a name="/s:FV8Duration16MetricalDurationcFT5beatsVS_5Beats11subdivisionVS_11Subdivision5scaleSf_S0_"></a>
                     <a name="//apple_ref/swift/Method/init(beats:subdivision:scale:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV8Duration16MetricalDurationcFT5beatsSi11subdivisionSi5scaleSf_S0_">init(beats:subdivision:scale:)</a>
+                    <a class="token" href="#/s:FV8Duration16MetricalDurationcFT5beatsVS_5Beats11subdivisionVS_11Subdivision5scaleSf_S0_">init(beats:subdivision:scale:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -548,9 +540,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV8Duration16MetricalDurationcFTSiSi5scaleSf_GSqS0__"></a>
+                    <a name="/s:FV8Duration16MetricalDurationcFTVS_5BeatsSi5scaleSf_GSqS0__"></a>
                     <a name="//apple_ref/swift/Method/init(_:_:scale:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV8Duration16MetricalDurationcFTSiSi5scaleSf_GSqS0__">init(_:_:scale:)</a>
+                    <a class="token" href="#/s:FV8Duration16MetricalDurationcFTVS_5BeatsSi5scaleSf_GSqS0__">init(_:_:scale:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -764,9 +756,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV8Duration16MetricalDuration7respellFT9withBeatsSi_GSqS0__"></a>
+                    <a name="/s:FV8Duration16MetricalDuration7respellFT9withBeatsVS_5Beats_GSqS0__"></a>
                     <a name="//apple_ref/swift/Method/respell(withBeats:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV8Duration16MetricalDuration7respellFT9withBeatsSi_GSqS0__">respell(withBeats:)</a>
+                    <a class="token" href="#/s:FV8Duration16MetricalDuration7respellFT9withBeatsVS_5Beats_GSqS0__">respell(withBeats:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -817,9 +809,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV8Duration16MetricalDuration7respellFT15withSubdivisionSi_GSqS0__"></a>
+                    <a name="/s:FV8Duration16MetricalDuration7respellFT15withSubdivisionVS_11Subdivision_GSqS0__"></a>
                     <a name="//apple_ref/swift/Method/respell(withSubdivision:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV8Duration16MetricalDuration7respellFT15withSubdivisionSi_GSqS0__">respell(withSubdivision:)</a>
+                    <a class="token" href="#/s:FV8Duration16MetricalDuration7respellFT15withSubdivisionVS_11Subdivision_GSqS0__">respell(withSubdivision:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -875,7 +867,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-05-07)</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-05-12)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

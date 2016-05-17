@@ -1,8 +1,31 @@
 Dyad.swift
 	public var description: String { return "\(lower), \(higher)" }
+	public func == (lhs: Dyad, rhs: Dyad) -> Bool
+IntervalClass.swift
+	public let value: Float
+	public init(floatLiteral value: Float)
+	public init(integerLiteral value: Int)
 Verticality.swift
-	public struct Verticality
+	public var pitches: [Pitch] = []
+	public init() { }
+Frequency.swift
+	public let value: Float
+	public init(floatLiteral value: Float)
+	public init(integerLiteral value: Int)
+PitchClass.swift
+	public let value: Float
+	public init(floatLiteral: Float)
+	public init(integerLiteral value: Int)
+	public init(_ pitch: Pitch)
 Pitch.swift
 	public var description: String { return "\(noteNumber)" }
 	public func == (lhs: Pitch, rhs: Pitch) -> Bool
 	public func < (lhs: Pitch, rhs: Pitch) -> Bool
+Interval.swift
+	public let value: Float
+	public init(floatLiteral value: Float)
+	public init(integerLiteral value: Int)
+NoteNumber.swift
+	public let value: Float
+	public init(floatLiteral value: Float)
+	public init(integerLiteral value: Int)

@@ -1,0 +1,2 @@
+Timer.swift
+	public final class Timer
