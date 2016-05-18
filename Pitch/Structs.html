@@ -76,10 +76,13 @@
                 <a class="nav-group-task-link" href="Structs/NoteNumber.html">NoteNumber</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs.html#/s:V5Pitch15OrderedPitchSet">OrderedPitchSet</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs.html#/s:V5Pitch10PitchClass">PitchClass</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs.html#/s:V5Pitch8PitchSet">PitchSet</a>
+                <a class="nav-group-task-link" href="Structs/PitchSet.html">PitchSet</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs.html#/s:V5Pitch11Verticality">Verticality</a>
@@ -91,6 +94,9 @@
               <ul class="nav-group-tasks">
 <li class="nav-group-task">
         <a class="nav-group-task-link" href="/ArithmeticTools/index.html">ArithmeticTools</a>
+</li>
+<li class="nav-group-task">
+        <a class="nav-group-task-link" href="/StringTools/index.html">StringTools</a>
 </li>
 <li class="nav-group-task">
         <a class="nav-group-task-link" href="/EnumTools/index.html">EnumTools</a>
@@ -225,66 +231,33 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <div class="aside aside-warning">
-    <p class="aside-title">Warning</p>
-    <p>Not yet implemented!</p>
+                        <p>Unordered collection of pitches.</p>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    <code>var pitches</code>
 
 </div>
 
 <div class="aside aside-todo">
     <p class="aside-title">Todo</p>
-    <p><code>var pitches</code></p>
+    <code>var dyads</code>
 
 </div>
 
 <div class="aside aside-todo">
     <p class="aside-title">Todo</p>
-    <p><code>var dyads</code></p>
+    <code>var class set</code>
 
 </div>
 
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    <p><code>var class set</code></p>
-
-</div>
-
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    <p><code>var ordered</code></p>
-
-</div>
-
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    <p><code>func partition(_)</code></p>
-
-</div>
-
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    <p><code>var inverse</code></p>
-
-</div>
-
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    <p><code>var retrograde</code></p>
-
-</div>
-
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    <p><code>var retrogradeInverse</code></p>
-
-</div>
-
+                        <a href="Structs/PitchSet.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PitchSet</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PitchSet</span><span class="p">:</span> <span class="kt">SequenceType</span></code></pre>
 
                         </div>
                       </div>
@@ -317,6 +290,67 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Frequency</span><span class="p">:</span> <span class="kt">FloatWrapping</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:V5Pitch15OrderedPitchSet"></a>
+                    <a name="//apple_ref/swift/Struct/OrderedPitchSet" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V5Pitch15OrderedPitchSet">OrderedPitchSet</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ordered collection of pitches.</p>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    <code>var ordered</code>
+
+</div>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    <code>func partition(_)</code>
+
+</div>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    <code>var inverse</code>
+
+</div>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    <code>var retrograde</code>
+
+</div>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    <code>var retrogradeInverse</code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OrderedPitchSet</span><span class="p">:</span> <span class="kt">SequenceType</span></code></pre>
 
                         </div>
                       </div>
@@ -426,7 +460,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-05-12)</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-05-18)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

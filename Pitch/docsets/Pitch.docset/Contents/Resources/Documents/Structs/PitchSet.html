@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Pitch Class Reference | dn-m</title>
+    <title>PitchSet Struct Reference | dn-m</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css">
     <link rel="stylesheet" type="text/css" href="../css/highlight.css">
     <meta charset="utf-8">
@@ -12,9 +12,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/Pitch" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/PitchSet" class="dashAnchor"></a>
 
-    <a title="Pitch Class Reference"></a>
+    <a title="PitchSet Struct Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
       <img class="carat" src="../img/carat.png">
       <a class="breadcrumb" href="../index.html">Pitch Reference</a>
       <img class="carat" src="../img/carat.png">
-      Pitch Class Reference
+      PitchSet Struct Reference
     </p>
 
     <div class="content-wrapper">
@@ -110,51 +110,38 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Pitch</h1>
+            <h1>PitchSet</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Pitch</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PitchSet</span><span class="p">:</span> <span class="kt">SequenceType</span></code></pre>
 
                 </div>
               </div>
-            <p>Subjective psychoacoustical attribute of sound allowing ordering on a frequency-related scale.</p>
+            <p>Unordered collection of pitches.</p>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    <code>var pitches</code>
+
+</div>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    <code>var dyads</code>
+
+</div>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    <code>var class set</code>
+
+</div>
 
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:ZvC5Pitch5Pitch7middleCS0_"></a>
-                    <a name="//apple_ref/swift/Variable/middleC" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZvC5Pitch5Pitch7middleCS0_">middleC</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Middle C.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">middleC</span> <span class="o">=</span> <span class="kt">Pitch</span><span class="p">(</span><span class="nv">noteNumber</span><span class="p">:</span> <span class="mf">60.0</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Instance%20Properties"></a>
@@ -167,9 +154,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC5Pitch5Pitch10noteNumberVS_10NoteNumber"></a>
-                    <a name="//apple_ref/swift/Property/noteNumber" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC5Pitch5Pitch10noteNumberVS_10NoteNumber">noteNumber</a>
+                    <a name="/s:vV5Pitch8PitchSet13pitchClassSetGVs3SetVS_10PitchClass_"></a>
+                    <a name="//apple_ref/swift/Property/pitchClassSet" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV5Pitch8PitchSet13pitchClassSetGVs3SetVS_10PitchClass_">pitchClassSet</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -177,14 +164,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code><a href="../Structs/NoteNumber.html">NoteNumber</a></code> representation of <code><a href="../Classes/Pitch.html">Pitch</a></code>.</p>
+                        <p>Set of <code><a href="../Structs.html#/s:V5Pitch10PitchClass">PitchClass</a></code> representations of <code><a href="../Structs/PitchSet.html">PitchSet</a></code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">noteNumber</span><span class="p">:</span> <span class="kt">NoteNumber</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">pitchClassSet</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">PitchClass</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -194,9 +181,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC5Pitch5Pitch9frequencyVS_9Frequency"></a>
-                    <a name="//apple_ref/swift/Property/frequency" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC5Pitch5Pitch9frequencyVS_9Frequency">frequency</a>
+                    <a name="/s:vV5Pitch8PitchSet5dyadsGSaVS_4Dyad_"></a>
+                    <a name="//apple_ref/swift/Property/dyads" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV5Pitch8PitchSet5dyadsGSaVS_4Dyad_">dyads</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -204,41 +191,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code><a href="../Structs/Frequency.html">Frequency</a></code> representation of <code><a href="../Classes/Pitch.html">Pitch</a></code>.</p>
+                        <p>All dyads that comprise a <code><a href="../Structs/PitchSet.html">PitchSet</a></code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">frequency</span><span class="p">:</span> <span class="kt">Frequency</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC5Pitch5Pitch10pitchClassVS_10PitchClass"></a>
-                    <a name="//apple_ref/swift/Property/pitchClass" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC5Pitch5Pitch10pitchClassVS_10PitchClass">pitchClass</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Modulo 12 representation of <code><a href="../Structs/NoteNumber.html">NoteNumber</a></code> representation of <code><a href="../Classes/Pitch.html">Pitch</a></code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">pitchClass</span><span class="p">:</span> <span class="kt">PitchClass</span> <span class="p">{</span> <span class="k">return</span> <span class="kt">PitchClass</span><span class="p">(</span><span class="k">self</span><span class="p">)</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">dyads</span><span class="p">:</span> <span class="p">[</span><span class="kt">Dyad</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -259,9 +219,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC5Pitch5PitchcFT10noteNumberVS_10NoteNumber_S0_"></a>
-                    <a name="//apple_ref/swift/Method/init(noteNumber:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC5Pitch5PitchcFT10noteNumberVS_10NoteNumber_S0_">init(noteNumber:)</a>
+                    <a name="/s:FV5Pitch8PitchSetcFtGSaCS_5Pitch__S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV5Pitch8PitchSetcFtGSaCS_5Pitch__S0_">init(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -269,14 +229,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a <code><a href="../Classes/Pitch.html">Pitch</a></code> with a <code><a href="../Structs/NoteNumber.html">NoteNumber</a></code> value.</p>
+                        <p>Create a <code><a href="../Structs/PitchSet.html">PitchSet</a></code> variadically with 0..n <code><a href="../Classes/Pitch.html">Pitch</a></code> objects.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">noteNumber</span><span class="p">:</span> <span class="kt">NoteNumber</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">pitches</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">...</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -286,9 +246,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC5Pitch5PitchcFT9frequencyVS_9Frequency_S0_"></a>
-                    <a name="//apple_ref/swift/Method/init(frequency:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC5Pitch5PitchcFT9frequencyVS_9Frequency_S0_">init(frequency:)</a>
+                    <a name="/s:FV5Pitch8PitchSetcFGSaCS_5Pitch_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV5Pitch8PitchSetcFGSaCS_5Pitch_S0_">init(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -296,14 +256,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a <code><a href="../Classes/Pitch.html">Pitch</a></code> with a <code><a href="../Structs/Frequency.html">Frequency</a></code> value.</p>
+                        <p>Create a <code><a href="../Structs/PitchSet.html">PitchSet</a></code> with an <code>Array</code> of <code><a href="../Classes/Pitch.html">Pitch</a></code> objects.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frequency</span><span class="p">:</span> <span class="kt">Frequency</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">pitches</span><span class="p">:</span> <span class="p">[</span><span class="kt">Pitch</span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>
@@ -313,9 +273,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC5Pitch5PitchcFT5pitchS0__S0_"></a>
-                    <a name="//apple_ref/swift/Method/init(pitch:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC5Pitch5PitchcFT5pitchS0__S0_">init(pitch:)</a>
+                    <a name="/s:FV5Pitch8PitchSetcFT7pitchesGVs3SetCS_5Pitch__S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(pitches:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV5Pitch8PitchSetcFT7pitchesGVs3SetCS_5Pitch__S0_">init(pitches:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -323,14 +283,106 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a <code><a href="../Classes/Pitch.html">Pitch</a></code> with another <code><a href="../Classes/Pitch.html">Pitch</a></code>.</p>
+                        <p>Create a <code><a href="../Structs/PitchSet.html">PitchSet</a></code> with a <code>Set</code> of <code><a href="../Classes/Pitch.html">Pitch</a></code> objects.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">pitch</span><span class="p">:</span> <span class="kt">Pitch</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">pitches</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Pitch</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV5Pitch8PitchSetcFT15orderedPitchSetVS_15OrderedPitchSet_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(orderedPitchSet:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV5Pitch8PitchSetcFT15orderedPitchSetVS_15OrderedPitchSet_S0_">init(orderedPitchSet:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code><a href="../Structs/PitchSet.html">PitchSet</a></code> with an <code><a href="../Structs.html#/s:V5Pitch15OrderedPitchSet">OrderedPitchSet</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">orderedPitchSet</span><span class="p">:</span> <span class="kt">OrderedPitchSet</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV5Pitch8PitchSet8generateFT_GVs12AnyGeneratorCS_5Pitch_"></a>
+                    <a name="//apple_ref/swift/Method/generate()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV5Pitch8PitchSet8generateFT_GVs12AnyGeneratorCS_5Pitch_">generate()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generate <code>Pitches</code> for iteration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">generate</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">AnyGenerator</span><span class="o">&lt;</span><span class="kt">Pitch</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/ArrayLiteralConvertible"></a>
+                <a name="//apple_ref/swift/Section/ArrayLiteralConvertible" class="dashAnchor"></a>
+                <a href="#/ArrayLiteralConvertible">
+                  <h3 class="section-name">ArrayLiteralConvertible</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV5Pitch8PitchSetcFt12arrayLiteralGSaCS_5Pitch__S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(arrayLiteral:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV5Pitch8PitchSetcFt12arrayLiteralGSaCS_5Pitch__S0_">init(arrayLiteral:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code><a href="../Structs/PitchSet.html">PitchSet</a></code> with an <code>ArrayLiteral</code> of <code><a href="../Classes/Pitch.html">Pitch</a></code> objects.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">arrayLiteral</span> <span class="nv">pitches</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">...</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

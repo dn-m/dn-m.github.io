@@ -3,6 +3,7 @@ Dyad.swift
 	public func == (lhs: Dyad, rhs: Dyad) -> Bool
 IntervalClass.swift
 	public let value: Float
+	public lazy var complexity: Complexity? =
 	public init(floatLiteral value: Float)
 	public init(integerLiteral value: Int)
 Verticality.swift
@@ -12,6 +13,11 @@ Frequency.swift
 	public let value: Float
 	public init(floatLiteral value: Float)
 	public init(integerLiteral value: Int)
+OrderedPitchSet.swift
+	public init(pitches: Pitch...)
+	public init(pitches: [Pitch])
+	public init(pitchSet: PitchSet)
+	public func generate() -> AnyGenerator<Pitch>
 PitchClass.swift
 	public let value: Float
 	public init(floatLiteral: Float)
@@ -21,6 +27,7 @@ Pitch.swift
 	public var description: String { return "\(noteNumber)" }
 	public func == (lhs: Pitch, rhs: Pitch) -> Bool
 	public func < (lhs: Pitch, rhs: Pitch) -> Bool
+	public var hashValue: Int { return noteNumber.hashValue }
 Interval.swift
 	public let value: Float
 	public init(floatLiteral value: Float)

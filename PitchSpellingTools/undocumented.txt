@@ -61,6 +61,8 @@ PitchSpellingDyad.swift
 PitchSpelling.swift
 	public var hashValue: Int { return "\(letterName),\(coarse),\(fine)".hashValue }
 	public func == (lhs: PitchSpelling, rhs: PitchSpelling) -> Bool
+PitchSetSpeller.swift
+	public init(pitchSet: PitchSet)
 SpelledPitch.swift
 	public let spelling: PitchSpelling
 	public override var description: String
@@ -93,11 +95,14 @@ IntervalQuality.swift
 	public class func kind(forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad)
         -> EnumKind
 PitchSpelling+LetterName.swift
-	public var steps: Int
+	public init?(string: String)
 MonadSpeller.swift
 	public struct MonadSpeller: PitchSpeller
 PitchSpeller.swift
 	public protocol PitchSpeller
+PitchSpelling+StringLiteralConvertible.swift
+	public init(unicodeScalarLiteral value: UnicodeScalarLiteralType)
+	public init(extendedGraphemeClusterLiteral value: ExtendedGraphemeClusterLiteralType)
 PitchSpelling+Sharpness.swift
 	public var distance: Float { return abs(sharpness) }
 PitchSpellingDyad+CustomStringConvertible.swift
