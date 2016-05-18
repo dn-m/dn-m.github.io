@@ -173,7 +173,26 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>All dyads that comprise a <code><a href="../Structs/PitchSet.html">PitchSet</a></code>.</p>
+                        <p>All unique dyads that comprise a <code><a href="../Structs/PitchSet.html">PitchSet</a></code>.</p>
+
+<p>In the case that there are less than two <code><a href="../Classes/Pitch.html">Pitch</a></code> objects in a <code><a href="../Structs/PitchSet.html">PitchSet</a></code>, 
+the <code>dyads</code> property is an empty array.</p>
+
+<p><strong>Example:</strong></p>
+
+<pre class="highlight plaintext"><code>let triad: PitchSet = [
+   Pitch(noteNumber: 60), 
+   Pitch(noteNumber: 61), 
+   Pitch(noteNumber: 62)
+]
+
+triad.dyads // =&gt;
+//    [
+//       Dyad(Pitch(noteNumber: 60), Pitch(noteNumber: 61)),
+//       Dyad(Pitch(noteNumber: 60), Pitch(noteNumber: 62)),
+//       Dyad(Pitch(noteNumber: 61), Pitch(noteNumber: 62))
+//    ]
+</code></pre>
 
                       </div>
                       <div class="declaration">
