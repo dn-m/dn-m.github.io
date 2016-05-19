@@ -80,13 +80,10 @@
                 <a class="nav-group-task-link" href="../Structs.html#/s:V5Pitch15OrderedPitchSet">OrderedPitchSet</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs.html#/s:V5Pitch10PitchClass">PitchClass</a>
+                <a class="nav-group-task-link" href="../Structs/PitchClass.html">PitchClass</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PitchSet.html">PitchSet</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs.html#/s:V5Pitch11Verticality">Verticality</a>
               </li>
             </ul>
           </li>
@@ -117,7 +114,7 @@
 
                 </div>
               </div>
-            <p>MIDI equivalent nn. 60.0 = middle-c.</p>
+            <p>MIDI NoteNumber.</p>
 
           </div>
         </section>
@@ -126,6 +123,70 @@
           <div class="section-content">
             <div class="task-group">
               <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV5Pitch10NoteNumbercFT12floatLiteralSf_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(floatLiteral:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV5Pitch10NoteNumbercFT12floatLiteralSf_S0_">init(floatLiteral:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code><a href="../Structs/NoteNumber.html">NoteNumber</a></code> with a <code>FloatLiteralType</code>.</p>
+
+<p><strong>Example:</strong></p>
+
+<pre class="highlight plaintext"><code>let nn: NoteNumber = 65.5 // =&gt; F quarter sharp above middle C
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">floatLiteral</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV5Pitch10NoteNumbercFT14integerLiteralSi_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(integerLiteral:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV5Pitch10NoteNumbercFT14integerLiteralSi_S0_">init(integerLiteral:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code><a href="../Structs/NoteNumber.html">NoteNumber</a></code> with an <code>IntegerLiteralType</code>.</p>
+
+<p><strong>Example:</strong></p>
+
+<pre class="highlight plaintext"><code>let nn: NoteNumber = 65 =&gt; F above middle C
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">integerLiteral</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -140,6 +201,11 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Create a <code><a href="../Structs/NoteNumber.html">NoteNumber</a></code> with <code><a href="../Structs/Frequency.html">Frequency</a></code> value.</p>
+
+<p><strong>Example:</strong></p>
+
+<pre class="highlight plaintext"><code>let nn = NoteNumber(440) =&gt; A below middle c
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -199,7 +265,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-05-18)</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-05-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
