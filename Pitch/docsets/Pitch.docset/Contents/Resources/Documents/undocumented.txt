@@ -1,8 +1,16 @@
 Dyad.swift
 	public func == (lhs: Dyad, rhs: Dyad) -> Bool
+PitchClassDyad.swift
+	public struct PitchClassDyad
+PitchClass.swift
+	public var inversion: PitchClass { return PitchClass(12 - self.value) }
+PitchConvertibleCollectionType.swift
+	public func == <T: PitchConvertibleCollectionType> (lhs: T, rhs: T) -> Bool
 Pitch.swift
 	public var description: String { return "\(noteNumber)" }
 	public func == (lhs: Pitch, rhs: Pitch) -> Bool
 	public func < (lhs: Pitch, rhs: Pitch) -> Bool
+PitchClassSet.swift
+	public var dyads: [PitchClassDyad]
 PitchSequence.swift
-	public var retrograde: PitchSequence { return PitchSequence(reverse()) }
+	public var intervals: [Interval] { return [] }

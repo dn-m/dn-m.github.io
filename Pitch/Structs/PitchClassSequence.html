@@ -175,6 +175,138 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV5Pitch18PitchClassSequence10retrogradeS0_"></a>
+                    <a name="//apple_ref/swift/Property/retrograde" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV5Pitch18PitchClassSequence10retrogradeS0_">retrograde</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../Structs/PitchClassSequence.html">PitchClassSequence</a></code> with <code><a href="../Structs/PitchClass.html">PitchClass</a></code> values in reverse order.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">retrograde</span><span class="p">:</span> <span class="kt">PitchClassSequence</span> <span class="p">{</span> <span class="k">return</span> <span class="kt">PitchClassSequence</span><span class="p">(</span><span class="nf">reverse</span><span class="p">())</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV5Pitch18PitchClassSequence9inversionS0_"></a>
+                    <a name="//apple_ref/swift/Property/inversion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV5Pitch18PitchClassSequence9inversionS0_">inversion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../Structs/PitchClassSequence.html">PitchClassSequence</a></code> with <code><a href="../Structs/PitchClass.html">PitchClass</a></code> values inverted around <code>0</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">inversion</span><span class="p">:</span> <span class="kt">PitchClassSequence</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV5Pitch18PitchClassSequence9intervalsGSaVS_13IntervalClass_"></a>
+                    <a name="//apple_ref/swift/Property/intervals" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV5Pitch18PitchClassSequence9intervalsGSaVS_13IntervalClass_">intervals</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array of <code><a href="../Structs/IntervalClass.html">IntervalClass</a></code> values between each adjacent <code><a href="../Structs/PitchClass.html">PitchClass</a></code> herein.</p>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    Refactor up the <code><a href="../Protocols/PitchConvertibleCollectionType.html">PitchConvertibleCollectionType</a></code> protocol hierarchy
+
+</div>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    Implement <code>IntervalClassSeqeuence</code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">intervals</span><span class="p">:</span> <span class="p">[</span><span class="kt">IntervalClass</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV5Pitch18PitchClassSequence5dyadsGSaVS_14PitchClassDyad_"></a>
+                    <a name="//apple_ref/swift/Property/dyads" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV5Pitch18PitchClassSequence5dyadsGSaVS_14PitchClassDyad_">dyads</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array of <code>PitchClassDyad</code> values between each combination (choose 2) herein.</p>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    Refactor up the <code><a href="../Protocols/PitchConvertibleContaining.html">PitchConvertibleContaining</a></code> protocol hierarchy
+
+</div>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    Implement generic Dyad and Interval
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">dyads</span><span class="p">:</span> <span class="p">[</span><span class="kt">PitchClassDyad</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -259,7 +391,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-03)</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-04)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
