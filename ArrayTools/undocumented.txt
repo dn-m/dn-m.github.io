@@ -1,3 +1,7 @@
+Comparable.swift
+	public func stableSort(
+        isOrderedBefore: (Generator.Element, Generator.Element) -> Bool
+    ) -> [Generator.Element]
 Stack.swift
 	public func == <T>(lhs: Stack<T>, rhs: Stack<T>) -> Bool
 ListProcessing.swift

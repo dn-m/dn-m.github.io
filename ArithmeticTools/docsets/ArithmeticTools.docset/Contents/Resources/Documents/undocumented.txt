@@ -129,6 +129,7 @@ ArithmeticType.swift
 	public static func mod(dividend: Float, _ modulus: Float) -> Float
 	public static func abs(value: Float) -> Float
 	public static func random(min min: Float = 0.0, max: Float = 1.0) -> Float
+	public static func random(min min: Float = 0.0, max: Float = 1.0, resolution: Float) -> Float
 	public var isInteger: Bool { return self % 1 == 0 }
 	public var isPrime: Bool { return isInteger ? Int(self).isPrime : false }
 	public var isEven: Bool { return isInteger ? Int(self).isEven : false }
@@ -152,8 +153,7 @@ ArithmeticType.swift
 	public func isDivisible(by value: Double) -> Bool
 	public func format(f: String) -> String { return String(format(f), self) }
 FloatWrapping.swift
-	public protocol FloatWrapping:
-    FloatLiteralConvertible,
+	public protocol FloatWrapping: FloatLiteralConvertible,
     IntegerLiteralConvertible,
     Hashable,
     Comparable
@@ -165,7 +165,6 @@ FloatWrapping.swift
 	public func < <T: FloatWrapping>(lhs: T, rhs: T) -> Bool
 	public func < <T: FloatWrapping>(lhs: T, rhs: Float) -> Bool
 	public func < <T: FloatWrapping>(lhs: Float, rhs: T) -> Bool
-	public protocol FloatWrapping : FloatLiteralConvertible, IntegerLiteralConvertible, Hashable, Comparable
 	public func + <T: FloatWrapping>(augend: T, addend: T) -> T
 	public func + <T: FloatWrapping>(augend: T, addend: T) -> Float
 	public func + <T: FloatWrapping>(lhs: T, rhs: Float) -> Float
@@ -182,6 +181,8 @@ FloatWrapping.swift
 	public func / <T: FloatWrapping>(dividend: T, divisor: T) -> Float
 	public func / <T: FloatWrapping>(lhs: T, rhs: Float) -> Float
 	public func / <T: FloatWrapping>(lhs: Float, rhs: T) -> Float
+Functions.swift
+	public func mean<T: ArithmeticType>(a: T, _ b: T) -> T
 Comparison.swift
 	public enum Comparison
 	public func compare<T: Comparable>(a: T, _ b: T) -> Comparison

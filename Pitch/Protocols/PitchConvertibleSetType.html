@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>PitchConvertibleSetType Protocol Reference | dn-m</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css">
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css">
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/PitchConvertibleSetType" class="dashAnchor"></a>
+
+    <a title="PitchConvertibleSetType Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="/">
+          dn-m Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/dn-m/Pitch">
+            <img class="header-icon" src="../img/gh.png">
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2FPitch%2Exml">
+            <img class="header-icon" src="../img/dash.png">
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="/">dn-m</a>
+      <img class="carat" src="../img/carat.png">
+      <a class="breadcrumb" href="../index.html">Pitch Reference</a>
+      <img class="carat" src="../img/carat.png">
+      PitchConvertibleSetType Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PitchConvertible.html">PitchConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PitchConvertibleCollectionType.html">PitchConvertibleCollectionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PitchConvertibleContaining.html">PitchConvertibleContaining</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PitchConvertibleSetType.html">PitchConvertibleSetType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Dyad.html">Dyad</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Frequency.html">Frequency</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Interval.html">Interval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/IntervalClass.html">IntervalClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NoteNumber.html">NoteNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Pitch.html">Pitch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PitchClass.html">PitchClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PitchClassSequence.html">PitchClassSequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PitchClassSet.html">PitchClassSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PitchSequence.html">PitchSequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PitchSet.html">PitchSet</a>
+              </li>
+            </ul>
+          </li>
+        <li class="nav-group-name" id="dependencies">
+              <span class="nav-group-name-link">Dependencies</span>
+              <ul class="nav-group-tasks">
+<li class="nav-group-task">
+        <a class="nav-group-task-link" href="/ArithmeticTools/index.html">ArithmeticTools</a>
+</li>
+<li class="nav-group-task">
+        <a class="nav-group-task-link" href="/StringTools/index.html">StringTools</a>
+</li>
+<li class="nav-group-task">
+        <a class="nav-group-task-link" href="/EnumTools/index.html">EnumTools</a>
+</li>
+</ul>
+            </li>
+</ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>PitchConvertibleSetType</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PitchConvertibleSetType</span><span class="p">:</span> <span class="kt">PitchConvertibleContaining</span></code></pre>
+
+                </div>
+              </div>
+            <p>Protocol definining an unordered set of unique <code><a href="../Protocols/PitchConvertible.html">PitchConvertible</a></code>-conforming values.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance%20Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP5Pitch23PitchConvertibleSetType3setGVs3Setwx7Element_"></a>
+                    <a name="//apple_ref/swift/Property/set" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP5Pitch23PitchConvertibleSetType3setGVs3Setwx7Element_">set</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>Set</code> holding <code><a href="../Protocols/PitchConvertible.html">PitchConvertible</a></code>-conforming values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">set</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/PitchConvertibleContaining"></a>
+                <a name="//apple_ref/swift/Section/PitchConvertibleContaining" class="dashAnchor"></a>
+                <a href="#/PitchConvertibleContaining">
+                  <h3 class="section-name">PitchConvertibleContaining</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE5PitchPS_23PitchConvertibleSetType7isEmptySb"></a>
+                    <a name="//apple_ref/swift/Property/isEmpty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE5PitchPS_23PitchConvertibleSetType7isEmptySb">isEmpty</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isEmpty</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="kt">Array</span><span class="p">(</span><span class="k">set</span><span class="p">)</span><span class="o">.</span><span class="n">count</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if there are no <code><a href="../Structs/Pitch.html">Pitch</a></code> objects herein. Otherwsie <code>false</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE5PitchPS_23PitchConvertibleSetType9isMonadicSb"></a>
+                    <a name="//apple_ref/swift/Property/isMonadic" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE5PitchPS_23PitchConvertibleSetType9isMonadicSb">isMonadic</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isMonadic</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="kt">Array</span><span class="p">(</span><span class="k">set</span><span class="p">)</span><span class="o">.</span><span class="n">count</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if there is one <code><a href="../Structs/Pitch.html">Pitch</a></code> object herein. Otherwsie <code>false</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/AnySequenceType"></a>
+                <a name="//apple_ref/swift/Section/AnySequenceType" class="dashAnchor"></a>
+                <a href="#/AnySequenceType">
+                  <h3 class="section-name">AnySequenceType</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE5PitchPS_23PitchConvertibleSetType8sequenceGVs11AnySequencewx7Element_"></a>
+                    <a name="//apple_ref/swift/Property/sequence" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE5PitchPS_23PitchConvertibleSetType8sequenceGVs11AnySequencewx7Element_">sequence</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Iterable sequence of <code><a href="../Protocols/PitchConvertible.html">PitchConvertible</a></code> values held by the conforming object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sequence</span><span class="p">:</span> <span class="kt">AnySequence</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">return</span> <span class="kt">AnySequence</span><span class="p">(</span><span class="k">set</span><span class="p">)</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CustomStringConvertible"></a>
+                <a name="//apple_ref/swift/Section/CustomStringConvertible" class="dashAnchor"></a>
+                <a href="#/CustomStringConvertible">
+                  <h3 class="section-name">CustomStringConvertible</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE5PitchPS_23PitchConvertibleSetType11descriptionSS"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE5PitchPS_23PitchConvertibleSetType11descriptionSS">description</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Printable description</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">return</span> <span class="s">"{</span><span class="se">\(</span><span class="n">map</span><span class="p">{</span> <span class="s">"</span><span class="se">\(</span><span class="nv">$0</span><span class="se">)</span><span class="s">"</span> <span class="p">}</span><span class="o">.</span><span class="nf">joinWithSeparator</span><span class="p">(</span><span class="s">","</span><span class="p">)</span><span class="se">)</span><span class="s">}"</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-03)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+
+</html>

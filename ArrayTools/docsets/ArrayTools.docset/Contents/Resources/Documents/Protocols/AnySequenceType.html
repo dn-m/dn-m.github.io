@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AnySequenceType Protocol Reference | dn-m</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/AnySequenceType" class="dashAnchor"></a>
+
+    <a title="AnySequenceType Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="/">
+          dn-m Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/dn-m/ArrayTools">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2FArrayTools%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="/">dn-m</a>
+      <img class="carat" src="../img/carat.png" />
+      <a class="breadcrumb" href="../index.html">ArrayTools Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      AnySequenceType Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ArrayError.html">ArrayError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions.html#/s:Ps30RangeReplaceableCollectionType">RangeReplaceableCollectionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SequenceType.html">SequenceType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:ZF10ArrayToolsoi1purFTGSax_x_GSax_">+(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:ZF10ArrayToolsoi1purFTxGSax__GSax_">+(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:ZF10ArrayToolsoi2eeuRxs9EquatablerFTGVS_5Stackx_GS1_x__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:F10ArrayTools12combinationsu0_rFTGSax_GSaq___GSaTxq___">combinations(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AnySequenceType.html">AnySequenceType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Stack.html">Stack</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Subscripts.html">Subscripts</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Subscripts.html#/s:iE10ArrayToolsSa9subscriptFT4safeSi_GSqx_">subscript(safe:)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>AnySequenceType</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AnySequenceType</span><span class="p">:</span> <span class="kt">SequenceType</span><span class="p">,</span> <span class="kt">ArrayLiteralConvertible</span></code></pre>
+
+                </div>
+              </div>
+            <p>Type erasing protocol that allows the <code><a href="../Extensions/SequenceType.html">SequenceType</a></code> implementation to be left to the 
+individual <code>struct</code>.</p>
+
+<p>For example, <code>PitchSet</code> and <code>PitchSequence</code> are both containers for <code>Pitch</code> values, and should
+both be able to be used as <code><a href="../Extensions/SequenceType.html">SequenceType</a></code> conforming structures. By conforming to this
+protocol, the <code>PitchSet</code> can use a <code>Set&lt;Pitch&gt;</code> as its underlying model, while <code>PitchSequence</code>
+can use an <code><a href="../Extensions/Array.html">Array&lt;Pitch&gt;</a></code> as its underlying model.</p>
+
+<p>In the conforming <code>struct</code>, it is necessary to add a private <code>var</code> which is an implementation
+of a <code><a href="../Extensions/SequenceType.html">SequenceType</a></code> conforming <code>struct</code>, which is then given by the <code>sequence</code> getter. </p>
+
+<p>In the <code>init</code> method of the conforming <code>struct</code>, set the value of this private <code>var</code> with the
+given `sequence.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Associated%20Types"></a>
+                <a name="//apple_ref/swift/Section/Associated Types" class="dashAnchor"></a>
+                <a href="#/Associated%20Types">
+                  <h3 class="section-name">Associated Types</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP10ArrayTools15AnySequenceType8sequenceGVs11AnySequencewx7Element_"></a>
+                    <a name="//apple_ref/swift/Property/sequence" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP10ArrayTools15AnySequenceType8sequenceGVs11AnySequencewx7Element_">sequence</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>AnySequence</code> wrapper that provides shade for the domain specific implementation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">sequence</span><span class="p">:</span> <span class="kt">AnySequence</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP10ArrayTools15AnySequenceTypecuRd__s12SequenceTypewx7ElementzWd__9Generator7Element_rFqd__x"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP10ArrayTools15AnySequenceTypecuRd__s12SequenceTypewx7ElementzWd__9Generator7Element_rFqd__x">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create an <code><a href="../Protocols/AnySequenceType.html">AnySequenceType</a></code> with a <code>Sequence</code> of any type.</p>
+
+<p>In the <code>init</code> method of the conforming <code>struct</code>, set the value of this private <code>var</code> with
+the given `sequence.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="p">:</span> <span class="kt">SequenceType</span> <span class="k">where</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span> <span class="o">==</span> <span class="kt">Element</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">sequence</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/SequenceType"></a>
+                <a name="//apple_ref/swift/Section/SequenceType" class="dashAnchor"></a>
+                <a href="#/SequenceType">
+                  <h3 class="section-name">SequenceType</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10ArrayToolsPS_15AnySequenceType8generateFT_GVs12AnyGeneratorwx7Element_"></a>
+                    <a name="//apple_ref/swift/Method/generate()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10ArrayToolsPS_15AnySequenceType8generateFT_GVs12AnyGeneratorwx7Element_">generate()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a generator over the elements of this sequence.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">generate</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">AnyGenerator</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-03)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

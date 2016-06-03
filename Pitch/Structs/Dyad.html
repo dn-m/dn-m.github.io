@@ -51,10 +51,19 @@
       <nav class="navigation">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/Pitch.html">Pitch</a>
+                <a class="nav-group-task-link" href="../Protocols/PitchConvertible.html">PitchConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PitchConvertibleCollectionType.html">PitchConvertibleCollectionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PitchConvertibleContaining.html">PitchConvertibleContaining</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PitchConvertibleSetType.html">PitchConvertibleSetType</a>
               </li>
             </ul>
           </li>
@@ -77,10 +86,19 @@
                 <a class="nav-group-task-link" href="../Structs/NoteNumber.html">NoteNumber</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs.html#/s:V5Pitch15OrderedPitchSet">OrderedPitchSet</a>
+                <a class="nav-group-task-link" href="../Structs/Pitch.html">Pitch</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PitchClass.html">PitchClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PitchClassSequence.html">PitchClassSequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PitchClassSet.html">PitchClassSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PitchSequence.html">PitchSequence</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PitchSet.html">PitchSet</a>
@@ -110,7 +128,7 @@
             <h1>Dyad</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Dyad</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Dyad</span></code></pre>
 
                 </div>
               </div>
@@ -122,13 +140,20 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20properties"></a>
+                <a name="//apple_ref/swift/Section/Instance%20properties" class="dashAnchor"></a>
+                <a href="#/Instance%20properties">
+                  <h3 class="section-name">Instance properties</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV5Pitch4Dyad5lowerCS_5Pitch"></a>
+                    <a name="/s:vV5Pitch4Dyad5lowerVS_5Pitch"></a>
                     <a name="//apple_ref/swift/Property/lower" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV5Pitch4Dyad5lowerCS_5Pitch">lower</a>
+                    <a class="token" href="#/s:vV5Pitch4Dyad5lowerVS_5Pitch">lower</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -136,7 +161,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Lower of two <code><a href="../Classes/Pitch.html">Pitch</a></code> values.</p>
+                        <p>Lower of two <code><a href="../Structs/Pitch.html">Pitch</a></code> values.</p>
 
                       </div>
                       <div class="declaration">
@@ -153,9 +178,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV5Pitch4Dyad6higherCS_5Pitch"></a>
+                    <a name="/s:vV5Pitch4Dyad6higherVS_5Pitch"></a>
                     <a name="//apple_ref/swift/Property/higher" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV5Pitch4Dyad6higherCS_5Pitch">higher</a>
+                    <a class="token" href="#/s:vV5Pitch4Dyad6higherVS_5Pitch">higher</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -163,7 +188,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Higher of two <code><a href="../Classes/Pitch.html">Pitch</a></code> values.</p>
+                        <p>Higher of two <code><a href="../Structs/Pitch.html">Pitch</a></code> values.</p>
 
                       </div>
                       <div class="declaration">
@@ -190,7 +215,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code><a href="../Structs/Interval.html">Interval</a></code> between two <code><a href="../Classes/Pitch.html">Pitch</a></code> values.</p>
+                        <p><code><a href="../Structs/Interval.html">Interval</a></code> between two <code><a href="../Structs/Pitch.html">Pitch</a></code> values.</p>
 
                       </div>
                       <div class="declaration">
@@ -204,12 +229,23 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV5Pitch4DyadcFTCS_5PitchS1__S0_"></a>
+                    <a name="/s:FV5Pitch4DyadcFTVS_5PitchS1__S0_"></a>
                     <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV5Pitch4DyadcFTCS_5PitchS1__S0_">init(_:_:)</a>
+                    <a class="token" href="#/s:FV5Pitch4DyadcFTVS_5PitchS1__S0_">init(_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -217,7 +253,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a <code><a href="../Structs/Dyad.html">Dyad</a></code> with two <code><a href="../Classes/Pitch.html">Pitch</a></code> values. 
+                        <p>Create a <code><a href="../Structs/Dyad.html">Dyad</a></code> with two <code><a href="../Structs/Pitch.html">Pitch</a></code> values. 
 These pitches need not be ordered; they are ordered upon initialization.</p>
 
                       </div>
@@ -234,13 +270,51 @@ These pitches need not be ordered; they are ordered upon initialization.</p>
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CustomStringConvertible"></a>
+                <a name="//apple_ref/swift/Section/CustomStringConvertible" class="dashAnchor"></a>
+                <a href="#/CustomStringConvertible">
+                  <h3 class="section-name">CustomStringConvertible</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV5Pitch4Dyad11descriptionSS"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV5Pitch4Dyad11descriptionSS">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Printed description</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">return</span> <span class="s">"</span><span class="se">\(</span><span class="n">lower</span><span class="se">)</span><span class="s">, </span><span class="se">\(</span><span class="n">higher</span><span class="se">)</span><span class="s">"</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-05-19)</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-03)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

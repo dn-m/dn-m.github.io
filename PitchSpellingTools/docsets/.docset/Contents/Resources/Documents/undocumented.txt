@@ -4,7 +4,10 @@ Dyad+PitchSpelling.swift
 	public var hasQuarterTone: Bool
 	public var finestResolution: Float
 	public var canBeSpelledObjectively: Bool
+	public var isFullyAmbiguouslySpellable: Bool
+	public var isSemiAmbiguouslySpellable: Bool
 	public var defaultSpellingDyad: PitchSpellingDyad?
+	public var objectivelySpellableAndNot: (Pitch, Pitch)?
 	public func spellWithDefaultSpellings() throws -> SpelledDyad
 	public func spell(with spellingDyad: PitchSpellingDyad) throws -> SpelledDyad
 PitchSpelling+Resolution.swift
@@ -52,23 +55,43 @@ IntervalQualityKind.swift
 	case augmentedSeventh = "A7"
 	case doubleAugmentedSeventh = "AA7"
 	public var isStepPreserving: Bool
+PitchClass+PitchSpelling.swift
+	public var spellingUrgency: Int?
+SpelledPitchSet.swift
+	public struct SpelledPitchSet: SequenceType
+	public func == (lhs: SpelledPitchSet, rhs: SpelledPitchSet) -> Bool
+PitchSet+PitchSpelling.swift
+	public var sortedBySpellingUrgency: [Pitch]
+	public func spelledWithDefaultSpellings() throws -> SpelledPitchSet
+Interval+PitchSpelling.swift
+	public var spellingUrgency: IntervalClass.SpellingUrgency?
 DyadSpeller.swift
 	public enum Error: ErrorType { case error }
 PitchSpellingDyad.swift
+	public var isCoarseCompatible: Bool { return eitherIsNatural || isCoarseMatching }
+	public var isCoarseDirectionCompatible: Bool
+	public var isCoarseResolutionMatching: Bool
+	public var isCoarseResolutionCompatible: Bool
+	public var isFineCompatible: Bool
 	public var isStepPreserving: Bool { return intervalQuality.isStepPreserving }
-	public var hashValue: Int { return lower.hashValue * higher.hashValue }
+	public var meanCoarseDistance: Float
+	public var hashValue: Int { return b.hashValue * a.hashValue }
 	public func == (lhs: PitchSpellingDyad, rhs: PitchSpellingDyad) -> Bool
 PitchSpelling.swift
+	case noSpellingForPitch(Pitch)
 	public var hashValue: Int { return "\(letterName),\(coarse),\(fine)".hashValue }
 	public func == (lhs: PitchSpelling, rhs: PitchSpelling) -> Bool
-PitchSetSpeller.swift
-	public init(pitchSet: PitchSet)
 SpelledPitch.swift
+	public let pitch: Pitch
 	public let spelling: PitchSpelling
-	public override var description: String
+	public init(_ pitch: Pitch, _ spelling: PitchSpelling)
+	public var description: String
+	public var hashValue: Int { return "\(pitch)\(spelling)".hashValue }
+	public func == (lhs: SpelledPitch, rhs: SpelledPitch) -> Bool
 SpelledDyad.swift
 	public struct SpelledDyad
 IntervalQuality.swift
+	public static var stepPreserving: [EnumKind] { return [perfect] }
 	public override class func kind(
             forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
@@ -80,9 +103,11 @@ IntervalQuality.swift
 	public override class func kind(
             forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
+	public static var stepPreserving: [EnumKind]
 	public override class func kind(
             forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
+	public static var stepPreserving: [EnumKind]
 	public override class func kind(
             forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
@@ -99,11 +124,11 @@ PitchSpelling+LetterName.swift
 MonadSpeller.swift
 	public struct MonadSpeller: PitchSpeller
 PitchSpeller.swift
-	public protocol PitchSpeller
-PitchSpelling+StringLiteralConvertible.swift
-	public init(unicodeScalarLiteral value: UnicodeScalarLiteralType)
-	public init(extendedGraphemeClusterLiteral value: ExtendedGraphemeClusterLiteralType)
-PitchSpelling+Sharpness.swift
-	public var distance: Float { return abs(sharpness) }
+	public protocol PitchSpeller { }
+IntervalClass+PitchSpelling.swift
+	public var spellingUrgency: SpellingUrgency?
+Pitch+PitchSpelling.swift
+	public var spellingsWithoutUnconventionalEnharmonics: [PitchSpelling]
+	public func spelledWithDefaultSpelling() throws -> SpelledPitch
 PitchSpellingDyad+CustomStringConvertible.swift
 	public var description: String
