@@ -69,6 +69,9 @@
                 <a class="nav-group-task-link" href="../Classes/PitchSetSpeller.html">PitchSetSpeller</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PitchSpellingEdge.html">PitchSpellingEdge</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/PitchSpellingNode.html">PitchSpellingNode</a>
               </li>
               <li class="nav-group-task">
@@ -128,6 +131,9 @@
                 <a class="nav-group-task-link" href="../Structs/PitchSpellingDyad.html">PitchSpellingDyad</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PitchSpellingNodeResource.html">PitchSpellingNodeResource</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PitchSpellingRankerFactory.html">PitchSpellingRankerFactory</a>
               </li>
               <li class="nav-group-task">
@@ -173,6 +179,51 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance%20Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC18PitchSpellingTools5Level13highestRankedGSqCS_17PitchSpellingNode_"></a>
+                    <a name="//apple_ref/swift/Property/highestRanked" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC18PitchSpellingTools5Level13highestRankedGSqCS_17PitchSpellingNode_">highestRanked</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The currently highest ranked <code><a href="../Classes/PitchSpellingNode.html">PitchSpellingNode</a></code> contained herein.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">highestRanked</span><span class="p">:</span> <span class="kt">PitchSpellingNode</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
@@ -195,6 +246,44 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">pitch</span><span class="p">:</span> <span class="kt">Pitch</span><span class="p">,</span> <span class="nv">nodes</span><span class="p">:</span> <span class="p">[</span><span class="kt">PitchSpellingNode</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CustomStringConvertible"></a>
+                <a name="//apple_ref/swift/Section/CustomStringConvertible" class="dashAnchor"></a>
+                <a href="#/CustomStringConvertible">
+                  <h3 class="section-name">CustomStringConvertible</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC18PitchSpellingTools5Level11descriptionSS"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC18PitchSpellingTools5Level11descriptionSS">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Printed description.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">return</span> <span class="s">"</span><span class="se">\(</span><span class="n">pitch</span><span class="se">)</span><span class="s">: </span><span class="se">\(</span><span class="n">nodes</span><span class="se">)</span><span class="s">"</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

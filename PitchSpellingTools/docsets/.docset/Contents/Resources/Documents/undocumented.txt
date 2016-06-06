@@ -72,42 +72,22 @@ SpelledPitchSet.swift
 PitchSet+PitchSpelling.swift
 	public var sortedBySpellingUrgency: [Pitch]
 	public func spelledWithDefaultSpellings() throws -> SpelledPitchSet
-PitchSpellingLevel.swift
-	public var highestRanked: PitchSpellingNode? { return nodes.sort { $0.rank > $1.rank }.first }
-	public var description: String
 PitchSpellingDyad.swift
-	public var isCoarseCompatible: Bool { return eitherIsNatural || isCoarseMatching }
-	public var isCoarseDirectionCompatible: Bool
-	public var isCoarseResolutionMatching: Bool
-	public var isCoarseResolutionCompatible: Bool
-	public var eitherHasNoFineAdjustment: Bool
-	public var eitherHasFineAdjustment: Bool
-	public var hasValidIntervalQuality: Bool { return intervalQuality.hasValidIntervalQuality }
-	public var meanCoarseDistance: Float
-	public var hashValue: Int { return b.hashValue * a.hashValue }
 	public func == (lhs: PitchSpellingDyad, rhs: PitchSpellingDyad) -> Bool
-NodeResource.swift
-	public struct NodeResource
-	public struct NodeResource
+PitchSpellingNodeResource.swift
+	public var pitches: [Pitch] { return resource.reduce([]) { $0 + [$1.0] } }
+	public func generate() -> AnyGenerator<(Pitch, [PitchSpellingNode])>
 PitchSpelling.swift
-	case noSpellingForPitch(Pitch)
 	public var hashValue: Int { return "\(letterName),\(coarse),\(fine)".hashValue }
 	public func == (lhs: PitchSpelling, rhs: PitchSpelling) -> Bool
 SemiAmbiguousPitchSpellingRanker.swift
 	public lazy var edges: [PitchSpellingEdge] =
-PitchSetSpeller.swift
-	public func applyRankings()
 PitchSpellingRanking.swift
 	var edges: [PitchSpellingEdge] { get }
 	var rules: [(PitchSpellingDyad) -> Bool] { get }
 	func applyRankings(withAmount amount: Float)
 	public var rules: [(PitchSpellingDyad) -> Bool]
 SpelledPitch.swift
-	public let pitch: Pitch
-	public let spelling: PitchSpelling
-	public init(_ pitch: Pitch, _ spelling: PitchSpelling)
-	public var description: String
-	public var hashValue: Int { return "\(pitch)\(spelling)".hashValue }
 	public func == (lhs: SpelledPitch, rhs: SpelledPitch) -> Bool
 SpelledDyad.swift
 	public struct SpelledDyad
@@ -140,14 +120,9 @@ IntervalQuality.swift
 PitchSpelling+LetterName.swift
 	public init?(string: String)
 PitchSpellingEdge.swift
-	public final class PitchSpellingEdge
 	public func == (lhs: PitchSpellingEdge, rhs: PitchSpellingEdge) -> Bool
 	public func < (lhs: PitchSpellingEdge, rhs: PitchSpellingEdge) -> Bool
-	public final class PitchSpellingEdge
 PitchSpeller.swift
 	public protocol PitchSpeller
-Pitch+PitchSpelling.swift
-	public var spellingsWithoutUnconventionalEnharmonics: [PitchSpelling]
-	public func spelledWithDefaultSpelling() throws -> SpelledPitch
 PitchSpellingDyad+CustomStringConvertible.swift
 	public var description: String

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>IntervalQuality Class Reference | dn-m</title>
+    <title>PitchSpellingNodeResource Struct Reference | dn-m</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css">
     <link rel="stylesheet" type="text/css" href="../css/highlight.css">
     <meta charset="utf-8">
@@ -12,9 +12,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/IntervalQuality" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/PitchSpellingNodeResource" class="dashAnchor"></a>
 
-    <a title="IntervalQuality Class Reference"></a>
+    <a title="PitchSpellingNodeResource Struct Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
       <img class="carat" src="../img/carat.png">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png">
-      IntervalQuality Class Reference
+      PitchSpellingNodeResource Struct Reference
     </p>
 
     <div class="content-wrapper">
@@ -164,22 +164,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>IntervalQuality</h1>
+            <h1>PitchSpellingNodeResource</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">IntervalQuality</span><span class="p">:</span> <span class="kt">EnumTree</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PitchSpellingNodeResource</span></code></pre>
 
                 </div>
               </div>
-            <p>Quality of Interval between two <code><a href="../Structs/SpelledPitch.html">SpelledPitch</a></code> objects.</p>
-
-<blockquote>
-<p><code><a href="../Classes/IntervalQuality/third.html#/s:ZvCC18PitchSpellingTools15IntervalQuality5third5majorOS_19IntervalQualityKind">IntervalQuality.third.major</a></code></p>
-
-<p><code><a href="../Classes/IntervalQuality/seventh.html#/s:ZvCC18PitchSpellingTools15IntervalQuality7seventh10diminishedOS_19IntervalQualityKind">IntervalQuality.seventh.diminished</a></code></p>
-
-<p><code><a href="../Classes/IntervalQuality/fourth.html#/s:ZvCC18PitchSpellingTools15IntervalQuality6fourth9augmentedOS_19IntervalQualityKind">IntervalQuality.fourth.augmented</a></code></p>
-</blockquote>
+            <p>Wrapper for a dictionary of type <code>[Pitch: [PitchSpellingNode]]</code>.</p>
 
           </div>
         </section>
@@ -188,19 +180,19 @@
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Interval%20Families"></a>
-                <a name="//apple_ref/swift/Section/Interval%20Families" class="dashAnchor"></a>
-                <a href="#/Interval%20Families">
-                  <h3 class="section-name">Interval Families</h3>
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance%20Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
                 </a>
               </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:CC18PitchSpellingTools15IntervalQuality6unison"></a>
-                    <a name="//apple_ref/swift/Class/unison" class="dashAnchor"></a>
-                    <a class="token" href="#/s:CC18PitchSpellingTools15IntervalQuality6unison">unison</a>
+                    <a name="/s:iV18PitchSpellingTools25PitchSpellingNodeResource9subscriptFV5Pitch5PitchGSqGSaCS_17PitchSpellingNode__"></a>
+                    <a name="//apple_ref/swift/Method/subscript(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:iV18PitchSpellingTools25PitchSpellingNodeResource9subscriptFV5Pitch5PitchGSqGSaCS_17PitchSpellingNode__">subscript(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -208,15 +200,45 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Unison interval family.</p>
-
-                        <a href="../Classes/IntervalQuality/unison.html" class="slightly-smaller">See more</a>
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nv">unison</span><span class="p">:</span> <span class="kt">EnumFamily</span><span class="p">,</span> <span class="kt">PerfectIntervalQualityType</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">subscript</span> <span class="p">(</span><span class="nv">pitch</span><span class="p">:</span> <span class="kt">Pitch</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">PitchSpellingNode</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of <code><a href="../Classes/PitchSpellingNode.html">PitchSpellingNode</a></code> values for the given <code>pitch</code>, if present. Otherwise, <code>nil</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV18PitchSpellingTools25PitchSpellingNodeResource5nodesGSaCS_17PitchSpellingNode_"></a>
+                    <a name="//apple_ref/swift/Property/nodes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools25PitchSpellingNodeResource5nodesGSaCS_17PitchSpellingNode_">nodes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>All <code><a href="../Classes/PitchSpellingNode.html">PitchSpellingNode</a></code> values contained herein.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">nodes</span><span class="p">:</span> <span class="p">[</span><span class="kt">PitchSpellingNode</span><span class="p">]</span> <span class="p">{</span> <span class="k">return</span> <span class="n">resource</span><span class="o">.</span><span class="nf">reduce</span><span class="p">([])</span> <span class="p">{</span> <span class="nv">$0</span> <span class="o">+</span> <span class="nv">$1</span><span class="o">.</span><span class="mi">1</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span> <span class="p">}</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -226,9 +248,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:CC18PitchSpellingTools15IntervalQuality6second"></a>
-                    <a name="//apple_ref/swift/Class/second" class="dashAnchor"></a>
-                    <a class="token" href="#/s:CC18PitchSpellingTools15IntervalQuality6second">second</a>
+                    <a name="/s:vV18PitchSpellingTools25PitchSpellingNodeResource22allNodesHaveBeenRankedSb"></a>
+                    <a name="//apple_ref/swift/Property/allNodesHaveBeenRanked" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools25PitchSpellingNodeResource22allNodesHaveBeenRankedSb">allNodesHaveBeenRanked</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -236,177 +258,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Second interval family.</p>
+                        <p><code>true</code> if all nodes contained herein have been ranked. Otherwise, <code>false</code>.</p>
 
-                        <a href="../Classes/IntervalQuality/second.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nv">second</span><span class="p">:</span> <span class="kt">EnumFamily</span><span class="p">,</span> <span class="kt">ImperfectIntervalQualityType</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:CC18PitchSpellingTools15IntervalQuality5third"></a>
-                    <a name="//apple_ref/swift/Class/third" class="dashAnchor"></a>
-                    <a class="token" href="#/s:CC18PitchSpellingTools15IntervalQuality5third">third</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Third interval family.</p>
-
-                        <a href="../Classes/IntervalQuality/third.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nv">third</span><span class="p">:</span> <span class="kt">EnumFamily</span><span class="p">,</span> <span class="kt">ImperfectIntervalQualityType</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:CC18PitchSpellingTools15IntervalQuality6fourth"></a>
-                    <a name="//apple_ref/swift/Class/fourth" class="dashAnchor"></a>
-                    <a class="token" href="#/s:CC18PitchSpellingTools15IntervalQuality6fourth">fourth</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Fourth interval family.</p>
-
-                        <a href="../Classes/IntervalQuality/fourth.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nv">fourth</span><span class="p">:</span> <span class="kt">EnumFamily</span><span class="p">,</span> <span class="kt">PerfectIntervalQualityType</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:CC18PitchSpellingTools15IntervalQuality5fifth"></a>
-                    <a name="//apple_ref/swift/Class/fifth" class="dashAnchor"></a>
-                    <a class="token" href="#/s:CC18PitchSpellingTools15IntervalQuality5fifth">fifth</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Fifth interval family.</p>
-
-                        <a href="../Classes/IntervalQuality/fifth.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nv">fifth</span><span class="p">:</span> <span class="kt">EnumFamily</span><span class="p">,</span> <span class="kt">PerfectIntervalQualityType</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:CC18PitchSpellingTools15IntervalQuality5sixth"></a>
-                    <a name="//apple_ref/swift/Class/sixth" class="dashAnchor"></a>
-                    <a class="token" href="#/s:CC18PitchSpellingTools15IntervalQuality5sixth">sixth</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Sixth interval family.</p>
-
-                        <a href="../Classes/IntervalQuality/sixth.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nv">sixth</span><span class="p">:</span> <span class="kt">EnumFamily</span><span class="p">,</span> <span class="kt">ImperfectIntervalQualityType</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:CC18PitchSpellingTools15IntervalQuality7seventh"></a>
-                    <a name="//apple_ref/swift/Class/seventh" class="dashAnchor"></a>
-                    <a class="token" href="#/s:CC18PitchSpellingTools15IntervalQuality7seventh">seventh</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Seventh interval family.</p>
-
-                        <a href="../Classes/IntervalQuality/seventh.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nv">seventh</span><span class="p">:</span> <span class="kt">EnumFamily</span><span class="p">,</span> <span class="kt">ImperfectIntervalQualityType</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:ZvC18PitchSpellingTools15IntervalQuality7membersGSaOS_19IntervalQualityKind_"></a>
-                    <a name="//apple_ref/swift/Variable/members" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZvC18PitchSpellingTools15IntervalQuality7membersGSaOS_19IntervalQualityKind_">members</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <div class="aside aside-warning">
-    <p class="aside-title">Warning</p>
-    Default implementation: <code>[]</code>. Must override.
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O(n)
 
 </div>
 
@@ -415,7 +271,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="k">var</span> <span class="nv">members</span><span class="p">:</span> <span class="p">[</span><span class="kt">EnumKind</span><span class="p">]</span> <span class="p">{</span> <span class="k">return</span> <span class="p">[]</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">allNodesHaveBeenRanked</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -425,9 +281,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:ZvC18PitchSpellingTools15IntervalQuality11subFamiliesGSaMS0__"></a>
-                    <a name="//apple_ref/swift/Variable/subFamilies" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZvC18PitchSpellingTools15IntervalQuality11subFamiliesGSaMS0__">subFamilies</a>
+                    <a name="/s:vV18PitchSpellingTools25PitchSpellingNodeResource21noNodesHaveBeenRankedSb"></a>
+                    <a name="//apple_ref/swift/Property/noNodesHaveBeenRanked" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools25PitchSpellingNodeResource21noNodesHaveBeenRankedSb">noNodesHaveBeenRanked</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -435,24 +291,129 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Interval quantity families:</p>
+                        <p><code>true</code> if no nodes contained herein have been ranked. Otherwise, <code>false</code>.</p>
 
-<ul>
-<li><code><a href="../Classes/IntervalQuality/unison.html">unison</a></code></li>
-<li><code><a href="../Classes/IntervalQuality/second.html">second</a></code></li>
-<li><code><a href="../Classes/IntervalQuality/third.html">third</a></code></li>
-<li><code><a href="../Classes/IntervalQuality/fourth.html">fourth</a></code></li>
-<li><code><a href="../Classes/IntervalQuality/fifth.html">fifth</a></code></li>
-<li><code><a href="../Classes/IntervalQuality/sixth.html">sixth</a></code></li>
-<li><code><a href="../Classes/IntervalQuality/seventh.html">seventh</a></code></li>
-</ul>
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O(n)
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="k">var</span> <span class="nv">subFamilies</span><span class="p">:</span> <span class="p">[</span><span class="kt">EnumFamily</span><span class="o">.</span><span class="k">Type</span><span class="p">]</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">noNodesHaveBeenRanked</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV18PitchSpellingTools25PitchSpellingNodeResourcecuRxs12SequenceTypeWx9Generator7Element_zV5Pitch5PitchrFT7pitchesx_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(pitches:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV18PitchSpellingTools25PitchSpellingNodeResourcecuRxs12SequenceTypeWx9Generator7Element_zV5Pitch5PitchrFT7pitchesx_S0_">init(pitches:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code><a href="../Structs/PitchSpellingNodeResource.html">PitchSpellingNodeResource</a></code> with a <code>SequenceType</code> containing <code><a href="../Extensions/Pitch.html">Pitch</a></code> type values.</p>
+
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>The <code><a href="../Classes/PitchSpellingNode.html">PitchSpellingNode</a></code> objects generated herein assume that unconventional
+enharmonic spellings are disregarded (e.g., <code>c flat</code>, <code>b sharp</code>, <code>d double sharp</code>, etc.)</p>
+
+</div>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    <p>Consider moving this constraint to a publically-available variable.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="p">:</span> <span class="kt">SequenceType</span> <span class="k">where</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span> <span class="o">==</span> <span class="kt">Pitch</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">pitches</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV18PitchSpellingTools25PitchSpellingNodeResource13highestRankedFT3forV5Pitch5Pitch_GSqCS_17PitchSpellingNode_"></a>
+                    <a name="//apple_ref/swift/Method/highestRanked(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV18PitchSpellingTools25PitchSpellingNodeResource13highestRankedFT3forV5Pitch5Pitch_GSqCS_17PitchSpellingNode_">highestRanked(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">highestRanked</span><span class="p">(</span><span class="k">for</span> <span class="nv">pitch</span><span class="p">:</span> <span class="kt">Pitch</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">PitchSpellingNode</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The highest ranked <code><a href="../Classes/PitchSpellingNode.html">PitchSpellingNode</a></code> for the given <code>pitch</code>, if present. Otherwise, <code>nil</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV18PitchSpellingTools25PitchSpellingNodeResource10sortByRankFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/sortByRank()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV18PitchSpellingTools25PitchSpellingNodeResource10sortByRankFT_T_">sortByRank()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sorts the nodes for each pitch by their rank in descending order.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">sortByRank</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>

@@ -69,6 +69,9 @@
                 <a class="nav-group-task-link" href="../Classes/PitchSetSpeller.html">PitchSetSpeller</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PitchSpellingEdge.html">PitchSpellingEdge</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/PitchSpellingNode.html">PitchSpellingNode</a>
               </li>
               <li class="nav-group-task">
@@ -128,6 +131,9 @@
                 <a class="nav-group-task-link" href="../Structs/PitchSpellingDyad.html">PitchSpellingDyad</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PitchSpellingNodeResource.html">PitchSpellingNodeResource</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PitchSpellingRankerFactory.html">PitchSpellingRankerFactory</a>
               </li>
               <li class="nav-group-task">
@@ -165,7 +171,7 @@
 
                 </div>
               </div>
-            <p>Pair of two `PitchSpellings objects.</p>
+            <p>Pair of two <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects.</p>
 
           </div>
         </section>
@@ -173,7 +179,68 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance%20Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
               <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad15intervalQualityOS_19IntervalQualityKind"></a>
+                    <a name="//apple_ref/swift/Property/intervalQuality" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad15intervalQualityOS_19IntervalQualityKind">intervalQuality</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../Classes/IntervalQuality.html">IntervalQuality</a></code> between <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">intervalQuality</span><span class="p">:</span> <span class="kt">IntervalQualityKind</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad23hasValidIntervalQualitySb"></a>
+                    <a name="//apple_ref/swift/Property/hasValidIntervalQuality" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad23hasValidIntervalQualitySb">hasValidIntervalQuality</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>true</code> if has <code><a href="../Structs/PitchSpellingDyad.html#/s:vV18PitchSpellingTools17PitchSpellingDyad15intervalQualityOS_19IntervalQualityKind">intervalQuality</a></code> is objectively valid. Otherwise <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hasValidIntervalQuality</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">intervalQuality</span><span class="o">.</span><span class="n">hasValidIntervalQuality</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -205,6 +272,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad18isCoarseCompatibleSb"></a>
+                    <a name="//apple_ref/swift/Property/isCoarseCompatible" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad18isCoarseCompatibleSb">isCoarseCompatible</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>true</code> if <code>coarse.direction</code> value of either <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> is <code>natural</code> or if
+<code>isCoarseCoarseCompatible</code>. Otherwise <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isCoarseCompatible</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">eitherIsNatural</span> <span class="o">||</span> <span class="n">isCoarseMatching</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad25isCoarseDirectionMatchingSb"></a>
                     <a name="//apple_ref/swift/Property/isCoarseDirectionMatching" class="dashAnchor"></a>
                     <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad25isCoarseDirectionMatchingSb">isCoarseDirectionMatching</a>
@@ -215,7 +310,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>true</code> if <code>coarse.direction</code> values of both <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects are equivalent.
+                        <p><code>true</code> if <code>coarse.direction</code> values of both <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> values are equivalent.
  Otherwise <code>false</code>.</p>
 
                       </div>
@@ -224,6 +319,90 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isCoarseDirectionMatching</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad27isCoarseDirectionCompatibleSb"></a>
+                    <a name="//apple_ref/swift/Property/isCoarseDirectionCompatible" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad27isCoarseDirectionCompatibleSb">isCoarseDirectionCompatible</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>true</code> if <code>coarse.direction</code> value of either <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> is <code>natural</code> or if
+<code><a href="../Structs/PitchSpellingDyad.html#/s:vV18PitchSpellingTools17PitchSpellingDyad25isCoarseDirectionMatchingSb">isCoarseDirectionMatching</a></code>. Otherwise <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isCoarseDirectionCompatible</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad26isCoarseResolutionMatchingSb"></a>
+                    <a name="//apple_ref/swift/Property/isCoarseResolutionMatching" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad26isCoarseResolutionMatchingSb">isCoarseResolutionMatching</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>true</code> if <code>coarse.resolution</code> values of both <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> values are equivalent.
+Otherwise <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isCoarseResolutionMatching</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad28isCoarseResolutionCompatibleSb"></a>
+                    <a name="//apple_ref/swift/Property/isCoarseResolutionCompatible" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad28isCoarseResolutionCompatibleSb">isCoarseResolutionCompatible</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>true</code> if <code>coarse.direction</code> value of either <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> is <code>natural</code> or if
+<code><a href="../Structs/PitchSpellingDyad.html#/s:vV18PitchSpellingTools17PitchSpellingDyad26isCoarseResolutionMatchingSb">isCoarseResolutionMatching</a></code>. Otherwise <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isCoarseResolutionCompatible</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -243,7 +422,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>true if</code>fine<code>values of</code>PitchSpelling<code>objects are equivalent. Otherwise</code>false`..</p>
+                        <p><code>true if</code>fine<code>values of</code>PitchSpelling<code>objects are equivalent. Otherwise</code>false`.</p>
 
                       </div>
                       <div class="declaration">
@@ -270,9 +449,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>In the case of 1/8th-tone values, coarse resolution matching is important.</p>
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    No documentation
 
-<p>For example, (f qtr sharp, a qtr sharp down) is preferable to (f qtr sharp, a nat up)</p>
+</div>
 
                       </div>
                       <div class="declaration">
@@ -299,7 +480,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Mean of <code>distance</code> values of both <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects.</p>
+                        <p>Mean of <code>spellingDistance</code> values of both <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects.</p>
 
                       </div>
                       <div class="declaration">
@@ -316,9 +497,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad5stepsSi"></a>
-                    <a name="//apple_ref/swift/Property/steps" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad5stepsSi">steps</a>
+                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad18meanCoarseDistanceSf"></a>
+                    <a name="//apple_ref/swift/Property/meanCoarseDistance" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad18meanCoarseDistanceSf">meanCoarseDistance</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -326,47 +507,31 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Amount of steps between two <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects.</p>
+                        <p>Mean of <code>coarse.distance</code> values of both `PitchSpelling objects.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">steps</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">meanCoarseDistance</span><span class="p">:</span> <span class="kt">Float</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad15intervalQualityOS_19IntervalQualityKind"></a>
-                    <a name="//apple_ref/swift/Property/intervalQuality" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad15intervalQualityOS_19IntervalQualityKind">intervalQuality</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><code><a href="../Classes/IntervalQuality.html">IntervalQuality</a></code> between <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">intervalQuality</span><span class="p">:</span> <span class="kt">IntervalQualityKind</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -388,6 +553,44 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">PitchSpelling</span><span class="p">,</span> <span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">PitchSpelling</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Hashable"></a>
+                <a name="//apple_ref/swift/Section/Hashable" class="dashAnchor"></a>
+                <a href="#/Hashable">
+                  <h3 class="section-name">Hashable</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV18PitchSpellingTools17PitchSpellingDyad9hashValueSi"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools17PitchSpellingDyad9hashValueSi">hashValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hash value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">return</span> <span class="n">b</span><span class="o">.</span><span class="n">hashValue</span> <span class="o">*</span> <span class="n">a</span><span class="o">.</span><span class="n">hashValue</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

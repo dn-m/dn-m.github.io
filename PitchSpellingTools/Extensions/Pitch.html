@@ -69,6 +69,9 @@
                 <a class="nav-group-task-link" href="../Classes/PitchSetSpeller.html">PitchSetSpeller</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PitchSpellingEdge.html">PitchSpellingEdge</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/PitchSpellingNode.html">PitchSpellingNode</a>
               </li>
               <li class="nav-group-task">
@@ -128,6 +131,9 @@
                 <a class="nav-group-task-link" href="../Structs/PitchSpellingDyad.html">PitchSpellingDyad</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PitchSpellingNodeResource.html">PitchSpellingNodeResource</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PitchSpellingRankerFactory.html">PitchSpellingRankerFactory</a>
               </li>
               <li class="nav-group-task">
@@ -172,6 +178,13 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance%20Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
@@ -231,17 +244,37 @@ Pitch(noteNumber: 68) // =&gt; false (.a, .flat) / (.g, .sharp)
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/TODO:%20Encapsulate%20this%20logic%20within%20%60PitchSpellings%60%20%60struct%60."></a>
-                <a name="//apple_ref/swift/Section/TODO:%20Encapsulate%20this%20logic%20within%20%60PitchSpellings%60%20%60struct%60." class="dashAnchor"></a>
-                <a href="#/TODO:%20Encapsulate%20this%20logic%20within%20%60PitchSpellings%60%20%60struct%60.">
-                  <h3 class="section-name">TODO: Encapsulate this logic within `PitchSpellings` `struct`.</h3>
-                </a>
-              </div>
-              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE18PitchSpellingToolsV5Pitch5Pitch41spellingsWithoutUnconventionalEnharmonicsGSaVS_13PitchSpelling_"></a>
+                    <a name="//apple_ref/swift/Property/spellingsWithoutUnconventionalEnharmonics" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE18PitchSpellingToolsV5Pitch5Pitch41spellingsWithoutUnconventionalEnharmonicsGSaVS_13PitchSpelling_">spellingsWithoutUnconventionalEnharmonics</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    Encapsulate this logic within <code>PitchSpellings</code> <code>struct</code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">spellingsWithoutUnconventionalEnharmonics</span><span class="p">:</span> <span class="p">[</span><span class="kt">PitchSpelling</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -305,6 +338,17 @@ Pitch(noteNumber: 68) // =&gt; false (.a, .flat) / (.g, .sharp)
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Instance%20Methods" class="dashAnchor"></a>
+                <a href="#/Instance%20Methods">
+                  <h3 class="section-name">Instance Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -337,6 +381,42 @@ not appropriate for this <code><a href="../Extensions/Pitch.html">Pitch</a></cod
                       <div>
                         <h4>Return Value</h4>
                         <p><code><a href="../Structs/SpelledPitch.html">SpelledPitch</a></code> with the given <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>, if the given <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> is valid for the <code><a href="../Extensions.html#/s:V5Pitch10PitchClass">PitchClass</a></code> of the given <code>pitch</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE18PitchSpellingToolsV5Pitch5Pitch26spelledWithDefaultSpellingFzT_VS_12SpelledPitch"></a>
+                    <a name="//apple_ref/swift/Method/spelledWithDefaultSpelling()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE18PitchSpellingToolsV5Pitch5Pitch26spelledWithDefaultSpellingFzT_VS_12SpelledPitch">spelledWithDefaultSpelling()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p><code><a href="../Structs/PitchSpelling/Error.html">PitchSpelling.Error</a></code> if no default spelling exists for this <code><a href="../Extensions/Pitch.html">Pitch</a></code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">spelledWithDefaultSpelling</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SpelledPitch</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Structs/SpelledPitch.html">SpelledPitch</a></code> with the default spelling for this <code><a href="../Extensions/Pitch.html">Pitch</a></code>, if possible.</p>
 
                       </div>
                     </section>

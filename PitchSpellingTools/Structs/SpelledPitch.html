@@ -69,6 +69,9 @@
                 <a class="nav-group-task-link" href="../Classes/PitchSetSpeller.html">PitchSetSpeller</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PitchSpellingEdge.html">PitchSpellingEdge</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/PitchSpellingNode.html">PitchSpellingNode</a>
               </li>
               <li class="nav-group-task">
@@ -128,6 +131,9 @@
                 <a class="nav-group-task-link" href="../Structs/PitchSpellingDyad.html">PitchSpellingDyad</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PitchSpellingNodeResource.html">PitchSpellingNodeResource</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PitchSpellingRankerFactory.html">PitchSpellingRankerFactory</a>
               </li>
               <li class="nav-group-task">
@@ -165,7 +171,7 @@
 
                 </div>
               </div>
-            <p>Structure that extends a <code><a href="../Extensions/Pitch.html">Pitch</a></code> with a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>.</p>
+            <p>Structure that wraps a <code><a href="../Extensions/Pitch.html">Pitch</a></code> with a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>.</p>
 
           </div>
         </section>
@@ -173,6 +179,78 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance%20Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV18PitchSpellingTools12SpelledPitch5pitchV5Pitch5Pitch"></a>
+                    <a name="//apple_ref/swift/Property/pitch" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools12SpelledPitch5pitchV5Pitch5Pitch">pitch</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../Extensions/Pitch.html">Pitch</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">pitch</span><span class="p">:</span> <span class="kt">Pitch</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV18PitchSpellingTools12SpelledPitch8spellingVS_13PitchSpelling"></a>
+                    <a name="//apple_ref/swift/Property/spelling" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools12SpelledPitch8spellingVS_13PitchSpelling">spelling</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">spelling</span><span class="p">:</span> <span class="kt">PitchSpelling</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
@@ -187,11 +265,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a <code><a href="../Structs/SpelledPitch.html">SpelledPitch</a></code> with a given <code>pitch</code> and <code>spelling</code>.</p>
+                        <p>Create a <code><a href="../Structs/SpelledPitch.html">SpelledPitch</a></code> with a given <code><a href="../Structs/SpelledPitch.html#/s:vV18PitchSpellingTools12SpelledPitch5pitchV5Pitch5Pitch">pitch</a></code> and <code><a href="../Structs/SpelledPitch.html#/s:vV18PitchSpellingTools12SpelledPitch8spellingVS_13PitchSpelling">spelling</a></code>.</p>
 
 <div class="aside aside-todo">
     <p class="aside-title">Todo</p>
-    ensure <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> is valid for given <code>pitch</code>.
+    ensure <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> is valid for given <code><a href="../Structs/SpelledPitch.html#/s:vV18PitchSpellingTools12SpelledPitch5pitchV5Pitch5Pitch">pitch</a></code>.
 
 </div>
 
@@ -201,6 +279,109 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">pitch</span><span class="p">:</span> <span class="kt">Pitch</span><span class="p">,</span> <span class="nv">spelling</span><span class="p">:</span> <span class="kt">PitchSpelling</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV18PitchSpellingTools12SpelledPitchcFTV5Pitch5PitchVS_13PitchSpelling_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV18PitchSpellingTools12SpelledPitchcFTV5Pitch5PitchVS_13PitchSpelling_S0_">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code><a href="../Structs/SpelledPitch.html">SpelledPitch</a></code> with a given <code><a href="../Structs/SpelledPitch.html#/s:vV18PitchSpellingTools12SpelledPitch5pitchV5Pitch5Pitch">pitch</a></code> and <code><a href="../Structs/SpelledPitch.html#/s:vV18PitchSpellingTools12SpelledPitch8spellingVS_13PitchSpelling">spelling</a></code>, without argument labels.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">pitch</span><span class="p">:</span> <span class="kt">Pitch</span><span class="p">,</span> <span class="n">_</span> <span class="nv">spelling</span><span class="p">:</span> <span class="kt">PitchSpelling</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CustomStringConvertible"></a>
+                <a name="//apple_ref/swift/Section/CustomStringConvertible" class="dashAnchor"></a>
+                <a href="#/CustomStringConvertible">
+                  <h3 class="section-name">CustomStringConvertible</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV18PitchSpellingTools12SpelledPitch11descriptionSS"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools12SpelledPitch11descriptionSS">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Printed description.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Hashable"></a>
+                <a name="//apple_ref/swift/Section/Hashable" class="dashAnchor"></a>
+                <a href="#/Hashable">
+                  <h3 class="section-name">Hashable</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV18PitchSpellingTools12SpelledPitch9hashValueSi"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV18PitchSpellingTools12SpelledPitch9hashValueSi">hashValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hash value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">return</span> <span class="s">"</span><span class="se">\(</span><span class="n">pitch</span><span class="se">)\(</span><span class="n">spelling</span><span class="se">)</span><span class="s">"</span><span class="o">.</span><span class="n">hashValue</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
