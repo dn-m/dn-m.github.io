@@ -143,6 +143,85 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:FE10ArrayToolsPs12SequenceType15extremeElementsuRd__s10ComparablerFTFTqd__qd___Sb14valueToCompareFWx9Generator7Element_qd___GSaWxS2_S3___"></a>
+                    <a name="//apple_ref/swift/Method/extremeElements(_:valueToCompare:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10ArrayToolsPs12SequenceType15extremeElementsuRd__s10ComparablerFTFTqd__qd___Sb14valueToCompareFWx9Generator7Element_qd___GSaWxS2_S3___">extremeElements(_:valueToCompare:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><strong>Example:</strong>
+<code>
+struct S: Equatable { let value: Int }
+let array = [S(value: 1), S(value: 3), S(value: 2), S(value: 3)]
+</code></p>
+
+<pre class="highlight plaintext"><code>let greatestElements = array.extremeElements(&gt;) { $0.value }
+let leastElements = array.extremeElements(&lt;) { $0.value }
+</code></pre>
+
+<pre class="highlight plaintext"><code>greatestElements == [S(value: 3), S(value: 3)]
+leastElements == [S(value: 1)]
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">extremeElements</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Comparable</span><span class="o">&gt;</span><span class="p">(</span>
+        <span class="nv">compare</span><span class="p">:</span> <span class="p">(</span><span class="kt">T</span><span class="p">,</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">,</span>
+        <span class="n">valueToCompare</span> <span class="nv">extractValue</span><span class="p">:</span> <span class="p">(</span><span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>compare</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Function the takes two values of the type of the given <code>extractedValue</code>, for the purpose of sorting this <code>SequenceType</code>.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>extractValue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Function that takes a value of the type of this <code>SequenceType</code>, and returns a given instance property of the value.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The elements containing the value</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:FE10ArrayToolsPs12SequenceType8allMatchFFWx9Generator7Element_SbSb"></a>
                     <a name="//apple_ref/swift/Method/allMatch(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:FE10ArrayToolsPs12SequenceType8allMatchFFWx9Generator7Element_SbSb">allMatch(_:)</a>
@@ -179,7 +258,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-03)</p>
+      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-06)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

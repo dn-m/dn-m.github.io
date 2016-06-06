@@ -11,6 +11,4 @@ Pitch.swift
 	public func == (lhs: Pitch, rhs: Pitch) -> Bool
 	public func < (lhs: Pitch, rhs: Pitch) -> Bool
 PitchClassSet.swift
-	public var dyads: [PitchClassDyad]
-PitchSequence.swift
-	public var intervals: [Interval] { return [] }
+	public lazy var dyads: [PitchClassDyad]? =

@@ -54,9 +54,6 @@
             <a class="nav-group-name-link" href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/DyadSpeller.html">DyadSpeller</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/IntervalQuality.html">IntervalQuality</a>
               </li>
               <li class="nav-group-task">
@@ -82,7 +79,7 @@
                 <a class="nav-group-task-link" href="../Extensions/Interval.html">Interval</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions.html#/s:V5Pitch13IntervalClass">IntervalClass</a>
+                <a class="nav-group-task-link" href="../Extensions/IntervalClass.html">IntervalClass</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions.html#/s:P18PitchSpellingTools26PerfectIntervalQualityType">PerfectIntervalQualityType</a>
@@ -109,6 +106,17 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/SpelledPitch.html">SpelledPitch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/SpelledPitchSet.html">SpelledPitchSet</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Typealiases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:E18PitchSpellingToolsV5Pitch13IntervalClass16SpellingPriority">SpellingPriority</a>
               </li>
             </ul>
           </li>
@@ -139,6 +147,51 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance%20Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC18PitchSpellingTools15PitchSetSpeller5dyadsGSaV5Pitch4Dyad_"></a>
+                    <a name="//apple_ref/swift/Property/dyads" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC18PitchSpellingTools15PitchSetSpeller5dyadsGSaV5Pitch4Dyad_">dyads</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>All <code><a href="../Extensions.html#/s:V5Pitch4Dyad">Dyad</a></code> values of the <code>pitchSet</code> contained herein, sorted for spelling priority.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">dyads</span><span class="p">:</span> <span class="p">[</span><span class="kt">Dyad</span><span class="p">]</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
@@ -169,13 +222,61 @@
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Instance%20Methods" class="dashAnchor"></a>
+                <a href="#/Instance%20Methods">
+                  <h3 class="section-name">Instance Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC18PitchSpellingTools15PitchSetSpeller5spellFzT_VS_15SpelledPitchSet"></a>
+                    <a name="//apple_ref/swift/Method/spell()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC18PitchSpellingTools15PitchSetSpeller5spellFzT_VS_15SpelledPitchSet">spell()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p><code><a href="../Structs/PitchSpelling/Error.html">PitchSpelling.Error</a></code> if unable to apply <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> objects to the given
+<code><a href="../Extensions.html#/s:V5Pitch8PitchSet">PitchSet</a></code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">spell</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SpelledPitchSet</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Structs/SpelledPitchSet.html">SpelledPitchSet</a></code> containing spelled versions of the given <code><a href="../Extensions.html#/s:V5Pitch8PitchSet">PitchSet</a></code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-03)</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-06)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

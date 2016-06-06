@@ -54,26 +54,22 @@ IntervalQualityKind.swift
 	case majorSeventh = "M7"
 	case augmentedSeventh = "A7"
 	case doubleAugmentedSeventh = "AA7"
-	public var isStepPreserving: Bool
+	public var hasValidIntervalQuality: Bool
 PitchClass+PitchSpelling.swift
-	public var spellingUrgency: Int?
+	public var spellingPriority: Int?
 SpelledPitchSet.swift
-	public struct SpelledPitchSet: SequenceType
 	public func == (lhs: SpelledPitchSet, rhs: SpelledPitchSet) -> Bool
 PitchSet+PitchSpelling.swift
 	public var sortedBySpellingUrgency: [Pitch]
 	public func spelledWithDefaultSpellings() throws -> SpelledPitchSet
-Interval+PitchSpelling.swift
-	public var spellingUrgency: IntervalClass.SpellingUrgency?
-DyadSpeller.swift
-	public enum Error: ErrorType { case error }
 PitchSpellingDyad.swift
 	public var isCoarseCompatible: Bool { return eitherIsNatural || isCoarseMatching }
 	public var isCoarseDirectionCompatible: Bool
 	public var isCoarseResolutionMatching: Bool
 	public var isCoarseResolutionCompatible: Bool
-	public var isFineCompatible: Bool
-	public var isStepPreserving: Bool { return intervalQuality.isStepPreserving }
+	public var eitherHasNoFineAdjustment: Bool
+	public var eitherHasFineAdjustment: Bool
+	public var hasValidIntervalQuality: Bool { return intervalQuality.hasValidIntervalQuality }
 	public var meanCoarseDistance: Float
 	public var hashValue: Int { return b.hashValue * a.hashValue }
 	public func == (lhs: PitchSpellingDyad, rhs: PitchSpellingDyad) -> Bool
@@ -91,7 +87,6 @@ SpelledPitch.swift
 SpelledDyad.swift
 	public struct SpelledDyad
 IntervalQuality.swift
-	public static var stepPreserving: [EnumKind] { return [perfect] }
 	public override class func kind(
             forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
@@ -103,11 +98,9 @@ IntervalQuality.swift
 	public override class func kind(
             forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
-	public static var stepPreserving: [EnumKind]
 	public override class func kind(
             forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
-	public static var stepPreserving: [EnumKind]
 	public override class func kind(
             forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
         ) -> EnumKind
@@ -121,12 +114,8 @@ IntervalQuality.swift
         -> EnumKind
 PitchSpelling+LetterName.swift
 	public init?(string: String)
-MonadSpeller.swift
-	public struct MonadSpeller: PitchSpeller
 PitchSpeller.swift
-	public protocol PitchSpeller { }
-IntervalClass+PitchSpelling.swift
-	public var spellingUrgency: SpellingUrgency?
+	public protocol PitchSpeller
 Pitch+PitchSpelling.swift
 	public var spellingsWithoutUnconventionalEnharmonics: [PitchSpelling]
 	public func spelledWithDefaultSpelling() throws -> SpelledPitch

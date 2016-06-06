@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>SpelledPitch Struct Reference | dn-m</title>
+    <title>SpelledPitchSet Struct Reference | dn-m</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css">
     <link rel="stylesheet" type="text/css" href="../css/highlight.css">
     <meta charset="utf-8">
@@ -12,9 +12,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/SpelledPitch" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/SpelledPitchSet" class="dashAnchor"></a>
 
-    <a title="SpelledPitch Struct Reference"></a>
+    <a title="SpelledPitchSet Struct Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
       <img class="carat" src="../img/carat.png">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png">
-      SpelledPitch Struct Reference
+      SpelledPitchSet Struct Reference
     </p>
 
     <div class="content-wrapper">
@@ -132,14 +132,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>SpelledPitch</h1>
+            <h1>SpelledPitchSet</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpelledPitch</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpelledPitchSet</span></code></pre>
 
                 </div>
               </div>
-            <p>Structure that extends a <code><a href="../Extensions/Pitch.html">Pitch</a></code> with a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code>.</p>
+            <p>Unordered set of unique <code><a href="../Structs/SpelledPitch.html">SpelledPitch</a></code> values.</p>
 
           </div>
         </section>
@@ -147,13 +147,20 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV18PitchSpellingTools12SpelledPitchcFT5pitchV5Pitch5Pitch8spellingVS_13PitchSpelling_S0_"></a>
-                    <a name="//apple_ref/swift/Method/init(pitch:spelling:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV18PitchSpellingTools12SpelledPitchcFT5pitchV5Pitch5Pitch8spellingVS_13PitchSpelling_S0_">init(pitch:spelling:)</a>
+                    <a name="/s:FV18PitchSpellingTools15SpelledPitchSetcuRxs12SequenceTypeWx9Generator7Element_zVS_12SpelledPitchrFxS0_"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV18PitchSpellingTools15SpelledPitchSetcuRxs12SequenceTypeWx9Generator7Element_zVS_12SpelledPitchrFxS0_">init(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -161,11 +168,38 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a <code><a href="../Structs/SpelledPitch.html">SpelledPitch</a></code> with a given <code>pitch</code> and <code>spelling</code>.</p>
+                        <p>Create a <code><a href="../Structs/SpelledPitchSet.html">SpelledPitchSet</a></code> with an array of <code><a href="../Structs/SpelledPitch.html">SpelledPitch</a></code> values.</p>
 
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    ensure <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> is valid for given <code>pitch</code>.
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="p">:</span> <span class="kt">SequenceType</span> <span class="k">where</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span> <span class="o">==</span> <span class="kt">SpelledPitch</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">pitches</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV18PitchSpellingTools15SpelledPitchSetcFzV5Pitch8PitchSetS0_"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV18PitchSpellingTools15SpelledPitchSetcFzV5Pitch8PitchSetS0_">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code><a href="../Structs/SpelledPitchSet.html">SpelledPitchSet</a></code> for a given <code><a href="../Extensions.html#/s:V5Pitch8PitchSet">PitchSet</a></code> value.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code><a href="../Structs/PitchSpelling/Error.html">PitchSpelling.Error</a></code> if the given <code>pitchSet</code> cannot be spelled with current technology.
 
 </div>
 
@@ -174,7 +208,45 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">pitch</span><span class="p">:</span> <span class="kt">Pitch</span><span class="p">,</span> <span class="nv">spelling</span><span class="p">:</span> <span class="kt">PitchSpelling</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">pitchSet</span><span class="p">:</span> <span class="kt">PitchSet</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/SequenceType"></a>
+                <a name="//apple_ref/swift/Section/SequenceType" class="dashAnchor"></a>
+                <a href="#/SequenceType">
+                  <h3 class="section-name">SequenceType</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV18PitchSpellingTools15SpelledPitchSet8generateFT_GVs12AnyGeneratorVS_12SpelledPitch_"></a>
+                    <a name="//apple_ref/swift/Method/generate()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV18PitchSpellingTools15SpelledPitchSet8generateFT_GVs12AnyGeneratorVS_12SpelledPitch_">generate()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generate <code>Pitches</code> for iteration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">generate</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">AnyGenerator</span><span class="o">&lt;</span><span class="kt">SpelledPitch</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
