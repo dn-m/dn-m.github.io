@@ -1,21 +1,11 @@
-PitchSetDyadSpeller.swift
-	public struct PitchSetDyadSpeller: PitchSpeller
-Dyad+PitchSpelling.swift
-	public enum Error: ErrorType
-	public var hasEighthTone: Bool
-	public var hasQuarterTone: Bool
-	public var finestResolution: Float
-	public var canBeSpelledObjectively: Bool
-	public var isFullyAmbiguouslySpellable: Bool
-	public var isSemiAmbiguouslySpellable: Bool
-	public var defaultSpellingDyad: PitchSpellingDyad?
-	public var objectivelySpellableAndNot: (Pitch, Pitch)?
-	public func spellWithDefaultSpellings() throws -> SpelledDyad
-	public func spell(with spellingDyad: PitchSpellingDyad) throws -> SpelledDyad
+PitchSequenceSpeller.swift
+	public final class PitchSequenceSpeller
 PitchSpelling+Resolution.swift
 	public enum Resolution: Float
 PitchSpelling+CustomStringConvertible.swift
 	public var description: String
+Spellability.swift
+	public enum Spellability
 IntervalQualityKind.swift
 	case doubleDiminishedUnison = "dd1"
 	case diminishedUnison = "d1"
@@ -69,28 +59,32 @@ PitchClass+PitchSpelling.swift
 	public var spellingPriority: Int?
 SpelledPitchSet.swift
 	public func == (lhs: SpelledPitchSet, rhs: SpelledPitchSet) -> Bool
-PitchSet+PitchSpelling.swift
-	public var sortedBySpellingUrgency: [Pitch]
-	public func spelledWithDefaultSpellings() throws -> SpelledPitchSet
 PitchSpellingDyad.swift
+	public var isLetterNameMatching: Bool
 	public func == (lhs: PitchSpellingDyad, rhs: PitchSpellingDyad) -> Bool
 PitchSpellingNodeResource.swift
-	public var pitches: [Pitch] { return resource.reduce([]) { $0 + [$1.0] } }
 	public func generate() -> AnyGenerator<(Pitch, [PitchSpellingNode])>
+	public init(dictionaryLiteral elements: (Key, Value)...)
 PitchSpelling.swift
+	public init(
+        letterName: LetterName,
+        coarse: CoarseAdjustment = .natural,
+        fine: FineAdjustment = .none
+    )
 	public var hashValue: Int { return "\(letterName),\(coarse),\(fine)".hashValue }
 	public func == (lhs: PitchSpelling, rhs: PitchSpelling) -> Bool
 SemiAmbiguousPitchSpellingRanker.swift
 	public lazy var edges: [PitchSpellingEdge] =
 PitchSpellingRanking.swift
-	var edges: [PitchSpellingEdge] { get }
-	var rules: [(PitchSpellingDyad) -> Bool] { get }
-	func applyRankings(withAmount amount: Float)
 	public var rules: [(PitchSpellingDyad) -> Bool]
 SpelledPitch.swift
 	public func == (lhs: SpelledPitch, rhs: SpelledPitch) -> Bool
 SpelledDyad.swift
 	public struct SpelledDyad
+PitchSubSequenceSpeller.swift
+	public var nodes: [PitchSpellingNode]
+	public lazy var nodeResource: PitchSpellingNodeResource =
+	public func applyRankings()
 IntervalQuality.swift
 	public override class func kind(
             forPitchSpellingDyad pitchSpellingDyad: PitchSpellingDyad
@@ -122,7 +116,7 @@ PitchSpelling+LetterName.swift
 PitchSpellingEdge.swift
 	public func == (lhs: PitchSpellingEdge, rhs: PitchSpellingEdge) -> Bool
 	public func < (lhs: PitchSpellingEdge, rhs: PitchSpellingEdge) -> Bool
-PitchSpeller.swift
-	public protocol PitchSpeller
+PitchSetSequence+PitchSpelling.swift
+	public var spellability: Spellability
 PitchSpellingDyad+CustomStringConvertible.swift
 	public var description: String

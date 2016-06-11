@@ -1,4 +1,2 @@
-Node.swift
-	public func == (lhs: Node, rhs: Node) -> Bool
-Node+CustomStringConvertible.swift
-	public var description: String
+NodeType.swift
+	public enum NodeError: ErrorType

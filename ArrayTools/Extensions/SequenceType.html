@@ -64,6 +64,12 @@
                 <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/ArraySlice.html">ArraySlice</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CollectionType.html">CollectionType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions.html#/s:Ps30RangeReplaceableCollectionType">RangeReplaceableCollectionType</a>
               </li>
               <li class="nav-group-task">
@@ -79,6 +85,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:ZF10ArrayToolsoi1purFTxGSax__GSax_">+(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:ZF10ArrayToolsoi2eeuRxS_15AnySequenceTypewx7Elements9EquatablerFTxx_Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:ZF10ArrayToolsoi2eeuRxs12SequenceTypeWx9Generator7Element_s9EquatablerFTxx_Sb">==(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:ZF10ArrayToolsoi2eeuRxs9EquatablerFTGVS_5Stackx_GS1_x__Sb">==(_:_:)</a>
@@ -222,9 +234,9 @@ leastElements == [S(value: 1)]
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FE10ArrayToolsPs12SequenceType8allMatchFFWx9Generator7Element_SbSb"></a>
-                    <a name="//apple_ref/swift/Method/allMatch(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FE10ArrayToolsPs12SequenceType8allMatchFFWx9Generator7Element_SbSb">allMatch(_:)</a>
+                    <a name="/s:FE10ArrayToolsPs12SequenceType10allSatisfyFFWx9Generator7Element_SbSb"></a>
+                    <a name="//apple_ref/swift/Method/allSatisfy(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10ArrayToolsPs12SequenceType10allSatisfyFFWx9Generator7Element_SbSb">allSatisfy(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -238,13 +250,44 @@ leastElements == [S(value: 1)]
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">allMatch</span><span class="p">(</span><span class="kd">@noescape</span> <span class="nv">predicate</span><span class="p">:</span> <span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">allSatisfy</span><span class="p">(</span><span class="kd">@noescape</span> <span class="nv">predicate</span><span class="p">:</span> <span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p><code>true</code> if all <code>Generator.Element</code> values in <code>self</code> fulfill given <code>predicate</code>. Otherwise, <code>false</code>.</p>
+                        <p><code>true</code> if all elements satisfy the given <code>predicate</code>. Otherwise, <code>false</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10ArrayToolsPs12SequenceType10anySatisfyFFWx9Generator7Element_SbSb"></a>
+                    <a name="//apple_ref/swift/Method/anySatisfy(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10ArrayToolsPs12SequenceType10anySatisfyFFWx9Generator7Element_SbSb">anySatisfy(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">anySatisfy</span><span class="p">(</span><span class="kd">@noescape</span> <span class="nv">predicate</span><span class="p">:</span> <span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if any elements satisfy the given <code>predicate</code>. Otherwise, <code>false</code>.</p>
 
                       </div>
                     </section>
@@ -258,7 +301,7 @@ leastElements == [S(value: 1)]
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-06)</p>
+      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-11)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

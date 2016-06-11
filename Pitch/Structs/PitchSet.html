@@ -106,6 +106,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PitchSet.html">PitchSet</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PitchSetSequence.html">PitchSetSequence</a>
+              </li>
             </ul>
           </li>
         <li class="nav-group-name" id="dependencies">
@@ -294,6 +297,69 @@ pitchSet.pitchClassSet // =&gt; [3.5, 9.25]
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV5Pitch8PitchSetcuRxs12SequenceTypeWx9Generator7Element_zS0_rFxS0_"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV5Pitch8PitchSetcuRxs12SequenceTypeWx9Generator7Element_zS0_rFxS0_">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code><a href="../Structs/PitchSet.html">PitchSet</a></code> with a sequence of <code><a href="../Structs/PitchSet.html">PitchSet</a></code> values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="p">:</span> <span class="kt">SequenceType</span> <span class="k">where</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span> <span class="o">==</span> <span class="kt">PitchSet</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">pitchSets</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV5Pitch8PitchSet9formUnionFT4withS0__S0_"></a>
+                    <a name="//apple_ref/swift/Method/formUnion(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV5Pitch8PitchSet9formUnionFT4withS0__S0_">formUnion(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    <p>Move up the <code><a href="../Protocols/PitchConvertibleSetType.html">PitchConvertibleSetType</a></code> protocol hierarchy.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">formUnion</span><span class="p">(</span><span class="n">with</span> <span class="nv">pitchSet</span><span class="p">:</span> <span class="kt">PitchSet</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">PitchSet</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Structs/PitchSet.html">PitchSet</a></code> with the union of this and the given <code>pitchSet</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -378,7 +444,7 @@ pitchSet.pitchClassSet // =&gt; [3.5, 9.25]
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-06)</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-11)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

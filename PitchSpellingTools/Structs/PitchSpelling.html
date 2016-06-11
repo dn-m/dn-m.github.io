@@ -63,9 +63,6 @@
                 <a class="nav-group-task-link" href="../Classes/IntervalQuality.html">IntervalQuality</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/Level.html">Level</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/PitchSetSpeller.html">PitchSetSpeller</a>
               </li>
               <li class="nav-group-task">
@@ -73,6 +70,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/PitchSpellingNode.html">PitchSpellingNode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PitchSpellingStack.html">PitchSpellingStack</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PitchSubSequenceSpeller.html">PitchSubSequenceSpeller</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SemiAmbiguousPitchSpellingRanker.html">SemiAmbiguousPitchSpellingRanker</a>
@@ -91,7 +94,7 @@
             <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions.html#/s:V5Pitch4Dyad">Dyad</a>
+                <a class="nav-group-task-link" href="../Extensions/Dyad.html">Dyad</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Interval.html">Interval</a>
@@ -109,7 +112,10 @@
                 <a class="nav-group-task-link" href="../Extensions.html#/s:V5Pitch10PitchClass">PitchClass</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions.html#/s:V5Pitch8PitchSet">PitchSet</a>
+                <a class="nav-group-task-link" href="../Extensions/PitchSet.html">PitchSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions.html#/s:V5Pitch16PitchSetSequence">PitchSetSequence</a>
               </li>
             </ul>
           </li>
@@ -117,7 +123,10 @@
             <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:P18PitchSpellingTools20PitchSpellingRanking">PitchSpellingRanking</a>
+                <a class="nav-group-task-link" href="../Protocols/PitchSpeller.html">PitchSpeller</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PitchSpellingRanking.html">PitchSpellingRanking</a>
               </li>
             </ul>
           </li>
@@ -324,46 +333,6 @@
                 </a>
               </div>
               <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FV18PitchSpellingTools13PitchSpellingcFT10letterNameOS0_10LetterName6coarseOS0_16CoarseAdjustment4fineOS0_14FineAdjustment_S0_"></a>
-                    <a name="//apple_ref/swift/Method/init(letterName:coarse:fine:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV18PitchSpellingTools13PitchSpellingcFT10letterNameOS0_10LetterName6coarseOS0_16CoarseAdjustment4fineOS0_14FineAdjustment_S0_">init(letterName:coarse:fine:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Create a <code><a href="../Structs/PitchSpelling.html">PitchSpelling</a></code> (with argument labels).</p>
-
-<p><strong>Example:</strong></p>
-
-<pre class="highlight plaintext"><code>let cNatural = PitchSpelling(letterName: .c)
-let aFlat = PitchSpelling(letterName: .a, coarse: .flat)
-let gQuarterSharp = PitchSpelling(letterName: .g, coarse: .quarterSharp)
-let dQuarterFlatDown = PitchSpelling(letterName: .d, coarse: .quarterFlat, fine: .down)
-let bDoubleSharp = PitchSpelling(letterName: .b, coarse: .doubleSharp)
-</code></pre>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
-        <span class="nv">letterName</span><span class="p">:</span> <span class="kt">LetterName</span><span class="p">,</span>
-        <span class="nv">coarse</span><span class="p">:</span> <span class="kt">CoarseAdjustment</span> <span class="o">=</span> <span class="o">.</span><span class="n">natural</span><span class="p">,</span>
-        <span class="nv">fine</span><span class="p">:</span> <span class="kt">FineAdjustment</span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span>
-    <span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -642,7 +611,7 @@ May be useful for other cases (e.g., -14c adjustment for 5th partial, etc.).
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-06)</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-11)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

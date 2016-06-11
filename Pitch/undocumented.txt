@@ -1,5 +1,14 @@
 Dyad.swift
 	public func == (lhs: Dyad, rhs: Dyad) -> Bool
+PitchSetSequence.swift
+	public init<S: SequenceType where S.Generator.Element == PitchSet>(_ sequence: S)
+	public var startIndex: Int { return 0 }
+	public var endIndex: Int { return array.count }
+	public func generate() -> AnyGenerator<PitchSet>
+	public func == (lhs: PitchSetSequence, rhs: PitchSetSequence) -> Bool
+PitchSet.swift
+	public init(_ pitchSets: PitchSet...)
+	public func == (lhs: PitchSet, rhs: PitchSet) -> Bool
 PitchClassDyad.swift
 	public struct PitchClassDyad
 PitchClass.swift
@@ -7,8 +16,11 @@ PitchClass.swift
 PitchConvertibleCollectionType.swift
 	public func == <T: PitchConvertibleCollectionType> (lhs: T, rhs: T) -> Bool
 Pitch.swift
-	public var description: String { return "\(noteNumber)" }
 	public func == (lhs: Pitch, rhs: Pitch) -> Bool
 	public func < (lhs: Pitch, rhs: Pitch) -> Bool
+PitchClassSequence.swift
+	public func == (lhs: PitchClassSequence, rhs: PitchClassSequence) -> Bool
 PitchClassSet.swift
 	public lazy var dyads: [PitchClassDyad]? =
+PitchSequence.swift
+	public func == (lhs: PitchSequence, rhs: PitchSequence) -> Bool

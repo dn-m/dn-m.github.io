@@ -62,9 +62,6 @@
                 <a class="nav-group-task-link" href="Classes/IntervalQuality.html">IntervalQuality</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/Level.html">Level</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/PitchSetSpeller.html">PitchSetSpeller</a>
               </li>
               <li class="nav-group-task">
@@ -72,6 +69,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/PitchSpellingNode.html">PitchSpellingNode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PitchSpellingStack.html">PitchSpellingStack</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PitchSubSequenceSpeller.html">PitchSubSequenceSpeller</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/SemiAmbiguousPitchSpellingRanker.html">SemiAmbiguousPitchSpellingRanker</a>
@@ -90,7 +93,7 @@
             <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Extensions.html#/s:V5Pitch4Dyad">Dyad</a>
+                <a class="nav-group-task-link" href="Extensions/Dyad.html">Dyad</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/Interval.html">Interval</a>
@@ -108,7 +111,10 @@
                 <a class="nav-group-task-link" href="Extensions.html#/s:V5Pitch10PitchClass">PitchClass</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Extensions.html#/s:V5Pitch8PitchSet">PitchSet</a>
+                <a class="nav-group-task-link" href="Extensions/PitchSet.html">PitchSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions.html#/s:V5Pitch16PitchSetSequence">PitchSetSequence</a>
               </li>
             </ul>
           </li>
@@ -116,7 +122,10 @@
             <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols.html#/s:P18PitchSpellingTools20PitchSpellingRanking">PitchSpellingRanking</a>
+                <a class="nav-group-task-link" href="Protocols/PitchSpeller.html">PitchSpeller</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PitchSpellingRanking.html">PitchSpellingRanking</a>
               </li>
             </ul>
           </li>
@@ -188,6 +197,7 @@
                       <div class="abstract">
                         <p>Interface for types that rank <code><a href="Classes/PitchSpellingNode.html">PitchSpellingNode</a></code> and <code><a href="Classes/PitchSpellingEdge.html">PitchSpellingEdge</a></code> objects.</p>
 
+                        <a href="Protocols/PitchSpellingRanking.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -202,13 +212,45 @@
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P18PitchSpellingTools12PitchSpeller"></a>
+                    <a name="//apple_ref/swift/Protocol/PitchSpeller" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P18PitchSpellingTools12PitchSpeller">PitchSpeller</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Interface for structures that attempt to spell pitches.</p>
+
+                        <a href="Protocols/PitchSpeller.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PitchSpeller</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-06)</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-11)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

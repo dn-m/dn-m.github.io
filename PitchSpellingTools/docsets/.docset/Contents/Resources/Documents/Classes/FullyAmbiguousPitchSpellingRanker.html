@@ -63,9 +63,6 @@
                 <a class="nav-group-task-link" href="../Classes/IntervalQuality.html">IntervalQuality</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/Level.html">Level</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/PitchSetSpeller.html">PitchSetSpeller</a>
               </li>
               <li class="nav-group-task">
@@ -73,6 +70,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/PitchSpellingNode.html">PitchSpellingNode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PitchSpellingStack.html">PitchSpellingStack</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PitchSubSequenceSpeller.html">PitchSubSequenceSpeller</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SemiAmbiguousPitchSpellingRanker.html">SemiAmbiguousPitchSpellingRanker</a>
@@ -91,7 +94,7 @@
             <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions.html#/s:V5Pitch4Dyad">Dyad</a>
+                <a class="nav-group-task-link" href="../Extensions/Dyad.html">Dyad</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Interval.html">Interval</a>
@@ -109,7 +112,10 @@
                 <a class="nav-group-task-link" href="../Extensions.html#/s:V5Pitch10PitchClass">PitchClass</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions.html#/s:V5Pitch8PitchSet">PitchSet</a>
+                <a class="nav-group-task-link" href="../Extensions/PitchSet.html">PitchSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions.html#/s:V5Pitch16PitchSetSequence">PitchSetSequence</a>
               </li>
             </ul>
           </li>
@@ -117,7 +123,10 @@
             <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:P18PitchSpellingTools20PitchSpellingRanking">PitchSpellingRanking</a>
+                <a class="nav-group-task-link" href="../Protocols/PitchSpeller.html">PitchSpeller</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PitchSpellingRanking.html">PitchSpellingRanking</a>
               </li>
             </ul>
           </li>
@@ -271,6 +280,12 @@ in each <code><a href="../Classes/PitchSpellingEdge.html">PitchSpellingEdge</a><
                         <p>All of the <code><a href="../Classes/PitchSpellingEdge.html">PitchSpellingEdge</a></code> objects that are highest ranked, 
 yet contain the lowest (or not-yet) ranked <code><a href="../Classes/PitchSpellingNode.html">PitchSpellingNode</a></code> objects.</p>
 
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    This is very problematic.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -297,9 +312,9 @@ yet contain the lowest (or not-yet) ranked <code><a href="../Classes/PitchSpelli
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC18PitchSpellingTools33FullyAmbiguousPitchSpellingRankercFTCS_5LevelS1__S0_"></a>
+                    <a name="/s:FC18PitchSpellingTools33FullyAmbiguousPitchSpellingRankercFTCS_18PitchSpellingStackS1__S0_"></a>
                     <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC18PitchSpellingTools33FullyAmbiguousPitchSpellingRankercFTCS_5LevelS1__S0_">init(_:_:)</a>
+                    <a class="token" href="#/s:FC18PitchSpellingTools33FullyAmbiguousPitchSpellingRankercFTCS_18PitchSpellingStackS1__S0_">init(_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -314,7 +329,7 @@ yet contain the lowest (or not-yet) ranked <code><a href="../Classes/PitchSpelli
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">Level</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">Level</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">PitchSpellingStack</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">PitchSpellingStack</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -409,7 +424,7 @@ given <code>amount</code>. </p>
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-06)</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-11)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

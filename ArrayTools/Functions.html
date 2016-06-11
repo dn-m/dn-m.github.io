@@ -63,6 +63,12 @@
                 <a class="nav-group-task-link" href="Extensions/Array.html">Array</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/ArraySlice.html">ArraySlice</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/CollectionType.html">CollectionType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions.html#/s:Ps30RangeReplaceableCollectionType">RangeReplaceableCollectionType</a>
               </li>
               <li class="nav-group-task">
@@ -78,6 +84,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:ZF10ArrayToolsoi1purFTxGSax__GSax_">+(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:ZF10ArrayToolsoi2eeuRxS_15AnySequenceTypewx7Elements9EquatablerFTxx_Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:ZF10ArrayToolsoi2eeuRxs12SequenceTypeWx9Generator7Element_s9EquatablerFTxx_Sb">==(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:ZF10ArrayToolsoi2eeuRxs9EquatablerFTGVS_5Stackx_GS1_x__Sb">==(_:_:)</a>
@@ -125,6 +137,41 @@
 
         <section class="section">
           <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZF10ArrayToolsoi2eeuRxs12SequenceTypeWx9Generator7Element_s9EquatablerFTxx_Sb"></a>
+                    <a name="//apple_ref/swift/Function/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZF10ArrayToolsoi2eeuRxs12SequenceTypeWx9Generator7Element_s9EquatablerFTxx_Sb">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="o">==</span> <span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">SequenceType</span> <span class="k">where</span> <span class="kt">T</span><span class="o">.</span><span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span><span class="p">:</span> <span class="kt">Equatable</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if all elements in both sequnces are equivalent. Otherwise, <code>false</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="task-group">
               <ul class="item-container">
                 <li class="item">
@@ -234,6 +281,41 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:ZF10ArrayToolsoi2eeuRxS_15AnySequenceTypewx7Elements9EquatablerFTxx_Sb"></a>
+                    <a name="//apple_ref/swift/Function/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZF10ArrayToolsoi2eeuRxS_15AnySequenceTypewx7Elements9EquatablerFTxx_Sb">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="o">==</span> <span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">AnySequenceType</span> <span class="k">where</span> <span class="kt">T</span><span class="o">.</span><span class="kt">Element</span><span class="p">:</span> <span class="kt">Equatable</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if all elements in both sequnces are equivalent. Otherwise, <code>false</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:ZF10ArrayToolsoi1purFTxGSax__GSax_"></a>
                     <a name="//apple_ref/swift/Function/+(_:_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:ZF10ArrayToolsoi1purFTxGSax__GSax_">+(_:_:)</a>
@@ -244,8 +326,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Construct an <code><a href="Extensions/Array.html">Array</a></code> from a <code>head</code> and a <code>tail</code></p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -256,41 +337,8 @@
                         </div>
                       </div>
                       <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>head</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>First element of new <code>Array</code></p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>tail</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Array of elements appended after head in new <code>Array</code></p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
                         <h4>Return Value</h4>
-                        <p>New <code><a href="Extensions/Array.html">Array</a></code> with the first element <code>head</code>, and the remaining elements of <code>tail</code></p>
+                        <p>New <code><a href="Extensions/Array.html">Array</a></code> with the first element <code>head</code>, and the remaining elements of <code>tail</code>.</p>
 
                       </div>
                     </section>
@@ -309,8 +357,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Append an element</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -321,41 +368,8 @@
                         </div>
                       </div>
                       <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>list</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p><code>Array</code> to append <code>item</code> to</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>item</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Element to append to <code>list</code></p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
                         <h4>Return Value</h4>
-                        <p>New <code><a href="Extensions/Array.html">Array</a></code> with <code>item</code> appended to the end of <code>list</code></p>
+                        <p>New <code><a href="Extensions/Array.html">Array</a></code> with <code>item</code> appended to the end of <code>list</code>.</p>
 
                       </div>
                     </section>
@@ -369,7 +383,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-06)</p>
+      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-11)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
