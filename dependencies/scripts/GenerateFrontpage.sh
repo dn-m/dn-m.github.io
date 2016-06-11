@@ -21,13 +21,19 @@ done
 # -- Iterate through key in `Dictionary`
 
 # Declare Utility modules
-UTILITY=(ArithmeticTools ArrayTools CopyTools DictionaryTools DirectionTools EnumTools IntervalTools StringTools TreeTools ScriptingTools FrameworkTools)
+UTILITY=(ParserTools ArithmeticTools ArrayTools CopyTools DictionaryTools DirectionTools EnumTools IntervalTools StringTools TreeTools ScriptingTools FrameworkTools)
 
 # Declare MusicModel modules
 MUSICMODEL=(MusicModel Duration Pitch PitchSpellingTools Dynamics EnsembleTools)
 
+# Declare Graphics modules
+GRAPHICS=(Color LayoutTools PathTools Accidental)
+
 # Declare Playback modules
-PLAYBACK=(MetronomeController)
+PLAYBACK=(Timer MetronomeController)
+
+# Declare Interactivity
+INTERACTIVITY=(AirTurn)
 
 # Declare Uncategorized modules
 MISC=()
@@ -36,6 +42,8 @@ misci=0
 utilityi=0
 musicmodeli=0
 playbacki=0
+graphicsi=0
+intervactivityi=0
 
 for dir in $( ls ); do
   if [[ -d $dir ]]; then
@@ -48,6 +56,12 @@ for dir in $( ls ); do
     elif [[ ${PLAYBACK[*]} =~ "$dir" ]]; then
       PLAYBACK_VERIFIED[playbacki]="$dir"
       ((playbacki++))
+  	elif [[ ${GRAPHICS[*]} =~ "$dir" ]]; then
+	  GRAPHICS_VERIFIED[graphicsi]="$dir"
+	  ((graphicsi++))
+    elif [[ ${INTERACTIVITY[*]} =~ "$dir" ]]; then
+	  INTERACTIVITY_VERIFIED[graphicsi]="$dir"
+	  ((intervactivityi++))
     elif ! [ "$dir" = dependencies -o "$dir" = build ]; then
       MISC[$misci]="$dir"
       ((misci++))
@@ -63,6 +77,12 @@ if [ $musicmodeli -gt 0 ]; then
 fi
 if [ $playbacki -gt 0 ]; then
   export ${PLAYBACK_VERIFIED[@]}
+fi
+if [ $graphicsi -gt 0 ]; then
+  export ${GRAPHICS_VERIFIED[@]}
+fi
+if [ $interactivityi -gt 0 ]; then
+  export ${INTERACTIVITY_VERIFIED[@]}
 fi
 if [ $misci -gt 0 ]; then
   export ${MISC[@]}

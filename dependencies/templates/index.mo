@@ -51,6 +51,16 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <span class="nav-group-name-link">Graphics</span>
+            <ul class="nav-group-tasks">
+              {{#GRAPHICS_VERIFIED}}
+                <li class="nav-group-task">
+                  <a class="nav-group-task-link" href="{{.}}/index.html">{{.}}</a>
+                </li>
+              {{/GRAPHICS_VERIFIED}}
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <span class="nav-group-name-link">Playback</span>
             <ul class="nav-group-tasks">
               {{#PLAYBACK_VERIFIED}}
@@ -59,6 +69,17 @@
                 </li>
               {{/PLAYBACK_VERIFIED}}
             </ul>
+          </li>
+          <li class="nav-group-name">
+            <span class="nav-group-name-link">Interactivity</span>
+            <ul class="nav-group-tasks">
+              {{#INTERACTIVITY_VERIFIED}}
+                <li class="nav-group-task">
+                  <a class="nav-group-task-link" href="{{.}}/index.html">{{.}}</a>
+                </li>
+              {{/INTERACTIVITY_VERIFIED}}
+            </ul>
+          </li>
           </li>
           {{#hasMISC}}
           <li class="nav-group-name">
