@@ -1,6 +1,5 @@
 Path.swift
-	public struct Path
-	public struct Path
-	public struct Path
-PathElement.swift
-	public enum PathElement
+	public lazy var cgPath: CGPath? =
+	public var startIndex: Int { return 0 }
+	public var endIndex: Int { return elements.count }
+	public func generate() -> AnyGenerator<PathElement>

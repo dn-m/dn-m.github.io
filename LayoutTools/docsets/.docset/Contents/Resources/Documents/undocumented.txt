@@ -1,5 +1,19 @@
 LayoutNode.swift
-	public class LayoutNode: CALayer, NodeType
+	public let layer: CALayer
+	public var parent: LayoutNode?
+	public var children: [LayoutNode] = []
+	public let flowDirectionHorizontal: LayoutDirectionHorizontal
+	public let flowDirectionVertical: LayoutDirectionVertical
+	public let stackOriginHorizontal: LayoutDirectionHorizontal
+	public let stackOriginVertical: LayoutDirectionVertical
+	public init(
+        _ layer: CALayer,
+        flowDirectionHorizontal: LayoutDirectionHorizontal = .none,
+        flowDirectionVertical: LayoutDirectionVertical = .none,
+        stackOriginHorizontal: LayoutDirectionHorizontal = .none,
+        stackOriginVertical: LayoutDirectionVertical = .none
+    )
+	public required init?(coder aDecoder: NSCoder)
 LayoutDirectionVertical.swift
 	public enum LayoutDirectionVertical
 LayoutDirectionHorizontal.swift
