@@ -1,3 +1,10 @@
+SortedArray.swift
+	public func + <T>(lhs: SortedArray<T>, rhs: SortedArray<T>) -> SortedArray<T>
+	public func == <T>(lhs: SortedArray<T>, rhs: SortedArray<T>) -> Bool
+	public func generate() -> AnyGenerator<T>
+	public var startIndex: Int { return 0 }
+	public var endIndex: Int { return array.count }
+	public init(arrayLiteral elements: T...)
 Equatable.swift
 	public func == <T: SequenceType where T.Generator.Element: Equatable>(lhs: T, rhs: T) -> Bool
 Comparable.swift

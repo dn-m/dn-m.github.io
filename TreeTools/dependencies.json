@@ -2,19 +2,13 @@
 {
 "registry": "github",
 "organisation": "dn-m",
-"repo": "CopyTools",
+"repo": "EnumTools",
 "version": ""
 },
 {
 "registry": "github",
 "organisation": "dn-m",
 "repo": "ArrayTools",
-"version": ""
-},
-{
-"registry": "github",
-"organisation": "dn-m",
-"repo": "DirectionTools",
 "version": ""
 }
 ]}

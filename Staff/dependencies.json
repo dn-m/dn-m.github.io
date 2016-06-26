@@ -1,0 +1,32 @@
+{"dependencies":[
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "PathTools",
+"version": ""
+},
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "GraphicsTools",
+"version": ""
+},
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "Graph",
+"version": ""
+},
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "PitchSpellingTools",
+"version": ""
+},
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "EnsembleTools",
+"version": ""
+}
+]}

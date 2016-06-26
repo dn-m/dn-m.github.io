@@ -1,0 +1,20 @@
+{"dependencies":[
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "GraphicsTools",
+"version": ""
+},
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "StaffSpaceConfigurable",
+"version": ""
+},
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "Clef",
+"version": ""
+}
+]}

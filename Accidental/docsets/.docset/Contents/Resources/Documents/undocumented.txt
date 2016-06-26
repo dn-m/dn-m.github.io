@@ -1,5 +1,5 @@
 Accidental.swift
-	public class Accidental: CALayer
+	public class Accidental: CALayer, StaffSpaceConfigurable
 	public class AccidentalNatural: Accidental
 	public class AccidentalNaturalUp: AccidentalNatural
 	public class AccidentalNaturalDown: AccidentalNatural

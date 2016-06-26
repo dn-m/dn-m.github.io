@@ -1,5 +1,7 @@
+Path+Square.swift
+	public static func square(center center: CGPoint, width: CGFloat) -> Path
 Path.swift
-	public lazy var cgPath: CGPath? =
+	public lazy var cgPath: CGPath =
 	public var startIndex: Int { return 0 }
 	public var endIndex: Int { return elements.count }
 	public func generate() -> AnyGenerator<PathElement>

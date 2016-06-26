@@ -2,14 +2,21 @@ KeyPath.swift
 	public func == (lhs: KeyPath, rhs: KeyPath) -> Bool
 	public var description: String
 OrderedDictionary.swift
-	public init() { }
-	public func == <K,V>(lhs: OrderedDictionary<K,V>, rhs: OrderedDictionary<K,V>) -> Bool
-	public func generate() -> AnyGenerator<(K,V)>
+	public func == <Key, Value: Equatable> (
+	public func generate() -> OrderedDictionaryGenerator<Key, Value>
+	public struct OrderedDictionaryGenerator<Key: Hashable, Value>: GeneratorType
 	public var description: String
 Merge.swift
 	public func + <K: Hashable, V: Any>(lhs: Dictionary<K, V>, rhs: Dictionary<K, V>)
     -> Dictionary<K, V>
 	public func += <K: Hashable, V: Any>(inout lhs: Dictionary<K, V>, rhs: Dictionary<K, V>)
+SortedOrderedDictionary.swift
+	public struct SortedOrderedDictionary<Value, Key where Key: Hashable, Key: Comparable>
+	public struct SortedOrderedDictionary&lt;Value, Key where Key : Hashable, Key : Comparable&gt;
+	public struct SortedOrderedDictionaryGenerator<
+    Value,
+    Key where Key: Hashable, Key: Comparable
+>: GeneratorType
 DictionaryLiteralConvertibleValue.swift
 	mutating func ensureValue(for key: Key)
 	mutating func updateValue(value: Value.Value, forKeyPath keyPath: KeyPath)

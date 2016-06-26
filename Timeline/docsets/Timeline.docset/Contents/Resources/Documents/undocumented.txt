@@ -1,0 +1,6 @@
+Timeline.swift
+	public var registry: [Frames: [Action]] = [:]
+	public var currentOffset: Seconds
+	public var secondsUntilNext: Seconds?
+	public var offsetOfNext: Seconds?
+	public func next() -> (Frames, [Action])?

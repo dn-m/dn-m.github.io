@@ -1,0 +1,14 @@
+LinesCoordinator.swift
+	public final class LinesCoordinator
+	public final class LinesCoordinator
+	public final class LinesCoordinator
+GraphType.swift
+	public func generate() -> AnyGenerator<EventType>
+	public var startIndex: Int { return 0 }
+	public var endIndex: Int { return events.count }
+LinesPoint.swift
+	public enum LinesPoint: Comparable
+	public func == (lhs: LinesPoint, rhs: LinesPoint) -> Bool
+	public func < (lhs: LinesPoint, rhs: LinesPoint) -> Bool
+LinesSegment.swift
+	public struct LinesSegment

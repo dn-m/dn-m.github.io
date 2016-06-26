@@ -9,6 +9,7 @@ PitchSetSequence.swift
 PitchSet.swift
 	public init(_ pitchSets: PitchSet...)
 	public func == (lhs: PitchSet, rhs: PitchSet) -> Bool
+	public var description: String
 PitchClassDyad.swift
 	public struct PitchClassDyad
 PitchClass.swift
