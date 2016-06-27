@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Classes  Reference | dn-m</title>
+    <title>Protocols  Reference | dn-m</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css">
     <link rel="stylesheet" type="text/css" href="css/highlight.css">
     <meta charset="utf-8">
@@ -13,7 +13,7 @@
   <body>
 
 
-    <a title="Classes  Reference"></a>
+    <a title="Protocols  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -43,7 +43,7 @@
       <img class="carat" src="img/carat.png">
       <a class="breadcrumb" href="index.html">DictionaryTools Reference</a>
       <img class="carat" src="img/carat.png">
-      Classes  Reference
+      Protocols  Reference
     </p>
 
     <div class="content-wrapper">
@@ -143,8 +143,8 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Classes</h1>
-            <p>The following classes are available globally.</p>
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
 
           </div>
         </section>
@@ -156,9 +156,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:C15DictionaryTools7KeyPath"></a>
-                    <a name="//apple_ref/swift/Class/KeyPath" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C15DictionaryTools7KeyPath">KeyPath</a>
+                    <a name="/s:P15DictionaryTools21OrderedDictionaryType"></a>
+                    <a name="//apple_ref/swift/Protocol/OrderedDictionaryType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P15DictionaryTools21OrderedDictionaryType">OrderedDictionaryType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -166,21 +166,47 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Utility for retrieving values for arbitrarily deep, <code>String</code>-keyed <code>Dictionaries</code></p>
+                        <p>Interface defining OrderedDictionary value types.</p>
 
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    Make Generic, with typealias Key: Hashable
-
-</div>
-
-                        <a href="Classes/KeyPath.html" class="slightly-smaller">See more</a>
+                        <a href="Protocols/OrderedDictionaryType.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">KeyPath</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">OrderedDictionaryType</span><span class="p">:</span> <span class="kt">DictionaryType</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P15DictionaryTools14DictionaryType"></a>
+                    <a name="//apple_ref/swift/Protocol/DictionaryType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P15DictionaryTools14DictionaryType">DictionaryType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Interface for Dictionary-like structures.</p>
+
+                        <a href="Protocols/DictionaryType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">DictionaryType</span><span class="p">:</span> <span class="kt">CollectionType</span></code></pre>
 
                         </div>
                       </div>

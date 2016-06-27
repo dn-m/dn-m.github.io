@@ -2,36 +2,23 @@ KeyPath.swift
 	public func == (lhs: KeyPath, rhs: KeyPath) -> Bool
 	public var description: String
 OrderedDictionary.swift
+	public var startIndex: Index { return values.startIndex }
+	public var endIndex: Index { return values.endIndex }
+	public func + <Key: Hashable, Value> (
 	public func == <Key, Value: Equatable> (
-	public func generate() -> OrderedDictionaryGenerator<Key, Value>
-	public struct OrderedDictionaryGenerator<Key: Hashable, Value>: GeneratorType
 	public var description: String
-Merge.swift
-	public func + <K: Hashable, V: Any>(lhs: Dictionary<K, V>, rhs: Dictionary<K, V>)
-    -> Dictionary<K, V>
-	public func += <K: Hashable, V: Any>(inout lhs: Dictionary<K, V>, rhs: Dictionary<K, V>)
 SortedOrderedDictionary.swift
-	public struct SortedOrderedDictionary<Value, Key where Key: Hashable, Key: Comparable>
-	public struct SortedOrderedDictionary&lt;Value, Key where Key : Hashable, Key : Comparable&gt;
-	public struct SortedOrderedDictionaryGenerator<
-    Value,
-    Key where Key: Hashable, Key: Comparable
->: GeneratorType
-DictionaryLiteralConvertibleValue.swift
-	mutating func ensureValue(for key: Key)
-	mutating func updateValue(value: Value.Value, forKeyPath keyPath: KeyPath)
-	mutating func mergeWith(dictionary: Dictionary<Key, Value>)
-        -> Dictionary<Key, Value>
-	public func + <K: Hashable, KK: Hashable, V: Equatable>(lhs: [K: [KK : V]], rhs: [K: [KK : V]])
-    -> [K: [KK: V]]
-	public func += <K: Hashable, KK: Hashable, V: Equatable>(
-    inout lhs: [K: [KK : V]], rhs: [K: [KK : V]]
-)
-	public func == <K: Hashable, KK: Hashable, V: Equatable>(
-	public func != <K: Hashable, KK: Hashable, V: Equatable>(
-    lhs: [K: [KK : V]], rhs: [K: [KK : V]]
-) -> Bool
-	public mutating func ensureValueFor(keyPath: KeyPath)
-	public mutating func safelyAppend(value: Value.Value.Generator.Element,
-        toArrayWithKeyPath keyPath: KeyPath
-    )
+	public func + <Value, Key where Key: Hashable, Key: Comparable> (
+	public var startIndex: Index { return values.startIndex }
+	public var endIndex: Index { return values.endIndex }
+DictionaryType.swift
+	D: DictionaryType where
+	D: DictionaryType where
+	D: DictionaryType where
+	D: DictionaryType where
+	D: DictionaryType where
+	D: DictionaryType where
+	D: DictionaryType where
+	D: DictionaryType where
+	public func + <D: DictionaryType where D.Generator.Element == (D.Key, D.Value)> (
+	D: DictionaryType where
