@@ -1,5 +1,0 @@
-AirTurnDelegate.swift
-	public protocol AirTurnDelegate
-AirTurn.swift
-	public class AirTurn: UIView
-	public class AirTurn : UIView

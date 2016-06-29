@@ -82,11 +82,45 @@
 
                 </div>
               </div>
-            <p>Timeline</p>
+            <p>Scheduler that performs functions at given times.</p>
+
+<p><strong>Examples:</strong></p>
+
+<p>Schedule singular, atomic events at a given time in <code>Seconds</code>:</p>
+
+<pre class="highlight plaintext"><code>let timeline = Timeline()
+timeline.add(at: 1) { print("one second") }
+timeline.start()
+
+// after one second:
+// =&gt; one second
+</code></pre>
+
+<p>Schedule a looping action with a time interval between firings:</p>
+
+<pre class="highlight plaintext"><code>timeline.addLooping(interval: 1) { print("every second") }
+
+// after one second:
+// =&gt; every second
+// after two seconds:
+// =&gt; every second
+...
+</code></pre>
+
+<p>Schedule a looping action at a tempo in beats-per-minute:</p>
+
+<pre class="highlight plaintext"><code>timeline.addLooping(at: 60) { print("bpm: 60") }
+</code></pre>
+
+<p>Schedule a looping action with an optional offset:</p>
+
+<pre class="highlight plaintext"><code>timeline.addLooping(at: 60) { self.showMetronome() }
+timeline.addLooping(at: 60, offset: 0.2) { self.hideMetronome() }
+</code></pre>
 
 <div class="aside aside-todo">
     <p class="aside-title">Todo</p>
-    Conform to <code>SequenceType</code> &amp; <code>CollectionType</code>, make <code>regsitry</code> private.
+    Conform to <code>SequenceType</code> &amp; <code>CollectionType</code>.
 
 </div>
 
@@ -162,7 +196,69 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">at</span> <span class="nv">timeStamp</span><span class="p">:</span> <span class="kt">Seconds</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">Action</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">at</span> <span class="nv">timeStamp</span><span class="p">:</span> <span class="kt">Seconds</span><span class="p">,</span> <span class="n">action</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">Action</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Timeline8Timeline10addLoopingFT2atSd6offsetSd6actionFT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/addLooping(at:offset:action:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Timeline8Timeline10addLoopingFT2atSd6offsetSd6actionFT_T__T_">addLooping(at:offset:action:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add a looping action at a given <code>tempo</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addLooping</span><span class="p">(</span>
+        <span class="n">at</span> <span class="nv">tempo</span><span class="p">:</span> <span class="kt">Tempo</span><span class="p">,</span>
+        <span class="nv">offset</span><span class="p">:</span> <span class="kt">Seconds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="n">action</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">Action</span>
+    <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Timeline8Timeline10addLoopingFT8intervalSd6offsetSd6actionFT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/addLooping(interval:offset:action:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Timeline8Timeline10addLoopingFT8intervalSd6offsetSd6actionFT_T__T_">addLooping(interval:offset:action:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add a looping action with the given <code>interval</code> between firings.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addLooping</span><span class="p">(</span>
+        <span class="n">interval</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">Seconds</span><span class="p">,</span>
+        <span class="nv">offset</span><span class="p">:</span> <span class="kt">Seconds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="n">action</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">Action</span>
+    <span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -350,8 +446,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-27)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-29)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 
