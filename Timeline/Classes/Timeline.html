@@ -58,6 +58,20 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Typealiases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:8Timeline6Action">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:8Timeline7Seconds">Seconds</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:8Timeline5Tempo">Tempo</a>
+              </li>
+            </ul>
+          </li>
         <li class="nav-group-name" id="dependencies">
               <span class="nav-group-name-link">Dependencies</span>
               <ul class="nav-group-tasks">
@@ -86,7 +100,7 @@
 
 <p><strong>Examples:</strong></p>
 
-<p>Schedule singular, atomic events at a given time in <code>Seconds</code>:</p>
+<p>Schedule singular, atomic events at a given time in <code><a href="../Typealiases.html#/s:8Timeline7Seconds">Seconds</a></code>:</p>
 
 <pre class="highlight plaintext"><code>let timeline = Timeline()
 timeline.add(at: 1) { print("one second") }
@@ -131,6 +145,129 @@ timeline.addLooping(at: 60, offset: 0.2) { self.hideMetronome() }
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance%20Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC8Timeline8Timeline8isActiveSb"></a>
+                    <a name="//apple_ref/swift/Property/isActive" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8Timeline8Timeline8isActiveSb">isActive</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the internal timer is running. Otherwise, <code>false</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC8Timeline8Timeline13currentOffsetSd"></a>
+                    <a name="//apple_ref/swift/Property/currentOffset" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8Timeline8Timeline13currentOffsetSd">currentOffset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Offset in <code><a href="../Typealiases.html#/s:8Timeline7Seconds">Seconds</a></code> of internal timer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">currentOffset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Timeline7Seconds">Seconds</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC8Timeline8Timeline16secondsUntilNextGSqSd_"></a>
+                    <a name="//apple_ref/swift/Property/secondsUntilNext" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8Timeline8Timeline16secondsUntilNextGSqSd_">secondsUntilNext</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Amount of time in <code><a href="../Typealiases.html#/s:8Timeline7Seconds">Seconds</a></code> until the next event, if present. Otherwise, <code>nil</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">secondsUntilNext</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Timeline7Seconds">Seconds</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC8Timeline8Timeline12offsetOfNextGSqSd_"></a>
+                    <a name="//apple_ref/swift/Property/offsetOfNext" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8Timeline8Timeline12offsetOfNextGSqSd_">offsetOfNext</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Offset in <code><a href="../Typealiases.html#/s:8Timeline7Seconds">Seconds</a></code> of the next event, if present. Otherwise, <code>nil</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">offsetOfNext</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Timeline7Seconds">Seconds</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
                 <a name="/Initializers"></a>
                 <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
                 <a href="#/Initializers">
@@ -158,7 +295,7 @@ timeline.addLooping(at: 60, offset: 0.2) { self.hideMetronome() }
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">rate</span><span class="p">:</span> <span class="kt">Seconds</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">rate</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Timeline7Seconds">Seconds</a></span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -169,10 +306,10 @@ timeline.addLooping(at: 60, offset: 0.2) { self.hideMetronome() }
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Modifying%20the%20actions%20in%20the%20timeline"></a>
-                <a name="//apple_ref/swift/Section/Modifying%20the%20actions%20in%20the%20timeline" class="dashAnchor"></a>
-                <a href="#/Modifying%20the%20actions%20in%20the%20timeline">
-                  <h3 class="section-name">Modifying the actions in the timeline</h3>
+                <a name="/Modifying%20the%20timeline"></a>
+                <a name="//apple_ref/swift/Section/Modifying%20the%20timeline" class="dashAnchor"></a>
+                <a href="#/Modifying%20the%20timeline">
+                  <h3 class="section-name">Modifying the timeline</h3>
                 </a>
               </div>
               <ul class="item-container">
@@ -196,7 +333,7 @@ timeline.addLooping(at: 60, offset: 0.2) { self.hideMetronome() }
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">at</span> <span class="nv">timeStamp</span><span class="p">:</span> <span class="kt">Seconds</span><span class="p">,</span> <span class="n">action</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">Action</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">at</span> <span class="nv">timeStamp</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Timeline7Seconds">Seconds</a></span><span class="p">,</span> <span class="n">action</span> <span class="nv">function</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Timeline6Action">Action</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -224,9 +361,9 @@ timeline.addLooping(at: 60, offset: 0.2) { self.hideMetronome() }
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addLooping</span><span class="p">(</span>
-        <span class="n">at</span> <span class="nv">tempo</span><span class="p">:</span> <span class="kt">Tempo</span><span class="p">,</span>
-        <span class="nv">offset</span><span class="p">:</span> <span class="kt">Seconds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="n">action</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">Action</span>
+        <span class="n">at</span> <span class="nv">tempo</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Timeline5Tempo">Tempo</a></span><span class="p">,</span>
+        <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Timeline7Seconds">Seconds</a></span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="n">action</span> <span class="nv">function</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Timeline6Action">Action</a></span>
     <span class="p">)</span></code></pre>
 
                         </div>
@@ -255,9 +392,9 @@ timeline.addLooping(at: 60, offset: 0.2) { self.hideMetronome() }
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addLooping</span><span class="p">(</span>
-        <span class="n">interval</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">Seconds</span><span class="p">,</span>
-        <span class="nv">offset</span><span class="p">:</span> <span class="kt">Seconds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="n">action</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">Action</span>
+        <span class="n">interval</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Timeline7Seconds">Seconds</a></span><span class="p">,</span>
+        <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Timeline7Seconds">Seconds</a></span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="n">action</span> <span class="nv">function</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Timeline6Action">Action</a></span>
     <span class="p">)</span></code></pre>
 
                         </div>
@@ -296,10 +433,10 @@ timeline.addLooping(at: 60, offset: 0.2) { self.hideMetronome() }
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Operating%20the%20timeline."></a>
-                <a name="//apple_ref/swift/Section/Operating%20the%20timeline." class="dashAnchor"></a>
-                <a href="#/Operating%20the%20timeline.">
-                  <h3 class="section-name">Operating the timeline.</h3>
+                <a name="/Operating%20the%20timeline"></a>
+                <a name="//apple_ref/swift/Section/Operating%20the%20timeline" class="dashAnchor"></a>
+                <a href="#/Operating%20the%20timeline">
+                  <h3 class="section-name">Operating the timeline</h3>
                 </a>
               </div>
               <ul class="item-container">
@@ -431,7 +568,7 @@ timeline.addLooping(at: 60, offset: 0.2) { self.hideMetronome() }
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">skip</span><span class="p">(</span><span class="n">to</span> <span class="nv">time</span><span class="p">:</span> <span class="kt">Seconds</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">skip</span><span class="p">(</span><span class="n">to</span> <span class="nv">time</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:8Timeline7Seconds">Seconds</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

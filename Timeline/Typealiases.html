@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Classes  Reference | dn-m</title>
+    <title>Typealiases  Reference | dn-m</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css">
     <link rel="stylesheet" type="text/css" href="css/highlight.css">
     <meta charset="utf-8">
@@ -13,7 +13,7 @@
   <body>
 
 
-    <a title="Classes  Reference"></a>
+    <a title="Typealiases  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -43,7 +43,7 @@
       <img class="carat" src="img/carat.png">
       <a class="breadcrumb" href="index.html">Timeline Reference</a>
       <img class="carat" src="img/carat.png">
-      Classes  Reference
+      Typealiases  Reference
     </p>
 
     <div class="content-wrapper">
@@ -88,8 +88,8 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Classes</h1>
-            <p>The following classes are available globally.</p>
+            <h1>Typealiases</h1>
+            <p>The following typealiases are available globally.</p>
 
           </div>
         </section>
@@ -101,9 +101,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:C8Timeline8Timeline"></a>
-                    <a name="//apple_ref/swift/Class/Timeline" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C8Timeline8Timeline">Timeline</a>
+                    <a name="/s:8Timeline7Seconds"></a>
+                    <a name="//apple_ref/swift/Alias/Seconds" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Timeline7Seconds">Seconds</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -111,55 +111,68 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Scheduler that performs functions at given times.</p>
+                        <p>Time unit for seconds.</p>
 
-<p><strong>Examples:</strong></p>
-
-<p>Schedule singular, atomic events at a given time in <code><a href="Typealiases.html#/s:8Timeline7Seconds">Seconds</a></code>:</p>
-
-<pre class="highlight plaintext"><code>let timeline = Timeline()
-timeline.add(at: 1) { print("one second") }
-timeline.start()
-
-// after one second:
-// =&gt; one second
-</code></pre>
-
-<p>Schedule a looping action with a time interval between firings:</p>
-
-<pre class="highlight plaintext"><code>timeline.addLooping(interval: 1) { print("every second") }
-
-// after one second:
-// =&gt; every second
-// after two seconds:
-// =&gt; every second
-...
-</code></pre>
-
-<p>Schedule a looping action at a tempo in beats-per-minute:</p>
-
-<pre class="highlight plaintext"><code>timeline.addLooping(at: 60) { print("bpm: 60") }
-</code></pre>
-
-<p>Schedule a looping action with an optional offset:</p>
-
-<pre class="highlight plaintext"><code>timeline.addLooping(at: 60) { self.showMetronome() }
-timeline.addLooping(at: 60, offset: 0.2) { self.hideMetronome() }
-</code></pre>
-
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    Conform to <code>SequenceType</code> &amp; <code>CollectionType</code>.
-
-</div>
-
-                        <a href="Classes/Timeline.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Timeline</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Seconds</span> <span class="o">=</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Timeline5Tempo"></a>
+                    <a name="//apple_ref/swift/Alias/Tempo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Timeline5Tempo">Tempo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Time unit for beats-per-minute.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Tempo</span> <span class="o">=</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Timeline6Action"></a>
+                    <a name="//apple_ref/swift/Alias/Action" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Timeline6Action">Action</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Function to be performed by a <code><a href="Classes/Timeline.html">Timeline</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Action</span> <span class="o">=</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">()</span></code></pre>
 
                         </div>
                       </div>
