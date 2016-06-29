@@ -1,6 +1,0 @@
-Ruby.swift
-	public func run(rubyFileAt path: Path, function: String = "", parameters: String...)
-	public func run(rubyFileAt path: Path, function: String = "", parameters: [String])
-	public func run(ruby code: String)
-	public func ruby(fileAt path: Path, function: String = "", parameters: String...) -> String
-	public func ruby(fileAt path: Path, function: String = "", parameters: [String]) -> String

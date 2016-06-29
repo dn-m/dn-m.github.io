@@ -1,4 +1,0 @@
-Dynamic.swift
-	public var isVirtual: Bool = false
-DynamicSequence.swift
-	public struct DynamicSequence

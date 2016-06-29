@@ -60,6 +60,17 @@
               {{/GRAPHICS_VERIFIED}}
             </ul>
           </li>
+          </li>
+          <li class="nav-group-name">
+            <span class="nav-group-name-link">Music Notation</span>
+            <ul class="nav-group-tasks">
+              {{#MUSICNOTATION_VERIFIED}}
+                <li class="nav-group-task">
+                  <a class="nav-group-task-link" href="{{.}}/index.html">{{.}}</a>
+                </li>
+              {{/MUSICNOTATION_VERIFIED}}
+            </ul>
+          </li>
           <li class="nav-group-name">
             <span class="nav-group-name-link">Playback</span>
             <ul class="nav-group-tasks">

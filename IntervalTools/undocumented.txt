@@ -1,3 +1,0 @@
-IntervalRelationship.swift
-	public let rawValue: Int
-	public static var Intersects: IntervalRelationship = [

@@ -135,14 +135,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create an empty <code><a href="../Classes/Path.html">Path</a></code>.</p>
+                        <p>Create an empty <code>Path</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -162,7 +162,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a <code><a href="../Classes/Path.html">Path</a></code> with a <code>CGPath</code>.</p>
+                        <p>Create a <code>Path</code> with a <code>CGPath</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -189,14 +189,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a <code><a href="../Classes/Path.html">Path</a></code> with an array of <code><a href="../Enums/PathElement.html">PathElement</a></code> values.</p>
+                        <p>Create a <code>Path</code> with an array of <code><a href="../Enums/PathElement.html">PathElement</a></code> values.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">elements</span><span class="p">:</span> <span class="p">[</span><span class="kt">PathElement</span><span class="p">])</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">elements</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/PathElement.html">PathElement</a></span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>
@@ -391,7 +391,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Append the elements of another <code><a href="../Classes/Path.html">Path</a></code> to this one.
+                        <p>Append the elements of another <code>Path</code> to this one.
 - returns: <code>self</code>.</p>
 
                       </div>
@@ -498,7 +498,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p><code><a href="../Classes/Path.html">Path</a></code> of a slanted bar.</p>
+                        <p><code>Path</code> of a slanted bar.</p>
 
                       </div>
                     </section>
@@ -540,7 +540,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p><code><a href="../Classes/Path.html">Path</a></code> with an ellipse shape within the given <code>rectangle</code>.</p>
+                        <p><code>Path</code> with an ellipse shape within the given <code>rectangle</code>.</p>
 
                       </div>
                     </section>
@@ -582,7 +582,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p><code><a href="../Classes/Path.html">Path</a></code> with a rectangle shape defined by <code>rectangle</code>.</p>
+                        <p><code>Path</code> with a rectangle shape defined by <code>rectangle</code>.</p>
 
                       </div>
                     </section>
@@ -624,7 +624,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p><code><a href="../Classes/Path.html">Path</a></code> with a circle shape with the given <code>radius</code> and <code>center</code>.</p>
+                        <p><code>Path</code> with a circle shape with the given <code>radius</code> and <code>center</code>.</p>
 
                       </div>
                     </section>
@@ -660,13 +660,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rotated</span><span class="p">(</span><span class="n">by</span> <span class="nv">degrees</span><span class="p">:</span> <span class="kt">Degrees</span><span class="p">,</span> <span class="n">around</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Path</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rotated</span><span class="p">(</span><span class="n">by</span> <span class="nv">degrees</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:9PathTools7Degrees">Degrees</a></span><span class="p">,</span> <span class="n">around</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Path</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p><code><a href="../Classes/Path.html">Path</a></code> that is rotated by the given <code>degrees</code>, around the given <code>point</code>. If <code>point</code> is <code>nil</code>, the center of the the bounding box is chosen.</p>
+                        <p><code>Path</code> that is rotated by the given <code>degrees</code>, around the given <code>point</code>. If <code>point</code> is <code>nil</code>, the center of the the bounding box is chosen.</p>
 
                       </div>
                     </section>
@@ -697,7 +697,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p><code><a href="../Classes/Path.html">Path</a></code> that is scaled by the given <code>amount</code>.</p>
+                        <p><code>Path</code> that is scaled by the given <code>amount</code>.</p>
 
                       </div>
                     </section>
@@ -729,7 +729,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p><code><a href="../Classes/Path.html">Path</a></code> translated by the given amounts.</p>
+                        <p><code>Path</code> translated by the given amounts.</p>
 
                       </div>
                     </section>
@@ -760,7 +760,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p><code><a href="../Classes/Path.html">Path</a></code> that is mirrored over the y-axis.</p>
+                        <p><code>Path</code> that is mirrored over the y-axis.</p>
 
                       </div>
                     </section>
@@ -837,7 +837,7 @@
         <span class="nv">height</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span>
         <span class="nv">width</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">25</span><span class="p">,</span>
         <span class="nv">barbProportion</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span>
-        <span class="nv">rotation</span><span class="p">:</span> <span class="kt">Degrees</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="nv">rotation</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:9PathTools7Degrees">Degrees</a></span> <span class="o">=</span> <span class="mi">0</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Path</span></code></pre>
 
                         </div>
@@ -895,8 +895,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-23)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-06-29)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 

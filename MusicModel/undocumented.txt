@@ -1,3 +1,0 @@
-Element.swift
-	case Pitch(PitchKind)
-	public func == (lhs: Element.Kind, rhs: Element.Kind) -> Bool

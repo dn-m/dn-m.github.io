@@ -7,7 +7,7 @@
     <key>CFBundleName</key>
       <string>ArithmeticTools</string>
     <key>DocSetPlatformFamily</key>
-      <string>jazzy</string>
+      <string>arithmetictools</string>
     <key>isDashDocset</key>
       <true/>
     <key>dashIndexFilePath</key>

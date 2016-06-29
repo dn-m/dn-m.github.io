@@ -27,10 +27,12 @@ UTILITY=(ParserTools ArithmeticTools ArrayTools CopyTools DictionaryTools Direct
 MUSICMODEL=(MusicModel Duration Pitch PitchSpellingTools Dynamics EnsembleTools)
 
 # Declare Graphics modules
-GRAPHICS=(Color LayoutTools PathTools Accidental)
+GRAPHICS=(GraphicsTools Color ColorMode LayoutTools PathTools ProgressBar)
+
+MUSICNOTATION=(Graph Staff)
 
 # Declare Playback modules
-PLAYBACK=(Timer MetronomeController)
+PLAYBACK=(Timeline MetronomeController)
 
 # Declare Interactivity
 INTERACTIVITY=(AirTurn)
@@ -43,6 +45,7 @@ utilityi=0
 musicmodeli=0
 playbacki=0
 graphicsi=0
+musicnotationi=0
 intervactivityi=0
 
 for dir in $( ls ); do
@@ -62,6 +65,9 @@ for dir in $( ls ); do
     elif [[ ${INTERACTIVITY[*]} =~ "$dir" ]]; then
 	  INTERACTIVITY_VERIFIED[graphicsi]="$dir"
 	  ((intervactivityi++))
+  	elif [[ ${MUSICNOTATION[*]} =~ "$dir" ]]; then
+	  MUSICNOTATION_VERIFIED[musicnotationi]="$dir"
+	  ((musicnotationi++))
     elif ! [ "$dir" = dependencies -o "$dir" = build ]; then
       MISC[$misci]="$dir"
       ((misci++))
@@ -83,6 +89,9 @@ if [ $graphicsi -gt 0 ]; then
 fi
 if [ $interactivityi -gt 0 ]; then
   export ${INTERACTIVITY_VERIFIED[@]}
+fi
+if [ $musicnotationi -gt 0 ]; then
+  export ${MUSICNOTATION_VERIFIED[@]}
 fi
 if [ $misci -gt 0 ]; then
   export ${MISC[@]}

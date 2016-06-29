@@ -1,2 +1,0 @@
-Color.swift
-	public struct Color

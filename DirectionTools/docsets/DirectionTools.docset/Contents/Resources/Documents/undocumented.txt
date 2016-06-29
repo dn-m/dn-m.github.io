@@ -1,6 +1,0 @@
-RelativeDirection.swift
-	public class RelativeDirection : EnumTree
-	public class RelativeDirection : EnumTree
-	public class RelativeDirection : EnumTree
-	public enum RelativeDirectionKind
-	public class RelativeDirection: EnumTree

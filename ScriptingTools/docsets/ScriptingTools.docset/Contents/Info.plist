@@ -7,7 +7,7 @@
     <key>CFBundleName</key>
       <string>ScriptingTools</string>
     <key>DocSetPlatformFamily</key>
-      <string>jazzy</string>
+      <string>scriptingtools</string>
     <key>isDashDocset</key>
       <true/>
     <key>dashIndexFilePath</key>
