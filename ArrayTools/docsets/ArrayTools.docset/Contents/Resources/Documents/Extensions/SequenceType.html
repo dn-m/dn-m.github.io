@@ -171,11 +171,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><strong>Example:</strong>
-<code>
-struct S: Equatable { let value: Int }
+                        <p><strong>Example:</strong></p>
+
+<pre class="highlight plaintext"><code>struct S: Equatable { let value: Int }
 let array = [S(value: 1), S(value: 3), S(value: 2), S(value: 3)]
-</code></p>
+</code></pre>
 
 <pre class="highlight plaintext"><code>let greatestElements = array.extremeElements(&gt;) { $0.value }
 let leastElements = array.extremeElements(&lt;) { $0.value }
@@ -232,6 +232,104 @@ leastElements == [S(value: 1)]
                       <div>
                         <h4>Return Value</h4>
                         <p>The elements containing the value</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10ArrayToolsPs12SequenceType8greatestuRd__s10ComparablerFT14valueToCompareFWx9Generator7Element_qd___GSqqd___"></a>
+                    <a name="//apple_ref/swift/Method/greatest(valueToCompare:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10ArrayToolsPs12SequenceType8greatestuRd__s10ComparablerFT14valueToCompareFWx9Generator7Element_qd___GSqqd___">greatest(valueToCompare:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">greatest</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Comparable</span><span class="o">&gt;</span><span class="p">(</span><span class="n">valueToCompare</span> <span class="nv">extractValue</span><span class="p">:</span> <span class="p">(</span><span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The greatest value held by an element held herein, if there are more than 0 elements. Otherwise, <code>nil</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10ArrayToolsPs12SequenceType5leastuRd__s10ComparablerFT14valueToCompareFWx9Generator7Element_qd___GSqqd___"></a>
+                    <a name="//apple_ref/swift/Method/least(valueToCompare:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10ArrayToolsPs12SequenceType5leastuRd__s10ComparablerFT14valueToCompareFWx9Generator7Element_qd___GSqqd___">least(valueToCompare:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">least</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Comparable</span><span class="o">&gt;</span><span class="p">(</span><span class="n">valueToCompare</span> <span class="nv">extractValue</span><span class="p">:</span> <span class="p">(</span><span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The least value held by an element held herein, if there are more than 0 elements. Otherwise, <code>nil</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10ArrayToolsPs12SequenceType9extremityuRd__s10ComparablerFTFTqd__qd___Sb14valueToCompareFWx9Generator7Element_qd___GSqqd___"></a>
+                    <a name="//apple_ref/swift/Method/extremity(_:valueToCompare:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10ArrayToolsPs12SequenceType9extremityuRd__s10ComparablerFTFTqd__qd___Sb14valueToCompareFWx9Generator7Element_qd___GSqqd___">extremity(_:valueToCompare:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">extremity</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Comparable</span><span class="o">&gt;</span><span class="p">(</span>
+        <span class="nv">compare</span><span class="p">:</span> <span class="p">(</span><span class="kt">T</span><span class="p">,</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">,</span>
+        <span class="n">valueToCompare</span> <span class="nv">extractValue</span><span class="p">:</span> <span class="p">(</span><span class="kt">Generator</span><span class="o">.</span><span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The most extreme value held by an element held herein, if there are more than 0 elements. Otherwise, <code>nil</code>.</p>
 
                       </div>
                     </section>
@@ -307,7 +405,7 @@ leastElements == [S(value: 1)]
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-07-20)</p>
+      <p>&copy; 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-08-01)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

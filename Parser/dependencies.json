@@ -1,0 +1,14 @@
+{"dependencies":[
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "StringTools",
+"version": ""
+},
+{
+"registry": "github",
+"organisation": "dn-m",
+"repo": "TreeTools",
+"version": ""
+}
+]}
