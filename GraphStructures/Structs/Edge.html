@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>SyntaxNode Class Reference | dn-m</title>
+    <title>Edge Struct Reference | dn-m</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css">
     <link rel="stylesheet" type="text/css" href="../css/highlight.css">
     <meta charset="utf-8">
@@ -12,9 +12,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/SyntaxNode" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/Edge" class="dashAnchor"></a>
 
-    <a title="SyntaxNode Class Reference"></a>
+    <a title="Edge Struct Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -25,14 +25,14 @@
       </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="https://github.com/dn-m/Language">
+          <a class="header-link" href="https://github.com/dn-m/GraphStructures">
             <img class="header-icon" src="../img/gh.png">
             View on GitHub
           </a>
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2F%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2FGraphStructures%2Exml">
             <img class="header-icon" src="../img/dash.png">
             Install in Dash
           </a>
@@ -42,32 +42,60 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="/">dn-m</a>
       <img class="carat" src="../img/carat.png">
-      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <a class="breadcrumb" href="../index.html">GraphStructures Reference</a>
       <img class="carat" src="../img/carat.png">
-      SyntaxNode Class Reference
+      Edge Struct Reference
     </p>
 
     <div class="content-wrapper">
       <nav class="navigation">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <a class="nav-group-name-link" href="../Abstract%20Graph.html">Abstract Graph</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SyntaxNode.html">SyntaxNode</a>
+                <a class="nav-group-task-link" href="../Classes/Graph.html">Graph</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Node.html">Node</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Edge.html">Edge</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Tree.html">Tree</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TreeNode.html">TreeNode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TreeNode/Error.html">– Error</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Functions.html">Other Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Functions.html#/s:ZF15GraphStructuresoi2eeFTCS_8TreeNodeS0__Sb">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/GraphType.html">GraphType</a>
               </li>
             </ul>
           </li>
         <li class="nav-group-name" id="dependencies">
               <span class="nav-group-name-link">Dependencies</span>
-              <ul class="nav-group-tasks">
-<li class="nav-group-task">
-        <a class="nav-group-task-link" href="/ParserTools/index.html">ParserTools</a>
-</li>
-<li class="nav-group-task">
-        <a class="nav-group-task-link" href="/TreeTools/index.html">TreeTools</a>
-</li>
-</ul>
+              <ul class="nav-group-tasks"><li class="nav-group-task">
+        <a class="nav-group-task-link" href="/ArrayTools/index.html">ArrayTools</a>
+</li></ul>
             </li>
 </ul>
       </nav>
@@ -75,14 +103,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>SyntaxNode</h1>
+            <h1>Edge</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">SyntaxNode</span><span class="p">:</span> <span class="kt">NodeType</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Edge</span></code></pre>
 
                 </div>
               </div>
-            <p>Model of a valid expression of the dn-m language syntax</p>
+            <p>Edge between two <code><a href="../Classes/Node.html">Node</a></code> objects.</p>
 
           </div>
         </section>
@@ -101,9 +129,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC8Language10SyntaxNode6parentGSqS0__"></a>
-                    <a name="//apple_ref/swift/Property/parent" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8Language10SyntaxNode6parentGSqS0__">parent</a>
+                    <a name="/s:vV15GraphStructures4Edge6sourceCS_4Node"></a>
+                    <a name="//apple_ref/swift/Property/source" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV15GraphStructures4Edge6sourceCS_4Node">source</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -111,14 +139,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>SyntaxNode</code> object containing this one, if present. Otherwise, <code>nil</code>.</p>
+                        <p>Source <code><a href="../Classes/Node.html">Node</a></code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">parent</span><span class="p">:</span> <span class="kt">SyntaxNode</span><span class="p">?</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">source</span><span class="p">:</span> <span class="kt"><a href="../Classes/Node.html">Node</a></span></code></pre>
 
                         </div>
                       </div>
@@ -128,9 +156,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC8Language10SyntaxNode8childrenGSaS0__"></a>
-                    <a name="//apple_ref/swift/Property/children" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8Language10SyntaxNode8childrenGSaS0__">children</a>
+                    <a name="/s:vV15GraphStructures4Edge11destinationCS_4Node"></a>
+                    <a name="//apple_ref/swift/Property/destination" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV15GraphStructures4Edge11destinationCS_4Node">destination</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -138,14 +166,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>SyntaxNode</code> object contained herein.</p>
+                        <p>Source <code>Destination</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">children</span><span class="p">:</span> <span class="p">[</span><span class="kt">SyntaxNode</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt"><a href="../Classes/Node.html">Node</a></span></code></pre>
 
                         </div>
                       </div>
@@ -155,9 +183,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC8Language10SyntaxNode4kindOS_14SyntaxNodeKind"></a>
-                    <a name="//apple_ref/swift/Property/kind" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8Language10SyntaxNode4kindOS_14SyntaxNodeKind">kind</a>
+                    <a name="/s:vV15GraphStructures4Edge6weightGSqSf_"></a>
+                    <a name="//apple_ref/swift/Property/weight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV15GraphStructures4Edge6weightGSqSf_">weight</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -165,41 +193,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>SyntaxNodeKind</code> of this <code>SyntaxNode</code>.</p>
+                        <p>Weight of the <code>Edge</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">kind</span><span class="p">:</span> <span class="kt">SyntaxNodeKind</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC8Language10SyntaxNode6tokensGSaV11ParserTools5Token_"></a>
-                    <a name="//apple_ref/swift/Property/tokens" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8Language10SyntaxNode6tokensGSaV11ParserTools5Token_">tokens</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><code>Token</code> in source file.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">tokens</span><span class="p">:</span> <span class="p">[</span><span class="kt">Token</span><span class="p">]</span> <span class="c1">// or tokens: [Token]</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">weight</span><span class="p">:</span> <span class="kt">Float</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -220,9 +221,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC8Language10SyntaxNodecFTOS_14SyntaxNodeKind6tokensGSaV11ParserTools5Token__S0_"></a>
-                    <a name="//apple_ref/swift/Method/init(_:tokens:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC8Language10SyntaxNodecFTOS_14SyntaxNodeKind6tokensGSaV11ParserTools5Token__S0_">init(_:tokens:)</a>
+                    <a name="/s:FV15GraphStructures4EdgecFT4fromCS_4Node2toS1_6weightGSqSf__S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(from:to:weight:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV15GraphStructures4EdgecFT4fromCS_4Node2toS1_6weightGSqSf__S0_">init(from:to:weight:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -230,14 +231,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a <code>SyntaxNode</code>.</p>
+                        <p>Create an <code>Edge</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">kind</span><span class="p">:</span> <span class="kt">SyntaxNodeKind</span><span class="p">,</span> <span class="nv">tokens</span><span class="p">:</span> <span class="p">[</span><span class="kt">Token</span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">from</span> <span class="nv">source</span><span class="p">:</span> <span class="kt"><a href="../Classes/Node.html">Node</a></span><span class="p">,</span> <span class="n">to</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt"><a href="../Classes/Node.html">Node</a></span><span class="p">,</span> <span class="nv">weight</span><span class="p">:</span> <span class="kt">Float</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -252,7 +253,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-08-18)</p>
+      <p>© 2016 <a class="link" href="http://jamesbean.info" target="_blank" rel="external">James Bean</a>. All rights reserved. (Last updated: 2016-08-21)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
