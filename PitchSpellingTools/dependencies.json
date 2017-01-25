@@ -2,12 +2,6 @@
 {
 "registry": "github",
 "organisation": "dn-m",
-"repo": "TreeTools",
-"version": ""
-},
-{
-"registry": "github",
-"organisation": "dn-m",
 "repo": "Pitch",
 "version": ""
 }

@@ -2,7 +2,7 @@
 {
 "registry": "github",
 "organisation": "dn-m",
-"repo": "ArrayTools",
-"version": ""
+"repo": "Collections",
+"version": "~> 1.0"
 }
 ]}
