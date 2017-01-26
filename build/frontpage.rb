@@ -1,5 +1,7 @@
 require 'nokogiri'
 
+# FIXME: This currently does its job, but `mustache` should be re-utilized here
+# TODO: Inject actual frontmatter
 html = %{
 <!DOCTYPE html>
 <html lang="en">
@@ -75,12 +77,13 @@ categories = {
   "Utility" => ["Collections", "ArithmeticTools", "IntervalTools"]
 }
 
-#categories = ["Utility", "Abstract Musical Model"]
-
+# For each layer of the application, create a category with links
 categories.each do |category, frameworks|
-  
+
+  # Retrieve the first node
   categories_node = page.css(".nav-groups")[0]
 
+  # Create an HTML node for the category
   category_node = categories_node.add_child '
     <li class="nav-group-name" id="' + category + '"></li>
       <span class="nav-group-name-link">' + category + '</span>
@@ -88,11 +91,13 @@ categories.each do |category, frameworks|
     </li>
   '
 
-  # Add link!
+  # For each framework, add a UL item: a link to the docs for the given framework
   frameworks.each do |framework|
 
+    # FIXME: Point link to docs, not github
     link = "https://github.com/dn-m/#{framework}"
 
+    # Create an HTML node for the framework
     category_node.css(".nav-group-tasks")[0].add_child '
       <li class="nav-group-task">
         <a class="nav-group-task-link" href="' + link + '">' + framework + '</a>
