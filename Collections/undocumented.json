@@ -1,0 +1,222 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
+      "line": 9,
+      "symbol": "ArrayType",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
+      "line": 19,
+      "symbol": "DictionaryTypeError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
+      "line": 277,
+      "symbol": "==(_:_:).D",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
+      "line": 291,
+      "symbol": "!=(_:_:).D",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
+      "line": 299,
+      "symbol": "==(_:_:).D",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
+      "line": 316,
+      "symbol": "!=(_:_:).D",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
+      "line": 327,
+      "symbol": "==(_:_:).D",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
+      "line": 344,
+      "symbol": "!=(_:_:).D",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
+      "line": 355,
+      "symbol": "==(_:_:).D",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
+      "line": 379,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/KeyPath.swift",
+      "line": null,
+      "symbol": "KeyPath",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/KeyPath.swift",
+      "line": null,
+      "symbol": "KeyPath",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/KeyPath.swift",
+      "line": null,
+      "symbol": "KeyPath",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/KeyPath.swift",
+      "line": 11,
+      "symbol": "KeyPath",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/ListProcessing.swift",
+      "line": 58,
+      "symbol": "+(_:_:).T",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/ListProcessing.swift",
+      "line": 63,
+      "symbol": "+(_:_:).T",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/MutableGraph.swift",
+      "line": null,
+      "symbol": "MutableGraph",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/MutableGraph.swift",
+      "line": null,
+      "symbol": "MutableGraph",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/MutableGraph.swift",
+      "line": null,
+      "symbol": "MutableGraph",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/MutableGraph.swift",
+      "line": null,
+      "symbol": "MutableGraph",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/MutableGraph.swift",
+      "line": null,
+      "symbol": "MutableGraph",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/MutableGraph.swift",
+      "line": 9,
+      "symbol": "MutableGraph",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/OrderedDictionary.swift",
+      "line": 131,
+      "symbol": "==(_:_:).K",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/SequenceExtensions.swift",
+      "line": 132,
+      "symbol": "==(_:_:).T",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/SortedArray.swift",
+      "line": 69,
+      "symbol": "+(_:_:).T",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/SortedArray.swift",
+      "line": 80,
+      "symbol": "==(_:_:).T",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/SortedDictionary.swift",
+      "line": 121,
+      "symbol": "==(_:_:).K",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/SortedDictionary.swift",
+      "line": 147,
+      "symbol": "+(_:_:).Value",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/StableSort.swift",
+      "line": 14,
+      "symbol": "RangeReplaceableCollection.stableSort(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/Stack.swift",
+      "line": 103,
+      "symbol": "==(_:_:).T",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/Swap.swift",
+      "line": 10,
+      "symbol": "swapped(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/dn-m/Collections"
+}
