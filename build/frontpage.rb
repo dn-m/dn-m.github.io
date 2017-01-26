@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'nokogiri'
 
 # FIXME: This currently does its job, but `mustache` should be re-utilized here
