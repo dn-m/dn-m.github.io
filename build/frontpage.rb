@@ -96,8 +96,7 @@ categories.each do |category, frameworks|
   # For each framework, add a UL item: a link to the docs for the given framework
   frameworks.each do |framework|
 
-    # FIXME: Point link to docs, not github
-    link = "https://github.com/dn-m/#{framework}"
+    link = "https://dn-m.github.io/#{framework}"
 
     # Create an HTML node for the framework
     category_node.css(".nav-group-tasks")[0].add_child '
