@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
+require 'yaml'
 require 'nokogiri'
+
 
 # FIXME: This currently does its job, but `mustache` should be re-utilized here
 # TODO: Inject actual frontmatter
@@ -67,20 +69,11 @@ html = %{
 
 page = Nokogiri::HTML(html)
 
-# TODO: Persist this in a YAML file
-categories = {
-  "Application Layer" => ["dn-m"],
-  "Interaction: Graphics" => ["ProgressBar", "ControllerElements", "CompoundController"],
-  "Interaction: Control / Audio" => ["Timeline", "OSC", "AudioTools", "AirTurn"],
-  "Score View Layer" => ["PlotView", "StaffView"],
-  "Score Model Layer" => ["Pitch", "Rhythm", "Dynamics", "Articulations", "EnsembleTools"],
-  "Graphics" => ["PathTools", "GraphicsTools"],
-  "Input" => ["MusicXML", "Language"],
-  "Utility" => ["Collections", "ArithmeticTools", "IntervalTools"]
-}
+table_of_contents_yaml = File.read('build/toc.yaml')
+table_of_contents = YAML.load(table_of_contents_yaml)
 
 # For each layer of the application, create a category with links
-categories.each do |category, frameworks|
+table_of_contents.each do |category, frameworks|
 
   # Retrieve the first node
   categories_node = page.css(".nav-groups")[0]
