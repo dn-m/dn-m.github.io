@@ -16,56 +16,56 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 277,
+      "line": 275,
       "symbol": "==(_:_:).D",
       "symbol_kind": "source.lang.swift.decl.generic_type_param",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 291,
+      "line": 289,
       "symbol": "!=(_:_:).D",
       "symbol_kind": "source.lang.swift.decl.generic_type_param",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 299,
+      "line": 297,
       "symbol": "==(_:_:).D",
       "symbol_kind": "source.lang.swift.decl.generic_type_param",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 316,
+      "line": 314,
       "symbol": "!=(_:_:).D",
       "symbol_kind": "source.lang.swift.decl.generic_type_param",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 327,
+      "line": 325,
       "symbol": "==(_:_:).D",
       "symbol_kind": "source.lang.swift.decl.generic_type_param",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 344,
+      "line": 342,
       "symbol": "!=(_:_:).D",
       "symbol_kind": "source.lang.swift.decl.generic_type_param",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 355,
+      "line": 353,
       "symbol": "==(_:_:).D",
       "symbol_kind": "source.lang.swift.decl.generic_type_param",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 379,
+      "line": 377,
       "symbol": "!=(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
