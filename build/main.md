@@ -1,4 +1,4 @@
 # dn-m 
-## dynamic notation for music
+dynamic notation for music
 
-This is the main page for **dn-m**.
+**dn-m** (dynamic notation for music) is an automated notation renderer for contemporary music.
