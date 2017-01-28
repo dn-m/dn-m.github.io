@@ -19,11 +19,15 @@ Score View Layer:
 
 Score Model Layer:
 - ScoreModelLayer
+- PlotModel
+- StaffModel
+
+Abstract Musical Model:
+- AbstractMusicalModel
 - Pitch
 - Rhythm
 - Dynamics
 - Articulations
-- EnsembleTools
 
 Input:
 - MusicXML
