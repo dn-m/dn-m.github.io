@@ -1,0 +1,54 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/GraphicsTools/GraphicsTools/Color+CGColor.swift",
+      "line": 13,
+      "symbol": "Color.cgColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/GraphicsTools/GraphicsTools/Color.swift",
+      "line": 12,
+      "symbol": "Color.red",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/GraphicsTools/GraphicsTools/Color.swift",
+      "line": 13,
+      "symbol": "Color.green",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/GraphicsTools/GraphicsTools/Color.swift",
+      "line": 14,
+      "symbol": "Color.blue",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/GraphicsTools/GraphicsTools/Color.swift",
+      "line": 21,
+      "symbol": "Color.init(red:green:blue:alpha:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/GraphicsTools/GraphicsTools/Color.swift",
+      "line": 28,
+      "symbol": "Color.init(gray:alpha:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/GraphicsTools/GraphicsTools/LayoutNode.swift",
+      "line": 101,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/BEAN/dn-m/Frameworks/GraphicsTools"
+}

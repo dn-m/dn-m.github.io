@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/Rhythm/Rhythm/MetricalDuration.swift",
+      "line": 16,
+      "symbol": "MetricalDuration.zero",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/BEAN/dn-m/Frameworks/Rhythm"
+}

@@ -1,0 +1,439 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/AccidentalComponent.swift",
+      "line": 14,
+      "symbol": "AccidentalComponent",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/AccidentalComponent.swift",
+      "line": 76,
+      "symbol": "ComponentArrow",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/AccidentalComponent.swift",
+      "line": 142,
+      "symbol": "ComponentBody",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/AccidentalComponent.swift",
+      "line": 178,
+      "symbol": "ComponentBodyFlat",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/AccidentalComponent.swift",
+      "line": 242,
+      "symbol": "ComponentBodyNatural",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/AccidentalComponent.swift",
+      "line": 287,
+      "symbol": "ComponentBodyQuarterFlat",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/AccidentalComponent.swift",
+      "line": 307,
+      "symbol": "ComponentBodyQuarterSharp",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/AccidentalComponent.swift",
+      "line": 350,
+      "symbol": "ComponentBodySharp",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/AccidentalComponent.swift",
+      "line": 392,
+      "symbol": "ComponentColumn",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/AccidentalComponent.swift",
+      "line": 456,
+      "symbol": "ComponentDyad",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/AccidentalFactory.swift",
+      "line": 12,
+      "symbol": "AccidentalFactory",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/AccidentalView.swift",
+      "line": null,
+      "symbol": "AccidentalView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/AccidentalView.swift",
+      "line": 16,
+      "symbol": "AccidentalView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/AltoClef.swift",
+      "line": 14,
+      "symbol": "AltoClef",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/BassClef.swift",
+      "line": 14,
+      "symbol": "BassClef",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/CircleClefComponent.swift",
+      "line": null,
+      "symbol": "CircleClefComponent",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/CircleClefComponent.swift",
+      "line": 13,
+      "symbol": "CircleClefComponent",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/CircleClefOrnament.swift",
+      "line": 13,
+      "symbol": "CircleClefOrnament",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/ClefComponent.swift",
+      "line": 13,
+      "symbol": "ClefComponent.lineWidth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/ClefView.swift",
+      "line": null,
+      "symbol": "ClefView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/ClefView.swift",
+      "line": 13,
+      "symbol": "ClefView",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/DiamondClefOrnament.swift",
+      "line": 13,
+      "symbol": "DiamondClefOrnament",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/DotClefOrnament.swift",
+      "line": 12,
+      "symbol": "DotClefOrnament",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/Flat.swift",
+      "line": 11,
+      "symbol": "Flat",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/FlatDown.swift",
+      "line": 11,
+      "symbol": "FlatDown",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/FlatUp.swift",
+      "line": 11,
+      "symbol": "FlatUp",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/LedgerLinesRenderDelegate.swift",
+      "line": 9,
+      "symbol": "LedgerLinesRenderDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/LineClefComponent.swift",
+      "line": 13,
+      "symbol": "LineClefComponent",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/Natural.swift",
+      "line": 11,
+      "symbol": "Natural",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/NaturalDown.swift",
+      "line": 11,
+      "symbol": "NaturalDown",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/NaturalUp.swift",
+      "line": 11,
+      "symbol": "NaturalUp",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/NoteheadView.swift",
+      "line": 17,
+      "symbol": "NoteheadView.point",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/NoteheadView.swift",
+      "line": 18,
+      "symbol": "NoteheadView.staffSlotHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/NoteheadView.swift",
+      "line": 20,
+      "symbol": "NoteheadView.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/NoteheadView.swift",
+      "line": 34,
+      "symbol": "NoteheadView.init(point:staffSlotHeight:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/NoteheadView.swift",
+      "line": 42,
+      "symbol": "NoteheadView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/Pitch+Showable.swift",
+      "line": 15,
+      "symbol": "Pitch.show(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/PitchCollection+Showable.swift",
+      "line": 15,
+      "symbol": "PitchCollection.show(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/PitchSet+Showable.swift",
+      "line": 15,
+      "symbol": "PitchSet.show(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/PitchSetSequence+Showable.swift",
+      "line": 15,
+      "symbol": "Sequence.show(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/QuarterFlat.swift",
+      "line": 11,
+      "symbol": "QuarterFlat",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/QuarterFlatDown.swift",
+      "line": 11,
+      "symbol": "QuarterFlatDown",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/QuarterFlatUp.swift",
+      "line": 11,
+      "symbol": "QuarterFlatUp",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/QuarterSharp.swift",
+      "line": 11,
+      "symbol": "QuarterSharp",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/QuarterSharpDown.swift",
+      "line": 11,
+      "symbol": "QuarterSharpDown",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/QuarterSharpUp.swift",
+      "line": 11,
+      "symbol": "QuarterSharpUp",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/Sharp.swift",
+      "line": 11,
+      "symbol": "Sharp",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/SharpDown.swift",
+      "line": 11,
+      "symbol": "SharpDown",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/SharpType.swift",
+      "line": null,
+      "symbol": "SharpType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/SharpType.swift",
+      "line": 11,
+      "symbol": "SharpType",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/SharpUp.swift",
+      "line": 11,
+      "symbol": "SharpUp",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/Showable.swift",
+      "line": 17,
+      "symbol": "Showable.show(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/StaffInformationConfiguration.swift",
+      "line": 11,
+      "symbol": "StaffInformationConfiguration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/StaffInformationRenderer.swift",
+      "line": 15,
+      "symbol": "StaffInformationRenderer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/StaffLinesRenderDelegate.swift",
+      "line": 9,
+      "symbol": "StaffLinesRenderDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/StaffRepresentedPitch.swift",
+      "line": 13,
+      "symbol": "StaffRepresentedPitch",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/StaffStructureConfiguration.swift",
+      "line": 12,
+      "symbol": "StaffStructureConfiguration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/StaffStructureRenderer.swift",
+      "line": 16,
+      "symbol": "StaffStructureRenderer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/StaffView.swift",
+      "line": 14,
+      "symbol": "StaffView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/StaffViewConfiguration.swift",
+      "line": 11,
+      "symbol": "StaffViewConfiguration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/TenorClef.swift",
+      "line": 14,
+      "symbol": "TenorClef",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/StaffView/StaffView/TrebleClef.swift",
+      "line": 14,
+      "symbol": "TrebleClef",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/BEAN/dn-m/Frameworks/StaffView"
+}

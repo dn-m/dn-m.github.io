@@ -1,0 +1,159 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/Invertible.swift",
+      "line": 9,
+      "symbol": "Invertible",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/NamedInterval.swift",
+      "line": 80,
+      "symbol": "NamedInterval.inverse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/NamedIntervalOrdinal.swift",
+      "line": 29,
+      "symbol": "NamedIntervalOrdinal.isPerfect",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/NamedIntervalOrdinal.swift",
+      "line": 32,
+      "symbol": "NamedIntervalOrdinal.isImperfect",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/NamedIntervalQuality.swift",
+      "line": 16,
+      "symbol": "NamedIntervalQuality.Degree",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/NamedIntervalQuality.swift",
+      "line": 23,
+      "symbol": "NamedIntervalQuality.diminished",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/NamedIntervalQuality.swift",
+      "line": 24,
+      "symbol": "NamedIntervalQuality.minor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/NamedIntervalQuality.swift",
+      "line": 25,
+      "symbol": "NamedIntervalQuality.perfect",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/NamedIntervalQuality.swift",
+      "line": 26,
+      "symbol": "NamedIntervalQuality.major",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/NamedIntervalQuality.swift",
+      "line": 27,
+      "symbol": "NamedIntervalQuality.augmented",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/NamedIntervalQuality.swift",
+      "line": 29,
+      "symbol": "NamedIntervalQuality.perfects",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/NamedIntervalQuality.swift",
+      "line": 35,
+      "symbol": "NamedIntervalQuality.imperfects",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/NamedIntervalQuality.swift",
+      "line": 79,
+      "symbol": "NamedIntervalQuality.init(rawValue:degree:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/NamedIntervalQuality.swift",
+      "line": 84,
+      "symbol": "NamedIntervalQuality.init(sanitizedIntervalClass:ordinal:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/PitchSpelling+LetterName.swift",
+      "line": 75,
+      "symbol": "PitchSpelling.LetterName.pitchClass",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/PitchSpelling+Resolution.swift",
+      "line": 19,
+      "symbol": "PitchSpelling.Resolution.halfStep",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/PitchSpelling+Resolution.swift",
+      "line": 22,
+      "symbol": "PitchSpelling.Resolution.quarterStep",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/PitchSpelling+Resolution.swift",
+      "line": 25,
+      "symbol": "PitchSpelling.Resolution.eighthStep",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/PitchSpellingDyad.swift",
+      "line": 149,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/SpelledPitchClass.swift",
+      "line": 37,
+      "symbol": "SpelledPitchClass.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/SpelledPitchClass.swift",
+      "line": 64,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools/PitchSpellingTools/SpelledPitchClassSet.swift",
+      "line": 18,
+      "symbol": "SpelledPitchClassSet.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/BEAN/dn-m/Frameworks/PitchSpellingTools"
+}

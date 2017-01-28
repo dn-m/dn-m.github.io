@@ -1,0 +1,26 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/Pitch/Pitch/NoteNumberRepresentable.swift",
+      "line": 60,
+      "symbol": "-(_:_:).T",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/Pitch/Pitch/NoteNumberRepresentableContainer.swift",
+      "line": 30,
+      "symbol": "==(_:_:).T",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/Pitch/Pitch/PitchSetCollection.swift",
+      "line": 21,
+      "symbol": "PitchSetCollection.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/BEAN/dn-m/Frameworks/Pitch"
+}

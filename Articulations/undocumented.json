@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/Articulations/Articulations/Articulation.swift",
+      "line": 9,
+      "symbol": "Articulation",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/BEAN/dn-m/Frameworks/Articulations"
+}

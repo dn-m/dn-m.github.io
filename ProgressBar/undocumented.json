@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/ProgressBar/ProgressBar/ProgressBar.swift",
+      "line": 12,
+      "symbol": "ProgressBar",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/BEAN/dn-m/Frameworks/ProgressBar"
+}
