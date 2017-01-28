@@ -16,56 +16,56 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 275,
+      "line": 283,
       "symbol": "==(_:_:).D",
-      "symbol_kind": "source.lang.swift.decl.generic_type_param",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 289,
-      "symbol": "!=(_:_:).D",
       "symbol_kind": "source.lang.swift.decl.generic_type_param",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
       "line": 297,
-      "symbol": "==(_:_:).D",
-      "symbol_kind": "source.lang.swift.decl.generic_type_param",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 314,
       "symbol": "!=(_:_:).D",
       "symbol_kind": "source.lang.swift.decl.generic_type_param",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 325,
+      "line": 305,
       "symbol": "==(_:_:).D",
       "symbol_kind": "source.lang.swift.decl.generic_type_param",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 342,
+      "line": 322,
       "symbol": "!=(_:_:).D",
       "symbol_kind": "source.lang.swift.decl.generic_type_param",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 353,
+      "line": 333,
       "symbol": "==(_:_:).D",
       "symbol_kind": "source.lang.swift.decl.generic_type_param",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
-      "line": 377,
+      "line": 350,
+      "symbol": "!=(_:_:).D",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
+      "line": 361,
+      "symbol": "==(_:_:).D",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Collections/Collections/DictionaryType.swift",
+      "line": 385,
       "symbol": "!=(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
