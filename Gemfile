@@ -1,5 +1,0 @@
-source 'https://rubygems.org'
-gem 'jazzy'
-gem 'nokogiri'
-gem 'redcarpet'
-gem 'rouge'

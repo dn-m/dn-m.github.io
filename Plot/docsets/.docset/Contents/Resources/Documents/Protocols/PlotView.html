@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PlotView Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/PlotView" class="dashAnchor"></a>
+
+    <a title="PlotView Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (96% documented)
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/dn-m/Plot">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      PlotView Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Axis.html">Axis</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PlotModel.html">PlotModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PlotView.html">PlotView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LinearAxis.html">LinearAxis</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LinesPosition.html">LinesPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LinesPosition.html#/s:OV4Plot13LinesPosition5State">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LinesSegment.html">LinesSegment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LinesSegmentCollection.html">LinesSegmentCollection</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>PlotView</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PlotView</span></code></pre>
+
+                </div>
+              </div>
+            <p>Graphical representation of information.</p>
+
+<p>The horizontal and vertical positioning of information if stratified into two steps:
+- <code>(Vertical | Horizontal) Coordinate</code> systems: 
+Abstract model of a coordinate system
+that may be implemented in any number of ways. For example, a <code>Staff</code> may model the 
+abstract position of <code>SpelledPitch</code> values on a given staff-line or in a given staff-space.
+A string tablature system may have pre-defined positions which are irregularly placed.</p>
+
+<ul>
+<li><code>Position</code>:
+Concrete value for positioning a given musical element within a <code>PlotView</code>.</li>
+</ul>
+
+<p>The graphical information is stratified into two layers: <code>structure</code> and <code>information</code>.
+The <code>structure</code> layer may contain graphical elements like lines and axes. The <code>information</code>
+layer will contain graphical representations of the actualy musical information.</p>
+
+<p>Each of the graphical layers has its own renderer which can be define explicitly for any
+type of musical information.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Associated%20Types"></a>
+                <a name="//apple_ref/swift/Section/Associated Types" class="dashAnchor"></a>
+                <a href="#/Associated%20Types">
+                  <h3 class="section-name">Associated Types</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P4Plot8PlotView16GraphicalContext"></a>
+                    <a name="//apple_ref/swift/Alias/GraphicalContext" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P4Plot8PlotView16GraphicalContext">GraphicalContext</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The type of graphical context onto which this <code>PlotView</code> will be rendered.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">associatedtype</span> <span class="kt">GraphicalContext</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P4Plot8PlotView5Model"></a>
+                    <a name="//apple_ref/swift/Alias/Model" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P4Plot8PlotView5Model">Model</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The information that will be rendered onto a <code>PlotView</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">associatedtype</span> <span class="kt">Model</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PlotModel.html">PlotModel</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P4Plot8PlotView20HorizontalCoordinate"></a>
+                    <a name="//apple_ref/swift/Alias/HorizontalCoordinate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P4Plot8PlotView20HorizontalCoordinate">HorizontalCoordinate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Type that describes the abstract horizontal coordinate system of a <code>PlotView</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">associatedtype</span> <span class="kt">HorizontalCoordinate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P4Plot8PlotView17StructureRenderer"></a>
+                    <a name="//apple_ref/swift/Alias/StructureRenderer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P4Plot8PlotView17StructureRenderer">StructureRenderer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stores an abstract model of lines and axes, tailored for the specific <code>PlotView</code>
+implementation.</p>
+
+<p>Will likely render lines and the ax(is|es).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">associatedtype</span> <span class="kt">StructureRenderer</span><span class="p">:</span> <span class="kt">Renderer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P4Plot8PlotView8Position"></a>
+                    <a name="//apple_ref/swift/Alias/Position" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P4Plot8PlotView8Position">Position</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Native numerical type of <code><a href="../Protocols/PlotView.html#/s:P4Plot8PlotView16GraphicalContext">GraphicalContext</a></code>. Probably a floating-point type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">associatedtype</span> <span class="kt">Position</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P4Plot8PlotView19InformationRenderer"></a>
+                    <a name="//apple_ref/swift/Alias/InformationRenderer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P4Plot8PlotView19InformationRenderer">InformationRenderer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stores an abstract model of information, tailorded for the specific <code>PlotView</code>
+implementation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">associatedtype</span> <span class="kt">InformationRenderer</span><span class="p">:</span> <span class="kt">Renderer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P4Plot8PlotView18VerticalCoordinate"></a>
+                    <a name="//apple_ref/swift/Alias/VerticalCoordinate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P4Plot8PlotView18VerticalCoordinate">VerticalCoordinate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Type that describes the abstract vertical coordinate system of a <code>PlotView</code>.</p>
+
+<p>For example, <code>Staff</code> implements this as <code>StaffSlot</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">associatedtype</span> <span class="kt">VerticalCoordinate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Model"></a>
+                <a name="//apple_ref/swift/Section/Model" class="dashAnchor"></a>
+                <a href="#/Model">
+                  <h3 class="section-name">Model</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP4Plot8PlotView5modelwx5Model"></a>
+                    <a name="//apple_ref/swift/Property/model" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP4Plot8PlotView5modelwx5Model">model</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The information that will be rendered onto a <code>PlotView</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">model</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PlotView.html#/s:P4Plot8PlotView5Model">Model</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Positioning%20of%20entities"></a>
+                <a name="//apple_ref/swift/Section/Positioning of entities" class="dashAnchor"></a>
+                <a href="#/Positioning%20of%20entities">
+                  <h3 class="section-name">Positioning of entities</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP4Plot8PlotView24concreteVerticalPositionFwx18VerticalCoordinatewx8Position"></a>
+                    <a name="//apple_ref/swift/Property/concreteVerticalPosition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP4Plot8PlotView24concreteVerticalPositionFwx18VerticalCoordinatewx8Position">concreteVerticalPosition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transforms an abstract vertical coordinate into a concrete vertical position.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">concreteVerticalPosition</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Protocols/PlotView.html#/s:P4Plot8PlotView18VerticalCoordinate">VerticalCoordinate</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/PlotView.html#/s:P4Plot8PlotView8Position">Position</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP4Plot8PlotView26concreteHorizontalPositionFwx20HorizontalCoordinatewx8Position"></a>
+                    <a name="//apple_ref/swift/Property/concreteHorizontalPosition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP4Plot8PlotView26concreteHorizontalPositionFwx20HorizontalCoordinatewx8Position">concreteHorizontalPosition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transforms an abstract horizontal coordinate into a concrete horizontal position.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">concreteHorizontalPosition</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Protocols/PlotView.html#/s:P4Plot8PlotView20HorizontalCoordinate">HorizontalCoordinate</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/PlotView.html#/s:P4Plot8PlotView8Position">Position</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Graphics"></a>
+                <a name="//apple_ref/swift/Section/Graphics" class="dashAnchor"></a>
+                <a href="#/Graphics">
+                  <h3 class="section-name">Graphics</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP4Plot8PlotView9structurewx16GraphicalContext"></a>
+                    <a name="//apple_ref/swift/Property/structure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP4Plot8PlotView9structurewx16GraphicalContext">structure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Concrete layer containing the structural elements of a <code>PlotView</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">structure</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PlotView.html#/s:P4Plot8PlotView16GraphicalContext">GraphicalContext</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP4Plot8PlotView11informationwx16GraphicalContext"></a>
+                    <a name="//apple_ref/swift/Property/information" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP4Plot8PlotView11informationwx16GraphicalContext">information</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Concrete layer containing the informational elements of a <code>PlotView</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">information</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PlotView.html#/s:P4Plot8PlotView16GraphicalContext">GraphicalContext</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Renderers"></a>
+                <a name="//apple_ref/swift/Section/Renderers" class="dashAnchor"></a>
+                <a href="#/Renderers">
+                  <h3 class="section-name">Renderers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP4Plot8PlotView19informationRendererwx19InformationRenderer"></a>
+                    <a name="//apple_ref/swift/Property/informationRenderer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP4Plot8PlotView19informationRendererwx19InformationRenderer">informationRenderer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Renders the information onto the <code><a href="../Protocols/PlotView.html#/s:vP4Plot8PlotView11informationwx16GraphicalContext">information</a></code> <code>Layer</code>, given configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">informationRenderer</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PlotView.html#/s:P4Plot8PlotView19InformationRenderer">InformationRenderer</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP4Plot8PlotView17structureRendererwx17StructureRenderer"></a>
+                    <a name="//apple_ref/swift/Property/structureRenderer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP4Plot8PlotView17structureRendererwx17StructureRenderer">structureRenderer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Renders the structure onto the <code><a href="../Protocols/PlotView.html#/s:vP4Plot8PlotView9structurewx16GraphicalContext">structure</a></code> <code>Layer</code>, given configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">structureRenderer</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PlotView.html#/s:P4Plot8PlotView17StructureRenderer">StructureRenderer</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-01-28)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

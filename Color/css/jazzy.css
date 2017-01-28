@@ -171,21 +171,11 @@ pre code {
 
 .nav-group-task {
   font-size: 1em;
-  list-style-type: none; }
+  list-style-type: none;
+  white-space: nowrap; }
 
 .nav-group-task-link {
   color: #808080; }
-
-#dependencies.nav-group-name {
-  border-bottom: 1px solid #ddd;
-  padding: 8px 0 8px 16px;
-  background-color: coral; }
-#dependencies .nav-group-name-link {
-  font-weight: 800;
-  color: white; }
-#dependencies .nav-group-task-link {
-  color: white;
-  opacity: 0.75; }
 
 .main-content {
   order: 1; }

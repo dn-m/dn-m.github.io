@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LayoutNode Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/LayoutNode" class="dashAnchor"></a>
+
+    <a title="LayoutNode Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (91% documented)
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/dn-m/GraphicsTools">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      LayoutNode Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LayoutNode.html">LayoutNode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LayoutNode/VerticalLayoutPosition.html">– VerticalLayoutPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LayoutNode/HorizontalLayoutPosition.html">– HorizontalLayoutPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LayoutNode/Padding.html">– Padding</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Buildable.html">Buildable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CompositeShapeType.html">CompositeShapeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FrameMaking.html">FrameMaking</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/GraphicsContainerType.html">GraphicsContainerType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PathMaking.html">PathMaking</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Renderer.html">Renderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ShapeType.html">ShapeType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs.html#/s:V13GraphicsTools5Color">Color</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>LayoutNode</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">LayoutNode</span><span class="p">:</span> <span class="kt">MutableTreeProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>Wrapper for a CALayer, managing automated layout</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC13GraphicsTools10LayoutNode5layerCSo7CALayer"></a>
+                    <a name="//apple_ref/swift/Property/layer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC13GraphicsTools10LayoutNode5layerCSo7CALayer">layer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Content layer controlled by this <code>LayoutNode</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">layer</span><span class="p">:</span> <span class="kt">CALayer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC13GraphicsTools10LayoutNode6parentGSqS0__"></a>
+                    <a name="//apple_ref/swift/Property/parent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC13GraphicsTools10LayoutNode6parentGSqS0__">parent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Parent <code>LayoutNode</code>, if present. Otherwise, <code>nil</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">parent</span><span class="p">:</span> <span class="kt">LayoutNode</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC13GraphicsTools10LayoutNode8childrenGSaS0__"></a>
+                    <a name="//apple_ref/swift/Property/children" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC13GraphicsTools10LayoutNode8childrenGSaS0__">children</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Children <code>LayoutNode</code> objects.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">children</span><span class="p">:</span> <span class="p">[</span><span class="kt">LayoutNode</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC13GraphicsTools10LayoutNode19horizontalAlignmentOS0_24HorizontalLayoutPosition"></a>
+                    <a name="//apple_ref/swift/Property/horizontalAlignment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC13GraphicsTools10LayoutNode19horizontalAlignmentOS0_24HorizontalLayoutPosition">horizontalAlignment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The direction to flow child <code>LayoutNode</code> objects horizontally.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">horizontalAlignment</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutNode/HorizontalLayoutPosition.html">HorizontalLayoutPosition</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC13GraphicsTools10LayoutNode17verticalAlignmentOS0_22VerticalLayoutPosition"></a>
+                    <a name="//apple_ref/swift/Property/verticalAlignment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC13GraphicsTools10LayoutNode17verticalAlignmentOS0_22VerticalLayoutPosition">verticalAlignment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The direction to flow child <code>LayoutNode</code> objects vertically.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">verticalAlignment</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutNode/VerticalLayoutPosition.html">VerticalLayoutPosition</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC13GraphicsTools10LayoutNode21horizontalStackOriginOS0_24HorizontalLayoutPosition"></a>
+                    <a name="//apple_ref/swift/Property/horizontalStackOrigin" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC13GraphicsTools10LayoutNode21horizontalStackOriginOS0_24HorizontalLayoutPosition">horizontalStackOrigin</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The origin from which to stack child <code>LayoutNode</code> objects horizontally.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">horizontalStackOrigin</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutNode/HorizontalLayoutPosition.html">HorizontalLayoutPosition</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC13GraphicsTools10LayoutNode19verticalStackOriginOS0_22VerticalLayoutPosition"></a>
+                    <a name="//apple_ref/swift/Property/verticalStackOrigin" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC13GraphicsTools10LayoutNode19verticalStackOriginOS0_22VerticalLayoutPosition">verticalStackOrigin</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The origin from which to stack child <code>LayoutNode</code> objects vertically.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">verticalStackOrigin</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutNode/VerticalLayoutPosition.html">VerticalLayoutPosition</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC13GraphicsTools10LayoutNode21setsWidthWithChildrenSb"></a>
+                    <a name="//apple_ref/swift/Property/setsWidthWithChildren" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC13GraphicsTools10LayoutNode21setsWidthWithChildrenSb">setsWidthWithChildren</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether or not to calculate the width of <code><a href="../Classes/LayoutNode.html#/s:vC13GraphicsTools10LayoutNode5layerCSo7CALayer">layer</a></code> with those of the children.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">setsWidthWithChildren</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC13GraphicsTools10LayoutNode22setsHeightWithChildrenSb"></a>
+                    <a name="//apple_ref/swift/Property/setsHeightWithChildren" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC13GraphicsTools10LayoutNode22setsHeightWithChildrenSb">setsHeightWithChildren</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether or not to calculate the height of <code><a href="../Classes/LayoutNode.html#/s:vC13GraphicsTools10LayoutNode5layerCSo7CALayer">layer</a></code> with those of the children.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">setsHeightWithChildren</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC13GraphicsTools10LayoutNode7paddingVS0_7Padding"></a>
+                    <a name="//apple_ref/swift/Property/padding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC13GraphicsTools10LayoutNode7paddingVS0_7Padding">padding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contains values for top, bottom, left, right padding values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">padding</span> <span class="o">=</span> <span class="kt"><a href="../Classes/LayoutNode/Padding.html">Padding</a></span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13GraphicsTools10LayoutNodecFTCSo7CALayer22stackingVerticallyFromOS0_22VerticalLayoutPosition24stackingHorizontallyFromOS0_24HorizontalLayoutPosition20aligningVerticallyToS2_22aligningHorizontallyToS3__S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(_:stackingVerticallyFrom:stackingHorizontallyFrom:aligningVerticallyTo:aligningHorizontallyTo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13GraphicsTools10LayoutNodecFTCSo7CALayer22stackingVerticallyFromOS0_22VerticalLayoutPosition24stackingHorizontallyFromOS0_24HorizontalLayoutPosition20aligningVerticallyToS2_22aligningHorizontallyToS3__S0_">init(_:stackingVerticallyFrom:stackingHorizontallyFrom:aligningVerticallyTo:aligningHorizontallyTo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>LayoutNode</code> with a given <code><a href="../Classes/LayoutNode.html#/s:vC13GraphicsTools10LayoutNode5layerCSo7CALayer">layer</a></code> and layout configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+        <span class="n">_</span> <span class="nv">layer</span><span class="p">:</span> <span class="kt">CALayer</span> <span class="o">=</span> <span class="kt">CALayer</span><span class="p">(),</span>
+        <span class="n">stackingVerticallyFrom</span> <span class="nv">verticalStackOrigin</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutNode/VerticalLayoutPosition.html">VerticalLayoutPosition</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span><span class="p">,</span>
+        <span class="n">stackingHorizontallyFrom</span> <span class="nv">horizontalStackOrigin</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutNode/HorizontalLayoutPosition.html">HorizontalLayoutPosition</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span><span class="p">,</span>
+        <span class="n">aligningVerticallyTo</span> <span class="nv">verticalAlignment</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutNode/VerticalLayoutPosition.html">VerticalLayoutPosition</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span><span class="p">,</span>
+        <span class="n">aligningHorizontallyTo</span> <span class="nv">horizontalAlignment</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutNode/HorizontalLayoutPosition.html">HorizontalLayoutPosition</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span>
+    <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Position"></a>
+                <a name="//apple_ref/swift/Section/Position" class="dashAnchor"></a>
+                <a href="#/Position">
+                  <h3 class="section-name">Position</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13GraphicsTools10LayoutNode4moveFT2toVSC7CGPoint8animatedSb_T_"></a>
+                    <a name="//apple_ref/swift/Method/move(to:animated:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13GraphicsTools10LayoutNode4moveFT2toVSC7CGPoint8animatedSb_T_">move(to:animated:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Not yet implemented!
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">move</span><span class="p">(</span><span class="n">to</span> <span class="nv">origin</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13GraphicsTools10LayoutNode4moveFT14horizontallyByV12CoreGraphics7CGFloat12verticallyByS2_8animatedSb_T_"></a>
+                    <a name="//apple_ref/swift/Method/move(horizontallyBy:verticallyBy:animated:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13GraphicsTools10LayoutNode4moveFT14horizontallyByV12CoreGraphics7CGFloat12verticallyByS2_8animatedSb_T_">move(horizontallyBy:verticallyBy:animated:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Not yet implemented!
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">move</span><span class="p">(</span>
+        <span class="n">horizontallyBy</span> <span class="nv">tx</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="n">verticallyBy</span> <span class="nv">ty</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span>
+    <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vPs8Hashable9hashValueSi"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vPs8Hashable9hashValueSi">hashValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Not yet implemented!
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Layout"></a>
+                <a name="//apple_ref/swift/Section/Layout" class="dashAnchor"></a>
+                <a href="#/Layout">
+                  <h3 class="section-name">Layout</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC13GraphicsTools10LayoutNode22VerticalLayoutPosition"></a>
+                    <a name="//apple_ref/swift/Enum/VerticalLayoutPosition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC13GraphicsTools10LayoutNode22VerticalLayoutPosition">VerticalLayoutPosition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Positions used for vertical stacking and aligning <code><a href="../Classes/LayoutNode.html">LayoutNode</a></code> objects.</p>
+
+                        <a href="../Classes/LayoutNode/VerticalLayoutPosition.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">VerticalLayoutPosition</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC13GraphicsTools10LayoutNode24HorizontalLayoutPosition"></a>
+                    <a name="//apple_ref/swift/Enum/HorizontalLayoutPosition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC13GraphicsTools10LayoutNode24HorizontalLayoutPosition">HorizontalLayoutPosition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Positions used for horizontally stacking and aligning <code><a href="../Classes/LayoutNode.html">LayoutNode</a></code> objects.</p>
+
+                        <a href="../Classes/LayoutNode/HorizontalLayoutPosition.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">HorizontalLayoutPosition</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:VC13GraphicsTools10LayoutNode7Padding"></a>
+                    <a name="//apple_ref/swift/Struct/Padding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:VC13GraphicsTools10LayoutNode7Padding">Padding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Amount of space to each side of a <code><a href="../Classes/LayoutNode.html">LayoutNode</a></code>.</p>
+
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    Make <code>init</code> with a scale of a given size attribute of a <code><a href="../Classes/LayoutNode.html">LayoutNode</a></code>.
+
+</div>
+
+                        <a href="../Classes/LayoutNode/Padding.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Padding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13GraphicsTools10LayoutNode6layoutFT8animatedSb_T_"></a>
+                    <a name="//apple_ref/swift/Method/layout(animated:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13GraphicsTools10LayoutNode6layoutFT8animatedSb_T_">layout(animated:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Prepare for layout, then immediately commit frames.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">layout</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13GraphicsTools10LayoutNode16prepareForLayoutFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/prepareForLayout()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13GraphicsTools10LayoutNode16prepareForLayoutFT_T_">prepareForLayout()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculate the frames for children nodes without committing frames.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">prepareForLayout</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13GraphicsTools10LayoutNode12commitLayoutFT8animatedSb_T_"></a>
+                    <a name="//apple_ref/swift/Method/commitLayout(animated:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13GraphicsTools10LayoutNode12commitLayoutFT8animatedSb_T_">commitLayout(animated:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Commit the layout that has been prepared by <code><a href="../Classes/LayoutNode.html#/s:FC13GraphicsTools10LayoutNode16prepareForLayoutFT_T_">prepareForLayout()</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">commitLayout</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Add%20nodes"></a>
+                <a name="//apple_ref/swift/Section/Add nodes" class="dashAnchor"></a>
+                <a href="#/Add%20nodes">
+                  <h3 class="section-name">Add nodes</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13GraphicsTools10LayoutNode8addChildFS0_T_"></a>
+                    <a name="//apple_ref/swift/Method/addChild(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13GraphicsTools10LayoutNode8addChildFS0_T_">addChild(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Append child node.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addChild</span><span class="p">(</span><span class="n">_</span> <span class="nv">node</span><span class="p">:</span> <span class="kt">LayoutNode</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13GraphicsTools10LayoutNode11insertChildFzTS0_2atSi_T_"></a>
+                    <a name="//apple_ref/swift/Method/insertChild(_:at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13GraphicsTools10LayoutNode11insertChildFzTS0_2atSi_T_">insertChild(_:at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Insert the given <code>node</code> at the given <code>index</code>.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code>NodeError.insertionError</code> if the given <code>index</code> is out-of-bounds.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">insertChild</span><span class="p">(</span><span class="n">_</span> <span class="nv">node</span><span class="p">:</span> <span class="kt">LayoutNode</span><span class="p">,</span> <span class="n">at</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13GraphicsTools10LayoutNode11insertChildFzTS0_6beforeS0__T_"></a>
+                    <a name="//apple_ref/swift/Method/insertChild(_:before:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13GraphicsTools10LayoutNode11insertChildFzTS0_6beforeS0__T_">insertChild(_:before:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Insert the given <code>node</code> before another <code>node</code>.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code>NodeError.insertionError</code> if the other <code>node</code> is not contained herein.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">insertChild</span><span class="p">(</span><span class="n">_</span> <span class="nv">node</span><span class="p">:</span> <span class="kt">LayoutNode</span><span class="p">,</span> <span class="n">before</span> <span class="nv">other</span><span class="p">:</span> <span class="kt">LayoutNode</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13GraphicsTools10LayoutNode11insertChildFzTS0_5afterS0__T_"></a>
+                    <a name="//apple_ref/swift/Method/insertChild(_:after:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13GraphicsTools10LayoutNode11insertChildFzTS0_5afterS0__T_">insertChild(_:after:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Insert the given <code>node</code> after another <code>node</code>.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code>NodeError.insertionError</code> if the other <code>node</code> is not contained herein.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">insertChild</span><span class="p">(</span><span class="n">_</span> <span class="nv">node</span><span class="p">:</span> <span class="kt">LayoutNode</span><span class="p">,</span> <span class="n">after</span> <span class="nv">other</span><span class="p">:</span> <span class="kt">LayoutNode</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Remove%20nodes"></a>
+                <a name="//apple_ref/swift/Section/Remove nodes" class="dashAnchor"></a>
+                <a href="#/Remove%20nodes">
+                  <h3 class="section-name">Remove nodes</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13GraphicsTools10LayoutNode11removeChildFzS0_T_"></a>
+                    <a name="//apple_ref/swift/Method/removeChild(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13GraphicsTools10LayoutNode11removeChildFzS0_T_">removeChild(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove a given child <code>node</code>.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code>NodeError.removalError</code> if the given <code>node</code> is not contained herein.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeChild</span><span class="p">(</span><span class="n">_</span> <span class="nv">node</span><span class="p">:</span> <span class="kt">LayoutNode</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13GraphicsTools10LayoutNode11removeChildFzT2atSi_T_"></a>
+                    <a name="//apple_ref/swift/Method/removeChild(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13GraphicsTools10LayoutNode11removeChildFzT2atSi_T_">removeChild(at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove the child node at a given <code>index</code>.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code>NodeError.removalError</code> if no node exists at the given <code>index</code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeChild</span><span class="p">(</span><span class="n">at</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-01-28)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

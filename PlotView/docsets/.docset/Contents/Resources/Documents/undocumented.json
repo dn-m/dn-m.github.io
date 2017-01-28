@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PlotView/PlotView/LinesPosition.swift",
+      "line": 16,
+      "symbol": "LinesPosition.State.start",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/PlotView/PlotView/LinesPosition.swift",
+      "line": 16,
+      "symbol": "LinesPosition.State.stop",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/BEAN/dn-m/Frameworks/PlotView"
+}
