@@ -1,0 +1,26 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/Structure/Sources/Algebra/AlgebraAdapters.swift",
+      "line": 40,
+      "symbol": "Collection.nonEmptySum",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/Structure/Sources/Algebra/AlgebraAdapters.swift",
+      "line": 48,
+      "symbol": "Collection.nonEmptyProduct",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/BEAN/dn-m/Frameworks/Structure/Sources/Algebra/Invertible.swift",
+      "line": 10,
+      "symbol": "Invertible.inverse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/BEAN/dn-m/Frameworks/Structure"
+}
