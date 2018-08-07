@@ -1,40 +1,47 @@
 {
   "warnings": [
     {
-      "file": "/Users/BEAN/dn-m/Frameworks/Math/Sources/Math/Quadratic.swift",
+      "file": "/Users/travis/build/dn-m/Math/Sources/Math/Quadratic.swift",
       "line": 11,
       "symbol": "quadratic(_:_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/BEAN/dn-m/Frameworks/Math/Sources/Math/Rational.swift",
+      "file": "/Users/travis/build/dn-m/Math/Sources/Math/Rational.swift",
       "line": 36,
       "symbol": "Rational.isReduced",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/BEAN/dn-m/Frameworks/Math/Sources/Math/Rational.swift",
+      "file": "/Users/travis/build/dn-m/Math/Sources/Math/Rational.swift",
       "line": 73,
       "symbol": "Rational.zero",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/BEAN/dn-m/Frameworks/Math/Sources/Math/Rational.swift",
+      "file": "/Users/travis/build/dn-m/Math/Sources/Math/Rational.swift",
       "line": 82,
       "symbol": "Rational.one",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/BEAN/dn-m/Frameworks/Math/Sources/Math/Rational.swift",
+      "file": "/Users/travis/build/dn-m/Math/Sources/Math/Rational.swift",
       "line": 138,
       "symbol": "Rational.reciprocal",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Math/Sources/Math/Rational.swift",
+      "line": 142,
+      "symbol": "Rational.magnitude",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/BEAN/dn-m/Frameworks/Math"
+  "source_directory": "/Users/travis/build/dn-m/Math"
 }
