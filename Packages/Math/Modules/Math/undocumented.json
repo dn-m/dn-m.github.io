@@ -8,41 +8,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Math/Sources/Math/RandomProducing.swift",
-      "line": 11,
-      "symbol": "RandomProducing",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Math/Sources/Math/RandomProducing.swift",
-      "line": 13,
-      "symbol": "RandomProducing.random(min:max:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Math/Sources/Math/RandomProducing.swift",
-      "line": 20,
-      "symbol": "Int.random(min:max:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Math/Sources/Math/RandomProducing.swift",
-      "line": 29,
-      "symbol": "Float.random(min:max:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Math/Sources/Math/RandomProducing.swift",
-      "line": 38,
-      "symbol": "Double.random(min:max:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/Math/Sources/Math/Rational.swift",
       "line": 36,
       "symbol": "Rational.isReduced",

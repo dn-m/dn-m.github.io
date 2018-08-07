@@ -20,7 +20,7 @@
         <a class="header-link" href="index.html">
            Docs
         </a>
-         (91% documented)
+         (95% documented)
       </p>
     
     
@@ -176,22 +176,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Other Protocols.html">Other Protocols</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols/RandomProducing.html">RandomProducing</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Other Structs.html">Other Structures</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs/Vector2.html">Vector2</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -208,51 +192,6 @@
           <div class="section-content">
             <div class="task-group">
               <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:4Math6closerxx2to_x1ax1bts10ComparableRzs13SignedNumericRzlF"></a>
-                    <a name="//apple_ref/swift/Function/closer(to:a:b:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math6closerxx2to_x1ax1bts10ComparableRzs13SignedNumericRzlF">closer(to:a:b:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Get the closer of two values to a target value.</p>
-
-<blockquote>
-<p><code>closer(to: 11, a: 12, b: 3) -&gt; 12</code></p>
-</blockquote>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    If the distances between both values and the target value are equivalent, the first
-value (a) is returned.
-
-</div>
-
-<blockquote>
-<p><code>closer(to: 6, a: 4, b: 8) -&gt; 4</code></p>
-</blockquote>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">closer</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">SignedNumeric</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>Value closer to target value</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -509,6 +448,55 @@ regression.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>Function that will calculate the y-value for the given x-value on the regression.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Math6closerxx2to_x1ax1bts10ComparableRzs13SignedNumericRzlF"></a>
+                    <a name="//apple_ref/swift/Function/closer(to:a:b:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math6closerxx2to_x1ax1bts10ComparableRzs13SignedNumericRzlF">closer(to:a:b:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the closer of two values to a target value.</p>
+
+<blockquote>
+<p><code>closer(to: 11, a: 12, b: 3) -&gt; 12</code></p>
+</blockquote>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    If the distances between both values and the target value are equivalent, the first
+value (a) is returned.
+
+</div>
+
+<blockquote>
+<p><code>closer(to: 6, a: 4, b: 8) -&gt; 4</code></p>
+</blockquote>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">closer</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">SignedNumeric</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Value closer to target value</p>
                       </div>
                     </section>
                   </div>
