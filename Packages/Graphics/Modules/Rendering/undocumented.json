@@ -30,13 +30,6 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": null,
-      "symbol": "Color.Components",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
       "line": 12,
       "symbol": "Color.Components",
       "symbol_kind": "source.lang.swift.decl.struct",
@@ -121,1029 +114,1029 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 95,
+      "line": 70,
       "symbol": "Color.aliceBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 96,
+      "line": 71,
       "symbol": "Color.antiqueWhite",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 97,
+      "line": 72,
       "symbol": "Color.aqua",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 98,
+      "line": 73,
       "symbol": "Color.aquamarine",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 99,
+      "line": 74,
       "symbol": "Color.azure",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 100,
+      "line": 75,
       "symbol": "Color.beige",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 101,
+      "line": 76,
       "symbol": "Color.bisque",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 102,
+      "line": 77,
       "symbol": "Color.black",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 103,
+      "line": 78,
       "symbol": "Color.blanchedAlmond",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 104,
+      "line": 79,
       "symbol": "Color.blue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 105,
+      "line": 80,
       "symbol": "Color.blueViolet",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 106,
+      "line": 81,
       "symbol": "Color.brown",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 107,
+      "line": 82,
       "symbol": "Color.burlyWood",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 108,
+      "line": 83,
       "symbol": "Color.cadetBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 109,
+      "line": 84,
       "symbol": "Color.chartreuse",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 110,
+      "line": 85,
       "symbol": "Color.chocolate",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 111,
+      "line": 86,
       "symbol": "Color.coral",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 112,
+      "line": 87,
       "symbol": "Color.cornflowerBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 113,
+      "line": 88,
       "symbol": "Color.cornsilk",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 114,
+      "line": 89,
       "symbol": "Color.crimson",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 115,
+      "line": 90,
       "symbol": "Color.cyan",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 116,
+      "line": 91,
       "symbol": "Color.darkBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 117,
+      "line": 92,
       "symbol": "Color.darkCyan",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 118,
+      "line": 93,
       "symbol": "Color.darkGoldenRod",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 119,
+      "line": 94,
       "symbol": "Color.darkGray",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 120,
+      "line": 95,
       "symbol": "Color.darkGrey",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 121,
+      "line": 96,
       "symbol": "Color.darkGreen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 122,
+      "line": 97,
       "symbol": "Color.darkKhaki",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 123,
+      "line": 98,
       "symbol": "Color.darkMagenta",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 124,
+      "line": 99,
       "symbol": "Color.darkOliveGreen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 125,
+      "line": 100,
       "symbol": "Color.darkOrange",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 126,
+      "line": 101,
       "symbol": "Color.darkOrchid",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 127,
+      "line": 102,
       "symbol": "Color.darkRed",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 128,
+      "line": 103,
       "symbol": "Color.darkSalmon",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 129,
+      "line": 104,
       "symbol": "Color.darkSeaGreen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 130,
+      "line": 105,
       "symbol": "Color.darkSlateBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 131,
+      "line": 106,
       "symbol": "Color.darkSlateGray",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 132,
+      "line": 107,
       "symbol": "Color.darkSlateGrey",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 133,
+      "line": 108,
       "symbol": "Color.darkTurquoise",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 134,
+      "line": 109,
       "symbol": "Color.darkViolet",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 135,
+      "line": 110,
       "symbol": "Color.deepPink",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 136,
+      "line": 111,
       "symbol": "Color.deepSkyBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 137,
+      "line": 112,
       "symbol": "Color.dimGray",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 138,
+      "line": 113,
       "symbol": "Color.dimGrey",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 139,
+      "line": 114,
       "symbol": "Color.dodgerBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 140,
+      "line": 115,
       "symbol": "Color.fireBrick",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 141,
+      "line": 116,
       "symbol": "Color.floralWhite",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 142,
+      "line": 117,
       "symbol": "Color.forestGreen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 143,
+      "line": 118,
       "symbol": "Color.fuchsia",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 144,
+      "line": 119,
       "symbol": "Color.gainsboro",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 145,
+      "line": 120,
       "symbol": "Color.ghostWhite",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 146,
+      "line": 121,
       "symbol": "Color.gold",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 147,
+      "line": 122,
       "symbol": "Color.goldenRod",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 148,
+      "line": 123,
       "symbol": "Color.gray",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 149,
+      "line": 124,
       "symbol": "Color.grey",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 150,
+      "line": 125,
       "symbol": "Color.green",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 151,
+      "line": 126,
       "symbol": "Color.greenYellow",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 152,
+      "line": 127,
       "symbol": "Color.honeyDew",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 153,
+      "line": 128,
       "symbol": "Color.hotPink",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 154,
+      "line": 129,
       "symbol": "Color.indianRed",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 155,
+      "line": 130,
       "symbol": "Color.indigo",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 156,
+      "line": 131,
       "symbol": "Color.ivory",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 157,
+      "line": 132,
       "symbol": "Color.khaki",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 158,
+      "line": 133,
       "symbol": "Color.lavender",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 159,
+      "line": 134,
       "symbol": "Color.lavenderBlush",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 160,
+      "line": 135,
       "symbol": "Color.lawnGreen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 161,
+      "line": 136,
       "symbol": "Color.lemonChiffon",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 162,
+      "line": 137,
       "symbol": "Color.lightBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 163,
+      "line": 138,
       "symbol": "Color.lightCoral",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 164,
+      "line": 139,
       "symbol": "Color.lightCyan",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 165,
+      "line": 140,
       "symbol": "Color.lightGoldenRodYellow",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 166,
+      "line": 141,
       "symbol": "Color.lightGray",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 167,
+      "line": 142,
       "symbol": "Color.lightGrey",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 168,
+      "line": 143,
       "symbol": "Color.lightGreen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 169,
+      "line": 144,
       "symbol": "Color.lightPink",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 170,
+      "line": 145,
       "symbol": "Color.lightSalmon",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 171,
+      "line": 146,
       "symbol": "Color.lightSeaGreen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 172,
+      "line": 147,
       "symbol": "Color.lightSkyBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 173,
+      "line": 148,
       "symbol": "Color.lightSlateGray",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 174,
+      "line": 149,
       "symbol": "Color.lightSlateGrey",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 175,
+      "line": 150,
       "symbol": "Color.lightSteelBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 176,
+      "line": 151,
       "symbol": "Color.lightYellow",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 177,
+      "line": 152,
       "symbol": "Color.lime",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 178,
+      "line": 153,
       "symbol": "Color.limeGreen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 179,
+      "line": 154,
       "symbol": "Color.linen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 180,
+      "line": 155,
       "symbol": "Color.magenta",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 181,
+      "line": 156,
       "symbol": "Color.maroon",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 182,
+      "line": 157,
       "symbol": "Color.mediumAquaMarine",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 183,
+      "line": 158,
       "symbol": "Color.mediumBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 184,
+      "line": 159,
       "symbol": "Color.mediumOrchid",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 185,
+      "line": 160,
       "symbol": "Color.mediumPurple",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 186,
+      "line": 161,
       "symbol": "Color.mediumSeaGreen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 187,
+      "line": 162,
       "symbol": "Color.mediumSlateBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 188,
+      "line": 163,
       "symbol": "Color.mediumSpringGreen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 189,
+      "line": 164,
       "symbol": "Color.mediumTurquoise",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 190,
+      "line": 165,
       "symbol": "Color.mediumVioletRed",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 191,
+      "line": 166,
       "symbol": "Color.midnightBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 192,
+      "line": 167,
       "symbol": "Color.mintCream",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 193,
+      "line": 168,
       "symbol": "Color.mistyRose",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 194,
+      "line": 169,
       "symbol": "Color.moccasin",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 195,
+      "line": 170,
       "symbol": "Color.navajoWhite",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 196,
+      "line": 171,
       "symbol": "Color.navy",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 197,
+      "line": 172,
       "symbol": "Color.oldLace",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 198,
+      "line": 173,
       "symbol": "Color.olive",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 199,
+      "line": 174,
       "symbol": "Color.oliveDrab",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 200,
+      "line": 175,
       "symbol": "Color.orange",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 201,
+      "line": 176,
       "symbol": "Color.orangeRed",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 202,
+      "line": 177,
       "symbol": "Color.orchid",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 203,
+      "line": 178,
       "symbol": "Color.paleGoldenRod",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 204,
+      "line": 179,
       "symbol": "Color.paleGreen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 205,
+      "line": 180,
       "symbol": "Color.paleTurquoise",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 206,
+      "line": 181,
       "symbol": "Color.paleVioletRed",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 207,
+      "line": 182,
       "symbol": "Color.papayaWhip",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 208,
+      "line": 183,
       "symbol": "Color.peachPuff",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 209,
+      "line": 184,
       "symbol": "Color.peru",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 210,
+      "line": 185,
       "symbol": "Color.pink",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 211,
+      "line": 186,
       "symbol": "Color.plum",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 212,
+      "line": 187,
       "symbol": "Color.powderBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 213,
+      "line": 188,
       "symbol": "Color.purple",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 214,
+      "line": 189,
       "symbol": "Color.red",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 215,
+      "line": 190,
       "symbol": "Color.rosyBrown",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 216,
+      "line": 191,
       "symbol": "Color.royalBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 217,
+      "line": 192,
       "symbol": "Color.saddleBrown",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 218,
+      "line": 193,
       "symbol": "Color.salmon",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 219,
+      "line": 194,
       "symbol": "Color.sandyBrown",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 220,
+      "line": 195,
       "symbol": "Color.seaGreen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 221,
+      "line": 196,
       "symbol": "Color.seaShell",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 222,
+      "line": 197,
       "symbol": "Color.sienna",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 223,
+      "line": 198,
       "symbol": "Color.silver",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 224,
+      "line": 199,
       "symbol": "Color.skyBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 225,
+      "line": 200,
       "symbol": "Color.slateBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 226,
+      "line": 201,
       "symbol": "Color.slateGray",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 227,
+      "line": 202,
       "symbol": "Color.slateGrey",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 228,
+      "line": 203,
       "symbol": "Color.snow",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 229,
+      "line": 204,
       "symbol": "Color.springGreen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 230,
+      "line": 205,
       "symbol": "Color.steelBlue",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 231,
+      "line": 206,
       "symbol": "Color.tan",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 232,
+      "line": 207,
       "symbol": "Color.teal",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 233,
+      "line": 208,
       "symbol": "Color.thistle",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 234,
+      "line": 209,
       "symbol": "Color.tomato",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 235,
+      "line": 210,
       "symbol": "Color.turquoise",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 236,
+      "line": 211,
       "symbol": "Color.violet",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 237,
+      "line": 212,
       "symbol": "Color.wheat",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 238,
+      "line": 213,
       "symbol": "Color.white",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 239,
+      "line": 214,
       "symbol": "Color.whiteSmoke",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 240,
+      "line": 215,
       "symbol": "Color.yellow",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Color.swift",
-      "line": 241,
+      "line": 216,
       "symbol": "Color.yellowGreen",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
@@ -1171,7 +1164,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Composite.swift",
-      "line": 62,
+      "line": 60,
       "symbol": "Tree.translated(by:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
