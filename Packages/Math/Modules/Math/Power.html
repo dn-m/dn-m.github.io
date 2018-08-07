@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Other Functions  Reference</title>
+    <title>Power  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Other Functions" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Section/Power" class="dashAnchor"></a>
 
-    <a title="Other Functions  Reference"></a>
+    <a title="Power  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -30,7 +30,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html"> Reference</a>
       <img class="carat" src="img/carat.png" />
-      Other Functions  Reference
+      Power  Reference
     </p>
 
     <div class="content-wrapper">
@@ -198,9 +198,8 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Other Functions</h1>
-            <p>The following functions are available globally.</p>
-
+            <h1>Power</h1>
+            
           </div>
         </section>
 
@@ -211,9 +210,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:4Math6closerxx2to_x1ax1bts10ComparableRzs13SignedNumericRzlF"></a>
-                    <a name="//apple_ref/swift/Function/closer(to:a:b:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math6closerxx2to_x1ax1bts10ComparableRzs13SignedNumericRzlF">closer(to:a:b:)</a>
+                    <a name="/s:4Math14PowerGeneratorC"></a>
+                    <a name="//apple_ref/swift/Class/PowerGenerator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math14PowerGeneratorC">PowerGenerator</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -221,104 +220,17 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Get the closer of two values to a target value.</p>
+                        <p>Power-of-two Generator</p>
 
-<blockquote>
-<p><code>closer(to: 11, a: 12, b: 3) -&gt; 12</code></p>
-</blockquote>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    If the distances between both values and the target value are equivalent, the first
-value (a) is returned.
-
-</div>
-
-<blockquote>
-<p><code>closer(to: 6, a: 4, b: 8) -&gt; 4</code></p>
-</blockquote>
-
+                        <a href="Classes/PowerGenerator.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">closer</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">SignedNumeric</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PowerGenerator</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">IteratorProtocol</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">FixedWidthInteger</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>Value closer to target value</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:4Math7orderedx_xtx_xts10ComparableRzlF"></a>
-                    <a name="//apple_ref/swift/Function/ordered(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math7orderedx_xtx_xts10ComparableRzlF">ordered(_:_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    <p>If both values are equal, they are returned in the order in which they were given</p>
-
-</div>
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    <p>Move to <code>Structure/Algorithms</code>.</p>
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">ordered</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">T</span><span class="p">,</span> <span class="kt">T</span><span class="p">)</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Comparable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>2-tuple of two <code>Comparable</code> types, in order.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:4Math4meanxx_xts13FloatingPointRzlF"></a>
-                    <a name="//apple_ref/swift/Function/mean(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math4meanxx_xts13FloatingPointRzlF">mean(_:_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">mean</span><span class="o">&lt;</span><span class="kt">F</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">F</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">F</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">F</span> <span class="k">where</span> <span class="kt">F</span> <span class="p">:</span> <span class="kt">FloatingPoint</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The average to the two given values.</p>
                       </div>
                     </section>
                   </div>
@@ -330,9 +242,9 @@ value (a) is returned.
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:4Math7squaredSayxGACs13FloatingPointRzlF"></a>
-                    <a name="//apple_ref/swift/Function/squared(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math7squaredSayxGACs13FloatingPointRzlF">squared(_:)</a>
+                    <a name="/s:4Math13PowerSequenceC"></a>
+                    <a name="//apple_ref/swift/Class/PowerSequence" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math13PowerSequenceC">PowerSequence</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -340,29 +252,31 @@ value (a) is returned.
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Power-of-two Sequence.</p>
+
+                        <a href="Classes/PowerSequence.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">squared</span><span class="o">&lt;</span><span class="kt">F</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt">F</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">F</span><span class="p">]</span> <span class="k">where</span> <span class="kt">F</span> <span class="p">:</span> <span class="kt">FloatingPoint</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PowerSequence</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">Sequence</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">FixedWidthInteger</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>All given values risen to the power of two.</p>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:4Math1moiSayxGAC_ACts13FloatingPointRzlF"></a>
-                    <a name="//apple_ref/swift/Function/*(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math1moiSayxGAC_ACts13FloatingPointRzlF">*(_:_:)</a>
+                    <a name="/s:4Math17closestPowerOfTwoSiSgSi2to_tF"></a>
+                    <a name="//apple_ref/swift/Function/closestPowerOfTwo(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math17closestPowerOfTwoSiSgSi2to_tF">closestPowerOfTwo(to:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -370,115 +284,31 @@ value (a) is returned.
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="o">*&lt;</span><span class="kt">F</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">F</span><span class="p">],</span> <span class="nv">rhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">F</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">F</span><span class="p">]</span> <span class="k">where</span> <span class="kt">F</span> <span class="p">:</span> <span class="kt">FloatingPoint</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>All values of <code>lhs</code> multiplied by the corresponding value in <code>rhs</code>.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:4Math7squaredSayxGACs13BinaryIntegerRzlF"></a>
-                    <a name="//apple_ref/swift/Function/squared(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math7squaredSayxGACs13BinaryIntegerRzlF">squared(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">squared</span><span class="o">&lt;</span><span class="kt">I</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt">I</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">I</span><span class="p">]</span> <span class="k">where</span> <span class="kt">I</span> <span class="p">:</span> <span class="kt">BinaryInteger</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>All given values risen to the power of two.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:4Math1moiSayxGAC_ACts13BinaryIntegerRzlF"></a>
-                    <a name="//apple_ref/swift/Function/*(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math1moiSayxGAC_ACts13BinaryIntegerRzlF">*(_:_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="o">*&lt;</span><span class="kt">I</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">I</span><span class="p">],</span> <span class="nv">rhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">I</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">I</span><span class="p">]</span> <span class="k">where</span> <span class="kt">I</span> <span class="p">:</span> <span class="kt">BinaryInteger</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>All values of <code>lhs</code> multiplied by the corresponding value in <code>rhs</code>.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:4Math16linearRegressionS2fcSaySfG_ACtF"></a>
-                    <a name="//apple_ref/swift/Function/linearRegression(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math16linearRegressionS2fcSaySfG_ACtF">linearRegression(_:_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <div class="aside aside-note">
+                        <blockquote>
+<p><code>closestPowerOfTwo(to: 13) -&gt; 16</code></p>
+</blockquote>
+<div class="aside aside-note">
     <p class="aside-title">Note</p>
-    <p>Modified from: <a href="https://github.com/raywenderlich/swift-algorithm-club/tree/master/Linear%20Regression">Ray Wenderlich Swift Algorithm Club</a></p>
+    If two values are equidistant from the target value, the lesser value is returned.
 
 </div>
 
+<blockquote>
+<p><code>closestPowerOfTwo(to: 12) -&gt; 8 (not 16)</code></p>
+</blockquote>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">linearRegression</span><span class="p">(</span><span class="n">_</span> <span class="nv">xs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Float</span><span class="p">],</span> <span class="n">_</span> <span class="nv">ys</span><span class="p">:</span> <span class="p">[</span><span class="kt">Float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Float</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">closestPowerOfTwo</span><span class="p">(</span><span class="n">to</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Function that will calculate the y-value for the given x-value on the
-regression.</p>
+                        <p>Power-of-two value closest to target value</p>
                       </div>
                     </section>
                   </div>
@@ -486,9 +316,9 @@ regression.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:4Math16linearRegressionS2fcs10DictionaryVyS2fGF"></a>
-                    <a name="//apple_ref/swift/Function/linearRegression(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math16linearRegressionS2fcs10DictionaryVyS2fGF">linearRegression(_:)</a>
+                    <a name="/s:4Math17closestPowerOfTwoSiSgSi5under_tF"></a>
+                    <a name="//apple_ref/swift/Function/closestPowerOfTwo(under:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math17closestPowerOfTwoSiSgSi5under_tF">closestPowerOfTwo(under:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -502,13 +332,116 @@ regression.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">linearRegression</span><span class="p">(</span><span class="n">_</span> <span class="nv">dictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">Float</span> <span class="p">:</span> <span class="kt">Float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">closestPowerOfTwo</span><span class="p">(</span><span class="n">under</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Function that will calculate the y-value for the given x-value on the regression.</p>
+                        <p>Power-of-two value closest to and less than target value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Math17closestPowerOfTwoSiSgSi11coefficient_Si2totF"></a>
+                    <a name="//apple_ref/swift/Function/closestPowerOfTwo(coefficient:to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math17closestPowerOfTwoSiSgSi11coefficient_Si2totF">closestPowerOfTwo(coefficient:to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <blockquote>
+<p><code>closestPowerOfTwo(coefficient: 3, to: 22) -&gt; 24</code></p>
+</blockquote>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    If two values are equidistant from the target value, the lesser value is returned.
+
+</div>
+
+<blockquote>
+<p><code>closestPowerOfTwo(coefficient: 3, to: 18) -&gt; 12 (not 24)</code></p>
+</blockquote>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">closestPowerOfTwo</span><span class="p">(</span><span class="nv">coefficient</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">to</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>coefficient</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Coefficient of exponential expression</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Value to check for closest power-of-two</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Power-of-two value (with coefficient) closest to target value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Math17closestPowerOfTwoSiSgSi11coefficient_Si5undertF"></a>
+                    <a name="//apple_ref/swift/Function/closestPowerOfTwo(coefficient:under:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math17closestPowerOfTwoSiSgSi11coefficient_Si5undertF">closestPowerOfTwo(coefficient:under:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">closestPowerOfTwo</span><span class="p">(</span><span class="nv">coefficient</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">under</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Power-of-two (with coefficient) closest to and less than target value</p>
                       </div>
                     </section>
                   </div>

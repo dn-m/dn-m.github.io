@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>  Reference</title>
+    <title>Bitwise  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -11,8 +11,9 @@
   </head>
   <body>
 
+    <a name="//apple_ref/swift/Section/Bitwise" class="dashAnchor"></a>
 
-    <a title="  Reference"></a>
+    <a title="Bitwise  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -29,7 +30,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html"> Reference</a>
       <img class="carat" src="img/carat.png" />
-        Reference
+      Bitwise  Reference
     </p>
 
     <div class="content-wrapper">
@@ -197,16 +198,132 @@
 
         <section class="section">
           <div class="section-content">
+            <h1>Bitwise</h1>
             
-            <h1 id='math' class='heading'>Math</h1>
-
-<p><a href="https://travis-ci.org/dn-m/Math"><img src="https://travis-ci.org/dn-m/Math.svg?branch=master" alt="Build Status"></a></p>
-
-<p>Helpful mathematical tools for music and graphics</p>
-
           </div>
         </section>
 
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Math18countTrailingZerosS2iF"></a>
+                    <a name="//apple_ref/swift/Function/countTrailingZeros(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math18countTrailingZerosS2iF">countTrailingZeros(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Count Trailing Zeros (ctz) counts the number of zero bits succeeding the least
+significant one bit. For example, the ctz of 0x00000F00 is 8, and the ctz of
+0x80000000 is 31. This also counts the exponent of the <code>2</code> factor in the prime
+factorization of a positive number.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">countTrailingZeros</span><span class="p">(</span><span class="n">_</span> <span class="nv">n</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Math17countLeadingZerosS2iF"></a>
+                    <a name="//apple_ref/swift/Function/countLeadingZeros(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math17countLeadingZerosS2iF">countLeadingZeros(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Count Leading Zeros (clz) counts the number of zero bits preceding the most
+significant one bit. For example, the clz of 0x00F00000 is 8, and the clz of
+0x00000001 is 31.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">countLeadingZeros</span><span class="p">(</span><span class="n">_</span> <span class="nv">n</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Math3gggoiS2i_SitF"></a>
+                    <a name="//apple_ref/swift/Function/&gt;&gt;&gt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math3gggoiS2i_SitF">&gt;&gt;&gt;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logical right shift.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="o">&gt;&gt;&gt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Math4gggeoiySiz_SitF"></a>
+                    <a name="//apple_ref/swift/Function/&gt;&gt;&gt;=(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math4gggeoiySiz_SitF">&gt;&gt;&gt;=(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logical right shift assignment.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="o">&gt;&gt;&gt;=</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
       </article>
     </div>
