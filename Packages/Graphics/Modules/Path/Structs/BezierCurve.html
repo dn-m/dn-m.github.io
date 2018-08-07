@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BezierCurve Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/BezierCurve" class="dashAnchor"></a>
+
+    <a title="BezierCurve Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (62% documented)
+      </p>
+    
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      BezierCurve Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PathElement.html">PathElement</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Circle.html">Circle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Ellipse.html">Ellipse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Line.html">Line</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Line/Segment.html">– Segment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Polyline.html">Polyline</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Rectangle.html">Rectangle</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:4Path9quadratics3SetVySdGSd_S2dtF">quadratic(_:_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AllowingAllPathElements.html">AllowingAllPathElements</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AllowingBuild.html">AllowingBuild</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AllowingMoveTo.html">AllowingMoveTo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PathRepresentable.html">PathRepresentable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BezierCurve.html">BezierCurve</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BezierCurve/Order.html">– Order</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Path.html">Path</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>BezierCurve</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BezierCurve</span></code></pre>
+
+                </div>
+              </div>
+            <p>Model of a Bézier curve.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Nested%20Types"></a>
+                <a name="//apple_ref/swift/Section/Nested Types" class="dashAnchor"></a>
+                <a href="#/Nested%20Types">
+                  <h3 class="section-name">Nested Types</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV5OrderO"></a>
+                    <a name="//apple_ref/swift/Enum/Order" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV5OrderO">Order</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Order of <code><a href="../Structs/BezierCurve.html">BezierCurve</a></code>.</p>
+
+                        <a href="../Structs/BezierCurve/Order.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Order</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV22axisAlignedBoundingBoxXev"></a>
+                    <a name="//apple_ref/swift/Property/axisAlignedBoundingBox" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV22axisAlignedBoundingBoxXev">axisAlignedBoundingBox</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    Consider making <code>func</code> with <code>accuracy</code> parameter.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">axisAlignedBoundingBox</span><span class="p">:</span> <span class="kt">Rectangle</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV5orderAC5OrderOv"></a>
+                    <a name="//apple_ref/swift/Property/order" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV5orderAC5OrderOv">order</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Order of <code>BezierCurve</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">order</span><span class="p">:</span> <span class="kt"><a href="../Structs/BezierCurve/Order.html">Order</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV5startXev"></a>
+                    <a name="//apple_ref/swift/Property/start" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV5startXev">start</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start point.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">start</span><span class="p">:</span> <span class="kt">Point</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV3endXev"></a>
+                    <a name="//apple_ref/swift/Property/end" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV3endXev">end</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>End point.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">end</span><span class="p">:</span> <span class="kt">Point</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV6lengthSdv"></a>
+                    <a name="//apple_ref/swift/Property/length" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV6lengthSdv">length</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Arc length of <code>BezierCurve</code>.</p>
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    Add customizability to accuracy.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV6pointsXev"></a>
+                    <a name="//apple_ref/swift/Property/points" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV6pointsXev">points</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">points</span><span class="p">:</span> <span class="p">[</span><span class="kt">Point</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveVXeXecfc"></a>
+                    <a name="//apple_ref/swift/Method/init(start:end:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveVXeXecfc">init(start:end:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a linear <code>BezierCurve</code> with the given <code><a href="../Structs/BezierCurve.html#/s:4Path11BezierCurveV5startXev">start</a></code> and <code><a href="../Structs/BezierCurve.html#/s:4Path11BezierCurveV3endXev">end</a></code> points.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Point</span><span class="p">,</span> <span class="nv">end</span><span class="p">:</span> <span class="kt">Point</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveVXeXecfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveVXeXecfc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a linear <code>BezierCurve</code> with the given <code>line</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Line</span><span class="o">.</span><span class="kt">Segment</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveVXeXecfc"></a>
+                    <a name="//apple_ref/swift/Method/init(start:control:end:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveVXeXecfc">init(start:control:end:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a quadratic <code>BezierCurve</code> with the given <code><a href="../Structs/BezierCurve.html#/s:4Path11BezierCurveV5startXev">start</a></code>, <code>control</code> and <code><a href="../Structs/BezierCurve.html#/s:4Path11BezierCurveV3endXev">end</a></code> points.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Point</span><span class="p">,</span> <span class="nv">control</span><span class="p">:</span> <span class="kt">Point</span><span class="p">,</span> <span class="nv">end</span><span class="p">:</span> <span class="kt">Point</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveVXeXecfc"></a>
+                    <a name="//apple_ref/swift/Method/init(start:control1:control2:end:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveVXeXecfc">init(start:control1:control2:end:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a cubic <code>BezierCurve</code> with the given <code><a href="../Structs/BezierCurve.html#/s:4Path11BezierCurveV5startXev">start</a></code>, control and <code><a href="../Structs/BezierCurve.html#/s:4Path11BezierCurveV3endXev">end</a></code> points.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Point</span><span class="p">,</span> <span class="nv">control1</span><span class="p">:</span> <span class="kt">Point</span><span class="p">,</span> <span class="nv">control2</span><span class="p">:</span> <span class="kt">Point</span><span class="p">,</span> <span class="nv">end</span><span class="p">:</span> <span class="kt">Point</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Subscript"></a>
+                <a name="//apple_ref/swift/Section/Subscript" class="dashAnchor"></a>
+                <a href="#/Subscript">
+                  <h3 class="section-name">Subscript</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV9subscriptXei"></a>
+                    <a name="//apple_ref/swift/Method/subscript(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV9subscriptXei">subscript(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="nv">t</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Point</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>Point</code> at the given <code>t</code> value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV2tss3SetVySdGSd1x_tF"></a>
+                    <a name="//apple_ref/swift/Method/ts(x:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV2tss3SetVySdGSd1x_tF">ts(x:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">ts</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Double</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>t</code> values for the given <code>x</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV2tss3SetVySdGSd1y_tF"></a>
+                    <a name="//apple_ref/swift/Method/ts(y:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV2tss3SetVySdGSd1y_tF">ts(y:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">ts</span><span class="p">(</span><span class="nv">y</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Double</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>t</code> values for the given <code>y</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV2yss3SetVySdGSd1x_tF"></a>
+                    <a name="//apple_ref/swift/Method/ys(x:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV2yss3SetVySdGSd1x_tF">ys(x:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">ys</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Double</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Vertical positions for the given <code>x</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV2xss3SetVySdGSd1y_tF"></a>
+                    <a name="//apple_ref/swift/Method/xs(y:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV2xss3SetVySdGSd1y_tF">xs(y:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">xs</span><span class="p">(</span><span class="nv">y</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Double</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Horizontal positions for the given <code>y</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV10translatedXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/translated(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV10translatedXeXeF">translated(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">translated</span><span class="p">(</span><span class="n">by</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">Point</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">BezierCurve</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>BezierCurve</code> translated by the given <code>point</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV12translatedByACSd1x_Sd1ytF"></a>
+                    <a name="//apple_ref/swift/Method/translatedBy(x:y:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV12translatedByACSd1x_Sd1ytF">translatedBy(x:y:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">translatedBy</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">BezierCurve</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>BezierCurve</code> translated by the given <code>x</code> and <code>y</code> values.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV5splitAC_ACtSd1t_tF"></a>
+                    <a name="//apple_ref/swift/Method/split(t:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV5splitAC_ACtSd1t_tF">split(t:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">split</span><span class="p">(</span><span class="nv">t</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">BezierCurve</span><span class="p">,</span> <span class="kt">BezierCurve</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Two <code>BezierCurve</code> values of the same order as <code>self</code>, split at the given <code>t</code>
+value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV10simplifiedXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/simplified(segmentCount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV10simplifiedXeXeF">simplified(segmentCount:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">simplified</span><span class="p">(</span><span class="nv">segmentCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Point</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of <code>Point</code> values.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV6scaledXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/scaled(by:from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV6scaledXeXeF">scaled(by:from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">scaled</span><span class="p">(</span><span class="n">by</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">from</span> <span class="nv">reference</span><span class="p">:</span> <span class="kt">Point</span> <span class="o">=</span> <span class="kt">Point</span><span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">BezierCurve</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>BezierCurve</code> which is scaled by the given <code>amount</code> from the given 
+<code>reference</code> point.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV7rotatedXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/rotated(by:around:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV7rotatedXeXeF">rotated(by:around:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rotated</span><span class="p">(</span><span class="n">by</span> <span class="nv">angle</span><span class="p">:</span> <span class="kt">Angle</span><span class="p">,</span> <span class="n">around</span> <span class="nv">reference</span><span class="p">:</span> <span class="kt">Point</span> <span class="o">=</span> <span class="kt">Point</span><span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">BezierCurve</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>BezierCurve</code> which is rotated by the given <code>angle</code> around the given
+<code>reference</code> point.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV5splitXeXeFZ"></a>
+                    <a name="//apple_ref/swift/Method/split(controlPoints:at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV5splitXeXeFZ">split(controlPoints:at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">split</span><span class="p">(</span><span class="nv">controlPoints</span><span class="p">:</span> <span class="p">[</span><span class="kt">Point</span><span class="p">],</span> <span class="n">at</span> <span class="nv">t</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">([</span><span class="kt">Point</span><span class="p">],</span> <span class="p">[</span><span class="kt">Point</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Splits an arbitrarily-highly-ordered at the given <code>t</code> value into two Bézier
+paths of the same order.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Equatable"></a>
+                <a name="//apple_ref/swift/Section/Equatable" class="dashAnchor"></a>
+                <a href="#/Equatable">
+                  <h3 class="section-name">Equatable</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Path11BezierCurveV2eeoiSbAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Path11BezierCurveV2eeoiSbAC_ACtFZ">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">BezierCurve</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">BezierCurve</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if both <code>BezierCurve</code> values are equivalent. Otherwise <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s23CustomStringConvertibleP11descriptionSSv"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s23CustomStringConvertibleP11descriptionSSv">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-07)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

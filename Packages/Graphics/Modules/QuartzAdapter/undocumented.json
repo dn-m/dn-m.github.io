@@ -1,0 +1,68 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/QuartzAdapter/CALayer+PDF.swift",
+      "line": 14,
+      "symbol": "CALayer.renderToPDF(at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/QuartzAdapter/Color+CGColor.swift",
+      "line": 14,
+      "symbol": "Color.cgColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/QuartzAdapter/Rectangle+CGRect.swift",
+      "line": 14,
+      "symbol": "Rectangle.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/QuartzAdapter/Rectangle+CGRect.swift",
+      "line": 21,
+      "symbol": "CGRect.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/QuartzAdapter/Size+CGSize.swift",
+      "line": 14,
+      "symbol": "Size.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/QuartzAdapter/Size+CGSize.swift",
+      "line": 21,
+      "symbol": "CGSize.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/QuartzAdapter/StyledPath+CAShapeLayer.swift",
+      "line": 14,
+      "symbol": "CAShapeLayer.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/QuartzAdapter/StyledPath.Composite+CALayer.swift",
+      "line": 14,
+      "symbol": "CALayer.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/QuartzAdapter/TestFrame.swift",
+      "line": 14,
+      "symbol": "CALayer.showTestBorder()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/dn-m/Graphics"
+}
