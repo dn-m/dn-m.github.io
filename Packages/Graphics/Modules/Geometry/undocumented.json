@@ -58,13 +58,6 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Line.Ray.swift",
-      "line": null,
-      "symbol": "Line.Ray",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Line.Ray.swift",
       "line": 13,
       "symbol": "Line.Ray",
       "symbol_kind": "source.lang.swift.decl.enum",

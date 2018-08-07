@@ -240,13 +240,6 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
-      "symbol": "Path",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
       "line": 13,
       "symbol": "Path",
       "symbol_kind": "source.lang.swift.decl.struct",
