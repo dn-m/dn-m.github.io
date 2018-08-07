@@ -1,0 +1,82 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Instrument.swift",
+      "line": 52,
+      "symbol": "Instrument.base",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
+      "line": 209,
+      "symbol": "Model.Builder.build()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.swift",
+      "line": 44,
+      "symbol": "Model.tempi",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.swift",
+      "line": 45,
+      "symbol": "Model.meters",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.swift",
+      "line": 49,
+      "symbol": "Model.init(values:performanceContexts:intervals:events:byLabel:meters:tempi:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/NamedAttribute.swift",
+      "line": 9,
+      "symbol": "NamedAttribute",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/NamedAttribute.swift",
+      "line": 11,
+      "symbol": "NamedAttribute.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/NamedAttribute.swift",
+      "line": 12,
+      "symbol": "NamedAttribute.attribute",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/NamedAttribute.swift",
+      "line": 14,
+      "symbol": "NamedAttribute.init(_:name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext.swift",
+      "line": 40,
+      "symbol": "PerformanceContext.Scope",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Performer.swift",
+      "line": 62,
+      "symbol": "Performer.base",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/dn-m/Music"
+}

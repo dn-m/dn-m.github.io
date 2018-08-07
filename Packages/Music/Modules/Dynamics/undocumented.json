@@ -1,0 +1,75 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic+Cluster.swift",
+      "line": 16,
+      "symbol": "Dynamic.Cluster.posterior",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic+Cluster.swift",
+      "line": 20,
+      "symbol": "Dynamic.Cluster.anterior",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic+Cluster.swift",
+      "line": 24,
+      "symbol": "Dynamic.Cluster.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic+Interpolation.swift",
+      "line": 11,
+      "symbol": "Dynamic.Interpolation",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic+Interpolation.swift",
+      "line": 13,
+      "symbol": "Dynamic.Interpolation.Direction",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic+Interpolation.swift",
+      "line": 14,
+      "symbol": "Dynamic.Interpolation.Direction.crescendo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic+Interpolation.swift",
+      "line": 15,
+      "symbol": "Dynamic.Interpolation.Direction.decrescendo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic+Interpolation.swift",
+      "line": 16,
+      "symbol": "Dynamic.Interpolation.Direction.none",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic+Interpolation.swift",
+      "line": 19,
+      "symbol": "Dynamic.Interpolation.direction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
+      "line": 33,
+      "symbol": "Dynamic.integerValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/dn-m/Music"
+}
