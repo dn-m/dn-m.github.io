@@ -1,20 +1,6 @@
 {
   "warnings": [
     {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/Algebra/AlgebraAdapters.swift",
-      "line": 40,
-      "symbol": "Collection.nonEmptySum",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/Algebra/AlgebraAdapters.swift",
-      "line": 48,
-      "symbol": "Collection.nonEmptyProduct",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/Structure/Sources/Algebra/Invertible.swift",
       "line": 10,
       "symbol": "Invertible.inverse",

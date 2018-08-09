@@ -107,21 +107,21 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/SortedDictionary.swift",
-      "line": 124,
+      "line": 126,
       "symbol": "SortedDictionary.min()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/SortedDictionary.swift",
-      "line": 129,
+      "line": 131,
       "symbol": "SortedDictionary.max()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/SortedDictionary.swift",
-      "line": 134,
+      "line": 136,
       "symbol": "SortedDictionary.sorted()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
