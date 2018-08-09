@@ -20,7 +20,7 @@
         <a class="header-link" href="index.html">
            Docs
         </a>
-         (95% documented)
+         (98% documented)
       </p>
     
     
@@ -96,12 +96,6 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Bitwise.html#/s:4Math17countLeadingZerosS2iF">countLeadingZeros(_:)</a>
               </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Bitwise.html#/s:4Math3gggoiS2i_SitF">&gt;&gt;&gt;(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Bitwise.html#/s:4Math4gggeoiySiz_SitF">&gt;&gt;&gt;=(_:_:)</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -110,31 +104,25 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Linear Regression.html#/s:4Math9quadratics3SetVyxGx_xxts13FloatingPointRzlF">quadratic(_:_:_:)</a>
               </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Linear Regression.html#/s:4Math5slopeSfs10DictionaryVyS2fGF">slope(_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Linear Regression.html#/s:4Math5slopeSfSaySfG_ACtF">slope(_:_:)</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="Other Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Extensions/BidirectionalCollection.html">BidirectionalCollection</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Extensions/BinaryFloatingPoint.html">BinaryFloatingPoint</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/BinaryInteger.html">BinaryInteger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/Collection.html">Collection</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/Double.html">Double</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/Float.html">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/FloatingPoint.html">FloatingPoint</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/Int.html">Int</a>
@@ -148,31 +136,19 @@
             <a class="nav-group-name-link" href="Other Functions.html">Other Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other Functions.html#/s:4Math1moiSayxGAC_ACts13BinaryIntegerRzlF">*(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other Functions.html#/s:4Math1moiSayxGAC_ACts13FloatingPointRzlF">*(_:_:)</a>
+                <a class="nav-group-task-link" href="Other Functions.html#/s:4Math1moiSay7ElementQzGx_q_ts8SequenceRzsAFR_s7NumericADRQACQy_ADRSr0_lF">*(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Other Functions.html#/s:4Math6closerxx2to_x1ax1bts10ComparableRzs13SignedNumericRzlF">closer(to:a:b:)</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other Functions.html#/s:4Math16linearRegressionS2fcs10DictionaryVyS2fGF">linearRegression(_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other Functions.html#/s:4Math16linearRegressionS2fcSaySfG_ACtF">linearRegression(_:_:)</a>
+                <a class="nav-group-task-link" href="Other Functions.html#/s:4Math16linearRegressionxxcs10DictionaryVyxxGs8HashableRzlF">linearRegression(_:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Other Functions.html#/s:4Math4meanxx_xts13FloatingPointRzlF">mean(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Other Functions.html#/s:4Math7orderedx_xtx_xts10ComparableRzlF">ordered(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other Functions.html#/s:4Math7squaredSayxGACs13BinaryIntegerRzlF">squared(_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other Functions.html#/s:4Math7squaredSayxGACs13FloatingPointRzlF">squared(_:)</a>
               </li>
             </ul>
           </li>
@@ -204,7 +180,22 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p><strong>Example Usage</strong></p>
+
+<p>For a given equation <code>ax^2 + bx + c</code>, you can plug <code>a</code>, <code>b</code>, and <code>c</code> into the quadratic
+equation.</p>
+
+<p>For the given equataion <code>2x^2 + x + 3</code>, you would call:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">results</span> <span class="o">=</span> <span class="nf">quadratic</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="c1">// =&gt; []</span>
+</code></pre>
+
+<p>In this case, there are no results.</p>
+
+<p>For the given equation <code>5x^2 + 6x + 1</code>, you would call:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">results</span> <span class="o">=</span> <span class="nf">quadratic</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1">// =&gt; [-1, -0.2]</span>
+</code></pre>
+
+<p>In this case, there are two results.</p>
 
                       </div>
                       <div class="declaration">
@@ -215,69 +206,9 @@
 
                         </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:4Math5slopeSfs10DictionaryVyS2fGF"></a>
-                    <a name="//apple_ref/swift/Function/slope(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math5slopeSfs10DictionaryVyS2fGF">slope(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">slope</span><span class="p">(</span><span class="n">_</span> <span class="nv">dictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">Float</span> <span class="p">:</span> <span class="kt">Float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
-
-                        </div>
-                      </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Slope of the linear regression.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:4Math5slopeSfSaySfG_ACtF"></a>
-                    <a name="//apple_ref/swift/Function/slope(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math5slopeSfSaySfG_ACtF">slope(_:_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">slope</span><span class="p">(</span><span class="n">_</span> <span class="nv">xs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Float</span><span class="p">],</span> <span class="n">_</span> <span class="nv">ys</span><span class="p">:</span> <span class="p">[</span><span class="kt">Float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>Slope of linear regression of given x-values and y-values.</p>
+                        <p>A set of 0, 1, or 2 results of the quadratic equation for the given coefficients.</p>
                       </div>
                     </section>
                   </div>
