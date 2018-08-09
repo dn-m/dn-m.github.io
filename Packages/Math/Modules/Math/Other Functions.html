@@ -283,7 +283,10 @@ reached.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <div class="aside aside-note">
+                        <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="nf">closer</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="nv">a</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="nv">b</span><span class="p">:</span> <span class="mi">3</span><span class="p">)</span> <span class="c1">// =&gt; 12</span>
+<span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="nf">closer</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="nv">a</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="nv">b</span><span class="p">:</span> <span class="mi">8</span><span class="p">)</span> <span class="c1">// =&gt; 4</span>
+</code></pre>
+<div class="aside aside-note">
     <p class="aside-title">Note</p>
     <p>If the distances between both values and the target value are equivalent, the first
 value (a) is returned.</p>
@@ -336,9 +339,6 @@ value (a) is returned.</p>
                               <td>
                                 <div>
                                   <p>First value to check proximity to target value</p>
-
-<p>let _ = closer(to: 11, a: 12, b: 3) // =&gt; 12
-let _ = closer(to: 6, a: 4, b: 8) // =&gt; 4</p>
                                 </div>
                               </td>
                             </tr>
