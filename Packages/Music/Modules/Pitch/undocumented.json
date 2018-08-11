@@ -72,44 +72,44 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Pitch.Class.swift",
-      "line": 13,
+      "line": null,
+      "symbol": "Pitch.Class",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Pitch.Class.swift",
+      "line": null,
+      "symbol": "Pitch.Class.Collection",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Pitch.Class.swift",
+      "line": 14,
       "symbol": "Pitch.Class",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Pitch.Class.swift",
-      "line": 52,
+      "line": 53,
       "symbol": "Pitch.Class.+(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Pitch.Class.swift",
-      "line": 56,
+      "line": 57,
       "symbol": "Pitch.Class.-(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Set+NoteNumberRepresentable.swift",
-      "line": 14,
-      "symbol": "Collection.intervals",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Set+NoteNumberRepresentable.swift",
-      "line": 18,
-      "symbol": "Collection.dyads",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Set+NoteNumberRepresentable.swift",
-      "line": 49,
-      "symbol": "Collection.inversion",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Pitch.Class.swift",
+      "line": 64,
+      "symbol": "Pitch.Class.Collection",
+      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
