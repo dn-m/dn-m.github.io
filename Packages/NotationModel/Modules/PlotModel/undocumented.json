@@ -1,0 +1,131 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPlotModel.Builder.swift",
+      "line": 13,
+      "symbol": "DefaultVerticalPlotModel.builder",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPlotModel.Builder.swift",
+      "line": 17,
+      "symbol": "DefaultVerticalPlotModel.Builder",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPlotModel.Builder.swift",
+      "line": 21,
+      "symbol": "DefaultVerticalPlotModel.Builder.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPlotModel.Builder.swift",
+      "line": 25,
+      "symbol": "DefaultVerticalPlotModel.Builder.add(_:at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPlotModel.Builder.swift",
+      "line": 29,
+      "symbol": "DefaultVerticalPlotModel.Builder.build()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPlotModel.swift",
+      "line": null,
+      "symbol": "DefaultVerticalPlotModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPlotModel.swift",
+      "line": 9,
+      "symbol": "DefaultVerticalPlotModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPlotModel.swift",
+      "line": 16,
+      "symbol": "DefaultVerticalPlotModel.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPointModel.swift",
+      "line": 9,
+      "symbol": "DefaultVerticalPointModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPointModel.swift",
+      "line": 15,
+      "symbol": "DefaultVerticalPointModel.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPointModel.swift",
+      "line": 17,
+      "symbol": "DefaultVerticalPointModel.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/HorizontalPlotModel.swift",
+      "line": 9,
+      "symbol": "HorizontalPlotModel",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/PlotModel.swift",
+      "line": 31,
+      "symbol": "PlotModel.base",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/PointModel.swift",
+      "line": 9,
+      "symbol": "VerticalDirection",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/PointModel.swift",
+      "line": 10,
+      "symbol": "VerticalDirection.above",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/PointModel.swift",
+      "line": 10,
+      "symbol": "VerticalDirection.below",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/PointModel.swift",
+      "line": 13,
+      "symbol": "PointModel",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/VerticalPlotModel.swift",
+      "line": 9,
+      "symbol": "VerticalPlotModel",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/dn-m/NotationModel"
+}

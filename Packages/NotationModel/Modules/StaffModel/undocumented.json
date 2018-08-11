@@ -1,0 +1,348 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 12,
+      "symbol": "Accidental",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 14,
+      "symbol": "Accidental.natural",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 15,
+      "symbol": "Accidental.naturalUp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 16,
+      "symbol": "Accidental.naturalDown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 17,
+      "symbol": "Accidental.sharp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 18,
+      "symbol": "Accidental.sharpUp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 19,
+      "symbol": "Accidental.sharpDown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 20,
+      "symbol": "Accidental.flat",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 21,
+      "symbol": "Accidental.flatUp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 22,
+      "symbol": "Accidental.flatDown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 23,
+      "symbol": "Accidental.quarterSharp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 24,
+      "symbol": "Accidental.quarterSharpUp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 25,
+      "symbol": "Accidental.quarterSharpDown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 26,
+      "symbol": "Accidental.quarterFlat",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 27,
+      "symbol": "Accidental.quarterFlatUp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 28,
+      "symbol": "Accidental.quarterFlatDown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 30,
+      "symbol": "Accidental.init(spelling:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
+      "line": 34,
+      "symbol": "Accidental.init(coarse:fine:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Clef.swift",
+      "line": 12,
+      "symbol": "Clef",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Clef.swift",
+      "line": 14,
+      "symbol": "Clef.Kind",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Clef.swift",
+      "line": 15,
+      "symbol": "Clef.Kind.bass",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Clef.swift",
+      "line": 16,
+      "symbol": "Clef.Kind.tenor",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Clef.swift",
+      "line": 17,
+      "symbol": "Clef.Kind.alto",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Clef.swift",
+      "line": 18,
+      "symbol": "Clef.Kind.treble",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Clef.swift",
+      "line": 21,
+      "symbol": "Clef.kind",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Clef.swift",
+      "line": 22,
+      "symbol": "Clef.coordinate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Clef.swift",
+      "line": 24,
+      "symbol": "Clef.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Notehead.swift",
+      "line": 9,
+      "symbol": "Notehead",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Notehead.swift",
+      "line": 10,
+      "symbol": "Notehead.ord",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Notehead.swift",
+      "line": 11,
+      "symbol": "Notehead.diamondOpen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Notehead.swift",
+      "line": 12,
+      "symbol": "Notehead.diamondClosed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Notehead.swift",
+      "line": 13,
+      "symbol": "Notehead.circleOpen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Notehead.swift",
+      "line": 14,
+      "symbol": "Notehead.circleClosed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Notehead.swift",
+      "line": 15,
+      "symbol": "Notehead.squareOpen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Notehead.swift",
+      "line": 16,
+      "symbol": "Notehead.squareClosed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffModel.Builder.swift",
+      "line": 13,
+      "symbol": "StaffModel.builder",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffModel.Builder.swift",
+      "line": 17,
+      "symbol": "StaffModel.Builder",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffModel.Builder.swift",
+      "line": 22,
+      "symbol": "StaffModel.Builder.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffModel.Builder.swift",
+      "line": 24,
+      "symbol": "StaffModel.Builder.set(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffModel.Builder.swift",
+      "line": 28,
+      "symbol": "StaffModel.Builder.add(_:at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffModel.Builder.swift",
+      "line": 32,
+      "symbol": "StaffModel.Builder.build()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffModel.swift",
+      "line": 22,
+      "symbol": "StaffModel.verticalAxis",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffModel.swift",
+      "line": 23,
+      "symbol": "StaffModel.horizontalAxis",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffModel.swift",
+      "line": 24,
+      "symbol": "StaffModel.points",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffRepresentablePitch.swift",
+      "line": null,
+      "symbol": "StaffRepresentablePitch",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffRepresentablePitch.swift",
+      "line": 11,
+      "symbol": "StaffRepresentablePitch",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffRepresentablePitch.swift",
+      "line": 13,
+      "symbol": "StaffRepresentablePitch.spelledPitch",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffRepresentablePitch.swift",
+      "line": 14,
+      "symbol": "StaffRepresentablePitch.notehead",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffRepresentablePitch.swift",
+      "line": 15,
+      "symbol": "StaffRepresentablePitch.accidental",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/dn-m/NotationModel"
+}

@@ -1,0 +1,40 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PitchSpeller/Pitch+PitchSpeller.swift",
+      "line": 27,
+      "symbol": "Pitch.spellingsWithoutUnconventionalEnharmonics",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PitchSpeller/PitchSpellingDyad.swift",
+      "line": null,
+      "symbol": "PitchSpellingDyad",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PitchSpeller/PitchSpellingDyad.swift",
+      "line": null,
+      "symbol": "PitchSpellingDyad",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PitchSpeller/PitchSpellingDyad.swift",
+      "line": 17,
+      "symbol": "PitchSpellingDyad",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PitchSpeller/PitchSpellingDyad.swift",
+      "line": 150,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/dn-m/NotationModel"
+}
