@@ -64,41 +64,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Pitch.Class.swift",
-      "line": null,
-      "symbol": "Pitch.Class",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Pitch.Class.swift",
-      "line": null,
-      "symbol": "Pitch.Class",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Pitch.Class.swift",
-      "line": 14,
-      "symbol": "Pitch.Class",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Pitch.Class.swift",
-      "line": 53,
-      "symbol": "Pitch.Class.+(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Pitch.Class.swift",
-      "line": 57,
-      "symbol": "Pitch.Class.-(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/UnorderedInterval.swift",
       "line": 11,
       "symbol": "UnorderedInterval",

@@ -20,7 +20,7 @@
         <a class="header-link" href="../../../index.html">
            Docs
         </a>
-         (83% documented)
+         (89% documented)
       </p>
     
     
@@ -107,7 +107,7 @@
               </div>
             <p>A non-empty collection of <code><a href="../../../Structs/Pitch/Class.html">Pitch.Class</a></code> elements.</p>
 
-<p><em>Example Usage</em></p>
+<p><strong>Example Usage</strong></p>
 
 <p>Create a <code>Pitch.Class.Collection</code> with an array literal of integer literals.</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">webern24</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
@@ -148,7 +148,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><em>Example Usage</em></p>
+                        <p><strong>Example Usage</strong></p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">pcs</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
 <span class="k">let</span> <span class="nv">rotations</span> <span class="o">=</span> <span class="n">pcs</span><span class="o">.</span><span class="n">rotations</span> <span class="c1">// [[8,0,2,4],[0,2,4,8],[2,4,8,0],[4,8,0,2]]</span>
 </code></pre>
@@ -182,7 +182,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><em>Example Usage</em></p>
+                        <p><strong>Example Usage</strong></p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">pcs</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
 <span class="k">let</span> <span class="nv">primeForm</span> <span class="o">=</span> <span class="n">pcs</span><span class="o">.</span><span class="n">primeForm</span> <span class="c1">// =&gt; [0,2,4,8]</span>
 </code></pre>
@@ -217,7 +217,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><em>Example Usage</em></p>
+                        <p><strong>Example Usage</strong></p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">pcs</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
 <span class="k">let</span> <span class="nv">normalForm</span> <span class="o">=</span> <span class="n">pcs</span><span class="o">.</span><span class="n">normalForm</span> <span class="c1">// =&gt; [4,6,8,0]</span>
 </code></pre>
@@ -283,7 +283,7 @@ of the first element (and thereby making the first element <code>0</code>).</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><em>Example Usage</em></p>
+                        <p><strong>Example Usage</strong></p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">webern24</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
 <span class="k">let</span> <span class="nv">inversion</span> <span class="o">=</span> <span class="n">webern24</span><span class="o">.</span><span class="n">inversion</span> <span class="c1">// =&gt; [0,4,5,1,2,3,9,11,8,10,6,7]</span>
 </code></pre>
@@ -317,7 +317,7 @@ of the first element (and thereby making the first element <code>0</code>).</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><em>Example Usage</em></p>
+                        <p><strong>Example Usage</strong></p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">webern24</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
 <span class="k">let</span> <span class="nv">retrograde</span> <span class="o">=</span> <span class="n">webern24</span><span class="o">.</span><span class="n">retrograde</span> <span class="c1">// =&gt; [10,2,1,6,5,9,7,8,4,3,11,0]</span>
 </code></pre>
@@ -421,7 +421,7 @@ of the first element (and thereby making the first element <code>0</code>).</p>
                       <div class="abstract">
                         <p>Create a <code>Pitch.Class.Collection</code> with the given <code>pitchClasses</code>.</p>
 
-<p><em>Example Usage</em></p>
+<p><strong>Example Usage</strong></p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">webern24</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
 <span class="k">let</span> <span class="nv">webern27</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
 </code></pre>
