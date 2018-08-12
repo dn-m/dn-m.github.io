@@ -265,13 +265,6 @@
       "symbol": "Path.base",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/PathElement.swift",
-      "line": 14,
-      "symbol": "PathElement.isVertex",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/travis/build/dn-m/Graphics"
