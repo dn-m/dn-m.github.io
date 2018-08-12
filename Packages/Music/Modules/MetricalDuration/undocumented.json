@@ -1,13 +1,6 @@
 {
   "warnings": [
     {
-      "file": "/Users/travis/build/dn-m/Music/Sources/MetricalDuration/MetricalDuration.swift",
-      "line": 16,
-      "symbol": "MetricalDuration.zero",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/Music/Sources/MetricalDuration/SpanningContainer.swift",
       "line": 114,
       "symbol": "SpanningContainer.indexOfElement(containing:includingUpperBound:)",
