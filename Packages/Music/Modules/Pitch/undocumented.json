@@ -65,7 +65,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/UnorderedInterval.swift",
-      "line": 11,
+      "line": 9,
       "symbol": "UnorderedInterval",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"

@@ -16,79 +16,72 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 53,
+      "line": 58,
       "symbol": "Tempo.respelling(subdivision:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 231,
+      "line": 235,
       "symbol": "Tempo.Interpolation.Fragment",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 235,
+      "line": 239,
       "symbol": "Tempo.Interpolation.Fragment.duration",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 241,
+      "line": 245,
       "symbol": "Tempo.Interpolation.Fragment.base",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 242,
+      "line": 246,
       "symbol": "Tempo.Interpolation.Fragment.range",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 244,
+      "line": 248,
       "symbol": "Tempo.Interpolation.Fragment.init(_:in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 256,
+      "line": 260,
       "symbol": "Tempo.Interpolation.Fragment.secondsOffset(for:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 264,
+      "line": 268,
       "symbol": "Tempo.Interpolation.Fragment.init(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 362,
+      "line": 366,
       "symbol": "Tempo.Interpolation.Collection",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 367,
+      "line": 371,
       "symbol": "Tempo.Interpolation.Collection.base",
       "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 369,
-      "symbol": "Tempo.Interpolation.Collection.init(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -107,49 +100,56 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 391,
+      "line": 381,
+      "symbol": "Tempo.Interpolation.Collection.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
+      "line": 395,
       "symbol": "Tempo.Interpolation.Collection.secondsOffset(at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 406,
+      "line": 410,
       "symbol": "Tempo.Interpolation.Collection.Builder",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 410,
+      "line": 414,
       "symbol": "Tempo.Interpolation.Collection.Builder.intermediate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 411,
+      "line": 415,
       "symbol": "Tempo.Interpolation.Collection.Builder.offset",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 415,
+      "line": 419,
       "symbol": "Tempo.Interpolation.Collection.Builder.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 420,
+      "line": 424,
       "symbol": "Tempo.Interpolation.Collection.Builder.add(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Tempo/Tempo.swift",
-      "line": 429,
+      "line": 433,
       "symbol": "Tempo.Interpolation.Collection.Builder.add(_:at:interpolating:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
