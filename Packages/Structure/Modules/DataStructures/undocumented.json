@@ -401,203 +401,203 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 13,
+      "line": 11,
       "symbol": "FloatWrapping",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 19,
+      "line": 17,
       "symbol": "FloatWrapping.init(floatLiteral:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 20,
+      "line": 18,
       "symbol": "FloatWrapping.init(integerLiteral:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 21,
+      "line": 19,
       "symbol": "FloatWrapping.value",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 22,
+      "line": 20,
       "symbol": "FloatWrapping.init(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 27,
+      "line": 25,
       "symbol": "FloatWrapping.init(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 37,
+      "line": 35,
       "symbol": "FloatWrapping.hashValue",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 41,
+      "line": 39,
       "symbol": "==(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 45,
+      "line": 43,
       "symbol": "==(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 49,
+      "line": 47,
       "symbol": "==(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 53,
+      "line": 51,
       "symbol": "<(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 57,
+      "line": 55,
       "symbol": "<(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 61,
+      "line": 59,
       "symbol": "<(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 66,
+      "line": 64,
       "symbol": "+(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 70,
+      "line": 68,
       "symbol": "+(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 74,
+      "line": 72,
       "symbol": "+(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 78,
+      "line": 76,
       "symbol": "+(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 82,
+      "line": 80,
       "symbol": "-(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 86,
+      "line": 84,
       "symbol": "-(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 90,
+      "line": 88,
       "symbol": "-(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 94,
+      "line": 92,
       "symbol": "-(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 98,
+      "line": 96,
       "symbol": "*(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 102,
+      "line": 100,
       "symbol": "*(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 106,
+      "line": 104,
       "symbol": "*(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 110,
+      "line": 108,
       "symbol": "*(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 114,
+      "line": 112,
       "symbol": "/(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 118,
+      "line": 116,
       "symbol": "/(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 122,
+      "line": 120,
       "symbol": "/(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 126,
+      "line": 124,
       "symbol": "/(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
