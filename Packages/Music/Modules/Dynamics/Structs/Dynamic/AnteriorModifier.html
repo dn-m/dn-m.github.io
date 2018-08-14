@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Interpolation Structure Reference</title>
+    <title>AnteriorModifier Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/Interpolation" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Enum/AnteriorModifier" class="dashAnchor"></a>
 
-    <a title="Interpolation Structure Reference"></a>
+    <a title="AnteriorModifier Enumeration Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -30,7 +30,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../../index.html"> Reference</a>
       <img class="carat" src="../../img/carat.png" />
-      Interpolation Structure Reference
+      AnteriorModifier Enumeration Reference
     </p>
 
     <div class="content-wrapper">
@@ -65,14 +65,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Interpolation</h1>
+            <h1>AnteriorModifier</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interpolation</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AnteriorModifier</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
 
                 </div>
               </div>
-            <p>Interpolation between two <code><a href="../../Structs/Dynamic.html">Dynamic</a></code> markings.</p>
+            <p>A modifier for defining the <code>s</code> or <code>r</code> in <code>sforzando</code>, or <code>rinforzando</code>.</p>
 
           </div>
         </section>
@@ -80,52 +80,20 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:8Dynamics7DynamicV13InterpolationV9DirectionO"></a>
-                    <a name="//apple_ref/swift/Enum/Direction" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Dynamics7DynamicV13InterpolationV9DirectionO">Direction</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The direction of a <code><a href="../../Structs/Dynamic/Interpolation.html">Dynamic.Interpolation</a></code>.</p>
-
-                        <a href="../../Structs/Dynamic/Interpolation/Direction.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Direction</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
               <div class="task-name-container">
-                <a name="/Instance%20Properties"></a>
-                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
-                <a href="#/Instance%20Properties">
-                  <h3 class="section-name">Instance Properties</h3>
+                <a name="/Cases"></a>
+                <a name="//apple_ref/swift/Section/Cases" class="dashAnchor"></a>
+                <a href="#/Cases">
+                  <h3 class="section-name">Cases</h3>
                 </a>
               </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Dynamics7DynamicV13InterpolationV9directionAE9DirectionOv"></a>
-                    <a name="//apple_ref/swift/Property/direction" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Dynamics7DynamicV13InterpolationV9directionAE9DirectionOv">direction</a>
+                    <a name="/s:8Dynamics7DynamicV16AnteriorModifierO1rA2EmF"></a>
+                    <a name="//apple_ref/swift/Element/r" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Dynamics7DynamicV16AnteriorModifierO1rA2EmF">r</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -133,14 +101,41 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The direction of a <code>Dynamic.Interpolation</code>.</p>
+                        <p><code>r</code> for <code>rinforzando</code></p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Dynamic/Interpolation/Direction.html">Direction</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">r</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Dynamics7DynamicV16AnteriorModifierO1sA2EmF"></a>
+                    <a name="//apple_ref/swift/Element/s" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Dynamics7DynamicV16AnteriorModifierO1sA2EmF">s</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>s</code> for <code>sforzando</code> or <code>subito</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">s</span></code></pre>
 
                         </div>
                       </div>
