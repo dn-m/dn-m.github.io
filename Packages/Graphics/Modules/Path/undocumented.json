@@ -2,28 +2,28 @@
   "warnings": [
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/BezierCurve.swift",
-      "line": 21,
+      "line": 26,
       "symbol": "BezierCurve.Order.linear",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/BezierCurve.swift",
-      "line": 22,
+      "line": 27,
       "symbol": "BezierCurve.Order.quadratic",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/BezierCurve.swift",
-      "line": 23,
+      "line": 28,
       "symbol": "BezierCurve.Order.cubic",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/BezierCurve.swift",
-      "line": 95,
+      "line": 100,
       "symbol": "BezierCurve.points",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -37,14 +37,14 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path+Circle.swift",
-      "line": 14,
+      "line": 19,
       "symbol": "Circle.path",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path+Ellipse.swift",
-      "line": 14,
+      "line": 19,
       "symbol": "Ellipse.path",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"

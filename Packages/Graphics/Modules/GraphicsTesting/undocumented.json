@@ -1,40 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/GraphicsTesting/GraphicsTestCase.swift",
-      "line": 5,
-      "symbol": "GraphicsTestCase",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/GraphicsTesting/GraphicsTestCase.swift",
-      "line": 17,
-      "symbol": "GraphicsTestCase.setUp()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/GraphicsTesting/GraphicsTestCase.swift",
-      "line": 30,
-      "symbol": "GraphicsTestCase.tearDown()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/GraphicsTesting/GraphicsTestCase.swift",
-      "line": 38,
-      "symbol": "GraphicsTestCase.render(_:name:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/GraphicsTesting/GraphicsTestCase.swift",
-      "line": 42,
-      "symbol": "GraphicsTestCase.render(_:name:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/travis/build/dn-m/Graphics"
 }

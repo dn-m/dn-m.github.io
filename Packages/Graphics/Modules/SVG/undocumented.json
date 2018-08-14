@@ -2,35 +2,35 @@
   "warnings": [
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/SVG/PathElement+SVG.swift",
-      "line": 20,
+      "line": 22,
       "symbol": "PathElement.init(svgCommand:svgValues:previous:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/SVG/Polygon+SVG.swift",
-      "line": 31,
+      "line": 33,
       "symbol": "Polygon.path",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/SVG/Rectangle+SVG.swift",
-      "line": 32,
+      "line": 34,
       "symbol": "Rectangle.SVGError.illFormed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/SVG/SVG.Group.swift",
-      "line": 11,
+      "line": 13,
       "symbol": "SVG.Group",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/SVG/SVG.Group.swift",
-      "line": 12,
+      "line": 14,
       "symbol": "SVG.Group.identifier",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -44,7 +44,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/SVG/SVG.swift",
-      "line": 15,
+      "line": 17,
       "symbol": "SVG",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
