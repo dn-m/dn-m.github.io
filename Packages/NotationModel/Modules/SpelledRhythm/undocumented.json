@@ -79,23 +79,30 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledRhythm/Rhythm.Spelling.swift",
-      "line": 15,
+      "line": 14,
       "symbol": "Rhythm.Spelling",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledRhythm/Rhythm.Spelling.swift",
-      "line": 110,
+      "line": 109,
       "symbol": "Rhythm.Spelling.base",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledRhythm/Rhythm.Spelling.swift",
-      "line": 116,
+      "line": 115,
       "symbol": "Rhythm.Spelling.Group.description",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledRhythm/RhythmBeamer.swift",
+      "line": 12,
+      "symbol": "DefaultBeamer",
+      "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
