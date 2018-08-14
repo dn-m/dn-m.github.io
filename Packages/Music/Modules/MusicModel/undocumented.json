@@ -9,7 +9,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
-      "line": 209,
+      "line": 206,
       "symbol": "Model.Builder.build()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
