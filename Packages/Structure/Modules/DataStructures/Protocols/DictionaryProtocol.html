@@ -565,6 +565,34 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures18DictionaryProtocolPxSi15minimumCapacity_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(minimumCapacity:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPxSi15minimumCapacity_tcfc">init(minimumCapacity:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an empty <code>DictionaryProtocol</code>-conforming type with preallocated space for at least
+the specified number of elements.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">minimumCapacity</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -648,9 +676,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures18DictionaryProtocolPAAExSay3KeyQz_5ValueQztGcfc"></a>
+                    <a name="/s:14DataStructures18DictionaryProtocolPAAExqd__cs10CollectionRd__3KeyQz3key_5ValueQz5valuet7ElementRtd__lufc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPAAExSay3KeyQz_5ValueQztGcfc">init(_:)</a>
+                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPAAExqd__cs10CollectionRd__3KeyQz3key_5ValueQz5valuet7ElementRtd__lufc">init(_:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -661,14 +689,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a <code>DictionaryProtocol</code> with an array of tuples.</p>
+                        <p>Create a <code>DictionaryProtocol</code>-conforming type with a collection with dictionary-like
+elements.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">keysAndValues</span><span class="p">:</span> <span class="p">[(</span><span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP5Value">Value</a></span><span class="p">)])</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">C</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">collection</span><span class="p">:</span> <span class="kt">C</span><span class="p">)</span> <span class="k">where</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">Collection</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Element</span> <span class="o">==</span> <span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="k">Self</span><span class="o">.</span><span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="k">Self</span><span class="o">.</span><span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP5Value">Value</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -996,7 +1025,7 @@ over those of <code>self</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-13)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-15)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
