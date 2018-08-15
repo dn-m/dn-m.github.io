@@ -2,6 +2,13 @@
   "warnings": [
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Instrument.swift",
+      "line": 17,
+      "symbol": "Instrument.Identifier",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Instrument.swift",
       "line": 52,
       "symbol": "Instrument.base",
       "symbol_kind": "source.lang.swift.decl.var.instance",

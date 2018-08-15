@@ -50,13 +50,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/NoteNumberRepresentable.swift",
-      "line": 76,
-      "symbol": "NoteNumberRepresentable.init(integerLiteral:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/OrderedInterval.swift",
       "line": 9,
       "symbol": "OrderedInterval",

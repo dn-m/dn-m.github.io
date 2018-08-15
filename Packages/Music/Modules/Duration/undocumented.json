@@ -9,14 +9,14 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Meter/Meter.swift",
-      "line": 31,
-      "symbol": "Meter.init(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "line": 87,
+      "symbol": "Meter.Collection.Metric",
+      "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Meter/Meter.swift",
-      "line": 82,
+      "line": 91,
       "symbol": "Meter.Collection.base",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -33,6 +33,13 @@
       "line": 31,
       "symbol": "SpanningContainerBuilder.intermediate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
+      "line": 20,
+      "symbol": "Tempo.BeatsPerMinute",
+      "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {

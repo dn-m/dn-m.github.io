@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
            Docs
         </a>
-         (95% documented)
+         (94% documented)
       </p>
     
     
@@ -168,7 +168,7 @@
             <h1>SpanningContainerBuilder</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpanningContainerBuilder</span> <span class="p">:</span> <span class="kd">class</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpanningContainerBuilder</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                 </div>
               </div>
@@ -208,7 +208,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">associatedtype</span> <span class="kt">Product</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/SpanningContainer.html">SpanningContainer</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">associatedtype</span> <span class="kt">Product</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/SpanningContainer.html">SpanningContainer</a></span> <span class="k">where</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Product</span><span class="o">.</span><span class="kt">Metric</span> <span class="o">==</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Product</span><span class="o">.</span><span class="kt">Metric</span></code></pre>
 
                         </div>
                       </div>
@@ -256,9 +256,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Duration24SpanningContainerBuilderP12intermediateXev"></a>
+                    <a name="/s:8Duration24SpanningContainerBuilderP12intermediateXevp"></a>
                     <a name="//apple_ref/swift/Property/intermediate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration24SpanningContainerBuilderP12intermediateXev">intermediate</a>
+                    <a class="token" href="#/s:8Duration24SpanningContainerBuilderP12intermediateXevp">intermediate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -283,9 +283,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Duration24SpanningContainerBuilderP6offsetXev"></a>
+                    <a name="/s:8Duration24SpanningContainerBuilderP6offsetXevp"></a>
                     <a name="//apple_ref/swift/Property/offset" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration24SpanningContainerBuilderP6offsetXev">offset</a>
+                    <a class="token" href="#/s:8Duration24SpanningContainerBuilderP6offsetXevp">offset</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -293,7 +293,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Cumulative offset of spanners contained in <code><a href="../Protocols/SpanningContainerBuilder.html#/s:8Duration24SpanningContainerBuilderP12intermediateXev">intermediate</a></code>.</p>
+                        <p>Cumulative offset of spanners contained in <code><a href="../Protocols/SpanningContainerBuilder.html#/s:8Duration24SpanningContainerBuilderP12intermediateXevp">intermediate</a></code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -321,9 +321,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Duration24SpanningContainerBuilderP3addx7Product_7SpannerQZF"></a>
+                    <a name="/s:8Duration24SpanningContainerBuilderP3addXeXeF"></a>
                     <a name="//apple_ref/swift/Method/add(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration24SpanningContainerBuilderP3addx7Product_7SpannerQZF">add(_:)</a>
+                    <a class="token" href="#/s:8Duration24SpanningContainerBuilderP3addXeXeF">add(_:)</a>
                     </code>
                       <span class="declaration-note">
                         Default implementation
@@ -334,7 +334,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Adds the given <code><a href="../Protocols/SpanningContainerBuilder.html#/s:8Duration24SpanningContainerBuilderP7Spannera">Spanner</a></code> to the <code><a href="../Protocols/SpanningContainerBuilder.html#/s:8Duration24SpanningContainerBuilderP12intermediateXev">intermediate</a></code>.</p>
+                        <p>Adds the given <code><a href="../Protocols/SpanningContainerBuilder.html#/s:8Duration24SpanningContainerBuilderP7Spannera">Spanner</a></code> to the <code><a href="../Protocols/SpanningContainerBuilder.html#/s:8Duration24SpanningContainerBuilderP12intermediateXevp">intermediate</a></code>.</p>
 
                       </div>
                       <h4>Default Implementation</h4>
@@ -347,7 +347,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpanningContainerBuilder.html#/s:8Duration24SpanningContainerBuilderP7Spannera">Spanner</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpanningContainerBuilder.html#/s:8Duration24SpanningContainerBuilderP7Spannera">Spanner</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="o">&lt;&lt;</span><span class="n">error</span> <span class="n">type</span><span class="o">&gt;&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -357,9 +357,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Duration24SpanningContainerBuilderP5build7ProductQzyF"></a>
+                    <a name="/s:8Duration24SpanningContainerBuilderP5buildXeXeF"></a>
                     <a name="//apple_ref/swift/Method/build()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration24SpanningContainerBuilderP5build7ProductQzyF">build()</a>
+                    <a class="token" href="#/s:8Duration24SpanningContainerBuilderP5buildXeXeF">build()</a>
                     </code>
                       <span class="declaration-note">
                         Default implementation
@@ -397,7 +397,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-14)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-15)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
