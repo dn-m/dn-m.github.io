@@ -58,28 +58,28 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
-      "line": 324,
+      "line": 344,
       "symbol": "Tempo.Interpolation.Easing",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
-      "line": 429,
+      "line": 449,
       "symbol": "Tempo.Interpolation.Collection.base",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
-      "line": 503,
+      "line": 523,
       "symbol": "Tempo.Interpolation.Collection.Builder.intermediate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
-      "line": 546,
+      "line": 566,
       "symbol": "Tempo.Interpolation.Collection.Builder.add(_:at:easing:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
