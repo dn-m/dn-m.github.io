@@ -72,14 +72,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
-      "line": 523,
-      "symbol": "Tempo.Interpolation.Collection.Builder.intermediate",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
-      "line": 566,
+      "line": 565,
       "symbol": "Tempo.Interpolation.Collection.Builder.add(_:at:easing:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
