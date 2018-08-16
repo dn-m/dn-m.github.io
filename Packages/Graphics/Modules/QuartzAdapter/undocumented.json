@@ -2,7 +2,7 @@
   "warnings": [
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/QuartzAdapter/CALayer+PDF.swift",
-      "line": 16,
+      "line": 20,
       "symbol": "CALayer.renderToPDF(at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -51,8 +51,15 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/QuartzAdapter/StyledPath.Composite+CALayer.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "CALayer.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/QuartzAdapter/StyledPath.Composite+CALayer.swift",
+      "line": 46,
+      "symbol": "Tree.renderToPDF(at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
