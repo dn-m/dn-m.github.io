@@ -261,7 +261,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Triangle.swift",
-      "line": 38,
+      "line": 27,
       "symbol": "Triangle.crossProduct",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
