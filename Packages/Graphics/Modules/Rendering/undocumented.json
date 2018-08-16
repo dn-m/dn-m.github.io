@@ -1143,28 +1143,28 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Composite.swift",
-      "line": 17,
+      "line": 21,
       "symbol": "Tree.frame",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Composite.swift",
-      "line": 26,
+      "line": 30,
       "symbol": "Tree.resizedToFitContents",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Composite.swift",
-      "line": 41,
+      "line": 45,
       "symbol": "Tree.axisAlignedBoundingBox",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Composite.swift",
-      "line": 60,
+      "line": 64,
       "symbol": "Tree.translated(by:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
