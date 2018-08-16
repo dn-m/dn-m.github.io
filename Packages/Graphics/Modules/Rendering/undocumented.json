@@ -1375,70 +1375,70 @@
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
       "line": null,
-      "symbol": "RenderedPath",
+      "symbol": "StyledPath",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
       "line": null,
-      "symbol": "RenderedPath",
+      "symbol": "StyledPath",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
       "line": 12,
-      "symbol": "RenderedPath",
+      "symbol": "StyledPath",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
       "line": 14,
-      "symbol": "RenderedPath.frame",
+      "symbol": "StyledPath.frame",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
       "line": 15,
-      "symbol": "RenderedPath.path",
+      "symbol": "StyledPath.path",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
       "line": 16,
-      "symbol": "RenderedPath.styling",
+      "symbol": "StyledPath.styling",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
       "line": 18,
-      "symbol": "RenderedPath.init(frame:path:styling:)",
+      "symbol": "StyledPath.init(frame:path:styling:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
       "line": 32,
-      "symbol": "RenderedPath.resizedToFitContents",
+      "symbol": "StyledPath.resizedToFitContents",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
       "line": 50,
-      "symbol": "RenderedPath.translated(by:)",
+      "symbol": "StyledPath.translated(by:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
       "line": 54,
-      "symbol": "RenderedPath.scaled(by:)",
+      "symbol": "StyledPath.scaled(by:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
