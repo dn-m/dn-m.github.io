@@ -2,21 +2,21 @@
   "warnings": [
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/BezierCurve.swift",
-      "line": 250,
+      "line": 246,
       "symbol": "BezierCurve.Order.linear",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/BezierCurve.swift",
-      "line": 251,
+      "line": 247,
       "symbol": "BezierCurve.Order.quadratic",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/BezierCurve.swift",
-      "line": 252,
+      "line": 248,
       "symbol": "BezierCurve.Order.cubic",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
