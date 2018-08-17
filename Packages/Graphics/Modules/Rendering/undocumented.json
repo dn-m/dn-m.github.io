@@ -1207,7 +1207,7 @@
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Item.swift",
       "line": 13,
-      "symbol": "Item.path",
+      "symbol": "Item.path(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
@@ -1230,6 +1230,20 @@
       "line": 30,
       "symbol": "Item.translated(by:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Renderer.swift",
+      "line": 12,
+      "symbol": "Renderer.Configuration",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Renderer.swift",
+      "line": 13,
+      "symbol": "Renderer.GraphicalContext",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
       "warning": "undocumented"
     },
     {
@@ -1270,7 +1284,7 @@
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/Stroke.swift",
       "line": 29,
-      "symbol": "Stroke.Join.miter",
+      "symbol": "Stroke.Join.miter(limit:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
@@ -1314,6 +1328,13 @@
       "line": 64,
       "symbol": "Tree.translated(by:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
+      "line": null,
+      "symbol": "StyledPath",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {

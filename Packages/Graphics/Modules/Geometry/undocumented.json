@@ -1,6 +1,20 @@
 {
   "warnings": [
     {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Angle.swift",
+      "line": 15,
+      "symbol": "Radians",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Angle.swift",
+      "line": 16,
+      "symbol": "Degrees",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Circle.swift",
       "line": 9,
       "symbol": "Circle",
@@ -66,35 +80,35 @@
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Line.Ray.swift",
       "line": 19,
-      "symbol": "Line.Ray.up",
+      "symbol": "Line.Ray.up(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Line.Ray.swift",
       "line": 20,
-      "symbol": "Line.Ray.down",
+      "symbol": "Line.Ray.down(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Line.Ray.swift",
       "line": 21,
-      "symbol": "Line.Ray.left",
+      "symbol": "Line.Ray.left(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Line.Ray.swift",
       "line": 22,
-      "symbol": "Line.Ray.right",
+      "symbol": "Line.Ray.right(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Line.Ray.swift",
       "line": 23,
-      "symbol": "Line.Ray.slanted",
+      "symbol": "Line.Ray.slanted(point:slope:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
@@ -129,21 +143,21 @@
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Line.swift",
       "line": 14,
-      "symbol": "Line.vertical",
+      "symbol": "Line.vertical(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Line.swift",
       "line": 15,
-      "symbol": "Line.horizontal",
+      "symbol": "Line.horizontal(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Line.swift",
       "line": 16,
-      "symbol": "Line.slanted",
+      "symbol": "Line.slanted(slope:intercept:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
@@ -180,6 +194,13 @@
       "line": 67,
       "symbol": "Point.reflected(over:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Polygon.swift",
+      "line": 152,
+      "symbol": "Point.Triple",
+      "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {

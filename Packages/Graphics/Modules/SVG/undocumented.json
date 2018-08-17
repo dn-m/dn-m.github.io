@@ -17,7 +17,7 @@
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/SVG/Rectangle+SVG.swift",
       "line": 34,
-      "symbol": "Rectangle.SVGError.illFormed",
+      "symbol": "Rectangle.SVGError.illFormed(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
@@ -33,6 +33,13 @@
       "line": 14,
       "symbol": "SVG.Group.identifier",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/SVG/SVG.Parser.swift",
+      "line": 18,
+      "symbol": "SVGElement",
+      "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
