@@ -1,0 +1,698 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
+      "line": null,
+      "symbol": "AccidentalView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
+      "line": null,
+      "symbol": "AccidentalView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
+      "line": 14,
+      "symbol": "AccidentalView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
+      "line": 16,
+      "symbol": "AccidentalView.VerticalDirection",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
+      "line": 17,
+      "symbol": "AccidentalView.VerticalDirection.above",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
+      "line": 18,
+      "symbol": "AccidentalView.VerticalDirection.below",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
+      "line": 21,
+      "symbol": "AccidentalView.path",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
+      "line": 25,
+      "symbol": "AccidentalView.rendered",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
+      "line": 90,
+      "symbol": "AccidentalView.init(position:size:color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
+      "line": 108,
+      "symbol": "AccidentalView.makeAccidental(_:at:size:color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
+      "line": 130,
+      "symbol": "AccidentalView.makeAccidental(coarse:fine:at:size:color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AltoClef.swift",
+      "line": 16,
+      "symbol": "AltoClef",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AltoClef.swift",
+      "line": 18,
+      "symbol": "AltoClef.ornamentAltitude",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AltoClef.swift",
+      "line": 22,
+      "symbol": "AltoClef.ornament",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/BassClef.swift",
+      "line": 15,
+      "symbol": "BassClef",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/BassClef.swift",
+      "line": 17,
+      "symbol": "BassClef.ornamentAltitude",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/BassClef.swift",
+      "line": 21,
+      "symbol": "BassClef.ornament",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": null,
+      "symbol": "ClefView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": null,
+      "symbol": "ClefView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": null,
+      "symbol": "StaffClefView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 17,
+      "symbol": "ClefConfiguration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 18,
+      "symbol": "ClefConfiguration.foregroundColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 19,
+      "symbol": "ClefConfiguration.maskColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 20,
+      "symbol": "ClefConfiguration.init(foregroundColor:maskColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 27,
+      "symbol": "ClefView",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 28,
+      "symbol": "ClefView.extenderLength",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 29,
+      "symbol": "ClefView.lineWidth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 30,
+      "symbol": "ClefView.position",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 31,
+      "symbol": "ClefView.configuration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 32,
+      "symbol": "ClefView.components",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 38,
+      "symbol": "ClefView.clefHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 42,
+      "symbol": "ClefView.lineWidth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 46,
+      "symbol": "ClefView.extenderLength",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 50,
+      "symbol": "ClefView.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 59,
+      "symbol": "ClefView.line",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 65,
+      "symbol": "ClefView.frame",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 69,
+      "symbol": "ClefView.rendered",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 74,
+      "symbol": "StaffClefView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 76,
+      "symbol": "StaffClefView.makeClef(_:at:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 99,
+      "symbol": "StaffClefView.position",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 100,
+      "symbol": "StaffClefView.configuration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 102,
+      "symbol": "StaffClefView.ornamentAltitude",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 106,
+      "symbol": "StaffClefView.ornament",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 110,
+      "symbol": "StaffClefView.init(position:configuration:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 118,
+      "symbol": "StaffClefView.staffSlotHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 122,
+      "symbol": "StaffClefView.components",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/Flat.swift",
+      "line": 13,
+      "symbol": "Flat",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/Flat.swift",
+      "line": 113,
+      "symbol": "Flat.path",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/Natural.swift",
+      "line": 13,
+      "symbol": "Natural",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/Natural.swift",
+      "line": 59,
+      "symbol": "Natural.path",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/NoteheadView.swift",
+      "line": 14,
+      "symbol": "NoteheadView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/NoteheadView.swift",
+      "line": 16,
+      "symbol": "NoteheadView.Size",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/NoteheadView.swift",
+      "line": 18,
+      "symbol": "NoteheadView.Size.staffSlotHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/NoteheadView.swift",
+      "line": 19,
+      "symbol": "NoteheadView.Size.scale",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/NoteheadView.swift",
+      "line": 21,
+      "symbol": "NoteheadView.Size.init(staffSlotHeight:scale:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/NoteheadView.swift",
+      "line": 27,
+      "symbol": "NoteheadView.rendered",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/NoteheadView.swift",
+      "line": 57,
+      "symbol": "NoteheadView.position",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/NoteheadView.swift",
+      "line": 59,
+      "symbol": "NoteheadView.size",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/NoteheadView.swift",
+      "line": 62,
+      "symbol": "NoteheadView.init(position:size:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/Sharp.swift",
+      "line": 13,
+      "symbol": "Sharp",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/Sharp.swift",
+      "line": 87,
+      "symbol": "Sharp.path",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/Sharp.swift",
+      "line": 91,
+      "symbol": "Sharp.tallColumnHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/Sharp.swift",
+      "line": 95,
+      "symbol": "Sharp.shortColumnHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffConfiguration.swift",
+      "line": 12,
+      "symbol": "StaffConfiguration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffConfiguration.swift",
+      "line": 14,
+      "symbol": "StaffConfiguration.default",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffConfiguration.swift",
+      "line": 16,
+      "symbol": "StaffConfiguration.staffSlotHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffConfiguration.swift",
+      "line": 17,
+      "symbol": "StaffConfiguration.noteheadColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffConfiguration.swift",
+      "line": 18,
+      "symbol": "StaffConfiguration.linesColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffConfiguration.swift",
+      "line": 19,
+      "symbol": "StaffConfiguration.clefColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffConfiguration.swift",
+      "line": 20,
+      "symbol": "StaffConfiguration.maskColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffConfiguration.swift",
+      "line": 34,
+      "symbol": "StaffConfiguration.init(staffSlotHeight:noteheadColor:linesColor:clefColor:maskColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffItemSize.swift",
+      "line": 12,
+      "symbol": "StaffItemSize",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffItemSize.swift",
+      "line": 14,
+      "symbol": "StaffItemSize.scaledValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffItemSize.swift",
+      "line": 18,
+      "symbol": "StaffItemSize.staffSlotHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffItemSize.swift",
+      "line": 19,
+      "symbol": "StaffItemSize.scale",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffItemSize.swift",
+      "line": 21,
+      "symbol": "StaffItemSize.init(staffSlotHeight:scale:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffLinesCollection.swift",
+      "line": 20,
+      "symbol": "StaffLinesCollection.rendered",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffLinesCollection.swift",
+      "line": 37,
+      "symbol": "StaffLinesCollection.init(staffLines:ledgerLines:configuration:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffRepresentedPitch.swift",
+      "line": 21,
+      "symbol": "StaffRepresentedPitch.notehead",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffRepresentedPitch.swift",
+      "line": 22,
+      "symbol": "StaffRepresentedPitch.accidental",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffRepresentedPitch.swift",
+      "line": 24,
+      "symbol": "StaffRepresentedPitch.init(for:at:altitude:staffSlotHeight:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffView.swift",
+      "line": 29,
+      "symbol": "StaffView.Model",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffView.swift",
+      "line": 38,
+      "symbol": "StaffView.init(model:configuration:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffView.swift",
+      "line": 44,
+      "symbol": "StaffView.concreteVerticalPosition(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffView.swift",
+      "line": 53,
+      "symbol": "StaffView.rendered",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffView.swift",
+      "line": 72,
+      "symbol": "StaffView.PointView.position",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffView.swift",
+      "line": 73,
+      "symbol": "StaffView.PointView.pitches",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffView.swift",
+      "line": 75,
+      "symbol": "StaffView.PointView.init(pitches:at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffView.swift",
+      "line": 97,
+      "symbol": "LedgerLineDirection",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffView.swift",
+      "line": 98,
+      "symbol": "LedgerLineDirection.above",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffView.swift",
+      "line": 99,
+      "symbol": "LedgerLineDirection.below",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffView.swift",
+      "line": 104,
+      "symbol": "StaffView.Builder",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffView.swift",
+      "line": 217,
+      "symbol": "Path.init(lines:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/TenorClef.swift",
+      "line": 15,
+      "symbol": "TenorClef",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/TenorClef.swift",
+      "line": 17,
+      "symbol": "TenorClef.ornamentAltitude",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/TenorClef.swift",
+      "line": 21,
+      "symbol": "TenorClef.ornament",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/TrebleClef.swift",
+      "line": 15,
+      "symbol": "TrebleClef",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/TrebleClef.swift",
+      "line": 17,
+      "symbol": "TrebleClef.ornamentAltitude",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/TrebleClef.swift",
+      "line": 21,
+      "symbol": "TrebleClef.ornament",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/dn-m/NotationView"
+}

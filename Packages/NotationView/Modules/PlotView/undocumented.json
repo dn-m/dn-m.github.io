@@ -1,0 +1,551 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/AxisView.swift",
+      "line": 12,
+      "symbol": "AxisView",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/AxisView.swift",
+      "line": 14,
+      "symbol": "AxisView.Position",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/AxisView.swift",
+      "line": 15,
+      "symbol": "AxisView.Configuration",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/AxisView.swift",
+      "line": 17,
+      "symbol": "AxisView.position",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/AxisView.swift",
+      "line": 18,
+      "symbol": "AxisView.configuration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": null,
+      "symbol": "DefaultVerticalAxisView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 13,
+      "symbol": "DefaultVerticalAxisConfiguration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 15,
+      "symbol": "DefaultVerticalAxisConfiguration.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 17,
+      "symbol": "DefaultVerticalAxisConfiguration.init(color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 22,
+      "symbol": "DefaultVerticalAxisView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 26,
+      "symbol": "DefaultVerticalAxisView.clefHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 30,
+      "symbol": "DefaultVerticalAxisView.lineWidth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 34,
+      "symbol": "DefaultVerticalAxisView.extenderLength",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 38,
+      "symbol": "DefaultVerticalAxisView.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 42,
+      "symbol": "DefaultVerticalAxisView.configuration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 43,
+      "symbol": "DefaultVerticalAxisView.position",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 45,
+      "symbol": "DefaultVerticalAxisView.init(position:configuration:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 55,
+      "symbol": "DefaultVerticalAxisView.line",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 61,
+      "symbol": "DefaultVerticalAxisView.frame",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 65,
+      "symbol": "DefaultVerticalAxisView.rendered",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotLinesCollection.swift",
+      "line": 13,
+      "symbol": "DefaultVerticalPlotLinesCollection",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotLinesCollection.swift",
+      "line": 15,
+      "symbol": "DefaultVerticalPlotLinesCollection.Configuration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotLinesCollection.swift",
+      "line": 16,
+      "symbol": "DefaultVerticalPlotLinesCollection.Configuration.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotLinesCollection.swift",
+      "line": 17,
+      "symbol": "DefaultVerticalPlotLinesCollection.Configuration.linesColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotLinesCollection.swift",
+      "line": 18,
+      "symbol": "DefaultVerticalPlotLinesCollection.Configuration.lineWidth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotLinesCollection.swift",
+      "line": 21,
+      "symbol": "DefaultVerticalPlotLinesCollection.rendered",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotLinesCollection.swift",
+      "line": 25,
+      "symbol": "DefaultVerticalPlotLinesCollection.lineSegments",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotLinesCollection.swift",
+      "line": 26,
+      "symbol": "DefaultVerticalPlotLinesCollection.configuration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotLinesCollection.swift",
+      "line": 28,
+      "symbol": "DefaultVerticalPlotLinesCollection.init(lineSegments:configuration:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.Builder.swift",
+      "line": 16,
+      "symbol": "DefaultVerticalPlotView.Builder",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.Builder.swift",
+      "line": 52,
+      "symbol": "DefaultVerticalPlotView.Builder.init(model:configuration:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.Builder.swift",
+      "line": 80,
+      "symbol": "DefaultVerticalPlotView.Builder.build()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": null,
+      "symbol": "DefaultVerticalPlotView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": null,
+      "symbol": "DefaultVerticalPlotView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": null,
+      "symbol": "DefaultVerticalPointView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 14,
+      "symbol": "DefaultPlotConfiguration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 16,
+      "symbol": "DefaultPlotConfiguration.default",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 18,
+      "symbol": "DefaultPlotConfiguration.lineWidth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 22,
+      "symbol": "DefaultPlotConfiguration.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 23,
+      "symbol": "DefaultPlotConfiguration.pointColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 24,
+      "symbol": "DefaultPlotConfiguration.linesColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 25,
+      "symbol": "DefaultPlotConfiguration.axisColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 27,
+      "symbol": "DefaultPlotConfiguration.init(height:pointColor:linesColor:axisColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 42,
+      "symbol": "DefaultVerticalPointView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 49,
+      "symbol": "DefaultVerticalPointView.rendered",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 58,
+      "symbol": "DefaultVerticalPlotView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 60,
+      "symbol": "DefaultVerticalPlotView.Model",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 62,
+      "symbol": "DefaultVerticalPlotView.axis",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 63,
+      "symbol": "DefaultVerticalPlotView.lines",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 66,
+      "symbol": "DefaultVerticalPlotView.points",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 68,
+      "symbol": "DefaultVerticalPlotView.init(axis:lines:points:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 79,
+      "symbol": "DefaultVerticalPlotView.init(model:configuration:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 83,
+      "symbol": "DefaultVerticalPlotView.concreteVerticalPosition(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 90,
+      "symbol": "DefaultVerticalPlotView.rendered",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/HorizontalAxisPosition.swift",
+      "line": 9,
+      "symbol": "HorizontalAxisPosition",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/HorizontalAxisPosition.swift",
+      "line": 11,
+      "symbol": "HorizontalAxisPosition.y",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/HorizontalAxisPosition.swift",
+      "line": 12,
+      "symbol": "HorizontalAxisPosition.plotLeft",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/HorizontalAxisPosition.swift",
+      "line": 13,
+      "symbol": "HorizontalAxisPosition.plotRight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/HorizontalAxisPosition.swift",
+      "line": 15,
+      "symbol": "HorizontalAxisPosition.init(y:plotLeft:plotRight:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/HorizontalAxisView.swift",
+      "line": 9,
+      "symbol": "HorizontalAxisView",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/HorizontalPlotView.swift",
+      "line": 11,
+      "symbol": "HorizontalPlotView",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/HorizontalPlotView.swift",
+      "line": 12,
+      "symbol": "HorizontalPlotView.Model",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/HorizontalPlotView.swift",
+      "line": 13,
+      "symbol": "HorizontalPlotView.concreteHorizontalPosition(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/LinesPosition.swift",
+      "line": 16,
+      "symbol": "LinesPosition.State.start",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/LinesPosition.swift",
+      "line": 16,
+      "symbol": "LinesPosition.State.stop",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/PlotViewCollection.swift",
+      "line": null,
+      "symbol": "PlotViewCollection",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/PlotViewCollection.swift",
+      "line": 12,
+      "symbol": "PlotViewCollection",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/PlotViewCollection.swift",
+      "line": 16,
+      "symbol": "PlotViewCollection.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/PlotViewCollection.swift",
+      "line": 23,
+      "symbol": "PlotViewCollection.base",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/VerticalAxisPosition.swift",
+      "line": 9,
+      "symbol": "VerticalAxisPosition",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/VerticalAxisPosition.swift",
+      "line": 11,
+      "symbol": "VerticalAxisPosition.x",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/VerticalAxisPosition.swift",
+      "line": 12,
+      "symbol": "VerticalAxisPosition.plotTop",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/VerticalAxisPosition.swift",
+      "line": 13,
+      "symbol": "VerticalAxisPosition.plotBottom",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/VerticalAxisPosition.swift",
+      "line": 15,
+      "symbol": "VerticalAxisPosition.init(x:plotTop:plotBottom:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/VerticalAxisView.swift",
+      "line": 9,
+      "symbol": "VerticalAxisView",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/VerticalPlotView.swift",
+      "line": 11,
+      "symbol": "VerticalPlotView",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/VerticalPlotView.swift",
+      "line": 12,
+      "symbol": "VerticalPlotView.Model",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/VerticalPlotView.swift",
+      "line": 13,
+      "symbol": "VerticalPlotView.concreteVerticalPosition(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/dn-m/NotationView"
+}

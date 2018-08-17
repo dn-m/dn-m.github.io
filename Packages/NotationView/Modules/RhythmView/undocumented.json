@@ -1,0 +1,208 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/Beam.swift",
+      "line": 15,
+      "symbol": "Beam.path",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/Beam.swift",
+      "line": 17,
+      "symbol": "Beam.init(start:end:width:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/BeamsView.Builder.swift",
+      "line": 17,
+      "symbol": "BeamsView.Builder",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/BeamsView.Builder.swift",
+      "line": 91,
+      "symbol": "BeamsView.Builder.build()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/BeamsView.swift",
+      "line": null,
+      "symbol": "BeamsView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/BeamsView.swift",
+      "line": 14,
+      "symbol": "BeamsView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/BeamsView.swift",
+      "line": 16,
+      "symbol": "BeamsView.Configuration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/BeamsView.swift",
+      "line": 24,
+      "symbol": "BeamsView.Configuration.init(orientation:slope:width:beamletLength:displacement:color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/BeamsView.swift",
+      "line": 42,
+      "symbol": "BeamsView.rendered",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/BeamsView.swift",
+      "line": 53,
+      "symbol": "BeamsView.init(beams:color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/BeamsView.swift",
+      "line": 58,
+      "symbol": "BeamsView.init(beaming:positions:configuration:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/Orientation.swift",
+      "line": 9,
+      "symbol": "Orientation",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/Orientation.swift",
+      "line": 10,
+      "symbol": "Orientation.stemsUp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/Orientation.swift",
+      "line": 11,
+      "symbol": "Orientation.stemsDown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/RhythmView.swift",
+      "line": 18,
+      "symbol": "RhythmView.Configuration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/RhythmView.swift",
+      "line": 20,
+      "symbol": "RhythmView.Configuration.orientation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/RhythmView.swift",
+      "line": 21,
+      "symbol": "RhythmView.Configuration.slope",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/RhythmView.swift",
+      "line": 22,
+      "symbol": "RhythmView.Configuration.beamWidth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/RhythmView.swift",
+      "line": 23,
+      "symbol": "RhythmView.Configuration.beamletLength",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/RhythmView.swift",
+      "line": 24,
+      "symbol": "RhythmView.Configuration.beamDisplacement",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/RhythmView.swift",
+      "line": 25,
+      "symbol": "RhythmView.Configuration.beamStyling",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/RhythmView.swift",
+      "line": 27,
+      "symbol": "RhythmView.Configuration.init(orientation:slope:beamWidth:beamletLength:beamDisplacement:beamStyling:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/RhythmView.swift",
+      "line": 45,
+      "symbol": "RhythmView.rendered",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/RhythmView.swift",
+      "line": 51,
+      "symbol": "RhythmView.init(beamsView:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/SubdivisionView.swift",
+      "line": 14,
+      "symbol": "SubdivisionView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/SubdivisionView.swift",
+      "line": 16,
+      "symbol": "SubdivisionView.Configuration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/TupletBracketView.swift",
+      "line": 12,
+      "symbol": "TupletBracketView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/TupletBracketView.swift",
+      "line": 14,
+      "symbol": "TupletBracketView.Configuration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/TupletBracketView.swift",
+      "line": 21,
+      "symbol": "TupletBracketView.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/dn-m/NotationView"
+}

@@ -1,0 +1,26 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/ScoreView/ScoreView.swift",
+      "line": 13,
+      "symbol": "ScoreView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/ScoreView/ScoreView.swift",
+      "line": 18,
+      "symbol": "ScoreView.init(beams:staff:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/ScoreView/ScoreView.swift",
+      "line": 23,
+      "symbol": "ScoreView.rendered",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/dn-m/NotationView"
+}
