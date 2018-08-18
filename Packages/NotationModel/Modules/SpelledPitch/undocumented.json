@@ -1,392 +1,196 @@
 {
   "warnings": [
     {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Invertible.swift",
-      "line": 10,
-      "symbol": "Invertible.inverse",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/LineOfFifths.swift",
-      "line": 12,
-      "symbol": "LineOfFifths",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/LineOfFifths.swift",
-      "line": 48,
-      "symbol": "LineOfFifths.position(ofPitchSpelling:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/LineOfFifths.swift",
-      "line": 52,
-      "symbol": "LineOfFifths.distance(ofPitchSpelling:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/LineOfFifths.swift",
-      "line": 58,
-      "symbol": "LineOfFifths.distance(between:and:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedCompoundInterval.swift",
-      "line": 10,
-      "symbol": "NamedCompoundInterval.interval",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedCompoundInterval.swift",
-      "line": 11,
-      "symbol": "NamedCompoundInterval.octaveDisplacement",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedIntervalQuality.swift",
-      "line": 19,
-      "symbol": "NamedIntervalQuality.Extended.AugmentedOrDiminished.augmented",
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/OrderedSpelledInterval.swift",
+      "line": 46,
+      "symbol": "OrderedSpelledInterval.Direction.ascending",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedIntervalQuality.swift",
-      "line": 20,
-      "symbol": "NamedIntervalQuality.Extended.AugmentedOrDiminished.diminished",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedIntervalQuality.swift",
-      "line": 25,
-      "symbol": "NamedIntervalQuality.Extended.Degree.single",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedIntervalQuality.swift",
-      "line": 26,
-      "symbol": "NamedIntervalQuality.Extended.Degree.double",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedIntervalQuality.swift",
-      "line": 27,
-      "symbol": "NamedIntervalQuality.Extended.Degree.triple",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedIntervalQuality.swift",
-      "line": 28,
-      "symbol": "NamedIntervalQuality.Extended.Degree.quadruple",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedIntervalQuality.swift",
-      "line": 29,
-      "symbol": "NamedIntervalQuality.Extended.Degree.quintuple",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedIntervalQuality.swift",
-      "line": 57,
-      "symbol": "NamedIntervalQuality.Imperfect.major",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedIntervalQuality.swift",
-      "line": 58,
-      "symbol": "NamedIntervalQuality.Imperfect.minor",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedIntervalQuality.swift",
-      "line": 63,
-      "symbol": "NamedIntervalQuality.Perfect.perfect",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedIntervalQuality.swift",
-      "line": 78,
-      "symbol": "NamedIntervalQuality.perfect",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedIntervalQuality.swift",
-      "line": 79,
-      "symbol": "NamedIntervalQuality.imperfect",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedIntervalQuality.swift",
-      "line": 80,
-      "symbol": "NamedIntervalQuality.extended",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedOrderedInterval.swift",
-      "line": 23,
-      "symbol": "NamedOrderedInterval.Direction.ascending",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedOrderedInterval.swift",
-      "line": 23,
-      "symbol": "NamedOrderedInterval.Direction.descending",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedOrderedInterval.swift",
-      "line": 31,
-      "symbol": "NamedOrderedInterval.Ordinal.Perfect.fifth",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedOrderedInterval.swift",
-      "line": 31,
-      "symbol": "NamedOrderedInterval.Ordinal.Perfect.fourth",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedOrderedInterval.swift",
-      "line": 31,
-      "symbol": "NamedOrderedInterval.Ordinal.Perfect.unison",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedOrderedInterval.swift",
-      "line": 36,
-      "symbol": "NamedOrderedInterval.Ordinal.Imperfect.second",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedOrderedInterval.swift",
-      "line": 36,
-      "symbol": "NamedOrderedInterval.Ordinal.Imperfect.seventh",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedOrderedInterval.swift",
-      "line": 36,
-      "symbol": "NamedOrderedInterval.Ordinal.Imperfect.sixth",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedOrderedInterval.swift",
-      "line": 36,
-      "symbol": "NamedOrderedInterval.Ordinal.Imperfect.third",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedOrderedInterval.swift",
-      "line": 39,
-      "symbol": "NamedOrderedInterval.Ordinal.perfect",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedOrderedInterval.swift",
-      "line": 40,
-      "symbol": "NamedOrderedInterval.Ordinal.imperfect",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedUnorderedInterval.swift",
-      "line": 32,
-      "symbol": "NamedUnorderedInterval.Ordinal.Perfect.fourth",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedUnorderedInterval.swift",
-      "line": 32,
-      "symbol": "NamedUnorderedInterval.Ordinal.Perfect.unison",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedUnorderedInterval.swift",
-      "line": 37,
-      "symbol": "NamedUnorderedInterval.Ordinal.Imperfect.second",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedUnorderedInterval.swift",
-      "line": 37,
-      "symbol": "NamedUnorderedInterval.Ordinal.Imperfect.third",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedUnorderedInterval.swift",
-      "line": 40,
-      "symbol": "NamedUnorderedInterval.Ordinal.perfect",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/NamedUnorderedInterval.swift",
-      "line": 41,
-      "symbol": "NamedUnorderedInterval.Ordinal.imperfect",
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/OrderedSpelledInterval.swift",
+      "line": 46,
+      "symbol": "OrderedSpelledInterval.Direction.descending",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 21,
-      "symbol": "Pitch.Spelling.Error",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 202,
+      "line": 142,
       "symbol": "Pitch.Spelling.QuarterStepModifier.Direction",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 203,
+      "line": 143,
       "symbol": "Pitch.Spelling.QuarterStepModifier.Direction.none",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 204,
+      "line": 144,
       "symbol": "Pitch.Spelling.QuarterStepModifier.Direction.up",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 205,
+      "line": 145,
       "symbol": "Pitch.Spelling.QuarterStepModifier.Direction.down",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 208,
+      "line": 148,
       "symbol": "Pitch.Spelling.QuarterStepModifier.Resolution",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 209,
+      "line": 149,
       "symbol": "Pitch.Spelling.QuarterStepModifier.Resolution.halfStep",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 210,
+      "line": 150,
       "symbol": "Pitch.Spelling.QuarterStepModifier.Resolution.quarterStep",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 213,
+      "line": 153,
       "symbol": "Pitch.Spelling.QuarterStepModifier.direction",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 217,
+      "line": 157,
       "symbol": "Pitch.Spelling.QuarterStepModifier.distance",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 221,
+      "line": 161,
       "symbol": "Pitch.Spelling.QuarterStepModifier.resolution",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 225,
+      "line": 165,
       "symbol": "Pitch.Spelling.QuarterStepModifier.quantizedToHalfStep",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 313,
+      "line": 253,
       "symbol": "Pitch.Spelling.Resolution.halfStep",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 316,
+      "line": 256,
       "symbol": "Pitch.Spelling.Resolution.quarterStep",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 319,
+      "line": 259,
       "symbol": "Pitch.Spelling.Resolution.eighthStep",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 349,
-      "symbol": "Pitch.Spelling.<(_:_:)",
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/LineOfFifths.swift",
+      "line": 11,
+      "symbol": "LineOfFifths",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/LineOfFifths.swift",
+      "line": 48,
+      "symbol": "LineOfFifths.position(ofPitchSpelling:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 381,
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/LineOfFifths.swift",
+      "line": 52,
+      "symbol": "LineOfFifths.distance(ofPitchSpelling:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/LineOfFifths.swift",
+      "line": 58,
+      "symbol": "LineOfFifths.distance(between:and:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/LineOfFifths.swift",
+      "line": 67,
       "symbol": "Pitch.Spelling.spellingDistance",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpellings.swift",
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Pitch+PitchSpeller.swift",
+      "line": 25,
+      "symbol": "Pitch.spellingsWithoutUnconventionalEnharmonics",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/PitchSpellingDyad.swift",
+      "line": null,
+      "symbol": "PitchSpellingDyad",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/PitchSpellingDyad.swift",
+      "line": null,
+      "symbol": "PitchSpellingDyad",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/PitchSpellingDyad.swift",
+      "line": 16,
+      "symbol": "PitchSpellingDyad",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/PitchSpellingDyad.swift",
+      "line": 149,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/PitchSpellings.swift",
       "line": 298,
       "symbol": "PitchSpellings.spellings(forPitchClass:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpellings.swift",
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/PitchSpellings.swift",
       "line": 302,
       "symbol": "PitchSpellings.defaultSpelling(forPitchClass:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
@@ -394,9 +198,30 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledDyad.swift",
-      "line": 37,
-      "symbol": "SpelledDyad.absoluteInterval",
+      "line": 49,
+      "symbol": "SpelledDyad.orderedInterval",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledPitch.swift",
+      "line": null,
+      "symbol": "SpelledPitch",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledPitch.swift",
+      "line": null,
+      "symbol": "SpelledPitch",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledPitch.swift",
+      "line": null,
+      "symbol": "SpelledPitch",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -411,48 +236,6 @@
       "line": 17,
       "symbol": "SpelledPitch",
       "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledPitch.swift",
-      "line": 19,
-      "symbol": "SpelledPitch.middleC",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledPitch.swift",
-      "line": 23,
-      "symbol": "SpelledPitch.pitch",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledPitch.swift",
-      "line": 51,
-      "symbol": "SpelledPitch.spelling",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledPitch.swift",
-      "line": 52,
-      "symbol": "SpelledPitch.octave",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledPitch.swift",
-      "line": 54,
-      "symbol": "SpelledPitch.init(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledPitchClass.swift",
-      "line": 37,
-      "symbol": "SpelledPitchClass.init(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],
