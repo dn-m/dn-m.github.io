@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Perfect Enumeration Reference</title>
+    <title>QuarterTone Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../../../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../../../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Enum/Perfect" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Enum/QuarterTone" class="dashAnchor"></a>
 
-    <a title="Perfect Enumeration Reference"></a>
+    <a title="QuarterTone Enumeration Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -30,7 +30,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../../../index.html"> Reference</a>
       <img class="carat" src="../../../img/carat.png" />
-      Perfect Enumeration Reference
+      QuarterTone Enumeration Reference
     </p>
 
     <div class="content-wrapper">
@@ -146,14 +146,15 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Perfect</h1>
+            <h1>QuarterTone</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Perfect</span> <span class="p">:</span> <span class="kt">InvertibleEnum</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">QuarterTone</span> <span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="kt"><a href="../../../Protocols/PitchSpellingModifier.html">PitchSpellingModifier</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Perfect <code><a href="../../../Structs/OrderedSpelledInterval/Ordinal.html">Ordinal</a></code> cases.</p>
+            <p>The modifer (represented graphically as an <code>Accidental</code>) for a <code><a href="../../../Structs/SpelledPitch.html">SpelledPitch</a></code> in the
+<code><a href="../../../Structs/EDO24.html">EDO24</a></code> <code><a href="../../../Protocols/TuningSystem.html">TuningSystem</a></code>.</p>
 
           </div>
         </section>
@@ -172,9 +173,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch07OrderedA8IntervalV7OrdinalO7PerfectO6fourthA2GmF"></a>
-                    <a name="//apple_ref/swift/Element/fourth" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch07OrderedA8IntervalV7OrdinalO7PerfectO6fourthA2GmF">fourth</a>
+                    <a name="/s:12SpelledPitch5EDO24V8ModifierV11QuarterToneO7quarterA2GmF"></a>
+                    <a name="//apple_ref/swift/Element/quarter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch5EDO24V8ModifierV11QuarterToneO7quarterA2GmF">quarter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -182,14 +183,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Fourth perfect named ordered interval ordinal.</p>
+                        <p>Quarter modifier.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">fourth</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">quarter</span> <span class="o">=</span> <span class="mf">0.5</span></code></pre>
 
                         </div>
                       </div>
@@ -199,9 +200,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch07OrderedA8IntervalV7OrdinalO7PerfectO6unisonA2GmF"></a>
-                    <a name="//apple_ref/swift/Element/unison" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch07OrderedA8IntervalV7OrdinalO7PerfectO6unisonA2GmF">unison</a>
+                    <a name="/s:12SpelledPitch5EDO24V8ModifierV11QuarterToneO4noneA2GmF"></a>
+                    <a name="//apple_ref/swift/Element/none" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch5EDO24V8ModifierV11QuarterToneO4noneA2GmF">none</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -209,14 +210,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Unison perfect named ordered interval ordinal.</p>
+                        <p>None modifier (<code><a href="../../../Enums/EDO12.html">EDO12</a></code> <code>sharp</code>, <code>flat</code>, <code>natural</code> remain unchanged).</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unison</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="k">none</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
 
                         </div>
                       </div>
@@ -226,9 +227,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch07OrderedA8IntervalV7OrdinalO7PerfectO5fifthA2GmF"></a>
-                    <a name="//apple_ref/swift/Element/fifth" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch07OrderedA8IntervalV7OrdinalO7PerfectO5fifthA2GmF">fifth</a>
+                    <a name="/s:12SpelledPitch5EDO24V8ModifierV11QuarterToneO05threeE0A2GmF"></a>
+                    <a name="//apple_ref/swift/Element/threeQuarter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch5EDO24V8ModifierV11QuarterToneO05threeE0A2GmF">threeQuarter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -236,14 +237,122 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Fifth perfect named ordered interval ordinal.</p>
+                        <p>Three-quarter modifier.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">fifth</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeQuarter</span> <span class="o">=</span> <span class="mf">1.5</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Static%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Static Properties" class="dashAnchor"></a>
+                <a href="#/Static%20Properties">
+                  <h3 class="section-name">Static Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SpelledPitch5EDO24V8ModifierV11QuarterToneO8identityAGvZ"></a>
+                    <a name="//apple_ref/swift/Variable/identity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch5EDO24V8ModifierV11QuarterToneO8identityAGvZ">identity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A <code><a href="../../../Structs/EDO24/Modifier.html">Modifier</a></code> which does not apply any modification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">identity</span><span class="p">:</span> <span class="kt"><a href="../../../Structs/EDO24.html">EDO24</a></span><span class="o">.</span><span class="kt"><a href="../../../Structs/EDO24/Modifier.html">Modifier</a></span><span class="o">.</span><span class="kt">QuarterTone</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Computed%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Computed Properties" class="dashAnchor"></a>
+                <a href="#/Computed%20Properties">
+                  <h3 class="section-name">Computed Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SpelledPitch5EDO24V8ModifierV11QuarterToneO10adjustmentSdv"></a>
+                    <a name="//apple_ref/swift/Property/adjustment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch5EDO24V8ModifierV11QuarterToneO10adjustmentSdv">adjustment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The amount that a <code>EDO24.Modifier.Modifier</code> modifies the base <code>Pitch.Class</code> of a
+<code><a href="../../../Enums/LetterName.html">LetterName</a></code> (in percentage of a <code>NoteNumber</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">adjustment</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SpelledPitch5EDO24V8ModifierV11QuarterToneO11descriptionSSv"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch5EDO24V8ModifierV11QuarterToneO11descriptionSSv">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Printable description of <code>EDO24.Modifier.Modifier</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

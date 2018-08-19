@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Extended Structure Reference</title>
+    <title>Modifier Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/Extended" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/Modifier" class="dashAnchor"></a>
 
-    <a title="Extended Structure Reference"></a>
+    <a title="Modifier Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -30,7 +30,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../../index.html"> Reference</a>
       <img class="carat" src="../../img/carat.png" />
-      Extended Structure Reference
+      Modifier Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -146,99 +146,21 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Extended</h1>
+            <h1>Modifier</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Extended</span> <span class="p">:</span> <span class="kt">Invertible</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Modifier</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/PitchSpellingModifier.html">PitchSpellingModifier</a></span></code></pre>
 
                 </div>
               </div>
-            <p>An augmented or diminished named interval quality</p>
+            <p>The modifer (represented graphically as an <code>Accidental</code>) for a <code><a href="../../Structs/SpelledPitch.html">SpelledPitch</a></code> in the
+<code><a href="../../Structs/EDO24.html">EDO24</a></code> <code><a href="../../Protocols/TuningSystem.html">TuningSystem</a></code>.</p>
 
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Instance%20Properties"></a>
-                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
-                <a href="#/Instance%20Properties">
-                  <h3 class="section-name">Instance Properties</h3>
-                </a>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12SpelledPitch0A15IntervalQualityO8ExtendedV7inverseAEv"></a>
-                    <a name="//apple_ref/swift/Property/inverse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch0A15IntervalQualityO8ExtendedV7inverseAEv">inverse</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">inverse</span><span class="p">:</span> <span class="kt">Extended</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>Inversion of <code>self</code>.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Initializers"></a>
-                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
-                <a href="#/Initializers">
-                  <h3 class="section-name">Initializers</h3>
-                </a>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12SpelledPitch0A15IntervalQualityO8ExtendedVA2E6DegreeO_AE21AugmentedOrDiminishedOtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch0A15IntervalQualityO8ExtendedVA2E6DegreeO_AE21AugmentedOrDiminishedOtcfc">init(_:_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Createss an <code>Extended</code> <code>NamedIntervalQuality</code> with the given <code>degree</code> and <code>quality.</code></p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">degree</span><span class="p">:</span> <span class="kt"><a href="../../Enums/SpelledIntervalQuality/Extended/Degree.html">Degree</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">single</span><span class="p">,</span> <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../../Enums/SpelledIntervalQuality/Extended/AugmentedOrDiminished.html">AugmentedOrDiminished</a></span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Nested%20Types"></a>
@@ -251,9 +173,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch0A15IntervalQualityO8ExtendedV21AugmentedOrDiminishedO"></a>
-                    <a name="//apple_ref/swift/Enum/AugmentedOrDiminished" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch0A15IntervalQualityO8ExtendedV21AugmentedOrDiminishedO">AugmentedOrDiminished</a>
+                    <a name="/s:12SpelledPitch5EDO24V8ModifierV11QuarterToneO"></a>
+                    <a name="//apple_ref/swift/Enum/QuarterTone" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch5EDO24V8ModifierV11QuarterToneO">QuarterTone</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -261,15 +183,92 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Either augmented or diminished</p>
+                        <p>The modifer (represented graphically as an <code>Accidental</code>) for a <code><a href="../../Structs/SpelledPitch.html">SpelledPitch</a></code> in the
+<code><a href="../../Structs/EDO24.html">EDO24</a></code> <code><a href="../../Protocols/TuningSystem.html">TuningSystem</a></code>.</p>
 
-                        <a href="../../Enums/SpelledIntervalQuality/Extended/AugmentedOrDiminished.html" class="slightly-smaller">See more</a>
+                        <a href="../../Structs/EDO24/Modifier/QuarterTone.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AugmentedOrDiminished</span> <span class="p">:</span> <span class="kt">InvertibleEnum</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">QuarterTone</span> <span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="kt"><a href="../../Protocols/PitchSpellingModifier.html">PitchSpellingModifier</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Static%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Static Properties" class="dashAnchor"></a>
+                <a href="#/Static%20Properties">
+                  <h3 class="section-name">Static Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SpelledPitch5EDO24V8ModifierV8identityAEvZ"></a>
+                    <a name="//apple_ref/swift/Variable/identity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch5EDO24V8ModifierV8identityAEvZ">identity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A <code>Modifier</code> which does not apply any modification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">identity</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EDO24.html">EDO24</a></span><span class="o">.</span><span class="kt">Modifier</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SpelledPitch5EDO24V8ModifierV5edo12AA5EDO12OADOv"></a>
+                    <a name="//apple_ref/swift/Property/edo12" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch5EDO24V8ModifierV5edo12AA5EDO12OADOv">edo12</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code><a href="../../Enums/EDO12.html">EDO12</a></code> subsystem modifier.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">edo12</span><span class="p">:</span> <span class="kt"><a href="../../Enums/EDO12.html">EDO12</a></span><span class="o">.</span><span class="kt">Modifier</span></code></pre>
 
                         </div>
                       </div>
@@ -279,9 +278,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch0A15IntervalQualityO8ExtendedV6DegreeO"></a>
-                    <a name="//apple_ref/swift/Enum/Degree" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch0A15IntervalQualityO8ExtendedV6DegreeO">Degree</a>
+                    <a name="/s:12SpelledPitch5EDO24V8ModifierV11quarterToneAE07QuarterF0Ov"></a>
+                    <a name="//apple_ref/swift/Property/quarterTone" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch5EDO24V8ModifierV11quarterToneAE07QuarterF0Ov">quarterTone</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -289,15 +288,80 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The degree to which an <code><a href="../../Enums/SpelledIntervalQuality/Extended.html">Extended</a></code> quality is augmented or diminished.</p>
+                        <p>The <code>Modifier</code> which modifies the <code><a href="../../Structs/EDO24/Modifier.html#/s:12SpelledPitch5EDO24V8ModifierV10adjustmentSdv">adjustment</a></code> value <code><a href="../../Structs/EDO24/Modifier.html#/s:12SpelledPitch5EDO24V8ModifierV5edo12AA5EDO12OADOv">edo12</a></code> modifier.</p>
 
-                        <a href="../../Enums/SpelledIntervalQuality/Extended/Degree.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Degree</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">quarterTone</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EDO24/Modifier/QuarterTone.html">QuarterTone</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SpelledPitch5EDO24V8ModifierV10adjustmentSdv"></a>
+                    <a name="//apple_ref/swift/Property/adjustment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch5EDO24V8ModifierV10adjustmentSdv">adjustment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The amount that a <code>EDO24.Modifier</code> modifies the base <code>Pitch.Class</code> of a
+<code><a href="../../Enums/LetterName.html">LetterName</a></code> (in percentage of a <code>NoteNumber</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">adjustment</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CustomStringConvertible"></a>
+                <a name="//apple_ref/swift/Section/CustomStringConvertible" class="dashAnchor"></a>
+                <a href="#/CustomStringConvertible">
+                  <h3 class="section-name">CustomStringConvertible</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SpelledPitch5EDO24V8ModifierV11descriptionSSv"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch5EDO24V8ModifierV11descriptionSSv">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Printable description of <code>EDO24.Modifier</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Pitch Extension Reference</title>
+    <title>PitchSpellingModifier Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/Pitch" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Protocol/PitchSpellingModifier" class="dashAnchor"></a>
 
-    <a title="Pitch Extension Reference"></a>
+    <a title="PitchSpellingModifier Protocol Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -30,7 +30,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      Pitch Extension Reference
+      PitchSpellingModifier Protocol Reference
     </p>
 
     <div class="content-wrapper">
@@ -146,21 +146,36 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Pitch</h1>
-            
+            <h1>PitchSpellingModifier</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PitchSpellingModifier</span> <span class="p">:</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                </div>
+              </div>
+            <p>Interface for types which modify a <code><a href="../Enums/LetterName.html">LetterName</a></code> value. Graphically repesented as components of
+an <code>Accidental</code>.</p>
+
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Extension/Class" class="dashAnchor"></a>
-                    <a class="token" href="#/">Class</a>
+                    <a name="/s:12SpelledPitch0B16SpellingModifierP8identityxvZ"></a>
+                    <a name="//apple_ref/swift/Variable/identity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierP8identityxvZ">identity</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -168,8 +183,44 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
-                        <a href="../Extensions/Pitch/Class.html" class="slightly-smaller">See more</a>
+                        <p>A <code>PitchSpellingModifier</code> which does not apply any modification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">identity</span><span class="p">:</span> <span class="k">Self</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdv"></a>
+                    <a name="//apple_ref/swift/Property/adjustment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdv">adjustment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The amount that a <code>PitchSpellingModifier</code> modifies the base <code>Pitch.Class</code> of a <code><a href="../Enums/LetterName.html">LetterName</a></code>
+(in percentage of a <code>NoteNumber</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">adjustment</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -177,133 +228,69 @@
               </ul>
             </div>
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Equatable"></a>
+                <a name="//apple_ref/swift/Section/Equatable" class="dashAnchor"></a>
+                <a href="#/Equatable">
+                  <h3 class="section-name">Equatable</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch5ErrorO"></a>
-                    <a name="//apple_ref/swift/Enum/Error" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch5ErrorO">Error</a>
+                    <a name="/s:12SpelledPitch0B16SpellingModifierPAAE2eeoiSbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierPAAE2eeoiSbx_xtFZ">==(_:_:)</a>
                     </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Things that can go wrong while applying a <code><a href="../Extensions/Pitch/Spelling.html">Pitch.Spelling</a></code> to a <code>Pitch</code>.</p>
-
-                        <a href="../Extensions/Pitch/Error.html" class="slightly-smaller">See more</a>
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Error</span> <span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12SpelledPitch9spellingsXev"></a>
-                    <a name="//apple_ref/swift/Property/spellings" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch9spellingsXev">spellings</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>All <code><a href="../Extensions/Pitch/Spelling.html">Pitch.Spelling</a></code> structures available for this <code>Pitch</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">spellings</span><span class="p">:</span> <span class="p">[</span><span class="kt">Pitch</span><span class="o">.</span><span class="kt"><a href="../Extensions/Pitch/Spelling.html">Spelling</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/EDO48.html">EDO48</a></span><span class="o">&gt;</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12SpelledPitch15defaultSpellingXev"></a>
-                    <a name="//apple_ref/swift/Property/defaultSpelling" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch15defaultSpellingXev">defaultSpelling</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The first available <code><a href="../Extensions/Pitch/Spelling.html">Pitch.Spelling</a></code> for this <code>Pitch</code>, if present. Otherwise <code>nil</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">defaultSpelling</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt"><a href="../Extensions/Pitch/Spelling.html">Spelling</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/EDO48.html">EDO48</a></span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12SpelledPitch7spelledXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/spelled(with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch7spelledXeXeF">spelled(with:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <div class="aside aside-throws">
-    <p class="aside-title">Throws</p>
-    <p><code>Pitch.Spelling.Error.incompatibleSpelling</code> if the given <code>spelling</code> is not
-appropriate for this <code>Pitch</code>.</p>
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">spelled</span><span class="p">(</span><span class="n">with</span> <span class="nv">spelling</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt"><a href="../Extensions/Pitch/Spelling.html">Spelling</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/EDO48.html">EDO48</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/SpelledPitch.html">SpelledPitch</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/EDO48.html">EDO48</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p><code><a href="../Structs/SpelledPitch.html">SpelledPitch</a></code> with the given <code><a href="../Extensions/Pitch/Spelling.html">Pitch.Spelling</a></code>,
-if the given <code><a href="../Extensions/Pitch/Spelling.html">Pitch.Spelling</a></code> is valid for the <code>PitchClass</code> of the given <code>pitch</code>.</p>
+                        <p><code>true</code> if the <code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdv">adjustment</a></code> property of the <code>lhs</code> value is equal to the
+<code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdv">adjustment</a></code> property of the <code>rhs</code> value. Otherwise <code>false</code>.</p>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Hashable"></a>
+                <a name="//apple_ref/swift/Section/Hashable" class="dashAnchor"></a>
+                <a href="#/Hashable">
+                  <h3 class="section-name">Hashable</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch26spelledWithDefaultSpellingA2AVyAA5EDO48OGv"></a>
-                    <a name="//apple_ref/swift/Property/spelledWithDefaultSpelling" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch26spelledWithDefaultSpellingA2AVyAA5EDO48OGv">spelledWithDefaultSpelling</a>
+                    <a name="/s:12SpelledPitch0B16SpellingModifierPAAE9hashValueSiv"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierPAAE9hashValueSiv">hashValue</a>
                     </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
@@ -316,13 +303,13 @@ if the given <code><a href="../Extensions/Pitch/Spelling.html">Pitch.Spelling</a
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">spelledWithDefaultSpelling</span><span class="p">:</span> <span class="kt"><a href="../Structs/SpelledPitch.html">SpelledPitch</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/EDO48.html">EDO48</a></span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p><code><a href="../Structs/SpelledPitch.html">SpelledPitch</a></code> with the default spelling for this <code>Pitch</code>.</p>
+                        <p>The <code>hashValue</code> of the <code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdv">adjustment</a></code> property.</p>
                       </div>
                     </section>
                   </div>
@@ -330,46 +317,24 @@ if the given <code><a href="../Extensions/Pitch/Spelling.html">Pitch.Spelling</a
               </ul>
             </div>
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Comparable"></a>
+                <a name="//apple_ref/swift/Section/Comparable" class="dashAnchor"></a>
+                <a href="#/Comparable">
+                  <h3 class="section-name">Comparable</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch8SpellingV"></a>
-                    <a name="//apple_ref/swift/Struct/Spelling" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch8SpellingV">Spelling</a>
+                    <a name="/s:12SpelledPitch0B16SpellingModifierPAAE1loiSbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/&lt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierPAAE1loiSbx_xtFZ">&lt;(_:_:)</a>
                     </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Spelled representation of a <code>Pitch</code>.</p>
-
-                        <a href="../Extensions/Pitch/Spelling.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Spelling</span><span class="o">&lt;</span><span class="kt">Tuning</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Tuning</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/TuningSystem.html">TuningSystem</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Extension/Spelling" class="dashAnchor"></a>
-                    <a class="token" href="#/">Spelling</a>
-                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
@@ -377,7 +342,19 @@ if the given <code><a href="../Extensions/Pitch/Spelling.html">Pitch.Spelling</a
                       <div class="pointer"></div>
                       <div class="abstract">
                         
-                        <a href="../Extensions/Pitch/Spelling.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">&lt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the <code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdv">adjustment</a></code> property of the <code>lhs</code> value is less than the
+<code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdv">adjustment</a></code> property of the <code>rhs</code> value. Otherwise <code>false</code>.</p>
                       </div>
                     </section>
                   </div>

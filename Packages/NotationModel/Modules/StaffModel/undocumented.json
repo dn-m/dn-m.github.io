@@ -121,7 +121,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Accidental.swift",
-      "line": 34,
+      "line": 36,
       "symbol": "Accidental.init(coarse:fine:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
