@@ -1,6 +1,174 @@
 {
   "warnings": [
     {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": null,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": null,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": null,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": null,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": null,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": null,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": null,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 8,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 10,
+      "symbol": "NewType.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 11,
+      "symbol": "NewType.init(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 15,
+      "symbol": "NewType.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 21,
+      "symbol": "NewType.init(integerLiteral:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 27,
+      "symbol": "NewType.init(floatLiteral:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 37,
+      "symbol": "NewType.init(arrayLiteral:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 44,
+      "symbol": "NewType.magnitude",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 48,
+      "symbol": "NewType.+(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 52,
+      "symbol": "NewType.+=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 56,
+      "symbol": "NewType.-(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 60,
+      "symbol": "NewType.-=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 64,
+      "symbol": "NewType.*(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 68,
+      "symbol": "NewType.*=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 72,
+      "symbol": "NewType.init(exactly:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 81,
+      "symbol": "NewType.makeIterator()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 105,
+      "symbol": "NewType.indices",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/RangeProtocol+Algebra.swift",
       "line": 12,
       "symbol": "ClosedRange.zero",
