@@ -51,6 +51,13 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": null,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
       "line": 8,
       "symbol": "NewType",
       "symbol_kind": "source.lang.swift.decl.protocol",
@@ -80,90 +87,97 @@
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
       "line": 21,
+      "symbol": "NewType.<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 27,
       "symbol": "NewType.init(integerLiteral:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 27,
+      "line": 33,
       "symbol": "NewType.init(floatLiteral:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 37,
+      "line": 43,
       "symbol": "NewType.init(arrayLiteral:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 44,
+      "line": 50,
       "symbol": "NewType.magnitude",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 48,
+      "line": 54,
       "symbol": "NewType.+(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 52,
+      "line": 58,
       "symbol": "NewType.+=(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 56,
+      "line": 62,
       "symbol": "NewType.-(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 60,
+      "line": 66,
       "symbol": "NewType.-=(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 64,
+      "line": 70,
       "symbol": "NewType.*(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 68,
+      "line": 74,
       "symbol": "NewType.*=(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 72,
+      "line": 78,
       "symbol": "NewType.init(exactly:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 81,
+      "line": 87,
       "symbol": "NewType.makeIterator()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 105,
+      "line": 111,
       "symbol": "NewType.indices",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
