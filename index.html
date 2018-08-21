@@ -139,7 +139,50 @@ dn-m
 <article class="main-content">
 <section class="section">
 <div class="section-content">
-The is the documentation of the dn-m project.
+<h1>dn-m docs</h1>
+
+<p>Welcome to the <strong>dn-m</strong> (dynamic notation for music) project. Here you will find documentation generated directly from the source code.</p>
+
+<h2>Packages</h2>
+
+<p>The <strong>dn-m</strong> project currently consists of seven packages (each containing one or more modules): </p>
+
+<ul>
+<li><a href="Packages/Structure/index.html"><code>Structure</code></a></li>
+<li><a href="Packages/Math/index.html"><code>Math</code></a></li>
+<li><a href="Packages/Graphics/index.html"><code>Music</code></a></li>
+<li><a href="Packages/NotationModel/index.html"><code>NotationModel</code></a></li>
+<li><a href="Packages/Graphics/index.html"><code>Graphics</code></a></li>
+<li><a href="Packages/NotationView/index.html"><code>NotationView</code></a></li>
+<li><a href="Packages/Time/index.html"><code>Time</code></a></li>
+</ul>
+
+<p>The packages compose with and build upon each other:</p>
+
+<p><img src="assets/img/packages.png" alt="Packages"></p>
+
+<h2>Development</h2>
+
+<p>The codebase for the <strong>dn-m</strong> project is written in the Swift language, and requires Swift version 4.2.</p>
+
+<h3>Installation</h3>
+
+<p>The packages within the <strong>dn-m</strong> project are managed by the <a href="https://swift.org/package-manager/">Swift Package Manager</a>.</p>
+
+<p>You can clone any of the repositories from the command line. For example, to work on the <code>Music</code> package, you can do the following:</p>
+
+<p><code>Bash
+git clone https://github.com/dn-m/Music &amp;&amp; cd Music
+</code></p>
+
+<p>For fun, give things a test:</p>
+
+<p><code>Bash
+swift test
+</code></p>
+
+<p>This will update and build all of the dependencies (e.g., the <code>Music</code> package depends on the <code>Math</code> and the <code>Structure</code> packages), and then run the unit tests.</p>
+
 </div>
 </section>
 </article>
