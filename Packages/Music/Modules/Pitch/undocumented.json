@@ -1,66 +1,10 @@
 {
   "warnings": [
     {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Dyad.swift",
-      "line": null,
-      "symbol": "Dyad",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Dyad.swift",
-      "line": 11,
-      "symbol": "Dyad",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Dyad.swift",
-      "line": 13,
-      "symbol": "Dyad.interval",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Dyad.swift",
-      "line": 17,
-      "symbol": "Dyad.lower",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Dyad.swift",
-      "line": 18,
-      "symbol": "Dyad.higher",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Dyad.swift",
-      "line": 20,
-      "symbol": "Dyad.init(_:_:)",
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/NoteNumberRepresentable.swift",
+      "line": 36,
+      "symbol": "NoteNumberRepresentable.init(value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Dyad.swift",
-      "line": 24,
-      "symbol": "Dyad.init(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/OrderedInterval.swift",
-      "line": 9,
-      "symbol": "OrderedInterval",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/UnorderedInterval.swift",
-      "line": 9,
-      "symbol": "UnorderedInterval",
-      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     }
   ],
