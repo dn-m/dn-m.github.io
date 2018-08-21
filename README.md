@@ -20,7 +20,7 @@ The packages compose with and build upon each other:
 
 ## Development
 
-The codebase for the **dn-m** project is written in the Swift language, and requires Swift version 4.2.
+The codebase for the **dn-m** project is written in the Swift language, and requires Swift version **4.2**.
 
 ### Installation
 
@@ -28,14 +28,10 @@ The packages within the **dn-m** project are managed by the [Swift Package Manag
 
 You can clone any of the repositories from the command line. For example, to work on the `Music` package, you can do the following:
 
-```Bash
-git clone https://github.com/dn-m/Music && cd Music
-```
+`git clone https://github.com/dn-m/Music && cd Music`
 
 For fun, give things a test:
 
-```Bash
-swift test
-```
+`swift test`
 
 This will update and build all of the dependencies (e.g., the `Music` package depends on the `Math` and the `Structure` packages), and then run the unit tests.
