@@ -8,7 +8,7 @@ The **dn-m** project currently consists of seven packages (each containing one o
 
 - [`Structure`](Packages/Structure/index.html)
 - [`Math`](Packages/Math/index.html)
-- [`Music`](Packages/Graphics/index.html)
+- [`Music`](Packages/Music/index.html)
 - [`NotationModel`](Packages/NotationModel/index.html)
 - [`Graphics`](Packages/Graphics/index.html)
 - [`NotationView`](Packages/NotationView/index.html)
