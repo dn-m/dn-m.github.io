@@ -1,12 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/NoteNumberRepresentable.swift",
-      "line": 36,
-      "symbol": "NoteNumberRepresentable.init(value:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/travis/build/dn-m/Music"
 }
