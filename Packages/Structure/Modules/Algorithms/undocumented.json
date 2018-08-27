@@ -6,6 +6,13 @@
       "symbol": "swapped(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/Algorithms/Unzip.swift",
+      "line": 10,
+      "symbol": "Sequence.unzipped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/travis/build/dn-m/Structure"

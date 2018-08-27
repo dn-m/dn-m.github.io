@@ -2,14 +2,14 @@
   "warnings": [
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/ContiguousSegmentCollection/ContiguousSegmentCollection.swift",
-      "line": 216,
+      "line": 203,
       "symbol": "ContiguousSegmentCollection.Fragment.init(head:body:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/ContiguousSegmentCollection/ContiguousSegmentCollection.swift",
-      "line": 223,
+      "line": 210,
       "symbol": "ContiguousSegmentCollection.Fragment.init(body:tail:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
