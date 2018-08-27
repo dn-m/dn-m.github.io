@@ -20,7 +20,7 @@
         <a class="header-link" href="index.html">
            Docs
         </a>
-         (73% documented)
+         (76% documented)
       </p>
     
     
@@ -217,6 +217,9 @@
                 <a class="nav-group-task-link" href="Extensions/MutableCollection.html">MutableCollection</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/Numeric.html">Numeric</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/RangeReplaceableCollection.html">RangeReplaceableCollection</a>
               </li>
               <li class="nav-group-task">
@@ -265,9 +268,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Other Functions.html#/s:14DataStructures1moixx_xtAA15IntegerWrappingRzlF">*(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other Functions.html#/s:14DataStructures1poiAA16SortedDictionaryVyxq_GAE_AEts10ComparableRzs8HashableRzsAFR_sAGR_r0_lF">+(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Other Functions.html#/s:14DataStructures1poiS2d_xtAA14DoubleWrappingRzlF">+(_:_:)</a>
@@ -434,7 +434,19 @@
             <a class="nav-group-name-link" href="Other Protocols.html">Other Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Fragmentable.html">Fragmentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Intervallic.html">Intervallic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/IntervallicFragmentable.html">IntervallicFragmentable</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/InvertibleEnum.html">InvertibleEnum</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Measured.html">Measured</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/NewType.html">NewType</a>
@@ -444,6 +456,20 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/ReferenceTreeProtocol.html">ReferenceTreeProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Totalizable.html">Totalizable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ContiguousSegmentCollection.html">ContiguousSegmentCollection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ContiguousSegmentCollection/Fragment.html">– Fragment</a>
               </li>
             </ul>
           </li>
@@ -461,6 +487,169 @@
 
         <section class="section">
           <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures12FragmentableP"></a>
+                    <a name="//apple_ref/swift/Protocol/Fragmentable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures12FragmentableP">Fragmentable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Interface for types which can be fragmented into smaller pieces.</p>
+
+                        <a href="Protocols/Fragmentable.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Fragmentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures11IntervallicP"></a>
+                    <a name="//apple_ref/swift/Protocol/Intervallic" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures11IntervallicP">Intervallic</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Protocols/Intervallic.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Intervallic</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Measured.html">Measured</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures23IntervallicFragmentableP"></a>
+                    <a name="//apple_ref/swift/Protocol/IntervallicFragmentable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures23IntervallicFragmentableP">IntervallicFragmentable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Interface for types which are <code><a href="Protocols/Intervallic.html">Intervallic</a></code>, and can be fragmented into a type which shares its
+<code>Metric</code> type.</p>
+
+                        <a href="Protocols/IntervallicFragmentable.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">IntervallicFragmentable</span><span class="p">:</span> <span class="kt"><a href="Protocols/Intervallic.html">Intervallic</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/Fragmentable.html">Fragmentable</a></span>
+    <span class="k">where</span> <span class="kt">Fragment</span><span class="p">:</span> <span class="kt"><a href="Protocols/Intervallic.html">Intervallic</a></span><span class="p">,</span> <span class="kt">Fragment</span><span class="o">.</span><span class="kt">Metric</span> <span class="o">==</span> <span class="kt">Metric</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures8MeasuredP"></a>
+                    <a name="//apple_ref/swift/Protocol/Measured" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures8MeasuredP">Measured</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Interface for types which are measured by some <code>Metric</code> type.</p>
+
+                        <a href="Protocols/Measured.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Measured</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures11TotalizableP"></a>
+                    <a name="//apple_ref/swift/Protocol/Totalizable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures11TotalizableP">Totalizable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Interface for fragment types which can create a fragment version of a whole instance of the
+type.</p>
+
+                        <a href="Protocols/Totalizable.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Totalizable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="task-group">
               <ul class="item-container">
                 <li class="item">
@@ -601,7 +790,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-21)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-27)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

@@ -1,6 +1,27 @@
 {
   "warnings": [
     {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/ContiguousSegmentCollection/ContiguousSegmentCollection.swift",
+      "line": 216,
+      "symbol": "ContiguousSegmentCollection.Fragment.init(head:body:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/ContiguousSegmentCollection/ContiguousSegmentCollection.swift",
+      "line": 223,
+      "symbol": "ContiguousSegmentCollection.Fragment.init(body:tail:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/ContiguousSegmentCollection/Intervallic.swift",
+      "line": 10,
+      "symbol": "Intervallic",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
       "line": null,
       "symbol": "NewType",
@@ -317,21 +338,21 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/SortedDictionary.swift",
-      "line": 142,
+      "line": 172,
       "symbol": "SortedDictionary.min()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/SortedDictionary.swift",
-      "line": 147,
+      "line": 177,
       "symbol": "SortedDictionary.max()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/SortedDictionary.swift",
-      "line": 152,
+      "line": 182,
       "symbol": "SortedDictionary.sorted()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
