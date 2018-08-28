@@ -146,51 +146,29 @@
 
                 </div>
               </div>
-            <p><code>Duration</code>.</p>
+            <p>A unit of hierarchically-divided symbolic time.</p>
+
+<p><strong>Example Usage</strong></p>
+
+<p>You can create a <code>Duration</code> value with an amount of <code>beats</code> at a given <code>subdivision</code> level.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="kt">Duration</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="c1">// =&gt; one quarter note</span>
+<span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="kt">Duration</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">32</span><span class="p">)</span> <span class="c1">// =&gt; three thirty-second notes</span>
+</code></pre>
+
+<p>You can also create a <code>Duration</code> value with an infix operator:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="mi">3</span><span class="o">/&gt;</span><span class="mi">32</span>
+<span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="mi">31</span><span class="o">/&gt;</span><span class="mi">4</span>
+</code></pre>
+
+<p>The <code>subdivision</code> value <em>must</em> be a power-of-two, otherwise your program will crash!</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="kt">Duration</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">13</span><span class="p">)</span> <span class="c1">// boom</span>
+</code></pre>
 
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Type%20Properties"></a>
-                <a name="//apple_ref/swift/Section/Type Properties" class="dashAnchor"></a>
-                <a href="#/Type%20Properties">
-                  <h3 class="section-name">Type Properties</h3>
-                </a>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:8DurationAAV4zeroABvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/zero" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8DurationAAV4zeroABvpZ">zero</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A <code>Duration</code> with zero length.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">zero</span><span class="p">:</span> <span class="kt">Duration</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Instance%20Properties"></a>
@@ -286,6 +264,44 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">numerator</span><span class="p">:</span> <span class="kt"><a href="../Basic Types.html#/s:8Duration5Beatsa">Beats</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">denominator</span><span class="p">:</span> <span class="kt"><a href="../Basic Types.html#/s:8Duration11Subdivisiona">Subdivision</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Type%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Type Properties" class="dashAnchor"></a>
+                <a href="#/Type%20Properties">
+                  <h3 class="section-name">Type Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8DurationAAV4zeroABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/zero" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8DurationAAV4zeroABvpZ">zero</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A <code>Duration</code> with zero length.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">zero</span><span class="p">:</span> <span class="kt">Duration</span></code></pre>
 
                         </div>
                       </div>

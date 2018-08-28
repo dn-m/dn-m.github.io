@@ -223,7 +223,23 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>Duration</code>.</p>
+                        <p>A unit of hierarchically-divided symbolic time.</p>
+
+<p><strong>Example Usage</strong></p>
+
+<p>You can create a <code>Duration</code> value with an amount of <code>beats</code> at a given <code>subdivision</code> level.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="kt">Duration</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="c1">// =&gt; one quarter note</span>
+<span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="kt">Duration</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">32</span><span class="p">)</span> <span class="c1">// =&gt; three thirty-second notes</span>
+</code></pre>
+
+<p>You can also create a <code>Duration</code> value with an infix operator:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="mi">3</span><span class="o">/&gt;</span><span class="mi">32</span>
+<span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="mi">31</span><span class="o">/&gt;</span><span class="mi">4</span>
+</code></pre>
+
+<p>The <code>subdivision</code> value <em>must</em> be a power-of-two, otherwise your program will crash!</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="kt">Duration</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">13</span><span class="p">)</span> <span class="c1">// boom</span>
+</code></pre>
 
                         <a href="Structs/Duration.html" class="slightly-smaller">See more</a>
                       </div>

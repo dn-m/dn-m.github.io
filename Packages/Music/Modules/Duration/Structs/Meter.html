@@ -174,10 +174,10 @@
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Associated%20Types"></a>
-                <a name="//apple_ref/swift/Section/Associated Types" class="dashAnchor"></a>
-                <a href="#/Associated%20Types">
-                  <h3 class="section-name">Associated Types</h3>
+                <a name="/Nested%20Types"></a>
+                <a name="//apple_ref/swift/Section/Nested Types" class="dashAnchor"></a>
+                <a href="#/Nested%20Types">
+                  <h3 class="section-name">Nested Types</h3>
                 </a>
               </div>
               <ul class="item-container">
@@ -195,6 +195,40 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A collection of contiguous <code>Meter</code> values indexed by their fractional offset.</p>
+
+<p><strong>Example Usage</strong></p>
+
+<p>You can create a <code>Meter.Collection</code> in several different ways:</p>
+
+<p>With an array literal of <code>Meter</code> values:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">_</span><span class="p">:</span> <span class="kt">Meter</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Meter</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="kt">Meter</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">16</span><span class="p">),</span> <span class="kt">Meter</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">)]</span>
+</code></pre>
+
+<p>With the standard initializer:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="kt">Meter</span><span class="o">.</span><span class="kt">Collection</span><span class="p">([</span><span class="kt">Meter</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="kt">Meter</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">16</span><span class="p">),</span> <span class="kt">Meter</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">)])</span>
+</code></pre>
+
+<p>You can also add an fractional offset, if needed:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="kt">Meter</span><span class="o">.</span><span class="kt">Collection</span><span class="p">([</span><span class="kt">Meter</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="kt">Meter</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">16</span><span class="p">),</span> <span class="kt">Meter</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">)],</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Fraction</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">64</span><span class="p">))</span>
+</code></pre>
+
+<p>Lastly, you can construct a <code>Meter.Collection</code> over time with a <code><a href="../Classes/MeterCollectionBuilder.html">MeterCollectionBuilder</a></code>:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="kt">MeterCollectionBuilder</span><span class="p">(</span><span class="nv">offset</span><span class="p">:</span> <span class="kt">Fraction</span><span class="p">(</span><span class="mi">21</span><span class="p">,</span><span class="mi">16</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="kt">Meter</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="kt">Meter</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="kt">Meter</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="kt">Meter</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="mi">64</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="kt">Meter</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">16</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">build</span><span class="p">()</span>
+</code></pre>
+
+<p>To get a fragment of a <code>Meter.Collection</code>, supply a desired range:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">meters</span><span class="p">:</span> <span class="kt">Meter</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Meter</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="kt">Meter</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="kt">Meter</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">)]</span>
+<span class="k">let</span> <span class="nv">range</span> <span class="o">=</span> <span class="kt">Fraction</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">16</span><span class="p">)</span> <span class="o">..&lt;</span> <span class="kt">Fraction</span><span class="p">(</span><span class="mi">31</span><span class="p">,</span><span class="mi">16</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">fragment</span> <span class="o">=</span> <span class="n">meters</span><span class="o">.</span><span class="nf">fragment</span><span class="p">(</span><span class="nv">in</span><span class="p">:</span> <span class="n">range</span><span class="p">)</span>
+</code></pre>
+
+<p>This will return a collection of <code><a href="../Structs/Meter/Fragment.html">Meter.Fragment</a></code> values in the given rage.</p>
 
                       </div>
                       <div class="declaration">
