@@ -75,15 +75,40 @@ Music
 
 <p>The code herein is pure Swift and has no system-specific dependencies. It supports the Linux platform, along with the Apple platforms, and will extend support to other platforms as Swift does.</p>
 
-<h2>API Reference</h2>
+<h2>Documentation</h2>
 
 <p>Check out the <a href="https://dn-m.github.io/Packages/Music">documentation</a> automatically generated from the source code, updated with each push to the <code>master</code> branch.</p>
 
 <h2>Usage</h2>
 
-<h3>Installation</h3>
+<p>```Swift
+import Pitch
+import Duration
+import Dynamics</p>
 
-<p><code>Music</code> uses the <a href="https://swift.org/package-manager/">Swift Package Manager</a> to manage its dependencies.</p>
+<p>let c: Pitch = 60 // =&gt; &quot;middle c&quot;
+let d = c + 2 // =&gt; 62 // =&gt; Pitch(62)
+let pcs: Pitch.Class.Collection = [0,11,3,4,8,7,9,5,6,1,2,10]
+let retrograde = pcs.retrograde // =&gt; [10,2,1,6,5,9,7,8,4,3,11,0]</p>
+
+<p>let duration = 3/&gt;4 // =&gt; Duration(3,4) &quot;three quarter notes&quot;
+let tempo = Tempo(120,8) // =&gt; &quot;120 beats per minute at the eighth-note level&quot;
+let meter = Meter(15,16) // =&gt; &quot;15 beats at the sixteenth-note level&quot;
+let meters: Meter.Collection = [Meter(3,4), Meter(5,16), Meter(11,28)]</p>
+
+<p>let loud: Dynamic = .ff
+let louder: Dynamic = .ffff
+let lessLoud: Dynamic = .p
+```</p>
+
+<h3>Requirements</h3>
+
+<ul>
+<li>Swift 4.2 Toolchain</li>
+<li><a href="https://swift.org/package-manager/">Swift Package Manager</a></li>
+</ul>
+
+<h3>Installation</h3>
 
 <p>In order to use the <code>Music</code> API, add it to the <code>dependencies</code> section of your <code>Package.swift</code> file:</p>
 
@@ -98,27 +123,6 @@ let package = Package(
     targets: [ ... ]
 )
 </code></p>
-
-<p>At the top of any file in which you&#39;d like to use a module from the <code>Music</code> package, add <code>import</code> followed the name of the module: </p>
-
-<p>```Swift
-import Pitch
-let c: Pitch = 60 // =&gt; &quot;middle c&quot;
-let d = c + 2 // =&gt; 62 // =&gt; Pitch(62)
-let pcs: Pitch.Class.Collection = [0,11,3,4,8,7,9,5,6,1,2,10]
-let retrograde = pcs.retrograde // =&gt; [10,2,1,6,5,9,7,8,4,3,11,0]</p>
-
-<p>import Duration
-let duration = 3/&gt;4 // =&gt; Duration(3,4) &quot;three quarter notes&quot;
-let tempo = Tempo(120,8) // =&gt; &quot;120 beats per minute at the eighth-note level&quot;
-let meter = Meter(15,16) // =&gt; &quot;15 beats at the sixteenth-note level&quot;
-let meters: Meter.Collection = [Meter(3,4), Meter(5,16), Meter(11,28)]</p>
-
-<p>import Dynamics
-let loud: Dynamic = .ff
-let louder: Dynamic = .ffff
-let lessLoud: Dynamic = .p
-```</p>
 
 <h2>Development</h2>
 
