@@ -2,51 +2,9 @@
   "warnings": [
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Meter/Meter.Fragment.swift",
-      "line": 28,
+      "line": 33,
       "symbol": "Meter.Fragment.init(_:in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Meter/Meter.swift",
-      "line": 87,
-      "symbol": "Meter.Collection.Metric",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Meter/Meter.swift",
-      "line": 91,
-      "symbol": "Meter.Collection.base",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Spanning/SpanningContainer.swift",
-      "line": null,
-      "symbol": "SpanningContainer",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Spanning/SpanningContainer.swift",
-      "line": 17,
-      "symbol": "SpanningContainer",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Spanning/SpanningContainer.swift",
-      "line": 125,
-      "symbol": "SpanningContainer.indexOfElement(containing:includingUpperBound:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Spanning/SpanningContainerBuilder.swift",
-      "line": 31,
-      "symbol": "SpanningContainerBuilder.intermediate",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -58,22 +16,22 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
-      "line": 344,
+      "line": 114,
+      "symbol": "Tempo.Interpolation.Metric",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
+      "line": 377,
       "symbol": "Tempo.Interpolation.Easing",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
-      "line": 449,
-      "symbol": "Tempo.Interpolation.Collection.base",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
-      "line": 565,
-      "symbol": "Tempo.Interpolation.Collection.Builder.add(_:at:easing:)",
+      "line": 549,
+      "symbol": "ContiguousSegmentCollection.secondsOffset(for:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }

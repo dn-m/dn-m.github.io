@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Tree Extension Reference</title>
+    <title>TempoInterpolationCollectionBuilder Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/Tree" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/TempoInterpolationCollectionBuilder" class="dashAnchor"></a>
 
-    <a title="Tree Extension Reference"></a>
+    <a title="TempoInterpolationCollectionBuilder Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -30,7 +30,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      Tree Extension Reference
+      TempoInterpolationCollectionBuilder Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -139,8 +139,16 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Tree</h1>
-            
+            <h1>TempoInterpolationCollectionBuilder</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">TempoInterpolationCollectionBuilder</span></code></pre>
+
+                </div>
+              </div>
+            <p>A class which encapsulates the stateful incremental building process of
+a <code><a href="../Structs/Tempo/Interpolation.html#/s:8Duration5TempoV13InterpolationV10Collectiona">Tempo.Interpolation.Collection</a></code>.</p>
+
           </div>
         </section>
 
@@ -148,19 +156,19 @@
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Initializers"></a>
-                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
-                <a href="#/Initializers">
-                  <h3 class="section-name">Initializers</h3>
+                <a name="/Associated%20Types"></a>
+                <a name="//apple_ref/swift/Section/Associated Types" class="dashAnchor"></a>
+                <a href="#/Associated%20Types">
+                  <h3 class="section-name">Associated Types</h3>
                 </a>
               </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8DurationXeXecfc"></a>
-                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8DurationXeXecfc">init(_:_:)</a>
+                    <a name="/s:8Duration35TempoInterpolationCollectionBuilderC7Producta"></a>
+                    <a name="//apple_ref/swift/Alias/Product" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Duration35TempoInterpolationCollectionBuilderC7Producta">Product</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -168,20 +176,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a <code><a href="../Rhythm.html#/s:8Duration0A4Treea">DurationTree</a></code> with the beat values of the given <code>proportionTree</code>
-with the given <code>subdivision</code>.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Ensure the given <code>proportionTree</code> has been normalized.
-
-</div>
+                        <p>The end result of the building process (<code><a href="../Structs/Tempo/Interpolation.html#/s:8Duration5TempoV13InterpolationV10Collectiona">Tempo.Interpolation.Collection</a></code>).</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">subdivision</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">proportionTree</span><span class="p">:</span> <span class="kt"><a href="../Rhythm.html#/s:8Duration14ProportionTreea">ProportionTree</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Product</span> <span class="o">=</span> <span class="kt"><a href="../Structs/Tempo.html">Tempo</a></span><span class="o">.</span><span class="kt">Interpolation</span><span class="o">.</span><span class="kt">Collection</span></code></pre>
 
                         </div>
                       </div>
@@ -202,9 +204,9 @@ with the given <code>subdivision</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Duration8durationA2AVvp"></a>
-                    <a name="//apple_ref/swift/Property/duration" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration8durationA2AVvp">duration</a>
+                    <a name="/s:8Duration35TempoInterpolationCollectionBuilderC6offsetXevp"></a>
+                    <a name="//apple_ref/swift/Property/offset" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Duration35TempoInterpolationCollectionBuilderC6offsetXevp">offset</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -212,14 +214,15 @@ with the given <code>subdivision</code>.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code><a href="../Structs/Duration.html">Duration</a></code> value of this <code><a href="../Rhythm.html#/s:8Duration0A4Treea">DurationTree</a></code> node.</p>
+                        <p>The stateful, accumulating <code>offset</code> which becomes the metrical offset of a
+<code><a href="../Structs/Tempo/Interpolation/Fragment.html">Tempo.Interpolation.Fragment</a></code> value.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt"><a href="../Structs/Duration.html">Duration</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Fraction</span></code></pre>
 
                         </div>
                       </div>
@@ -229,9 +232,9 @@ with the given <code>subdivision</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Duration7scalingXevp"></a>
-                    <a name="//apple_ref/swift/Property/scaling" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration7scalingXevp">scaling</a>
+                    <a name="/s:8Duration35TempoInterpolationCollectionBuilderC12intermediateXevp"></a>
+                    <a name="//apple_ref/swift/Property/intermediate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Duration35TempoInterpolationCollectionBuilderC12intermediateXevp">intermediate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -239,91 +242,17 @@ with the given <code>subdivision</code>.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">scaling</span><span class="p">:</span> <span class="kt">Tree</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="p">,</span> <span class="kt">Fraction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p><code>Tree</code> containing the inherited scale of each node contained herein.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:8Duration6scaledXevp"></a>
-                    <a name="//apple_ref/swift/Property/scaled" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration6scaledXevp">scaled</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">scaled</span><span class="p">:</span> <span class="kt">Tree</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="p">,</span> <span class="kt">Fraction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p><code><a href="../Rhythm.html#/s:8Duration0A4Treea">DurationTree</a></code> with the durations scaled by context.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:8Duration7offsetsXevp"></a>
-                    <a name="//apple_ref/swift/Property/offsets" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration7offsetsXevp">offsets</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    <p>Change to concrete offsets.</p>
-
-</div>
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    <p>Refactor to 
-<code>concreteOffsets(startingAt: Duration, in structure: Meter.Structure)</code></p>
-
-</div>
+                        <p>The intermediate storage of <code><a href="../Structs/Tempo/Interpolation/Fragment.html">Tempo.Interpolation.Fragment</a></code> values indexed by their
+<code>Fraction</code> offsets.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">offsets</span><span class="p">:</span> <span class="p">[</span><span class="kt">Fraction</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">intermediate</span><span class="p">:</span> <span class="kt">OrderedDictionary</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="p">,</span> <span class="kt"><a href="../Structs/Tempo.html">Tempo</a></span><span class="o">.</span><span class="kt">Interpolation</span><span class="o">&gt;</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>Array of tuples containing the scaled offset from the start of this
-<code><a href="../Rhythm.html#/s:8Duration0A4Treea">DurationTree</a></code>.</p>
                       </div>
                     </section>
                   </div>
@@ -332,19 +261,125 @@ with the given <code>subdivision</code>.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Instance%20Properties2"></a>
-                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
-                <a href="#/Instance%20Properties2">
-                  <h3 class="section-name">Instance Properties</h3>
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
                 </a>
               </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Duration10normalizedXevp"></a>
-                    <a name="//apple_ref/swift/Property/normalized" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration10normalizedXevp">normalized</a>
+                    <a name="/s:8Duration35TempoInterpolationCollectionBuilderCXeXecfc"></a>
+                    <a name="//apple_ref/swift/Method/init(offset:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Duration35TempoInterpolationCollectionBuilderCXeXecfc">init(offset:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create an empty <code>Tempo.Interpolation.Collection.Builder</code> ready to construct a nice
+little <code><a href="../Structs/Tempo/Interpolation.html#/s:8Duration5TempoV13InterpolationV10Collectiona">Tempo.Interpolation.Collection</a></code> for you.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">offset</span><span class="p">:</span> <span class="kt">Fraction</span> <span class="o">=</span> <span class="o">.</span><span class="n">zero</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Instance Methods" class="dashAnchor"></a>
+                <a href="#/Instance%20Methods">
+                  <h3 class="section-name">Instance Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Duration35TempoInterpolationCollectionBuilderC3addAcA0B0V0C0VF"></a>
+                    <a name="//apple_ref/swift/Method/add(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Duration35TempoInterpolationCollectionBuilderC3addAcA0B0V0C0VF">add(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add the given <code>interpolation</code> to the accumulating storage of
+<code><a href="../Structs/Tempo/Interpolation/Fragment.html">Tempo.Interpolation.Fragment</a></code> values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">_</span> <span class="nv">interpolation</span><span class="p">:</span> <span class="kt"><a href="../Structs/Tempo.html">Tempo</a></span><span class="o">.</span><span class="kt">Interpolation</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt">TempoInterpolationCollectionBuilder</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Self</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Duration35TempoInterpolationCollectionBuilderC3addXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/add(_:at:easing:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Duration35TempoInterpolationCollectionBuilderC3addXeXeF">add(_:at:easing:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add the given <code>tempo</code> at the given metrical <code><a href="../Classes/TempoInterpolationCollectionBuilder.html#/s:8Duration35TempoInterpolationCollectionBuilderC6offsetXevp">offset</a></code>, along with the information
+whether the given <code>tempo</code> interpolates into the next.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">tempo</span><span class="p">:</span> <span class="kt"><a href="../Structs/Tempo.html">Tempo</a></span><span class="p">,</span>
+    <span class="n">at</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Fraction</span><span class="p">,</span>
+    <span class="nv">easing</span><span class="p">:</span> <span class="kt"><a href="../Structs/Tempo.html">Tempo</a></span><span class="o">.</span><span class="kt">Interpolation</span><span class="o">.</span><span class="kt">Easing</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TempoInterpolationCollectionBuilder</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Duration35TempoInterpolationCollectionBuilderC5buildXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/build()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Duration35TempoInterpolationCollectionBuilderC5buildXeXeF">build()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -358,14 +393,13 @@ with the given <code>subdivision</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">normalized</span><span class="p">:</span> <span class="kt"><a href="../Rhythm.html#/s:8Duration14ProportionTreea">ProportionTree</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">build</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Tempo.html">Tempo</a></span><span class="o">.</span><span class="kt">Interpolation</span><span class="o">.</span><span class="kt">Collection</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>A new <code><a href="../Rhythm.html#/s:8Duration14ProportionTreea">ProportionTree</a></code> in which the value of each node can be represented
-with the same subdivision-level (denominator).</p>
+                        <p>The completed <code><a href="../Structs/Tempo/Interpolation.html#/s:8Duration5TempoV13InterpolationV10Collectiona">Tempo.Interpolation.Collection</a></code>.</p>
                       </div>
                     </section>
                   </div>

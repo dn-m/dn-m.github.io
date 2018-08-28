@@ -16,28 +16,28 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
-      "line": 206,
+      "line": 207,
       "symbol": "Model.Builder.build()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.swift",
-      "line": 44,
+      "line": 42,
       "symbol": "Model.tempi",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.swift",
-      "line": 45,
+      "line": 43,
       "symbol": "Model.meters",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.swift",
-      "line": 49,
+      "line": 47,
       "symbol": "Model.init(values:performanceContexts:intervals:events:byLabel:meters:tempi:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
