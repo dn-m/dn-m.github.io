@@ -20,11 +20,17 @@
         <a class="header-link" href="../index.html">
            Docs
         </a>
-         (75% documented)
+         (76% documented)
       </p>
     
     
     
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2F%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
     </header>
 
     <p class="breadcrumbs">
@@ -843,9 +849,9 @@ over those of <code>self</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzlE06ensureH0y3KeyQz3for_tF"></a>
-                    <a name="//apple_ref/swift/Method/ensureValue(for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzlE06ensureH0y3KeyQz3for_tF">ensureValue(for:)</a>
+                    <a name="/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzlE06ensureH0y3KeyQz03forJ0_tF"></a>
+                    <a name="//apple_ref/swift/Method/ensureValue(forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzlE06ensureH0y3KeyQz03forJ0_tF">ensureValue(forKey:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -856,14 +862,15 @@ over those of <code>self</code>.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Ensure that an Array-type value exists for the given <code>key</code>.</p>
+                        <p>Ensure that an <code>RangeReplaceableCollection</code>-conforming type value exists for the given
+<code>key</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">ensureValue</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">ensureValue</span><span class="p">(</span><span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -873,9 +880,9 @@ over those of <code>self</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzlE12safelyAppendyAE_7ElementQZ_3KeyQz11toArrayWithtF"></a>
-                    <a name="//apple_ref/swift/Method/safelyAppend(_:toArrayWith:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzlE12safelyAppendyAE_7ElementQZ_3KeyQz11toArrayWithtF">safelyAppend(_:toArrayWith:)</a>
+                    <a name="/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzlE12safelyAppendyAE_7ElementQZ_3KeyQz03forL0tF"></a>
+                    <a name="//apple_ref/swift/Method/safelyAppend(_:forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzlE12safelyAppendyAE_7ElementQZ_3KeyQz03forL0tF">safelyAppend(_:forKey:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -886,14 +893,15 @@ over those of <code>self</code>.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Safely append the given <code>value</code> to the Array-type <code>value</code> for the given <code>key</code>.</p>
+                        <p>Safely append the given <code>value</code> to the <code>RangeReplaceableCollection</code>-conforming type <code>value</code>
+for the given <code>key</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">safelyAppend</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP5Value">Value</a></span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="n">toArrayWith</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">safelyAppend</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP5Value">Value</a></span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -903,9 +911,9 @@ over those of <code>self</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzlE20safelyAppendContentsyAF2of_3KeyQz11toArrayWithtF"></a>
-                    <a name="//apple_ref/swift/Method/safelyAppendContents(of:toArrayWith:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzlE20safelyAppendContentsyAF2of_3KeyQz11toArrayWithtF">safelyAppendContents(of:toArrayWith:)</a>
+                    <a name="/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzlE12safelyAppendyAF10contentsOf_3KeyQz03forM0tF"></a>
+                    <a name="//apple_ref/swift/Method/safelyAppend(contentsOf:forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzlE12safelyAppendyAF10contentsOf_3KeyQz03forM0tF">safelyAppend(contentsOf:forKey:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -923,7 +931,7 @@ over those of <code>self</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">safelyAppendContents</span><span class="p">(</span><span class="n">of</span> <span class="nv">values</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP5Value">Value</a></span><span class="p">,</span> <span class="n">toArrayWith</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">safelyAppend</span><span class="p">(</span><span class="n">contentsOf</span> <span class="nv">values</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP5Value">Value</a></span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -937,9 +945,9 @@ over those of <code>self</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzs9EquatableAE_7ElementRPzlE23safelyAndUniquelyAppendyAI_3KeyQz11toArrayWithtF"></a>
-                    <a name="//apple_ref/swift/Method/safelyAndUniquelyAppend(_:toArrayWith:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzs9EquatableAE_7ElementRPzlE23safelyAndUniquelyAppendyAI_3KeyQz11toArrayWithtF">safelyAndUniquelyAppend(_:toArrayWith:)</a>
+                    <a name="/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzs9EquatableAE_7ElementRPzlE23safelyAndUniquelyAppendyAI_3KeyQz03forO0tF"></a>
+                    <a name="//apple_ref/swift/Method/safelyAndUniquelyAppend(_:forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPA2aBRzs26RangeReplaceableCollection5ValueRpzs9EquatableAE_7ElementRPzlE23safelyAndUniquelyAppendyAI_3KeyQz03forO0tF">safelyAndUniquelyAppend(_:forKey:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -959,7 +967,7 @@ over those of <code>self</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">safelyAndUniquelyAppend</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP5Value">Value</a></span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="n">toArrayWith</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">safelyAndUniquelyAppend</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP5Value">Value</a></span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -973,9 +981,105 @@ over those of <code>self</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures18DictionaryProtocolPA2aBRzAaB5ValueRpzlE06ensureE0y3KeyQz3for_tF"></a>
-                    <a name="//apple_ref/swift/Method/ensureValue(for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPA2aBRzAaB5ValueRpzlE06ensureE0y3KeyQz3for_tF">ensureValue(for:)</a>
+                    <a name="/s:14DataStructures18DictionaryProtocolPA2aBRzs10SetAlgebra5ValueRpzlE06ensureG0y3KeyQz03forI0_tF"></a>
+                    <a name="//apple_ref/swift/Method/ensureValue(forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPA2aBRzs10SetAlgebra5ValueRpzlE06ensureG0y3KeyQz03forI0_tF">ensureValue(forKey:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ensure that an <code>SetAlgebra</code>-conforming type value exists for the given <code>key</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">ensureValue</span><span class="p">(</span><span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures18DictionaryProtocolPA2aBRzs10SetAlgebra5ValueRpzlE12safelyInsertyAE_7ElementQZ_3KeyQz03forK0tF"></a>
+                    <a name="//apple_ref/swift/Method/safelyInsert(_:forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPA2aBRzs10SetAlgebra5ValueRpzlE12safelyInsertyAE_7ElementQZ_3KeyQz03forK0tF">safelyInsert(_:forKey:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Safely append the given <code>value</code> to the <code>SetAlgebra</code>-conforming type <code>value</code> for the given
+<code>key</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">safelyInsert</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP5Value">Value</a></span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures18DictionaryProtocolPA2aBRzs10SetAlgebra5ValueRpzlE15safelyFormUnionyAF_3KeyQz03forK0tF"></a>
+                    <a name="//apple_ref/swift/Method/safelyFormUnion(_:forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPA2aBRzs10SetAlgebra5ValueRpzlE15safelyFormUnionyAF_3KeyQz03forK0tF">safelyFormUnion(_:forKey:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Safely append the contents of an array to the <code>SetAlgebra</code>-conforming type <code>value</code> for the
+given <code>key</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">safelyFormUnion</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP5Value">Value</a></span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures18DictionaryProtocolPA2aBRzAaB5ValueRpzlE06ensureE0y3KeyQz03forG0_tF"></a>
+                    <a name="//apple_ref/swift/Method/ensureValue(forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures18DictionaryProtocolPA2aBRzAaB5ValueRpzlE06ensureE0y3KeyQz03forG0_tF">ensureValue(forKey:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -993,7 +1097,7 @@ over those of <code>self</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">ensureValue</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">ensureValue</span><span class="p">(</span><span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryProtocol.html#/s:14DataStructures18DictionaryProtocolP3Key">Key</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1082,7 +1186,7 @@ over those of <code>self</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-27)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-29)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
