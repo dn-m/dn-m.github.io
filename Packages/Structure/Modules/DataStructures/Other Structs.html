@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Graphs  Reference</title>
+    <title>Other Structures  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Graphs" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Section/Other Structures" class="dashAnchor"></a>
 
-    <a title="Graphs  Reference"></a>
+    <a title="Other Structures  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html"> Reference</a>
       <img class="carat" src="img/carat.png" />
-      Graphs  Reference
+      Other Structures  Reference
     </p>
 
     <div class="content-wrapper">
@@ -493,8 +493,9 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Graphs</h1>
-            
+            <h1>Other Structures</h1>
+            <p>The following structures are available globally.</p>
+
           </div>
         </section>
 
@@ -505,9 +506,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures14ReferenceGraphC"></a>
-                    <a name="//apple_ref/swift/Class/ReferenceGraph" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures14ReferenceGraphC">ReferenceGraph</a>
+                    <a name="/s:14DataStructures5BimapV"></a>
+                    <a name="//apple_ref/swift/Struct/Bimap" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV">Bimap</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -515,19 +516,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    Make Generic over some type.
+                        <p>Dictionary-like structure which allows O(1) access from <code>Key</code> to <code>Value</code> as well as from <code>Value</code>
+to <code>Key</code>.</p>
 
-</div>
-
-                        <a href="Classes/ReferenceGraph.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/Bimap.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ReferenceGraph</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Bimap</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">Hashable</span> <span class="k">where</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Value</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
 
                         </div>
                       </div>

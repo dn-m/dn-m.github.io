@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CircularArray Structure Reference</title>
+    <title>Bimap Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/CircularArray" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/Bimap" class="dashAnchor"></a>
 
-    <a title="CircularArray Structure Reference"></a>
+    <a title="Bimap Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      CircularArray Structure Reference
+      Bimap Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -493,21 +493,15 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>CircularArray</h1>
+            <h1>Bimap</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CircularArray</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Bimap</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">Hashable</span> <span class="k">where</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Value</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
 
                 </div>
               </div>
-            <p>Array-like structure that allows retrieval of elements at indices outside of the bounds of
-the internal storage.</p>
-
-<p><strong>Example Usage</strong></p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">loop</span><span class="p">:</span> <span class="kt">CircularArray</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
-<span class="n">loop</span><span class="p">[</span><span class="nv">circular</span><span class="p">:</span> <span class="mi">6</span><span class="p">]</span> <span class="c1">// =&gt; 0</span>
-<span class="n">loop</span><span class="p">[</span><span class="nv">from</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="nv">through</span><span class="p">:</span> <span class="mi">7</span><span class="p">]</span> <span class="c1">// =&gt; [2,3,4,5,0,1]</span>
-</code></pre>
+            <p>Dictionary-like structure which allows O(1) access from <code>Key</code> to <code>Value</code> as well as from <code>Value</code>
+to <code>Key</code>.</p>
 
           </div>
         </section>
@@ -526,9 +520,9 @@ the internal storage.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures13CircularArrayVACyxGqd__c7ElementQyd__Rszs8SequenceRd__lufc"></a>
-                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13CircularArrayVACyxGqd__c7ElementQyd__Rszs8SequenceRd__lufc">init(_:)</a>
+                    <a name="/s:14DataStructures5BimapVACyxq_Gycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapVACyxq_Gycfc">init()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -536,14 +530,319 @@ the internal storage.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a <code>CircularArray</code> with an sequence.</p>
+                        <p>Create an empty <code>Bimap</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">storage</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Element</span> <span class="o">==</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures5BimapVACyxq_GSi15minimumCapacity_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(minimumCapacity:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapVACyxq_GSi15minimumCapacity_tcfc">init(minimumCapacity:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create an empty <code>Bimap</code> reserving the amount of memory needed to store the given
+<code>minimumCapacity</code> of key-value pairs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">minimumCapacity</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures5BimapVACyxq_Gs10DictionaryVyxq_Gcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapVACyxq_Gs10DictionaryVyxq_Gcfc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>Bimap</code> from a dictionary.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">elements</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures5BimapVACyxq_Gqd__cs8SequenceRd__x_q_t7ElementRtd__lufc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapVACyxq_Gqd__cs8SequenceRd__x_q_t7ElementRtd__lufc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>Bimap</code> from the given <code>sequence</code> of key-value pairs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">sequence</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="k">where</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span><span class="p">,</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span> <span class="o">==</span> <span class="p">(</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures5BimapVACyxq_Gqd__cs10CollectionRd__x_q_t7ElementRtd__lufc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapVACyxq_Gqd__cs10CollectionRd__x_q_t7ElementRtd__lufc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>Bimap</code> from the given <code>collection</code> of key-value pairs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">C</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">collection</span><span class="p">:</span> <span class="kt">C</span><span class="p">)</span> <span class="k">where</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">Collection</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Element</span> <span class="o">==</span> <span class="p">(</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Computed%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Computed Properties" class="dashAnchor"></a>
+                <a href="#/Computed%20Properties">
+                  <h3 class="section-name">Computed Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures5BimapV5countSiv"></a>
+                    <a name="//apple_ref/swift/Property/count" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV5countSiv">count</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The amount of key-value pairs contained herein.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures5BimapV7isEmptySbv"></a>
+                    <a name="//apple_ref/swift/Property/isEmpty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV7isEmptySbv">isEmpty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isEmpty</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if there are no key-value pairs contained herein. Otherwise, <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures5BimapV4keyss13AnyCollectionVyxGv"></a>
+                    <a name="//apple_ref/swift/Property/keys" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV4keyss13AnyCollectionVyxGv">keys</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">keys</span><span class="p">:</span> <span class="kt">AnyCollection</span><span class="o">&lt;</span><span class="kt">Key</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A collection of <code>Key</code> values.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures5BimapV6valuess13AnyCollectionVyq_Gv"></a>
+                    <a name="//apple_ref/swift/Property/values" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV6valuess13AnyCollectionVyq_Gv">values</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">values</span><span class="p">:</span> <span class="kt">AnyCollection</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A collection of <code>Value</code> values.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Subscripts"></a>
+                <a name="//apple_ref/swift/Section/Subscripts" class="dashAnchor"></a>
+                <a href="#/Subscripts">
+                  <h3 class="section-name">Subscripts</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures5BimapV9subscriptxSgq_5value_tci"></a>
+                    <a name="//apple_ref/swift/Method/subscript(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV9subscriptxSgq_5value_tci">subscript(value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get and set the <code>Key</code> for the given <code>value</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="n">value</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Key</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures5BimapV9subscriptq_Sgx3key_tci"></a>
+                    <a name="//apple_ref/swift/Method/subscript(key:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV9subscriptq_Sgx3key_tci">subscript(key:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get and set the <code>Value</code> for the given <code>key</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="n">key</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Value</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -564,9 +863,9 @@ the internal storage.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures13CircularArrayV9subscriptxSi8circular_tci"></a>
-                    <a name="//apple_ref/swift/Method/subscript(circular:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13CircularArrayV9subscriptxSi8circular_tci">subscript(circular:)</a>
+                    <a name="/s:14DataStructures5BimapV11updateValueq_Sgq__x6forKeytF"></a>
+                    <a name="//apple_ref/swift/Method/updateValue(_:forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV11updateValueq_Sgq__x6forKeytF">updateValue(_:forKey:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -574,19 +873,21 @@ the internal storage.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Updates the current value to the given <code>value</code> for the given <code>key</code>.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="n">circular</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Element</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">updateValue</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Value</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Element at the given logical index.</p>
+                        <p>The previous value for the given <code>key</code>, if it existed. Otherwise, <code>nil</code>.</p>
                       </div>
                     </section>
                   </div>
@@ -594,9 +895,9 @@ the internal storage.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures13CircularArrayV9subscriptSayxGSi4from_Si7throughtci"></a>
-                    <a name="//apple_ref/swift/Method/subscript(from:through:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13CircularArrayV9subscriptSayxGSi4from_Si7throughtci">subscript(from:through:)</a>
+                    <a name="/s:14DataStructures5BimapV9updateKeyxSgx_q_8forValuetF"></a>
+                    <a name="//apple_ref/swift/Method/updateKey(_:forValue:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV9updateKeyxSgx_q_8forValuetF">updateKey(_:forValue:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -604,27 +905,21 @@ the internal storage.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    <p>If the real start index is greater than the real end index (for the given
-logical indices), the resultant array will loop around the back, to the front of the
-internal storage.</p>
-
-</div>
+                        <p>Updates the current key to the given <code>key</code> for the given <code>value</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="n">from</span> <span class="nv">start</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">through</span> <span class="nv">end</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">updateKey</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">,</span> <span class="n">forValue</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Key</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Array of elements from (and including) the given logical <code>start</code> index
-through (and including) the given logical <code>end</code> index.</p>
+                        <p>The previous key for the given <code>value</code>, if it existed. Otherwise, <code>nil</code>.</p>
                       </div>
                     </section>
                   </div>
@@ -632,9 +927,9 @@ through (and including) the given logical <code>end</code> index.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures13CircularArrayV9subscriptSayxGSi5after_Si4upTotci"></a>
-                    <a name="//apple_ref/swift/Method/subscript(after:upTo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13CircularArrayV9subscriptSayxGSi5after_Si4upTotci">subscript(after:upTo:)</a>
+                    <a name="/s:14DataStructures5BimapV11removeValueq_Sgx6forKey_tF"></a>
+                    <a name="//apple_ref/swift/Method/removeValue(forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV11removeValueq_Sgx6forKey_tF">removeValue(forKey:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -642,27 +937,21 @@ through (and including) the given logical <code>end</code> index.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    <p>If the real start index is greater than the real end index (for the given
-logical indices), the resultant array will loop around the back, to the front of the
-internal storage.</p>
-
-</div>
+                        <p>Removes the value for the given <code>key</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="n">after</span> <span class="nv">start</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">upTo</span> <span class="nv">end</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeValue</span><span class="p">(</span><span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Value</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Array of elements after (not including) the given logical <code>start</code> index
-up to (not including) the given logical <code>end</code> index.</p>
+                        <p>The previous value for the given <code>key</code>, if it existed. Otherwise, <code>nil</code>.</p>
                       </div>
                     </section>
                   </div>
@@ -670,9 +959,9 @@ up to (not including) the given logical <code>end</code> index.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures13CircularArrayV6sortedACyxGSbx_xtc2by_tF"></a>
-                    <a name="//apple_ref/swift/Method/sorted(by:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13CircularArrayV6sortedACyxGSbx_xtc2by_tF">sorted(by:)</a>
+                    <a name="/s:14DataStructures5BimapV9removeKeyxSgq_8forValue_tF"></a>
+                    <a name="//apple_ref/swift/Method/removeKey(forValue:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV9removeKeyxSgq_8forValue_tF">removeKey(forValue:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -680,19 +969,48 @@ up to (not including) the given logical <code>end</code> index.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Removes the key for the given <code>value</code>.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sorted</span><span class="p">(</span><span class="n">by</span> <span class="nv">areInIncreasingOrder</span><span class="p">:</span> <span class="p">(</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CircularArray</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeKey</span><span class="p">(</span><span class="n">forValue</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Key</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>A sorted copy of <code>CircularArray</code>.</p>
+                        <p>The previous key for the given <code>value</code>, if it existed. Otherwise, <code>nil</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures5BimapV9removeAllySb12keepCapacity_tF"></a>
+                    <a name="//apple_ref/swift/Method/removeAll(keepCapacity:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV9removeAllySb12keepCapacity_tF">removeAll(keepCapacity:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes all key-value pairs, without releasing memory.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeAll</span><span class="p">(</span><span class="n">keepCapacity</span> <span class="nv">capacity</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -700,115 +1018,13 @@ up to (not including) the given logical <code>end</code> index.</p>
               </ul>
             </div>
             <div class="task-group">
-              <div class="task-name-container">
-                <a name="/RandomAccessCollectionWrapping"></a>
-                <a name="//apple_ref/swift/Section/RandomAccessCollectionWrapping" class="dashAnchor"></a>
-                <a href="#/RandomAccessCollectionWrapping">
-                  <h3 class="section-name">RandomAccessCollectionWrapping</h3>
-                </a>
-              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures13CircularArrayV4baseSayxGv"></a>
-                    <a name="//apple_ref/swift/Property/base" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13CircularArrayV4baseSayxGv">base</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">base</span><span class="p">:</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The underlying, non-circular contiguous storage of elements.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/BidirectionalCollection"></a>
-                <a name="//apple_ref/swift/Section/BidirectionalCollection" class="dashAnchor"></a>
-                <a href="#/BidirectionalCollection">
-                  <h3 class="section-name">BidirectionalCollection</h3>
-                </a>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures13CircularArrayV10startIndexSiv"></a>
-                    <a name="//apple_ref/swift/Property/startIndex" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13CircularArrayV10startIndexSiv">startIndex</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Start index.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">startIndex</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures13CircularArrayV8endIndexSiv"></a>
-                    <a name="//apple_ref/swift/Property/endIndex" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13CircularArrayV8endIndexSiv">endIndex</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>End index.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">endIndex</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures13CircularArrayV9subscriptxSici"></a>
+                    <a name="/s:14DataStructures5BimapV9subscriptq_Sgxci"></a>
                     <a name="//apple_ref/swift/Method/subscript(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13CircularArrayV9subscriptxSici">subscript(_:)</a>
+                    <a class="token" href="#/s:14DataStructures5BimapV9subscriptq_Sgxci">subscript(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -816,14 +1032,14 @@ up to (not including) the given logical <code>end</code> index.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Element at index.</p>
+                        <p>Gets and sets the value for the <code>key</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Element</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Value</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -833,9 +1049,9 @@ up to (not including) the given logical <code>end</code> index.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures13CircularArrayV5indexS2i5after_tF"></a>
-                    <a name="//apple_ref/swift/Method/index(after:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13CircularArrayV5indexS2i5after_tF">index(after:)</a>
+                    <a name="/s:14DataStructures5BimapV15reserveCapacityySiF"></a>
+                    <a name="//apple_ref/swift/Method/reserveCapacity(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV15reserveCapacityySiF">reserveCapacity(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -843,41 +1059,15 @@ up to (not including) the given logical <code>end</code> index.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Index after given <code>i</code>.</p>
+                        <p>Reserves the amount of memory needed to store the given <code>minimumCapacity</code> of key-value
+pairs.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">index</span><span class="p">(</span><span class="n">after</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures13CircularArrayV5indexS2i6before_tF"></a>
-                    <a name="//apple_ref/swift/Method/index(before:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13CircularArrayV5indexS2i6before_tF">index(before:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Index before given <code>i</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">index</span><span class="p">(</span><span class="n">before</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">reserveCapacity</span><span class="p">(</span><span class="n">_</span> <span class="nv">minimumCapacity</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -888,19 +1078,19 @@ up to (not including) the given logical <code>end</code> index.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/RangeReplaceableCollection"></a>
-                <a name="//apple_ref/swift/Section/RangeReplaceableCollection" class="dashAnchor"></a>
-                <a href="#/RangeReplaceableCollection">
-                  <h3 class="section-name">RangeReplaceableCollection</h3>
+                <a name="/CollectionWrapping"></a>
+                <a name="//apple_ref/swift/Section/CollectionWrapping" class="dashAnchor"></a>
+                <a href="#/CollectionWrapping">
+                  <h3 class="section-name">CollectionWrapping</h3>
                 </a>
               </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures13CircularArrayV15replaceSubrangeys5RangeVySiG_qd__4witht7ElementQyd__Rszs10CollectionRd__lF"></a>
-                    <a name="//apple_ref/swift/Method/replaceSubrange(_:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13CircularArrayV15replaceSubrangeys5RangeVySiG_qd__4witht7ElementQyd__Rszs10CollectionRd__lF">replaceSubrange(_:with:)</a>
+                    <a name="/s:14DataStructures5BimapV4bases10DictionaryVyxq_Gv"></a>
+                    <a name="//apple_ref/swift/Property/base" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV4bases10DictionaryVyxq_Gv">base</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -908,109 +1098,19 @@ up to (not including) the given logical <code>end</code> index.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Replaces the specified subrange of elements with the given collection.</p>
-
-<p>This method has the effect of removing the specified range of elements
-from the collection and inserting the new elements at the same location.
-The number of new elements need not match the number of elements being
-removed.</p>
-
-<p>In this example, three elements in the middle of an array of integers are
-replaced by the five elements of a <code>Repeated&lt;Int&gt;</code> instance.</p>
-<pre class="highlight swift"><code> <span class="k">var</span> <span class="nv">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
- <span class="n">nums</span><span class="o">.</span><span class="nf">replaceSubrange</span><span class="p">(</span><span class="mi">1</span><span class="o">...</span><span class="mi">3</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="nf">repeatElement</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nv">count</span><span class="p">:</span> <span class="mi">5</span><span class="p">))</span>
- <span class="nf">print</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
- <span class="c1">// Prints "[10, 1, 1, 1, 1, 1, 50]"</span>
-</code></pre>
-
-<p>If you pass a zero-length range as the <code>subrange</code> parameter, this method
-inserts the elements of <code>newElements</code> at <code>subrange.startIndex</code>. Calling
-the <code>insert(contentsOf:at:)</code> method instead is preferred.</p>
-
-<p>Likewise, if you pass a zero-length collection as the <code>newElements</code>
-parameter, this method removes the elements in the given subrange
-without replacement. Calling the <code>removeSubrange(_:)</code> method instead is
-preferred.</p>
-
-<p>Calling this method may invalidate any existing indices for use with this
-collection.</p>
-<div class="aside aside-complexity">
-    <p class="aside-title">Complexity</p>
-    <p>O(<em>m</em>), where <em>m</em> is the combined length of the collection
-and <code>newElements</code>. If the call to <code>replaceSubrange</code> simply appends the
-contents of <code>newElements</code> to the collection, the complexity is O(<em>n</em>),
-where <em>n</em> is the length of <code>newElements</code>.</p>
-
-</div>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="n">replaceSubrange</span><span class="o">&lt;</span><span class="kt">C</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">subrange</span><span class="p">:</span> <span class="kt">Range</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">with</span> <span class="nv">newElements</span><span class="p">:</span> <span class="kt">C</span><span class="p">)</span>
-    <span class="k">where</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">Collection</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Element</span> <span class="o">==</span> <span class="kt">Element</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">base</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>subrange</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The subrange of the collection to replace. The bounds of
-the range must be valid indices of the collection.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>newElements</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The new elements to add to the collection.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures13CircularArrayVACyxGycfc"></a>
-                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13CircularArrayVACyxGycfc">init()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Creates an empty <code>CircularArray</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
-
-                        </div>
+                        <h4>Return Value</h4>
+                        <p>The <code>[Key: Value]</code> base for <code>Collection</code> operations.</p>
                       </div>
                     </section>
                   </div>
@@ -1019,19 +1119,19 @@ the range must be valid indices of the collection.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/ExpressibleByArrayLiteral"></a>
-                <a name="//apple_ref/swift/Section/ExpressibleByArrayLiteral" class="dashAnchor"></a>
-                <a href="#/ExpressibleByArrayLiteral">
-                  <h3 class="section-name">ExpressibleByArrayLiteral</h3>
+                <a name="/ExpressibleByDictionaryLiteral%20Protocol%20Conformance"></a>
+                <a name="//apple_ref/swift/Section/ExpressibleByDictionaryLiteral Protocol Conformance" class="dashAnchor"></a>
+                <a href="#/ExpressibleByDictionaryLiteral%20Protocol%20Conformance">
+                  <h3 class="section-name">ExpressibleByDictionaryLiteral Protocol Conformance</h3>
                 </a>
               </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures13CircularArrayVACyxGSayxG12arrayLiterald_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(arrayLiteral:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13CircularArrayVACyxGSayxG12arrayLiterald_tcfc">init(arrayLiteral:)</a>
+                    <a name="/s:14DataStructures5BimapVACyxq_GSayx_q_tG17dictionaryLiterald_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(dictionaryLiteral:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapVACyxq_GSayx_q_tG17dictionaryLiterald_tcfc">init(dictionaryLiteral:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1039,14 +1139,14 @@ the range must be valid indices of the collection.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a <code>CircularArray</code> with an array literal.</p>
+                        <p>Constructs a bimap using a dictionary literal.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">arrayLiteral</span> <span class="nv">elements</span><span class="p">:</span> <span class="kt">Element</span><span class="o">...</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">dictionaryLiteral</span> <span class="nv">elements</span><span class="p">:</span> <span class="p">(</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="p">)</span><span class="o">...</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
