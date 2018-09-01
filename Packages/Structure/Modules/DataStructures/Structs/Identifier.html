@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Set Extension Reference</title>
+    <title>Identifier Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/Set" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/Identifier" class="dashAnchor"></a>
 
-    <a title="Set Extension Reference"></a>
+    <a title="Identifier Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      Set Extension Reference
+      Identifier Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -496,27 +496,48 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Set</h1>
+            <h1>Identifier</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">SetAlgebra</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Collection</span><span class="p">,</span> <span class="kt">ExpressibleByArrayLiteral</span> <span class="k">where</span> <span class="kt">Element</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Identifier</span><span class="o">&lt;</span><span class="kt">Subject</span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
-            
+            <p>A type-safe identifier.</p>
+
+<p>An <code>Identifier</code> is merely a wrapper around an <code>Int</code>, but with the added type-safety of the
+generic type parameter <code>Subject</code>.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">truck</span><span class="p">:</span> <span class="kt">Identifier</span><span class="o">&lt;</span><span class="kt">Truck</span><span class="o">&gt;</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">let</span> <span class="nv">friend</span><span class="p">:</span> <span class="kt">Identifier</span><span class="o">&lt;</span><span class="kt">Friend</span><span class="o">&gt;</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre>
+
+<p>The <code>Subject</code> is not used within the type, but it exists to ensure that things like this don&rsquo;t
+compile:</p>
+<pre class="highlight swift"><code><span class="n">truck</span> <span class="o">==</span> <span class="n">friend</span>
+<span class="c1">// Binary operator '==' cannot be applied to operands of type 'Identifier&lt;Truck&gt;' and</span>
+<span class="c1">// 'Identifier&lt;Friend&gt;'</span>
+</code></pre>
+
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s3SetV14DataStructuresE9insertingAByxGxF"></a>
-                    <a name="//apple_ref/swift/Method/inserting(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s3SetV14DataStructuresE9insertingAByxGxF">inserting(_:)</a>
+                    <a name="/s:14DataStructures10IdentifierVACyxGSicfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures10IdentifierVACyxGSicfc">init(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -524,26 +545,37 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Creates an <code>Identifier</code> with the given <code>value</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">inserting</span><span class="p">(</span><span class="n">_</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Set</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/ExpressibleByIntgerLiteral"></a>
+                <a name="//apple_ref/swift/Section/ExpressibleByIntgerLiteral" class="dashAnchor"></a>
+                <a href="#/ExpressibleByIntgerLiteral">
+                  <h3 class="section-name">ExpressibleByIntgerLiteral</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s3SetV14DataStructuresE1poiAByxGAE_xSgtFZ"></a>
-                    <a name="//apple_ref/swift/Method/+(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s3SetV14DataStructuresE1poiAByxGAE_xSgtFZ">+(_:_:)</a>
+                    <a name="/s:14DataStructures10IdentifierVACyxGSi14integerLiteral_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(integerLiteral:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures10IdentifierVACyxGSi14integerLiteral_tcfc">init(integerLiteral:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -551,41 +583,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Creates an <code>Identifier</code> with the given <code>value</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Set</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Element</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Set</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:s3SetV14DataStructuresE1poiAByxGxSg_AEtFZ"></a>
-                    <a name="//apple_ref/swift/Method/+(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s3SetV14DataStructuresE1poiAByxGxSg_AEtFZ">+(_:_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Element</span><span class="p">?,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Set</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Set</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">integerLiteral</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
