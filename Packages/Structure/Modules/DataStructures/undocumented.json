@@ -1,6 +1,69 @@
 {
   "warnings": [
     {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
+      "line": null,
+      "symbol": "BinarySearchTree",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
+      "line": null,
+      "symbol": "BinarySearchTree",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
+      "line": null,
+      "symbol": "BinarySearchTree",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
+      "line": null,
+      "symbol": "BinarySearchTree",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
+      "line": 8,
+      "symbol": "BinarySearchTree",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
+      "line": 12,
+      "symbol": "BinarySearchTree.empty",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
+      "line": 13,
+      "symbol": "BinarySearchTree.leaf",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
+      "line": 14,
+      "symbol": "BinarySearchTree.node",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
+      "line": 19,
+      "symbol": "BinarySearchTree.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/ContiguousSegmentCollection/ContiguousSegmentCollection.swift",
       "line": 203,
       "symbol": "ContiguousSegmentCollection.Fragment.init(head:body:)",

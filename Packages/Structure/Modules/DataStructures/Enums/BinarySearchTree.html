@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>FloatWrapping Protocol Reference</title>
+    <title>BinarySearchTree Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Protocol/FloatWrapping" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Enum/BinarySearchTree" class="dashAnchor"></a>
 
-    <a title="FloatWrapping Protocol Reference"></a>
+    <a title="BinarySearchTree Enumeration Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      FloatWrapping Protocol Reference
+      BinarySearchTree Enumeration Reference
     </p>
 
     <div class="content-wrapper">
@@ -499,14 +499,10 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>FloatWrapping</h1>
+            <h1>BinarySearchTree</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FloatWrapping</span><span class="p">:</span>
-    <span class="kt">ExpressibleByFloatLiteral</span><span class="p">,</span>
-    <span class="kt">ExpressibleByIntegerLiteral</span><span class="p">,</span>
-    <span class="kt">Hashable</span><span class="p">,</span>
-    <span class="kt">Comparable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">BinarySearchTree</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Value</span> <span class="p">:</span> <span class="kt">Comparable</span></code></pre>
 
                 </div>
               </div>
@@ -518,13 +514,20 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Cases"></a>
+                <a name="//apple_ref/swift/Section/Cases" class="dashAnchor"></a>
+                <a href="#/Cases">
+                  <h3 class="section-name">Cases</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures13FloatWrappingPxSf12floatLiteral_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(floatLiteral:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13FloatWrappingPxSf12floatLiteral_tcfc">init(floatLiteral:)</a>
+                    <a name="/s:14DataStructures16BinarySearchTreeO5emptyACyxGAEms10ComparableRzlF"></a>
+                    <a name="//apple_ref/swift/Element/empty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures16BinarySearchTreeO5emptyACyxGAEms10ComparableRzlF">empty</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -539,7 +542,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">floatLiteral</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">empty</span></code></pre>
 
                         </div>
                       </div>
@@ -549,9 +552,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures13FloatWrappingPxSi14integerLiteral_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(integerLiteral:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13FloatWrappingPxSi14integerLiteral_tcfc">init(integerLiteral:)</a>
+                    <a name="/s:14DataStructures16BinarySearchTreeO4leafACyxGxcAEms10ComparableRzlF"></a>
+                    <a name="//apple_ref/swift/Element/leaf" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures16BinarySearchTreeO4leafACyxGxcAEms10ComparableRzlF">leaf</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -566,7 +569,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">integerLiteral</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">leaf</span><span class="p">(</span><span class="kt">Value</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -576,9 +579,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures13FloatWrappingP5valueSfv"></a>
-                    <a name="//apple_ref/swift/Property/value" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13FloatWrappingP5valueSfv">value</a>
+                    <a name="/s:14DataStructures16BinarySearchTreeO4nodeACyxGAE_xAEtcAEms10ComparableRzlF"></a>
+                    <a name="//apple_ref/swift/Element/node" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures16BinarySearchTreeO4nodeACyxGAE_xAEtcAEms10ComparableRzlF">node</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -593,23 +596,24 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">indirect</span> <span class="k">case</span> <span class="nf">node</span><span class="p">(</span><span class="kt">BinarySearchTree</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">Value</span><span class="p">,</span> <span class="kt">BinarySearchTree</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures13FloatWrappingPxSfcfc"></a>
+                    <a name="/s:14DataStructures16BinarySearchTreeOACyxGqd__c7ElementQyd__Rszs8SequenceRd__lufc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13FloatWrappingPxSfcfc">init(_:)</a>
+                    <a class="token" href="#/s:14DataStructures16BinarySearchTreeOACyxGqd__c7ElementQyd__Rszs8SequenceRd__lufc">init(_:)</a>
                     </code>
-                      <span class="declaration-note">
-                        Default implementation
-                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
@@ -619,16 +623,11 @@
                         <p>Undocumented</p>
 
                       </div>
-                      <h4>Default Implementation</h4>
-                      <div class="default_impl abstract">
-                        <p>Undocumented</p>
-
-                      </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">float</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">sequence</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Value</span> <span class="o">==</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span></code></pre>
 
                         </div>
                       </div>
@@ -639,37 +638,294 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Hashable"></a>
-                <a name="//apple_ref/swift/Section/Hashable" class="dashAnchor"></a>
-                <a href="#/Hashable">
-                  <h3 class="section-name">Hashable</h3>
+                <a name="/Computed%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Computed Properties" class="dashAnchor"></a>
+                <a href="#/Computed%20Properties">
+                  <h3 class="section-name">Computed Properties</h3>
                 </a>
               </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures13FloatWrappingPAAE9hashValueSiv"></a>
-                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures13FloatWrappingPAAE9hashValueSiv">hashValue</a>
+                    <a name="/s:14DataStructures16BinarySearchTreeO5countSiv"></a>
+                    <a name="//apple_ref/swift/Property/count" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures16BinarySearchTreeO5countSiv">count</a>
                     </code>
-                      <span class="declaration-note">
-                        Extension method
-                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The amount of nodes contained herein.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures16BinarySearchTreeO6heightSiv"></a>
+                    <a name="//apple_ref/swift/Property/height" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures16BinarySearchTreeO6heightSiv">height</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The height of this <code>BinarySearchTree</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures16BinarySearchTreeO7inOrderSayxGv"></a>
+                    <a name="//apple_ref/swift/Property/inOrder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures16BinarySearchTreeO7inOrderSayxGv">inOrder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    <p>O(<em>n</em>)</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">inOrder</span><span class="p">:</span> <span class="p">[</span><span class="kt">Value</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The values of the nodes contained herein in <code>inOrder</code> (sorted) order.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures16BinarySearchTreeO13minDescendentACyxGv"></a>
+                    <a name="//apple_ref/swift/Property/minDescendent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures16BinarySearchTreeO13minDescendentACyxGv">minDescendent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">minDescendent</span><span class="p">:</span> <span class="kt">BinarySearchTree</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The left-most descendent.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures16BinarySearchTreeO13maxDescendentACyxGv"></a>
+                    <a name="//apple_ref/swift/Property/maxDescendent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures16BinarySearchTreeO13maxDescendentACyxGv">maxDescendent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">maxDescendent</span><span class="p">:</span> <span class="kt">BinarySearchTree</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The right-most descendent.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Instance Methods" class="dashAnchor"></a>
+                <a href="#/Instance%20Methods">
+                  <h3 class="section-name">Instance Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures16BinarySearchTreeO9insertingACyxGxF"></a>
+                    <a name="//apple_ref/swift/Method/inserting(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures16BinarySearchTreeO9insertingACyxGxF">inserting(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">inserting</span><span class="p">(</span><span class="n">_</span> <span class="nv">newValue</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">BinarySearchTree</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>BinarySearchTree</code> with the given <code>newValue</code> inserted in the appropriate place.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures16BinarySearchTreeO8containsSbxF"></a>
+                    <a name="//apple_ref/swift/Method/contains(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures16BinarySearchTreeO8containsSbxF">contains(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">contains</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if this <code>BinarySearchTree</code> contains the given <code>value</code>. Otherwise, <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures16BinarySearchTreeO6searchACyxGSgx3for_tF"></a>
+                    <a name="//apple_ref/swift/Method/search(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures16BinarySearchTreeO6searchACyxGSgx3for_tF">search(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">search</span><span class="p">(</span><span class="k">for</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">BinarySearchTree</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>BinarySearchTree</code> which contains the given <code>target</code>, if it exists.
+Otherwise, <code>nil</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s25ExpressibleByArrayLiteralPxSay0cD7ElementQzG05arrayD0d_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(arrayLiteral:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s25ExpressibleByArrayLiteralPxSay0cD7ElementQzG05arrayD0d_tcfc">init(arrayLiteral:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">arrayLiteral</span> <span class="nv">elements</span><span class="p">:</span> <span class="kt">Value</span><span class="o">...</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
