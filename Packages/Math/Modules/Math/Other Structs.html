@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bitwise  Reference</title>
+    <title>Other Structures  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Bitwise" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Section/Other Structures" class="dashAnchor"></a>
 
-    <a title="Bitwise  Reference"></a>
+    <a title="Other Structures  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html"> Reference</a>
       <img class="carat" src="img/carat.png" />
-      Bitwise  Reference
+      Other Structures  Reference
     </p>
 
     <div class="content-wrapper">
@@ -160,8 +160,9 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Bitwise</h1>
-            
+            <h1>Other Structures</h1>
+            <p>The following structures are available globally.</p>
+
           </div>
         </section>
 
@@ -172,9 +173,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:4Math18countTrailingZerosS2iF"></a>
-                    <a name="//apple_ref/swift/Function/countTrailingZeros(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math18countTrailingZerosS2iF">countTrailingZeros(_:)</a>
+                    <a name="/s:4Math18PowerOfTwoSequenceV"></a>
+                    <a name="//apple_ref/swift/Struct/PowerOfTwoSequence" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math18PowerOfTwoSequenceV">PowerOfTwoSequence</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -182,46 +183,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Count Trailing Zeros (ctz) counts the number of zero bits succeeding the least
-significant one bit. For example, the ctz of 0x00000F00 is 8, and the ctz of
-0x80000000 is 31. This also counts the exponent of the <code>2</code> factor in the prime
-factorization of a positive number.</p>
+                        <p>Power-of-two Sequence.</p>
 
+                        <a href="Structs/PowerOfTwoSequence.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">countTrailingZeros</span><span class="p">(</span><span class="n">_</span> <span class="nv">n</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:4Math17countLeadingZerosS2iF"></a>
-                    <a name="//apple_ref/swift/Function/countLeadingZeros(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math17countLeadingZerosS2iF">countLeadingZeros(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Count Leading Zeros (clz) counts the number of zero bits preceding the most
-significant one bit. For example, the clz of 0x00F00000 is 8, and the clz of
-0x00000001 is 31.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">countLeadingZeros</span><span class="p">(</span><span class="n">_</span> <span class="nv">n</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PowerOfTwoSequence</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">Sequence</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">FixedWidthInteger</span></code></pre>
 
                         </div>
                       </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>PowerSequence Class Reference</title>
+    <title>PowerOfTwoSequence Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/PowerSequence" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/PowerOfTwoSequence" class="dashAnchor"></a>
 
-    <a title="PowerSequence Class Reference"></a>
+    <a title="PowerOfTwoSequence Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      PowerSequence Class Reference
+      PowerOfTwoSequence Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -56,12 +56,6 @@
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Power.html">Power</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/PowerGenerator.html">PowerGenerator</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/PowerSequence.html">PowerSequence</a>
-              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Power.html#/s:4Math17closestPowerOfTwoSiSgSi2to_tF">closestPowerOfTwo(to:)</a>
               </li>
@@ -147,6 +141,17 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Other Functions.html#/s:4Math4meanxx_xts13FloatingPointRzlF">mean(_:_:)</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:4Math11powersOfTwoAA05PowercD8SequenceVyxGx4upTo_Sb12overshootingts17FixedWidthIntegerRzlF">powersOfTwo(upTo:overshooting:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PowerOfTwoSequence.html">PowerOfTwoSequence</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -155,10 +160,10 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>PowerSequence</h1>
+            <h1>PowerOfTwoSequence</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PowerSequence</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">Sequence</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">FixedWidthInteger</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PowerOfTwoSequence</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">Sequence</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">FixedWidthInteger</span></code></pre>
 
                 </div>
               </div>
@@ -171,44 +176,6 @@
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Associated%20Types"></a>
-                <a name="//apple_ref/swift/Section/Associated Types" class="dashAnchor"></a>
-                <a href="#/Associated%20Types">
-                  <h3 class="section-name">Associated Types</h3>
-                </a>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:4Math13PowerSequenceC8Iteratora"></a>
-                    <a name="//apple_ref/swift/Alias/Iterator" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math13PowerSequenceC8Iteratora">Iterator</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>PowerGenerator generates ArithmeticType values.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Iterator</span> <span class="o">=</span> <span class="kt"><a href="../Classes/PowerGenerator.html">PowerGenerator</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
                 <a name="/Initializers"></a>
                 <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
                 <a href="#/Initializers">
@@ -219,9 +186,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:4Math13PowerSequenceCACyxGx11coefficient_x3maxSb11doOvershoottcfc"></a>
+                    <a name="/s:4Math18PowerOfTwoSequenceVACyxGx11coefficient_x3maxSb11doOvershoottcfc"></a>
                     <a name="//apple_ref/swift/Method/init(coefficient:max:doOvershoot:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math13PowerSequenceCACyxGx11coefficient_x3maxSb11doOvershoottcfc">init(coefficient:max:doOvershoot:)</a>
+                    <a class="token" href="#/s:4Math18PowerOfTwoSequenceVACyxGx11coefficient_x3maxSb11doOvershoottcfc">init(coefficient:max:doOvershoot:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -229,7 +196,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a PowerSequence.</p>
+                        <p>Create a PowerOfTwoSequence.</p>
 
                       </div>
                       <div class="declaration">
@@ -285,7 +252,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Initialized PowerSequence</p>
+                        <p>Initialized PowerOfTwoSequence</p>
                       </div>
                     </section>
                   </div>
@@ -294,19 +261,19 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Instance%20Methods"></a>
-                <a name="//apple_ref/swift/Section/Instance Methods" class="dashAnchor"></a>
-                <a href="#/Instance%20Methods">
-                  <h3 class="section-name">Instance Methods</h3>
+                <a name="/IteratorProtocol"></a>
+                <a name="//apple_ref/swift/Section/IteratorProtocol" class="dashAnchor"></a>
+                <a href="#/IteratorProtocol">
+                  <h3 class="section-name">IteratorProtocol</h3>
                 </a>
               </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:4Math13PowerSequenceC12makeIteratorAA0B9GeneratorCyxGyF"></a>
-                    <a name="//apple_ref/swift/Method/makeIterator()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Math13PowerSequenceC12makeIteratorAA0B9GeneratorCyxGyF">makeIterator()</a>
+                    <a name="/s:4Math18PowerOfTwoSequenceV4nextxSgyF"></a>
+                    <a name="//apple_ref/swift/Method/next()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math18PowerOfTwoSequenceV4nextxSgyF">next()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -314,20 +281,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Generate sequence of powers-of-two.</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeIterator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/PowerSequence.html#/s:4Math13PowerSequenceC8Iteratora">Iterator</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">next</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>PowerGenerator</p>
+                        <p>The next value in the power-of-two sequence</p>
                       </div>
                     </section>
                   </div>

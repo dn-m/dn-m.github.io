@@ -57,12 +57,6 @@
             <a class="nav-group-name-link" href="Power.html">Power</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/PowerGenerator.html">PowerGenerator</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/PowerSequence.html">PowerSequence</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Power.html#/s:4Math17closestPowerOfTwoSiSgSi2to_tF">closestPowerOfTwo(to:)</a>
               </li>
               <li class="nav-group-task">
@@ -146,6 +140,17 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Other Functions.html#/s:4Math4meanxx_xts13FloatingPointRzlF">mean(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other Functions.html#/s:4Math11powersOfTwoAA05PowercD8SequenceVyxGx4upTo_Sb12overshootingts17FixedWidthIntegerRzlF">powersOfTwo(upTo:overshooting:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PowerOfTwoSequence.html">PowerOfTwoSequence</a>
               </li>
             </ul>
           </li>
@@ -262,6 +267,43 @@ reached.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>A function that will calculate the y-value for the given x-value on the regression.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Math11powersOfTwoAA05PowercD8SequenceVyxGx4upTo_Sb12overshootingts17FixedWidthIntegerRzlF"></a>
+                    <a name="//apple_ref/swift/Function/powersOfTwo(upTo:overshooting:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math11powersOfTwoAA05PowercD8SequenceVyxGx4upTo_Sb12overshootingts17FixedWidthIntegerRzlF">powersOfTwo(upTo:overshooting:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">powersOfTwo</span> <span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">FixedWidthInteger</span><span class="o">&gt;</span> <span class="p">(</span>
+    <span class="n">upTo</span> <span class="nv">max</span><span class="p">:</span> <span class="kt">T</span> <span class="o">=</span> <span class="o">.</span><span class="n">max</span><span class="p">,</span>
+    <span class="n">overshooting</span> <span class="nv">doOvershoot</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="Structs/PowerOfTwoSequence.html">PowerOfTwoSequence</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A sequence of powers-of-two up to the given <code>max</code> value.</p>
                       </div>
                     </section>
                   </div>
