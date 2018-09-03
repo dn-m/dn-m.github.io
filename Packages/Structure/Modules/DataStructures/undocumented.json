@@ -1108,7 +1108,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Zip3Sequence.swift",
-      "line": 205,
+      "line": 206,
       "symbol": "Zip3Sequence",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
