@@ -1,44 +1,107 @@
 {
   "warnings": [
     {
-      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Instrument.swift",
-      "line": 17,
-      "symbol": "Instrument.Identifier",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Instrument.swift",
-      "line": 52,
-      "symbol": "Instrument.base",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
-      "line": 207,
-      "symbol": "Model.Builder.build()",
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Data Structures/AVLTree.swift",
+      "line": 46,
+      "symbol": "AVLTree.init(key:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Data Structures/AVLTree.swift",
+      "line": 50,
+      "symbol": "AVLTree.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Data Structures/AVLTree.swift",
+      "line": 61,
+      "symbol": "AVLTree.inOrder",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Data Structures/AVLTree.swift",
+      "line": 83,
+      "symbol": "AVLTree.insert(_:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Data Structures/IntervalSearchTree.swift",
+      "line": 21,
+      "symbol": "ISTNode.init(interval:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Data Structures/IntervalSearchTree.swift",
+      "line": 27,
+      "symbol": "IntervalSearchTree",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
+      "line": 16,
+      "symbol": "Event",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
+      "line": 17,
+      "symbol": "Attribute",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
+      "line": 18,
+      "symbol": "RhythmID",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
+      "line": 19,
+      "symbol": "AttributeID",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
+      "line": 20,
+      "symbol": "EventID",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
+      "line": 24,
+      "symbol": "Array.zero",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
+      "line": 31,
+      "symbol": "Model.Builder",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.swift",
-      "line": 42,
-      "symbol": "Model.tempi",
+      "line": 41,
+      "symbol": "Model.entitiesByType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.swift",
-      "line": 43,
-      "symbol": "Model.meters",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.swift",
-      "line": 47,
-      "symbol": "Model.init(values:performanceContexts:intervals:events:byLabel:meters:tempi:)",
+      "line": 45,
+      "symbol": "Model.init(performanceContext:tempi:meters:attributes:events:eventsByRhythm:entitiesByInterval:entitiesByType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -71,17 +134,122 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext.swift",
-      "line": 40,
-      "symbol": "PerformanceContext.Scope",
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/Instrument.swift",
+      "line": 11,
+      "symbol": "InstrumentID",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/Instrument.swift",
+      "line": 13,
+      "symbol": "Instrument",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Performer.swift",
-      "line": 62,
-      "symbol": "Performer.base",
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/Instrument.swift",
+      "line": 14,
+      "symbol": "Instrument.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/Instrument.swift",
+      "line": 15,
+      "symbol": "Instrument.init(name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/PerformanceContext.swift",
+      "line": null,
+      "symbol": "PerformanceContext.Builder",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/PerformanceContext.swift",
+      "line": 43,
+      "symbol": "PerformerInstrumentPair",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/PerformanceContext.swift",
+      "line": 44,
+      "symbol": "PerformerInstrumentPair.performer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/PerformanceContext.swift",
+      "line": 45,
+      "symbol": "PerformerInstrumentPair.instrument",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/PerformanceContext.swift",
+      "line": 52,
+      "symbol": "PerformanceContext.Builder",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/PerformanceContext.swift",
+      "line": 92,
+      "symbol": "PerformanceContext.Builder.addPerformer(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/PerformanceContext.swift",
+      "line": 101,
+      "symbol": "PerformanceContext.Builder.addInstrument(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/PerformanceContext.swift",
+      "line": 110,
+      "symbol": "PerformanceContext.Builder.build()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/Performer.swift",
+      "line": 11,
+      "symbol": "Performer",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/Performer.swift",
+      "line": 12,
+      "symbol": "Performer.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/Performer.swift",
+      "line": 13,
+      "symbol": "Performer.init(name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/Performer.swift",
+      "line": 18,
+      "symbol": "PerformerID",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/Voice.swift",
+      "line": 23,
+      "symbol": "VoiceID",
+      "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     }
   ],

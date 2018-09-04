@@ -92,7 +92,7 @@ let pcs: Pitch.Class.Collection = [0,11,3,4,8,7,9,5,6,1,2,10]
 let retrograde = pcs.retrograde // =&gt; [10,2,1,6,5,9,7,8,4,3,11,0]</p>
 
 <p>let duration = 3/&gt;4 // =&gt; Duration(3,4) &quot;three quarter notes&quot;
-let tempo = Tempo(120,8) // =&gt; &quot;120 beats per minute at the eighth-note level&quot;
+let tempo = Tempo(120, subdivision: 8) // =&gt; &quot;120 beats per minute at the eighth-note level&quot;
 let meter = Meter(15,16) // =&gt; &quot;15 beats at the sixteenth-note level&quot;
 let meters: Meter.Collection = [Meter(3,4), Meter(5,16), Meter(11,28)]</p>
 

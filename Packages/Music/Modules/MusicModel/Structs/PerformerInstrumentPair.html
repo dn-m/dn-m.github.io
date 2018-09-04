@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>NamedAttribute Structure Reference</title>
+    <title>PerformerInstrumentPair Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/NamedAttribute" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/PerformerInstrumentPair" class="dashAnchor"></a>
 
-    <a title="NamedAttribute Structure Reference"></a>
+    <a title="PerformerInstrumentPair Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      NamedAttribute Structure Reference
+      PerformerInstrumentPair Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -134,10 +134,10 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>NamedAttribute</h1>
+            <h1>PerformerInstrumentPair</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NamedAttribute</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PerformerInstrumentPair</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
 
                 </div>
               </div>
@@ -153,9 +153,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10MusicModel14NamedAttributeV4nameSSvp"></a>
-                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel14NamedAttributeV4nameSSvp">name</a>
+                    <a name="/s:10MusicModel23PerformerInstrumentPairV9performerXevp"></a>
+                    <a name="//apple_ref/swift/Property/performer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel23PerformerInstrumentPairV9performerXevp">performer</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -170,7 +170,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt">Identifier</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Performer.html">Performer</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -180,9 +180,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10MusicModel14NamedAttributeV9attributeypvp"></a>
-                    <a name="//apple_ref/swift/Property/attribute" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel14NamedAttributeV9attributeypvp">attribute</a>
+                    <a name="/s:10MusicModel23PerformerInstrumentPairV10instrumentXevp"></a>
+                    <a name="//apple_ref/swift/Property/instrument" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel23PerformerInstrumentPairV10instrumentXevp">instrument</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -197,34 +197,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">attribute</span><span class="p">:</span> <span class="kt">Any</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10MusicModel14NamedAttributeVACyp_SS4nametcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(_:name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel14NamedAttributeVACyp_SS4nametcfc">init(_:name:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">attribute</span><span class="p">:</span> <span class="kt">Any</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt">Identifier</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Instrument.html">Instrument</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>

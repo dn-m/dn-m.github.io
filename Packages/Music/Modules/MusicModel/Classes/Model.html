@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
            Docs
         </a>
-         (83% documented)
+         (56% documented)
       </p>
     
     
@@ -54,10 +54,24 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AVLTree.html">AVLTree</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/BeatContext.html">BeatContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ISTNode.html">ISTNode</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/Instrument.html">Instrument</a>
@@ -69,16 +83,48 @@
                 <a class="nav-group-task-link" href="../Structs/PerformanceContext.html">PerformanceContext</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/PerformanceContext/Path.html">– Path</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/PerformanceContext/Scope.html">– Scope</a>
+                <a class="nav-group-task-link" href="../Structs/PerformanceContext/Builder.html">– Builder</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/Performer.html">Performer</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PerformerInstrumentPair.html">PerformerInstrumentPair</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/Voice.html">Voice</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel9Attributea">Attribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel5Eventa">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel12InstrumentIDa">InstrumentID</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel18IntervalSearchTreea">IntervalSearchTree</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel11PerformerIDa">PerformerID</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel8RhythmIDa">RhythmID</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a>
               </li>
             </ul>
           </li>
@@ -107,9 +153,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10MusicModel0B0C6valuess10DictionaryVy10Foundation4UUIDVypGvp"></a>
-                    <a name="//apple_ref/swift/Property/values" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C6valuess10DictionaryVy10Foundation4UUIDVypGvp">values</a>
+                    <a name="/s:10MusicModel0B0C18performanceContextAA011PerformanceD0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/performanceContext" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0C18performanceContextAA011PerformanceD0Vvp">performanceContext</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -117,133 +163,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Concrete values associated with a given unique identifier.</p>
+                        <p>The performance context of a work.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt">UUID</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10MusicModel0B0C19performanceContextss10DictionaryVy10Foundation4UUIDVAA18PerformanceContextV4PathVGvp"></a>
-                    <a name="//apple_ref/swift/Property/performanceContexts" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C19performanceContextss10DictionaryVy10Foundation4UUIDVAA18PerformanceContextV4PathVGvp">performanceContexts</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><code><a href="../Structs/PerformanceContext/Path.html">PerformanceContext.Path</a></code> for each entity.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">performanceContexts</span><span class="p">:</span> <span class="p">[</span><span class="kt">UUID</span> <span class="p">:</span> <span class="kt"><a href="../Structs/PerformanceContext.html">PerformanceContext</a></span><span class="o">.</span><span class="kt">Path</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10MusicModel0B0C9intervalsXevp"></a>
-                    <a name="//apple_ref/swift/Property/intervals" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C9intervalsXevp">intervals</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Interval of each entity.</p>
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    Keep sorted by interval.lowerBound
-
-</div>
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    Create a richer offset type (incorporating metrical and non-metrical sections)
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">intervals</span><span class="p">:</span> <span class="p">[</span><span class="kt">UUID</span> <span class="p">:</span> <span class="kt">ClosedRange</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="o">&gt;</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10MusicModel0B0C6eventss10DictionaryVy10Foundation4UUIDVSayAIGGvp"></a>
-                    <a name="//apple_ref/swift/Property/events" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C6eventss10DictionaryVy10Foundation4UUIDVSayAIGGvp">events</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Collection of entities for a single event (all containing same
-<code><a href="../Structs/PerformanceContext/Path.html">PerformanceContext.Path</a></code> and <code>interval</code>).</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">events</span><span class="p">:</span> <span class="p">[</span><span class="kt">UUID</span> <span class="p">:</span> <span class="p">[</span><span class="kt">UUID</span><span class="p">]]</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10MusicModel0B0C7byLabels10DictionaryVySSSay10Foundation4UUIDVGGvp"></a>
-                    <a name="//apple_ref/swift/Property/byLabel" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C7byLabels10DictionaryVySSSay10Foundation4UUIDVGGvp">byLabel</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Entities stored by their label (e.g., <q>rhythm</q>, <q>pitch</q>, <q>articulation</q>, etc.)</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">byLabel</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="p">[</span><span class="kt">UUID</span><span class="p">]]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">performanceContext</span><span class="p">:</span> <span class="kt"><a href="../Structs/PerformanceContext.html">PerformanceContext</a></span></code></pre>
 
                         </div>
                       </div>
@@ -263,7 +190,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The tempi contained in a work.</p>
 
                       </div>
                       <div class="declaration">
@@ -290,7 +217,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The meters contained in a work.</p>
 
                       </div>
                       <div class="declaration">
@@ -298,6 +225,143 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">meters</span><span class="p">:</span> <span class="kt">Meter</span><span class="o">.</span><span class="kt">Collection</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MusicModel0B0C10attributesXevp"></a>
+                    <a name="//apple_ref/swift/Property/attributes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0C10attributesXevp">attributes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Each attribute in a work, stored by a unique identifier.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a></span> <span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:10MusicModel9Attributea">Attribute</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MusicModel0B0C6eventsXevp"></a>
+                    <a name="//apple_ref/swift/Property/events" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0C6eventsXevp">events</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Each event (composition of identifiers of attributes) in a work, stored by a unique
+identifier.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">events</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></span> <span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a></span><span class="p">]]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MusicModel0B0C14eventsByRhythmXevp"></a>
+                    <a name="//apple_ref/swift/Property/eventsByRhythm" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0C14eventsByRhythmXevp">eventsByRhythm</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The list of identifiers of events contained in a given rhythm, as represented by a unique
+identifier.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">eventsByRhythm</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:10MusicModel8RhythmIDa">RhythmID</a></span> <span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></span><span class="p">]]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MusicModel0B0C18entitiesByIntervalXevp"></a>
+                    <a name="//apple_ref/swift/Property/entitiesByInterval" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0C18entitiesByIntervalXevp">entitiesByInterval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The list of identifiers of attributes stored by their fractional interval.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">entitiesByInterval</span><span class="p">:</span> <span class="o">&lt;&lt;</span><span class="n">error</span> <span class="n">type</span><span class="o">&gt;&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MusicModel0B0C14entitiesByTypeXevp"></a>
+                    <a name="//apple_ref/swift/Property/entitiesByType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0C14entitiesByTypeXevp">entitiesByType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">entitiesByType</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a></span><span class="p">]]</span></code></pre>
 
                         </div>
                       </div>
@@ -319,8 +383,8 @@
                   <div>
                     <code>
                     <a name="/s:10MusicModel0B0CXeXecfc"></a>
-                    <a name="//apple_ref/swift/Method/init(values:performanceContexts:intervals:events:byLabel:meters:tempi:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0CXeXecfc">init(values:performanceContexts:intervals:events:byLabel:meters:tempi:)</a>
+                    <a name="//apple_ref/swift/Method/init(performanceContext:tempi:meters:attributes:events:eventsByRhythm:entitiesByInterval:entitiesByType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0CXeXecfc">init(performanceContext:tempi:meters:attributes:events:eventsByRhythm:entitiesByInterval:entitiesByType:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -336,13 +400,14 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
-    <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt">UUID</span><span class="p">:</span> <span class="kt">Any</span><span class="p">],</span>
-    <span class="nv">performanceContexts</span><span class="p">:</span> <span class="p">[</span><span class="kt">UUID</span><span class="p">:</span> <span class="kt"><a href="../Structs/PerformanceContext.html">PerformanceContext</a></span><span class="o">.</span><span class="kt">Path</span><span class="p">],</span>
-    <span class="nv">intervals</span><span class="p">:</span> <span class="p">[</span><span class="kt">UUID</span><span class="p">:</span> <span class="kt">ClosedRange</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="o">&gt;</span><span class="p">],</span>
-    <span class="nv">events</span><span class="p">:</span> <span class="p">[</span><span class="kt">UUID</span><span class="p">:</span> <span class="p">[</span><span class="kt">UUID</span><span class="p">]],</span>
-    <span class="nv">byLabel</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="p">[</span><span class="kt">UUID</span><span class="p">]],</span>
+    <span class="nv">performanceContext</span><span class="p">:</span> <span class="kt"><a href="../Structs/PerformanceContext.html">PerformanceContext</a></span><span class="p">,</span>
+    <span class="nv">tempi</span><span class="p">:</span> <span class="kt">Tempo</span><span class="o">.</span><span class="kt">Interpolation</span><span class="o">.</span><span class="kt">Collection</span><span class="p">,</span>
     <span class="nv">meters</span><span class="p">:</span> <span class="kt">Meter</span><span class="o">.</span><span class="kt">Collection</span><span class="p">,</span>
-    <span class="nv">tempi</span><span class="p">:</span> <span class="kt">Tempo</span><span class="o">.</span><span class="kt">Interpolation</span><span class="o">.</span><span class="kt">Collection</span>
+    <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a></span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:10MusicModel9Attributea">Attribute</a></span><span class="p">],</span>
+    <span class="nv">events</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a></span><span class="p">]],</span>
+    <span class="nv">eventsByRhythm</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:10MusicModel8RhythmIDa">RhythmID</a></span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></span><span class="p">]],</span>
+    <span class="nv">entitiesByInterval</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:10MusicModel18IntervalSearchTreea">IntervalSearchTree</a></span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="p">,[</span><span class="kt"><a href="../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a></span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="nv">entitiesByType</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a></span><span class="p">]]</span>
 <span class="p">)</span></code></pre>
 
                         </div>
@@ -367,32 +432,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <h2 id='creating-a-code-model-code-with-a-code-model-builder-code' class='heading'>Creating a <code><a href="../Classes/Model.html">Model</a></code> with a <code>Model.Builder</code>.</h2>
-
-<p>The <code>AbstractMusicalModel</code> is a static database, containing the musical information of 
-a single <em>work</em>. In order to create an <code>AbstractMusicalModel</code>, we can use a <code>Builder</code>,
-which decouples the construction process of the model from the completed structure.</p>
-
-<p>First, create a <code>Builder</code>:</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">builder</span> <span class="o">=</span> <span class="kt">Model</span><span class="o">.</span><span class="kt">Builder</span><span class="p">()</span>
-</code></pre>
-
-<p>Then, we can put things in it:</p>
-<pre class="highlight swift"><code><span class="c1">// Create a middle-c, to be played by "Pat" on the "Violin", starting on the</span>
-<span class="c1">// second quarter-note of the piece, and will last for a single quarter-note.</span>
-<span class="k">let</span> <span class="nv">pitch</span> <span class="o">=</span> <span class="kt">Pitch</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span> <span class="c1">// middle c</span>
-<span class="k">let</span> <span class="nv">instrument</span> <span class="o">=</span> <span class="kt">Instrument</span><span class="p">(</span><span class="s">"Violin"</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">performer</span> <span class="o">=</span> <span class="kt">Performer</span><span class="p">(</span><span class="s">"Pat"</span><span class="p">,</span> <span class="p">[</span><span class="n">instrument</span><span class="p">])</span>
-<span class="k">let</span> <span class="nv">performanceContext</span> <span class="o">=</span> <span class="kt">PerformanceContext</span><span class="p">(</span><span class="n">performer</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">interval</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/&gt;</span><span class="mi">4</span><span class="o">...</span><span class="mi">2</span><span class="o">/&gt;</span><span class="mi">4</span>
-
-<span class="c1">// Now, we can ask the `Builder` to add it:</span>
-<span class="n">builder</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="n">pitch</span><span class="p">,</span> <span class="nv">label</span><span class="p">:</span> <span class="s">"pitch"</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="n">performanceContext</span><span class="p">,</span> <span class="nv">in</span><span class="p">:</span> <span class="n">interval</span><span class="p">)</span>
-</code></pre>
-
-<p>Lastly, we can ask for the <code>AbstractMusicModel</code> in completed form:</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">model</span> <span class="o">=</span> <span class="n">builder</span><span class="o">.</span><span class="nf">build</span><span class="p">()</span>
-</code></pre>
+                        <p>Undocumented</p>
 
                         <a href="../Classes/Model/Builder.html" class="slightly-smaller">See more</a>
                       </div>
@@ -480,7 +520,7 @@ which decouples the construction process of the model from the completed structu
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-28)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-04)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

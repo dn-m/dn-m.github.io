@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>  Reference</title>
+    <title>Extensions  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -11,8 +11,9 @@
   </head>
   <body>
 
+    <a name="//apple_ref/swift/Section/Extensions" class="dashAnchor"></a>
 
-    <a title="  Reference"></a>
+    <a title="Extensions  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -35,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html"> Reference</a>
       <img class="carat" src="img/carat.png" />
-        Reference
+      Extensions  Reference
     </p>
 
     <div class="content-wrapper">
@@ -133,107 +134,47 @@
 
         <section class="section">
           <div class="section-content">
-            
-            <h1 id='music' class='heading'>Music</h1>
-
-<p><img src="https://img.shields.io/badge/Swift-4.2-orange.svg" alt="Swift Version">
-<img src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey.svg" alt="Platforms">
-<a href="https://travis-ci.org/dn-m/Music"><img src="https://travis-ci.org/dn-m/Music.svg?branch=master" alt="Build Status"></a></p>
-
-<p>Structures for the creation, analysis, and performance of music in Swift.</p>
-<h2 id='overview' class='heading'>Overview</h2>
-
-<p>The <code>Music</code> package is part of the <a href="https://dn-m.github.io"><strong>dn-m</strong></a> (dynamic notation for music) project, but it&rsquo;s designed to be used as a standalone package for anyone wanting to write, inspect, or represent music using the Swift langage.</p>
-
-<p>The structures contained herein are not concerned with (or knowledgeable of) the sonic or visual representation of music. Instead, they focus on the abstract representation of music. By means of various backend solutions, these abstract representations are interpretable as sonic or visual entities. For representing these structures graphically, look into <a href="https://github.com/dn-m/NotationModel">dn-m/NotationModel</a> and <a href="https://github.com/dn-m">dn-m/NotationView</a>.</p>
-
-<p>The <code>Music</code> package leverages Swift&rsquo;s powerful generic type system to create a strongly-typed interface for describing music. A goal of <code>Music</code> is to encode as many of the logics of music as possible into the type system in order to enforce the validity of musical structures at compile time.</p>
-
-<p>The code herein is pure Swift and has no system-specific dependencies. It supports the Linux platform, along with the Apple platforms, and will extend support to other platforms as Swift does.</p>
-<h2 id='documentation' class='heading'>Documentation</h2>
-
-<p>Check out the <a href="https://dn-m.github.io/Packages/Music">documentation</a> automatically generated from the source code, updated with each push to the <code>master</code> branch.</p>
-<h2 id='usage' class='heading'>Usage</h2>
-<pre class="highlight plaintext"><code>import Pitch
-import Duration
-import Dynamics
-
-let c: Pitch = 60 // =&gt; "middle c"
-let d = c + 2 // =&gt; 62 // =&gt; Pitch(62)
-let pcs: Pitch.Class.Collection = [0,11,3,4,8,7,9,5,6,1,2,10]
-let retrograde = pcs.retrograde // =&gt; [10,2,1,6,5,9,7,8,4,3,11,0]
-
-let duration = 3/&gt;4 // =&gt; Duration(3,4) "three quarter notes"
-let tempo = Tempo(120, subdivision: 8) // =&gt; "120 beats per minute at the eighth-note level"
-let meter = Meter(15,16) // =&gt; "15 beats at the sixteenth-note level"
-let meters: Meter.Collection = [Meter(3,4), Meter(5,16), Meter(11,28)]
-
-let loud: Dynamic = .ff
-let louder: Dynamic = .ffff
-let lessLoud: Dynamic = .p
-</code></pre>
-<h3 id='requirements' class='heading'>Requirements</h3>
-
-<ul>
-<li>Swift 4.2 Toolchain</li>
-<li><a href="https://swift.org/package-manager/">Swift Package Manager</a></li>
-</ul>
-<h3 id='installation' class='heading'>Installation</h3>
-
-<p>In order to use the <code>Music</code> API, add it to the <code>dependencies</code> section of your <code>Package.swift</code> file:</p>
-<pre class="highlight plaintext"><code>let package = Package(
-    name: ...,
-    products: [ ... ],
-    dependencies: [
-        ...,
-        .package(url: "https://github.com/dn-m/Music", from: "0.7.0")
-    ],
-    targets: [ ... ]
-)
-</code></pre>
-<h2 id='development' class='heading'>Development</h2>
-
-<p>To contribute to the <code>Music</code> package, clone the <code>git</code> repository:</p>
-<pre class="highlight plaintext"><code>git clone https://github.com/dn-m/Music &amp;&amp; cd Music
-</code></pre>
-
-<p>Build the package:</p>
-<pre class="highlight plaintext"><code>swift build
-</code></pre>
-
-<p>Run the tests:</p>
-<pre class="highlight plaintext"><code>swift test
-</code></pre>
-
-<p>If you use the Xcode IDE, use SwiftPM to generate an <code>.xcodeproj</code> file:</p>
-<pre class="highlight plaintext"><code>swift package generate-xcodeproj
-</code></pre>
-<h3 id='architecture' class='heading'>Architecture</h3>
-
-<p><code>Music</code> is split up into several modules:</p>
-
-<ul>
-<li><a href="https://github.com/dn-m/Music/tree/master/Sources/Pitch"><code>Pitch</code></a></li>
-<li><a href="https://github.com/dn-m/Music/tree/master/Sources/Duration"><code>Duration</code></a></li>
-<li><a href="https://github.com/dn-m/Music/tree/master/Sources/Dynamics"><code>Dynamics</code></a></li>
-<li><a href="https://github.com/dn-m/Music/tree/master/Sources/Articulations"><code>Articulations</code></a></li>
-<li><a href="https://github.com/dn-m/Music/tree/master/Sources/MusicModel"><code>MusicModel</code></a></li>
-</ul>
-<h2 id='inspiration' class='heading'>Inspiration</h2>
-
-<p>Here are some libraries in other languages that have been influential to the design of the <code>Music</code> package:</p>
-
-<ul>
-<li><a href="http://abjad.mbrsi.org">Abjad</a> (Python)</li>
-<li><a href="http://web.mit.edu/music21/">Music21</a> (Python)</li>
-<li><a href="https://wiki.haskell.org/Haskore">Haskore</a> (Haskell)</li>
-<li><a href="http://hackage.haskell.org/package/mezzo">Mezzo</a> (Haskell)</li>
-<li><a href="http://science.jkilian.de/salieri/GUIDO/index.html">GUIDO</a> (C++)</li>
-</ul>
+            <h1>Extensions</h1>
+            <p>The following extensions are available globally.</p>
 
           </div>
         </section>
 
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa"></a>
+                    <a name="//apple_ref/swift/Extension/Array" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa">Array</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Extensions/Array.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span> <span class="p">:</span> <span class="n">_DestructorSafeContainer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
       </article>
     </div>

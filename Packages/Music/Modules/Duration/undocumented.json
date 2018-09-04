@@ -8,6 +8,62 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
+      "line": null,
+      "symbol": "Rhythm",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
+      "line": null,
+      "symbol": "Rhythm",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
+      "line": null,
+      "symbol": "Rhythm",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
+      "line": null,
+      "symbol": "Rhythm",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
+      "line": null,
+      "symbol": "Rhythm",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
+      "line": 60,
+      "symbol": "Rhythm",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
+      "line": 88,
+      "symbol": "Rhythm.Leaf.duration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
+      "line": 89,
+      "symbol": "Rhythm.Leaf.context",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
       "line": 22,
       "symbol": "Tempo.BeatsPerMinute",
@@ -30,7 +86,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
-      "line": 549,
+      "line": 544,
       "symbol": "ContiguousSegmentCollection.secondsOffset(for:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

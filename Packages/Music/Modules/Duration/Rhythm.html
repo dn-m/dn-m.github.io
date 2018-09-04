@@ -20,7 +20,7 @@
         <a class="header-link" href="index.html">
            Docs
         </a>
-         (97% documented)
+         (93% documented)
       </p>
     
     
@@ -79,6 +79,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/Rhythm.html">Rhythm</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Rhythm/Leaf.html">– Leaf</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Rhythm.html#/s:8Duration14ProportionTreea">ProportionTree</a>
@@ -167,51 +170,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Hierarchical organization of metrical durations and their activation contexts.</p>
-
-<p>The <code>Rhythm</code> structure composes a <code><a href="Rhythm.html#/s:8Duration0A4Treea">DurationTree</a></code> and an array of <code>Leaf</code> values, each of which
-represent the metrical context (e.g., <q>tied</q>, <q>rest</q>, or <q>event</q>) of a <code><a href="Structs/Duration.html">Duration</a></code> in the
-<code>leaves</code> of the `durationTree.</p>
-
-<p><strong>Example Usage</strong></p>
-
-<p>First, construct a <code><a href="Rhythm.html#/s:8Duration0A4Treea">DurationTree</a></code>:</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">durations</span><span class="p">:</span> <span class="kt">DurationTree</span> <span class="o">=</span> <span class="o">.</span><span class="nf">branch</span><span class="p">(</span><span class="kt">Duration</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span> <span class="p">[</span>
-    <span class="o">.</span><span class="nf">leaf</span><span class="p">(</span><span class="kt">Duration</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">)),</span>
-    <span class="o">.</span><span class="nf">leaf</span><span class="p">(</span><span class="kt">Duration</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">)),</span>
-    <span class="o">.</span><span class="nf">leaf</span><span class="p">(</span><span class="kt">Duration</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">)),</span>
-    <span class="o">.</span><span class="nf">leaf</span><span class="p">(</span><span class="kt">Duration</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
-<span class="p">])</span>
-<span class="c1">// =&gt;     4/&gt;8  (5:4 tuplet)</span>
-<span class="c1">//     /  |  |  \</span>
-<span class="c1">// 1/&gt;8 1/&gt;8 2/&gt;8 1/&gt;8</span>
-</code></pre>
-
-<p>Then, construct an array of <code>Leaf</code> values:</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">leaves</span><span class="p">:</span> <span class="p">[</span><span class="kt">Duration</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;.</span><span class="kt">Leaf</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="nf">rest</span><span class="p">(),</span>
-    <span class="nf">event</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
-    <span class="nf">tie</span><span class="p">(),</span>
-    <span class="nf">rest</span><span class="p">()</span>
-<span class="p">]</span>
-<span class="c1">// =&gt; [&lt;&gt;,&lt;1&gt;,&lt;-&gt;,&lt;&gt;]</span>
-</code></pre>
-
-<p>Now, you can put them together:</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">rhythm</span> <span class="o">=</span> <span class="kt">Rhythm</span><span class="p">(</span><span class="n">durations</span><span class="p">,</span><span class="n">leaves</span><span class="p">)</span> <span class="c1">// =&gt;</span>
-<span class="c1">//        4/&gt;8</span>
-<span class="c1">//     /  |  |  \</span>
-<span class="c1">// 1/&gt;8 1/&gt;8 2/&gt;8 1/&gt;8</span>
-<span class="c1">//  &lt;&gt;   &lt;1&gt; &lt;-&gt;   &lt;&gt;</span>
-</code></pre>
-
-<p>It is easy to transform the <code>event</code> values contained in a <code>Rhythm</code>:</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">more</span> <span class="o">=</span> <span class="n">rhythm</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="nv">$0</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">}</span> <span class="c1">// =&gt;</span>
-<span class="c1">//        4/&gt;8</span>
-<span class="c1">//     /  |  |  \</span>
-<span class="c1">// 1/&gt;8 1/&gt;8 2/&gt;8 1/&gt;8</span>
-<span class="c1">//  &lt;&gt;   &lt;2&gt; &lt;-&gt;   &lt;&gt;</span>
-</code></pre>
+                        <p>Undocumented</p>
 
                         <a href="Structs/Rhythm.html" class="slightly-smaller">See more</a>
                       </div>
@@ -245,7 +204,7 @@ represent the metrical context (e.g., <q>tied</q>, <q>rest</q>, or <q>event</q>)
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">event</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="Structs/Rhythm.html">Rhythm</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;.</span><span class="kt">Leaf</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">event</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="Structs/Rhythm.html">Rhythm</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;.</span><span class="kt">Context</span></code></pre>
 
                         </div>
                       </div>
@@ -275,7 +234,7 @@ represent the metrical context (e.g., <q>tied</q>, <q>rest</q>, or <q>event</q>)
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">rest</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="Structs/Rhythm.html">Rhythm</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;.</span><span class="kt">Leaf</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">rest</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="Structs/Rhythm.html">Rhythm</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;.</span><span class="kt">Context</span></code></pre>
 
                         </div>
                       </div>
@@ -305,7 +264,7 @@ represent the metrical context (e.g., <q>tied</q>, <q>rest</q>, or <q>event</q>)
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">tie</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="Structs/Rhythm.html">Rhythm</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;.</span><span class="kt">Leaf</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">tie</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="Structs/Rhythm.html">Rhythm</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;.</span><span class="kt">Context</span></code></pre>
 
                         </div>
                       </div>
@@ -482,7 +441,7 @@ instance of <code>Element</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-28)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-04)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

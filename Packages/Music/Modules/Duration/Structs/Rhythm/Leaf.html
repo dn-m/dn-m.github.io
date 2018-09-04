@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Context Structure Reference</title>
+    <title>Leaf Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/Context" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/Leaf" class="dashAnchor"></a>
 
-    <a title="Context Structure Reference"></a>
+    <a title="Leaf Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../../index.html"> Reference</a>
       <img class="carat" src="../../img/carat.png" />
-      Context Structure Reference
+      Leaf Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -148,14 +148,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Context</h1>
+            <h1>Leaf</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Context</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Leaf</span></code></pre>
 
                 </div>
               </div>
-            <p>The context of a particular point within a <code><a href="../../Structs/Tempo/Interpolation.html">Tempo.Interpolation</a></code>.</p>
+            <p>A pair of a <code><a href="../../Structs/Duration.html">Duration</a></code> and <code><a href="../../Structs/Rhythm.html#/s:8Duration6RhythmV7Contexta">Context</a></code> representing a single leaf of a <code><a href="../../Structs/Rhythm.html">Rhythm</a></code> structure.</p>
 
           </div>
         </section>
@@ -163,20 +163,13 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Initializers"></a>
-                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
-                <a href="#/Initializers">
-                  <h3 class="section-name">Initializers</h3>
-                </a>
-              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Duration5TempoV7ContextVXeXecfc"></a>
-                    <a name="//apple_ref/swift/Method/init(interpolation:metricalOffset:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration5TempoV7ContextVXeXecfc">init(interpolation:metricalOffset:)</a>
+                    <a name="/s:8Duration6RhythmV4LeafV8durationA2AVvp"></a>
+                    <a name="//apple_ref/swift/Property/duration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Duration6RhythmV4LeafV8durationA2AVvp">duration</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -184,14 +177,41 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a <code>Tempo.Context</code> with a given <code>interpolation</code> and <code>metricalOffset</code>.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">interpolation</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Tempo/Interpolation.html">Interpolation</a></span><span class="p">,</span> <span class="nv">metricalOffset</span><span class="p">:</span> <span class="kt">Fraction</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Duration.html">Duration</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Duration6RhythmV4LeafV7contextAA22ContinuationOrInstanceOyAA07AbsenceF5EventOyxGGvp"></a>
+                    <a name="//apple_ref/swift/Property/context" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Duration6RhythmV4LeafV7contextAA22ContinuationOrInstanceOyAA07AbsenceF5EventOyxGGvp">context</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">context</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Rhythm.html#/s:8Duration6RhythmV7Contexta">Context</a></span></code></pre>
 
                         </div>
                       </div>
