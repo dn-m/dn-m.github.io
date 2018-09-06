@@ -20,7 +20,7 @@
         <a class="header-link" href="../../index.html">
            Docs
         </a>
-         (56% documented)
+         (57% documented)
       </p>
     
     
@@ -87,9 +87,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Structs/Performer.html">Performer</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Structs/PerformerInstrumentPair.html">PerformerInstrumentPair</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Structs/Voice.html">Voice</a>
@@ -215,7 +212,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addPerformer</span><span class="p">(</span><span class="n">_</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Identifier</span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addPerformer</span><span class="p">(</span><span class="n">_</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel11PerformerIDa">PerformerID</a></span></code></pre>
 
                         </div>
                       </div>
@@ -242,7 +239,38 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addInstrument</span><span class="p">(</span><span class="n">_</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Identifier</span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addInstrument</span><span class="p">(</span><span class="n">_</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel12InstrumentIDa">InstrumentID</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MusicModel0B0C7BuilderC8addVoiceXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/addVoice(_:forPerformer:forInstrument:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC8addVoiceXeXeF">addVoice(_:forPerformer:forInstrument:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addVoice</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">voice</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="n">forPerformer</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">,</span>
+    <span class="n">forInstrument</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a></span></code></pre>
 
                         </div>
                       </div>
@@ -264,8 +292,8 @@
                   <div>
                     <code>
                     <a name="/s:10MusicModel0B0C7BuilderC9addRhythmXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/addRhythm(_:at:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC9addRhythmXeXeF">addRhythm(_:at:)</a>
+                    <a name="//apple_ref/swift/Method/addRhythm(_:at:performedOn:by:voice:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC9addRhythmXeXeF">addRhythm(_:at:performedOn:by:voice:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -281,7 +309,13 @@ the <code>rhythm</code> will be added at the current offset of the current meter
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addRhythm</span><span class="p">(</span><span class="n">_</span> <span class="nv">rhythm</span><span class="p">:</span> <span class="kt">Rhythm</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">at</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Fraction</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel8RhythmIDa">RhythmID</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addRhythm</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">rhythm</span><span class="p">:</span> <span class="kt">Rhythm</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">at</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Fraction</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="n">performedOn</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">,</span>
+    <span class="n">by</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">,</span>
+    <span class="nv">voice</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel8RhythmIDa">RhythmID</a></span></code></pre>
 
                         </div>
                       </div>
@@ -375,8 +409,8 @@ prepared to interpolate to the next given tempo.</p>
                   <div>
                     <code>
                     <a name="/s:10MusicModel0B0C7BuilderC8addEventXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/addEvent(with:in:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC8addEventXeXeF">addEvent(with:in:)</a>
+                    <a name="//apple_ref/swift/Method/addEvent(_:in:performedBy:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC8addEventXeXeF">addEvent(_:in:performedBy:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -391,8 +425,11 @@ prepared to interpolate to the next given tempo.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addEvent</span><span class="p">(</span><span class="n">with</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Typealiases.html#/s:10MusicModel9Attributea">Attribute</a></span><span class="p">],</span> <span class="k">in</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">Range</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="o">&gt;</span><span class="p">)</span>
-    <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></span><span class="p">,</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a></span><span class="p">])</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addEvent</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Typealiases.html#/s:10MusicModel9Attributea">Attribute</a></span><span class="p">],</span>
+    <span class="k">in</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">Range</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">performedBy</span> <span class="nv">voiceID</span><span class="p">:</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a></span> <span class="o">=</span> <span class="mi">0</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></span><span class="p">,</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a></span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>
@@ -624,7 +661,7 @@ prepared to interpolate to the next given tempo.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-04)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-06)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
