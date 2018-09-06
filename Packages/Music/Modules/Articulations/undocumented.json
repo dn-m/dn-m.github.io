@@ -34,6 +34,20 @@
       "symbol": "Articulation.accent",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Articulations/Slur.swift",
+      "line": 15,
+      "symbol": "Slur.start",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Articulations/Slur.swift",
+      "line": 18,
+      "symbol": "Slur.stop",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/travis/build/dn-m/Music"
