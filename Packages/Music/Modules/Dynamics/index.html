@@ -91,24 +91,190 @@
 
 <p>Check out the <a href="https://dn-m.github.io/Packages/Music">documentation</a> automatically generated from the source code, updated with each push to the <code>master</code> branch.</p>
 <h2 id='usage' class='heading'>Usage</h2>
+<h3 id='pitch' class='heading'>Pitch</h3>
+
+<p>Import the <code>Pitch</code> module to create and manipulate pitch-related structures.</p>
 <pre class="highlight plaintext"><code>import Pitch
-import Duration
-import Dynamics
+</code></pre>
 
-let c: Pitch = 60 // =&gt; "middle c"
-let d = c + 2 // =&gt; 62 // =&gt; Pitch(62)
-let pcs: Pitch.Class.Collection = [0,11,3,4,8,7,9,5,6,1,2,10]
-let retrograde = pcs.retrograde // =&gt; [10,2,1,6,5,9,7,8,4,3,11,0]
+<p>To start, we can create a pitch with a note number of <code>60</code> (i.e., <q>middle c</q>). <code>Pitch</code> conforms to <code>ExpressibleByFloatLiteral</code>, so you can construct a <code>Pitch</code> value without too much extra noise.</p>
+<pre class="highlight plaintext"><code>let c: Pitch = 60
+</code></pre>
 
-let duration = 3/&gt;4 // =&gt; Duration(3,4) "three quarter notes"
-let tempo = Tempo(120, subdivision: 8) // =&gt; "120 beats per minute at the eighth-note level"
-let meter = Meter(15,16) // =&gt; "15 beats at the sixteenth-note level"
-let meters: Meter.Collection = [Meter(3,4), Meter(5,16), Meter(11,28)]
+<blockquote>
+<p>Under the hood, the float literal value here (<code>60</code>) represents a <code>NoteNumber</code> instance. The <code>NoteNumber</code> structure is a floating-point analog to the MIDI integral note number concept, wherein each unit corresponds to a semitone.</p>
+</blockquote>
 
-let loud: Dynamic = .ff
+<p>Now, let&rsquo;s make a new pitch which is three semitones higher than our <q>middle c</q>. <code>Pitch</code> conforms to <code>SignedNumeric</code>, so transposing pitches is quite elegant.</p>
+<pre class="highlight plaintext"><code>let higher = c + 3
+</code></pre>
+
+<blockquote>
+<p><code>Pitch(63)</code></p>
+</blockquote>
+
+<p>And, if we want to dirty things up and make this all a little more microtonal, we needn&rsquo;t constrain ourselves to using integral <code>NoteNumber</code> values.</p>
+<pre class="highlight plaintext"><code>let lessHigh = higher - 0.25
+</code></pre>
+
+<blockquote>
+<p><code>Pitch(62.75)</code></p>
+</blockquote>
+
+<p>If we want to do some post-tonal theoretical analysis on some given pitches, it is very helpful to convert them to <code>Pitch.Class</code> values. A pitch class is a mod-12 representation of a pitch.</p>
+<pre class="highlight plaintext"><code>let pc = lessHigh.class
+</code></pre>
+
+<blockquote>
+<p><code>Pitch.Class(2.75)</code></p>
+</blockquote>
+
+<p>If we have a collection of <code>Pitch.Class</code> values, we can group them up into a <code>Pitch.Class.Collection</code>.</p>
+<pre class="highlight plaintext"><code>let webern24: Pitch.Class.Collection = [0,11,3,4,8,7,9,5,6,1,2,10]
+</code></pre>
+
+<blockquote>
+<p>This is the 12-tone row from Anton Webern&rsquo;s op. 24, <em>Concerto for Nine Instruments</em>.</p>
+</blockquote>
+
+<p>There are some helpful operations that we can perform in order expose interesting similarities between different pitch collections.</p>
+<pre class="highlight plaintext"><code>let retrograde = webern24.retrograde
+</code></pre>
+
+<blockquote>
+<p><code>[0,11,3,4,8,7,9,5,6,1,2,10]</code></p>
+</blockquote>
+<pre class="highlight plaintext"><code>let inversion = webern24.inversion 
+</code></pre>
+
+<blockquote>
+<p><code>[0,1,9,8,4,5,3,7,6,11,10,2]</code></p>
+</blockquote>
+
+<p>Now, consider this set of pitch classes.</p>
+<pre class="highlight plaintext"><code>let set: Pitch.Class.Collection = [8,0,4,6]
+</code></pre>
+
+<p>We can arrange it into its <q>normal</q> form, which orders the pitch classes in their most <q>left-packed</q> arrangement (i.e., the intervals between the pitch classes are the smallest at the beginning of the collection).</p>
+<pre class="highlight plaintext"><code>let normalForm = set.normalForm
+</code></pre>
+
+<blockquote>
+<p><code>[4,6,8,0]</code></p>
+</blockquote>
+
+<p>Further, we can arrange the set into its <q>prime</q> form. A prime form is the more <q>left-packed</q> ordering of the pitch classes of the normal form of the original collection and the normal form of the inversion of the original collection. Finally, pitch classes are transposed such that the first value is the pitch class of <code>0</code>.</p>
+<pre class="highlight plaintext"><code>let primeForm = set.primeForm
+</code></pre>
+
+<blockquote>
+<p><code>[0,2,4,8]</code></p>
+</blockquote>
+<h3 id='duration' class='heading'>Duration</h3>
+
+<p>Import the <code>Duration</code> module to create and manipulate structures of musical time.</p>
+<pre class="highlight plaintext"><code>import Duration
+</code></pre>
+
+<p>A <code>Duration</code> is a <code>Rational</code> type whose denominator must be a power-of-two.</p>
+<pre class="highlight plaintext"><code>let crotchet = Duration(1,4)
+</code></pre>
+
+<blockquote>
+<p>One quarter note</p>
+</blockquote>
+
+<p>The infix operator <code>/&gt;</code> can be used to construct a <code>Duration</code>.</p>
+<pre class="highlight plaintext"><code>let dur = 3/&gt;32
+</code></pre>
+
+<blockquote>
+<p>Three thirty-second notes</p>
+</blockquote>
+
+<p>If you attempt to create a <code>Duration</code> with a non-power-of-two denominator, your program will crash.</p>
+<pre class="highlight plaintext"><code>let notDur = 1/&gt;31
+</code></pre>
+
+<blockquote>
+<p>Cannot create a &lsquo;Duration&rsquo; with a non-power-of-two subdivision &lsquo;31&rsquo;</p>
+</blockquote>
+<h4 id='meter' class='heading'>Meter</h4>
+
+<p>Some musics contextualize utterances within a beat structure, called a <code>Meter</code>.</p>
+<pre class="highlight plaintext"><code>let common = Meter(4,4)
+let waltz = Meter(3,4)
+</code></pre>
+
+<p>Most often, meters have a power-of-two denominator, but this is not a requirement of the type in the way that it is for <code>Duration</code>.</p>
+<pre class="highlight plaintext"><code>let ferneyhough = Meter(13,56)
+</code></pre>
+
+<p>More complex meters can also be constructed. For example, the numerator can be represented by a fraction.</p>
+<pre class="highlight plaintext"><code>let fractional = Meter(Fraction(3,5),16)
+</code></pre>
+
+<p>Ordinary and fractional meters can be concatenated into a single additive meter.</p>
+<pre class="highlight plaintext"><code>let blueRondo = Meter(2,8) + Meter(2,8) + Meter(2,8) + Meter(3,8)
+let czernowinSQm5 = Meter(Meter(1,4),Meter(3,16))
+let czernowinSQm7 = Meter(Meter(1,4),Meter(Fraction(2,3),4))
+</code></pre>
+
+<p>A <code>Meter</code> can be split up into a subsegment if necessary.</p>
+<pre class="highlight plaintext"><code>let fragment = common.fragment(in: Fraction(3,32) ..&lt; Fraction(53,64))
+</code></pre>
+
+<blockquote>
+<p><code>Meter.Fragment(Meter(4,4), in: Fraction(3,32) ..&lt; Fraction(53,64))</code></p>
+</blockquote>
+<h4 id='meter-collection' class='heading'>Meter.Collection</h4>
+
+<p>We can wrap these meters up into a <code>Meter.Collection</code>. <code>Meter.Collection</code> conforms to <code>ExpressibleByArrayLiteral</code>, so we can construct one without too much effort.</p>
+<pre class="highlight plaintext"><code>let weirdMeters: Meter.Collection = [common, waltz, ferneyhough, fractional, blueRondo]
+</code></pre>
+
+<p>The <code>Meter.Collection</code> type provides affordances for splitting up a collection of meters into subsegments.</p>
+<pre class="highlight plaintext"><code>let meters: Meter.Collection = (0..&lt;4).map { _ in Meter(4,4) } // Four common-time meters
+let fragment = meters.fragment(in: Fraction(3,4) ..&lt; Fraction(11,4)
+</code></pre>
+
+<blockquote>
+<pre class="highlight plaintext"><code>Meter.Collection.Fragment(
+    head: Meter.Fragment(Meter(4,4), in: Fraction(3,4) ..&lt; Fraction(4,4)),
+    body: [Meter(4,4)],
+    tail: Meter.Fragment(Meter(4,4), in: Fraction(0,4) ..&lt; Fraction(3,4))
+)
+</code></pre>
+</blockquote>
+<h4 id='tempo' class='heading'>Tempo</h4>
+
+<p>A <code>Tempo</code> is the definition of a pulse occurring at a given frequency at a given subdivision level .</p>
+<pre class="highlight plaintext"><code>let stayinAlive = Tempo(100, subdivision: 4)
+</code></pre>
+
+<blockquote>
+<p>100 quarter-note beats per minute . Useful for CPR.</p>
+</blockquote>
+<h3 id='dynamics' class='heading'>Dynamics</h3>
+
+<p>The <code><a href="Structs/Dynamic.html">Dynamic</a></code> type provides an interface to describe musical loudness in a highly subjective way.</p>
+<pre class="highlight plaintext"><code>let loud: Dynamic = .ff
 let louder: Dynamic = .ffff
 let lessLoud: Dynamic = .p
 </code></pre>
+<h3 id='articulations' class='heading'>Articulations</h3>
+
+<p>The <code>Articulation</code> type provides an interface to describe the way in which a given musical entity is performed.</p>
+<pre class="highlight plaintext"><code>let short: Articulation = .staccato
+let sweet: Articulation = .tenuto
+let hard: Articulation = .marcato
+let hereIAm: Articulation = .accent
+</code></pre>
+<h3 id='musicmodel' class='heading'>MusicModel</h3>
+
+<p>The <code>MusicModel</code> brings all of elements together from the modules contained in this package.</p>
+
+<hr>
 <h3 id='requirements' class='heading'>Requirements</h3>
 
 <ul>
@@ -175,7 +341,7 @@ let lessLoud: Dynamic = .p
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-06)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-08)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
