@@ -521,6 +521,71 @@
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures7AVLTreeV4rootAC4NodeCyxq__GSgv"></a>
+                    <a name="//apple_ref/swift/Property/root" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeV4rootAC4NodeCyxq__GSgv">root</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The root node of this <code>AVLTree</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">root</span><span class="p">:</span> <span class="kt">AVLTree</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;.</span><span class="kt"><a href="../Structs/AVLTree/Node.html">Node</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures7AVLTreeVACyxq_GAC4NodeCyxq__GSg4root_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(root:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeVACyxq_GAC4NodeCyxq__GSg4root_tcfc">init(root:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>AVLTree</code> with the given <code><a href="../Structs/AVLTree.html#/s:14DataStructures7AVLTreeV4rootAC4NodeCyxq__GSgv">root</a></code> node.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">root</span><span class="p">:</span> <span class="kt"><a href="../Structs/AVLTree/Node.html">Node</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
                 <a name="/Nested%20Types"></a>
                 <a name="//apple_ref/swift/Section/Nested Types" class="dashAnchor"></a>
                 <a href="#/Nested%20Types">
@@ -581,7 +646,7 @@ child nodes (if they exist), as well as the its <code>height</code>.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates an <code>AVLTree</code> with the given <code>key</code> and <code>value</code> for the <code>root</code> node.</p>
+                        <p>Creates an <code>AVLTree</code> with the given <code>key</code> and <code>value</code> for the <code><a href="../Structs/AVLTree.html#/s:14DataStructures7AVLTreeV4rootAC4NodeCyxq__GSgv">root</a></code> node.</p>
 
                       </div>
                       <div class="declaration">
@@ -695,6 +760,33 @@ child nodes (if they exist), as well as the its <code>height</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">insert</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures7AVLTreeV7balanceAC4NodeCyxq__GAG_x4withtFZ"></a>
+                    <a name="//apple_ref/swift/Method/balance(_:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeV7balanceAC4NodeCyxq__GAG_x4withtFZ">balance(_:with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Balances an <code>AVLTree</code> to ensure that leaf no path is no more than one longer than any other.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">balance</span><span class="p">(</span><span class="n">_</span> <span class="nv">node</span><span class="p">:</span> <span class="kt"><a href="../Structs/AVLTree/Node.html">Node</a></span><span class="p">,</span> <span class="n">with</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/AVLTree/Node.html">Node</a></span></code></pre>
 
                         </div>
                       </div>
