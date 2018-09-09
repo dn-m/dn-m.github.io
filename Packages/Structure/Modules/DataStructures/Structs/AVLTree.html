@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>IntervallicFragmentable Protocol Reference</title>
+    <title>AVLTree Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Protocol/IntervallicFragmentable" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/AVLTree" class="dashAnchor"></a>
 
-    <a title="IntervallicFragmentable Protocol Reference"></a>
+    <a title="AVLTree Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      IntervallicFragmentable Protocol Reference
+      AVLTree Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -505,16 +505,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>IntervallicFragmentable</h1>
+            <h1>AVLTree</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">IntervallicFragmentable</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Intervallic.html">Intervallic</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/Fragmentable.html">Fragmentable</a></span>
-    <span class="k">where</span> <span class="kt">Fragment</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Intervallic.html">Intervallic</a></span><span class="p">,</span> <span class="kt">Fragment</span><span class="o">.</span><span class="kt">Metric</span> <span class="o">==</span> <span class="kt">Metric</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AVLTree</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt">Comparable</span></code></pre>
 
                 </div>
               </div>
-            <p>Interface for types which are <code><a href="../Protocols/Intervallic.html">Intervallic</a></code>, and can be fragmented into a type which shares its
-<code>Metric</code> type.</p>
+            <p>Copy-on-write self-balancing binary search tree.</p>
 
           </div>
         </section>
@@ -523,19 +521,19 @@
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Associated%20Types"></a>
-                <a name="//apple_ref/swift/Section/Associated Types" class="dashAnchor"></a>
-                <a href="#/Associated%20Types">
-                  <h3 class="section-name">Associated Types</h3>
+                <a name="/Nested%20Types"></a>
+                <a name="//apple_ref/swift/Section/Nested Types" class="dashAnchor"></a>
+                <a href="#/Nested%20Types">
+                  <h3 class="section-name">Nested Types</h3>
                 </a>
               </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures23IntervallicFragmentableP8Fragment"></a>
-                    <a name="//apple_ref/swift/Alias/Fragment" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures23IntervallicFragmentableP8Fragment">Fragment</a>
+                    <a name="/s:14DataStructures7AVLTreeV4NodeC"></a>
+                    <a name="//apple_ref/swift/Class/Node" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeV4NodeC">Node</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -543,16 +541,124 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The fragment of an <code>IntervallicFragmentable</code> type.</p>
+                        <p>Node for an <code><a href="../Structs/AVLTree.html">AVLTree</a></code> which contains a <code>key</code>, and <code>value</code>, along with the <code>left</code> and <code>right</code>
+child nodes (if they exist), as well as the its <code>height</code>.</p>
+
+                        <a href="../Structs/AVLTree/Node.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Node</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures7AVLTreeVACyxq_Gx3key_q_5valuetcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(key:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeVACyxq_Gx3key_q_5valuetcfc">init(key:value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>AVLTree</code> with the given <code>key</code> and <code>value</code> for the <code>root</code> node.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">associatedtype</span> <span class="kt">Fragment</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures7AVLTreeVACyxq_Gqd__cs8SequenceRd__x_q_t7ElementRtd__lufc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeVACyxq_Gqd__cs8SequenceRd__x_q_t7ElementRtd__lufc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>AVLTree</code> with the given <code>sequence</code> of key-value pairs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">sequence</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="k">where</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span><span class="p">,</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span> <span class="o">==</span> <span class="p">(</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Computed%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Computed Properties" class="dashAnchor"></a>
+                <a href="#/Computed%20Properties">
+                  <h3 class="section-name">Computed Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures7AVLTreeV7inOrderSayx_q_tGv"></a>
+                    <a name="//apple_ref/swift/Property/inOrder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeV7inOrderSayx_q_tGv">inOrder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">inOrder</span><span class="p">:</span> <span class="p">[(</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="p">)]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of key-value pairs in sorted order.</p>
                       </div>
                     </section>
                   </div>
@@ -571,36 +677,64 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures23IntervallicFragmentableP8fragment8FragmentQzs5RangeVy6MetricQzG2in_tF"></a>
-                    <a name="//apple_ref/swift/Method/fragment(in:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures23IntervallicFragmentableP8fragment8FragmentQzs5RangeVy6MetricQzG2in_tF">fragment(in:)</a>
+                    <a name="/s:14DataStructures7AVLTreeV6insertyq__x6forKeytF"></a>
+                    <a name="//apple_ref/swift/Method/insert(_:forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeV6insertyq__x6forKeytF">insert(_:forKey:)</a>
                     </code>
-                      <span class="declaration-note">
-                        Default implementation
-                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
-                      </div>
-                      <h4>Default Implementation</h4>
-                      <div class="default_impl abstract">
-                        
+                        <p>Inserts the given <code>value</code> for the given <code>key</code>.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fragment</span><span class="p">(</span><span class="k">in</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">Range</span><span class="o">&lt;</span><span class="kt">Metric</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/IntervallicFragmentable.html#/s:14DataStructures23IntervallicFragmentableP8Fragment">Fragment</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">insert</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The <code><a href="../Protocols/IntervallicFragmentable.html#/s:14DataStructures23IntervallicFragmentableP8Fragment">Fragment</a></code> in the given <code>range</code>.</p>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/ExpressibleByArrayLiteral"></a>
+                <a name="//apple_ref/swift/Section/ExpressibleByArrayLiteral" class="dashAnchor"></a>
+                <a href="#/ExpressibleByArrayLiteral">
+                  <h3 class="section-name">ExpressibleByArrayLiteral</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures7AVLTreeVACyxq_GSayx_q_tG12arrayLiterald_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(arrayLiteral:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeVACyxq_GSayx_q_tG12arrayLiterald_tcfc">init(arrayLiteral:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>AVLTree</code> with an array literal of key-value pairs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">arrayLiteral</span> <span class="nv">elements</span><span class="p">:</span> <span class="p">(</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="p">)</span><span class="o">...</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>

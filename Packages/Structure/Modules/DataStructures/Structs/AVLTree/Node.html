@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Fragment Structure Reference</title>
+    <title>Node Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/Fragment" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/Node" class="dashAnchor"></a>
 
-    <a title="Fragment Structure Reference"></a>
+    <a title="Node Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../../index.html"> Reference</a>
       <img class="carat" src="../../img/carat.png" />
-      Fragment Structure Reference
+      Node Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -505,14 +505,15 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Fragment</h1>
+            <h1>Node</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Fragment</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Node</span></code></pre>
 
                 </div>
               </div>
-            <p>A fragment of a <code><a href="../../Structs/ContiguousSegmentCollection.html">ContiguousSegmentCollection</a></code>.</p>
+            <p>Node for an <code><a href="../../Structs/AVLTree.html">AVLTree</a></code> which contains a <code>key</code>, and <code>value</code>, along with the <code>left</code> and <code>right</code>
+child nodes (if they exist), as well as the its <code>height</code>.</p>
 
           </div>
         </section>
@@ -521,19 +522,19 @@
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Type%20Properties"></a>
-                <a name="//apple_ref/swift/Section/Type Properties" class="dashAnchor"></a>
-                <a href="#/Type%20Properties">
-                  <h3 class="section-name">Type Properties</h3>
+                <a name="/Key%20and%20Value"></a>
+                <a name="//apple_ref/swift/Section/Key and Value" class="dashAnchor"></a>
+                <a href="#/Key%20and%20Value">
+                  <h3 class="section-name">Key and Value</h3>
                 </a>
               </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEV5emptyAHyx_GvZ"></a>
-                    <a name="//apple_ref/swift/Variable/empty" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEV5emptyAHyx_GvZ">empty</a>
+                    <a name="/s:14DataStructures7AVLTreeV4NodeC3keyxv"></a>
+                    <a name="//apple_ref/swift/Property/key" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeV4NodeC3keyxv">key</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -541,19 +542,43 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>The key used to keep this node sorted within an <code><a href="../../Structs/AVLTree.html">AVLTree</a></code>.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">empty</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlEAEa">Fragment</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span></code></pre>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A <code><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlEAEa">Fragment</a></code> with no elements.</p>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures7AVLTreeV4NodeC5valueq_v"></a>
+                    <a name="//apple_ref/swift/Property/value" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeV4NodeC5valueq_v">value</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The payload contained herein.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -562,19 +587,19 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Instance%20Properties"></a>
-                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
-                <a href="#/Instance%20Properties">
-                  <h3 class="section-name">Instance Properties</h3>
+                <a name="/Child%20nodes"></a>
+                <a name="//apple_ref/swift/Section/Child nodes" class="dashAnchor"></a>
+                <a href="#/Child%20nodes">
+                  <h3 class="section-name">Child nodes</h3>
                 </a>
               </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEV6offset6MetricQzv"></a>
-                    <a name="//apple_ref/swift/Property/offset" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEV6offset6MetricQzv">offset</a>
+                    <a name="/s:14DataStructures7AVLTreeV4NodeC4leftAEyxq__GSgv"></a>
+                    <a name="//apple_ref/swift/Property/left" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeV4NodeC4leftAEyxq__GSgv">left</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -582,19 +607,81 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>The node storing values with keys less than this one.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlE6Metrica">Metric</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">left</span><span class="p">:</span> <span class="kt"><a href="../../Structs/AVLTree.html">AVLTree</a></span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;.</span><span class="kt">Node</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p></p>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures7AVLTreeV4NodeC5rightAEyxq__GSgv"></a>
+                    <a name="//apple_ref/swift/Property/right" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeV4NodeC5rightAEyxq__GSgv">right</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The node storing values with keys greater than this one.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">right</span><span class="p">:</span> <span class="kt"><a href="../../Structs/AVLTree.html">AVLTree</a></span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;.</span><span class="kt">Node</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Position"></a>
+                <a name="//apple_ref/swift/Section/Position" class="dashAnchor"></a>
+                <a href="#/Position">
+                  <h3 class="section-name">Position</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures7AVLTreeV4NodeC6heightSiv"></a>
+                    <a name="//apple_ref/swift/Property/height" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeV4NodeC6heightSiv">height</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The height of this node within an <code><a href="../../Structs/AVLTree.html">AVLTree</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -613,9 +700,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVAHyx_GAFSg4head_ACyxG4bodyAJ4tailtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(head:body:tail:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVAHyx_GAFSg4head_ACyxG4bodyAJ4tailtcfc">init(head:body:tail:)</a>
+                    <a name="/s:14DataStructures7AVLTreeV4NodeCAEyxq__Gx3key_q_5valueSi6heighttcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(key:value:height:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeV4NodeCAEyxq__Gx3key_q_5valueSi6heighttcfc">init(key:value:height:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -623,228 +710,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a <code>ContiguousSegmentCollection.Fragment</code> with the given pair of segment
-fragments and the segments in-between, offset by the given <code><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEV6offset6MetricQzv">offset</a></code>.</p>
+                        <p>Creates an <code>AVLTree.Node</code> with the given <code><a href="../../Structs/AVLTree/Node.html#/s:14DataStructures7AVLTreeV4NodeC3keyxv">key</a></code>, <code><a href="../../Structs/AVLTree/Node.html#/s:14DataStructures7AVLTreeV4NodeC5valueq_v">value</a></code>, and <code><a href="../../Structs/AVLTree/Node.html#/s:14DataStructures7AVLTreeV4NodeC6heightSiv">height</a></code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
-    <span class="nv">head</span><span class="p">:</span> <span class="kt">Segment</span><span class="o">.</span><span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlEAEa">Fragment</a></span><span class="p">?,</span>
-    <span class="nv">body</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ContiguousSegmentCollection.html">ContiguousSegmentCollection</a></span><span class="o">&lt;</span><span class="kt">Segment</span><span class="o">&gt;</span><span class="p">,</span>
-    <span class="nv">tail</span><span class="p">:</span> <span class="kt">Segment</span><span class="o">.</span><span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlEAEa">Fragment</a></span><span class="p">?</span>
-<span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVAHyx_GAF4head_ACyxG4bodytcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(head:body:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVAHyx_GAF4head_ACyxG4bodytcfc">init(head:body:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">head</span><span class="p">:</span> <span class="kt">Segment</span><span class="o">.</span><span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlEAEa">Fragment</a></span><span class="p">,</span> <span class="nv">body</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ContiguousSegmentCollection.html">ContiguousSegmentCollection</a></span><span class="o">&lt;</span><span class="kt">Segment</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVAHyx_GACyxG4body_AF4tailtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(body:tail:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVAHyx_GACyxG4body_AF4tailtcfc">init(body:tail:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">body</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ContiguousSegmentCollection.html">ContiguousSegmentCollection</a></span><span class="o">&lt;</span><span class="kt">Segment</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">tail</span><span class="p">:</span> <span class="kt">Segment</span><span class="o">.</span><span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlEAEa">Fragment</a></span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVAHyx_GAF_6MetricQz6offsettcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(_:offset:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVAHyx_GAF_6MetricQz6offsettcfc">init(_:offset:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Creates a <code>ContiguousSegmentCollection.Fragment</code> with the given <code>single</code> segment
-fragment, offset by the given <code><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEV6offset6MetricQzv">offset</a></code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">single</span><span class="p">:</span> <span class="kt">Segment</span><span class="o">.</span><span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlEAEa">Fragment</a></span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlE6Metrica">Metric</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">zero</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVAHyx_GAF_AF6MetricQz6offsettcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(_:_:offset:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVAHyx_GAF_AF6MetricQz6offsettcfc">init(_:_:offset:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Creates a <code>ContiguousSegmentCollection.Fragment</code> with the given pair of segment
-fragments, offset by the given <code><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEV6offset6MetricQzv">offset</a></code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">head</span><span class="p">:</span> <span class="kt">Segment</span><span class="o">.</span><span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlEAEa">Fragment</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">tail</span><span class="p">:</span> <span class="kt">Segment</span><span class="o">.</span><span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlEAEa">Fragment</a></span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlE6Metrica">Metric</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">zero</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlE7offsetsSay6MetricQzGv"></a>
-                    <a name="//apple_ref/swift/Property/offsets" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlE7offsetsSay6MetricQzGv">offsets</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">offsets</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlE6Metrica">Metric</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The offsets of each <code>Segment.Fragment</code> or <code>Segment</code> contained herein.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Type%20Aliases"></a>
-                <a name="//apple_ref/swift/Section/Type Aliases" class="dashAnchor"></a>
-                <a href="#/Type%20Aliases">
-                  <h3 class="section-name">Type Aliases</h3>
-                </a>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlEAEa"></a>
-                    <a name="//apple_ref/swift/Alias/Fragment" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlEAEa">Fragment</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A <code>ContiguousSegmentCollection.Fragment</code> produces itself as a <code>Fragment</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Fragment</span> <span class="o">=</span> <span class="kt"><a href="../../Structs/ContiguousSegmentCollection.html">ContiguousSegmentCollection</a></span><span class="o">&lt;</span><span class="kt">Segment</span><span class="o">&gt;.</span><span class="kt">Fragment</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlE6Metrica"></a>
-                    <a name="//apple_ref/swift/Alias/Metric" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlE6Metrica">Metric</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A <code><a href="../../Structs/ContiguousSegmentCollection.html">ContiguousSegmentCollection</a></code> inherits its <code>Metric</code> from its <code>Segment</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Metric</span> <span class="o">=</span> <span class="kt">Segment</span><span class="o">.</span><span class="kt">Metric</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -855,19 +728,19 @@ fragments, offset by the given <code><a href="../../Structs/ContiguousSegmentCol
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/IntervallicFragmentable"></a>
-                <a name="//apple_ref/swift/Section/IntervallicFragmentable" class="dashAnchor"></a>
-                <a href="#/IntervallicFragmentable">
-                  <h3 class="section-name">IntervallicFragmentable</h3>
+                <a name="/Equatable"></a>
+                <a name="//apple_ref/swift/Section/Equatable" class="dashAnchor"></a>
+                <a href="#/Equatable">
+                  <h3 class="section-name">Equatable</h3>
                 </a>
               </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures11IntervallicP6length6MetricQzv"></a>
-                    <a name="//apple_ref/swift/Property/length" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures11IntervallicP6length6MetricQzv">length</a>
+                    <a name="/s:14DataStructures7AVLTreeV4NodeCAAs10ComparableRzs9EquatableR_r0_lE2eeoiSbAEyxq__G_AItFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures7AVLTreeV4NodeCAAs10ComparableRzs9EquatableR_r0_lE2eeoiSbAEyxq__G_AItFZ">==(_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -881,43 +754,13 @@ fragments, offset by the given <code><a href="../../Structs/ContiguousSegmentCol
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">length</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlE6Metrica">Metric</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt"><a href="../../Structs/AVLTree.html">AVLTree</a></span><span class="o">.</span><span class="kt">Node</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt"><a href="../../Structs/AVLTree.html">AVLTree</a></span><span class="o">.</span><span class="kt">Node</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>The length of this <code>ContiguousSegmentCollection.Fragment</code>.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlE8fragmentAHyx_Gs5RangeVy6MetricQzG2in_tF"></a>
-                    <a name="//apple_ref/swift/Method/fragment(in:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlE8fragmentAHyx_Gs5RangeVy6MetricQzG2in_tF">fragment(in:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fragment</span><span class="p">(</span><span class="k">in</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">Range</span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlE6Metrica">Metric</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/ContiguousSegmentCollection.html">ContiguousSegmentCollection</a></span><span class="o">&lt;</span><span class="kt">Segment</span><span class="o">&gt;.</span><span class="kt"><a href="../../Structs/ContiguousSegmentCollection/Fragment.html#/s:14DataStructures27ContiguousSegmentCollectionVA2A23IntervallicFragmentableRzAaD8FragmentRpzAE_AEQZAFRSlEAEVA2A0F0RzlEAEa">Fragment</a></span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A <code>ContiguousSegmentCollection.Fragment</code> in the given <code>range</code>.</p>
+                        <p><code>true</code> if the two given <code>AVLTree.Node</code> values are equivalent. Otherwise, <code>nil</code>.</p>
                       </div>
                     </section>
                   </div>
