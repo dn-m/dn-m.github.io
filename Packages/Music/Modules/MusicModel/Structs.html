@@ -20,7 +20,7 @@
         <a class="header-link" href="index.html">
            Docs
         </a>
-         (57% documented)
+         (60% documented)
       </p>
     
     
@@ -57,7 +57,7 @@
             <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Extensions/Array.html">Array</a>
+                <a class="nav-group-task-link" href="Extensions/AVLTree.html">AVLTree</a>
               </li>
             </ul>
           </li>
@@ -65,13 +65,10 @@
             <a class="nav-group-name-link" href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs/AVLTree.html">AVLTree</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/BeatContext.html">BeatContext</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs/ISTNode.html">ISTNode</a>
+                <a class="nav-group-task-link" href="Structs/ISTPayload.html">ISTPayload</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/Instrument.html">Instrument</a>
@@ -176,41 +173,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10MusicModel7AVLTreeV"></a>
-                    <a name="//apple_ref/swift/Struct/AVLTree" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel7AVLTreeV">AVLTree</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Copy-on-write self-balancing binary search tree.</p>
-
-                        <a href="Structs/AVLTree.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AVLTree</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt">Comparable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10MusicModel7ISTNodeV"></a>
-                    <a name="//apple_ref/swift/Struct/ISTNode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel7ISTNodeV">ISTNode</a>
+                    <a name="/s:10MusicModel10ISTPayloadV"></a>
+                    <a name="//apple_ref/swift/Struct/ISTPayload" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel10ISTPayloadV">ISTPayload</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -219,15 +184,15 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>The composition of information (the interval and payload) of a node in an <code><a href="Typealiases.html#/s:10MusicModel18IntervalSearchTreea">IntervalSearchTree</a></code>.
-This is the information which augments the information normally held by an <code><a href="Structs/AVLTree.html">AVLTree</a></code>.</p>
+This is the information which augments the information normally held by an <code>AVLTree</code>.</p>
 
-                        <a href="Structs/ISTNode.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/ISTPayload.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ISTNode</span><span class="o">&lt;</span><span class="kt">Metric</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">PayloadHolding</span> <span class="k">where</span> <span class="kt">Metric</span> <span class="p">:</span> <span class="kt">Comparable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ISTPayload</span><span class="o">&lt;</span><span class="kt">Metric</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Metric</span> <span class="p">:</span> <span class="kt">Comparable</span></code></pre>
 
                         </div>
                       </div>
@@ -404,7 +369,7 @@ one or more performers.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-09)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-10)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
