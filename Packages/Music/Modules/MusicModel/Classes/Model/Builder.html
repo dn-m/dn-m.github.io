@@ -20,7 +20,7 @@
         <a class="header-link" href="../../index.html">
            Docs
         </a>
-         (60% documented)
+         (53% documented)
       </p>
     
     
@@ -51,13 +51,8 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Classes/Model/Builder.html">– Builder</a>
               </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../../Extensions.html">Extensions</a>
-            <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Extensions/AVLTree.html">AVLTree</a>
+                <a class="nav-group-task-link" href="../../Classes/Model.html#/s:10MusicModel0B0C6FilterV">– Filter</a>
               </li>
             </ul>
           </li>
@@ -68,13 +63,13 @@
                 <a class="nav-group-task-link" href="../../Structs/BeatContext.html">BeatContext</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Structs/ISTPayload.html">ISTPayload</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Structs/Instrument.html">Instrument</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Structs/NamedAttribute.html">NamedAttribute</a>
+                <a class="nav-group-task-link" href="../../Structs/IntervalSearchTree.html">IntervalSearchTree</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/IntervalSearchTree/Node.html">– Node</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Structs/PerformanceContext.html">PerformanceContext</a>
@@ -107,9 +102,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel12InstrumentIDa">InstrumentID</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel18IntervalSearchTreea">IntervalSearchTree</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel11PerformerIDa">PerformerID</a>
@@ -182,6 +174,82 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
+                <a name="/Rhythm"></a>
+                <a name="//apple_ref/swift/Section/Rhythm" class="dashAnchor"></a>
+                <a href="#/Rhythm">
+                  <h3 class="section-name">Rhythm</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MusicModel0B0C7BuilderC12createRhythmXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/createRhythm(_:voiceID:offset:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC12createRhythmXeXeF">createRhythm(_:voiceID:offset:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an entry for the given <code>rhythm</code>, performed by the given <code>voiceID</code>, at the give
+<code>offset</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createRhythm</span><span class="p">(</span><span class="n">_</span> <span class="nv">rhythm</span><span class="p">:</span> <span class="kt">Rhythm</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">voiceID</span><span class="p">:</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a></span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Fraction</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel8RhythmIDa">RhythmID</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MusicModel0B0C7BuilderC11createEventXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/createEvent(attributes:voiceID:interval:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC11createEventXeXeF">createEvent(attributes:voiceID:interval:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an event with the given <code>attributes</code>, performed by the given <code>voiceID</code>, in the
+given <code>interval</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createEvent</span><span class="p">(</span>
+    <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">],</span>
+    <span class="nv">voiceID</span><span class="p">:</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a></span><span class="p">,</span>
+    <span class="nv">interval</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Model.html">Model</a></span><span class="o">.</span><span class="kt"><a href="../../Classes/Model.html#/s:10MusicModel0B0C8Intervala">Interval</a></span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code><a href="../../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></code> for the new event.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
                 <a name="/Performance%20Context"></a>
                 <a name="//apple_ref/swift/Section/Performance Context" class="dashAnchor"></a>
                 <a href="#/Performance%20Context">
@@ -192,9 +260,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10MusicModel0B0C7BuilderC12addPerformerXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/addPerformer(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC12addPerformerXeXeF">addPerformer(_:)</a>
+                    <a name="/s:10MusicModel0B0C7BuilderC15createPerformerXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/createPerformer(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC15createPerformerXeXeF">createPerformer(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -209,7 +277,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addPerformer</span><span class="p">(</span><span class="n">_</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel11PerformerIDa">PerformerID</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createPerformer</span><span class="p">(</span><span class="n">_</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel11PerformerIDa">PerformerID</a></span></code></pre>
 
                         </div>
                       </div>
@@ -219,9 +287,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10MusicModel0B0C7BuilderC13addInstrumentXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/addInstrument(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC13addInstrumentXeXeF">addInstrument(_:)</a>
+                    <a name="/s:10MusicModel0B0C7BuilderC16createInstrumentXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/createInstrument(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC16createInstrumentXeXeF">createInstrument(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -236,7 +304,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addInstrument</span><span class="p">(</span><span class="n">_</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel12InstrumentIDa">InstrumentID</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createInstrument</span><span class="p">(</span><span class="n">_</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel12InstrumentIDa">InstrumentID</a></span></code></pre>
 
                         </div>
                       </div>
@@ -246,9 +314,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10MusicModel0B0C7BuilderC8addVoiceXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/addVoice(_:forPerformer:forInstrument:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC8addVoiceXeXeF">addVoice(_:forPerformer:forInstrument:)</a>
+                    <a name="/s:10MusicModel0B0C7BuilderC11createVoiceXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/createVoice(_:performer:instrument:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC11createVoiceXeXeF">createVoice(_:performer:instrument:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -256,63 +324,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Adds the given voice identifier for the given <code>performer</code> and <code>instrument</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addVoice</span><span class="p">(</span>
-    <span class="n">_</span> <span class="nv">voice</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="n">forPerformer</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">,</span>
-    <span class="n">forInstrument</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Rhythm"></a>
-                <a name="//apple_ref/swift/Section/Rhythm" class="dashAnchor"></a>
-                <a href="#/Rhythm">
-                  <h3 class="section-name">Rhythm</h3>
-                </a>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10MusicModel0B0C7BuilderC9addRhythmXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/addRhythm(_:at:performedOn:by:voice:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC9addRhythmXeXeF">addRhythm(_:at:performedOn:by:voice:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Adds the given <code>rhythm</code> at the given <code>offset</code>, if it exists. If no <code>offset</code> is given,
-the <code>rhythm</code> will be added at the current offset of the current meter.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addRhythm</span><span class="p">(</span>
-    <span class="n">_</span> <span class="nv">rhythm</span><span class="p">:</span> <span class="kt">Rhythm</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span>
-    <span class="n">at</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Fraction</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="n">performedOn</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">,</span>
-    <span class="n">by</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">,</span>
-    <span class="nv">voice</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel8RhythmIDa">RhythmID</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createVoice</span><span class="p">(</span><span class="n">_</span> <span class="nv">voice</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">,</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a></span></code></pre>
 
                         </div>
                       </div>
@@ -356,7 +376,7 @@ prepared to interpolate to the next given tempo.</p>
     <span class="n">_</span> <span class="nv">tempo</span><span class="p">:</span> <span class="kt">Tempo</span><span class="p">,</span>
     <span class="n">at</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Fraction</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">easing</span><span class="p">:</span> <span class="kt">Tempo</span><span class="o">.</span><span class="kt">Interpolation</span><span class="o">.</span><span class="kt">Easing</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Builder</span></code></pre>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Classes/Model.html">Model</a></span><span class="o">.</span><span class="kt">Builder</span></code></pre>
 
                         </div>
                       </div>
@@ -384,7 +404,7 @@ prepared to interpolate to the next given tempo.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addMeter</span><span class="p">(</span><span class="n">_</span> <span class="nv">meter</span><span class="p">:</span> <span class="kt">Meter</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Builder</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addMeter</span><span class="p">(</span><span class="n">_</span> <span class="nv">meter</span><span class="p">:</span> <span class="kt">Meter</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Classes/Model.html">Model</a></span><span class="o">.</span><span class="kt">Builder</span></code></pre>
 
                         </div>
                       </div>
@@ -395,231 +415,13 @@ prepared to interpolate to the next given tempo.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Events%20and%20Attributes"></a>
-                <a name="//apple_ref/swift/Section/Events and Attributes" class="dashAnchor"></a>
-                <a href="#/Events%20and%20Attributes">
-                  <h3 class="section-name">Events and Attributes</h3>
+                <a name="/Build"></a>
+                <a name="//apple_ref/swift/Section/Build" class="dashAnchor"></a>
+                <a href="#/Build">
+                  <h3 class="section-name">Build</h3>
                 </a>
               </div>
               <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10MusicModel0B0C7BuilderC8addEventXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/addEvent(_:in:performedBy:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC8addEventXeXeF">addEvent(_:in:performedBy:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Adds an event with the given <code>attributes</code> in the given <code>interval</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addEvent</span><span class="p">(</span>
-    <span class="n">_</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Typealiases.html#/s:10MusicModel9Attributea">Attribute</a></span><span class="p">],</span>
-    <span class="k">in</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">Range</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="o">&gt;</span><span class="p">,</span>
-    <span class="n">performedBy</span> <span class="nv">voiceID</span><span class="p">:</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a></span> <span class="o">=</span> <span class="mi">0</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></span><span class="p">,</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a></span><span class="p">])</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The identifiers for the event and the attributes.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10MusicModel0B0C7BuilderC8addEventXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/addEvent(with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC8addEventXeXeF">addEvent(with:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Adds an event with the given <code>attributes</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addEvent</span><span class="p">(</span><span class="n">with</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></span><span class="p">,</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a></span><span class="p">])</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The identifiers for the event and the attributes.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10MusicModel0B0C7BuilderC3addXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/add(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC3addXeXeF">add(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Adds the given <code>attribute</code>.</p>
-
-<p>/ - Returns: The identifier for the attribute.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">_</span> <span class="nv">attribute</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10MusicModel0B0C7BuilderC11createEventXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/createEvent(with:in:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC11createEventXeXeF">createEvent(with:in:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Creates an event with the given <code>attributes</code> in the given <code>interval</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createEvent</span><span class="p">(</span><span class="n">with</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a></span><span class="p">],</span> <span class="k">in</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">Range</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="o">&gt;</span><span class="p">)</span>
-    <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The identifier for the event.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10MusicModel0B0C7BuilderC11createEventXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/createEvent(with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC11createEventXeXeF">createEvent(with:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Creates an event with the given <code>attributes</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createEvent</span><span class="p">(</span><span class="n">with</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a></span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The identifier for the event.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10MusicModel0B0C7BuilderC11createEventXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/createEvent(in:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC11createEventXeXeF">createEvent(in:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Creates and event in the given <code>interval</code>.</p>
-
-<p>/ - Returns: The identifier for the event.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createEvent</span><span class="p">(</span><span class="k">in</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">Range</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10MusicModel0B0C7BuilderC11createEventXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/createEvent()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel0B0C7BuilderC11createEventXeXeF">createEvent()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Creates an event.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createEvent</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The identifier for the event.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -658,7 +460,7 @@ prepared to interpolate to the next given tempo.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-10)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-11)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

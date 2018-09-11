@@ -320,7 +320,47 @@ let hereIAm: Articulation = .accent
 
 <h3>MusicModel</h3>
 
-<p>The <code>MusicModel</code> brings all of elements together from the modules contained in this package.</p>
+<p>The <code>Model</code> brings all of elements together from the modules contained in this package.</p>
+
+<p>Use the <code>Model.Builder</code> to incrementally build up a <code>Model</code>.</p>
+
+<p><code>Swift
+let builder = Model.Builder()
+</code></p>
+
+<p>Constructing models of performers and instruments in your performing context.</p>
+
+<p><code>Swift
+let performer = Performer(name: &quot;Pat&quot;)
+let instrument = Instrument(name: &quot;Euphonium&quot;)
+</code></p>
+
+<p>Ask <code>builder</code> to create a model of a <code>Voice</code> within its <code>PerformanceContext</code>. Retrieve the identifier for this new voice so that you can identitify musical attributes by it.</p>
+
+<p><code>Swift
+let voiceID = builder.createVoice(performer: performer, instrument: instrument)
+</code></p>
+
+<p>Build up a single whole note, composed of a &quot;middle c&quot;, tenuto articulation, at the triple forte dynamic level.</p>
+
+<p><code>Swift
+let pitch: Pitch = 60
+let articulation: Articulation = .tenuto
+let dynamic: Dynamic = .fff
+let note = Rhythm&lt;Event&gt;(1/&gt;1, [event([pitch, dynamic, articulation])])
+</code></p>
+
+<p>Now we can ask the builder to add it to the model at the downbeat of our piece.</p>
+
+<p><code>Swift
+let rhythmID = builder.createRhythm(note, voiceID: voiceID, offset: .zero)
+</code></p>
+
+<p>Lastly, we can ask the builder to complete the build process, and return a shiny new <code>Model</code>.</p>
+
+<p><code>Swift
+let model = builder.build()
+</code></p>
 
 <hr>
 
