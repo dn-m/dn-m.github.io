@@ -1,6 +1,34 @@
 {
   "warnings": [
     {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Bimap.swift",
+      "line": 129,
+      "symbol": "Bimap.updateValue(_:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Bimap.swift",
+      "line": 140,
+      "symbol": "Bimap.updateKey(_:forValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Bimap.swift",
+      "line": 151,
+      "symbol": "Bimap.removeValue(forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Bimap.swift",
+      "line": 162,
+      "symbol": "Bimap.removeKey(forValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
       "line": null,
       "symbol": "BinarySearchTree",
