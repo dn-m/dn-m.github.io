@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Voice Structure Reference</title>
+    <title>PerformerInstrument Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/Voice" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/PerformerInstrument" class="dashAnchor"></a>
 
-    <a title="Voice Structure Reference"></a>
+    <a title="PerformerInstrument Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      Voice Structure Reference
+      PerformerInstrument Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -131,35 +131,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Voice</h1>
+            <h1>PerformerInstrument</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Voice</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PerformerInstrument</span></code></pre>
 
                 </div>
               </div>
-            <p>Model of a single <code>Voice</code> in a <code><a href="../Structs/PerformanceContext.html">PerformanceContext</a></code>, actuated by a single performer through a
-single instrument.</p>
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    Add long name
-
-</div>
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    Add short name
-
-</div>
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    Add abbreviation (with default abbreviating method)
-
-</div>
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    Add more metadata
-
-</div>
+            <p>Undocumented</p>
 
           </div>
         </section>
@@ -178,9 +157,9 @@ single instrument.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10MusicModel5VoiceVACSS4name_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel5VoiceVACSS4name_tcfc">init(name:)</a>
+                    <a name="/s:10MusicModel19PerformerInstrumentVXeXecfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel19PerformerInstrumentVXeXecfc">init(_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -195,7 +174,65 @@ single instrument.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../Structs/Performer.html">Performer</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">,</span> <span class="n">_</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../Structs/Instrument.html">Instrument</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MusicModel19PerformerInstrumentV8containsXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/contains(performer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel19PerformerInstrumentV8containsXeXeF">contains(performer:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">contains</span><span class="p">(</span><span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../Structs/Performer.html">Performer</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MusicModel19PerformerInstrumentV8containsXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/contains(instrument:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel19PerformerInstrumentV8containsXeXeF">contains(instrument:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">contains</span><span class="p">(</span><span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../Structs/Instrument.html">Instrument</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>

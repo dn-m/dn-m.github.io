@@ -20,7 +20,7 @@
         <a class="header-link" href="../../index.html">
            Docs
         </a>
-         (53% documented)
+         (71% documented)
       </p>
     
     
@@ -52,7 +52,18 @@
                 <a class="nav-group-task-link" href="../../Classes/Model/Builder.html">– Builder</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/Model.html#/s:10MusicModel0B0C8FragmentV">– Fragment</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Classes/Model.html#/s:10MusicModel0B0C6FilterV">– Filter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/Identifiable.html">Identifiable</a>
               </li>
             </ul>
           </li>
@@ -61,6 +72,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Structs/BeatContext.html">BeatContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs.html#/s:10MusicModel5EventV">Event</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Structs/Instrument.html">Instrument</a>
@@ -75,10 +89,19 @@
                 <a class="nav-group-task-link" href="../../Structs/PerformanceContext.html">PerformanceContext</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/PerformanceContext.html#/s:10MusicModel18PerformanceContextV6FilterV">– Filter</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Structs/PerformanceContext/Builder.html">– Builder</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Structs/Performer.html">Performer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/PerformerInstrument.html">PerformerInstrument</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/PerformerInstrumentVoice.html">PerformerInstrumentVoice</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Structs/Voice.html">Voice</a>
@@ -95,22 +118,10 @@
                 <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel5Eventa">Event</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel12InstrumentIDa">InstrumentID</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel11PerformerIDa">PerformerID</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel8RhythmIDa">RhythmID</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a>
               </li>
             </ul>
           </li>
@@ -202,7 +213,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createRhythm</span><span class="p">(</span><span class="n">_</span> <span class="nv">rhythm</span><span class="p">:</span> <span class="kt">Rhythm</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">voiceID</span><span class="p">:</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a></span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Fraction</span><span class="p">)</span>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createRhythm</span><span class="p">(</span><span class="n">_</span> <span class="nv">rhythm</span><span class="p">:</span> <span class="kt">Rhythm</span><span class="o">&lt;</span><span class="kt"><a href="../../Structs.html#/s:10MusicModel5EventV">Event</a></span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">voiceID</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Voice.html">Voice</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Fraction</span><span class="p">)</span>
     <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel8RhythmIDa">RhythmID</a></span></code></pre>
 
                         </div>
@@ -233,7 +244,7 @@ given <code>interval</code>.</p>
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createEvent</span><span class="p">(</span>
     <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">],</span>
-    <span class="nv">voiceID</span><span class="p">:</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a></span><span class="p">,</span>
+    <span class="nv">voiceID</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Voice.html">Voice</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">,</span>
     <span class="nv">interval</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Model.html">Model</a></span><span class="o">.</span><span class="kt"><a href="../../Classes/Model.html#/s:10MusicModel0B0C8Intervala">Interval</a></span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a></span></code></pre>
 
@@ -277,7 +288,7 @@ given <code>interval</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createPerformer</span><span class="p">(</span><span class="n">_</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel11PerformerIDa">PerformerID</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createPerformer</span><span class="p">(</span><span class="n">_</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="o">.</span><span class="kt">ID</span></code></pre>
 
                         </div>
                       </div>
@@ -304,7 +315,7 @@ given <code>interval</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createInstrument</span><span class="p">(</span><span class="n">_</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel12InstrumentIDa">InstrumentID</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createInstrument</span><span class="p">(</span><span class="n">_</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="o">.</span><span class="kt">ID</span></code></pre>
 
                         </div>
                       </div>
@@ -331,8 +342,8 @@ given <code>interval</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createVoice</span><span class="p">(</span><span class="n">_</span> <span class="nv">voice</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">,</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">)</span>
-    <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createVoice</span><span class="p">(</span><span class="n">_</span> <span class="nv">voice</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Voice.html">Voice</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">,</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/Voice.html">Voice</a></span><span class="o">.</span><span class="kt">ID</span></code></pre>
 
                         </div>
                       </div>
@@ -460,7 +471,7 @@ prepared to interpolate to the next given tempo.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-17)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-18)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

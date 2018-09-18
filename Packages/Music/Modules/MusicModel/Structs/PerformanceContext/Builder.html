@@ -20,7 +20,7 @@
         <a class="header-link" href="../../index.html">
            Docs
         </a>
-         (53% documented)
+         (71% documented)
       </p>
     
     
@@ -52,7 +52,18 @@
                 <a class="nav-group-task-link" href="../../Classes/Model/Builder.html">– Builder</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/Model.html#/s:10MusicModel0B0C8FragmentV">– Fragment</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Classes/Model.html#/s:10MusicModel0B0C6FilterV">– Filter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/Identifiable.html">Identifiable</a>
               </li>
             </ul>
           </li>
@@ -61,6 +72,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Structs/BeatContext.html">BeatContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs.html#/s:10MusicModel5EventV">Event</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Structs/Instrument.html">Instrument</a>
@@ -75,10 +89,19 @@
                 <a class="nav-group-task-link" href="../../Structs/PerformanceContext.html">PerformanceContext</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/PerformanceContext.html#/s:10MusicModel18PerformanceContextV6FilterV">– Filter</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Structs/PerformanceContext/Builder.html">– Builder</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Structs/Performer.html">Performer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/PerformerInstrument.html">PerformerInstrument</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/PerformerInstrumentVoice.html">PerformerInstrumentVoice</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Structs/Voice.html">Voice</a>
@@ -95,22 +118,10 @@
                 <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel5Eventa">Event</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel12InstrumentIDa">InstrumentID</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel11PerformerIDa">PerformerID</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel8RhythmIDa">RhythmID</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a>
               </li>
             </ul>
           </li>
@@ -127,7 +138,7 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>A class which encapsulates the stateful construction of a <code><a href="../../Structs/PerformanceContext.html">PerformanceContext</a></code>.</p>
 
           </div>
         </section>
@@ -156,7 +167,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates an empty <code><a href="../../Structs/PerformanceContext.html">PerformanceContext</a></code>.</p>
+                        <p>Creates an empty <code>PerformanceContext.Builder</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -184,39 +195,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10MusicModel18PerformanceContextV7BuilderC8addVoiceXeXeF"></a>
-                    <a name="//apple_ref/swift/Method/addVoice(performer:instrument:number:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10MusicModel18PerformanceContextV7BuilderC8addVoiceXeXeF">addVoice(performer:instrument:number:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Adds a new voice for the given <code>performer</code> and <code>instrument</code>, with a given <code>number</code>, if the
-voices already exists. Otherwise, a new voice will be generated for the performer-instrument
-pair.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addVoice</span><span class="p">(</span>
-    <span class="n">performer</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">,</span>
-    <span class="n">instrument</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">,</span>
-    <span class="nv">number</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:10MusicModel18PerformanceContextV7BuilderC12addPerformerXeXeF"></a>
                     <a name="//apple_ref/swift/Method/addPerformer(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:10MusicModel18PerformanceContextV7BuilderC12addPerformerXeXeF">addPerformer(_:)</a>
@@ -227,16 +205,21 @@ pair.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Adds the given <code><a href="../../Structs/Performer.html">Performer</a></code> to the <code><a href="../../Structs/PerformanceContext.html">PerformanceContext</a></code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addPerformer</span><span class="p">(</span><span class="n">_</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel11PerformerIDa">PerformerID</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addPerformer</span><span class="p">(</span><span class="n">_</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="o">.</span><span class="kt">ID</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The identifier for the given <code>performer</code>.</p>
                       </div>
                     </section>
                   </div>
@@ -254,14 +237,50 @@ pair.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Adds the given <code>instrument</code> to the <code><a href="../../Structs/PerformanceContext.html">PerformanceContext</a></code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addInstrument</span><span class="p">(</span><span class="n">_</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Typealiases.html#/s:10MusicModel12InstrumentIDa">InstrumentID</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addInstrument</span><span class="p">(</span><span class="n">_</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="o">.</span><span class="kt">ID</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The identifier for the given <code>instrument</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MusicModel18PerformanceContextV7BuilderC8addVoiceXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/addVoice(_:performer:instrument:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel18PerformanceContextV7BuilderC8addVoiceXeXeF">addVoice(_:performer:instrument:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a new voice for the given <code>performer</code> and <code>instrument</code>, with a given <code>number</code>, if the
+voices already exists. Otherwise, a new voice will be generated for the performer-instrument
+pair.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addVoice</span><span class="p">(</span><span class="n">_</span> <span class="nv">voice</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Voice.html">Voice</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">performer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Performer.html">Performer</a></span><span class="p">,</span> <span class="nv">instrument</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Instrument.html">Instrument</a></span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="kt"><a href="../../Structs/Voice.html">Voice</a></span><span class="o">.</span><span class="kt">ID</span></code></pre>
 
                         </div>
                       </div>
@@ -281,8 +300,7 @@ pair.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -291,6 +309,10 @@ pair.</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">build</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/PerformanceContext.html">PerformanceContext</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A completed <code><a href="../../Structs/PerformanceContext.html">PerformanceContext</a></code>.</p>
                       </div>
                     </section>
                   </div>
@@ -303,7 +325,7 @@ pair.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-17)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-18)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

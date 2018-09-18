@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
            Docs
         </a>
-         (53% documented)
+         (71% documented)
       </p>
     
     
@@ -52,7 +52,18 @@
                 <a class="nav-group-task-link" href="../Classes/Model/Builder.html">– Builder</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Model.html#/s:10MusicModel0B0C8FragmentV">– Fragment</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Model.html#/s:10MusicModel0B0C6FilterV">– Filter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Identifiable.html">Identifiable</a>
               </li>
             </ul>
           </li>
@@ -61,6 +72,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/BeatContext.html">BeatContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs.html#/s:10MusicModel5EventV">Event</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/Instrument.html">Instrument</a>
@@ -75,10 +89,19 @@
                 <a class="nav-group-task-link" href="../Structs/PerformanceContext.html">PerformanceContext</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PerformanceContext.html#/s:10MusicModel18PerformanceContextV6FilterV">– Filter</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PerformanceContext/Builder.html">– Builder</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/Performer.html">Performer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PerformerInstrument.html">PerformerInstrument</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PerformerInstrumentVoice.html">PerformerInstrumentVoice</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/Voice.html">Voice</a>
@@ -95,22 +118,10 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel11AttributeIDa">AttributeID</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel5Eventa">Event</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel7EventIDa">EventID</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel12InstrumentIDa">InstrumentID</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel11PerformerIDa">PerformerID</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel8RhythmIDa">RhythmID</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Typealiases.html#/s:10MusicModel7VoiceIDa">VoiceID</a>
               </li>
             </ul>
           </li>
@@ -130,6 +141,11 @@
             <p>An <code>IntervalSearchTree</code> is an augmentatin of an <code>AVLTree</code>, wherein the the value of <code>Node</code> is
 an <code><a href="../Structs/IntervalSearchTree/Node.html">IntervalSearchTree.Node</a></code>. An <code><a href="../Structs/IntervalSearchTree/Node.html">IntervalSearchTree.Node</a></code> contains the <code>interval</code>
 indexing the payload, the <code>max</code> upper bound of subtrees, and the <code>payload</code> value itself.</p>
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    Push down to dn-m/Structure/DataStructures when fully vetted.
+
+</div>
 
           </div>
         </section>
@@ -265,6 +281,40 @@ indexing the payload, the <code>max</code> upper bound of subtrees, and the <cod
               </ul>
             </div>
             <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MusicModel18IntervalSearchTreeVACyxq_Gs5RangeVyxGcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MusicModel18IntervalSearchTreeVACyxq_Gs5RangeVyxGcip">subscript(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="nv">interval</span><span class="p">:</span> <span class="kt">Range</span><span class="o">&lt;</span><span class="kt">Metric</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">IntervalSearchTree</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>IntervalSearchTree</code> composed of the nodes overlapping the given <code>interval</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
               <div class="task-name-container">
                 <a name="/Instance%20Methods"></a>
                 <a name="//apple_ref/swift/Section/Instance Methods" class="dashAnchor"></a>
@@ -286,8 +336,7 @@ indexing the payload, the <code>max</code> upper bound of subtrees, and the <cod
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -296,6 +345,11 @@ indexing the payload, the <code>max</code> upper bound of subtrees, and the <cod
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">containing</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Metric</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/IntervalSearchTree/Node.html">Node</a></span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of payloads containing the fractional interval and associated values
+containing the given <code>target</code> offset.</p>
                       </div>
                     </section>
                   </div>
@@ -393,7 +447,7 @@ indexing the payload, the <code>max</code> upper bound of subtrees, and the <cod
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-17)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-18)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
