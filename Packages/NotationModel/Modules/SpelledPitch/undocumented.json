@@ -64,13 +64,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/Data Structures/DirectedEdge.swift",
-      "line": 8,
-      "symbol": "DirectedEdge",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/Data Structures/Queue.swift",
       "line": 15,
       "symbol": "Queue.isEmpty",
@@ -103,13 +96,6 @@
       "line": 31,
       "symbol": "Queue.contains(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/Data Structures/UndirectedEdge.swift",
-      "line": 8,
-      "symbol": "UndirectedEdge",
-      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     }
   ],
