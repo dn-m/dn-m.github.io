@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
            Docs
         </a>
-         (97% documented)
+         (94% documented)
       </p>
     
     
@@ -122,7 +122,7 @@
                 <a class="nav-group-task-link" href="../Protocols/PitchSpellingModifier.html">PitchSpellingModifier</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Tuning.html#/s:12SpelledPitch12LineOfFifthsV">LineOfFifths</a>
+                <a class="nav-group-task-link" href="../Structs/LineOfFifths.html">LineOfFifths</a>
               </li>
             </ul>
           </li>
@@ -141,8 +141,22 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Pitch/Spelling.html">– Spelling</a>
               </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Pitch/Spelling.html">– Spelling</a>
+                <a class="nav-group-task-link" href="../Other Structs.html#/s:12SpelledPitch12DirectedEdgeV">DirectedEdge</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/FlowNetwork.html">FlowNetwork</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Queue.html">Queue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Structs.html#/s:12SpelledPitch14UndirectedEdgeV">UndirectedEdge</a>
               </li>
             </ul>
           </li>
@@ -155,7 +169,7 @@
             <h1>PitchSpellingModifier</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PitchSpellingModifier</span> <span class="p">:</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PitchSpellingModifier</span> <span class="p">:</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
 
                 </div>
               </div>
@@ -179,9 +193,9 @@ an <code>Accidental</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch0B16SpellingModifierP8identityxvZ"></a>
+                    <a name="/s:12SpelledPitch0B16SpellingModifierP8identityxvpZ"></a>
                     <a name="//apple_ref/swift/Variable/identity" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierP8identityxvZ">identity</a>
+                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierP8identityxvpZ">identity</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -206,9 +220,9 @@ an <code>Accidental</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdv"></a>
+                    <a name="/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdvp"></a>
                     <a name="//apple_ref/swift/Property/adjustment" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdv">adjustment</a>
+                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdvp">adjustment</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -245,9 +259,9 @@ an <code>Accidental</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch0B16SpellingModifierPAAE2eeoiSbx_xtFZ"></a>
+                    <a name="/s:12SpelledPitch0B16SpellingModifierPAAE2eeoiySbx_xtFZ"></a>
                     <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierPAAE2eeoiSbx_xtFZ">==(_:_:)</a>
+                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierPAAE2eeoiySbx_xtFZ">==(_:_:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -264,14 +278,14 @@ an <code>Accidental</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p><code>true</code> if the <code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdv">adjustment</a></code> property of the <code>lhs</code> value is equal to the
-<code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdv">adjustment</a></code> property of the <code>rhs</code> value. Otherwise <code>false</code>.</p>
+                        <p><code>true</code> if the <code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdvp">adjustment</a></code> property of the <code>lhs</code> value is equal to the
+<code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdvp">adjustment</a></code> property of the <code>rhs</code> value. Otherwise <code>false</code>.</p>
                       </div>
                     </section>
                   </div>
@@ -290,9 +304,9 @@ an <code>Accidental</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch0B16SpellingModifierPAAE9hashValueSiv"></a>
+                    <a name="/s:12SpelledPitch0B16SpellingModifierPAAE9hashValueSivp"></a>
                     <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierPAAE9hashValueSiv">hashValue</a>
+                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierPAAE9hashValueSivp">hashValue</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -315,7 +329,7 @@ an <code>Accidental</code>.</p>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>The <code>hashValue</code> of the <code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdv">adjustment</a></code> property.</p>
+                        <p>The <code>hashValue</code> of the <code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdvp">adjustment</a></code> property.</p>
                       </div>
                     </section>
                   </div>
@@ -334,9 +348,9 @@ an <code>Accidental</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch0B16SpellingModifierPAAE1loiSbx_xtFZ"></a>
+                    <a name="/s:12SpelledPitch0B16SpellingModifierPAAE1loiySbx_xtFZ"></a>
                     <a name="//apple_ref/swift/Method/&lt;(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierPAAE1loiSbx_xtFZ">&lt;(_:_:)</a>
+                    <a class="token" href="#/s:12SpelledPitch0B16SpellingModifierPAAE1loiySbx_xtFZ">&lt;(_:_:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -353,14 +367,14 @@ an <code>Accidental</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">&lt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">&lt;</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p><code>true</code> if the <code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdv">adjustment</a></code> property of the <code>lhs</code> value is less than the
-<code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdv">adjustment</a></code> property of the <code>rhs</code> value. Otherwise <code>false</code>.</p>
+                        <p><code>true</code> if the <code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdvp">adjustment</a></code> property of the <code>lhs</code> value is less than the
+<code><a href="../Protocols/PitchSpellingModifier.html#/s:12SpelledPitch0B16SpellingModifierP10adjustmentSdvp">adjustment</a></code> property of the <code>rhs</code> value. Otherwise <code>false</code>.</p>
                       </div>
                     </section>
                   </div>
@@ -373,7 +387,7 @@ an <code>Accidental</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-19)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-21)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

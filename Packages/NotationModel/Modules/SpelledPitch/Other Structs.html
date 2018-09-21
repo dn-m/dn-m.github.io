@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Other Extensions  Reference</title>
+    <title>Other Structures  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Other Extensions" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Section/Other Structures" class="dashAnchor"></a>
 
-    <a title="Other Extensions  Reference"></a>
+    <a title="Other Structures  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html"> Reference</a>
       <img class="carat" src="img/carat.png" />
-      Other Extensions  Reference
+      Other Structures  Reference
     </p>
 
     <div class="content-wrapper">
@@ -166,8 +166,8 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Other Extensions</h1>
-            <p>The following extensions are available globally.</p>
+            <h1>Other Structures</h1>
+            <p>The following structures are available globally.</p>
 
           </div>
         </section>
@@ -179,9 +179,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5PitchAAV"></a>
-                    <a name="//apple_ref/swift/Extension/Pitch" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5PitchAAV">Pitch</a>
+                    <a name="/s:12SpelledPitch12DirectedEdgeV"></a>
+                    <a name="//apple_ref/swift/Struct/DirectedEdge" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch12DirectedEdgeV">DirectedEdge</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -189,8 +189,129 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
-                        <a href="Extensions/Pitch.html" class="slightly-smaller">See more</a>
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DirectedEdge</span><span class="o">&lt;</span><span class="kt">Node</span><span class="p">,</span> <span class="kt">Weight</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">EdgeLike</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/typealiases"></a>
+                <a name="//apple_ref/swift/Section/typealiases" class="dashAnchor"></a>
+                <a href="#/typealiases">
+                  <h3 class="section-name">typealiases</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SpelledPitch11FlowNetworkV"></a>
+                    <a name="//apple_ref/swift/Struct/FlowNetwork" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch11FlowNetworkV">FlowNetwork</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Directed Graph with several properties:</p>
+
+<ul>
+<li>Each edge has a capacity for flow</li>
+<li>A <q>source</q> node, which is only emanates flow outward</li>
+<li>A <q>sink</q> node, which only receives flow</li>
+</ul>
+
+                        <a href="Structs/FlowNetwork.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FlowNetwork</span><span class="o">&lt;</span><span class="kt">Node</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Node</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SpelledPitch5QueueV"></a>
+                    <a name="//apple_ref/swift/Struct/Queue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch5QueueV">Queue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Queue.</p>
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    Move to dn-m/Structure/DataStructures
+
+</div>
+
+                        <a href="Structs/Queue.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Queue</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Element</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SpelledPitch14UndirectedEdgeV"></a>
+                    <a name="//apple_ref/swift/Struct/UndirectedEdge" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch14UndirectedEdgeV">UndirectedEdge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UndirectedEdge</span><span class="o">&lt;</span><span class="kt">Node</span><span class="p">,</span> <span class="kt">Weight</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">EdgeLike</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>

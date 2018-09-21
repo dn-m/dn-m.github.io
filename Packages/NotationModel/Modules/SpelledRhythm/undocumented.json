@@ -3,7 +3,7 @@
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledRhythm/Beaming.swift",
       "line": 68,
-      "symbol": "Beaming.Error.indexOutOfBounds",
+      "symbol": "Beaming.Error.indexOutOfBounds(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
@@ -52,29 +52,22 @@
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledRhythm/Beaming.swift",
       "line": 107,
-      "symbol": "Beaming.Point.StartOrStop.start",
+      "symbol": "Beaming.Point.StartOrStop.start(count:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledRhythm/Beaming.swift",
       "line": 108,
-      "symbol": "Beaming.Point.StartOrStop.stop",
+      "symbol": "Beaming.Point.StartOrStop.stop(count:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledRhythm/Beaming.swift",
-      "line": 370,
-      "symbol": "Beaming.Point.Vertical.base",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledRhythm/Beaming.swift",
-      "line": 403,
-      "symbol": "Beaming.base",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledRhythm/Rhythm.Spelling.swift",
+      "line": null,
+      "symbol": "Rhythm.Spelling",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -82,20 +75,6 @@
       "line": 14,
       "symbol": "Rhythm.Spelling",
       "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledRhythm/Rhythm.Spelling.swift",
-      "line": 109,
-      "symbol": "Rhythm.Spelling.base",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledRhythm/Rhythm.Spelling.swift",
-      "line": 115,
-      "symbol": "Rhythm.Spelling.Group.description",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {

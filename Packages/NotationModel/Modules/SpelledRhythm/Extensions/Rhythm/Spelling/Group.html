@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Group Extension Reference</title>
+    <title>Group Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../../../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../../../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,16 +11,16 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/Group" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/Group" class="dashAnchor"></a>
 
-    <a title="Group Extension Reference"></a>
+    <a title="Group Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../../../index.html">
            Docs
         </a>
-         (76% documented)
+         (81% documented)
       </p>
     
     
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../../../index.html"> Reference</a>
       <img class="carat" src="../../../img/carat.png" />
-      Group Extension Reference
+      Group Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -59,16 +59,13 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../../Extensions/Rhythm/Spelling.html">– Spelling</a>
               </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../../Extensions/Rhythm/Spelling.html">– Spelling</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="../../../Functions.html">Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../../Functions.html#/s:13SpelledRhythm27sanitizingBeamletDirectionsSayAA7BeamingV5PointO8VerticalVGx3for_ts10CollectionRzAH7ElementRtzlF">sanitizingBeamletDirections(for:)</a>
+                <a class="nav-group-task-link" href="../../../Functions.html#/s:13SpelledRhythm27sanitizingBeamletDirections3forSayAA7BeamingV5PointO8VerticalVGx_tSlRzAI7ElementRtzlF">sanitizingBeamletDirections(for:)</a>
               </li>
             </ul>
           </li>
@@ -102,7 +99,14 @@
         <section class="section">
           <div class="section-content">
             <h1>Group</h1>
-            
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Group</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Information necessary to render a tuplet bracket.</p>
+
           </div>
         </section>
 
@@ -113,9 +117,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13SpelledRhythm11descriptionSSv"></a>
-                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SpelledRhythm11descriptionSSv">description</a>
+                    <a name="/s:8Duration6RhythmV07SpelledB0E8SpellingV5GroupV7ContextV"></a>
+                    <a name="//apple_ref/swift/Struct/Context" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Duration6RhythmV07SpelledB0E8SpellingV5GroupV7ContextV">Context</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -123,8 +127,146 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p><code><a href="../../../Extensions/Rhythm/Spelling/Group.html">Group</a></code> in context, applying to the indices of the leaves to which it applies.</p>
 
+                        <a href="../../../Extensions/Rhythm/Spelling/Group/Context.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Context</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Duration6RhythmV07SpelledB0E8SpellingV5GroupV8durationA2AVvp"></a>
+                    <a name="//apple_ref/swift/Property/duration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Duration6RhythmV07SpelledB0E8SpellingV5GroupV8durationA2AVvp">duration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>Duration</code> of a <code>Group</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Duration</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Duration6RhythmV07SpelledB0E8SpellingV5GroupV11contentsSumSivp"></a>
+                    <a name="//apple_ref/swift/Property/contentsSum" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Duration6RhythmV07SpelledB0E8SpellingV5GroupV11contentsSumSivp">contentsSum</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The sum of the contents contained herein.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">contentsSum</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Instance Methods" class="dashAnchor"></a>
+                <a href="#/Instance%20Methods">
+                  <h3 class="section-name">Instance Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Duration6RhythmV07SpelledB0E8SpellingV5GroupV7context5rangeAH7ContextVyx___GSNySiG_tF"></a>
+                    <a name="//apple_ref/swift/Method/context(range:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Duration6RhythmV07SpelledB0E8SpellingV5GroupV7context5rangeAH7ContextVyx___GSNySiG_tF">context(range:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">context</span><span class="p">(</span><span class="nv">range</span><span class="p">:</span> <span class="kt">CountableClosedRange</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../../Extensions/Rhythm/Spelling/Group/Context.html">Context</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code><a href="../../../Extensions/Rhythm/Spelling/Group/Context.html">Group.Context</a></code>, applying the <code>self</code> to the given <code>range</code> of leaf
+indices.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s23CustomStringConvertibleP11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s23CustomStringConvertibleP11descriptionSSvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -144,9 +286,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13SpelledRhythmXeXecfc"></a>
+                    <a name="/s:8Duration6RhythmV07SpelledB0E8SpellingV5GroupVyAHyx__G14DataStructures4TreeOyA2AVAMGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SpelledRhythmXeXecfc">init(_:)</a>
+                    <a class="token" href="#/s:8Duration6RhythmV07SpelledB0E8SpellingV5GroupVyAHyx__G14DataStructures4TreeOyA2AVAMGcfc">init(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -176,7 +318,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-19)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-21)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

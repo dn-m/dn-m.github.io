@@ -177,13 +177,6 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Clef.swift",
-      "line": 22,
-      "symbol": "Clef.coordinate",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/Clef.swift",
       "line": 24,
       "symbol": "Clef.init(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
@@ -289,9 +282,16 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffModel.swift",
-      "line": 22,
-      "symbol": "StaffModel.verticalAxis",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "line": 18,
+      "symbol": "StaffModel.VerticalCoordinate",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffModel.swift",
+      "line": 19,
+      "symbol": "StaffModel.HorizontalCoordinate",
+      "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
@@ -302,10 +302,31 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffModel.swift",
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffPointModel.swift",
+      "line": 19,
+      "symbol": "StaffPointModel.HorizontalAxis",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffPointModel.swift",
+      "line": 20,
+      "symbol": "StaffPointModel.VerticalAxis",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffPointModel.swift",
+      "line": 23,
+      "symbol": "StaffPointModel.VerticalCoordinate",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffPointModel.swift",
       "line": 24,
-      "symbol": "StaffModel.points",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "symbol": "StaffPointModel.HorizontalCoordinate",
+      "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
@@ -341,6 +362,13 @@
       "line": 15,
       "symbol": "StaffRepresentablePitch.accidental",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffSlot.swift",
+      "line": 9,
+      "symbol": "StaffSlot",
+      "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     }
   ],

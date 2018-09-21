@@ -65,6 +65,13 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPointModel.swift",
+      "line": 11,
+      "symbol": "DefaultVerticalPointModel.VerticalAxis",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPointModel.swift",
       "line": 15,
       "symbol": "DefaultVerticalPointModel.value",
       "symbol_kind": "source.lang.swift.decl.var.instance",
@@ -82,13 +89,6 @@
       "line": 9,
       "symbol": "HorizontalPlotModel",
       "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/PlotModel.swift",
-      "line": 31,
-      "symbol": "PlotModel.base",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {

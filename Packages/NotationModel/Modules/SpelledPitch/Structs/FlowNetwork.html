@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>EDO48 Enumeration Reference</title>
+    <title>FlowNetwork Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Enum/EDO48" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/FlowNetwork" class="dashAnchor"></a>
 
-    <a title="EDO48 Enumeration Reference"></a>
+    <a title="FlowNetwork Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      EDO48 Enumeration Reference
+      FlowNetwork Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -166,14 +166,20 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>EDO48</h1>
+            <h1>FlowNetwork</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">EDO48</span> <span class="p">:</span> <span class="kt"><a href="../Tuning.html#/s:12SpelledPitch3EDOP">EDO</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FlowNetwork</span><span class="o">&lt;</span><span class="kt">Node</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Node</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
 
                 </div>
               </div>
-            <p>Namespace for the <code>EDO48</code> (48 equal divisions of the octave) <code><a href="../Protocols/TuningSystem.html">TuningSystem</a></code>.</p>
+            <p>Directed Graph with several properties:</p>
+
+<ul>
+<li>Each edge has a capacity for flow</li>
+<li>A <q>source</q> node, which is only emanates flow outward</li>
+<li>A <q>sink</q> node, which only receives flow</li>
+</ul>
 
           </div>
         </section>
@@ -181,20 +187,13 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Nested%20Types"></a>
-                <a name="//apple_ref/swift/Section/Nested Types" class="dashAnchor"></a>
-                <a href="#/Nested%20Types">
-                  <h3 class="section-name">Nested Types</h3>
-                </a>
-              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch5EDO48O8ModifierV"></a>
-                    <a name="//apple_ref/swift/Struct/Modifier" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch5EDO48O8ModifierV">Modifier</a>
+                    <a name="/s:12SpelledPitch11FlowNetworkV13internalNodesSayxGvp"></a>
+                    <a name="//apple_ref/swift/Property/internalNodes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch11FlowNetworkV13internalNodesSayxGvp">internalNodes</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -202,49 +201,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The modifer (represented graphically as an <code>Accidental</code>) for a <code><a href="../Structs/SpelledPitch.html">SpelledPitch</a></code> in the
-<code><a href="../Enums/EDO48.html">EDO48</a></code> <code><a href="../Protocols/TuningSystem.html">TuningSystem</a></code>.</p>
-
-                        <a href="../Enums/EDO48/Modifier.html" class="slightly-smaller">See more</a>
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Modifier</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/PitchSpellingModifier.html">PitchSpellingModifier</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">internalNodes</span><span class="p">:</span> <span class="p">[</span><span class="kt">Node</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12SpelledPitch5EDO48O9spellings03forB5ClassSay0B0AFVAAE8SpellingVy_ACGGSgAG0F0V_tFZ"></a>
-                    <a name="//apple_ref/swift/Method/spellings(forPitchClass:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch5EDO48O9spellings03forB5ClassSay0B0AFVAAE8SpellingVy_ACGGSgAG0F0V_tFZ">spellings(forPitchClass:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">spellings</span><span class="p">(</span><span class="n">forPitchClass</span> <span class="nv">pitchClass</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="o">&lt;</span><span class="kt">EDO48</span><span class="o">&gt;</span><span class="p">]?</span></code></pre>
-
-                        </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>All of the <code>Node</code> values contained herein which are neither the <code>source</code> nor
+the <code>sink</code>.</p>
                       </div>
                     </section>
                   </div>
@@ -252,9 +222,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch5EDO48O15defaultSpelling03forB5Class0B0AFVAAE0E0Vy_ACGSgAG0G0V_tFZ"></a>
-                    <a name="//apple_ref/swift/Method/defaultSpelling(forPitchClass:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch5EDO48O15defaultSpelling03forB5Class0B0AFVAAE0E0Vy_ACGSgAG0G0V_tFZ">defaultSpelling(forPitchClass:)</a>
+                    <a name="/s:12SpelledPitch11FlowNetworkV10minimumCutShyxG_AEtvp"></a>
+                    <a name="//apple_ref/swift/Property/minimumCut" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch11FlowNetworkV10minimumCutShyxG_AEtvp">minimumCut</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -262,16 +232,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">defaultSpelling</span><span class="p">(</span><span class="n">forPitchClass</span> <span class="nv">pitchClass</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="o">&lt;</span><span class="kt">EDO48</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">minimumCut</span><span class="p">:</span> <span class="p">(</span><span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Node</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Node</span><span class="o">&gt;</span><span class="p">)</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A minimum cut with nodes included on the <code>sink</code> side in case of a
+tiebreak (in- and out- edges saturated).</p>
                       </div>
                     </section>
                   </div>

@@ -56,6 +56,80 @@ NotationModel
 <div class="section-content">
 <h1>NotationModel</h1>
 
+<p><img src="https://img.shields.io/badge/Swift-4.2-brightgreen.svg" alt="Swift Version">
+<a href="https://travis-ci.org/dn-m/NotationModel"><img src="https://travis-ci.org/dn-m/NotationModel.svg?branch=master" alt="Build Status"></a></p>
+
+<p>The <code>NotationModel</code> package contains several modules for the purposes of defining a model of musical notations. It extends types defined in the <a href="https://github.com/dn-m/Music"><code>dn-m/Music</code></a> module.</p>
+
+<h2>Modules</h2>
+
+<h3>PlotModel</h3>
+
+<p>Defines a model for positioning values onto two-dimensional plots.</p>
+
+<h3>StaffModel</h3>
+
+<p>Extends the <code>PlotModel</code>, incorporating the concept of clefs, noteheads, accidentals, etc.</p>
+
+<h3>SpelledPitch</h3>
+
+<p>Defines pitches with names (<code>G Sharp</code>, <code>A Flat</code>, <code>B Double Sharp</code>, etc.) as well as named intervals (<code>Major Third</code>, <code>Perfect Fifth</code>, <code>Double Augmented Sixth</code>, etc.).</p>
+
+<h3>PitchSpeller</h3>
+
+<p>Implements Ben Wetherfield&#39;s <code>Graphical Theory of Musical Pitch Spelling</code>, which converts unspelled pitch values (e.g., MIDI note numbers) into spelled pitch values given context and user-specifiable rules.</p>
+
+<h3>SpelledRhythm</h3>
+
+<p>Extends abstractly-represented rhythms with models of beams, ties, and dots.</p>
+
+<h3>RhythmBeamer</h3>
+
+<p>Contains default algorithm for converting an abstractly-represented rhythm into a graphically renderable one.</p>
+
+<h2>Development</h2>
+
+<p>Work on this branch requires the Swift 4.2 toolchain, via Xcode 10 beta, or <a href="https://swift.org/download/#snapshots">development snapshot</a>.</p>
+
+<h3>Build instructions</h3>
+
+<p>Clone the repo.</p>
+
+<p><code>Bash
+git clone https://github.com/dn-m/NotationModel
+</code></p>
+
+<p>Dive inside.</p>
+
+<p><code>Bash
+cd NotationModel
+</code></p>
+
+<p>Ask <a href="https://swift.org/package-manager/">Swift Package Manager</a> to update dependencies (all are <code>dn-m</code>).</p>
+
+<p><code>Bash
+swift package update
+</code></p>
+
+<p>Compiles code and runs tests in terminal.</p>
+
+<p><code>Bash
+swift test
+</code></p>
+
+<p>Ask Swift Package Manager to generate a nice Xcode project.</p>
+
+<p><code>Bash
+swift package generate-xcodeproj
+</code></p>
+
+<p>Open it up.</p>
+
+<p>```Bash
+open NotationModel.xcodeproj/</p>
+
+<h1>```</h1>
+
 <p><img src="https://img.shields.io/badge/Swift-4.2-brightgreen.svg" alt="Swift">
 <a href="https://travis-ci.org/dn-m/NotationModel"><img src="https://travis-ci.org/dn-m/NotationModel.svg?branch=master" alt="Build Status"></a></p>
 

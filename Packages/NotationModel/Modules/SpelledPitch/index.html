@@ -19,7 +19,7 @@
         <a class="header-link" href="index.html">
            Docs
         </a>
-         (97% documented)
+         (94% documented)
       </p>
     
     
@@ -121,7 +121,7 @@
                 <a class="nav-group-task-link" href="Protocols/PitchSpellingModifier.html">PitchSpellingModifier</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Tuning.html#/s:12SpelledPitch12LineOfFifthsV">LineOfFifths</a>
+                <a class="nav-group-task-link" href="Structs/LineOfFifths.html">LineOfFifths</a>
               </li>
             </ul>
           </li>
@@ -140,8 +140,22 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/Pitch/Spelling.html">– Spelling</a>
               </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Extensions/Pitch/Spelling.html">– Spelling</a>
+                <a class="nav-group-task-link" href="Other Structs.html#/s:12SpelledPitch12DirectedEdgeV">DirectedEdge</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/FlowNetwork.html">FlowNetwork</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Queue.html">Queue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other Structs.html#/s:12SpelledPitch14UndirectedEdgeV">UndirectedEdge</a>
               </li>
             </ul>
           </li>
@@ -154,7 +168,60 @@
             
             <h1 id='notationmodel' class='heading'>NotationModel</h1>
 
-<p><img src="https://img.shields.io/badge/Swift-4.2-brightgreen.svg" alt="Swift">
+<p><img src="https://img.shields.io/badge/Swift-4.2-brightgreen.svg" alt="Swift Version">
+<a href="https://travis-ci.org/dn-m/NotationModel"><img src="https://travis-ci.org/dn-m/NotationModel.svg?branch=master" alt="Build Status"></a></p>
+
+<p>The <code>NotationModel</code> package contains several modules for the purposes of defining a model of musical notations. It extends types defined in the <a href="https://github.com/dn-m/Music"><code>dn-m/Music</code></a> module.</p>
+<h2 id='modules' class='heading'>Modules</h2>
+<h3 id='plotmodel' class='heading'>PlotModel</h3>
+
+<p>Defines a model for positioning values onto two-dimensional plots.</p>
+<h3 id='staffmodel' class='heading'>StaffModel</h3>
+
+<p>Extends the <code>PlotModel</code>, incorporating the concept of clefs, noteheads, accidentals, etc.</p>
+<h3 id='spelledpitch' class='heading'>SpelledPitch</h3>
+
+<p>Defines pitches with names (<code>G Sharp</code>, <code>A Flat</code>, <code>B Double Sharp</code>, etc.) as well as named intervals (<code>Major Third</code>, <code>Perfect Fifth</code>, <code>Double Augmented Sixth</code>, etc.).</p>
+<h3 id='pitchspeller' class='heading'>PitchSpeller</h3>
+
+<p>Implements Ben Wetherfield&rsquo;s <code>Graphical Theory of Musical Pitch Spelling</code>, which converts unspelled pitch values (e.g., MIDI note numbers) into spelled pitch values given context and user-specifiable rules.</p>
+<h3 id='spelledrhythm' class='heading'>SpelledRhythm</h3>
+
+<p>Extends abstractly-represented rhythms with models of beams, ties, and dots.</p>
+<h3 id='rhythmbeamer' class='heading'>RhythmBeamer</h3>
+
+<p>Contains default algorithm for converting an abstractly-represented rhythm into a graphically renderable one.</p>
+<h2 id='development' class='heading'>Development</h2>
+
+<p>Work on this branch requires the Swift 4.2 toolchain, via Xcode 10 beta, or <a href="https://swift.org/download/#snapshots">development snapshot</a>.</p>
+<h3 id='build-instructions' class='heading'>Build instructions</h3>
+
+<p>Clone the repo.</p>
+<pre class="highlight plaintext"><code>git clone https://github.com/dn-m/NotationModel
+</code></pre>
+
+<p>Dive inside.</p>
+<pre class="highlight plaintext"><code>cd NotationModel
+</code></pre>
+
+<p>Ask <a href="https://swift.org/package-manager/">Swift Package Manager</a> to update dependencies (all are <code>dn-m</code>).</p>
+<pre class="highlight plaintext"><code>swift package update
+</code></pre>
+
+<p>Compiles code and runs tests in terminal.</p>
+<pre class="highlight plaintext"><code>swift test
+</code></pre>
+
+<p>Ask Swift Package Manager to generate a nice Xcode project.</p>
+<pre class="highlight plaintext"><code>swift package generate-xcodeproj
+</code></pre>
+
+<p>Open it up.</p>
+<pre class="highlight plaintext"><code>open NotationModel.xcodeproj/
+</code></pre>
+
+<p>=======
+<img src="https://img.shields.io/badge/Swift-4.2-brightgreen.svg" alt="Swift">
 <a href="https://travis-ci.org/dn-m/NotationModel"><img src="https://travis-ci.org/dn-m/NotationModel.svg?branch=master" alt="Build Status"></a></p>
 
 <p>The <code>NotationModel</code> package defines structures for describing how musical information can be graphically represented, while being agnostic to the concrete method of graphical representation.</p>
@@ -175,7 +242,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-19)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-21)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Spelling Extension Reference</title>
+    <title>Spelling Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,16 +11,16 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/Spelling" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/Spelling" class="dashAnchor"></a>
 
-    <a title="Spelling Extension Reference"></a>
+    <a title="Spelling Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../../index.html">
            Docs
         </a>
-         (97% documented)
+         (94% documented)
       </p>
     
     
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../../index.html"> Reference</a>
       <img class="carat" src="../../img/carat.png" />
-      Spelling Extension Reference
+      Spelling Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -122,7 +122,7 @@
                 <a class="nav-group-task-link" href="../../Protocols/PitchSpellingModifier.html">PitchSpellingModifier</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Tuning.html#/s:12SpelledPitch12LineOfFifthsV">LineOfFifths</a>
+                <a class="nav-group-task-link" href="../../Structs/LineOfFifths.html">LineOfFifths</a>
               </li>
             </ul>
           </li>
@@ -141,8 +141,22 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../../Extensions/Pitch/Spelling.html">– Spelling</a>
               </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Other Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../../Extensions/Pitch/Spelling.html">– Spelling</a>
+                <a class="nav-group-task-link" href="../../Other Structs.html#/s:12SpelledPitch12DirectedEdgeV">DirectedEdge</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/FlowNetwork.html">FlowNetwork</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/Queue.html">Queue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Other Structs.html#/s:12SpelledPitch14UndirectedEdgeV">UndirectedEdge</a>
               </li>
             </ul>
           </li>
@@ -153,12 +167,111 @@
         <section class="section">
           <div class="section-content">
             <h1>Spelling</h1>
-            
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Spelling</span><span class="o">&lt;</span><span class="kt">Tuning</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Tuning</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/TuningSystem.html">TuningSystem</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Spelled representation of a <code>Pitch</code>.</p>
+
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingV10pitchClassAB0E0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/pitchClass" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingV10pitchClassAB0E0Vvp">pitchClass</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>Pitch.Class</code> represented by this <code>Pitch.Spelling</code> value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">pitchClass</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingV10letterNameAC06LetterE0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/letterName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingV10letterNameAC06LetterE0Ovp">letterName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../../Enums/LetterName.html">LetterName</a></code> of a <code>Pitch.Spelling</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">letterName</span><span class="p">:</span> <span class="kt"><a href="../../Enums/LetterName.html">LetterName</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingV8modifier8ModifierQzvp"></a>
+                    <a name="//apple_ref/swift/Property/modifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingV8modifier8ModifierQzvp">modifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>Modifier</code> of a <code>Pitch.Spelling</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">modifier</span><span class="p">:</span> <span class="kt">Tuning</span><span class="o">.</span><span class="kt">Modifier</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Static%20Properties"></a>
@@ -171,9 +284,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch7middleCXevZ"></a>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C3EDORzrlE7middleCAEy_xGvpZ"></a>
                     <a name="//apple_ref/swift/Variable/middleC" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch7middleCXevZ">middleC</a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C3EDORzrlE7middleCAEy_xGvpZ">middleC</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -202,9 +315,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitchXeXecfc"></a>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO12ORszrlEyAEy_AGGAC10LetterNameOcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitchXeXecfc">init(_:)</a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO12ORszrlEyAEy_AGGAC10LetterNameOcfc">init(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -234,9 +347,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitchXeXecfc"></a>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO12ORszrlEyAEy_AGGAC10LetterNameO_AG8ModifierOtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitchXeXecfc">init(_:_:)</a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO12ORszrlEyAEy_AGGAC10LetterNameO_AG8ModifierOtcfc">init(_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -270,9 +383,73 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitchXeXecfc"></a>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO24VRszrlEyAEy_AGGAC10LetterNameOcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO24VRszrlEyAEy_AGGAC10LetterNameOcfc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Pitch.Spelling</code>.</p>
+
+<p><strong>Example Usage</strong></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">gQuarterSharp</span> <span class="o">=</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="p">(</span><span class="o">.</span><span class="n">g</span><span class="p">,</span> <span class="o">.</span><span class="n">quarterSharp</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">bDoubleSharp</span> <span class="o">=</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="p">(</span><span class="o">.</span><span class="n">b</span><span class="p">,</span> <span class="o">.</span><span class="n">doubleSharp</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">letterName</span><span class="p">:</span> <span class="kt"><a href="../../Enums/LetterName.html">LetterName</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO24VRszrlEyAEy_AGGAC10LetterNameO_AC5EDO12O8ModifierOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO24VRszrlEyAEy_AGGAC10LetterNameO_AC5EDO12O8ModifierOtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Pitch.Spelling</code>.</p>
+
+<p><strong>Example Usage</strong></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">gQuarterSharp</span> <span class="o">=</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="p">(</span><span class="o">.</span><span class="n">g</span><span class="p">,</span> <span class="o">.</span><span class="n">quarterSharp</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">bDoubleSharp</span> <span class="o">=</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="p">(</span><span class="o">.</span><span class="n">b</span><span class="p">,</span> <span class="o">.</span><span class="n">doubleSharp</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">letterName</span><span class="p">:</span> <span class="kt"><a href="../../Enums/LetterName.html">LetterName</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">halfStep</span><span class="p">:</span> <span class="kt"><a href="../../Enums/EDO12.html">EDO12</a></span><span class="o">.</span><span class="kt">Modifier</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO24VRszrlEyAEy_AGGAC10LetterNameO_AG8ModifierV11QuarterToneOAC5EDO12OAKOtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitchXeXecfc">init(_:_:_:)</a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO24VRszrlEyAEy_AGGAC10LetterNameO_AG8ModifierV11QuarterToneOAC5EDO12OAKOtcfc">init(_:_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -310,9 +487,141 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitchXeXecfc"></a>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO48ORszrlEyAEy_AGGAC10LetterNameOcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO48ORszrlEyAEy_AGGAC10LetterNameOcfc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Pitch.Spelling</code>.</p>
+
+<p><strong>Example Usage</strong></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dQuarterFlatDown</span> <span class="o">=</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="p">(</span><span class="o">.</span><span class="n">d</span><span class="p">,</span> <span class="o">.</span><span class="nf">flat</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">letterName</span><span class="p">:</span> <span class="kt"><a href="../../Enums/LetterName.html">LetterName</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO48ORszrlEyAEy_AGGAC10LetterNameO_AC5EDO12O8ModifierOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO48ORszrlEyAEy_AGGAC10LetterNameO_AC5EDO12O8ModifierOtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Pitch.Spelling</code>.</p>
+
+<p><strong>Example Usage</strong></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dQuarterFlatDown</span> <span class="o">=</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="p">(</span><span class="o">.</span><span class="n">d</span><span class="p">,</span> <span class="o">.</span><span class="nf">flat</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">letterName</span><span class="p">:</span> <span class="kt"><a href="../../Enums/LetterName.html">LetterName</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">halfStep</span><span class="p">:</span> <span class="kt"><a href="../../Enums/EDO12.html">EDO12</a></span><span class="o">.</span><span class="kt">Modifier</span> <span class="o">=</span> <span class="o">.</span><span class="n">natural</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO48ORszrlEyAEy_AGGAC10LetterNameO_AC5EDO24V8ModifierV11QuarterToneOAC5EDO12OAMOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO48ORszrlEyAEy_AGGAC10LetterNameO_AC5EDO24V8ModifierV11QuarterToneOAC5EDO12OAMOtcfc">init(_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Pitch.Spelling</code>.</p>
+
+<p><strong>Example Usage</strong></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dQuarterFlatDown</span> <span class="o">=</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="p">(</span><span class="o">.</span><span class="n">d</span><span class="p">,</span> <span class="o">.</span><span class="n">quarterFlat</span><span class="p">,</span> <span class="o">.</span><span class="n">down</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">letterName</span><span class="p">:</span> <span class="kt"><a href="../../Enums/LetterName.html">LetterName</a></span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">quarterStep</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EDO24.html">EDO24</a></span><span class="o">.</span><span class="kt">Modifier</span><span class="o">.</span><span class="kt">QuarterTone</span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">halfStep</span><span class="p">:</span> <span class="kt"><a href="../../Enums/EDO12.html">EDO12</a></span><span class="o">.</span><span class="kt">Modifier</span> <span class="o">=</span> <span class="o">.</span><span class="n">natural</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO48ORszrlEyAEy_AGGAC10LetterNameO_AC5EDO12O8ModifierOAgMV10EighthToneOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO48ORszrlEyAEy_AGGAC10LetterNameO_AC5EDO12O8ModifierOAgMV10EighthToneOtcfc">init(_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Pitch.Spelling</code>.</p>
+
+<p><strong>Example Usage</strong></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dQuarterFlatDown</span> <span class="o">=</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="p">(</span><span class="o">.</span><span class="n">d</span><span class="p">,</span> <span class="o">.</span><span class="n">quarterFlat</span><span class="p">,</span> <span class="o">.</span><span class="n">down</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">letterName</span><span class="p">:</span> <span class="kt"><a href="../../Enums/LetterName.html">LetterName</a></span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">halfStep</span><span class="p">:</span> <span class="kt"><a href="../../Enums/EDO12.html">EDO12</a></span><span class="o">.</span><span class="kt">Modifier</span> <span class="o">=</span> <span class="o">.</span><span class="n">natural</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">eighthStep</span><span class="p">:</span> <span class="kt"><a href="../../Enums/EDO48.html">EDO48</a></span><span class="o">.</span><span class="kt">Modifier</span><span class="o">.</span><span class="kt">EighthTone</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO48ORszrlEyAEy_AGGAC10LetterNameO_AC5EDO24V8ModifierV11QuarterToneOAC5EDO12OAMOAgMV06EighthJ0Otcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:_:_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitchXeXecfc">init(_:_:_:_:)</a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO48ORszrlEyAEy_AGGAC10LetterNameO_AC5EDO24V8ModifierV11QuarterToneOAC5EDO12OAMOAgMV06EighthJ0Otcfc">init(_:_:_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -346,6 +655,186 @@
               </ul>
             </div>
             <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO48ORszrlEyAEy_AGGAEy_AC5EDO24VGcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO48ORszrlEyAEy_AGGAEy_AC5EDO24VGcfc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Pitch.Spelling</code> in the <code><a href="../../Enums/EDO48.html">EDO48</a></code> <code><a href="../../Protocols/TuningSystem.html">TuningSystem</a></code> from a <code>Pitch.Spelling</code> in the
+<code><a href="../../Structs/EDO24.html">EDO24</a></code> domain.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">edo24</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EDO24.html">EDO24</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO48ORszrlEyAEy_AGGAEy_AC5EDO12OGcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO48ORszrlEyAEy_AGGAEy_AC5EDO12OGcfc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Pitch.Spelling</code> in the <code><a href="../../Enums/EDO48.html">EDO48</a></code> <code><a href="../../Protocols/TuningSystem.html">TuningSystem</a></code> from a <code>Pitch.Spelling</code> in the
+<code><a href="../../Enums/EDO12.html">EDO12</a></code> domain.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">edo12</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="o">&lt;</span><span class="kt"><a href="../../Enums/EDO12.html">EDO12</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO24VRszrlEyAEy_AGGAEy_AC5EDO12OGcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO24VRszrlEyAEy_AGGAEy_AC5EDO12OGcfc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Pitch.Spelling</code> in the <code><a href="../../Structs/EDO24.html">EDO24</a></code> <code><a href="../../Protocols/TuningSystem.html">TuningSystem</a></code> from a <code>Pitch.Spelling</code> in the
+<code><a href="../../Enums/EDO12.html">EDO12</a></code> domain.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">edo12</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="o">&lt;</span><span class="kt"><a href="../../Enums/EDO12.html">EDO12</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO24VRszrlEyAEy_AGGAEy_AC5EDO48OGcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO24VRszrlEyAEy_AGGAEy_AC5EDO48OGcfc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Pitch.Spelling</code> in the <code><a href="../../Structs/EDO24.html">EDO24</a></code> <code><a href="../../Protocols/TuningSystem.html">TuningSystem</a></code> from a <code>Pitch.Spelling</code> in the
+<code><a href="../../Structs/EDO24.html">EDO24</a></code> domain.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">edo48</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="o">&lt;</span><span class="kt"><a href="../../Enums/EDO48.html">EDO48</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO12ORszrlEyAEy_AGGAEy_AC5EDO24VGcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO12ORszrlEyAEy_AGGAEy_AC5EDO24VGcfc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Pitch.Spelling</code> in the <code><a href="../../Enums/EDO12.html">EDO12</a></code> <code><a href="../../Protocols/TuningSystem.html">TuningSystem</a></code> from a <code>Pitch.Spelling</code> in the
+<code><a href="../../Structs/EDO24.html">EDO24</a></code> domain.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">edo24</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EDO24.html">EDO24</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO12ORszrlEyAEy_AGGAEy_AC5EDO48OGcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO12ORszrlEyAEy_AGGAEy_AC5EDO48OGcfc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Pitch.Spelling</code> in the <code><a href="../../Enums/EDO12.html">EDO12</a></code> <code><a href="../../Protocols/TuningSystem.html">TuningSystem</a></code> from a <code>Pitch.Spelling</code> in the
+<code><a href="../../Enums/EDO48.html">EDO48</a></code> domain.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">edo48</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="o">&lt;</span><span class="kt"><a href="../../Enums/EDO48.html">EDO48</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
               <div class="task-name-container">
                 <a name="/Comparable"></a>
                 <a name="//apple_ref/swift/Section/Comparable" class="dashAnchor"></a>
@@ -357,9 +846,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch1loiXeXeFZ"></a>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingV1loiySbAEy_xG_AGtFZ"></a>
                     <a name="//apple_ref/swift/Method/&lt;(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch1loiXeXeFZ">&lt;(_:_:)</a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingV1loiySbAEy_xG_AGtFZ">&lt;(_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -373,7 +862,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">&lt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="o">&lt;</span><span class="kt">Tuning</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="o">&lt;</span><span class="kt">Tuning</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">&lt;</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="o">&lt;</span><span class="kt">Tuning</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Spelling</span><span class="o">&lt;</span><span class="kt">Tuning</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -399,9 +888,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch11descriptionSSv"></a>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingV11descriptionSSvp"></a>
                     <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch11descriptionSSv">description</a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingV11descriptionSSvp">description</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -437,9 +926,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch16spellingDistanceSiv"></a>
+                    <a name="/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO12ORszrlE16spellingDistanceSivp"></a>
                     <a name="//apple_ref/swift/Property/spellingDistance" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch16spellingDistanceSiv">spellingDistance</a>
+                    <a class="token" href="#/s:5PitchAAV07SpelledA0E8SpellingVA2C5EDO12ORszrlE16spellingDistanceSivp">spellingDistance</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -454,7 +943,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">spellingDistance</span><span class="p">:</span> <span class="kt"><a href="../../Tuning.html#/s:12SpelledPitch12LineOfFifthsV">LineOfFifths</a></span><span class="o">.</span><span class="kt">Distance</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">spellingDistance</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LineOfFifths.html">LineOfFifths</a></span><span class="o">.</span><span class="kt">Distance</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -469,7 +958,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-19)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-21)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
