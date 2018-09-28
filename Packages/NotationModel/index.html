@@ -75,21 +75,13 @@ NotationModel
 
 <p>Defines pitches with names (<code>G Sharp</code>, <code>A Flat</code>, <code>B Double Sharp</code>, etc.) as well as named intervals (<code>Major Third</code>, <code>Perfect Fifth</code>, <code>Double Augmented Sixth</code>, etc.).</p>
 
-<h3>PitchSpeller</h3>
-
-<p>Implements Ben Wetherfield&#39;s <code>Graphical Theory of Musical Pitch Spelling</code>, which converts unspelled pitch values (e.g., MIDI note numbers) into spelled pitch values given context and user-specifiable rules.</p>
-
 <h3>SpelledRhythm</h3>
 
 <p>Extends abstractly-represented rhythms with models of beams, ties, and dots.</p>
 
-<h3>RhythmBeamer</h3>
-
-<p>Contains default algorithm for converting an abstractly-represented rhythm into a graphically renderable one.</p>
-
 <h2>Development</h2>
 
-<p>Work on this branch requires the Swift 4.2 toolchain, via Xcode 10 beta, or <a href="https://swift.org/download/#snapshots">development snapshot</a>.</p>
+<p>Work on this branch requires Swift 4.2.</p>
 
 <h3>Build instructions</h3>
 
@@ -125,15 +117,9 @@ swift package generate-xcodeproj
 
 <p>Open it up.</p>
 
-<p>```Bash
-open NotationModel.xcodeproj/</p>
-
-<h1>```</h1>
-
-<p><img src="https://img.shields.io/badge/Swift-4.2-brightgreen.svg" alt="Swift">
-<a href="https://travis-ci.org/dn-m/NotationModel"><img src="https://travis-ci.org/dn-m/NotationModel.svg?branch=master" alt="Build Status"></a></p>
-
-<p>The <code>NotationModel</code> package defines structures for describing how musical information can be graphically represented, while being agnostic to the concrete method of graphical representation.</p>
+<p><code>Bash
+open NotationModel.xcodeproj/
+</code></p>
 
 <p>The <code>NotationModel</code> package contains several modules:</p>
 

@@ -106,18 +106,12 @@
 <h3 id='spelledpitch' class='heading'>SpelledPitch</h3>
 
 <p>Defines pitches with names (<code>G Sharp</code>, <code>A Flat</code>, <code>B Double Sharp</code>, etc.) as well as named intervals (<code>Major Third</code>, <code>Perfect Fifth</code>, <code>Double Augmented Sixth</code>, etc.).</p>
-<h3 id='pitchspeller' class='heading'>PitchSpeller</h3>
-
-<p>Implements Ben Wetherfield&rsquo;s <code>Graphical Theory of Musical Pitch Spelling</code>, which converts unspelled pitch values (e.g., MIDI note numbers) into spelled pitch values given context and user-specifiable rules.</p>
 <h3 id='spelledrhythm' class='heading'>SpelledRhythm</h3>
 
 <p>Extends abstractly-represented rhythms with models of beams, ties, and dots.</p>
-<h3 id='rhythmbeamer' class='heading'>RhythmBeamer</h3>
-
-<p>Contains default algorithm for converting an abstractly-represented rhythm into a graphically renderable one.</p>
 <h2 id='development' class='heading'>Development</h2>
 
-<p>Work on this branch requires the Swift 4.2 toolchain, via Xcode 10 beta, or <a href="https://swift.org/download/#snapshots">development snapshot</a>.</p>
+<p>Work on this branch requires Swift 4.2.</p>
 <h3 id='build-instructions' class='heading'>Build instructions</h3>
 
 <p>Clone the repo.</p>
@@ -143,12 +137,6 @@
 <p>Open it up.</p>
 <pre class="highlight plaintext"><code>open NotationModel.xcodeproj/
 </code></pre>
-
-<p>=======
-<img src="https://img.shields.io/badge/Swift-4.2-brightgreen.svg" alt="Swift">
-<a href="https://travis-ci.org/dn-m/NotationModel"><img src="https://travis-ci.org/dn-m/NotationModel.svg?branch=master" alt="Build Status"></a></p>
-
-<p>The <code>NotationModel</code> package defines structures for describing how musical information can be graphically represented, while being agnostic to the concrete method of graphical representation.</p>
 
 <p>The <code>NotationModel</code> package contains several modules:</p>
 
