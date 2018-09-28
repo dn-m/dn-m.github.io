@@ -20,7 +20,7 @@
         <a class="header-link" href="index.html">
            Docs
         </a>
-         (76% documented)
+         (78% documented)
       </p>
     
     
@@ -475,10 +475,19 @@
                 <a class="nav-group-task-link" href="Protocols/NewType.html">NewType</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Pair.html">Pair</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/RangeProtocol.html">RangeProtocol</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/ReferenceTreeProtocol.html">ReferenceTreeProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/SwappablePair.html">SwappablePair</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/SymmetricPair.html">SymmetricPair</a>
               </li>
             </ul>
           </li>
@@ -495,10 +504,22 @@
                 <a class="nav-group-task-link" href="Structs/Bimap.html">Bimap</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Cross.html">Cross</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/Identifier.html">Identifier</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/Metatype.html">Metatype</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/OrderedPair.html">OrderedPair</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Queue.html">Queue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/UnorderedPair.html">UnorderedPair</a>
               </li>
             </ul>
           </li>
@@ -617,6 +638,105 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14DataStructures4PairP"></a>
+                    <a name="//apple_ref/swift/Protocol/Pair" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures4PairP">Pair</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pair of two values.</p>
+
+<p><code>Pair</code> makes no assumptions about the equivalence of types, or order of the values contained
+herein.</p>
+
+                        <a href="Protocols/Pair.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Pair</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures13SwappablePairP"></a>
+                    <a name="//apple_ref/swift/Protocol/SwappablePair" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures13SwappablePairP">SwappablePair</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A <code><a href="Protocols/SymmetricPair.html">SymmetricPair</a></code> whose values can be interchanged.</p>
+
+                        <a href="Protocols/SwappablePair.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SwappablePair</span> <span class="p">:</span> <span class="kt"><a href="Protocols/SymmetricPair.html">SymmetricPair</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures13SymmetricPairP"></a>
+                    <a name="//apple_ref/swift/Protocol/SymmetricPair" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures13SymmetricPairP">SymmetricPair</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A <code><a href="Protocols/Pair.html">Pair</a></code> in which the two values are of the same type.</p>
+
+                        <a href="Protocols/SymmetricPair.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SymmetricPair</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Pair.html">Pair</a></span> <span class="k">where</span> <span class="k">Self</span><span class="o">.</span><span class="kt">A</span> <span class="o">==</span> <span class="k">Self</span><span class="o">.</span><span class="kt">B</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14DataStructures21ReferenceTreeProtocolP"></a>
                     <a name="//apple_ref/swift/Protocol/ReferenceTreeProtocol" class="dashAnchor"></a>
                     <a class="token" href="#/s:14DataStructures21ReferenceTreeProtocolP">ReferenceTreeProtocol</a>
@@ -656,7 +776,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-24)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-28)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
