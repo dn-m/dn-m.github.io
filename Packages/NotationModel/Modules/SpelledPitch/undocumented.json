@@ -62,41 +62,6 @@
       "symbol": "Pitch.Spelling.spellingDistance",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/Data Structures/Queue.swift",
-      "line": 15,
-      "symbol": "Queue.isEmpty",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/Data Structures/Queue.swift",
-      "line": 19,
-      "symbol": "Queue.count",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/Data Structures/Queue.swift",
-      "line": 23,
-      "symbol": "Queue.push(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/Data Structures/Queue.swift",
-      "line": 27,
-      "symbol": "Queue.pop()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/Data Structures/Queue.swift",
-      "line": 31,
-      "symbol": "Queue.contains(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/travis/build/dn-m/NotationModel"
