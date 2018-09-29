@@ -1,34 +1,6 @@
 {
   "warnings": [
     {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Bimap.swift",
-      "line": 129,
-      "symbol": "Bimap.updateValue(_:forKey:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Bimap.swift",
-      "line": 140,
-      "symbol": "Bimap.updateKey(_:forValue:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Bimap.swift",
-      "line": 151,
-      "symbol": "Bimap.removeValue(forKey:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Bimap.swift",
-      "line": 162,
-      "symbol": "Bimap.removeKey(forValue:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
       "line": null,
       "symbol": "BinarySearchTree",
@@ -73,14 +45,14 @@
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
       "line": 13,
-      "symbol": "BinarySearchTree.leaf",
+      "symbol": "BinarySearchTree.leaf(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
       "line": 14,
-      "symbol": "BinarySearchTree.node",
+      "symbol": "BinarySearchTree.node(_:_:_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
@@ -110,6 +82,13 @@
       "line": 10,
       "symbol": "Intervallic",
       "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Graph/Protocols/WeightedGraphProtocol.swift",
+      "line": 85,
+      "symbol": "WeightedGraphProtocol.removeEdge(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -187,6 +166,13 @@
       "line": 8,
       "symbol": "NewType",
       "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 9,
+      "symbol": "NewType.Value",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
       "warning": "undocumented"
     },
     {
@@ -317,23 +303,23 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 106,
+      "symbol": "NewType.Iterator",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
       "line": 123,
       "symbol": "NewType.indices",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/RangeProtocol+Algebra.swift",
-      "line": 12,
-      "symbol": "ClosedRange.zero",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/RangeProtocol+Algebra.swift",
-      "line": 19,
-      "symbol": "ClosedRange.+(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/RangeProtocol.swift",
+      "line": 10,
+      "symbol": "RangeProtocol.Bound",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
       "warning": "undocumented"
     },
     {
@@ -548,13 +534,6 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 34,
-      "symbol": "DoubleWrapping.hashValue",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
       "line": 38,
       "symbol": "==(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
@@ -765,13 +744,6 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 35,
-      "symbol": "FloatWrapping.hashValue",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
       "line": 39,
       "symbol": "==(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
@@ -968,13 +940,6 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/IntegerWrapping.swift",
-      "line": 38,
-      "symbol": "IntegerWrapping.hashValue",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/IntegerWrapping.swift",
       "line": 43,
       "symbol": "==(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
@@ -1129,9 +1094,37 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/SortedCollectionWrapping.swift",
+      "line": 10,
+      "symbol": "SortedCollectionWrapping.Base",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/SortedCollectionWrapping.swift",
       "line": 11,
       "symbol": "SortedCollectionWrapping.base",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/SortedCollectionWrapping.swift",
+      "line": 16,
+      "symbol": "SortedCollectionWrapping.min()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/SortedCollectionWrapping.swift",
+      "line": 20,
+      "symbol": "SortedCollectionWrapping.max()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/SortedCollectionWrapping.swift",
+      "line": 24,
+      "symbol": "SortedCollectionWrapping.sorted()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {

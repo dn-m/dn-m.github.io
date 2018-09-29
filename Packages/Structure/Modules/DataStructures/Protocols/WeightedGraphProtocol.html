@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ClosedRange Extension Reference</title>
+    <title>WeightedGraphProtocol Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/ClosedRange" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Protocol/WeightedGraphProtocol" class="dashAnchor"></a>
 
-    <a title="ClosedRange Extension Reference"></a>
+    <a title="WeightedGraphProtocol Protocol Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      ClosedRange Extension Reference
+      WeightedGraphProtocol Protocol Reference
     </p>
 
     <div class="content-wrapper">
@@ -556,27 +556,35 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>ClosedRange</h1>
+            <h1>WeightedGraphProtocol</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">ClosedRange</span><span class="o">&lt;</span><span class="kt">Bound</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Bound</span> <span class="p">:</span> <span class="kt">Comparable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">WeightedGraphProtocol</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/GraphProtocol.html">GraphProtocol</a></span></code></pre>
 
                 </div>
               </div>
-            
+            <p>Interface for weighted graphs.</p>
+
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Associated%20Type"></a>
+                <a name="//apple_ref/swift/Section/Associated Type" class="dashAnchor"></a>
+                <a href="#/Associated%20Type">
+                  <h3 class="section-name">Associated Type</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7Algebra4ZeroP4zeroxvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/zero" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7Algebra4ZeroP4zeroxvpZ">zero</a>
+                    <a name="/s:14DataStructures21WeightedGraphProtocolP6WeightQa"></a>
+                    <a name="//apple_ref/swift/Alias/Weight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures21WeightedGraphProtocolP6WeightQa">Weight</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -584,13 +592,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>The type of the weight of an <code>Edge</code>.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">zero</span><span class="p">:</span> <span class="kt">ClosedRange</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">associatedtype</span> <span class="kt">Weight</span> <span class="p">:</span> <span class="kt">Numeric</span></code></pre>
 
                         </div>
                       </div>
@@ -600,14 +609,101 @@
               </ul>
             </div>
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7Algebra17AdditiveSemigroupP1poiyxx_xtFZ"></a>
-                    <a name="//apple_ref/swift/Method/+(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7Algebra17AdditiveSemigroupP1poiyxx_xtFZ">+(_:_:)</a>
+                    <a name="/s:14DataStructures21WeightedGraphProtocolP7weightsSDy4EdgeQz6WeightQzGvp"></a>
+                    <a name="//apple_ref/swift/Property/weights" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures21WeightedGraphProtocolP7weightsSDy4EdgeQz6WeightQzGvp">weights</a>
                     </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The storage of weights by the applicable edge.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">weights</span><span class="p">:</span> <span class="p">[</span><span class="kt">Edge</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/WeightedGraphProtocol.html#/s:14DataStructures21WeightedGraphProtocolP6WeightQa">Weight</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures21WeightedGraphProtocolPyxShy4NodeQzG_SDy4EdgeQz6WeightQzGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures21WeightedGraphProtocolPyxShy4NodeQzG_SDy4EdgeQz6WeightQzGtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>WeightedGraphProtocol</code>-conforming type value with the given set of <code>nodes</code> and
+the given dictionary of weights stored by the applicable edge.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">nodes</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Node</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">_</span> <span class="nv">weights</span><span class="p">:</span> <span class="p">[</span><span class="kt">Edge</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/WeightedGraphProtocol.html#/s:14DataStructures21WeightedGraphProtocolP6WeightQa">Weight</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Transforming%20into%20unweighted%20graphs"></a>
+                <a name="//apple_ref/swift/Section/Transforming into unweighted graphs" class="dashAnchor"></a>
+                <a href="#/Transforming%20into%20unweighted%20graphs">
+                  <h3 class="section-name">Transforming into unweighted graphs</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures21WeightedGraphProtocolPAAE10unweightedqd__yAA010UnweighteddE0Rd__4EdgeQyd__AFRtzlF"></a>
+                    <a name="//apple_ref/swift/Method/unweighted()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures21WeightedGraphProtocolPAAE10unweightedqd__yAA010UnweighteddE0Rd__4EdgeQyd__AFRtzlF">unweighted()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
@@ -620,7 +716,331 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">ClosedRange</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">ClosedRange</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">ClosedRange</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">unweighted</span><span class="o">&lt;</span><span class="kt">U</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">U</span> <span class="k">where</span> <span class="kt">U</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/UnweightedGraphProtocol.html">UnweightedGraphProtocol</a></span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Edge</span> <span class="o">==</span> <span class="kt">U</span><span class="o">.</span><span class="kt">Edge</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An unweighted version of this <code>WeightedGraphProtocol</code>-conforming type value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Querying"></a>
+                <a name="//apple_ref/swift/Section/Querying" class="dashAnchor"></a>
+                <a href="#/Querying">
+                  <h3 class="section-name">Querying</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures21WeightedGraphProtocolPAAE5edgesShy4EdgeQzGvp"></a>
+                    <a name="//apple_ref/swift/Property/edges" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures21WeightedGraphProtocolPAAE5edgesShy4EdgeQzGvp">edges</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">edges</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Edge</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>All of the edges contained herein.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures21WeightedGraphProtocolPAAE6weight4from2to6WeightQzSg4NodeQz_AKtF"></a>
+                    <a name="//apple_ref/swift/Method/weight(from:to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures21WeightedGraphProtocolPAAE6weight4from2to6WeightQzSg4NodeQz_AKtF">weight(from:to:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">weight</span><span class="p">(</span><span class="n">from</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">Node</span><span class="p">,</span> <span class="n">to</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">Node</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/WeightedGraphProtocol.html#/s:14DataStructures21WeightedGraphProtocolP6WeightQa">Weight</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The weight for the edge connecting the given <code>source</code> and <code>destination</code> nodes,
+if the given <code>edge</code> is contained herein. Otherwise, <code>nil</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures21WeightedGraphProtocolPAAE6weighty6WeightQzSg4EdgeQzF"></a>
+                    <a name="//apple_ref/swift/Method/weight(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures21WeightedGraphProtocolPAAE6weighty6WeightQzSg4EdgeQzF">weight(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">weight</span><span class="p">(</span><span class="n">_</span> <span class="nv">edge</span><span class="p">:</span> <span class="kt">Edge</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/WeightedGraphProtocol.html#/s:14DataStructures21WeightedGraphProtocolP6WeightQa">Weight</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The weight for the given <code>edge</code>, if the given <code>edge</code> is contained herein.
+Otherwise, <code>nil</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Modifying"></a>
+                <a name="//apple_ref/swift/Section/Modifying" class="dashAnchor"></a>
+                <a href="#/Modifying">
+                  <h3 class="section-name">Modifying</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures21WeightedGraphProtocolPAAE10insertEdge4from2to6weighty4NodeQz_AI6WeightQztF"></a>
+                    <a name="//apple_ref/swift/Method/insertEdge(from:to:weight:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures21WeightedGraphProtocolPAAE10insertEdge4from2to6weighty4NodeQz_AI6WeightQztF">insertEdge(from:to:weight:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Inserts an edge between the given <code>source</code> and <code>destination</code> nodes, with the given <code>weight</code>.</p>
+
+<p>If the <code>source</code> or <code>destination</code> nodes are not yet contained herein, they are inserted.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">insertEdge</span><span class="p">(</span><span class="n">from</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">Node</span><span class="p">,</span> <span class="n">to</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">Node</span><span class="p">,</span> <span class="nv">weight</span><span class="p">:</span> <span class="kt"><a href="../Protocols/WeightedGraphProtocol.html#/s:14DataStructures21WeightedGraphProtocolP6WeightQa">Weight</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures21WeightedGraphProtocolPAAE10removeEdge4from2toy4NodeQz_AHtF"></a>
+                    <a name="//apple_ref/swift/Method/removeEdge(from:to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures21WeightedGraphProtocolPAAE10removeEdge4from2toy4NodeQz_AHtF">removeEdge(from:to:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the edge between the given <code>source</code> and <code>destination</code> nodes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeEdge</span><span class="p">(</span><span class="n">from</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">Node</span><span class="p">,</span> <span class="n">to</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">Node</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures21WeightedGraphProtocolPAAE10removeEdgeyy0G0QzF"></a>
+                    <a name="//apple_ref/swift/Method/removeEdge(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures21WeightedGraphProtocolPAAE10removeEdgeyy0G0QzF">removeEdge(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeEdge</span><span class="p">(</span><span class="n">_</span> <span class="nv">edge</span><span class="p">:</span> <span class="kt">Edge</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures21WeightedGraphProtocolPAAE10insertEdge_6weighty0G0Qz_6WeightQztF"></a>
+                    <a name="//apple_ref/swift/Method/insertEdge(_:weight:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures21WeightedGraphProtocolPAAE10insertEdge_6weighty0G0Qz_6WeightQztF">insertEdge(_:weight:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Inserts the given <code>edge</code> with the given <code>weight</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">insertEdge</span><span class="p">(</span><span class="n">_</span> <span class="nv">edge</span><span class="p">:</span> <span class="kt">Edge</span><span class="p">,</span> <span class="nv">weight</span><span class="p">:</span> <span class="kt"><a href="../Protocols/WeightedGraphProtocol.html#/s:14DataStructures21WeightedGraphProtocolP6WeightQa">Weight</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures21WeightedGraphProtocolPAAE10updateEdge4from2to2byy4NodeQz_AI6WeightQzAKXEtF"></a>
+                    <a name="//apple_ref/swift/Method/updateEdge(from:to:by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures21WeightedGraphProtocolPAAE10updateEdge4from2to2byy4NodeQz_AI6WeightQzAKXEtF">updateEdge(from:to:by:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the weight of the edge between the given <code>source</code> and <code>destination</code> nodes by the
+given <code>transform</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">updateEdge</span><span class="p">(</span>
+    <span class="n">from</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">Node</span><span class="p">,</span>
+    <span class="n">to</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">Node</span><span class="p">,</span>
+    <span class="n">by</span> <span class="nv">transform</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Protocols/WeightedGraphProtocol.html#/s:14DataStructures21WeightedGraphProtocolP6WeightQa">Weight</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/WeightedGraphProtocol.html#/s:14DataStructures21WeightedGraphProtocolP6WeightQa">Weight</a></span>
+    <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures21WeightedGraphProtocolPAAE10updateEdge_2byy0G0Qz_6WeightQzAIXEtF"></a>
+                    <a name="//apple_ref/swift/Method/updateEdge(_:by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures21WeightedGraphProtocolPAAE10updateEdge_2byy0G0Qz_6WeightQzAIXEtF">updateEdge(_:by:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the weight of the given <code>edge</code> by the given <code>transform</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">updateEdge</span><span class="p">(</span><span class="n">_</span> <span class="nv">edge</span><span class="p">:</span> <span class="kt">Edge</span><span class="p">,</span> <span class="n">by</span> <span class="nv">transform</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Protocols/WeightedGraphProtocol.html#/s:14DataStructures21WeightedGraphProtocolP6WeightQa">Weight</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/WeightedGraphProtocol.html#/s:14DataStructures21WeightedGraphProtocolP6WeightQa">Weight</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
