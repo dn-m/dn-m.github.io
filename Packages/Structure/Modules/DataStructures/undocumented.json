@@ -86,7 +86,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Graph/Protocols/WeightedGraphProtocol.swift",
-      "line": 85,
+      "line": 79,
       "symbol": "WeightedGraphProtocol.removeEdge(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
