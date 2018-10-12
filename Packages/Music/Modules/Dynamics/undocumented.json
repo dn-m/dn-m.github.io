@@ -388,14 +388,14 @@
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
       "line": 188,
-      "symbol": "Dynamic.Elements.single",
+      "symbol": "Dynamic.Elements.single(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
       "line": 189,
-      "symbol": "Dynamic.Elements.compound",
+      "symbol": "Dynamic.Elements.compound(_:_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },

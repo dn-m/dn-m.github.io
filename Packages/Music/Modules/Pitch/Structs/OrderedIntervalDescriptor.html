@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OrderedIntervalDescriptor Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/OrderedIntervalDescriptor" class="dashAnchor"></a>
+
+    <a title="OrderedIntervalDescriptor Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (90% documented)
+      </p>
+    
+    
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2F%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      OrderedIntervalDescriptor Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Basic Types.html">Basic Types</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NoteNumber.html">NoteNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Frequency.html">Frequency</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Pitch.html">Pitch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Pitch/Class.html">– Class</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Collections.html">Collections</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Dyad.html">Dyad</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Collection.html">Collection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Intervals.html">Intervals</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/OrderedInterval.html">OrderedInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UnorderedInterval.html">UnorderedInterval</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Tuning Systems.html">Tuning Systems</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Tuning Systems.html#/s:5Pitch12TuningSystemP">TuningSystem</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/IntervalQuality.html">IntervalQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/IntervalQuality/Perfect.html">– Perfect</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/IntervalQuality/Imperfect.html">– Imperfect</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/IntervalQuality/Extended.html">– Extended</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NoteNumberRepresentable.html">NoteNumberRepresentable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Chord.html">Chord</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Chord/IntervalPattern.html">– IntervalPattern</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CompoundIntervalDescriptor.html">CompoundIntervalDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/OrderedIntervalDescriptor.html">OrderedIntervalDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/OrderedIntervalDescriptor/Direction.html">– Direction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/OrderedIntervalDescriptor/Ordinal.html">– Ordinal</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Scale.html">Scale</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Scale/IntervalPattern.html">– IntervalPattern</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UnorderedIntervalDescriptor.html">UnorderedIntervalDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UnorderedIntervalDescriptor/Ordinal.html">– Ordinal</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>OrderedIntervalDescriptor</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OrderedIntervalDescriptor</span> <span class="p">:</span> <span class="kt">IntervalDescriptor</span></code></pre>
+
+                </div>
+              </div>
+            <p>Descriptor for ordered interval between two <code><a href="../Structs/Pitch.html">Pitch</a></code> values.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorV9directionAC9DirectionOvp"></a>
+                    <a name="//apple_ref/swift/Property/direction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorV9directionAC9DirectionOvp">direction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The direction of a <code>OrderedIntervalDescriptor</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Direction.html">Direction</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorV7ordinalAC7OrdinalOvp"></a>
+                    <a name="//apple_ref/swift/Property/ordinal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorV7ordinalAC7OrdinalOvp">ordinal</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ordinal value of a <code>OrderedIntervalDescriptor</code>
+(<code><a href="../Structs/OrderedIntervalDescriptor.html#/s:5Pitch25OrderedIntervalDescriptorV6unisonACvpZ">unison</a></code>, <code>second</code>, <code>third</code>, <code>fourth</code>, <code>fifth</code>, <code>sixth</code>, <code>seventh</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorV7qualityAA0C7QualityOvp"></a>
+                    <a name="//apple_ref/swift/Property/quality" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorV7qualityAA0C7QualityOvp">quality</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>IntervalQuality value of a <code>OrderedIntervalDescriptor</code>.
+(<code>diminished</code>, <code>minor</code>, <code>perfect</code>, <code>major</code>, <code>augmented</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Nested%20Types"></a>
+                <a name="//apple_ref/swift/Section/Nested Types" class="dashAnchor"></a>
+                <a href="#/Nested%20Types">
+                  <h3 class="section-name">Nested Types</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorV9DirectionO"></a>
+                    <a name="//apple_ref/swift/Enum/Direction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorV9DirectionO">Direction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Direction of a <code><a href="../Structs/OrderedIntervalDescriptor.html">OrderedIntervalDescriptor</a></code>.</p>
+
+                        <a href="../Structs/OrderedIntervalDescriptor/Direction.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Direction</span> <span class="p">:</span> <span class="kt">InvertibleEnum</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorV7OrdinalO"></a>
+                    <a name="//apple_ref/swift/Enum/Ordinal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorV7OrdinalO">Ordinal</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ordinal for <code><a href="../Structs/OrderedIntervalDescriptor.html">OrderedIntervalDescriptor</a></code>.</p>
+
+                        <a href="../Structs/OrderedIntervalDescriptor/Ordinal.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Ordinal</span> <span class="p">:</span> <span class="kt">IntervalOrdinal</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Type%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Type Properties" class="dashAnchor"></a>
+                <a href="#/Type%20Properties">
+                  <h3 class="section-name">Type Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorV6unisonACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/unison" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorV6unisonACvpZ">unison</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unison named ordered interval.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">unison</span><span class="p">:</span> <span class="kt">OrderedIntervalDescriptor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorVyAcA0C7QualityO7PerfectO_AC7OrdinalOAFOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorVyAcA0C7QualityO7PerfectO_AC7OrdinalOAFOtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a perfect <code>OrderedIntervalDescriptor</code>.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">perfectFifth</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">perfect</span><span class="p">,</span> <span class="o">.</span><span class="n">fifth</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Perfect</span><span class="p">,</span> <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Perfect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorVyA2C9DirectionO_AA0C7QualityO7PerfectOAC7OrdinalOAHOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorVyA2C9DirectionO_AA0C7QualityO7PerfectOAC7OrdinalOAHOtcfc">init(_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a perfect <code>OrderedIntervalDescriptor</code> with a given <code><a href="../Structs/OrderedIntervalDescriptor.html#/s:5Pitch25OrderedIntervalDescriptorV9directionAC9DirectionOvp">direction</a></code>.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">descendingPerfectFifth</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">descending</span><span class="p">,</span> <span class="o">.</span><span class="n">perfect</span><span class="p">,</span> <span class="o">.</span><span class="n">fifth</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Direction.html">Direction</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Perfect</span><span class="p">,</span> <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Perfect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorVyAcA0C7QualityO9ImperfectO_AC7OrdinalOAFOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorVyAcA0C7QualityO9ImperfectO_AC7OrdinalOAFOtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an imperfect <code>OrderedIntervalDescriptor</code>.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">majorSecond</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">major</span><span class="p">,</span> <span class="o">.</span><span class="n">second</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">minorThird</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">minor</span><span class="p">,</span> <span class="o">.</span><span class="n">third</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">majorSixth</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">major</span><span class="p">,</span> <span class="o">.</span><span class="n">sixth</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">minorSeventh</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">minor</span><span class="p">,</span> <span class="o">.</span><span class="n">seventh</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Imperfect</span><span class="p">,</span> <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Imperfect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorVyA2C9DirectionO_AA0C7QualityO9ImperfectOAC7OrdinalOAHOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorVyA2C9DirectionO_AA0C7QualityO9ImperfectOAC7OrdinalOAHOtcfc">init(_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an imperfect <code>OrderedIntervalDescriptor</code>.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">majorSecond</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">ascending</span><span class="p">,</span> <span class="o">.</span><span class="n">major</span><span class="p">,</span> <span class="o">.</span><span class="n">second</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">minorThird</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">descending</span><span class="p">,</span> <span class="o">.</span><span class="n">minor</span><span class="p">,</span> <span class="o">.</span><span class="n">third</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">majorSixth</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">ascending</span><span class="p">,</span> <span class="o">.</span><span class="n">major</span><span class="p">,</span> <span class="o">.</span><span class="n">sixth</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">minorSeventh</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">descending</span><span class="p">,</span> <span class="o">.</span><span class="n">minor</span><span class="p">,</span> <span class="o">.</span><span class="n">seventh</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Direction.html">Direction</a></span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Imperfect</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Imperfect</span>
+    <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorVyAcA0C7QualityO8ExtendedV6DegreeO_AG21AugmentedOrDiminishedOAC7OrdinalO9ImperfectOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorVyAcA0C7QualityO8ExtendedV6DegreeO_AG21AugmentedOrDiminishedOAC7OrdinalO9ImperfectOtcfc">init(_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an augmented or diminished <code>OrderedIntervalDescriptor</code> with an imperfect ordinal. These
+intervals can be up to quintuple augmented or diminished.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">doubleDiminishedSecond</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">double</span><span class="p">,</span> <span class="o">.</span><span class="n">diminished</span><span class="p">,</span> <span class="o">.</span><span class="n">second</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">tripleAugmentedThird</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">triple</span><span class="p">,</span> <span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">third</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">degree</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">Degree</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Imperfect</span>
+    <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorVyA2C9DirectionO_AA0C7QualityO8ExtendedV6DegreeOAI21AugmentedOrDiminishedOAC7OrdinalO9ImperfectOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorVyA2C9DirectionO_AA0C7QualityO8ExtendedV6DegreeOAI21AugmentedOrDiminishedOAC7OrdinalO9ImperfectOtcfc">init(_:_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an augmented or diminished <code>OrderedIntervalDescriptor</code> with a given <code><a href="../Structs/OrderedIntervalDescriptor.html#/s:5Pitch25OrderedIntervalDescriptorV9directionAC9DirectionOvp">direction</a></code> and an
+imperfect ordinal. These intervals can be up to quintuple augmented or diminished.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">doubleDiminishedSecond</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">descending</span><span class="p">,</span> <span class="o">.</span><span class="n">double</span><span class="p">,</span> <span class="o">.</span><span class="n">diminished</span><span class="p">,</span> <span class="o">.</span><span class="n">second</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">tripleAugmentedThird</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">ascending</span><span class="p">,</span> <span class="o">.</span><span class="n">triple</span><span class="p">,</span> <span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">third</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Direction.html">Direction</a></span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">degree</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">Degree</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Imperfect</span>
+    <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorVyAcA0C7QualityO8ExtendedV6DegreeO_AG21AugmentedOrDiminishedOAC7OrdinalO7PerfectOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorVyAcA0C7QualityO8ExtendedV6DegreeO_AG21AugmentedOrDiminishedOAC7OrdinalO7PerfectOtcfc">init(_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an augmented or diminished <code>OrderedIntervalDescriptor</code> with a perfect ordinal. These
+intervals can be up to quintuple augmented or diminished.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">doubleAugmentedUnison</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">double</span><span class="p">,</span> <span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">unison</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">tripleDiminishedFourth</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">triple</span><span class="p">,</span> <span class="o">.</span><span class="n">diminished</span><span class="p">,</span> <span class="o">.</span><span class="n">fourth</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">degree</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">Degree</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Perfect</span>
+    <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorVyA2C9DirectionO_AA0C7QualityO8ExtendedV6DegreeOAI21AugmentedOrDiminishedOAC7OrdinalO7PerfectOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorVyA2C9DirectionO_AA0C7QualityO8ExtendedV6DegreeOAI21AugmentedOrDiminishedOAC7OrdinalO7PerfectOtcfc">init(_:_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an augmented or diminished <code>OrderedIntervalDescriptor</code> with a given <code><a href="../Structs/OrderedIntervalDescriptor.html#/s:5Pitch25OrderedIntervalDescriptorV9directionAC9DirectionOvp">direction</a></code> and a
+perfect ordinal. These intervals can be up to quintuple augmented or diminished.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">doubleAugmentedUnison</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">descending</span><span class="p">,</span> <span class="o">.</span><span class="n">double</span><span class="p">,</span> <span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">unison</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">tripleDiminishedFourth</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">ascending</span><span class="p">,</span> <span class="o">.</span><span class="n">triple</span><span class="p">,</span> <span class="o">.</span><span class="n">diminished</span><span class="p">,</span> <span class="o">.</span><span class="n">fourth</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Direction.html">Direction</a></span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">degree</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">Degree</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Perfect</span>
+    <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorVyAcA0C7QualityO8ExtendedV21AugmentedOrDiminishedO_AC7OrdinalO9ImperfectOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorVyAcA0C7QualityO8ExtendedV21AugmentedOrDiminishedO_AC7OrdinalO9ImperfectOtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an augmented or diminished <code>OrderedIntervalDescriptor</code> with an imperfect ordinal.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">diminishedSecond</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">diminished</span><span class="p">,</span> <span class="o">.</span><span class="n">second</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">augmentedSixth</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">sixth</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span> <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Imperfect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorVyA2C9DirectionO_AA0C7QualityO8ExtendedV21AugmentedOrDiminishedOAC7OrdinalO9ImperfectOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorVyA2C9DirectionO_AA0C7QualityO8ExtendedV21AugmentedOrDiminishedOAC7OrdinalO9ImperfectOtcfc">init(_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an augmented or diminished <code>OrderedIntervalDescriptor</code> with a given <code><a href="../Structs/OrderedIntervalDescriptor.html#/s:5Pitch25OrderedIntervalDescriptorV9directionAC9DirectionOvp">direction</a></code> and an
+imperfect ordinal.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">diminishedSecond</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">descending</span><span class="p">,</span> <span class="o">.</span><span class="n">diminished</span><span class="p">,</span> <span class="o">.</span><span class="n">second</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">augmentedSixth</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">ascending</span><span class="p">,</span> <span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">sixth</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Direction.html">Direction</a></span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Imperfect</span>
+    <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorVyAcA0C7QualityO8ExtendedV21AugmentedOrDiminishedO_AC7OrdinalO7PerfectOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorVyAcA0C7QualityO8ExtendedV21AugmentedOrDiminishedO_AC7OrdinalO7PerfectOtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an augmented or diminished <code>OrderedIntervalDescriptor</code> with a perfect ordinal.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">augmentedUnison</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">unison</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">diminishedFourth</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">diminished</span><span class="p">,</span> <span class="o">.</span><span class="n">fourth</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span> <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Perfect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorVyA2C9DirectionO_AA0C7QualityO8ExtendedV21AugmentedOrDiminishedOAC7OrdinalO7PerfectOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorVyA2C9DirectionO_AA0C7QualityO8ExtendedV21AugmentedOrDiminishedOAC7OrdinalO7PerfectOtcfc">init(_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an augmented or diminished <code>OrderedIntervalDescriptor</code> with a given <code><a href="../Structs/OrderedIntervalDescriptor.html#/s:5Pitch25OrderedIntervalDescriptorV9directionAC9DirectionOvp">direction</a></code> and a
+perfect ordinal.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">augmentedUnison</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">ascending</span><span class="p">,</span> <span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">unison</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">diminishedFourth</span> <span class="o">=</span> <span class="kt">OrderedIntervalDescriptor</span><span class="p">(</span><span class="o">.</span><span class="n">descending</span><span class="p">,</span> <span class="o">.</span><span class="n">diminished</span><span class="p">,</span> <span class="o">.</span><span class="n">fourth</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Direction.html">Direction</a></span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Perfect</span>
+    <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorV7inverseACvp"></a>
+                    <a name="//apple_ref/swift/Property/inverse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorV7inverseACvp">inverse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">inverse</span><span class="p">:</span> <span class="kt">OrderedIntervalDescriptor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Inversion of <code>self</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-10-12)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

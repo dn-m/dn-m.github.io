@@ -72,13 +72,6 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
-      "line": 114,
-      "symbol": "Tempo.Interpolation.Metric",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Tempo/Tempo.swift",
       "line": 377,
       "symbol": "Tempo.Interpolation.Easing",
       "symbol_kind": "source.lang.swift.decl.enum",

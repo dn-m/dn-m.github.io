@@ -96,7 +96,7 @@
                 <a class="nav-group-task-link" href="../Enums/ContinuationOrInstance.html">ContinuationOrInstance</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Rhythm.html#/s:8Duration5eventAA22ContinuationOrInstanceOyAA07AbsenceD5EventOyxGGxlF">event(_:)</a>
+                <a class="nav-group-task-link" href="../Rhythm.html#/s:8Duration5eventyAA22ContinuationOrInstanceOyAA07AbsenceD5EventOyxGGxlF">event(_:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Rhythm.html#/s:8Duration4restAA22ContinuationOrInstanceOyAA07AbsenceD5EventOyxGGylF">rest()</a>
@@ -105,7 +105,7 @@
                 <a class="nav-group-task-link" href="../Rhythm.html#/s:8Duration3tieAA22ContinuationOrInstanceOyAA07AbsenceD5EventOyxGGylF">tie()</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Rhythm.html#/s:8Duration2dgoiA2AVSi_SitF">/&gt;(_:_:)</a>
+                <a class="nav-group-task-link" href="../Rhythm.html#/s:8Duration2dgoiyA2AVSi_SitF">/&gt;(_:_:)</a>
               </li>
             </ul>
           </li>
@@ -135,10 +135,19 @@
             <a class="nav-group-name-link" href="../Other Functions.html">Other Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other Functions.html#/s:8Duration1moiXeXeF">*(_:_:)</a>
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:8Duration1moiy14DataStructures4TreeOyA2AVAFGAF_SaySiGtF">*(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other Functions.html#/s:8Duration7lengthsSayA2AVGx2of_ts8SequenceRzAA6RhythmVyq_G7ElementRtzr0_lF">lengths(of:)</a>
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:8Duration1moiy14DataStructures4TreeOyA2AVAFGSi_SaySiGtF">*(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:8Duration1moiy14DataStructures4TreeOyS2iGSi_SaySiGtF">*(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:8Duration1moiyAA6RhythmVyxG14DataStructures4TreeOyA2AVAIG_SayAA22ContinuationOrInstanceOyAA07AbsenceG5EventOyxGGGtlF">*(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:8Duration7lengths2ofSayA2AVGx_tSTRzAA6RhythmVyq_G7ElementRtzr0_lF">lengths(of:)</a>
               </li>
             </ul>
           </li>
@@ -149,6 +158,12 @@
         <section class="section">
           <div class="section-content">
             <h1>Tree</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">Tree</span><span class="o">&lt;</span><span class="kt">Branch</span><span class="p">,</span> <span class="kt">Leaf</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
             
           </div>
         </section>
@@ -167,9 +182,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8DurationXeXecfc"></a>
+                    <a name="/s:14DataStructures4TreeO8DurationA2DVRszAERs_rlEyACyA2EGSi_ACyS2iGtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8DurationXeXecfc">init(_:_:)</a>
+                    <a class="token" href="#/s:14DataStructures4TreeO8DurationA2DVRszAERs_rlEyACyA2EGSi_ACyS2iGtcfc">init(_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -190,7 +205,37 @@ with the given <code>subdivision</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">subdivision</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">proportionTree</span><span class="p">:</span> <span class="kt"><a href="../Rhythm.html#/s:8Duration14ProportionTreea">ProportionTree</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">subdivision</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">proportionTree</span><span class="p">:</span> <span class="kt"><a href="../Rhythm.html#/s:8Duration14ProportionTreea">ProportionTree</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures4TreeO8DurationA2DVRszAERs_rlEyACyA2EGAE_ACyS2iGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures4TreeO8DurationA2DVRszAERs_rlEyACyA2EGAE_ACyS2iGtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code><a href="../Rhythm.html#/s:8Duration0A4Treea">DurationTree</a></code> with the given <code><a href="../Extensions/Tree.html#/s:14DataStructures4TreeO8DurationA2DVRszAERs_rlE8durationAEvp">duration</a></code> as the value of the
+root node, and the given <code>proportions</code> scaled appropriately.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt"><a href="../Structs/Duration.html">Duration</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">proportionTree</span><span class="p">:</span> <span class="kt"><a href="../Rhythm.html#/s:8Duration14ProportionTreea">ProportionTree</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -211,9 +256,9 @@ with the given <code>subdivision</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Duration8durationA2AVvp"></a>
+                    <a name="/s:14DataStructures4TreeO8DurationA2DVRszAERs_rlE8durationAEvp"></a>
                     <a name="//apple_ref/swift/Property/duration" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration8durationA2AVvp">duration</a>
+                    <a class="token" href="#/s:14DataStructures4TreeO8DurationA2DVRszAERs_rlE8durationAEvp">duration</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -228,7 +273,8 @@ with the given <code>subdivision</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt"><a href="../Structs/Duration.html">Duration</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt"><a href="../Structs/Duration.html">Duration</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -238,9 +284,9 @@ with the given <code>subdivision</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Duration7scalingXevp"></a>
+                    <a name="/s:14DataStructures4TreeO8DurationA2DVRszAERs_rlE7scalingACy4Math8FractionVAIGvp"></a>
                     <a name="//apple_ref/swift/Property/scaling" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration7scalingXevp">scaling</a>
+                    <a class="token" href="#/s:14DataStructures4TreeO8DurationA2DVRszAERs_rlE7scalingACy4Math8FractionVAIGvp">scaling</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -254,7 +300,8 @@ with the given <code>subdivision</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">scaling</span><span class="p">:</span> <span class="kt">Tree</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="p">,</span> <span class="kt">Fraction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">scaling</span><span class="p">:</span> <span class="kt">Tree</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="p">,</span> <span class="kt">Fraction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -268,9 +315,9 @@ with the given <code>subdivision</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Duration6scaledXevp"></a>
+                    <a name="/s:14DataStructures4TreeO8DurationA2DVRszAERs_rlE6scaledACy4Math8FractionVAIGvp"></a>
                     <a name="//apple_ref/swift/Property/scaled" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration6scaledXevp">scaled</a>
+                    <a class="token" href="#/s:14DataStructures4TreeO8DurationA2DVRszAERs_rlE6scaledACy4Math8FractionVAIGvp">scaled</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -284,7 +331,8 @@ with the given <code>subdivision</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">scaled</span><span class="p">:</span> <span class="kt">Tree</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="p">,</span> <span class="kt">Fraction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">scaled</span><span class="p">:</span> <span class="kt">Tree</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="p">,</span> <span class="kt">Fraction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -298,9 +346,9 @@ with the given <code>subdivision</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Duration7offsetsXevp"></a>
+                    <a name="/s:14DataStructures4TreeO8DurationA2DVRszAERs_rlE7offsetsSay4Math8FractionVGvp"></a>
                     <a name="//apple_ref/swift/Property/offsets" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration7offsetsXevp">offsets</a>
+                    <a class="token" href="#/s:14DataStructures4TreeO8DurationA2DVRszAERs_rlE7offsetsSay4Math8FractionVGvp">offsets</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -325,7 +373,8 @@ with the given <code>subdivision</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">offsets</span><span class="p">:</span> <span class="p">[</span><span class="kt">Fraction</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">offsets</span><span class="p">:</span> <span class="p">[</span><span class="kt">Fraction</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -351,9 +400,9 @@ with the given <code>subdivision</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Duration10normalizedXevp"></a>
-                    <a name="//apple_ref/swift/Property/normalized" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Duration10normalizedXevp">normalized</a>
+                    <a name="/s:14DataStructures4TreeO8DurationSiRszSiRs_rlE7scalingACy4Math8FractionVAHGvp"></a>
+                    <a name="//apple_ref/swift/Property/scaling" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures4TreeO8DurationSiRszSiRs_rlE7scalingACy4Math8FractionVAHGvp">scaling</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -367,7 +416,39 @@ with the given <code>subdivision</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">normalized</span><span class="p">:</span> <span class="kt"><a href="../Rhythm.html#/s:8Duration14ProportionTreea">ProportionTree</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">scaling</span><span class="p">:</span> <span class="kt">Tree</span><span class="o">&lt;</span><span class="kt">Fraction</span><span class="p">,</span> <span class="kt">Fraction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>Tree</code> containing the inherited scale of each node contained herein.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures4TreeO8DurationSiRszSiRs_rlE10normalizedACyS2iGvp"></a>
+                    <a name="//apple_ref/swift/Property/normalized" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures4TreeO8DurationSiRszSiRs_rlE10normalizedACyS2iGvp">normalized</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">normalized</span><span class="p">:</span> <span class="kt"><a href="../Rhythm.html#/s:8Duration14ProportionTreea">ProportionTree</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -381,13 +462,52 @@ with the same subdivision-level (denominator).</p>
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers2"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers2">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures4TreeO8DurationSiRszSiRs_rlEyACyS2iGSi_SaySiGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures4TreeO8DurationSiRszSiRs_rlEyACyS2iGSi_SaySiGtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a single-depth <code><a href="../Rhythm.html#/s:8Duration14ProportionTreea">ProportionTree</a></code> with the given root <code><a href="../Extensions/Tree.html#/s:14DataStructures4TreeO8DurationA2DVRszAERs_rlE8durationAEvp">duration</a></code> and child <code>durations</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">durations</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-10-08)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-10-12)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
