@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>UnorderedInterval Structure Reference</title>
+    <title>IntervalDescriptor Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/UnorderedInterval" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Protocol/IntervalDescriptor" class="dashAnchor"></a>
 
-    <a title="UnorderedInterval Structure Reference"></a>
+    <a title="IntervalDescriptor Protocol Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      UnorderedInterval Structure Reference
+      IntervalDescriptor Protocol Reference
     </p>
 
     <div class="content-wrapper">
@@ -161,14 +161,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>UnorderedInterval</h1>
+            <h1>IntervalDescriptor</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UnorderedInterval</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/NoteNumberRepresentable.html">NoteNumberRepresentable</a></span> <span class="k">where</span> <span class="kt">Element</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/NoteNumberRepresentable.html">NoteNumberRepresentable</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">IntervalDescriptor</span></code></pre>
 
                 </div>
               </div>
-            <p>The unordered interval between two <code><a href="../Protocols/NoteNumberRepresentable.html">NoteNumberRepresentable</a></code>-conforming type values.</p>
+            <p>Interface for intervals between two <code><a href="../Structs/Pitch.html">Pitch</a></code> values.</p>
 
           </div>
         </section>
@@ -177,19 +177,19 @@
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Instance%20Properties"></a>
-                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
-                <a href="#/Instance%20Properties">
-                  <h3 class="section-name">Instance Properties</h3>
+                <a name="/Associated%20Types"></a>
+                <a name="//apple_ref/swift/Section/Associated Types" class="dashAnchor"></a>
+                <a href="#/Associated%20Types">
+                  <h3 class="section-name">Associated Types</h3>
                 </a>
               </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5Pitch17UnorderedIntervalV5valueAA10NoteNumberVvp"></a>
-                    <a name="//apple_ref/swift/Property/value" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5Pitch17UnorderedIntervalV5valueAA10NoteNumberVvp">value</a>
+                    <a name="/s:5Pitch18IntervalDescriptorP7OrdinalQa"></a>
+                    <a name="//apple_ref/swift/Alias/Ordinal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch18IntervalDescriptorP7OrdinalQa">Ordinal</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -197,14 +197,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The underlying <code><a href="../Structs/NoteNumber.html">NoteNumber</a></code> value for this <code>UnorderedInterval</code>.</p>
+                        <p>The <code><a href="../Protocols/IntervalOrdinal.html">IntervalOrdinal</a></code>-conforming type for this <code>IntervalDescriptor</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">value</span><span class="p">:</span> <span class="kt"><a href="../Structs/NoteNumber.html">NoteNumber</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">associatedtype</span> <span class="kt">Ordinal</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/IntervalOrdinal.html">IntervalOrdinal</a></span></code></pre>
 
                         </div>
                       </div>
@@ -225,36 +225,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5Pitch17UnorderedIntervalVyACyxGAA10NoteNumberVcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5Pitch17UnorderedIntervalVyACyxGAA10NoteNumberVcfc">init(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Creates an <code>UnorderedInterval</code> with the given <code>noteNumber</code> value.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">noteNumber</span><span class="p">:</span> <span class="kt"><a href="../Structs/NoteNumber.html">NoteNumber</a></span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:5Pitch17UnorderedIntervalVyACyxGx_xtcfc"></a>
+                    <a name="/s:5Pitch18IntervalDescriptorPyxAA0B7QualityO_7OrdinalQztcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5Pitch17UnorderedIntervalVyACyxGx_xtcfc">init(_:_:)</a>
+                    <a class="token" href="#/s:5Pitch18IntervalDescriptorPyxAA0B7QualityO_7OrdinalQztcfc">init(_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -262,25 +235,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates an <code>UnorderedInterval</code> between the two given <code><a href="../Protocols/NoteNumberRepresentable.html">NoteNumberRepresentable</a></code>-conforming
-type values.</p>
-
-<p><strong>Example Usage</strong></p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dough</span><span class="p">:</span> <span class="kt">Pitch</span> <span class="o">=</span> <span class="mi">60</span>
-<span class="k">let</span> <span class="nv">may</span><span class="p">:</span> <span class="kt">Pitch</span> <span class="o">=</span> <span class="mi">63</span>
-<span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="kt">UnorderedInterval</span><span class="p">(</span><span class="n">dough</span><span class="p">,</span><span class="n">may</span><span class="p">)</span> <span class="c1">// =&gt; 3</span>
-
-<span class="k">let</span> <span class="nv">soul</span><span class="p">:</span> <span class="kt">Pitch</span> <span class="o">=</span> <span class="mi">67</span>
-<span class="k">let</span> <span class="nv">lay</span><span class="p">:</span> <span class="kt">Pitch</span> <span class="o">=</span> <span class="mi">56</span>
-<span class="k">let</span> <span class="nv">_</span> <span class="o">=</span> <span class="kt">UnorderedInterval</span><span class="p">(</span><span class="n">soul</span><span class="p">,</span><span class="n">lay</span><span class="p">)</span> <span class="c1">// =&gt; 11</span>
-</code></pre>
+                        <p>Creates a <code>IntervalDescriptor</code> with the given <code>quality</code> and the given <code>ordinal</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">Element</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Protocols/IntervalDescriptor.html#/s:5Pitch18IntervalDescriptorP7OrdinalQa">Ordinal</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

@@ -58,14 +58,14 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/IntervalDescriptor/OrderedIntervalDescriptor.swift",
-      "line": 34,
+      "line": 51,
       "symbol": "OrderedIntervalDescriptor.Direction.ascending",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/IntervalDescriptor/OrderedIntervalDescriptor.swift",
-      "line": 34,
+      "line": 51,
       "symbol": "OrderedIntervalDescriptor.Direction.descending",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"

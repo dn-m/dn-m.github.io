@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
            Docs
         </a>
-         (90% documented)
+         (91% documented)
       </p>
     
     
@@ -110,6 +110,12 @@
             <a class="nav-group-name-link" href="../Other Protocols.html">Other Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/IntervalDescriptor.html">IntervalDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/IntervalOrdinal.html">IntervalOrdinal</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/NoteNumberRepresentable.html">NoteNumberRepresentable</a>
               </li>
             </ul>
@@ -158,7 +164,7 @@
             <h1>OrderedIntervalDescriptor</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OrderedIntervalDescriptor</span> <span class="p">:</span> <span class="kt">IntervalDescriptor</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OrderedIntervalDescriptor</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/IntervalDescriptor.html">IntervalDescriptor</a></span></code></pre>
 
                 </div>
               </div>
@@ -265,6 +271,48 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorVyA2C9DirectionO_AC7OrdinalOAA0C7QualityOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorVyA2C9DirectionO_AC7OrdinalOAA0C7QualityOtcfc">init(_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>OrderedIntervalDescriptor</code> with the given <code><a href="../Structs/OrderedIntervalDescriptor.html#/s:5Pitch25OrderedIntervalDescriptorV9directionAC9DirectionOvp">direction</a></code>, <code><a href="../Structs/OrderedIntervalDescriptor.html#/s:5Pitch25OrderedIntervalDescriptorV7ordinalAC7OrdinalOvp">ordinal</a></code>, and <code><a href="../Structs/OrderedIntervalDescriptor.html#/s:5Pitch25OrderedIntervalDescriptorV7qualityAA0C7QualityOvp">quality</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Direction.html">Direction</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">ascending</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
                 <a name="/Nested%20Types"></a>
                 <a name="//apple_ref/swift/Section/Nested Types" class="dashAnchor"></a>
                 <a href="#/Nested%20Types">
@@ -321,7 +369,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Ordinal</span> <span class="p">:</span> <span class="kt">IntervalOrdinal</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Ordinal</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/IntervalOrdinal.html">IntervalOrdinal</a></span></code></pre>
 
                         </div>
                       </div>
@@ -370,13 +418,40 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Initializers"></a>
+                <a name="/Initializers2"></a>
                 <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
-                <a href="#/Initializers">
+                <a href="#/Initializers2">
                   <h3 class="section-name">Initializers</h3>
                 </a>
               </div>
               <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25OrderedIntervalDescriptorVyAcA0C7QualityO_AC7OrdinalOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25OrderedIntervalDescriptorVyAcA0C7QualityO_AC7OrdinalOtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>OrderedIntervalDescriptor</code> with a given <code><a href="../Structs/OrderedIntervalDescriptor.html#/s:5Pitch25OrderedIntervalDescriptorV7qualityAA0C7QualityOvp">quality</a></code> and <code><a href="../Structs/OrderedIntervalDescriptor.html#/s:5Pitch25OrderedIntervalDescriptorV7ordinalAC7OrdinalOvp">ordinal</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -496,7 +571,7 @@
     <span class="n">_</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Direction.html">Direction</a></span><span class="p">,</span>
     <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Imperfect</span><span class="p">,</span>
     <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Imperfect</span>
-    <span class="p">)</span></code></pre>
+<span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -531,7 +606,7 @@ intervals can be up to quintuple augmented or diminished.</p>
     <span class="n">_</span> <span class="nv">degree</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">Degree</span><span class="p">,</span>
     <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span>
     <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Imperfect</span>
-    <span class="p">)</span></code></pre>
+<span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -567,7 +642,7 @@ imperfect ordinal. These intervals can be up to quintuple augmented or diminishe
     <span class="n">_</span> <span class="nv">degree</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">Degree</span><span class="p">,</span>
     <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span>
     <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Imperfect</span>
-    <span class="p">)</span></code></pre>
+<span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -602,7 +677,7 @@ intervals can be up to quintuple augmented or diminished.</p>
     <span class="n">_</span> <span class="nv">degree</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">Degree</span><span class="p">,</span>
     <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span>
     <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Perfect</span>
-    <span class="p">)</span></code></pre>
+<span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -703,7 +778,7 @@ imperfect ordinal.</p>
     <span class="n">_</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Direction.html">Direction</a></span><span class="p">,</span>
     <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span>
     <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Imperfect</span>
-    <span class="p">)</span></code></pre>
+<span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -768,7 +843,7 @@ perfect ordinal.</p>
     <span class="n">_</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Direction.html">Direction</a></span><span class="p">,</span>
     <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/IntervalQuality.html">IntervalQuality</a></span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span>
     <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderedIntervalDescriptor/Ordinal.html">Ordinal</a></span><span class="o">.</span><span class="kt">Perfect</span>
-    <span class="p">)</span></code></pre>
+<span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -817,7 +892,7 @@ perfect ordinal.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-10-12)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-10-14)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
