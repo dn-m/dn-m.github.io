@@ -43,20 +43,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/OrderedSpelledInterval.swift",
-      "line": 46,
-      "symbol": "OrderedSpelledInterval.Direction.ascending",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/OrderedSpelledInterval.swift",
-      "line": 46,
-      "symbol": "OrderedSpelledInterval.Direction.descending",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
       "line": 271,
       "symbol": "Pitch.Spelling.spellingDistance",
