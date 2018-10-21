@@ -85,13 +85,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Graph/Protocols/WeightedGraphProtocol.swift",
-      "line": 79,
-      "symbol": "WeightedGraphProtocol.removeEdge(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
       "line": null,
       "symbol": "NewType",
