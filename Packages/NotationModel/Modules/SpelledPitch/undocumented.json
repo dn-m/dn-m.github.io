@@ -2,36 +2,36 @@
   "warnings": [
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/EDO/EDO12.swift",
-      "line": 63,
+      "line": 69,
       "symbol": "LineOfFifths",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/EDO/EDO12.swift",
-      "line": 65,
+      "line": 71,
       "symbol": "LineOfFifths.Position",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/EDO/EDO12.swift",
-      "line": 66,
+      "line": 72,
       "symbol": "LineOfFifths.Distance",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/EDO/EDO48PitchSpellings.swift",
-      "line": 298,
-      "symbol": "EDO48.spellings(forPitchClass:)",
+      "line": 301,
+      "symbol": "Pitch.spellings(forPitchClass:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/EDO/EDO48PitchSpellings.swift",
-      "line": 302,
-      "symbol": "EDO48.defaultSpelling(forPitchClass:)",
+      "line": 305,
+      "symbol": "Pitch.defaultSpelling(forPitchClass:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
@@ -44,7 +44,112 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 271,
+      "line": 19,
+      "symbol": "Pitch.Spelling.Modifier.doubleFlat",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 20,
+      "symbol": "Pitch.Spelling.Modifier.threeQuarterFlat",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 21,
+      "symbol": "Pitch.Spelling.Modifier.flat",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 22,
+      "symbol": "Pitch.Spelling.Modifier.quarterFlat",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 23,
+      "symbol": "Pitch.Spelling.Modifier.natural",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 24,
+      "symbol": "Pitch.Spelling.Modifier.quarterSharp",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 25,
+      "symbol": "Pitch.Spelling.Modifier.sharp",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 26,
+      "symbol": "Pitch.Spelling.Modifier.threeQuarterSharp",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 27,
+      "symbol": "Pitch.Spelling.Modifier.doubleSharp",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 36,
+      "symbol": "Pitch.Spelling.Modifier.Pythagorean.doubleFlat",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 37,
+      "symbol": "Pitch.Spelling.Modifier.Pythagorean.flat",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 38,
+      "symbol": "Pitch.Spelling.Modifier.Pythagorean.natural",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 39,
+      "symbol": "Pitch.Spelling.Modifier.Pythagorean.sharp",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 40,
+      "symbol": "Pitch.Spelling.Modifier.Pythagorean.doubleSharp",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 143,
+      "symbol": "Pitch.Spelling.init(_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 191,
       "symbol": "Pitch.Spelling.spellingDistance",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
