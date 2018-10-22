@@ -51,6 +51,13 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/Chord.swift",
+      "line": null,
+      "symbol": "Chord",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/Chord.swift",
       "line": 11,
       "symbol": "Chord",
       "symbol_kind": "source.lang.swift.decl.struct",
