@@ -1,69 +1,6 @@
 {
   "warnings": [
     {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/Chord.IntervalPattern.swift",
-      "line": null,
-      "symbol": "Chord.IntervalPattern",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/Chord.IntervalPattern.swift",
-      "line": null,
-      "symbol": "Chord.IntervalPattern",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/Chord.IntervalPattern.swift",
-      "line": null,
-      "symbol": "Chord.IntervalPattern",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/Chord.IntervalPattern.swift",
-      "line": 14,
-      "symbol": "Chord.IntervalPattern",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/Chord.IntervalPattern.swift",
-      "line": 21,
-      "symbol": "Chord.IntervalPattern.init(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/Chord.swift",
-      "line": null,
-      "symbol": "Chord",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/Chord.swift",
-      "line": null,
-      "symbol": "Chord",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/Chord.swift",
-      "line": null,
-      "symbol": "Chord",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/Chord.swift",
-      "line": 11,
-      "symbol": "Chord",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/IntervalDescriptor/OrderedIntervalDescriptor.swift",
       "line": 51,
       "symbol": "OrderedIntervalDescriptor.Direction.ascending",
@@ -75,13 +12,6 @@
       "line": 51,
       "symbol": "OrderedIntervalDescriptor.Direction.descending",
       "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Scale/Scale.IntervalPattern.swift",
-      "line": 100,
-      "symbol": "Scale.IntervalPattern.subscript(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.subscript",
       "warning": "undocumented"
     }
   ],
