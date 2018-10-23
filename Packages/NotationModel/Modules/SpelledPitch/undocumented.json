@@ -149,8 +149,15 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 191,
+      "line": 190,
       "symbol": "Pitch.Spelling.spellingDistance",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledPitch.swift",
+      "line": 77,
+      "symbol": "OrderedIntervalDescriptor.semitones",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
