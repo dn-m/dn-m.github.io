@@ -155,6 +155,34 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledChord.swift",
+      "line": null,
+      "symbol": "SpelledChord",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledChord.swift",
+      "line": null,
+      "symbol": "SpelledChord",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledChord.swift",
+      "line": null,
+      "symbol": "SpelledChord",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledChord.swift",
+      "line": 11,
+      "symbol": "SpelledChord",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledPitch.swift",
       "line": 77,
       "symbol": "OrderedIntervalDescriptor.semitones",
