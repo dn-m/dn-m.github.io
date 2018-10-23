@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
            Docs
         </a>
-         (92% documented)
+         (95% documented)
       </p>
     
     
@@ -166,7 +166,15 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>Ordered sequence of pitch intervals.</p>
+
+<p>A <code>Scale</code> may or may not be octave invariant, and it may or may not be infinitely protracting.</p>
+
+<p><strong>Example Usage</strong></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">cMajor</span><span class="p">:</span> <span class="kt">Scale</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">11</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">cSharpWholeTone</span> <span class="o">=</span> <span class="kt">Scale</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="k">let</span> <span class="nv">gHarmonicMinor</span> <span class="o">=</span> <span class="kt">Scale</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="o">.</span><span class="n">harmonicMinor</span><span class="p">)</span>
+</code></pre>
 
           </div>
         </section>
@@ -174,6 +182,78 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch5ScaleV4rootA2AVvp"></a>
+                    <a name="//apple_ref/swift/Property/root" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch5ScaleV4rootA2AVvp">root</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The root (lowest) pitch of this <code>Scale.</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">root</span><span class="p">:</span> <span class="kt"><a href="../Structs/Pitch.html">Pitch</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch5ScaleV9intervalsAC15IntervalPatternVvp"></a>
+                    <a name="//apple_ref/swift/Property/intervals" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch5ScaleV9intervalsAC15IntervalPatternVvp">intervals</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The intervals which comprise this <code>Scale</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">intervals</span><span class="p">:</span> <span class="kt"><a href="../Structs/Scale/IntervalPattern.html">IntervalPattern</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Nested%20Types"></a>
+                <a name="//apple_ref/swift/Section/Nested Types" class="dashAnchor"></a>
+                <a href="#/Nested%20Types">
+                  <h3 class="section-name">Nested Types</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
@@ -188,7 +268,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The pattern of intervals which defines the quality of a <code><a href="../Structs/Scale.html">Scale</a></code>.</p>
+
+<p><strong>Example Usage</strong></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">major</span><span class="p">:</span> <span class="kt">IntervalPattern</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">wholeTone</span><span class="p">:</span> <span class="kt">IntervalPattern</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">octatonic12</span><span class="p">:</span> <span class="kt">IntervalPattern</span> <span class="o">=</span> <span class="o">.</span><span class="n">octatonic12</span>
+<span class="k">let</span> <span class="nv">tetrachord</span> <span class="o">=</span> <span class="kt">IntervalPattern</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="nv">isLooping</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
+</code></pre>
 
                         <a href="../Structs/Scale/IntervalPattern.html" class="slightly-smaller">See more</a>
                       </div>
@@ -199,6 +286,47 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IntervalPattern</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Computed%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Computed Properties" class="dashAnchor"></a>
+                <a href="#/Computed%20Properties">
+                  <h3 class="section-name">Computed Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch5ScaleV17isOctaveInvariantSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isOctaveInvariant" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch5ScaleV17isOctaveInvariantSbvp">isOctaveInvariant</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isOctaveInvariant</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the intervals contained herein span 12 semitones. Otherwise, <code>false</code>.</p>
                       </div>
                     </section>
                   </div>

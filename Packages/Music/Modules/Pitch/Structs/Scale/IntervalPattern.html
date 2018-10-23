@@ -20,7 +20,7 @@
         <a class="header-link" href="../../index.html">
            Docs
         </a>
-         (92% documented)
+         (95% documented)
       </p>
     
     
@@ -166,7 +166,14 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>The pattern of intervals which defines the quality of a <code><a href="../../Structs/Scale.html">Scale</a></code>.</p>
+
+<p><strong>Example Usage</strong></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">major</span><span class="p">:</span> <span class="kt">IntervalPattern</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">wholeTone</span><span class="p">:</span> <span class="kt">IntervalPattern</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">octatonic12</span><span class="p">:</span> <span class="kt">IntervalPattern</span> <span class="o">=</span> <span class="o">.</span><span class="n">octatonic12</span>
+<span class="k">let</span> <span class="nv">tetrachord</span> <span class="o">=</span> <span class="kt">IntervalPattern</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="nv">isLooping</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
+</code></pre>
 
           </div>
         </section>
@@ -174,6 +181,13 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
@@ -188,7 +202,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Creates a <code>Scale.IntervalPattern</code> with the given <code><a href="../../Structs/Scale.html#/s:5Pitch5ScaleV9intervalsAC15IntervalPatternVvp">intervals</a></code> and whether or not to
+protract infinitely upward.</p>
 
                       </div>
                       <div class="declaration">
@@ -196,6 +211,260 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">intervals</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/Pitch.html">Pitch</a></span><span class="p">],</span> <span class="nv">isLooping</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Type%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Type Properties" class="dashAnchor"></a>
+                <a href="#/Type%20Properties">
+                  <h3 class="section-name">Type Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch5ScaleV15IntervalPatternV9chromaticAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/chromatic" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch5ScaleV15IntervalPatternV9chromaticAEvpZ">chromatic</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Chromatic scale interval pattern.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">chromatic</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Scale.html">Scale</a></span><span class="o">.</span><span class="kt">IntervalPattern</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch5ScaleV15IntervalPatternV5majorAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/major" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch5ScaleV15IntervalPatternV5majorAEvpZ">major</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Major scale interval pattern.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">major</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Scale.html">Scale</a></span><span class="o">.</span><span class="kt">IntervalPattern</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch5ScaleV15IntervalPatternV5minorAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/minor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch5ScaleV15IntervalPatternV5minorAEvpZ">minor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Chromatic scale interval pattern.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">minor</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Scale.html">Scale</a></span><span class="o">.</span><span class="kt">IntervalPattern</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch5ScaleV15IntervalPatternV21melodicMinorAscendingAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/melodicMinorAscending" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch5ScaleV15IntervalPatternV21melodicMinorAscendingAEvpZ">melodicMinorAscending</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Melodic minor ascending scale interval pattern.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">melodicMinorAscending</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Scale.html">Scale</a></span><span class="o">.</span><span class="kt">IntervalPattern</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch5ScaleV15IntervalPatternV22melodicMinorDescendingAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/melodicMinorDescending" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch5ScaleV15IntervalPatternV22melodicMinorDescendingAEvpZ">melodicMinorDescending</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Melodic minor descending scale interval pattern.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">melodicMinorDescending</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Scale.html">Scale</a></span><span class="o">.</span><span class="kt">IntervalPattern</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch5ScaleV15IntervalPatternV13harmonicMinorAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/harmonicMinor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch5ScaleV15IntervalPatternV13harmonicMinorAEvpZ">harmonicMinor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Harmonic minor scale interval pattern.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">harmonicMinor</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Scale.html">Scale</a></span><span class="o">.</span><span class="kt">IntervalPattern</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch5ScaleV15IntervalPatternV11octatonic21AEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/octatonic21" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch5ScaleV15IntervalPatternV11octatonic21AEvpZ">octatonic21</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Octatonic 2-1 scale interval pattern.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">octatonic21</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Scale.html">Scale</a></span><span class="o">.</span><span class="kt">IntervalPattern</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch5ScaleV15IntervalPatternV11octatonic12AEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/octatonic12" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch5ScaleV15IntervalPatternV11octatonic12AEvpZ">octatonic12</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Octatonic 1-2 scale interval pattern.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">octatonic12</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Scale.html">Scale</a></span><span class="o">.</span><span class="kt">IntervalPattern</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch5ScaleV15IntervalPatternV9wholeToneAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/wholeTone" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch5ScaleV15IntervalPatternV9wholeToneAEvpZ">wholeTone</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whole tone scale interval pattern.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">wholeTone</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Scale.html">Scale</a></span><span class="o">.</span><span class="kt">IntervalPattern</span></code></pre>
 
                         </div>
                       </div>

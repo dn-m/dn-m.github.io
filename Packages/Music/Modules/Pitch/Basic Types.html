@@ -20,7 +20,7 @@
         <a class="header-link" href="index.html">
            Docs
         </a>
-         (92% documented)
+         (95% documented)
       </p>
     
     
@@ -304,7 +304,15 @@ by a distance of <code>12</code>, thus <code>48</code> is the <q>c below middle 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Ordered sequence of pitch intervals.</p>
+
+<p>A <code>Scale</code> may or may not be octave invariant, and it may or may not be infinitely protracting.</p>
+
+<p><strong>Example Usage</strong></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">cMajor</span><span class="p">:</span> <span class="kt">Scale</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">11</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">cSharpWholeTone</span> <span class="o">=</span> <span class="kt">Scale</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="k">let</span> <span class="nv">gHarmonicMinor</span> <span class="o">=</span> <span class="kt">Scale</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="o">.</span><span class="n">harmonicMinor</span><span class="p">)</span>
+</code></pre>
 
                         <a href="Structs/Scale.html" class="slightly-smaller">See more</a>
                       </div>
