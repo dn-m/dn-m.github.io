@@ -190,13 +190,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Point.swift",
-      "line": 67,
-      "symbol": "Point.reflected(over:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Polygon.swift",
       "line": 152,
       "symbol": "Point.Triple",
