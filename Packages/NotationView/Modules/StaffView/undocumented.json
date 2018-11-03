@@ -16,64 +16,64 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
-      "line": 14,
+      "line": 16,
       "symbol": "AccidentalView",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
-      "line": 16,
+      "line": 18,
       "symbol": "AccidentalView.VerticalDirection",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
-      "line": 17,
+      "line": 19,
       "symbol": "AccidentalView.VerticalDirection.above",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
-      "line": 18,
+      "line": 20,
       "symbol": "AccidentalView.VerticalDirection.below",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
-      "line": 21,
+      "line": 23,
       "symbol": "AccidentalView.path",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
-      "line": 25,
+      "line": 27,
       "symbol": "AccidentalView.rendered",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
-      "line": 90,
+      "line": 92,
       "symbol": "AccidentalView.init(position:size:color:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
-      "line": 108,
+      "line": 110,
       "symbol": "AccidentalView.makeAccidental(_:at:size:color:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
-      "line": 130,
-      "symbol": "AccidentalView.makeAccidental(coarse:fine:at:size:color:)",
+      "line": 131,
+      "symbol": "AccidentalView.makeAccidental(modifier:at:size:color:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
@@ -646,7 +646,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/StaffView.swift",
-      "line": 217,
+      "line": 216,
       "symbol": "Path.init(lines:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
