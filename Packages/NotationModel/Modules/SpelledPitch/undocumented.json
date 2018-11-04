@@ -155,6 +155,20 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/AdjacencyCarrying.swift",
+      "line": 10,
+      "symbol": "AdjacencyCarrying",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/DirectedGraphSchemeProtocol.swift",
+      "line": 10,
+      "symbol": "DirectedGraphSchemeProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/FlowNetwork.swift",
       "line": 20,
       "symbol": "FlowNetwork.source",
@@ -166,6 +180,90 @@
       "line": 21,
       "symbol": "FlowNetwork.sink",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/GraphSchemeProtocol.swift",
+      "line": 10,
+      "symbol": "GraphSchemeProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/GraphSchemeProtocol.swift",
+      "line": 11,
+      "symbol": "GraphSchemeProtocol.Node",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/GraphSchemeProtocol.swift",
+      "line": 12,
+      "symbol": "GraphSchemeProtocol.Edge",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/UndirectedGraphSchemeProtocol.swift",
+      "line": 10,
+      "symbol": "UndirectedGraphSchemeProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/UnweightedGraphSchemeProtocol.swift",
+      "line": 10,
+      "symbol": "UnweightedGraphSchemeProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/UnweightedGraphSchemeProtocol.swift",
+      "line": 11,
+      "symbol": "UnweightedGraphSchemeProtocol.contains",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/UnweightedGraphSchemeProtocol.swift",
+      "line": 13,
+      "symbol": "UnweightedGraphSchemeProtocol.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/WeightCarrying.swift",
+      "line": 10,
+      "symbol": "WeightCarrying",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/WeightedGraphSchemeProtocol.swift",
+      "line": 10,
+      "symbol": "WeightedGraphSchemeProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/WeightedGraphSchemeProtocol.swift",
+      "line": 11,
+      "symbol": "WeightedGraphSchemeProtocol.Weight",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/WeightedGraphSchemeProtocol.swift",
+      "line": 13,
+      "symbol": "WeightedGraphSchemeProtocol.weight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/WeightedGraphSchemeProtocol.swift",
+      "line": 15,
+      "symbol": "WeightedGraphSchemeProtocol.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {

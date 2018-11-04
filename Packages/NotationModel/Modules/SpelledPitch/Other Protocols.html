@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Other Structures  Reference</title>
+    <title>Other Protocols  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Other Structures" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Section/Other Protocols" class="dashAnchor"></a>
 
-    <a title="Other Structures  Reference"></a>
+    <a title="Other Protocols  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html"> Reference</a>
       <img class="carat" src="img/carat.png" />
-      Other Structures  Reference
+      Other Protocols  Reference
     </p>
 
     <div class="content-wrapper">
@@ -179,8 +179,8 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Other Structures</h1>
-            <p>The following structures are available globally.</p>
+            <h1>Other Protocols</h1>
+            <p>The following protocols are available globally.</p>
 
           </div>
         </section>
@@ -192,9 +192,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch17AdjacencyCarryingV"></a>
-                    <a name="//apple_ref/swift/Struct/AdjacencyCarrying" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch17AdjacencyCarryingV">AdjacencyCarrying</a>
+                    <a name="/s:12SpelledPitch27DirectedGraphSchemeProtocolP"></a>
+                    <a name="//apple_ref/swift/Protocol/DirectedGraphSchemeProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch27DirectedGraphSchemeProtocolP">DirectedGraphSchemeProtocol</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -209,7 +209,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AdjacencyCarrying</span><span class="o">&lt;</span><span class="kt">G</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">G</span> <span class="p">:</span> <span class="kt">GraphProtocol</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">DirectedGraphSchemeProtocol</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GraphSchemeProtocol.html">GraphSchemeProtocol</a></span> <span class="k">where</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Edge</span> <span class="o">==</span> <span class="kt">OrderedPair</span><span class="o">&lt;</span><span class="k">Self</span><span class="o">.</span><span class="kt">Node</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -223,9 +223,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch11FlowNetworkV"></a>
-                    <a name="//apple_ref/swift/Struct/FlowNetwork" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch11FlowNetworkV">FlowNetwork</a>
+                    <a name="/s:12SpelledPitch19GraphSchemeProtocolP"></a>
+                    <a name="//apple_ref/swift/Protocol/GraphSchemeProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch19GraphSchemeProtocolP">GraphSchemeProtocol</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -233,23 +233,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Directed graph with several properties:</p>
+                        <p>Undocumented</p>
 
-<ul>
-<li>Each edge has a capacity for flow</li>
-<li>A <q>source</q> node, which only emanates flow outward</li>
-<li>A <q>sink</q> node, which only receives flow</li>
-</ul>
-
-                        <a href="Structs/FlowNetwork.html" class="slightly-smaller">See more</a>
+                        <a href="Protocols/GraphSchemeProtocol.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FlowNetwork</span><span class="o">&lt;</span><span class="kt">Node</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Weight</span><span class="p">:</span> <span class="kt">Numeric</span> <span class="o">&amp;</span> <span class="kt">Comparable</span><span class="o">&gt;</span><span class="p">:</span>
-    <span class="kt">WeightedGraphProtocol</span><span class="p">,</span>
-    <span class="kt">DirectedGraphProtocol</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">GraphSchemeProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -263,9 +255,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch14WeightCarryingV"></a>
-                    <a name="//apple_ref/swift/Struct/WeightCarrying" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch14WeightCarryingV">WeightCarrying</a>
+                    <a name="/s:12SpelledPitch29UndirectedGraphSchemeProtocolP"></a>
+                    <a name="//apple_ref/swift/Protocol/UndirectedGraphSchemeProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch29UndirectedGraphSchemeProtocolP">UndirectedGraphSchemeProtocol</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -280,7 +272,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">WeightCarrying</span><span class="o">&lt;</span><span class="kt">G</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">G</span> <span class="p">:</span> <span class="kt">WeightedGraphProtocol</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">UndirectedGraphSchemeProtocol</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GraphSchemeProtocol.html">GraphSchemeProtocol</a></span> <span class="k">where</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Edge</span> <span class="o">==</span> <span class="kt">UnorderedPair</span><span class="o">&lt;</span><span class="k">Self</span><span class="o">.</span><span class="kt">Node</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -294,9 +286,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SpelledPitch0A5ChordV"></a>
-                    <a name="//apple_ref/swift/Struct/SpelledChord" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SpelledPitch0A5ChordV">SpelledChord</a>
+                    <a name="/s:12SpelledPitch29UnweightedGraphSchemeProtocolP"></a>
+                    <a name="//apple_ref/swift/Protocol/UnweightedGraphSchemeProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch29UnweightedGraphSchemeProtocolP">UnweightedGraphSchemeProtocol</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -306,13 +298,45 @@
                       <div class="abstract">
                         <p>Undocumented</p>
 
-                        <a href="Structs/SpelledChord.html" class="slightly-smaller">See more</a>
+                        <a href="Protocols/UnweightedGraphSchemeProtocol.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpelledChord</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">UnweightedGraphSchemeProtocol</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GraphSchemeProtocol.html">GraphSchemeProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SpelledPitch27WeightedGraphSchemeProtocolP"></a>
+                    <a name="//apple_ref/swift/Protocol/WeightedGraphSchemeProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SpelledPitch27WeightedGraphSchemeProtocolP">WeightedGraphSchemeProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Protocols/WeightedGraphSchemeProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">WeightedGraphSchemeProtocol</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GraphSchemeProtocol.html">GraphSchemeProtocol</a></span></code></pre>
 
                         </div>
                       </div>
