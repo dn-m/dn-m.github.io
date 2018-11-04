@@ -107,24 +107,71 @@
 <p><img src="https://img.shields.io/badge/Swift-4.2-brightgreen.svg" alt="Swift">
 <a href="https://travis-ci.org/dn-m/Structure"><img src="https://travis-ci.org/dn-m/Structure.svg?branch=master" alt="Build Status"></a></p>
 
-<p>Algebraic and data structures in Swift 4.2. The <code>Structure</code> package consists of four modules:</p>
-<h2 id='destructure' class='heading'>Destructure</h2>
+<p>The <code>Structure</code> package defines algebraic and data structures in Swift 4.2, along with algorithms to be performed over them.</p>
+<h2 id='modules' class='heading'>Modules</h2>
 
-<p>Module which includes a single extension of <code>Sequence</code>, which breaks it into a <code>head</code> and <code>tail</code> for functional-style recursive implementations of algorithms.</p>
-<pre class="highlight plaintext"><code>extension Sequence {
-    /// 2-tuple containing the `head` and `tail` of a given `Sequence`.
-    public var destructured: (Element, AnySequence&lt;Element&gt;)?
-}  
+<p>The contents of this Swift package are split amongst four modules. </p>
+<h4 id='a-href-https-github-com-dn-m-structure-tree-master-sources-destructure-code-destructure-code-a' class='heading'><a href="https://github.com/dn-m/Structure/tree/master/Sources/Destructure"><code>Destructure</code></a></h4>
+
+<p>Deconstruct <code>Sequence</code> types for functional-style recursive algorithms.</p>
+<h4 id='a-href-https-github-com-dn-m-structure-tree-master-sources-algebra-code-algebra-code-a' class='heading'><a href="https://github.com/dn-m/Structure/tree/master/Sources/Algebra"><code>Algebra</code></a></h4>
+
+<p>Protocols and structures for defining types like <code>Semigroup</code>, <code>Monoid</code>, and <code>Group</code>.</p>
+<h4 id='a-href-https-github-com-dn-m-structure-tree-master-sources-datastructures-code-datastructures-code-a' class='heading'><a href="https://github.com/dn-m/Structure/tree/master/Sources/DataStructures"><code>DataStructures</code></a></h4>
+
+<ul>
+<li>Linear data structures (<code>Stack</code>, <code>Queue</code>, <code>LinkedList</code>, <code>Matrix</code>, <code>SortedArray</code>, and more)</li>
+<li>Hash-based structures (<code>OrderedDictionary</code>, <code>SortedDictionary</code>)</li>
+<li>Tree structures (<code>Tree</code>, <code>BinarySearchTree</code>, <code>AVLTree</code>)</li>
+<li>Graph structures (<code>Graph</code>, <code>WeightedGraph</code>, <code>DirectedGraph</code>, <code>WeightedDirectedGraph</code>)</li>
+</ul>
+<h4 id='a-href-https-github-com-dn-m-structure-tree-master-sources-algorithms-code-algorithms-code-a' class='heading'><a href="https://github.com/dn-m/Structure/tree/master/Sources/Algorithms"><code>Algorithms</code></a></h4>
+
+<p>Algorithms for restructuring elements in <code>Sequence</code> and <code>Collection</code> types, like <code>subsets</code> and <code>combinations</code>.</p>
+<h2 id='getting-started' class='heading'>Getting Started</h2>
+<h3 id='requirements' class='heading'>Requirements</h3>
+
+<ul>
+<li>Swift 4.2 (default in Xcode 10)</li>
+<li><a href="https://swift.org/package-manager/">Swift Package Manager</a></li>
+</ul>
+<h3 id='installation' class='heading'>Installation</h3>
+
+<p>To include the <code>Structure</code> package in your own project, add it to the <code>dependencies</code> section of your <code>Package.swift</code> file:</p>
+<pre class="highlight plaintext"><code>let package = Package(
+    name: ...,
+    products: [ ... ],
+    dependencies: [
+        ...,
+        .package(url: "https://github.com/dn-m/Structure", from: "0.19.0")
+    ],
+    targets: [ ... ]
+)
 </code></pre>
-<h2 id='algebra' class='heading'>Algebra</h2>
 
-<p>Protocols for representing Algebraic structures (<code>Semigroup</code>, <code>Monoid</code>, etc.), and their operations.</p>
-<h2 id='datastructures' class='heading'>DataStructures</h2>
+<p>To use a given module in your own project, import the desired module:</p>
+<pre class="highlight plaintext"><code>import Algebra
+import Destructure
+import DataStructures
+import Algorithms
+</code></pre>
+<h3 id='development' class='heading'>Development</h3>
 
-<p>Data structures which are not included in the Standard Library.</p>
-<h2 id='algorithms' class='heading'>Algorithms</h2>
+<p>To contribute to the <code>Structure</code> package, clone the <code>git</code> repository:</p>
+<pre class="highlight plaintext"><code>git clone https://github.com/dn-m/Structure &amp;&amp; cd Structure
+</code></pre>
 
-<p>Algorithms over the Standard Library built-in data structures.</p>
+<p>Build the package:</p>
+<pre class="highlight plaintext"><code>swift build
+</code></pre>
+
+<p>Run the tests:</p>
+<pre class="highlight plaintext"><code>swift test
+</code></pre>
+
+<p>If you use the Xcode IDE, use Swift Package Manager to generate an <code>.xcodeproj</code> file:</p>
+<pre class="highlight plaintext"><code>swift package generate-xcodeproj
+</code></pre>
 
           </div>
         </section>
@@ -133,8 +180,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-10-29)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-11-04)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
