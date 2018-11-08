@@ -149,7 +149,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 190,
+      "line": 226,
       "symbol": "Pitch.Spelling.spellingDistance",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
