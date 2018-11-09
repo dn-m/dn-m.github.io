@@ -56,32 +56,43 @@ NotationModel
 <div class="section-content">
 <h1>NotationModel</h1>
 
-<p><img src="https://img.shields.io/badge/Swift-4.2-brightgreen.svg" alt="Swift Version">
+<p><img src="https://img.shields.io/badge/Swift-4.2-orange.svg" alt="Swift Version">
+<img src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey.svg" alt="Platforms">
 <a href="https://travis-ci.org/dn-m/NotationModel"><img src="https://travis-ci.org/dn-m/NotationModel.svg?branch=master" alt="Build Status"></a></p>
 
-<p>The <code>NotationModel</code> package contains several modules for the purposes of defining a model of musical notations. It extends types defined in the <a href="https://github.com/dn-m/Music"><code>dn-m/Music</code></a> module.</p>
+<p>The <code>NotationModel</code> package contains modules for the purposes of defining a model of musical notations.</p>
+
+<p>The types contained herein extend the structures defined in the <a href="https://github.com/dn-m/Music">dn-m/Music</a> package, providing a rich context for abstract musical information so that it can be represented within a variety of notational media. This package remains agnostic to the concrete rendering backend.</p>
+
+<p>For work on the graphical representation of music in Swift, see <a href="https://github.com/dn-m/NotationView">dn-m/NotationView</a>.</p>
 
 <h2>Modules</h2>
 
-<h3>PlotModel</h3>
+<h3><a href="https://github.com/dn-m/NotationModel/tree/master/Sources/SpelledPitch"><code>SpelledPitch</code></a></h3>
+
+<p>The <code>SpelledPitch</code> module exposes structures for describing abstract pitches (e.g., what you get if you press a key on a MIDI keyboard) with letter names and accidentals. This is done in a progressively-disclosed and type-safe manner: it is easy to describe common pitch scenarios, linearly more difficult to describe more-rare pitch scenarios, and it is impossible to describe logically-invalid pitch scenarios.</p>
+
+<p>The <a href="https://github.com/dn-m/NotationModel/blob/master/Sources/SpelledPitch/Pitch.Spelling.swift"><code>Pitch.Spelling</code></a> structure provides a model of the <a href="http://www.marcsabat.com/pdfs/notation.pdf">Helmholtz-Ellis</a> notation system. This notation system scales elegantly from the Western common practice <a href="https://en.wikipedia.org/wiki/Equal_temperament">twelve-note equal division of the octave</a> tuning system to that of high-limit <a href="https://en.wikipedia.org/wiki/Just_intonation">just intonation</a>. This system is represented in the <a href="http://www.smufl.org/version/1.2/range/extendedHelmholtzEllisAccidentalsJustIntonation/">SMuFL specification</a>, making a mapping of these structures into a rendering context as seamless as possible.</p>
+
+<h4>Pitch Speller</h4>
+
+<p>The <code>SpelledPitch</code> module contains work toward a flexible <a href="https://github.com/dn-m/NotationModel/tree/master/Sources/SpelledPitch/PitchSpeller/Wetherfield">pitch spelling algorithm</a>, formalized by @bwetherfield. This project aims to take unspelled pitch information (e.g., MIDI note numbers), and produce optimal spelled versions of them, given the musical context and user preference.</p>
+
+<h3><a href="https://github.com/dn-m/NotationModel/tree/master/Sources/SpelledRhythm"><code>SpelledRhythm</code></a></h3>
+
+<p>The <code>SpelledRhythm</code> module defines models of beams, ties, and dots.</p>
+
+<h3><a href="https://github.com/dn-m/NotationModel/tree/master/Sources/PlotModel"><code>PlotModel</code></a></h3>
 
 <p>Defines a model for positioning values onto two-dimensional plots.</p>
 
-<h3>StaffModel</h3>
+<h3><a href="https://github.com/dn-m/NotationModel/tree/master/Sources/StaffModel"><code>StaffModel</code></a></h3>
 
 <p>Extends the <code>PlotModel</code>, incorporating the concept of clefs, noteheads, accidentals, etc.</p>
 
-<h3>SpelledPitch</h3>
-
-<p>Defines pitches with names (<code>G Sharp</code>, <code>A Flat</code>, <code>B Double Sharp</code>, etc.) as well as named intervals (<code>Major Third</code>, <code>Perfect Fifth</code>, <code>Double Augmented Sixth</code>, etc.).</p>
-
-<h3>SpelledRhythm</h3>
-
-<p>Extends abstractly-represented rhythms with models of beams, ties, and dots.</p>
-
 <h2>Development</h2>
 
-<p>Work on this branch requires Swift 4.2.</p>
+<p>Work on this package requires Swift 4.2.</p>
 
 <h3>Build instructions</h3>
 
