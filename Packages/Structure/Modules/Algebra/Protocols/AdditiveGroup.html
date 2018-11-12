@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Set Extension Reference</title>
+    <title>AdditiveGroup Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/Set" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Protocol/AdditiveGroup" class="dashAnchor"></a>
 
-    <a title="Set Extension Reference"></a>
+    <a title="AdditiveGroup Protocol Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      Set Extension Reference
+      AdditiveGroup Protocol Reference
     </p>
 
     <div class="content-wrapper">
@@ -144,34 +144,28 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Set</h1>
+            <h1>AdditiveGroup</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Element</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AdditiveGroup</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Additive.html">Additive</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/Invertible.html">Invertible</a></span></code></pre>
 
                 </div>
               </div>
-            
+            <p>Undocumented</p>
+
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
             <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Additive"></a>
-                <a name="//apple_ref/swift/Section/Additive" class="dashAnchor"></a>
-                <a href="#/Additive">
-                  <h3 class="section-name">Additive</h3>
-                </a>
-              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:Sh7AlgebraE4zeroShyxGvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/zero" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Sh7AlgebraE4zeroShyxGvpZ">zero</a>
+                    <a name="/s:7Algebra13AdditiveGroupP1sopyxxFZ"></a>
+                    <a name="//apple_ref/swift/Method/-(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Algebra13AdditiveGroupP1sopyxxFZ">-(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -179,19 +173,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">zero</span><span class="p">:</span> <span class="kt">Set</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">prefix</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">-</span> <span class="p">(</span><span class="nv">element</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The empty set.</p>
                       </div>
                     </section>
                   </div>
@@ -199,9 +190,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:Sh7AlgebraE1poiyShyxGAC_ACtFZ"></a>
-                    <a name="//apple_ref/swift/Method/+(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Sh7AlgebraE1poiyShyxGAC_ACtFZ">+(_:_:)</a>
+                    <a name="/s:7Algebra13AdditiveGroupP1soiyxx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/-(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Algebra13AdditiveGroupP1soiyxx_xtFZ">-(_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -209,60 +200,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Set</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Set</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Set</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">-</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The union of the two given sets.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/MultiplicativeSemigroup"></a>
-                <a name="//apple_ref/swift/Section/MultiplicativeSemigroup" class="dashAnchor"></a>
-                <a href="#/MultiplicativeSemigroup">
-                  <h3 class="section-name">MultiplicativeSemigroup</h3>
-                </a>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:Sh7AlgebraE1moiyShyxGAC_ACtFZ"></a>
-                    <a name="//apple_ref/swift/Method/*(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Sh7AlgebraE1moiyShyxGAC_ACtFZ">*(_:_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">*</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Set</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Set</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Set</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The intersection of the two given sets.</p>
                       </div>
                     </section>
                   </div>
