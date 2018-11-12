@@ -234,7 +234,7 @@
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/UnweightedGraphSchemeProtocol.swift",
       "line": 15,
-      "symbol": "UnweightedGraphSchemeProtocol.contains(from:to:)",
+      "symbol": "UnweightedGraphSchemeProtocol.containsEdge(from:to:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
