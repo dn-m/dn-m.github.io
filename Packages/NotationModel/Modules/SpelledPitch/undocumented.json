@@ -155,13 +155,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/AdjacencyCarrying.swift",
-      "line": 10,
-      "symbol": "AdjacencyCarrying",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/DirectedGraphSchemeProtocol.swift",
       "line": 10,
       "symbol": "DirectedGraphSchemeProtocol",
@@ -236,13 +229,6 @@
       "line": 15,
       "symbol": "UnweightedGraphSchemeProtocol.containsEdge(from:to:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/WeightCarrying.swift",
-      "line": 10,
-      "symbol": "WeightCarrying",
-      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
