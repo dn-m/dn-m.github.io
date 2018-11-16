@@ -1264,13 +1264,79 @@ pairs.</p>
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures5BimapV1moiyACyxqd__GACyxq_G_ACyq_qd__GtSHRd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/*(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV1moiyACyxqd__GACyxq_G_ACyq_qd__GtSHRd__lFZ">*(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">*</span> <span class="o">&lt;</span><span class="kt">Other</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Bimap</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Bimap</span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">Other</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bimap</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Other</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Other</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>Bimap</code> between <code>lhs.Key</code> and <code>rhs.Value</code> by using the output of one as the input of
+the other.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures5BimapV7compose4withACyxqd__GACyq_qd__G_tSHRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/compose(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures5BimapV7compose4withACyxqd__GACyq_qd__G_tSHRd__lF">compose(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">compose</span><span class="o">&lt;</span><span class="kt">Other</span><span class="o">&gt;</span><span class="p">(</span><span class="n">with</span> <span class="nv">other</span><span class="p">:</span> <span class="kt">Bimap</span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">Other</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bimap</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Other</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Other</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>Bimap</code> between <code>Key</code> and <code>other.Value</code> by using the output of one <code>Bimap</code> as the
+input of the other.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-11-12)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-11-16)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
