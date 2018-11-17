@@ -267,6 +267,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/Wetherfield.swift",
+      "line": null,
+      "symbol": "FlowNode",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledChord.swift",
       "line": null,
       "symbol": "SpelledChord",
