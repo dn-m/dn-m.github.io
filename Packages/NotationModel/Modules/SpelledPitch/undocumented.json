@@ -44,112 +44,112 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 19,
-      "symbol": "Pitch.Spelling.Modifier.doubleFlat",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 20,
-      "symbol": "Pitch.Spelling.Modifier.threeQuarterFlat",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 21,
-      "symbol": "Pitch.Spelling.Modifier.flat",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 22,
-      "symbol": "Pitch.Spelling.Modifier.quarterFlat",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 23,
-      "symbol": "Pitch.Spelling.Modifier.natural",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 24,
-      "symbol": "Pitch.Spelling.Modifier.quarterSharp",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 25,
-      "symbol": "Pitch.Spelling.Modifier.sharp",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 26,
-      "symbol": "Pitch.Spelling.Modifier.threeQuarterSharp",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 27,
-      "symbol": "Pitch.Spelling.Modifier.doubleSharp",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 36,
-      "symbol": "Pitch.Spelling.Modifier.Pythagorean.doubleFlat",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 37,
-      "symbol": "Pitch.Spelling.Modifier.Pythagorean.flat",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 38,
-      "symbol": "Pitch.Spelling.Modifier.Pythagorean.natural",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 39,
-      "symbol": "Pitch.Spelling.Modifier.Pythagorean.sharp",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 40,
-      "symbol": "Pitch.Spelling.Modifier.Pythagorean.doubleSharp",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 143,
+      "line": 32,
       "symbol": "Pitch.Spelling.init(_:_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
-      "line": 226,
+      "line": 51,
+      "symbol": "Pitch.Spelling.Modifier.doubleFlat",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 52,
+      "symbol": "Pitch.Spelling.Modifier.threeQuarterFlat",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 53,
+      "symbol": "Pitch.Spelling.Modifier.flat",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 54,
+      "symbol": "Pitch.Spelling.Modifier.quarterFlat",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 55,
+      "symbol": "Pitch.Spelling.Modifier.natural",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 56,
+      "symbol": "Pitch.Spelling.Modifier.quarterSharp",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 57,
+      "symbol": "Pitch.Spelling.Modifier.sharp",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 58,
+      "symbol": "Pitch.Spelling.Modifier.threeQuarterSharp",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 59,
+      "symbol": "Pitch.Spelling.Modifier.doubleSharp",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 68,
+      "symbol": "Pitch.Spelling.Modifier.Pythagorean.doubleFlat",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 69,
+      "symbol": "Pitch.Spelling.Modifier.Pythagorean.flat",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 70,
+      "symbol": "Pitch.Spelling.Modifier.Pythagorean.natural",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 71,
+      "symbol": "Pitch.Spelling.Modifier.Pythagorean.sharp",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 72,
+      "symbol": "Pitch.Spelling.Modifier.Pythagorean.doubleSharp",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/Pitch.Spelling.swift",
+      "line": 252,
       "symbol": "Pitch.Spelling.spellingDistance",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -303,7 +303,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledPitch.swift",
-      "line": 77,
+      "line": 79,
       "symbol": "OrderedIntervalDescriptor.semitones",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
