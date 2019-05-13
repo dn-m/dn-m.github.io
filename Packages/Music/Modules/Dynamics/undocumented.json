@@ -2,43 +2,8 @@
   "warnings": [
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
-      "line": null,
+      "line": 9,
       "symbol": "Dynamic",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
-      "line": null,
-      "symbol": "Dynamic",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
-      "line": null,
-      "symbol": "Dynamic",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
-      "line": null,
-      "symbol": "Dynamic",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
-      "line": null,
-      "symbol": "Dynamic",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
-      "line": null,
-      "symbol": "Dynamic.Element",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
@@ -47,6 +12,13 @@
       "line": 12,
       "symbol": "Dynamic",
       "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
+      "line": 47,
+      "symbol": "Dynamic",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -387,6 +359,20 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
+      "line": 167,
+      "symbol": "Dynamic",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
+      "line": 182,
+      "symbol": "Dynamic",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
       "line": 188,
       "symbol": "Dynamic.Elements.single(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
@@ -418,6 +404,20 @@
       "line": 247,
       "symbol": "Dynamic.Element.Direction.f",
       "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
+      "line": 272,
+      "symbol": "Dynamic",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Dynamics/Dynamic.swift",
+      "line": 302,
+      "symbol": "Dynamic.Element",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     }
   ],

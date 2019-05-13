@@ -30,30 +30,30 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
-      "line": null,
-      "symbol": "Model.Builder",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
-      "line": null,
-      "symbol": "Model.Builder",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
-      "line": null,
-      "symbol": "Model.Builder",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
       "line": 18,
       "symbol": "Model.Builder",
       "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
+      "line": 150,
+      "symbol": "Model.Builder",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
+      "line": 175,
+      "symbol": "Model.Builder",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/Model.Builder.swift",
+      "line": 201,
+      "symbol": "Model.Builder",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -128,13 +128,6 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/PerformerInstrument.swift",
-      "line": null,
-      "symbol": "PerformerInstrument",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/PerformerInstrument.swift",
       "line": 9,
       "symbol": "PerformerInstrument",
       "symbol_kind": "source.lang.swift.decl.struct",
@@ -145,6 +138,13 @@
       "line": 18,
       "symbol": "PerformerInstrument.init(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/MusicModel/PerformanceContext/PerformerInstrument.swift",
+      "line": 24,
+      "symbol": "PerformerInstrument",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {

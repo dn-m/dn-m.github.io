@@ -9,44 +9,23 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
-      "line": null,
-      "symbol": "Rhythm",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
-      "line": null,
-      "symbol": "Rhythm",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
-      "line": null,
-      "symbol": "Rhythm",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
-      "line": null,
-      "symbol": "Rhythm",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
-      "line": null,
-      "symbol": "Rhythm",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
       "line": 60,
       "symbol": "Rhythm",
       "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
+      "line": 69,
+      "symbol": "Rhythm",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
+      "line": 82,
+      "symbol": "Rhythm",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -61,6 +40,27 @@
       "line": 89,
       "symbol": "Rhythm.Leaf.context",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
+      "line": 93,
+      "symbol": "Rhythm",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
+      "line": 119,
+      "symbol": "Rhythm",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Duration/Rhythm/Rhythm.swift",
+      "line": 187,
+      "symbol": "Rhythm",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
