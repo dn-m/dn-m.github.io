@@ -65,16 +65,16 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledRhythm/Rhythm.Spelling.swift",
-      "line": null,
+      "line": 14,
       "symbol": "Rhythm.Spelling",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledRhythm/Rhythm.Spelling.swift",
-      "line": 14,
+      "line": 108,
       "symbol": "Rhythm.Spelling",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {

@@ -268,29 +268,8 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/PitchSpeller/Wetherfield/Wetherfield.swift",
-      "line": null,
+      "line": 350,
       "symbol": "FlowNode",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledChord.swift",
-      "line": null,
-      "symbol": "SpelledChord",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledChord.swift",
-      "line": null,
-      "symbol": "SpelledChord",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledChord.swift",
-      "line": null,
-      "symbol": "SpelledChord",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
@@ -299,6 +278,27 @@
       "line": 11,
       "symbol": "SpelledChord",
       "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledChord.swift",
+      "line": 19,
+      "symbol": "SpelledChord",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledChord.swift",
+      "line": 34,
+      "symbol": "SpelledChord",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/SpelledPitch/SpelledChord.swift",
+      "line": 44,
+      "symbol": "SpelledChord",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {

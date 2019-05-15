@@ -205,13 +205,6 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffRepresentablePitch.swift",
-      "line": null,
-      "symbol": "StaffRepresentablePitch",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffRepresentablePitch.swift",
       "line": 12,
       "symbol": "StaffRepresentablePitch",
       "symbol_kind": "source.lang.swift.decl.struct",
@@ -236,6 +229,13 @@
       "line": 16,
       "symbol": "StaffRepresentablePitch.accidental",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationModel/Sources/StaffModel/StaffRepresentablePitch.swift",
+      "line": 29,
+      "symbol": "StaffRepresentablePitch",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {

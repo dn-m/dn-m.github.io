@@ -37,16 +37,16 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPlotModel.swift",
-      "line": null,
+      "line": 9,
       "symbol": "DefaultVerticalPlotModel",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationModel/Sources/PlotModel/DefaultVerticalPlotModel.swift",
-      "line": 9,
+      "line": 11,
       "symbol": "DefaultVerticalPlotModel",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
