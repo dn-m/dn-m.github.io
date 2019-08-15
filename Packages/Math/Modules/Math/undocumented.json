@@ -2,14 +2,14 @@
   "warnings": [
     {
       "file": "/Users/travis/build/dn-m/Math/Sources/Math/DoubleExtensions.swift",
-      "line": 22,
+      "line": 25,
       "symbol": "Double.scale(from:toExponential:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Math/Sources/Math/DoubleExtensions.swift",
-      "line": 38,
+      "line": 41,
       "symbol": "Double.scaled(from:toExponential:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
