@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>RangeReplaceableCollection Extension Reference</title>
+    <title>AdjacencyList Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/RangeReplaceableCollection" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/AdjacencyList" class="dashAnchor"></a>
 
-    <a title="RangeReplaceableCollection Extension Reference"></a>
+    <a title="AdjacencyList Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      RangeReplaceableCollection Extension Reference
+      AdjacencyList Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -559,27 +559,35 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>RangeReplaceableCollection</h1>
+            <h1>AdjacencyList</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">RangeReplaceableCollection</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AdjacencyList</span><span class="o">&lt;</span><span class="kt">Node</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Node</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
 
                 </div>
               </div>
-            
+            <p>Undocumented</p>
+
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:Sm14DataStructuresE14replaceElement2at4with0D0Qz5IndexQz_AFtF"></a>
-                    <a name="//apple_ref/swift/Method/replaceElement(at:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Sm14DataStructuresE14replaceElement2at4with0D0Qz5IndexQz_AFtF">replaceElement(at:with:)</a>
+                    <a name="/s:14DataStructures13AdjacencyListV11adjacenciesSDyxShyxGGvp"></a>
+                    <a name="//apple_ref/swift/Property/adjacencies" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures13AdjacencyListV11adjacenciesSDyxShyxGGvp">adjacencies</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -587,103 +595,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Replace element at given <code>index</code> with the given <code>element</code>.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">replaceElement</span><span class="p">(</span><span class="n">at</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Index</span><span class="p">,</span> <span class="n">with</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Element</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">adjacencies</span><span class="p">:</span> <span class="p">[</span><span class="kt">Node</span> <span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Node</span><span class="o">&gt;</span><span class="p">]</span></code></pre>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:Sm14DataStructuresE16replacingElement2at4withx5IndexQz_0D0QztF"></a>
-                    <a name="//apple_ref/swift/Method/replacingElement(at:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Sm14DataStructuresE16replacingElement2at4withx5IndexQz_0D0QztF">replacingElement(at:with:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Immutable version of <code><a href="../Extensions/RangeReplaceableCollection.html#/s:Sm14DataStructuresE14replaceElement2at4with0D0Qz5IndexQz_AFtF">replaceElement(at:with:)</a></code></p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">replacingElement</span><span class="p">(</span><span class="n">at</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Index</span><span class="p">,</span> <span class="n">with</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:Sm14DataStructuresE12replaceFirst4with7ElementQzAE_tF"></a>
-                    <a name="//apple_ref/swift/Method/replaceFirst(with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Sm14DataStructuresE12replaceFirst4with7ElementQzAE_tF">replaceFirst(with:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Replace first element in Array with a new element.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">replaceFirst</span><span class="p">(</span><span class="n">with</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Element</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:Sm14DataStructuresE9inserting_2atx7ElementQz_5IndexQztF"></a>
-                    <a name="//apple_ref/swift/Method/inserting(_:at:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Sm14DataStructuresE9inserting_2atx7ElementQz_5IndexQztF">inserting(_:at:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">inserting</span><span class="p">(</span><span class="n">_</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Element</span><span class="p">,</span> <span class="n">at</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Index</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A new <code>Array</code> with the given <code>element</code> inserted at the given <code>index</code>, if
-possible.</p>
                       </div>
                     </section>
                   </div>
@@ -691,13 +612,20 @@ possible.</p>
               </ul>
             </div>
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:Sm14DataStructuresSKRzrlE11replaceLast4with7ElementSTQzAE_tF"></a>
-                    <a name="//apple_ref/swift/Method/replaceLast(with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Sm14DataStructuresSKRzrlE11replaceLast4with7ElementSTQzAE_tF">replaceLast(with:)</a>
+                    <a name="/s:14DataStructures13AdjacencyListVyACyxGSDyxShyxGGcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures13AdjacencyListVyACyxGSDyxShyxGGcfc">init(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -705,15 +633,106 @@ possible.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Replace the last element in <code>Self</code> with the given <code>element</code>.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">replaceLast</span><span class="p">(</span><span class="n">with</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Element</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">adjacencies</span><span class="p">:</span> <span class="p">[</span><span class="kt">Node</span> <span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Node</span><span class="o">&gt;</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures13AdjacencyListV4safeACyxGSDyxShyxGG_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(safe:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures13AdjacencyListV4safeACyxGSDyxShyxGG_tcfc">init(safe:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">safe</span> <span class="nv">adjacencies</span><span class="p">:</span> <span class="p">[</span><span class="kt">Node</span> <span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Node</span><span class="o">&gt;</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Instance Methods" class="dashAnchor"></a>
+                <a href="#/Instance%20Methods">
+                  <h3 class="section-name">Instance Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures13AdjacencyListV6DAGifyACyShyxGGyF"></a>
+                    <a name="//apple_ref/swift/Method/DAGify()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures13AdjacencyListV6DAGifyACyShyxGGyF">DAGify()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">DAGify</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">AdjacencyList</span><span class="o">&lt;</span><span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Node</span><span class="o">&gt;&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures13AdjacencyListV13containsCycleSbyF"></a>
+                    <a name="//apple_ref/swift/Method/containsCycle()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures13AdjacencyListV13containsCycleSbyF">containsCycle()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">containsCycle</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>

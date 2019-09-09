@@ -1,31 +1,52 @@
 {
   "warnings": [
     {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
-      "line": null,
-      "symbol": "BinarySearchTree",
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/AdjacencyList.swift",
+      "line": 9,
+      "symbol": "AdjacencyList",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/AdjacencyList.swift",
+      "line": 14,
+      "symbol": "AdjacencyList.adjacencies",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/AdjacencyList.swift",
+      "line": 18,
+      "symbol": "AdjacencyList.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/AdjacencyList.swift",
+      "line": 24,
+      "symbol": "AdjacencyList.init(safe:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/AdjacencyList.swift",
+      "line": 35,
+      "symbol": "AdjacencyList",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
-      "line": null,
-      "symbol": "BinarySearchTree",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/AdjacencyList.swift",
+      "line": 120,
+      "symbol": "AdjacencyList.DAGify()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
-      "line": null,
-      "symbol": "BinarySearchTree",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
-      "line": null,
-      "symbol": "BinarySearchTree",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/AdjacencyList.swift",
+      "line": 125,
+      "symbol": "AdjacencyList.containsCycle()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -58,21 +79,56 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
+      "line": 17,
+      "symbol": "BinarySearchTree",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
       "line": 19,
       "symbol": "BinarySearchTree.init(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
+      "line": 26,
+      "symbol": "BinarySearchTree",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
+      "line": 100,
+      "symbol": "BinarySearchTree",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/BinarySearchTree.swift",
+      "line": 149,
+      "symbol": "BinarySearchTree",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/ContiguousSegmentCollection/ContiguousSegmentCollection.swift",
-      "line": 203,
+      "line": 148,
+      "symbol": "ContiguousSegmentCollection.Fragment.Item",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/ContiguousSegmentCollection/ContiguousSegmentCollection.swift",
+      "line": 206,
       "symbol": "ContiguousSegmentCollection.Fragment.init(head:body:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/ContiguousSegmentCollection/ContiguousSegmentCollection.swift",
-      "line": 210,
+      "line": 213,
       "symbol": "ContiguousSegmentCollection.Fragment.init(body:tail:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -85,73 +141,10 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": null,
-      "symbol": "NewType",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": null,
-      "symbol": "NewType",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": null,
-      "symbol": "NewType",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": null,
-      "symbol": "NewType",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": null,
-      "symbol": "NewType",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": null,
-      "symbol": "NewType",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": null,
-      "symbol": "NewType",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": null,
-      "symbol": "NewType",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": null,
-      "symbol": "NewType",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": null,
-      "symbol": "NewType",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Graph/Protocols/GraphProtocol.swift",
+      "line": 103,
+      "symbol": "GraphProtocol.breadthFirstSearch(from:to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -184,9 +177,23 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 14,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
       "line": 15,
       "symbol": "NewType.init(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 20,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -198,14 +205,28 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 27,
-      "symbol": "NewType.hashValue",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "line": 26,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 28,
+      "symbol": "NewType.hash(into:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
       "line": 33,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 34,
       "symbol": "NewType.<(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
@@ -213,6 +234,13 @@
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
       "line": 39,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 40,
       "symbol": "NewType.init(integerLiteral:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -220,92 +248,92 @@
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
       "line": 45,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 46,
       "symbol": "NewType.init(floatLiteral:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 55,
+      "line": 51,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 56,
       "symbol": "NewType.init(arrayLiteral:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 62,
+      "line": 61,
+      "symbol": "NewType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
+      "line": 63,
       "symbol": "NewType.magnitude",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 66,
+      "line": 67,
       "symbol": "NewType.+(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 70,
+      "line": 71,
       "symbol": "NewType.+=(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 74,
+      "line": 75,
       "symbol": "NewType.-(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 78,
+      "line": 79,
       "symbol": "NewType.-=(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 82,
+      "line": 83,
       "symbol": "NewType.*(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 86,
+      "line": 87,
       "symbol": "NewType.*=(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 90,
+      "line": 91,
       "symbol": "NewType.init(exactly:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 99,
-      "symbol": "NewType.makeIterator()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 106,
-      "symbol": "NewType.Iterator",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/NewType.swift",
-      "line": 123,
-      "symbol": "NewType.indices",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -471,20 +499,6 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": null,
-      "symbol": "DoubleWrapping",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": null,
-      "symbol": "DoubleWrapping",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
       "line": 11,
       "symbol": "DoubleWrapping",
       "symbol_kind": "source.lang.swift.decl.protocol",
@@ -520,6 +534,13 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 23,
+      "symbol": "DoubleWrapping",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
       "line": 25,
       "symbol": "DoubleWrapping.init(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
@@ -527,170 +548,163 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 38,
-      "symbol": "==(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 42,
-      "symbol": "==(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 46,
-      "symbol": "==(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 50,
-      "symbol": "<(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 54,
-      "symbol": "<(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 58,
-      "symbol": "<(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 63,
-      "symbol": "+(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 67,
-      "symbol": "+(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 71,
-      "symbol": "+(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 75,
-      "symbol": "+(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 79,
-      "symbol": "-(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 83,
-      "symbol": "-(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 87,
-      "symbol": "-(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 91,
-      "symbol": "-(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 95,
-      "symbol": "*(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 99,
-      "symbol": "*(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 103,
-      "symbol": "*(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 107,
-      "symbol": "*(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 111,
-      "symbol": "/(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 115,
-      "symbol": "/(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 119,
-      "symbol": "/(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
-      "line": 123,
-      "symbol": "/(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": null,
-      "symbol": "FloatWrapping",
+      "line": 30,
+      "symbol": "DoubleWrapping",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": null,
-      "symbol": "FloatWrapping",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 40,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 44,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 48,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 52,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 56,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 60,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 65,
+      "symbol": "+(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 69,
+      "symbol": "+(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 73,
+      "symbol": "+(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 77,
+      "symbol": "+(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 81,
+      "symbol": "-(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 85,
+      "symbol": "-(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 89,
+      "symbol": "-(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 93,
+      "symbol": "-(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 97,
+      "symbol": "*(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 101,
+      "symbol": "*(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 105,
+      "symbol": "*(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 109,
+      "symbol": "*(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 113,
+      "symbol": "/(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 117,
+      "symbol": "/(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 121,
+      "symbol": "/(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/DoubleWrapping.swift",
+      "line": 125,
+      "symbol": "/(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
@@ -730,6 +744,13 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
+      "line": 23,
+      "symbol": "FloatWrapping",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
       "line": 25,
       "symbol": "FloatWrapping.init(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
@@ -737,177 +758,163 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 39,
+      "line": 31,
+      "symbol": "FloatWrapping",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
+      "line": 41,
       "symbol": "==(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 43,
+      "line": 45,
       "symbol": "==(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 47,
+      "line": 49,
       "symbol": "==(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 51,
+      "line": 53,
       "symbol": "<(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 55,
+      "line": 57,
       "symbol": "<(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 59,
+      "line": 61,
       "symbol": "<(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 64,
+      "line": 66,
       "symbol": "+(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 68,
+      "line": 70,
       "symbol": "+(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 72,
+      "line": 74,
       "symbol": "+(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 76,
+      "line": 78,
       "symbol": "+(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 80,
+      "line": 82,
       "symbol": "-(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 84,
+      "line": 86,
       "symbol": "-(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 88,
+      "line": 90,
       "symbol": "-(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 92,
+      "line": 94,
       "symbol": "-(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 96,
+      "line": 98,
       "symbol": "*(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 100,
+      "line": 102,
       "symbol": "*(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 104,
+      "line": 106,
       "symbol": "*(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 108,
+      "line": 110,
       "symbol": "*(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 112,
+      "line": 114,
       "symbol": "/(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 116,
+      "line": 118,
       "symbol": "/(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 120,
+      "line": 122,
       "symbol": "/(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/FloatWrapping.swift",
-      "line": 124,
+      "line": 126,
       "symbol": "/(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/IntegerWrapping.swift",
-      "line": null,
-      "symbol": "IntegerWrapping",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/IntegerWrapping.swift",
-      "line": null,
-      "symbol": "IntegerWrapping",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/IntegerWrapping.swift",
-      "line": null,
-      "symbol": "IntegerWrapping",
-      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -929,6 +936,27 @@
       "line": 13,
       "symbol": "IntegerWrapping.init(integerLiteral:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/IntegerWrapping.swift",
+      "line": 16,
+      "symbol": "IntegerWrapping",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/IntegerWrapping.swift",
+      "line": 25,
+      "symbol": "IntegerWrapping",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/IntegerWrapping.swift",
+      "line": 34,
+      "symbol": "IntegerWrapping",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -1073,13 +1101,6 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/SortedCollectionWrapping.swift",
-      "line": null,
-      "symbol": "SortedCollectionWrapping",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/SortedCollectionWrapping.swift",
       "line": 9,
       "symbol": "SortedCollectionWrapping",
       "symbol_kind": "source.lang.swift.decl.protocol",
@@ -1097,6 +1118,13 @@
       "line": 11,
       "symbol": "SortedCollectionWrapping.base",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/Wrapping/SortedCollectionWrapping.swift",
+      "line": 14,
+      "symbol": "SortedCollectionWrapping",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {

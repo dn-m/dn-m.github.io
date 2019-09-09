@@ -545,6 +545,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AdjacencyList.html">AdjacencyList</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -554,7 +562,7 @@
             <h1>SequenceWrapping</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SequenceWrapping</span> <span class="p">:</span> <span class="kt">ExpressibleByArrayLiteral</span><span class="p">,</span> <span class="kt">Sequence</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SequenceWrapping</span> <span class="p">:</span> <span class="kt">Sequence</span></code></pre>
 
                 </div>
               </div>
@@ -573,17 +581,50 @@ implementation of a <code>Sequence</code>-conforming <code>struct</code>, which 
 
 <p>In the <code>init</code> method of the conforming <code>struct</code>, set the value of this private <code>var</code> with
 the given <code>sequence</code>.</p>
-<div class="aside aside-todo">
-    <p class="aside-title">Todo</p>
-    Consider removing <code>ExpressibleByArrayLiteral</code> and <code>init</code> requirements.
-
-</div>
 
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Associated%20Types"></a>
+                <a name="//apple_ref/swift/Section/Associated Types" class="dashAnchor"></a>
+                <a href="#/Associated%20Types">
+                  <h3 class="section-name">Associated Types</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures16SequenceWrappingP4BaseQa"></a>
+                    <a name="//apple_ref/swift/Alias/Base" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures16SequenceWrappingP4BaseQa">Base</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Wrapped <code>Collection</code>-conforming type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">associatedtype</span> <span class="kt">Base</span> <span class="p">:</span> <span class="kt">Sequence</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Instance%20Properties"></a>
@@ -596,9 +637,9 @@ the given <code>sequence</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures16SequenceWrappingP8sequences03AnyC0Vy7ElementQzGvp"></a>
-                    <a name="//apple_ref/swift/Property/sequence" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures16SequenceWrappingP8sequences03AnyC0Vy7ElementQzGvp">sequence</a>
+                    <a name="/s:14DataStructures16SequenceWrappingP4base4BaseQzvp"></a>
+                    <a name="//apple_ref/swift/Property/base" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures16SequenceWrappingP4base4BaseQzvp">base</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -606,52 +647,14 @@ the given <code>sequence</code>.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>AnySequence</code> wrapper that provides shade for the domain specific implementation.</p>
+                        <p>Wrapped <code>Collection</code>-conforming type.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sequence</span><span class="p">:</span> <span class="kt">AnySequence</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Initializers"></a>
-                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
-                <a href="#/Initializers">
-                  <h3 class="section-name">Initializers</h3>
-                </a>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures16SequenceWrappingPyxqd__cSTRd__7ElementQyd__ADRtzlufc"></a>
-                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures16SequenceWrappingPyxqd__cSTRd__7ElementQyd__ADRtzlufc">init(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Create an <code>SequenceWrapping</code> with a <code>Sequence</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">sequence</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="k">where</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Element</span> <span class="o">==</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">base</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SequenceWrapping.html#/s:14DataStructures16SequenceWrappingP4BaseQa">Base</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -672,9 +675,9 @@ the given <code>sequence</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14DataStructures16SequenceWrappingPAAE12makeIterators03AnyF0Vy7ElementQzGyF"></a>
+                    <a name="/s:14DataStructures16SequenceWrappingPAAE12makeIterator4Base_0F0QZyF"></a>
                     <a name="//apple_ref/swift/Method/makeIterator()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures16SequenceWrappingPAAE12makeIterators03AnyF0Vy7ElementQzGyF">makeIterator()</a>
+                    <a class="token" href="#/s:14DataStructures16SequenceWrappingPAAE12makeIterator4Base_0F0QZyF">makeIterator()</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -691,7 +694,7 @@ the given <code>sequence</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeIterator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">AnyIterator</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeIterator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/SequenceWrapping.html#/s:14DataStructures16SequenceWrappingP4BaseQa">Base</a></span><span class="o">.</span><span class="kt">Iterator</span></code></pre>
 
                         </div>
                       </div>
@@ -706,8 +709,8 @@ the given <code>sequence</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-11-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-09-09)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.10.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
