@@ -239,13 +239,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Rectangle.swift",
-      "line": 215,
-      "symbol": "Rectangle.+(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Rotation.swift",
       "line": 9,
       "symbol": "Rotation",
@@ -264,13 +257,6 @@
       "line": 11,
       "symbol": "Rotation.counterClockwise",
       "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Size.swift",
-      "line": 48,
-      "symbol": "Size.zero",
-      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {

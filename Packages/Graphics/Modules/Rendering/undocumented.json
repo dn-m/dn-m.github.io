@@ -1332,21 +1332,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
-      "line": null,
-      "symbol": "StyledPath",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
-      "line": null,
-      "symbol": "StyledPath",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
-      "line": null,
+      "line": 12,
       "symbol": "StyledPath",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
@@ -1388,6 +1374,13 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
+      "line": 30,
+      "symbol": "StyledPath",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
       "line": 32,
       "symbol": "StyledPath.resizedToFitContents",
       "symbol_kind": "source.lang.swift.decl.var.instance",
@@ -1405,6 +1398,13 @@
       "line": 54,
       "symbol": "StyledPath.scaled(by:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Rendering/StyledPath.swift",
+      "line": 73,
+      "symbol": "StyledPath",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {

@@ -8,13 +8,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/SVG/Polygon+SVG.swift",
-      "line": 33,
-      "symbol": "Polygon.path",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/SVG/Rectangle+SVG.swift",
       "line": 34,
       "symbol": "Rectangle.SVGError.illFormed(_:)",
@@ -44,7 +37,7 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/SVG/SVG.swift",
-      "line": null,
+      "line": 11,
       "symbol": "SVG",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"

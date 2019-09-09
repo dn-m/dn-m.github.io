@@ -29,27 +29,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path+Circle.swift",
-      "line": 19,
-      "symbol": "Circle.path",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path+Ellipse.swift",
-      "line": 19,
-      "symbol": "Ellipse.path",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path+Line.Segment.swift",
-      "line": 13,
-      "symbol": "Line.Segment.path",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path+Line.Segment.swift",
       "line": 20,
       "symbol": "Path.line(from:to:)",
@@ -61,20 +40,6 @@
       "line": 21,
       "symbol": "Path.init(vertices:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path+Polyline.swift",
-      "line": 12,
-      "symbol": "Polyline.path",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path+Rectangle.swift",
-      "line": 34,
-      "symbol": "Rectangle.path",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -135,98 +100,42 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
+      "line": 11,
       "symbol": "Path",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
+      "line": 11,
       "symbol": "Path",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
+      "line": 11,
       "symbol": "Path",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
+      "line": 11,
       "symbol": "Path",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
+      "line": 11,
       "symbol": "Path",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
-      "symbol": "Path",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
-      "symbol": "Path",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
-      "symbol": "Path",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
-      "symbol": "Path",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
-      "symbol": "Path",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
-      "symbol": "Path",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
-      "symbol": "Path",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
-      "symbol": "Path",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": null,
+      "line": 11,
       "symbol": "Path",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
@@ -247,6 +156,20 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
+      "line": 18,
+      "symbol": "Path",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
+      "line": 19,
+      "symbol": "Path",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
       "line": 36,
       "symbol": "Path.curves",
       "symbol_kind": "source.lang.swift.decl.var.instance",
@@ -254,9 +177,44 @@
     },
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
-      "line": 98,
-      "symbol": "Path.base",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "line": 45,
+      "symbol": "Path",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
+      "line": 67,
+      "symbol": "Path",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
+      "line": 72,
+      "symbol": "Path",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
+      "line": 96,
+      "symbol": "Path",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
+      "line": 103,
+      "symbol": "Path",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Path/Path.swift",
+      "line": 116,
+      "symbol": "Path",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     }
   ],
