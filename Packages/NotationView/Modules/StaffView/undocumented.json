@@ -2,20 +2,6 @@
   "warnings": [
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
-      "line": null,
-      "symbol": "AccidentalView",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
-      "line": null,
-      "symbol": "AccidentalView",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
       "line": 16,
       "symbol": "AccidentalView",
       "symbol_kind": "source.lang.swift.decl.class",
@@ -65,9 +51,23 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
+      "line": 108,
+      "symbol": "AccidentalView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
       "line": 110,
       "symbol": "AccidentalView.makeAccidental(_:at:size:color:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/AccidentalView.swift",
+      "line": 129,
+      "symbol": "AccidentalView",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -117,27 +117,6 @@
       "line": 21,
       "symbol": "BassClef.ornament",
       "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
-      "line": null,
-      "symbol": "ClefView",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
-      "line": null,
-      "symbol": "ClefView",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
-      "line": null,
-      "symbol": "StaffClefView",
-      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -212,6 +191,13 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 36,
+      "symbol": "ClefView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
       "line": 38,
       "symbol": "ClefView.clefHeight",
       "symbol_kind": "source.lang.swift.decl.var.instance",
@@ -236,6 +222,13 @@
       "line": 50,
       "symbol": "ClefView.height",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 55,
+      "symbol": "ClefView",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -306,6 +299,13 @@
       "line": 110,
       "symbol": "StaffClefView.init(position:configuration:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/StaffView/ClefView.swift",
+      "line": 116,
+      "symbol": "StaffClefView",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {

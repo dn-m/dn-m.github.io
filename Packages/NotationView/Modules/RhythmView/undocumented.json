@@ -30,16 +30,16 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/BeamsView.swift",
-      "line": null,
+      "line": 14,
       "symbol": "BeamsView",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/RhythmView/BeamsView.swift",
-      "line": 14,
+      "line": 15,
       "symbol": "BeamsView",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {

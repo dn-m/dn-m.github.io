@@ -37,13 +37,6 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
-      "line": null,
-      "symbol": "DefaultVerticalAxisView",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
       "line": 13,
       "symbol": "DefaultVerticalAxisConfiguration",
       "symbol_kind": "source.lang.swift.decl.struct",
@@ -117,6 +110,13 @@
       "line": 45,
       "symbol": "DefaultVerticalAxisView.init(position:configuration:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalAxisView.swift",
+      "line": 51,
+      "symbol": "DefaultVerticalAxisView",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -226,30 +226,16 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
-      "line": null,
-      "symbol": "DefaultVerticalPlotView",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
-      "line": null,
-      "symbol": "DefaultVerticalPlotView",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
-      "line": null,
-      "symbol": "DefaultVerticalPointView",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "line": 14,
+      "symbol": "DefaultPlotConfiguration",
+      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
       "line": 14,
-      "symbol": "DefaultPlotConfiguration",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol": "DefaultVerticalPlotView",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -306,6 +292,13 @@
       "line": 42,
       "symbol": "DefaultVerticalPointView",
       "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 47,
+      "symbol": "DefaultVerticalPointView",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -369,6 +362,13 @@
       "line": 83,
       "symbol": "DefaultVerticalPlotView.concreteVerticalPosition(for:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/DefaultVerticalPlotView.swift",
+      "line": 88,
+      "symbol": "DefaultVerticalPlotView",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -457,13 +457,6 @@
     },
     {
       "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/PlotViewCollection.swift",
-      "line": null,
-      "symbol": "PlotViewCollection",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/PlotViewCollection.swift",
       "line": 12,
       "symbol": "PlotViewCollection",
       "symbol_kind": "source.lang.swift.decl.struct",
@@ -474,6 +467,13 @@
       "line": 16,
       "symbol": "PlotViewCollection.init(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/NotationView/Sources/PlotView/PlotViewCollection.swift",
+      "line": 21,
+      "symbol": "PlotViewCollection",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
