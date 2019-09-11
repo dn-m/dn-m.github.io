@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UnorderedDiatonicInterval Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/UnorderedDiatonicInterval" class="dashAnchor"></a>
+
+    <a title="UnorderedDiatonicInterval Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (97% documented)
+      </p>
+    
+    
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2F%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      UnorderedDiatonicInterval Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Basic Types.html">Basic Types</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NoteNumber.html">NoteNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Frequency.html">Frequency</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Pitch.html">Pitch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Pitch/Class.html">– Class</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Scale.html">Scale</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Scale/IntervalPattern.html">– IntervalPattern</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Chord.html">Chord</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Chord/IntervalPattern.html">– IntervalPattern</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Collections.html">Collections</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Dyad.html">Dyad</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Collection.html">Collection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Intervals.html">Intervals</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/OrderedInterval.html">OrderedInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UnorderedInterval.html">UnorderedInterval</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Interval Description.html">Interval Description</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ChordDescriptor.html">ChordDescriptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Tuning Systems.html">Tuning Systems</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Tuning Systems.html#/s:5Pitch12TuningSystemP">TuningSystem</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DiatonicIntervalQuality.html">DiatonicIntervalQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DiatonicIntervalQuality/Perfect.html">– Perfect</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DiatonicIntervalQuality/Imperfect.html">– Imperfect</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DiatonicIntervalQuality/Extended.html">– Extended</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/DiatonicIntervalNumber.html">DiatonicIntervalNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/DiatonicIntervalProtocol.html">DiatonicIntervalProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NoteNumberRepresentable.html">NoteNumberRepresentable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CompoundDiatonicInterval.html">CompoundDiatonicInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DiatonicInterval.html">DiatonicInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DiatonicInterval/Number.html">– Number</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DiatonicInterval/Direction.html">– Direction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UnorderedDiatonicInterval.html">UnorderedDiatonicInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UnorderedDiatonicInterval/Number.html">– Number</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>UnorderedDiatonicInterval</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UnorderedDiatonicInterval</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/DiatonicIntervalProtocol.html">DiatonicIntervalProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Descriptor for unordered intervals between two <code><a href="../Structs/Pitch/Class.html">Pitch.Class</a></code> values.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV7qualityAA0cD7QualityOvp"></a>
+                    <a name="//apple_ref/swift/Property/quality" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV7qualityAA0cD7QualityOvp">quality</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Quality of an <code>UnorderedIntervalDescriptor</code>.</p>
+
+<ul>
+<li><code>diminished</code></li>
+<li><code>minor</code></li>
+<li><code>perfect</code></li>
+<li><code>major</code></li>
+<li><code>augmented</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt">Quality</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV7ordinalAC6NumberOvp"></a>
+                    <a name="//apple_ref/swift/Property/ordinal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV7ordinalAC6NumberOvp">ordinal</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ordinal of an <code>UnorderedIntervalDescriptor</code>.</p>
+
+<ul>
+<li><code><a href="../Structs/UnorderedDiatonicInterval.html#/s:5Pitch25UnorderedDiatonicIntervalV6unisonACvpZ">unison</a></code></li>
+<li><code>second</code></li>
+<li><code>third</code></li>
+<li><code>fourth</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/UnorderedDiatonicInterval/Number.html">Number</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Computed%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Computed Properties" class="dashAnchor"></a>
+                <a href="#/Computed%20Properties">
+                  <h3 class="section-name">Computed Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV9semitonesSdvp"></a>
+                    <a name="//apple_ref/swift/Property/semitones" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV9semitonesSdvp">semitones</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">semitones</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The amount of semitones in this <code>UnorderedIntervalDescriptor</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV5stepsSivp"></a>
+                    <a name="//apple_ref/swift/Property/steps" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV5stepsSivp">steps</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">steps</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The amount of letter name steps in this <code>UnorderedIntervalDescriptor</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Nested%20Types"></a>
+                <a name="//apple_ref/swift/Section/Nested Types" class="dashAnchor"></a>
+                <a href="#/Nested%20Types">
+                  <h3 class="section-name">Nested Types</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV6NumberO"></a>
+                    <a name="//apple_ref/swift/Enum/Number" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV6NumberO">Number</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The number of a <code><a href="../Structs/UnorderedDiatonicInterval.html">UnorderedDiatonicInterval</a></code>.</p>
+
+                        <a href="../Structs/UnorderedDiatonicInterval/Number.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Number</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/DiatonicIntervalNumber.html">DiatonicIntervalNumber</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Type%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Type Properties" class="dashAnchor"></a>
+                <a href="#/Type%20Properties">
+                  <h3 class="section-name">Type Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV2d1ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d1" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV2d1ACvpZ">d1</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished unison.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d1</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV6unisonACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/unison" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV6unisonACvpZ">unison</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unison.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">unison</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV2d2ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d2" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV2d2ACvpZ">d2</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished second.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d2</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV2A1ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A1" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV2A1ACvpZ">A1</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented unison.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A1</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV2m2ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/m2" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV2m2ACvpZ">m2</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Minor second.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">m2</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV2M2ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/M2" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV2M2ACvpZ">M2</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Major second.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">M2</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV2d3ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d3" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV2d3ACvpZ">d3</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished third.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d3</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV2A2ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A2" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV2A2ACvpZ">A2</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented second.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A2</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV2m3ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/m3" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV2m3ACvpZ">m3</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Minor third.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">m3</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV2M3ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/M3" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV2M3ACvpZ">M3</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Major third.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">M3</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV2d4ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d4" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV2d4ACvpZ">d4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished fourth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d4</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV2A3ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A3" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV2A3ACvpZ">A3</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented third.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A3</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV2P4ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/P4" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV2P4ACvpZ">P4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Perfect fourth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">P4</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV2A4ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A4" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV2A4ACvpZ">A4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented fourth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A4</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Perfect%20Interval%20Descriptors"></a>
+                <a name="//apple_ref/swift/Section/Perfect Interval Descriptors" class="dashAnchor"></a>
+                <a href="#/Perfect%20Interval%20Descriptors">
+                  <h3 class="section-name">Perfect Interval Descriptors</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD7QualityO7PerfectO_AC6NumberOAFOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD7QualityO7PerfectO_AC6NumberOAFOtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a perfect <code>UnorderedDiatonicInterval</code>.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">perfectUnison</span> <span class="o">=</span> <span class="kt">UnorderedDiatonicInterval</span><span class="p">(</span><span class="o">.</span><span class="n">perfect</span><span class="p">,</span> <span class="o">.</span><span class="n">unison</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">perfectFourth</span> <span class="o">=</span> <span class="kt">UnorderedDiatonicInterval</span><span class="p">(</span><span class="o">.</span><span class="n">perfect</span><span class="p">,</span> <span class="o">.</span><span class="n">fourth</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt">Quality</span><span class="o">.</span><span class="kt">Perfect</span><span class="p">,</span> <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/UnorderedDiatonicInterval/Number.html">Number</a></span><span class="o">.</span><span class="kt">Perfect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Imperfect%20Interval%20Descriptors"></a>
+                <a name="//apple_ref/swift/Section/Imperfect Interval Descriptors" class="dashAnchor"></a>
+                <a href="#/Imperfect%20Interval%20Descriptors">
+                  <h3 class="section-name">Imperfect Interval Descriptors</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD7QualityO9ImperfectO_AC6NumberOAFOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD7QualityO9ImperfectO_AC6NumberOAFOtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an imperfect <code>UnorderedDiatonicInterval</code>.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">majorSecond</span> <span class="o">=</span> <span class="kt">UnorderedDiatonicInterval</span><span class="p">(</span><span class="o">.</span><span class="n">major</span><span class="p">,</span> <span class="o">.</span><span class="n">second</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">minorThird</span> <span class="o">=</span> <span class="kt">UnorderedDiatonicInterval</span><span class="p">(</span><span class="o">.</span><span class="n">minor</span><span class="p">,</span> <span class="o">.</span><span class="n">third</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt">Quality</span><span class="o">.</span><span class="kt">Imperfect</span><span class="p">,</span> <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/UnorderedDiatonicInterval/Number.html">Number</a></span><span class="o">.</span><span class="kt">Imperfect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Augmented%20or%20Diminished%20Interval%20Descriptors"></a>
+                <a name="//apple_ref/swift/Section/Augmented or Diminished Interval Descriptors" class="dashAnchor"></a>
+                <a href="#/Augmented%20or%20Diminished%20Interval%20Descriptors">
+                  <h3 class="section-name">Augmented or Diminished Interval Descriptors</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD7QualityO8ExtendedV21AugmentedOrDiminishedO_AC6NumberO9ImperfectOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD7QualityO8ExtendedV21AugmentedOrDiminishedO_AC6NumberO9ImperfectOtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an augmented or diminished <code>UnorderedDiatonicInterval</code> with an imperfect number.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">doubleDiminishedSecond</span> <span class="o">=</span> <span class="kt">UnorderedDiatonicInterval</span><span class="p">(</span><span class="o">.</span><span class="n">diminished</span><span class="p">,</span> <span class="o">.</span><span class="n">second</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">tripleAugmentedThird</span> <span class="o">=</span> <span class="kt">UnorderedDiatonicInterval</span><span class="p">(</span><span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">third</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt">Quality</span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span> <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/UnorderedDiatonicInterval/Number.html">Number</a></span><span class="o">.</span><span class="kt">Imperfect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD7QualityO8ExtendedV21AugmentedOrDiminishedO_AC6NumberO7PerfectOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD7QualityO8ExtendedV21AugmentedOrDiminishedO_AC6NumberO7PerfectOtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an augmented or diminished <code>UnorderedDiatonicInterval</code> with a perfect number.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">doubleAugmentedUnison</span> <span class="o">=</span> <span class="kt">UnorderedDiatonicInterval</span><span class="p">(</span><span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">unison</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">tripleDiminishedFourth</span> <span class="o">=</span> <span class="kt">UnorderedDiatonicInterval</span><span class="p">(</span><span class="o">.</span><span class="n">diminished</span><span class="p">,</span> <span class="o">.</span><span class="n">fourth</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt">Quality</span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span> <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/UnorderedDiatonicInterval/Number.html">Number</a></span><span class="o">.</span><span class="kt">Perfect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD7QualityO8ExtendedV6DegreeO_AG21AugmentedOrDiminishedOAC6NumberO9ImperfectOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD7QualityO8ExtendedV6DegreeO_AG21AugmentedOrDiminishedOAC6NumberO9ImperfectOtcfc">init(_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an augmented or diminished <code>UnorderedDiatonicInterval</code> with an imperfect number.
+These intervals can be up to quintuple augmented or diminished.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">doubleAugmentedUnison</span> <span class="o">=</span> <span class="kt">OrderedSpelledInterval</span><span class="p">(</span><span class="o">.</span><span class="n">double</span><span class="p">,</span> <span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">unison</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">tripleDiminishedFourth</span> <span class="o">=</span> <span class="kt">OrderedSpelledInterval</span><span class="p">(</span><span class="o">.</span><span class="n">triple</span><span class="p">,</span> <span class="o">.</span><span class="n">diminished</span><span class="p">,</span> <span class="o">.</span><span class="n">fourth</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">degree</span><span class="p">:</span> <span class="kt">Quality</span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">Degree</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt">Quality</span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/UnorderedDiatonicInterval/Number.html">Number</a></span><span class="o">.</span><span class="kt">Imperfect</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD7QualityO8ExtendedV6DegreeO_AG21AugmentedOrDiminishedOAC6NumberO7PerfectOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD7QualityO8ExtendedV6DegreeO_AG21AugmentedOrDiminishedOAC6NumberO7PerfectOtcfc">init(_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an augmented or diminished <code>OrderedSpelledInterval</code> with a perfect number. These
+intervals can be up to quintuple augmented or diminished.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">doubleAugmentedUnison</span> <span class="o">=</span> <span class="kt">OrderedSpelledInterval</span><span class="p">(</span><span class="o">.</span><span class="n">double</span><span class="p">,</span> <span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">unison</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">tripleDiminishedFourth</span> <span class="o">=</span> <span class="kt">OrderedSpelledInterval</span><span class="p">(</span><span class="o">.</span><span class="n">triple</span><span class="p">,</span> <span class="o">.</span><span class="n">diminished</span><span class="p">,</span> <span class="o">.</span><span class="n">fourth</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">degree</span><span class="p">:</span> <span class="kt">Quality</span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">Degree</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt">Quality</span><span class="o">.</span><span class="kt">Extended</span><span class="o">.</span><span class="kt">AugmentedOrDiminished</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/UnorderedDiatonicInterval/Number.html">Number</a></span><span class="o">.</span><span class="kt">Perfect</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD7QualityO_AC6NumberOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD7QualityO_AC6NumberOtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>UnorderedDiatonicInterval</code> with a given <code><a href="../Structs/UnorderedDiatonicInterval.html#/s:5Pitch25UnorderedDiatonicIntervalV7qualityAA0cD7QualityOvp">quality</a></code> and <code>number</code>.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">minorSecond</span> <span class="o">=</span> <span class="kt">UnorderedDiatonicInterval</span><span class="p">(</span><span class="o">.</span><span class="n">minor</span><span class="p">,</span> <span class="o">.</span><span class="n">second</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">augmentedSixth</span> <span class="o">=</span> <span class="kt">UnorderedDiatonicInterval</span><span class="p">(</span><span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">sixth</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt">Quality</span><span class="p">,</span> <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/UnorderedDiatonicInterval/Number.html">Number</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD0Vcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalVyAcA0cD0Vcfc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>UnorderedDiatonicInterval</code> from an ordered one. This inverts intervals with
+ordinals larger than a <code>.fourth</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">ordered</span><span class="p">:</span> <span class="kt"><a href="../Structs/DiatonicInterval.html">DiatonicInterval</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CustomStringConvertible"></a>
+                <a name="//apple_ref/swift/Section/CustomStringConvertible" class="dashAnchor"></a>
+                <a href="#/CustomStringConvertible">
+                  <h3 class="section-name">CustomStringConvertible</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV11descriptionSSvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Printable description of UnorderedIntervalDescriptor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV4zeroACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/zero" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV4zeroACvpZ">zero</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The unison identity element.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">zero</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch25UnorderedDiatonicIntervalV1poiyA2C_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/+(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch25UnorderedDiatonicIntervalV1poiyA2C_ACtFZ">+(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">UnorderedDiatonicInterval</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt">UnorderedDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The sum of two <code>UnorderedDiatonicInterval</code> values.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-09-11)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.10.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

@@ -1,17 +1,73 @@
 {
   "warnings": [
     {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/IntervalDescriptor/OrderedIntervalDescriptor.swift",
-      "line": 51,
-      "symbol": "OrderedIntervalDescriptor.Direction.ascending",
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/ChordDescriptor.swift",
+      "line": 60,
+      "symbol": "ChordDescriptor.major",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/ChordDescriptor.swift",
+      "line": 61,
+      "symbol": "ChordDescriptor.minor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/ChordDescriptor.swift",
+      "line": 62,
+      "symbol": "ChordDescriptor.diminished",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/ChordDescriptor.swift",
+      "line": 63,
+      "symbol": "ChordDescriptor.augmented",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Chord/ChordDescriptor.swift",
+      "line": 81,
+      "symbol": "ChordDescriptor.Base",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/IntervalDescriptor/DiatonicInterval.swift",
+      "line": 88,
+      "symbol": "DiatonicInterval.Direction.ascending",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/IntervalDescriptor/OrderedIntervalDescriptor.swift",
-      "line": 51,
-      "symbol": "OrderedIntervalDescriptor.Direction.descending",
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/IntervalDescriptor/DiatonicInterval.swift",
+      "line": 88,
+      "symbol": "DiatonicInterval.Direction.descending",
       "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/IntervalDescriptor/UnorderedDiatonicInterval.swift",
+      "line": 76,
+      "symbol": "UnorderedDiatonicInterval.Number.inverse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Pitch.Class.Collection.swift",
+      "line": 144,
+      "symbol": "Pitch.Class.Collection.Base",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/Pitch.Class.swift",
+      "line": 53,
+      "symbol": "Pitch.Class.inversion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
   ],

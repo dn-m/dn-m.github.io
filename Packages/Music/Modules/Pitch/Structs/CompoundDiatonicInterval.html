@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CompoundDiatonicInterval Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/CompoundDiatonicInterval" class="dashAnchor"></a>
+
+    <a title="CompoundDiatonicInterval Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (97% documented)
+      </p>
+    
+    
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2F%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      CompoundDiatonicInterval Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Basic Types.html">Basic Types</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NoteNumber.html">NoteNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Frequency.html">Frequency</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Pitch.html">Pitch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Pitch/Class.html">– Class</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Scale.html">Scale</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Scale/IntervalPattern.html">– IntervalPattern</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Chord.html">Chord</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Chord/IntervalPattern.html">– IntervalPattern</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Collections.html">Collections</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Dyad.html">Dyad</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Collection.html">Collection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Intervals.html">Intervals</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/OrderedInterval.html">OrderedInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UnorderedInterval.html">UnorderedInterval</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Interval Description.html">Interval Description</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ChordDescriptor.html">ChordDescriptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Tuning Systems.html">Tuning Systems</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Tuning Systems.html#/s:5Pitch12TuningSystemP">TuningSystem</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DiatonicIntervalQuality.html">DiatonicIntervalQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DiatonicIntervalQuality/Perfect.html">– Perfect</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DiatonicIntervalQuality/Imperfect.html">– Imperfect</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DiatonicIntervalQuality/Extended.html">– Extended</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/DiatonicIntervalNumber.html">DiatonicIntervalNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/DiatonicIntervalProtocol.html">DiatonicIntervalProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NoteNumberRepresentable.html">NoteNumberRepresentable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CompoundDiatonicInterval.html">CompoundDiatonicInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DiatonicInterval.html">DiatonicInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DiatonicInterval/Number.html">– Number</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DiatonicInterval/Direction.html">– Direction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UnorderedDiatonicInterval.html">UnorderedDiatonicInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UnorderedDiatonicInterval/Number.html">– Number</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>CompoundDiatonicInterval</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CompoundDiatonicInterval</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/DiatonicIntervalProtocol.html">DiatonicIntervalProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A descriptor for intervals between two <code><a href="../Structs/Pitch.html">Pitch</a></code> values which takes into account octave
+displacement.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Properties">
+                  <h3 class="section-name">Instance Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV8intervalAA0cD0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/interval" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV8intervalAA0cD0Vvp">interval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The base interval descriptor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt"><a href="../Structs/DiatonicInterval.html">DiatonicInterval</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV18octaveDisplacementSivp"></a>
+                    <a name="//apple_ref/swift/Property/octaveDisplacement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV18octaveDisplacementSivp">octaveDisplacement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The amount of octaves displaced.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">octaveDisplacement</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV_11displacedByAcA0cD0V_Sitcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:displacedBy:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV_11displacedByAcA0cD0V_Sitcfc">init(_:displacedBy:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>CompoundDiatonicInterval</code> with the given <code><a href="../Structs/CompoundDiatonicInterval.html#/s:5Pitch24CompoundDiatonicIntervalV8intervalAA0cD0Vvp">interval</a></code> and the amount of <code>octaves</code>
+of displacement.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt"><a href="../Structs/DiatonicInterval.html">DiatonicInterval</a></span><span class="p">,</span> <span class="n">displacedBy</span> <span class="nv">octaves</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalVyAcA0cD7QualityO_AA0cD0V6NumberOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalVyAcA0cD7QualityO_AA0cD0V6NumberOtcfc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>CompoundDiatonicInterval</code> with the given <code>quality</code> and the given <code>number</code>,
+with no octave displacement.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt">Quality</span><span class="p">,</span> <span class="n">_</span> <span class="nv">ordinal</span><span class="p">:</span> <span class="kt"><a href="../Structs/DiatonicInterval.html">DiatonicInterval</a></span><span class="o">.</span><span class="kt">Number</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Computed%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Computed Properties" class="dashAnchor"></a>
+                <a href="#/Computed%20Properties">
+                  <h3 class="section-name">Computed Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV9semitonesSivp"></a>
+                    <a name="//apple_ref/swift/Property/semitones" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV9semitonesSivp">semitones</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">semitones</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The amount of semitones in this <code>CompoundIntervalDescriptor</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV5stepsSivp"></a>
+                    <a name="//apple_ref/swift/Property/steps" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV5stepsSivp">steps</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">steps</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The amount of letter name steps in this <code>CompoundIntervalDescriptor</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Type%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Type Methods" class="dashAnchor"></a>
+                <a href="#/Type%20Methods">
+                  <h3 class="section-name">Type Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV4zeroACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/zero" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV4zeroACvpZ">zero</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code><a href="../Structs/CompoundDiatonicInterval.html#/s:5Pitch24CompoundDiatonicIntervalV6unisonACvpZ">unison</a></code> is the <code>zero</code> for the <code>CompoundIntervalDescriptor</code> <code>AdditiveGroup</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">zero</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV1poiyA2C_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/+(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV1poiyA2C_ACtFZ">+(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><strong>Example Usage:</strong></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">perfectFifth</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span> <span class="o">=</span> <span class="o">.</span><span class="kt">P5</span>
+<span class="k">let</span> <span class="nv">minorThird</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span> <span class="o">=</span> <span class="o">.</span><span class="n">m3</span>
+<span class="k">let</span> <span class="nv">minorSeventh</span> <span class="o">=</span> <span class="n">perfectFifth</span> <span class="o">+</span> <span class="n">minorThird</span> <span class="c1">// =&gt; .m7</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The sum of the given <code>CompoundIntervalDescriptors</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2peoiyyACz_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/+=(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2peoiyyACz_ACtFZ">+=(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mutates the left-hand-side by adding the right-hand-side.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">CompoundDiatonicInterval</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV1soiyA2C_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/-(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV1soiyA2C_ACtFZ">-(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><strong>Example Usage:</strong></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">perfectFifth</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span> <span class="o">=</span> <span class="o">.</span><span class="kt">P5</span>
+<span class="k">let</span> <span class="nv">minorThird</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span> <span class="o">=</span> <span class="o">.</span><span class="n">m3</span>
+<span class="k">let</span> <span class="nv">majorThird</span> <span class="o">=</span> <span class="n">perfectFifth</span> <span class="o">-</span> <span class="n">minorThird</span> <span class="c1">// =&gt; .M3</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">-</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The sum of the given <code>CompoundIntervalDescriptors</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2seoiyyACz_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/-=(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2seoiyyACz_ACtFZ">-=(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mutates the left-hand-side by subtracting the right-hand-side.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">-=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">CompoundDiatonicInterval</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV1sopyA2CFZ"></a>
+                    <a name="//apple_ref/swift/Method/-(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV1sopyA2CFZ">-(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">prefix</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">-</span> <span class="p">(</span><span class="nv">element</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code><a href="../Structs/CompoundDiatonicInterval.html#/s:5Pitch24CompoundDiatonicIntervalV7inverseACvp">inverse</a></code> of a <code>CompoundDiatonicInterval</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV7inverseACvp"></a>
+                    <a name="//apple_ref/swift/Property/inverse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV7inverseACvp">inverse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">inverse</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>inverse</code> of a <code>CompoundIntervalDescriptor</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Type%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Type Properties" class="dashAnchor"></a>
+                <a href="#/Type%20Properties">
+                  <h3 class="section-name">Type Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2d1ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d1" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2d1ACvpZ">d1</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished Unison.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d1</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV6unisonACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/unison" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV6unisonACvpZ">unison</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unison.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">unison</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2d2ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d2" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2d2ACvpZ">d2</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished second.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d2</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2A1ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A1" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2A1ACvpZ">A1</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented unison.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A1</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2m2ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/m2" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2m2ACvpZ">m2</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Minor second.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">m2</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2M2ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/M2" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2M2ACvpZ">M2</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Major second.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">M2</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2d3ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d3" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2d3ACvpZ">d3</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished third.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d3</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2A2ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A2" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2A2ACvpZ">A2</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented second.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A2</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2m3ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/m3" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2m3ACvpZ">m3</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Minor third.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">m3</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2M3ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/M3" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2M3ACvpZ">M3</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Major third.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">M3</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2d4ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d4" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2d4ACvpZ">d4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished fourth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d4</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2A3ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A3" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2A3ACvpZ">A3</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented third.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A3</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2P4ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/P4" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2P4ACvpZ">P4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Perfect fourth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">P4</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2A4ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A4" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2A4ACvpZ">A4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented fourth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A4</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2d5ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d5" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2d5ACvpZ">d5</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished fifth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d5</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2P5ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/P5" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2P5ACvpZ">P5</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Perfect fifth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">P5</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2d6ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d6" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2d6ACvpZ">d6</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished sixth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d6</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2A5ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A5" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2A5ACvpZ">A5</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented fifth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A5</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2m6ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/m6" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2m6ACvpZ">m6</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Minor sixth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">m6</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2M6ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/M6" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2M6ACvpZ">M6</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Major sixth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">M6</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2d7ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d7" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2d7ACvpZ">d7</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished seventh.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d7</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2A6ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A6" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2A6ACvpZ">A6</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented sixth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A6</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2m7ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/m7" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2m7ACvpZ">m7</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Minor seventh.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">m7</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2M7ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/M7" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2M7ACvpZ">M7</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Major seventh.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">M7</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV6octaveACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/octave" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV6octaveACvpZ">octave</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Octave.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">octave</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2A7ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A7" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2A7ACvpZ">A7</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented seventh.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A7</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2d8ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d8" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2d8ACvpZ">d8</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished octave.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d8</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2d9ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d9" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2d9ACvpZ">d9</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished ninth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d9</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2A8ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A8" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2A8ACvpZ">A8</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented octave.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A8</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2m9ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/m9" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2m9ACvpZ">m9</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Minor ninth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">m9</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2M9ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/M9" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2M9ACvpZ">M9</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Major ninth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">M9</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3d10ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d10" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3d10ACvpZ">d10</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished tenth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d10</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV2A9ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A9" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV2A9ACvpZ">A9</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented ninth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A9</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3m10ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/m10" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3m10ACvpZ">m10</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Minor tenth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">m10</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3M10ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/M10" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3M10ACvpZ">M10</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Major tenth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">M10</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3d11ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d11" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3d11ACvpZ">d11</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished eleventh.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d11</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3P11ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/P11" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3P11ACvpZ">P11</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Perfect eleventh.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">P11</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3A11ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A11" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3A11ACvpZ">A11</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented eleventh.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A11</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3d12ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d12" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3d12ACvpZ">d12</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished twelfth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d12</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3P12ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/P12" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3P12ACvpZ">P12</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Perfect twelfth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">P12</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3d13ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d13" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3d13ACvpZ">d13</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished thirteenth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d13</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3A12ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A12" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3A12ACvpZ">A12</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented twelfth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A12</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3m13ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/m13" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3m13ACvpZ">m13</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Minor thirteenth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">m13</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3M13ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/M13" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3M13ACvpZ">M13</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Major thirteenth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">M13</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3d14ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/d14" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3d14ACvpZ">d14</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diminished fourteenth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">d14</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3A13ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A13" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3A13ACvpZ">A13</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented thirteenth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A13</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3m14ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/m14" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3m14ACvpZ">m14</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Minor fourteenth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">m14</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3M14ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/M14" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3M14ACvpZ">M14</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Major fourteenth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">M14</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV3A14ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/A14" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV3A14ACvpZ">A14</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Augmented fourteenth.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">A14</span><span class="p">:</span> <span class="kt">CompoundDiatonicInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Type%20Methods2"></a>
+                <a name="//apple_ref/swift/Section/Type Methods" class="dashAnchor"></a>
+                <a href="#/Type%20Methods2">
+                  <h3 class="section-name">Type Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV015distanceToIdealD03for4fromSdSi_SdtFZ"></a>
+                    <a name="//apple_ref/swift/Method/distanceToIdealInterval(for:from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV015distanceToIdealD03for4fromSdSi_SdtFZ">distanceToIdealInterval(for:from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">distanceToIdealInterval</span><span class="p">(</span><span class="k">for</span> <span class="nv">steps</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">from</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The distance from the given <code><a href="../Structs/CompoundDiatonicInterval.html#/s:5Pitch24CompoundDiatonicIntervalV8intervalAA0cD0Vvp">interval</a></code> to the ideal interval for the given amount of <code><a href="../Structs/CompoundDiatonicInterval.html#/s:5Pitch24CompoundDiatonicIntervalV5stepsSivp">steps</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CustomStringConvertible"></a>
+                <a name="//apple_ref/swift/Section/CustomStringConvertible" class="dashAnchor"></a>
+                <a href="#/CustomStringConvertible">
+                  <h3 class="section-name">CustomStringConvertible</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Pitch24CompoundDiatonicIntervalV11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Pitch24CompoundDiatonicIntervalV11descriptionSSvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Printable description of CompoundIntervalDescriptor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-09-11)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.10.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
