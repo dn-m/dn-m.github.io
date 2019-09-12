@@ -36,21 +36,21 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/IntervalDescriptor/DiatonicInterval.swift",
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/DiatonicInterval/DiatonicInterval.swift",
       "line": 88,
       "symbol": "DiatonicInterval.Direction.ascending",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/IntervalDescriptor/DiatonicInterval.swift",
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/DiatonicInterval/DiatonicInterval.swift",
       "line": 88,
       "symbol": "DiatonicInterval.Direction.descending",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/IntervalDescriptor/UnorderedDiatonicInterval.swift",
+      "file": "/Users/travis/build/dn-m/Music/Sources/Pitch/DiatonicInterval/UnorderedDiatonicInterval.swift",
       "line": 76,
       "symbol": "UnorderedDiatonicInterval.Number.inverse",
       "symbol_kind": "source.lang.swift.decl.var.instance",
