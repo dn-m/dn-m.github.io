@@ -188,8 +188,8 @@
 </code></pre>
 <h3 id='row-transformations' class='heading'>Row Transformations</h3>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">pcs</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
-<span class="n">pcs</span><span class="o">.</span><span class="n">retrograde</span> <span class="c1">// =&gt; [0,11,3,4,8,7,9,5,6,1,2,10]</span>
-<span class="n">pcs</span><span class="o">.</span><span class="n">inversion</span>  <span class="c1">// =&gt; [0,11,3,4,8,7,9,5,6,1,2,10]</span>
+<span class="n">pcs</span><span class="o">.</span><span class="n">retrograde</span> <span class="c1">// =&gt; [10,2,1,6,5,9,7,8,4,3,11,0]</span>
+<span class="n">pcs</span><span class="o">.</span><span class="n">inversion</span>  <span class="c1">// =&gt; [0,1,9,8,4,5,3,7,6,11,10,2]</span>
 </code></pre>
 <h2 id='diatonic-intervals' class='heading'>Diatonic Intervals</h2>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">majorThird</span><span class="p">:</span> <span class="kt">DiatonicInterval</span> <span class="o">=</span> <span class="o">.</span><span class="kt">M3</span>
