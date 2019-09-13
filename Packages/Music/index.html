@@ -73,17 +73,17 @@ Music Reference
 
 <h3>🎶 Pitch</h3>
 
-<p>The <a href="https://github.com/dn-m/Music/tree/latest/Sources/Pitch"><code>Pitch</code></a> module provides types for structuring and transforming frequency domain.</p>
+<p>The <a href="https://github.com/dn-m/Music/tree/latest/Sources/Pitch"><code>Pitch</code></a> module provides types for structuring and transforming the frequency domain.</p>
 
 <h4>Basic Types</h4>
 
 <p><code>swift
-let a440: Frequency = 440       // Hz
-let middleC: Pitch = 60         // MIDI note number
-let e = middleC + 4             // e above middle c
-let microtone = e - 0.25        // eighth-tone below the e above middle c
-let anyE = Pitch.Class(e)       // pitch class 4
-let anyGSharp = anyE.inverse    // pitch class 8
+let a440: Frequency = 440    // Hz
+let middleC: Pitch = 60      // MIDI note number
+let e = middleC + 4          // e above middle c
+let microtone = e - 0.25     // eighth-tone below the e above middle c
+let anyE = Pitch.Class(e)    // pitch class 4
+let anyGSharp = anyE.inverse // pitch class 8
 </code></p>
 
 <h4>Set Operations</h4>

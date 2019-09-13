@@ -78,14 +78,14 @@
 <h2 id='usage' class='heading'>Usage</h2>
 <h3 id='pitch' class='heading'>🎶 Pitch</h3>
 
-<p>The <a href="https://github.com/dn-m/Music/tree/latest/Sources/Pitch"><code>Pitch</code></a> module provides types for structuring and transforming frequency domain.</p>
+<p>The <a href="https://github.com/dn-m/Music/tree/latest/Sources/Pitch"><code>Pitch</code></a> module provides types for structuring and transforming the frequency domain.</p>
 <h4 id='basic-types' class='heading'>Basic Types</h4>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">a440</span><span class="p">:</span> <span class="kt">Frequency</span> <span class="o">=</span> <span class="mi">440</span>       <span class="c1">// Hz</span>
-<span class="k">let</span> <span class="nv">middleC</span><span class="p">:</span> <span class="kt">Pitch</span> <span class="o">=</span> <span class="mi">60</span>         <span class="c1">// MIDI note number</span>
-<span class="k">let</span> <span class="nv">e</span> <span class="o">=</span> <span class="n">middleC</span> <span class="o">+</span> <span class="mi">4</span>             <span class="c1">// e above middle c</span>
-<span class="k">let</span> <span class="nv">microtone</span> <span class="o">=</span> <span class="n">e</span> <span class="o">-</span> <span class="mf">0.25</span>        <span class="c1">// eighth-tone below the e above middle c</span>
-<span class="k">let</span> <span class="nv">anyE</span> <span class="o">=</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>       <span class="c1">// pitch class 4</span>
-<span class="k">let</span> <span class="nv">anyGSharp</span> <span class="o">=</span> <span class="n">anyE</span><span class="o">.</span><span class="n">inverse</span>    <span class="c1">// pitch class 8</span>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">a440</span><span class="p">:</span> <span class="kt">Frequency</span> <span class="o">=</span> <span class="mi">440</span>    <span class="c1">// Hz</span>
+<span class="k">let</span> <span class="nv">middleC</span><span class="p">:</span> <span class="kt">Pitch</span> <span class="o">=</span> <span class="mi">60</span>      <span class="c1">// MIDI note number</span>
+<span class="k">let</span> <span class="nv">e</span> <span class="o">=</span> <span class="n">middleC</span> <span class="o">+</span> <span class="mi">4</span>          <span class="c1">// e above middle c</span>
+<span class="k">let</span> <span class="nv">microtone</span> <span class="o">=</span> <span class="n">e</span> <span class="o">-</span> <span class="mf">0.25</span>     <span class="c1">// eighth-tone below the e above middle c</span>
+<span class="k">let</span> <span class="nv">anyE</span> <span class="o">=</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>    <span class="c1">// pitch class 4</span>
+<span class="k">let</span> <span class="nv">anyGSharp</span> <span class="o">=</span> <span class="n">anyE</span><span class="o">.</span><span class="n">inverse</span> <span class="c1">// pitch class 8</span>
 </code></pre>
 <h4 id='set-operations' class='heading'>Set Operations</h4>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">set</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
