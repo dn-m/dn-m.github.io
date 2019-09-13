@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>  Reference</title>
+    <title>Pitch  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -12,20 +12,26 @@
   <body>
 
 
-    <a title="  Reference"></a>
+    <a title="Pitch  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-           Docs
+          Pitch Docs
         </a>
          (97% documented)
       </p>
     
     
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/dn-m">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2F%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2FPitch%2Exml">
             <img class="header-icon" src="img/dash.png"/>
             Install in Dash
           </a>
@@ -33,16 +39,16 @@
     </header>
 
     <p class="breadcrumbs">
-      <a class="breadcrumb" href="index.html"> Reference</a>
+      <a class="breadcrumb" href="index.html">Pitch Reference</a>
       <img class="carat" src="img/carat.png" />
-        Reference
+      Pitch  Reference
     </p>
 
     <div class="content-wrapper">
       <nav class="navigation">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Basic Types.html">Basic Types</a>
+            <a class="nav-group-name-link" href="Basic%20Types.html">Basic Types</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/Frequency.html">Frequency</a>
@@ -93,7 +99,7 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Diatonic Intervals.html">Diatonic Intervals</a>
+            <a class="nav-group-name-link" href="Diatonic%20Intervals.html">Diatonic Intervals</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/DiatonicInterval.html">DiatonicInterval</a>
@@ -134,7 +140,7 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Harmonic Structures.html">Harmonic Structures</a>
+            <a class="nav-group-name-link" href="Harmonic%20Structures.html">Harmonic Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/ChordDescriptor.html">ChordDescriptor</a>
@@ -142,15 +148,15 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Tuning Systems.html">Tuning Systems</a>
+            <a class="nav-group-name-link" href="Tuning%20Systems.html">Tuning Systems</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Tuning Systems.html#/s:5Pitch12TuningSystemP">TuningSystem</a>
+                <a class="nav-group-task-link" href="Tuning%20Systems.html#/s:5Pitch12TuningSystemP">TuningSystem</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Other Protocols.html">Other Protocols</a>
+            <a class="nav-group-name-link" href="Other%20Protocols.html">Other Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/NoteNumberRepresentable.html">NoteNumberRepresentable</a>
@@ -166,85 +172,33 @@
             
             <h1 id='pitch' class='heading'>Pitch</h1>
 
-<p>The <code><a href="Structs/Pitch.html">Pitch</a></code> module defines basic structures for describing the <q>quality of a sound governed by the rate of vibrations producing it,</q> as well as theoretical operations over them. The structures herein are agnostic to their graphical or sonic representations.</p>
-
-<p>The building blocks of the <code><a href="Structs/Pitch.html">Pitch</a></code> module are the <code><a href="Structs/NoteNumber.html">NoteNumber</a></code>, <code><a href="Structs/Frequency.html">Frequency</a></code>, and <code><a href="Structs/Pitch.html">Pitch</a></code>.</p>
-<h3 id='notenumber' class='heading'>NoteNumber</h3>
-
-<p>A <code><a href="Structs/NoteNumber.html">NoteNumber</a></code> is a floating-point-equivalent to the <code>MIDI</code> note number message. A <code><a href="Structs/NoteNumber.html">NoteNumber</a></code> can be instantiated with integer and float literals:</p>
-<pre class="highlight plaintext"><code>let middleC: NoteNumber = 60 // integer literal
-let cEighthToneSharp: NoteNumber = 60.25 // float literal
+<p>The <a href="https://github.com/dn-m/Music/tree/latest/Sources/Pitch"><code><a href="Structs/Pitch.html">Pitch</a></code></a> module provides types for constructing, transforming, and structuring frequencies.</p>
+<h2 id='basic-types' class='heading'>Basic Types</h2>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">a440</span><span class="p">:</span> <span class="kt">Frequency</span> <span class="o">=</span> <span class="mi">440</span>       <span class="c1">// Hz</span>
+<span class="k">let</span> <span class="nv">middleC</span><span class="p">:</span> <span class="kt">Pitch</span> <span class="o">=</span> <span class="mi">60</span>         <span class="c1">// MIDI note number</span>
+<span class="k">let</span> <span class="nv">e</span> <span class="o">=</span> <span class="n">middleC</span> <span class="o">+</span> <span class="mi">4</span>             <span class="c1">// e above middle c</span>
+<span class="k">let</span> <span class="nv">microtone</span> <span class="o">=</span> <span class="n">e</span> <span class="o">-</span> <span class="mf">0.25</span>        <span class="c1">// eighth-tone below the e above middle c</span>
+<span class="k">let</span> <span class="nv">anyE</span> <span class="o">=</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>       <span class="c1">// pitch class 4</span>
+<span class="k">let</span> <span class="nv">anyGSharp</span> <span class="o">=</span> <span class="n">anyE</span><span class="o">.</span><span class="n">inverse</span>    <span class="c1">// pitch class 8</span>
 </code></pre>
-
-<p>or with a <code><a href="Structs/Frequency.html">Frequency</a></code>:</p>
-<pre class="highlight plaintext"><code>let freq: Frequency = 440.0 // 440Hz
-let a440 = NoteNumber(freq) // =&gt; NoteNumber(60)
+<h3 id='set-operations' class='heading'>Set Operations</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">set</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="k">set</span><span class="o">.</span><span class="n">normalForm</span> <span class="c1">// =&gt; [4,6,8,0]</span>
+<span class="k">set</span><span class="o">.</span><span class="n">primeForm</span>  <span class="c1">// =&gt; [0,2,4,8]</span>
 </code></pre>
-<h3 id='frequency' class='heading'>Frequency</h3>
-
-<p>A <code><a href="Structs/Frequency.html">Frequency</a></code> is a representation of the periodic vibration in <code>Herz</code> (cycles per second). A <code><a href="Structs/Frequency.html">Frequency</a></code> can be instantiated with integer and float literals:</p>
-<pre class="highlight plaintext"><code>let a440: Frequency = 440 // integer literal
-let middleC: Frequency = 261.6 // float literal
+<h3 id='row-transformations' class='heading'>Row Transformations</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">pcs</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
+<span class="n">pcs</span><span class="o">.</span><span class="n">retrograde</span> <span class="c1">// =&gt; [0,11,3,4,8,7,9,5,6,1,2,10]</span>
+<span class="n">pcs</span><span class="o">.</span><span class="n">inversion</span>  <span class="c1">// =&gt; [0,11,3,4,8,7,9,5,6,1,2,10]</span>
 </code></pre>
-
-<p>or with a <code><a href="Structs/NoteNumber.html">NoteNumber</a></code>:</p>
-<pre class="highlight plaintext"><code>let nn: NoteNumber = 45
-let a2 = Frequency(nn) // =&gt; Frequency(110)
-</code></pre>
-<h3 id='pitch' class='heading'>Pitch</h3>
-
-<p>A <code><a href="Structs/Pitch.html">Pitch</a></code> can be instantiated by either a <code><a href="Structs/NoteNumber.html">NoteNumber</a></code> or <code><a href="Structs/Frequency.html">Frequency</a></code>:</p>
-<pre class="highlight plaintext"><code>let middleC = Pitch(noteNumber: 60)
-let a440 = Pitch(frequency: 440)
-</code></pre>
-
-<p>or with integer or float literals as a <code><a href="Structs/NoteNumber.html">NoteNumber</a></code>:</p>
-<pre class="highlight plaintext"><code>let fSharpAboveMiddleC: Pitch = 66.0
-</code></pre>
-
-<p>The <code><a href="Structs/NoteNumber.html">NoteNumber</a></code> or <code><a href="Structs/Frequency.html">Frequency</a></code> can be retrieved from a <code><a href="Structs/Pitch.html">Pitch</a></code>, like so:</p>
-<pre class="highlight plaintext"><code>let cBelowMiddleC = Pitch(noteNumber: 48)
-let freq = cBelowMiddleC.frequency // 130.81
-</code></pre>
-
-<p>Basic arithmetic operations can be performed over <code><a href="Structs/Pitch.html">Pitch</a></code> values.</p>
-<pre class="highlight plaintext"><code>let pitch: Pitch = 72
-let transpositionAmount: Pitch = 5.75
-let transposedUp = pitch + transpositionAmount // =&gt; 77.75
-let transposedDown = pitch - transpositionAmount // =&gt; 66.25
-</code></pre>
-<h3 id='pitch-class' class='heading'>Pitch.Class</h3>
-
-<p>A <code><a href="Structs/Pitch/Class.html">Pitch.Class</a></code> is a modulo-12 view of the <code><a href="Structs/NoteNumber.html">NoteNumber</a></code> of a <code><a href="Structs/Pitch.html">Pitch</a></code>. This is a fundamental building block in post-tonal music-theoretical analysis, and useful for the graphical representation of pitch material.</p>
-
-<p>A <code><a href="Structs/Pitch/Class.html">Pitch.Class</a></code> can be instantiated with a <code><a href="Structs/NoteNumber.html">NoteNumber</a></code>:</p>
-<pre class="highlight plaintext"><code>let anyEFlat: Pitch.Class = 3
-</code></pre>
-
-<p>The inversion of a <code><a href="Structs/Pitch/Class.html">Pitch.Class</a></code> around <code>0</code> can be found using:</p>
-<pre class="highlight plaintext"><code>let anyENatural: Pitch.Class = 4
-let anyGSharp = anyENatural.inversion // =&gt; 8
-</code></pre>
-<h3 id='pitch-class-collection' class='heading'>Pitch.Class.Collection</h3>
-
-<p><code><a href="Structs/Pitch/Class.html">Pitch.Class</a></code> values are often analyzed in unordered <code>Set</code> or ordered <code>Row</code> or <code>Sequence</code> collections. </p>
-
-<p>A <code><a href="Structs/Pitch/Class/Collection.html">Pitch.Class.Collection</a></code> can be instantiated with an array literal of <code><a href="Structs/Pitch/Class.html">Pitch.Class</a></code> values:</p>
-<pre class="highlight plaintext"><code>let webern24: Pitch.Class.Collection = [0,11,3,4,8,7,9,5,6,1,2,10]
-</code></pre>
-<h4 id='set-operations' class='heading'>Set Operations</h4>
-
-<p>The normal and prime forms are used in post-tonal theory to find similarities between different unordered, unique pitch collections. The <code>normalForm</code> is the most compact representation of the pitch classes, while the <code>primeForm</code> is the most <q>left-packed</q> representation of the <code>normalForm</code> and the <code>normalForm</code> of the <code>inversion</code>.</p>
-<pre class="highlight plaintext"><code>let pcs: Pitch.Class.Collection = [8,0,4,6]
-let normalForm = pcs.normalForm // =&gt; [4,6,8,0]
-let primeForm = pcs.primeForm // =&gt; [0,2,4,8]
-</code></pre>
-<h4 id='row-operations' class='heading'>Row Operations</h4>
-
-<p>The retrograde and inversion representations of ordered, and not-necessarily-unique collections can be found like so:</p>
-<pre class="highlight plaintext"><code>let webern24: Pitch.Class.Collection = [0,11,3,4,8,7,9,5,6,1,2,10]
-let retrograde = webern24.retrograde // =&gt; [10,2,1,6,5,9,7,8,4,3,11,0]
-let inversion = webern24.inversion // =&gt; [0,1,9,8,4,5,3,7,6,11,10,2]
+<h2 id='diatonic-intervals' class='heading'>Diatonic Intervals</h2>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">majorThird</span><span class="p">:</span> <span class="kt">DiatonicInterval</span> <span class="o">=</span> <span class="o">.</span><span class="kt">M3</span>
+<span class="k">let</span> <span class="nv">minorSixth</span> <span class="o">=</span> <span class="n">majorThird</span><span class="o">.</span><span class="n">inverse</span>
+<span class="k">let</span> <span class="nv">AAA3</span> <span class="o">=</span> <span class="kt">DiatonicInterval</span><span class="p">(</span><span class="o">.</span><span class="n">triple</span><span class="p">,</span> <span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">third</span><span class="p">)</span>
+<span class="kd">let</span> <span class="err">↓</span><span class="n">majorThirteenth</span> <span class="o">=</span> <span class="kt">CompoundDiatonicInterval</span><span class="p">(</span>
+    <span class="kt">DiatonicInterval</span><span class="p">(</span><span class="o">.</span><span class="n">descending</span><span class="p">,</span> <span class="o">.</span><span class="n">major</span><span class="p">,</span> <span class="o">.</span><span class="n">sixth</span><span class="p">),</span>
+    <span class="nv">displacedBy</span><span class="p">:</span> <span class="mi">1</span>
+<span class="p">)</span>
 </code></pre>
 
           </div>
@@ -254,8 +208,8 @@ let inversion = webern24.inversion // =&gt; [0,1,9,8,4,5,3,7,6,11,10,2]
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-09-12)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.10.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2019 <a class="link" href="https://dn-m.github.io" target="_blank" rel="external">dn-m</a>. All rights reserved. (Last updated: 2019-09-13)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>  Reference</title>
+    <title>Articulations  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -12,20 +12,26 @@
   <body>
 
 
-    <a title="  Reference"></a>
+    <a title="Articulations  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-           Docs
+          Articulations Docs
         </a>
          (12% documented)
       </p>
     
     
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/dn-m">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2F%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdn%2Dm%2Egithub%2Eio%2Fdocsets%2FArticulations%2Exml">
             <img class="header-icon" src="img/dash.png"/>
             Install in Dash
           </a>
@@ -33,9 +39,9 @@
     </header>
 
     <p class="breadcrumbs">
-      <a class="breadcrumb" href="index.html"> Reference</a>
+      <a class="breadcrumb" href="index.html">Articulations Reference</a>
       <img class="carat" src="img/carat.png" />
-        Reference
+      Articulations  Reference
     </p>
 
     <div class="content-wrapper">
@@ -61,196 +67,64 @@
             
             <h1 id='music' class='heading'>Music</h1>
 
-<p><img src="https://img.shields.io/badge/Swift-5.0-orange.svg" alt="Swift Version">
-<img src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey.svg" alt="Platforms">
+<p><img src="https://img.shields.io/badge/Swift-5.x-orange.svg" alt="Swift Version">
+<img src="https://img.shields.io/badge/platform-linux%20%7C%20macOS%20%7C%20iOS%20%7C%20watchOS%20%7C%20tvOS-lightgrey.svg" alt="Platforms">
 <a href="https://travis-ci.org/dn-m/Music"><img src="https://travis-ci.org/dn-m/Music.svg?branch=latest" alt="Build Status"></a></p>
 
-<p>Structures for the creation, analysis, and performance of music in Swift.</p>
+<p>Structures for the creation, analysis, and performance of music in Swift. Check out the <a href="https://dn-m.github.io/Packages/Music">documentation</a>.</p>
 <h2 id='overview' class='heading'>Overview</h2>
 
-<p>The <code>Music</code> package is part of the <a href="https://dn-m.github.io"><strong>dn-m</strong></a> (dynamic notation for music) project, but it&rsquo;s designed to be used as a standalone package for anyone wanting to write, inspect, or represent music using the Swift langage.</p>
-
-<p>The structures contained herein are not concerned with (or knowledgeable of) the sonic or visual representation of music. Instead, they focus on the abstract representation of music. By means of various backend solutions, these abstract representations are interpretable as sonic or visual entities. For representing these structures graphically, look into <a href="https://github.com/dn-m/NotationModel">dn-m/NotationModel</a> and <a href="https://github.com/dn-m">dn-m/NotationView</a>.</p>
-
-<p>The <code>Music</code> package leverages Swift&rsquo;s powerful generic type system to create a strongly-typed interface for describing music. A goal of <code>Music</code> is to encode as many of the logics of music as possible into the type system in order to enforce the validity of musical structures at compile time.</p>
-
-<p>The code herein is pure Swift and has no system-specific dependencies. It supports the Linux platform, along with the Apple platforms, and will extend support to other platforms as Swift does.</p>
-<h2 id='documentation' class='heading'>Documentation</h2>
-
-<p>Check out the <a href="https://dn-m.github.io/Packages/Music">documentation</a> automatically generated from the source code, updated with each push to the <code>master</code> branch.</p>
+<p><code>Music</code> is a package for anyone who wants to create, analyze, and perform music in pure Swift.</p>
 <h2 id='usage' class='heading'>Usage</h2>
-<h3 id='pitch' class='heading'>Pitch</h3>
+<h3 id='pitch' class='heading'>🎶 Pitch</h3>
 
-<p>Import the <code>Pitch</code> module to create and manipulate pitch-related structures.</p>
-<pre class="highlight plaintext"><code>import Pitch
+<p>The <a href="https://github.com/dn-m/Music/tree/latest/Sources/Pitch"><code>Pitch</code></a> module provides types for structuring and transforming frequency domain.</p>
+<h4 id='basic-types' class='heading'>Basic Types</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">a440</span><span class="p">:</span> <span class="kt">Frequency</span> <span class="o">=</span> <span class="mi">440</span>       <span class="c1">// Hz</span>
+<span class="k">let</span> <span class="nv">middleC</span><span class="p">:</span> <span class="kt">Pitch</span> <span class="o">=</span> <span class="mi">60</span>         <span class="c1">// MIDI note number</span>
+<span class="k">let</span> <span class="nv">e</span> <span class="o">=</span> <span class="n">middleC</span> <span class="o">+</span> <span class="mi">4</span>             <span class="c1">// e above middle c</span>
+<span class="k">let</span> <span class="nv">microtone</span> <span class="o">=</span> <span class="n">e</span> <span class="o">-</span> <span class="mf">0.25</span>        <span class="c1">// eighth-tone below the e above middle c</span>
+<span class="k">let</span> <span class="nv">anyE</span> <span class="o">=</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>       <span class="c1">// pitch class 4</span>
+<span class="k">let</span> <span class="nv">anyGSharp</span> <span class="o">=</span> <span class="n">anyE</span><span class="o">.</span><span class="n">inverse</span>    <span class="c1">// pitch class 8</span>
+</code></pre>
+<h4 id='set-operations' class='heading'>Set Operations</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">set</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="k">set</span><span class="o">.</span><span class="n">normalForm</span> <span class="c1">// =&gt; [4,6,8,0]</span>
+<span class="k">set</span><span class="o">.</span><span class="n">primeForm</span>  <span class="c1">// =&gt; [0,2,4,8]</span>
+</code></pre>
+<h4 id='row-transformations' class='heading'>Row Transformations</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">pcs</span><span class="p">:</span> <span class="kt">Pitch</span><span class="o">.</span><span class="kt">Class</span><span class="o">.</span><span class="kt">Collection</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
+<span class="n">pcs</span><span class="o">.</span><span class="n">retrograde</span> <span class="c1">// =&gt; [0,11,3,4,8,7,9,5,6,1,2,10]</span>
+<span class="n">pcs</span><span class="o">.</span><span class="n">inversion</span>  <span class="c1">// =&gt; [0,11,3,4,8,7,9,5,6,1,2,10]</span>
+</code></pre>
+<h4 id='diatonic-intervals' class='heading'>Diatonic Intervals</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">majorThird</span><span class="p">:</span> <span class="kt">DiatonicInterval</span> <span class="o">=</span> <span class="o">.</span><span class="kt">M3</span>
+<span class="k">let</span> <span class="nv">minorSixth</span> <span class="o">=</span> <span class="n">majorThird</span><span class="o">.</span><span class="n">inverse</span>
+<span class="k">let</span> <span class="nv">AAA3</span> <span class="o">=</span> <span class="kt">DiatonicInterval</span><span class="p">(</span><span class="o">.</span><span class="n">triple</span><span class="p">,</span> <span class="o">.</span><span class="n">augmented</span><span class="p">,</span> <span class="o">.</span><span class="n">third</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">noSuchThing</span> <span class="o">=</span> <span class="kt">DiatonicInterval</span><span class="p">(</span><span class="o">.</span><span class="n">major</span><span class="p">,</span> <span class="o">.</span><span class="n">fifth</span><span class="p">)</span> <span class="err">❌</span> <span class="n">will</span> <span class="n">not</span> <span class="n">compile</span><span class="o">!</span>
 </code></pre>
 
-<p>To start, we can create a pitch with a note number of <code>60</code> (i.e., <q>middle c</q>). <code>Pitch</code> conforms to <code>ExpressibleByFloatLiteral</code>, so you can construct a <code>Pitch</code> value without too much extra noise.</p>
-<pre class="highlight plaintext"><code>let c: Pitch = 60
+<hr>
+<h3 id='duration' class='heading'>♬ Duration</h3>
+
+<p>The <a href="https://github.com/dn-m/Music/tree/latest/Sources/Duration"><code>Duration</code></a> module provides types for structuring and transforming the time domain.</p>
+<h4 id='basic-types' class='heading'>Basic Types</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">crotchet</span> <span class="o">=</span> <span class="kt">Duration</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">waltz</span> <span class="o">=</span> <span class="kt">Meter</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">stayinAlive</span> <span class="o">=</span> <span class="kt">Tempo</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="nv">subdivision</span><span class="p">:</span> <span class="mi">4</span><span class="p">)</span>
 </code></pre>
 
-<blockquote>
-<p>Under the hood, the float literal value here (<code>60</code>) represents a <code>NoteNumber</code> instance. The <code>NoteNumber</code> structure is a floating-point analog to the MIDI integral note number concept, wherein each unit corresponds to a semitone.</p>
-</blockquote>
+<hr>
+<h3 id='️-dynamics' class='heading'>🎚️ Dynamics</h3>
 
-<p>Now, let&rsquo;s make a new pitch which is three semitones higher than our <q>middle c</q>. <code>Pitch</code> conforms to <code>SignedNumeric</code>, so transposing pitches is quite elegant.</p>
-<pre class="highlight plaintext"><code>let higher = c + 3
-</code></pre>
-
-<blockquote>
-<p><code>Pitch(63)</code></p>
-</blockquote>
-
-<p>And, if we want to dirty things up and make this all a little more microtonal, we needn&rsquo;t constrain ourselves to using integral <code>NoteNumber</code> values.</p>
-<pre class="highlight plaintext"><code>let lessHigh = higher - 0.25
-</code></pre>
-
-<blockquote>
-<p><code>Pitch(62.75)</code></p>
-</blockquote>
-
-<p>If we want to do some post-tonal theoretical analysis on some given pitches, it is very helpful to convert them to <code>Pitch.Class</code> values. A pitch class is a mod-12 representation of a pitch.</p>
-<pre class="highlight plaintext"><code>let pc = lessHigh.class
-</code></pre>
-
-<blockquote>
-<p><code>Pitch.Class(2.75)</code></p>
-</blockquote>
-
-<p>If we have a collection of <code>Pitch.Class</code> values, we can group them up into a <code>Pitch.Class.Collection</code>.</p>
-<pre class="highlight plaintext"><code>let webern24: Pitch.Class.Collection = [0,11,3,4,8,7,9,5,6,1,2,10]
-</code></pre>
-
-<blockquote>
-<p>This is the 12-tone row from Anton Webern&rsquo;s op. 24, <em>Concerto for Nine Instruments</em>.</p>
-</blockquote>
-
-<p>There are some helpful operations that we can perform in order expose interesting similarities between different pitch collections.</p>
-<pre class="highlight plaintext"><code>let retrograde = webern24.retrograde
-</code></pre>
-
-<blockquote>
-<p><code>[0,11,3,4,8,7,9,5,6,1,2,10]</code></p>
-</blockquote>
-<pre class="highlight plaintext"><code>let inversion = webern24.inversion 
-</code></pre>
-
-<blockquote>
-<p><code>[0,1,9,8,4,5,3,7,6,11,10,2]</code></p>
-</blockquote>
-
-<p>Now, consider this set of pitch classes.</p>
-<pre class="highlight plaintext"><code>let set: Pitch.Class.Collection = [8,0,4,6]
-</code></pre>
-
-<p>We can arrange it into its <q>normal</q> form, which orders the pitch classes in their most <q>left-packed</q> arrangement (i.e., the intervals between the pitch classes are the smallest at the beginning of the collection).</p>
-<pre class="highlight plaintext"><code>let normalForm = set.normalForm
-</code></pre>
-
-<blockquote>
-<p><code>[4,6,8,0]</code></p>
-</blockquote>
-
-<p>Further, we can arrange the set into its <q>prime</q> form. A prime form is the more <q>left-packed</q> ordering of the pitch classes of the normal form of the original collection and the normal form of the inversion of the original collection. Finally, pitch classes are transposed such that the first value is the pitch class of <code>0</code>.</p>
-<pre class="highlight plaintext"><code>let primeForm = set.primeForm
-</code></pre>
-
-<blockquote>
-<p><code>[0,2,4,8]</code></p>
-</blockquote>
-<h3 id='duration' class='heading'>Duration</h3>
-
-<p>Import the <code>Duration</code> module to create and manipulate structures of musical time.</p>
-<pre class="highlight plaintext"><code>import Duration
-</code></pre>
-
-<p>A <code>Duration</code> is a <code>Rational</code> type whose denominator must be a power-of-two.</p>
-<pre class="highlight plaintext"><code>let crotchet = Duration(1,4)
-</code></pre>
-
-<blockquote>
-<p>One quarter note</p>
-</blockquote>
-
-<p>The infix operator <code>/&gt;</code> can be used to construct a <code>Duration</code>.</p>
-<pre class="highlight plaintext"><code>let dur = 3/&gt;32
-</code></pre>
-
-<blockquote>
-<p>Three thirty-second notes</p>
-</blockquote>
-
-<p>If you attempt to create a <code>Duration</code> with a non-power-of-two denominator, your program will crash.</p>
-<pre class="highlight plaintext"><code>let notDur = 1/&gt;31
-</code></pre>
-
-<blockquote>
-<p>Cannot create a &lsquo;Duration&rsquo; with a non-power-of-two subdivision &lsquo;31&rsquo;</p>
-</blockquote>
-<h4 id='meter' class='heading'>Meter</h4>
-
-<p>Some musics contextualize utterances within a beat structure, called a <code>Meter</code>.</p>
-<pre class="highlight plaintext"><code>let common = Meter(4,4)
-let waltz = Meter(3,4)
-</code></pre>
-
-<p>Most often, meters have a power-of-two denominator, but this is not a requirement of the type in the way that it is for <code>Duration</code>.</p>
-<pre class="highlight plaintext"><code>let ferneyhough = Meter(13,56)
-</code></pre>
-
-<p>More complex meters can also be constructed. For example, the numerator can be represented by a fraction.</p>
-<pre class="highlight plaintext"><code>let fractional = Meter(Fraction(3,5),16)
-</code></pre>
-
-<p>Ordinary and fractional meters can be concatenated into a single additive meter.</p>
-<pre class="highlight plaintext"><code>let blueRondo = Meter(Meter(2,8), Meter(2,8),Meter(2,8),Meter(3,8))
-let czernowinSQm5 = Meter(Meter(1,4),Meter(3,16))
-let czernowinSQm7 = Meter(Meter(1,4),Meter(Fraction(2,3),4))
-</code></pre>
-
-<p>A <code>Meter</code> can be split up into a subsegment if necessary.</p>
-<pre class="highlight plaintext"><code>let fragment = common.fragment(in: Fraction(3,32) ..&lt; Fraction(53,64))
-</code></pre>
-
-<blockquote>
-<p><code>Meter.Fragment(Meter(4,4), in: Fraction(3,32) ..&lt; Fraction(53,64))</code></p>
-</blockquote>
-<h4 id='meter-collection' class='heading'>Meter.Collection</h4>
-
-<p>We can wrap these meters up into a <code>Meter.Collection</code>. <code>Meter.Collection</code> conforms to <code>ExpressibleByArrayLiteral</code>, so we can construct one without too much effort.</p>
-<pre class="highlight plaintext"><code>let weirdMeters: Meter.Collection = [common, waltz, ferneyhough, fractional, blueRondo]
-</code></pre>
-
-<p>The <code>Meter.Collection</code> type provides affordances for splitting up a collection of meters into subsegments.</p>
-<pre class="highlight plaintext"><code>let meters: Meter.Collection = (0..&lt;4).map { _ in Meter(4,4) } // Four common-time meters
-let fragment = meters.fragment(in: Fraction(3,4) ..&lt; Fraction(11,4)
-</code></pre>
-
-<blockquote>
-<pre class="highlight plaintext"><code>Meter.Collection.Fragment(
-    head: Meter.Fragment(Meter(4,4), in: Fraction(3,4) ..&lt; Fraction(4,4)),
-    body: [Meter(4,4)],
-    tail: Meter.Fragment(Meter(4,4), in: Fraction(0,4) ..&lt; Fraction(3,4))
-)
-</code></pre>
-</blockquote>
-<h4 id='tempo' class='heading'>Tempo</h4>
-
-<p>A <code>Tempo</code> is the definition of a pulse occurring at a given frequency at a given subdivision level .</p>
-<pre class="highlight plaintext"><code>let stayinAlive = Tempo(100, subdivision: 4)
-</code></pre>
-
-<blockquote>
-<p>100 quarter-note beats per minute . Useful for CPR.</p>
-</blockquote>
-<h3 id='dynamics' class='heading'>Dynamics</h3>
-
-<p>The <code>Dynamic</code> type provides an interface to describe musical loudness in a highly subjective way.</p>
+<p>The <code>Dynamic</code> module provides ways to describe musical loudness in a highly subjective way.</p>
 <pre class="highlight plaintext"><code>let loud: Dynamic = .ff
-let louder: Dynamic = .ffff
-let lessLoud: Dynamic = .p
+let quiet: Dynamic = .p
+let interp = Dynamic.Interpolation(from: .p, to: .ff)
 </code></pre>
-<h3 id='articulations' class='heading'>Articulations</h3>
+
+<hr>
+<h3 id='articulations' class='heading'>🥁 Articulations</h3>
 
 <p>The <code><a href="Enums/Articulation.html">Articulation</a></code> type provides an interface to describe the way in which a given musical entity is performed.</p>
 <pre class="highlight plaintext"><code>let short: Articulation = .staccato
@@ -258,54 +132,41 @@ let sweet: Articulation = .tenuto
 let hard: Articulation = .marcato
 let hereIAm: Articulation = .accent
 </code></pre>
-<h3 id='musicmodel' class='heading'>MusicModel</h3>
+
+<hr>
+<h3 id='musicmodel' class='heading'>💾 MusicModel</h3>
 
 <p>The <code>Model</code> brings all of elements together from the modules contained in this package.</p>
-
-<p>Use the <code>Model.Builder</code> to incrementally build up a <code>Model</code>.</p>
 <pre class="highlight plaintext"><code>let builder = Model.Builder()
-</code></pre>
-
-<p>Constructing models of performers and instruments in your performing context.</p>
-<pre class="highlight plaintext"><code>let performer = Performer(name: "Pat")
+let performer = Performer(name: "Pat")
 let instrument = Instrument(name: "Euphonium")
-</code></pre>
-
-<p>Ask <code>builder</code> to create a model of a <code>Voice</code> within its <code>PerformanceContext</code>. Retrieve the identifier for this new voice so that you can identitify musical attributes by it.</p>
-<pre class="highlight plaintext"><code>let voiceID = builder.createVoice(performer: performer, instrument: instrument)
-</code></pre>
-
-<p>Build up a single whole note, composed of a <q>middle c</q>, tenuto articulation, at the triple forte dynamic level.</p>
-<pre class="highlight plaintext"><code>let pitch: Pitch = 60
+let voiceID = builder.createVoice(performer: performer, instrument: instrument)
+let pitch: Pitch = 60
 let articulation: Articulation = .tenuto
 let dynamic: Dynamic = .fff
 let note = Rhythm&lt;Event&gt;(1/&gt;1, [event([pitch, dynamic, articulation])])
-</code></pre>
-
-<p>Now we can ask the builder to add it to the model at the downbeat of our piece.</p>
-<pre class="highlight plaintext"><code>let rhythmID = builder.createRhythm(note, voiceID: voiceID, offset: .zero)
-</code></pre>
-
-<p>Lastly, we can ask the builder to complete the build process, and return a shiny new <code>Model</code>.</p>
-<pre class="highlight plaintext"><code>let model = builder.build()
+let rhythmID = builder.createRhythm(note, voiceID: voiceID, offset: .zero)
+let model = builder.build()
 </code></pre>
 
 <hr>
-<h3 id='requirements' class='heading'>Requirements</h3>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<p>In order to use the <code>Music</code> package, you&rsquo;ll need a few things:</p>
 
 <ul>
-<li>Swift 4.2 Toolchain</li>
+<li>Swift 5.x Toolchain (Xcode 10.2–11, or <a href="https://swift.org/download/">here</a>)</li>
 <li><a href="https://swift.org/package-manager/">Swift Package Manager</a></li>
 </ul>
-<h3 id='installation' class='heading'>Installation</h3>
+<h2 id='installation' class='heading'>Installation</h2>
 
-<p>In order to use the <code>Music</code> API, add it to the <code>dependencies</code> section of your <code>Package.swift</code> file:</p>
+<p>In order to use the <code>Music</code> modules in your own projects, add it to the <code>dependencies</code> section of your <code>Package.swift</code> file:</p>
 <pre class="highlight plaintext"><code>let package = Package(
     name: ...,
     products: [ ... ],
     dependencies: [
         ...,
-        .package(url: "https://github.com/dn-m/Music", from: "0.7.0")
+        .package(url: "https://github.com/dn-m/Music", from: "0.17.1")
     ],
     targets: [ ... ]
 )
@@ -316,28 +177,9 @@ let note = Rhythm&lt;Event&gt;(1/&gt;1, [event([pitch, dynamic, articulation])])
 <pre class="highlight plaintext"><code>git clone https://github.com/dn-m/Music &amp;&amp; cd Music
 </code></pre>
 
-<p>Build the package:</p>
-<pre class="highlight plaintext"><code>swift build
-</code></pre>
-
-<p>Run the tests:</p>
-<pre class="highlight plaintext"><code>swift test
-</code></pre>
-
-<p>If you use the Xcode IDE, use SwiftPM to generate an <code>.xcodeproj</code> file:</p>
+<p>If you use the Xcode IDE on macOS, you can use SwiftPM to generate an <code>.xcodeproj</code> file:</p>
 <pre class="highlight plaintext"><code>swift package generate-xcodeproj
 </code></pre>
-<h3 id='architecture' class='heading'>Architecture</h3>
-
-<p><code>Music</code> is split up into several modules:</p>
-
-<ul>
-<li><a href="https://github.com/dn-m/Music/tree/master/Sources/Pitch"><code>Pitch</code></a></li>
-<li><a href="https://github.com/dn-m/Music/tree/master/Sources/Duration"><code>Duration</code></a></li>
-<li><a href="https://github.com/dn-m/Music/tree/master/Sources/Dynamics"><code>Dynamics</code></a></li>
-<li><a href="https://github.com/dn-m/Music/tree/master/Sources/Articulations"><code>Articulations</code></a></li>
-<li><a href="https://github.com/dn-m/Music/tree/master/Sources/MusicModel"><code>MusicModel</code></a></li>
-</ul>
 <h2 id='inspiration' class='heading'>Inspiration</h2>
 
 <p>Here are some libraries in other languages that have been influential to the design of the <code>Music</code> package:</p>
@@ -357,8 +199,8 @@ let note = Rhythm&lt;Event&gt;(1/&gt;1, [event([pitch, dynamic, articulation])])
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-09-12)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.10.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2019 <a class="link" href="https://dn-m.github.io" target="_blank" rel="external">dn-m</a>. All rights reserved. (Last updated: 2019-09-13)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
