@@ -45,7 +45,7 @@
     {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/QuartzAdapter/StyledPath+CAShapeLayer.swift",
       "line": 16,
-      "symbol": "CAShapeLayer.init(_:)",
+      "symbol": "CALayer.init(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
