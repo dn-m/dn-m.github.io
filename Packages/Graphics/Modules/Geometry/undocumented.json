@@ -127,6 +127,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Line.Ray.swift",
+      "line": 58,
+      "symbol": "Line.Ray",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/travis/build/dn-m/Graphics/Sources/Geometry/Line.Segment.swift",
       "line": 18,
       "symbol": "Line.Segment.horizontal(at:)",
