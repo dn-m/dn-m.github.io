@@ -20,7 +20,7 @@
         <a class="header-link" href="index.html">
           DataStructures Docs
         </a>
-         (80% documented)
+         (81% documented)
       </p>
     
     
@@ -335,10 +335,25 @@
                 <a class="nav-group-task-link" href="Extensions/Collection.html">Collection</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Extensions.html#/s:SD">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Extensions.html#/s:Sd">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Extensions.html#/s:Sf">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Extensions.html#/s:Si">Int</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/MutableCollection.html">MutableCollection</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/Numeric.html">Numeric</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Extensions.html#/s:Sn">Range</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/RangeReplaceableCollection.html">RangeReplaceableCollection</a>
@@ -564,7 +579,7 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>Zip</h1>
             
           </div>
@@ -606,55 +621,6 @@
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures3zipyAA12Zip3SequenceVyxq_q0_Gx_q_q0_tSTRzSTR_STR0_r1_lF"></a>
-                    <a name="//apple_ref/swift/Function/zip(_:_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures3zipyAA12Zip3SequenceVyxq_q0_Gx_q_q0_tSTRzSTR_STR0_r1_lF">zip(_:_:_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Lazy <code>Sequence</code> zipping three <code>Sequence</code> values together.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    <p>This should be deprecated when <code>Variadic Generics</code> are implemented in Swift. As
-outlined in the <a href="http://thread.gmane.org/gmane.comp.lang.swift.evolution/8484">Generics Manifesto</a></p>
-
-</div>
-<div class="aside aside-author">
-    <p class="aside-title">Author</p>
-    <p><a href="https://github.com/amomchilov/ZipNsequence/blob/master/Zip3Sequence.swift">https://github.com/amomchilov/ZipNsequence/blob/master/Zip3Sequence.swift</a></p>
-
-</div>
-
-<p>Modified by James Bean.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="n">zip</span> <span class="o">&lt;</span><span class="kt">Sequence1</span><span class="p">,</span><span class="kt">Sequence2</span><span class="p">,</span><span class="kt">Sequence3</span><span class="o">&gt;</span> <span class="p">(</span>
-    <span class="n">_</span> <span class="nv">sequence1</span><span class="p">:</span> <span class="kt">Sequence1</span><span class="p">,</span>
-    <span class="n">_</span> <span class="nv">sequence2</span><span class="p">:</span> <span class="kt">Sequence2</span><span class="p">,</span>
-    <span class="n">_</span> <span class="nv">sequence3</span><span class="p">:</span> <span class="kt">Sequence3</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="Structs/Zip3Sequence.html">Zip3Sequence</a></span><span class="o">&lt;</span><span class="kt">Sequence1</span><span class="p">,</span><span class="kt">Sequence2</span><span class="p">,</span><span class="kt">Sequence3</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -709,6 +675,87 @@ filling in the others with the given <code>fill1</code>, <code>fill2</code>, and
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ZipToLongest3Sequence</span> <span class="o">&lt;</span><span class="kt">Sequence1</span><span class="p">:</span> <span class="kt">Sequence</span><span class="p">,</span> <span class="kt">Sequence2</span><span class="p">:</span> <span class="kt">Sequence</span><span class="p">,</span> <span class="kt">Sequence3</span><span class="p">:</span> <span class="kt">Sequence</span><span class="o">&gt;</span>
     <span class="p">:</span> <span class="kt">IteratorProtocol</span><span class="p">,</span> <span class="kt">Sequence</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures3zipyAA4TreeOyq0_q0_GADyxxG_ADyq_q_Gq0_x_q_tXEtr1_lF"></a>
+                    <a name="//apple_ref/swift/Function/zip(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures3zipyAA4TreeOyq0_q0_GADyxxG_ADyq_q_Gq0_x_q_tXEtr1_lF">zip(_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-invariant">
+    <p class="aside-title">Invariant</p>
+    <p><code>a</code> and <code>b</code> are the same shape.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt"><a href="Enums/Tree.html">Tree</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="p">,</span> <span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt"><a href="Enums/Tree.html">Tree</a></span><span class="o">&lt;</span><span class="kt">U</span><span class="p">,</span> <span class="kt">U</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="p">(</span><span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">V</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="Enums/Tree.html">Tree</a></span><span class="o">&lt;</span><span class="kt">V</span><span class="p">,</span> <span class="kt">V</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new <code><a href="Enums/Tree.html">Tree</a></code> resulting from applying the given function <code>f</code> to each
+corresponding node in the given trees <code>a</code> and <code>b</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures3zipyAA12Zip3SequenceVyxq_q0_Gx_q_q0_tSTRzSTR_STR0_r1_lF"></a>
+                    <a name="//apple_ref/swift/Function/zip(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures3zipyAA12Zip3SequenceVyxq_q0_Gx_q_q0_tSTRzSTR_STR0_r1_lF">zip(_:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lazy <code>Sequence</code> zipping three <code>Sequence</code> values together.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This should be deprecated when <code>Variadic Generics</code> are implemented in Swift. As
+outlined in the <a href="http://thread.gmane.org/gmane.comp.lang.swift.evolution/8484">Generics Manifesto</a></p>
+
+</div><div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    <p><a href="https://github.com/amomchilov/ZipNsequence/blob/master/Zip3Sequence.swift">https://github.com/amomchilov/ZipNsequence/blob/master/Zip3Sequence.swift</a></p>
+
+</div>
+
+<p>Modified by James Bean.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">zip</span> <span class="o">&lt;</span><span class="kt">Sequence1</span><span class="p">,</span><span class="kt">Sequence2</span><span class="p">,</span><span class="kt">Sequence3</span><span class="o">&gt;</span> <span class="p">(</span>
+    <span class="n">_</span> <span class="nv">sequence1</span><span class="p">:</span> <span class="kt">Sequence1</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">sequence2</span><span class="p">:</span> <span class="kt">Sequence2</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">sequence3</span><span class="p">:</span> <span class="kt">Sequence3</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="Structs/Zip3Sequence.html">Zip3Sequence</a></span><span class="o">&lt;</span><span class="kt">Sequence1</span><span class="p">,</span><span class="kt">Sequence2</span><span class="p">,</span><span class="kt">Sequence3</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -864,55 +911,14 @@ value if the other sequences are longer.</p>
                 </li>
               </ul>
             </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures3zipyAA4TreeOyq0_q0_GADyxxG_ADyq_q_Gq0_x_q_tXEtr1_lF"></a>
-                    <a name="//apple_ref/swift/Function/zip(_:_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures3zipyAA4TreeOyq0_q0_GADyxxG_ADyq_q_Gq0_x_q_tXEtr1_lF">zip(_:_:_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <div class="aside aside-invariant">
-    <p class="aside-title">Invariant</p>
-    <p><code>a</code> and <code>b</code> are the same shape.</p>
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt"><a href="Enums/Tree.html">Tree</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="p">,</span> <span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt"><a href="Enums/Tree.html">Tree</a></span><span class="o">&lt;</span><span class="kt">U</span><span class="p">,</span> <span class="kt">U</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="p">(</span><span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">V</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="Enums/Tree.html">Tree</a></span><span class="o">&lt;</span><span class="kt">V</span><span class="p">,</span> <span class="kt">V</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A new <code><a href="Enums/Tree.html">Tree</a></code> resulting from applying the given function <code>f</code> to each
-corresponding node in the given trees <code>a</code> and <code>b</code>.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://dn-m.github.io" target="_blank" rel="external">dn-m</a>. All rights reserved. (Last updated: 2019-12-02)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2019 <a class="link" href="https://dn-m.github.io" target="_blank" rel="external">dn-m</a>. All rights reserved. (Last updated: 2019-12-09)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

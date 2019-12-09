@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
           DataStructures Docs
         </a>
-         (80% documented)
+         (81% documented)
       </p>
     
     
@@ -335,10 +335,25 @@
                 <a class="nav-group-task-link" href="../Extensions/Collection.html">Collection</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Extensions.html#/s:SD">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Extensions.html#/s:Sd">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Extensions.html#/s:Sf">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Extensions.html#/s:Si">Int</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/MutableCollection.html">MutableCollection</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Numeric.html">Numeric</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Extensions.html#/s:Sn">Range</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/RangeReplaceableCollection.html">RangeReplaceableCollection</a>
@@ -564,11 +579,14 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>Tree</h1>
               <div class="declaration">
                 <div class="language">
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Tree</span><span class="o">&lt;</span><span class="kt">Branch</span><span class="p">,</span> <span class="kt">Leaf</span><span class="o">&gt;</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Tree</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Tree</span><span class="p">:</span> <span class="kt">Equatable</span> <span class="k">where</span> <span class="kt">Leaf</span><span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Branch</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Tree</span><span class="p">:</span> <span class="kt">Hashable</span> <span class="k">where</span> <span class="kt">Leaf</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Branch</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
 
                 </div>
               </div>
@@ -608,9 +626,11 @@
               <div class="task-name-container">
                 <a name="/Cases"></a>
                 <a name="//apple_ref/swift/Section/Cases" class="dashAnchor"></a>
-                <a href="#/Cases">
-                  <h3 class="section-name">Cases</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Cases"></a>
+                  <h3 class="section-name"><p>Cases</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -667,145 +687,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Single-Typed%20Tree"></a>
-                <a name="//apple_ref/swift/Section/Single-Typed Tree" class="dashAnchor"></a>
-                <a href="#/Single-Typed%20Tree">
-                  <h3 class="section-name">Single-Typed Tree</h3>
-                </a>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures4TreeOAAq_RszrlE5valuexvp"></a>
-                    <a name="//apple_ref/swift/Property/value" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures4TreeOAAq_RszrlE5valuexvp">value</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The payload of a given <code>Tree</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">public</span> <span class="k">var</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Leaf</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures4TreeOAAq_RszrlEyACyxxGx_qd__tc7ElementQyd__Rs_STRd__lufc"></a>
-                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures4TreeOAAq_RszrlEyACyxxGx_qd__tc7ElementQyd__Rs_STRd__lufc">init(_:_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Create a single-depth <code>TreeNode.branch</code> with leaves defined by a given <code>Sequence</code>
-parameretized over <code>T</code>.</p>
-
-<p>In the case of initializing with an empty array:</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">tree</span> <span class="o">=</span> <span class="kt">Tree</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[])</span>
-</code></pre>
-
-<p>A branch is created, populated with a single value matching the given <code><a href="../Enums/Tree.html#/s:14DataStructures4TreeOAAq_RszrlE5valuexvp">value</a></code>:</p>
-<pre class="highlight swift"><code><span class="k">self</span> <span class="o">=</span> <span class="o">.</span><span class="nf">branch</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="p">[</span><span class="o">.</span><span class="nf">leaf</span><span class="p">(</span><span class="n">value</span><span class="p">)])</span>
-</code></pre>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Leaf</span><span class="p">,</span> <span class="n">_</span> <span class="nv">sequence</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Leaf</span> <span class="o">==</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures4TreeOAAq_RszrlE8updating5valueACyxxGx_tF"></a>
-                    <a name="//apple_ref/swift/Method/updating(value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures4TreeOAAq_RszrlE8updating5valueACyxxGx_tF">updating(value:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">updating</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Leaf</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Tree</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A new <code>Tree</code> with the given <code><a href="../Enums/Tree.html#/s:14DataStructures4TreeOAAq_RszrlE5valuexvp">value</a></code> as payload.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures4TreeOAAq_RszrlE3mapyACyqd__qd__Gqd__xXElF"></a>
-                    <a name="//apple_ref/swift/Method/map(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures4TreeOAAq_RszrlE3mapyACyqd__qd__Gqd__xXElF">map(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Apply a given <code>transform</code> to all nodes in a <code>Tree</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="n">map</span><span class="o">&lt;</span><span class="kt">Result</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">transform</span><span class="p">:</span> <span class="p">(</span><span class="kt">Leaf</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Tree</span><span class="o">&lt;</span><span class="kt">Result</span><span class="p">,</span> <span class="kt">Result</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -840,9 +721,11 @@ parameretized over <code>T</code>.</p>
               <div class="task-name-container">
                 <a name="/Instance%20Properties"></a>
                 <a name="//apple_ref/swift/Section/Instance Properties" class="dashAnchor"></a>
-                <a href="#/Instance%20Properties">
-                  <h3 class="section-name">Instance Properties</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Instance%20Properties"></a>
+                  <h3 class="section-name"><p>Instance Properties</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -873,9 +756,9 @@ parameretized over <code>T</code>.</p>
                         <h4>Return Value</h4>
                         <p>The values contained by the leaves of this <code>Tree</code>.</p>
 
-<p>let tree = Tree.branch(<q>root</q>, [
+<p>let tree = Tree.branch(&ldquo;root&rdquo;, [
     .leaf(0),
-    .branch(<q>internal</q>, [
+    .branch(&ldquo;internal&rdquo;, [
         .leaf(1)
     ]),
     .leaf(2)
@@ -962,9 +845,11 @@ tree.height // =&gt; 2</p>
               <div class="task-name-container">
                 <a name="/Instance%20Methods"></a>
                 <a name="//apple_ref/swift/Section/Instance Methods" class="dashAnchor"></a>
-                <a href="#/Instance%20Methods">
-                  <h3 class="section-name">Instance Methods</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Instance%20Methods"></a>
+                  <h3 class="section-name"><p>Instance Methods</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1198,9 +1083,11 @@ the given <code>path</code>.</p>
               <div class="task-name-container">
                 <a name="/Errors"></a>
                 <a name="//apple_ref/swift/Section/Errors" class="dashAnchor"></a>
-                <a href="#/Errors">
-                  <h3 class="section-name">Errors</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Errors"></a>
+                  <h3 class="section-name"><p>Errors</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1237,9 +1124,11 @@ the given <code>path</code>.</p>
               <div class="task-name-container">
                 <a name="/Assosciated%20Types"></a>
                 <a name="//apple_ref/swift/Section/Assosciated Types" class="dashAnchor"></a>
-                <a href="#/Assosciated%20Types">
-                  <h3 class="section-name">Assosciated Types</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Assosciated%20Types"></a>
+                  <h3 class="section-name"><p>Assosciated Types</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1276,9 +1165,11 @@ the given <code>path</code>.</p>
               <div class="task-name-container">
                 <a name="/CustomStringConvertible"></a>
                 <a name="//apple_ref/swift/Section/CustomStringConvertible" class="dashAnchor"></a>
-                <a href="#/CustomStringConvertible">
-                  <h3 class="section-name">CustomStringConvertible</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/CustomStringConvertible"></a>
+                  <h3 class="section-name"><p>CustomStringConvertible</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1310,14 +1201,151 @@ the given <code>path</code>.</p>
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Single-Typed%20Tree"></a>
+                <a name="//apple_ref/swift/Section/Single-Typed Tree" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Single-Typed%20Tree"></a>
+                  <h3 class="section-name"><p>Single-Typed Tree</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures4TreeOAAq_RszrlE5valuexvp"></a>
+                    <a name="//apple_ref/swift/Property/value" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures4TreeOAAq_RszrlE5valuexvp">value</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The payload of a given <code>Tree</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Leaf</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures4TreeOAAq_RszrlEyACyxxGx_qd__tc7ElementQyd__Rs_STRd__lufc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures4TreeOAAq_RszrlEyACyxxGx_qd__tc7ElementQyd__Rs_STRd__lufc">init(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a single-depth <code>TreeNode.branch</code> with leaves defined by a given <code>Sequence</code>
+parameretized over <code>T</code>.</p>
+
+<p>In the case of initializing with an empty array:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">tree</span> <span class="o">=</span> <span class="kt">Tree</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[])</span>
+</code></pre>
+
+<p>A branch is created, populated with a single value matching the given <code><a href="../Enums/Tree.html#/s:14DataStructures4TreeOAAq_RszrlE5valuexvp">value</a></code>:</p>
+<pre class="highlight swift"><code><span class="k">self</span> <span class="o">=</span> <span class="o">.</span><span class="nf">branch</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="p">[</span><span class="o">.</span><span class="nf">leaf</span><span class="p">(</span><span class="n">value</span><span class="p">)])</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Leaf</span><span class="p">,</span> <span class="n">_</span> <span class="nv">sequence</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Leaf</span> <span class="o">==</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures4TreeOAAq_RszrlE8updating5valueACyxxGx_tF"></a>
+                    <a name="//apple_ref/swift/Method/updating(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures4TreeOAAq_RszrlE8updating5valueACyxxGx_tF">updating(value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">updating</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Leaf</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Tree</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new <code>Tree</code> with the given <code><a href="../Enums/Tree.html#/s:14DataStructures4TreeOAAq_RszrlE5valuexvp">value</a></code> as payload.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures4TreeOAAq_RszrlE3mapyACyqd__qd__Gqd__xXElF"></a>
+                    <a name="//apple_ref/swift/Method/map(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures4TreeOAAq_RszrlE3mapyACyqd__qd__Gqd__xXElF">map(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Apply a given <code>transform</code> to all nodes in a <code>Tree</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">map</span><span class="o">&lt;</span><span class="kt">Result</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">transform</span><span class="p">:</span> <span class="p">(</span><span class="kt">Leaf</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Tree</span><span class="o">&lt;</span><span class="kt">Result</span><span class="p">,</span> <span class="kt">Result</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://dn-m.github.io" target="_blank" rel="external">dn-m</a>. All rights reserved. (Last updated: 2019-12-02)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2019 <a class="link" href="https://dn-m.github.io" target="_blank" rel="external">dn-m</a>. All rights reserved. (Last updated: 2019-12-09)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

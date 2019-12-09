@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
           DataStructures Docs
         </a>
-         (80% documented)
+         (81% documented)
       </p>
     
     
@@ -335,10 +335,25 @@
                 <a class="nav-group-task-link" href="../Extensions/Collection.html">Collection</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Extensions.html#/s:SD">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Extensions.html#/s:Sd">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Extensions.html#/s:Sf">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Extensions.html#/s:Si">Int</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/MutableCollection.html">MutableCollection</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Numeric.html">Numeric</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Extensions.html#/s:Sn">Range</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/RangeReplaceableCollection.html">RangeReplaceableCollection</a>
@@ -564,12 +579,23 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>ContiguousSegmentCollection</h1>
               <div class="declaration">
                 <div class="language">
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ContiguousSegmentCollection</span> <span class="o">&lt;</span><span class="kt">Segment</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Intervallic.html">Intervallic</a></span><span class="o">&gt;</span>
     <span class="k">where</span> <span class="kt">Segment</span><span class="o">.</span><span class="kt">Metric</span><span class="p">:</span> <span class="kt">Hashable</span> <span class="o">&amp;</span> <span class="kt">Additive</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ContiguousSegmentCollection</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Intervallic.html">Intervallic</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ContiguousSegmentCollection</span><span class="p">:</span> <span class="kt"><a href="../Protocols/RandomAccessCollectionWrapping.html">RandomAccessCollectionWrapping</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ContiguousSegmentCollection</span><span class="p">:</span> <span class="kt">ExpressibleByArrayLiteral</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ContiguousSegmentCollection</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ContiguousSegmentCollection</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Fragmentable.html">Fragmentable</a></span> <span class="k">where</span>
+    <span class="kt">Metric</span><span class="p">:</span> <span class="kt">Zero</span><span class="p">,</span>
+    <span class="kt">Segment</span><span class="p">:</span> <span class="kt"><a href="../Protocols/IntervallicFragmentable.html">IntervallicFragmentable</a></span><span class="p">,</span>
+    <span class="kt">Segment</span><span class="o">.</span><span class="kt">Fragment</span><span class="p">:</span> <span class="kt"><a href="../Protocols/IntervallicFragmentable.html">IntervallicFragmentable</a></span><span class="p">,</span>
+    <span class="kt">Segment</span><span class="o">.</span><span class="kt">Fragment</span><span class="o">.</span><span class="kt">Fragment</span> <span class="o">==</span> <span class="kt">Segment</span><span class="o">.</span><span class="kt">Fragment</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ContiguousSegmentCollection</span><span class="p">:</span> <span class="kt">Equatable</span> <span class="k">where</span> <span class="kt">Segment</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ContiguousSegmentCollection</span><span class="p">:</span> <span class="kt">Hashable</span> <span class="k">where</span> <span class="kt">Segment</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
 
                 </div>
               </div>
@@ -599,9 +625,11 @@ offset.</p>
               <div class="task-name-container">
                 <a name="/Type%20Aliases"></a>
                 <a name="//apple_ref/swift/Section/Type Aliases" class="dashAnchor"></a>
-                <a href="#/Type%20Aliases">
-                  <h3 class="section-name">Type Aliases</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Type%20Aliases"></a>
+                  <h3 class="section-name"><p>Type Aliases</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -637,9 +665,11 @@ offset.</p>
               <div class="task-name-container">
                 <a name="/Type%20Properties"></a>
                 <a name="//apple_ref/swift/Section/Type Properties" class="dashAnchor"></a>
-                <a href="#/Type%20Properties">
-                  <h3 class="section-name">Type Properties</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Type%20Properties"></a>
+                  <h3 class="section-name"><p>Type Properties</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -675,9 +705,11 @@ offset.</p>
               <div class="task-name-container">
                 <a name="/Initializers"></a>
                 <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
-                <a href="#/Initializers">
-                  <h3 class="section-name">Initializers</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><p>Initializers</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -797,9 +829,11 @@ pairs.</p>
               <div class="task-name-container">
                 <a name="/Computed%20Properties"></a>
                 <a name="//apple_ref/swift/Section/Computed Properties" class="dashAnchor"></a>
-                <a href="#/Computed%20Properties">
-                  <h3 class="section-name">Computed Properties</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Computed%20Properties"></a>
+                  <h3 class="section-name"><p>Computed Properties</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -862,10 +896,6 @@ pairs.</p>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -933,9 +963,11 @@ offset is <code>0</code>.</p>
               <div class="task-name-container">
                 <a name="/Intervallic"></a>
                 <a name="//apple_ref/swift/Section/Intervallic" class="dashAnchor"></a>
-                <a href="#/Intervallic">
-                  <h3 class="section-name">Intervallic</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Intervallic"></a>
+                  <h3 class="section-name"><p>Intervallic</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1002,11 +1034,56 @@ offset is <code>0</code>.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
+                <a name="/RandomAccessCollectionWrapping"></a>
+                <a name="//apple_ref/swift/Section/RandomAccessCollectionWrapping" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/RandomAccessCollectionWrapping"></a>
+                  <h3 class="section-name"><p>RandomAccessCollectionWrapping</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures27ContiguousSegmentCollectionV4baseAA16SortedDictionaryVy6MetricQzxGvp"></a>
+                    <a name="//apple_ref/swift/Property/base" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionV4baseAA16SortedDictionaryVy6MetricQzxGvp">base</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">base</span><span class="p">:</span> <span class="kt"><a href="../Structs/SortedDictionary.html">SortedDictionary</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ContiguousSegmentCollection.html#/s:14DataStructures27ContiguousSegmentCollectionV6Metrica">Metric</a></span><span class="p">,</span> <span class="kt">Segment</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A view of the underlying storage producing a <code>RandomAccessCollection</code> interface.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
                 <a name="/Nested%20Types"></a>
                 <a name="//apple_ref/swift/Section/Nested Types" class="dashAnchor"></a>
-                <a href="#/Nested%20Types">
-                  <h3 class="section-name">Nested Types</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Nested%20Types"></a>
+                  <h3 class="section-name"><p>Nested Types</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1031,8 +1108,43 @@ offset is <code>0</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Fragment</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/ContiguousSegmentCollection.html">ContiguousSegmentCollection</a></span><span class="o">.</span><span class="kt">Fragment</span><span class="p">:</span> <span class="kt"><a href="../Protocols/RandomAccessCollectionWrapping.html">RandomAccessCollectionWrapping</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/ContiguousSegmentCollection.html">ContiguousSegmentCollection</a></span><span class="o">.</span><span class="kt">Fragment</span><span class="p">:</span> <span class="kt"><a href="../Protocols/IntervallicFragmentable.html">IntervallicFragmentable</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/ContiguousSegmentCollection.html">ContiguousSegmentCollection</a></span><span class="o">.</span><span class="kt">Fragment</span><span class="p">:</span> <span class="kt">Equatable</span> <span class="k">where</span>
+    <span class="kt">Segment</span><span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Segment</span><span class="o">.</span><span class="kt">Fragment</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14DataStructures27ContiguousSegmentCollectionV07indexOfD010containingSiSg6MetricQz_tF"></a>
+                    <a name="//apple_ref/swift/Method/indexOfSegment(containing:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionV07indexOfD010containingSiSg6MetricQz_tF">indexOfSegment(containing:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">indexOfSegment</span><span class="p">(</span><span class="n">containing</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Structs/ContiguousSegmentCollection.html#/s:14DataStructures27ContiguousSegmentCollectionV6Metrica">Metric</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The index of the segment containing the given <code>offset</code>, if it exists. Otherwise,
+<code>nil</code>.</p>
                       </div>
                     </section>
                   </div>
@@ -1072,87 +1184,13 @@ offset is <code>0</code>.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/RandomAccessCollectionWrapping"></a>
-                <a name="//apple_ref/swift/Section/RandomAccessCollectionWrapping" class="dashAnchor"></a>
-                <a href="#/RandomAccessCollectionWrapping">
-                  <h3 class="section-name">RandomAccessCollectionWrapping</h3>
-                </a>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures27ContiguousSegmentCollectionV4baseAA16SortedDictionaryVy6MetricQzxGvp"></a>
-                    <a name="//apple_ref/swift/Property/base" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionV4baseAA16SortedDictionaryVy6MetricQzxGvp">base</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">base</span><span class="p">:</span> <span class="kt"><a href="../Structs/SortedDictionary.html">SortedDictionary</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ContiguousSegmentCollection.html#/s:14DataStructures27ContiguousSegmentCollectionV6Metrica">Metric</a></span><span class="p">,</span> <span class="kt">Segment</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A view of the underlying storage producing a <code>RandomAccessCollection</code> interface.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14DataStructures27ContiguousSegmentCollectionV07indexOfD010containingSiSg6MetricQz_tF"></a>
-                    <a name="//apple_ref/swift/Method/indexOfSegment(containing:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14DataStructures27ContiguousSegmentCollectionV07indexOfD010containingSiSg6MetricQz_tF">indexOfSegment(containing:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">indexOfSegment</span><span class="p">(</span><span class="n">containing</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Structs/ContiguousSegmentCollection.html#/s:14DataStructures27ContiguousSegmentCollectionV6Metrica">Metric</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The index of the segment containing the given <code>offset</code>, if it exists. Otherwise,
-<code>nil</code>.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
                 <a name="/ExpressibleByArrayLiteral"></a>
                 <a name="//apple_ref/swift/Section/ExpressibleByArrayLiteral" class="dashAnchor"></a>
-                <a href="#/ExpressibleByArrayLiteral">
-                  <h3 class="section-name">ExpressibleByArrayLiteral</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/ExpressibleByArrayLiteral"></a>
+                  <h3 class="section-name"><p>ExpressibleByArrayLiteral</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1188,9 +1226,11 @@ offset is <code>0</code>.</p>
               <div class="task-name-container">
                 <a name="/CustomStringConvertible"></a>
                 <a name="//apple_ref/swift/Section/CustomStringConvertible" class="dashAnchor"></a>
-                <a href="#/CustomStringConvertible">
-                  <h3 class="section-name">CustomStringConvertible</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/CustomStringConvertible"></a>
+                  <h3 class="section-name"><p>CustomStringConvertible</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1227,8 +1267,8 @@ offset is <code>0</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://dn-m.github.io" target="_blank" rel="external">dn-m</a>. All rights reserved. (Last updated: 2019-12-02)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2019 <a class="link" href="https://dn-m.github.io" target="_blank" rel="external">dn-m</a>. All rights reserved. (Last updated: 2019-12-09)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

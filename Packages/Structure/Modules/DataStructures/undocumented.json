@@ -134,6 +134,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/ContiguousSegmentCollection/ContiguousSegmentCollection.swift",
+      "line": 503,
+      "symbol": "ContiguousSegmentCollection.Fragment.Item",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/travis/build/dn-m/Structure/Sources/DataStructures/ContiguousSegmentCollection/Intervallic.swift",
       "line": 10,
       "symbol": "Intervallic",
