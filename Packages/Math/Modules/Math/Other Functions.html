@@ -142,7 +142,13 @@
                 <a class="nav-group-task-link" href="Other%20Functions.html#/s:4Math1moiySay7ElementQzGx_q_tSTRzSTR_SjADRQACQy_ADRSr0_lF">*(_:_:)</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Functions.html#/s:4Math23chineseRemainderTheoremyq_x_xtSTRzSzR_7ElementQzRs_r0_lF">chineseRemainderTheorem(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Other%20Functions.html#/s:4Math6closer2to1a1bxx_xxtSLRzs13SignedNumericRzlF">closer(to:a:b:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Functions.html#/s:4Math7coprimeySbx_xtSzRzlF">coprime(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Other%20Functions.html#/s:4Math16linearRegressionyxxcSDyxxG7Algebra8AdditiveRzSFRzlF">linearRegression(_:)</a>
@@ -179,6 +185,69 @@
           <div class="section-content">
             <div class="task-group">
               <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Math23chineseRemainderTheoremyq_x_xtSTRzSzR_7ElementQzRs_r0_lF"></a>
+                    <a name="//apple_ref/swift/Function/chineseRemainderTheorem(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math23chineseRemainderTheoremyq_x_xtSTRzSzR_7ElementQzRs_r0_lF">chineseRemainderTheorem(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">chineseRemainderTheorem</span> <span class="o">&lt;</span><span class="kt">S</span><span class="p">:</span> <span class="kt">Sequence</span><span class="p">,</span> <span class="kt">I</span><span class="p">:</span> <span class="kt">BinaryInteger</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">S</span><span class="p">,</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">I</span>
+    <span class="k">where</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span> <span class="o">==</span> <span class="kt">I</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The Chinese Remainder Theorem supposes that given the integers n1&hellip;nk that are
+pairwise co-prime, then for any sequence of integers a1&hellip;ak there exists an integer <code>x</code> that
+solves the system of linear congruences.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Math7coprimeySbx_xtSzRzlF"></a>
+                    <a name="//apple_ref/swift/Function/coprime(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Math7coprimeySbx_xtSzRzlF">coprime(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">coprime</span><span class="o">&lt;</span><span class="kt">I</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">I</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">I</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">I</span> <span class="p">:</span> <span class="kt">BinaryInteger</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the given values are coprime. Otherwise, <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -402,7 +471,7 @@ value (a) is returned.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://dn-m.github.io" target="_blank" rel="external">dn-m</a>. All rights reserved. (Last updated: 2020-03-16)</p>
+      <p>&copy; 2020 <a class="link" href="https://dn-m.github.io" target="_blank" rel="external">dn-m</a>. All rights reserved. (Last updated: 2020-03-17)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
